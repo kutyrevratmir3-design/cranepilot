@@ -1,0 +1,22 @@
+{
+  "project_url": "https://www.overleaf.com/project/6a786a989fc2401c9056fa44",
+  "main_document": "cranepilot_main.tex",
+  "pdf_sha256": "1a86479dfc5557c833d348db76d9341913056b44d9b1dd2e4253e584aa7e329d",
+  "pages": 11,
+  "embedded_figures": 6,
+  "compile_errors": 0,
+  "compile_warnings": [
+    "microtype: Command showhyphens has changed"
+  ],
+  "visual_review": "all eleven rendered pages inspected; passive-memory equations and sixth figure checked at page resolution",
+  "source_export": {
+    "cranepilot_main.tex": "b8c06b87912b93d3609a9eec2ef90ae8b589a5864134e4796c34944f5b7d6607",
+    "cranepilot_refs.bib": "74137c5e94c174a00f466f5280e4ccf3459849281cbc9239a5c3816864b99e7e",
+    "cp_horizon_comparison.png": "99f34e23df79852a529c58b3ee631e764d642d6a8ea1aecedb30e4abd1a6d15f",
+    "cp_activity_comparison.png": "9e0914faeea3e8d97494f2776ad599a74ea72289cda374abaec9e0bf6a56e6e1",
+    "cp_all_family_baselines.png": "41465d2ca9cc2806f9051036c9f9787dbdaebf4c67acdff6fd13e285b2d54dac",
+    "cp_passive_rollout.png": "3e1e0a49291b34a8a4b9a65e83b42130bcdbab4c5a39b95d9eb52a0fd0caed00",
+    "cp_control_paired.png": "4c2a4e8c3474922510423e84b268e6131e581deee3f574d50e91a6fea6f608ae",
+    "cp_adaptation_curve.png": "caaffdc443c0844f452e5a01e89ca8920cc6c69dd14cdc328cf38beff229053f"
+  }
+}

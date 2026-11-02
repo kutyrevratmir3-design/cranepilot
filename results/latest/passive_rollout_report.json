@@ -1,0 +1,18 @@
+{
+  "scope": "retrospective development; command-conditioned and angle-only information sets differ",
+  "test_scenarios": [
+    1,
+    2,
+    7,
+    8
+  ],
+  "test_origin_stride_s": 0.1,
+  "maximum_float32_balance_residual": 8.392453310079874e-08,
+  "parameter_counts": {
+    "0": 7266,
+    "4": 7662
+  },
+  "tests_passed": 25,
+  "actuator_validation_scenario": 4,
+  "findings": "PEPM improves short horizons relative to action physics, but does not surpass the GP reference uniformly; long-horizon superiority is unconfirmed."
+}

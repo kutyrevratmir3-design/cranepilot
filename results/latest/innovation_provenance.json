@@ -1,0 +1,112 @@
+{
+  "status": "complete",
+  "config": {
+    "train": [
+      3,
+      5,
+      6
+    ],
+    "validation": [
+      4
+    ],
+    "evaluation": [
+      1,
+      2,
+      7,
+      8
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "variants": [
+      "observer",
+      "driven"
+    ],
+    "train_stride": 25,
+    "evaluation_stride": 10,
+    "training": {
+      "epochs": 100,
+      "patience": 15,
+      "batch_size": 256,
+      "learning_rate": 0.001
+    },
+    "selection": "per-variant early stopping on validation mean absolute error at seven horizons; average all three seeds; report both variants",
+    "scope": "retrospective development; no independent physical confirmation",
+    "change": "uniform training origins; bounded q and frequency observer; optional explicit learned forcing port; frozen original actuator"
+  },
+  "config_sha256": "a5e49960854f54461c4846609850c5adb96256e87bf905fcbd936742536df9d9",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "source_sha256": {
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+      "innovation.py": "2057c59a1d11e99a9e8c666ba298db0be344418777a6c0379ac7e7adbea4e12d",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "dffb6dd1bf5d1138a76d2729e1f50ea394635388"
+  },
+  "calibration": {
+    "a": 0.918229758605659,
+    "b": 0.17965738544181828,
+    "damping": 0.0,
+    "evidence": [
+      {
+        "sid": 3,
+        "L_m": 0.296163868,
+        "omega_rad_s": 4.662477296953985,
+        "effective_length_m": 0.4512690483721681,
+        "tail_rms_rad": 0.25687660706753235,
+        "relative_fit_error": 0.06855882097614344,
+        "calibration_start_s": 35.0,
+        "calibration_end_s": 90.0
+      },
+      {
+        "sid": 5,
+        "L_m": 0.503289556,
+        "omega_rad_s": 3.9063586606552967,
+        "effective_length_m": 0.6428723937755333,
+        "tail_rms_rad": 0.039774216690115036,
+        "relative_fit_error": 0.11292049174564424,
+        "calibration_start_s": 35.0,
+        "calibration_end_s": 90.0
+      },
+      {
+        "sid": 6,
+        "L_m": 0.59640658,
+        "omega_rad_s": 3.6745273018519664,
+        "effective_length_m": 0.7265509086979682,
+        "tail_rms_rad": 0.1164243422052729,
+        "relative_fit_error": 0.044949612310122754,
+        "calibration_start_s": 35.0,
+        "calibration_end_s": 90.0
+      }
+    ]
+  },
+  "actuator_sha256": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499",
+  "manifest_sha256": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85",
+  "code_sha256": {
+    "scripts\\run_innovation_development.py": "dee449671c6ef374280bd87bff8da007a4621361812cab6c425f7f3ede0a98f9",
+    "src\\cranepilot\\innovation.py": "2057c59a1d11e99a9e8c666ba298db0be344418777a6c0379ac7e7adbea4e12d",
+    "src\\cranepilot\\rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+    "src\\cranepilot\\passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25"
+  }
+}
