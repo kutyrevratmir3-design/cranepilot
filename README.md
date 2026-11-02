@@ -70,6 +70,7 @@ pilot uses a 0.02 s origin stride; it is not described as every-sample scoring.
 - Python gradient-boosted trees and a three-seed MLP ensemble.
 - Capped-size fixed-kernel GP residual reference.
 - Phase-coordinate neural residual and its sensitivity-projection ablation.
+- Command-conditioned recurrent actuator and phase-exact passive-memory model.
 
 The oscillator is a finite-history harmonic forecasting baseline, not a full
 nonlinear command-conditioned plant model. Its frequency is estimated from a
@@ -97,10 +98,56 @@ The chronological adaptation pilot in `docs/VALIDATED_ADAPTATION.md` accepts
 no real-record updates; its equality with the physical prior is abstention,
 not evidence that adaptation improves forecasting.
 
-Each run keeps its configuration hash, input manifest hash, environment,
-calibration, predictions, training logs and completion status. A run is not
+## Passive-memory development pilot
+
+PEPM combines a causal initial-state encoder, analytic oscillator rotation,
+and a dissipative latent-memory closure. The implementation checks its discrete
+storage balance, exact base rotation, independent-solver convergence and
+finite-difference gradients. The fixed-length forecast uses prescribed future
+reference commands and past measured trolley positions; it never consumes
+future measured trolley positions or accelerations.
+
+At 0.1 s the retained four-scenario mean MAE is 0.228 degrees for PEPM,
+0.245 for action-conditioned physics, and 0.216 for a same-information GP
+residual. At 1 s PEPM does not improve action-conditioned physics. This is
+a completed development pilot with a mixed result, not established superiority.
+See [the method and evidence](docs/PASSIVE_ROLLOUT.md).
+
+After importing the public data, reproduce this pilot using fresh output paths:
+
+```sh
+python scripts/run_passive_rollout.py --actuator-only --output artifacts/runs/actuator_development
+python scripts/run_passive_rollout.py --output artifacts/runs/passive_rollout_pilot --actuator-checkpoint artifacts/runs/actuator_development/actuator.pt
+python scripts/run_rollout_references.py
+python scripts/report_passive_rollout.py
+```
+
+Retained runs keep their configurations, environment, predictions, training
+logs and completion status. The new innovation campaign also serializes
+train-only calibration and guards evaluation with source/configuration hashes. A run is not
 considered complete merely because a process started. Metrics include all
 declared scenarios; failures must be retained and discussed.
+
+## Observer and driven-innovation campaign
+
+Nine further fits compare a refined causal angle/frequency observer, an explicit
+learned forcing port and the old architecture under matching training rules.
+Three seeds are averaged per variant; no best evaluation seed is selected.
+Mean MAE across seven horizons and four scenarios is 0.51193 deg for the driven
+variant versus 0.54267 for original PEPM, 0.52376 for the matched-training control,
+and 0.51668 for GP. GP remains stronger at several intermediate horizons;
+this small aggregate difference does not establish broad superiority.
+The learned forcing is an extra energy port, not identified physical force.
+
+```sh
+python scripts/run_innovation_development.py
+python scripts/run_innovation_development.py --evaluate
+python scripts/run_uniform_control.py
+python scripts/report_innovation.py
+```
+
+See [the full results](docs/INNOVATION_RESULTS.md). The separately compiled
+11-page paper predates this newest campaign. Tests now total 28.
 
 ## Claims and limitations
 
