@@ -1,0 +1,6 @@
+{
+  "maximum_difference_deg": 2.148803709189906e-06,
+  "input": "history-only NPZ, no dataset read by inference process",
+  "n_origins": 3,
+  "compiled_vs_reference_maximum_difference_deg": 1.100000000064938e-05
+}

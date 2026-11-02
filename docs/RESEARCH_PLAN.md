@@ -92,3 +92,22 @@ INNOVATION_RESULTS.md. Driven innovation helps active long-horizon motion but
 does not dominate GP across horizons. Next isolate initial-angle versus frequency
 correction on development data and define independent simulation tests before
 claiming controller performance. Do not select horizon mixtures on evaluation.
+
+## Completed 3 November stage and next decision
+
+The force-aware robust model leads the retained macro error in the primary
+length-extrapolation protocol and two additional training ranges. The stage
+completed 36 angular fits, two fresh fold-specific actors, 56 GP candidates
+and 41 passing checks. Phase normalization and measurement-bin anchoring
+did not improve the primary model. See RESEARCH_2026_11_03.md and MODEL_CARD.md.
+
+The next priority is evidence breadth, not another unbounded hyperparameter
+search on the same four primary records: reproduce released LPV/forecasting
+methods, add a matched temporal-convolution reference, and fix an independent
+simulation/public-data protocol before selecting a final method. Keep all
+previous baselines, interpolation/extrapolation separation, seed averaging
+and original train-only actuator/calibration boundaries. The alternate-load
+stress group and the active-origin 1.5 s subset still have different winners.
+Do not call this a global state-of-the-art model or a validated learned MPC.
+
+The current stage stays local; no GitHub publication is authorized.

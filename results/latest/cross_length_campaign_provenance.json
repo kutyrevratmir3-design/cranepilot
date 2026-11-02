@@ -1,0 +1,240 @@
+{
+  "status": "complete",
+  "config": {
+    "folds": {
+      "short_transfer": {
+        "train": [
+          4,
+          6,
+          8
+        ],
+        "validation": [
+          5
+        ],
+        "evaluation": [
+          1,
+          2,
+          3,
+          7
+        ]
+      },
+      "long_transfer": {
+        "train": [
+          1,
+          3,
+          5
+        ],
+        "validation": [
+          4
+        ],
+        "evaluation": [
+          2,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "models": [
+      "forced_driven_huber",
+      "gru_reference"
+    ],
+    "training": {
+      "epochs": 100,
+      "patience": 15,
+      "batch_size": 256,
+      "learning_rate": 0.001
+    },
+    "actuator_training": {
+      "epochs": 80,
+      "patience": 12,
+      "batch_size": 256,
+      "learning_rate": 0.002
+    },
+    "train_stride": 25,
+    "evaluation_stride": 10,
+    "smooth_l1_beta": 0.1,
+    "kernel": {
+      "max_points": 1024,
+      "length_scales": [
+        3.0,
+        6.0,
+        12.0,
+        24.0
+      ],
+      "families": [
+        "rbf",
+        "matern15"
+      ],
+      "noise": 0.03
+    },
+    "selection": "fixed architectures and training settings; per-fold validation early stopping and kernel selection; mean of every fixed seed; report both interpolation and true extrapolation subsets",
+    "scope": "additional retrospective training-range tests on the same eight physical length records; repeated appearances are not independent experiments",
+    "actor": "fit a fresh actor using only that fold's train records; no reuse of actor trained on held-out lengths",
+    "publication": "local only; no GitHub publication"
+  },
+  "guarded_hashes": {
+    "configs\\cross_length_campaign.json": "7835a3ef69f01f3e3262474b22b00ec63e70b9d111d822ecb9e2f6dfc94bee4f",
+    "data\\processed\\dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "data\\processed\\manifest.json": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85",
+    "scripts\\run_cross_length.py": "410f03cf5b6982eb59312239297498c883ebbfe4b223fe8204a093138cb4374b",
+    "src\\cranepilot\\__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+    "src\\cranepilot\\adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+    "src\\cranepilot\\benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+    "src\\cranepilot\\cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+    "src\\cranepilot\\control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+    "src\\cranepilot\\data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+    "src\\cranepilot\\forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+    "src\\cranepilot\\innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+    "src\\cranepilot\\metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+    "src\\cranepilot\\models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+    "src\\cranepilot\\passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+    "src\\cranepilot\\phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+    "src\\cranepilot\\physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+    "src\\cranepilot\\rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "source_sha256": {
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "84a7a7a1d58257b70ab98a2588a21a3f2cd196f4"
+  },
+  "folds": {
+    "short_transfer": {
+      "calibration": {
+        "a": 0.9276143647968063,
+        "b": 0.17311496173911256,
+        "damping": 0.0,
+        "evidence": [
+          {
+            "sid": 4,
+            "L_m": 0.400821036,
+            "omega_rad_s": 4.243349721309399,
+            "effective_length_m": 0.5448178838065962,
+            "tail_rms_rad": 0.10856879432714135,
+            "relative_fit_error": 0.07030750239103864,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 6,
+            "L_m": 0.59640658,
+            "omega_rad_s": 3.6745273018519664,
+            "effective_length_m": 0.7265509086979682,
+            "tail_rms_rad": 0.1164243422052729,
+            "relative_fit_error": 0.044949612310122754,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 8,
+            "L_m": 0.808705436,
+            "omega_rad_s": 3.259792892267283,
+            "effective_length_m": 0.9231855336093117,
+            "tail_rms_rad": 0.17903255387005215,
+            "relative_fit_error": 0.08780357854503348,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          }
+        ]
+      },
+      "train_lengths_m": [
+        0.400821036,
+        0.59640658,
+        0.808705436
+      ]
+    },
+    "long_transfer": {
+      "calibration": {
+        "a": 0.9384625330489874,
+        "b": 0.17146477786355716,
+        "damping": 0.0,
+        "evidence": [
+          {
+            "sid": 1,
+            "L_m": 0.098588644,
+            "omega_rad_s": 6.107035391446393,
+            "effective_length_m": 0.2630317253628017,
+            "tail_rms_rad": 0.08926442984950125,
+            "relative_fit_error": 0.21524491514912086,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 3,
+            "L_m": 0.296163868,
+            "omega_rad_s": 4.662477296953985,
+            "effective_length_m": 0.4512690483721681,
+            "tail_rms_rad": 0.25687660706753235,
+            "relative_fit_error": 0.06855882097614344,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 5,
+            "L_m": 0.503289556,
+            "omega_rad_s": 3.9063586606552967,
+            "effective_length_m": 0.6428723937755333,
+            "tail_rms_rad": 0.039774216690115036,
+            "relative_fit_error": 0.11292049174564424,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          }
+        ]
+      },
+      "train_lengths_m": [
+        0.098588644,
+        0.296163868,
+        0.503289556
+      ]
+    }
+  },
+  "started_utc": "2026-11-02T23:32:56.973297+00:00",
+  "checkpoint_hashes": {
+    "long_transfer\\actor.pt": "4288d621134115dfcec60099725e4a22bce9e06a1ddad69fa7602e5976be082c",
+    "long_transfer\\forced_driven_huber_seed0.pt": "a3ca8a7db01af33642bba95ec95332c58983296d48d5ec145f23d470b5ebfb4f",
+    "long_transfer\\forced_driven_huber_seed1.pt": "da78336820d84d09082b2f670440b15b5b87f1b4d9fab29479616ad1d38d858b",
+    "long_transfer\\forced_driven_huber_seed2.pt": "9a2e7806960abd00927671400fe5477dfb6a89ee60396c6624632b321e0149f7",
+    "long_transfer\\gp.joblib": "ff79f2892f54f5237ec97f20cfdbb2dfcaa117abc957305c827a9aa519e282f6",
+    "long_transfer\\gru_reference_seed0.pt": "57ac9b1c9f9b4dd74195da68992a2b929197aba83b2dc7147faf92acf7575c91",
+    "long_transfer\\gru_reference_seed1.pt": "f0cf9e7fdc8ddbe7f05bd2cba3abea018b979b44e3d6a6d270ab0f55091cc427",
+    "long_transfer\\gru_reference_seed2.pt": "47f1cc48948d002b6b27357cb0263fb8c651550ec9914c51cda5e5b3df3063cc",
+    "short_transfer\\actor.pt": "d08d829f21f02de819ca9a8b210d6eadbccda835d4de3b7893f5eeb73e8c52eb",
+    "short_transfer\\forced_driven_huber_seed0.pt": "28fb561e805f14268d134966b5051afd1c9c5c98c9b8129b2d68a9f16b918566",
+    "short_transfer\\forced_driven_huber_seed1.pt": "1a05ad59e0fd4657b744a3c4a452ffcc07daf15656e7fe90c60812a5020f1a7e",
+    "short_transfer\\forced_driven_huber_seed2.pt": "c535428ddc2aa15d777ee1aea364bf7f8ccbdefeb6f9fe02f9774cbefe842e09",
+    "short_transfer\\gp.joblib": "08a0decab1485a2233ead4387a2def063d9f828df7bc62e649955a29762a282b",
+    "short_transfer\\gru_reference_seed0.pt": "65b9f5bdfd8f2d1ddd99bcc84df76a321c70a11b1ee4084881128c72785a8937",
+    "short_transfer\\gru_reference_seed1.pt": "c72b0a4ddfb9b60f594c7c42bbee0ea4d8ffc0f12da3a67ae97ff610246d2aec",
+    "short_transfer\\gru_reference_seed2.pt": "2b4e82665e43006871d2c06eeb2e5036b8135d8db13b1441b3230ea1a40172ad"
+  },
+  "finished_utc": "2026-11-02T23:38:43.923604+00:00"
+}

@@ -11,9 +11,10 @@ from .data import QUANTIZATION_RAD
 
 
 class InnovationForecaster(PassiveForecaster):
-    def __init__(self, driven=False):
+    def __init__(self, driven=False, measurement_anchor=False):
         super().__init__(memory_dim=4)
         self.driven = driven
+        self.measurement_anchor = measurement_anchor
         self.observer = nn.Linear(32, 2)
         nn.init.zeros_(self.observer.weight)
         nn.init.zeros_(self.observer.bias)
@@ -28,7 +29,9 @@ class InnovationForecaster(PassiveForecaster):
         context = self.encoder(batch['angular_context'])
         correction = torch.tanh(self.initial(context))
         adjustment = torch.tanh(self.observer(context))
-        q = batch['initial_q'] + .02*adjustment[:, 0]
+        # Optional nominal encoder-bin consistency, not a confidence guarantee.
+        q = (batch.get('observed_q',batch['initial_q'])+.5*QUANTIZATION_RAD*adjustment[:,0]
+             if self.measurement_anchor else batch['initial_q']+.02*adjustment[:,0])
         # A bounded local effective-frequency correction; not identified geometry.
         omega = batch['omega']*(1. + .15*adjustment[:, 1])
         p = batch['initial_p']*batch['omega']/omega + .2*correction[:, 0]
@@ -55,4 +58,4 @@ class InnovationForecaster(PassiveForecaster):
         return torch.stack(outputs, 1), {
             'balance':torch.stack(balances, 1), 'initial_memory':memory,
             'innovation_force':torch.stack(forces, 1),
-            'frequency_ratio':omega/batch['omega']}
+            'frequency_ratio':omega/batch['omega'],'initial_angle':q}

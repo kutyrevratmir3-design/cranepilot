@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-03",
+  "scope": "retrospective fixed-length conditional forecast; no claim of best-in-literature or new hardware control validation",
+  "new_angular_neural_fits": 36,
+  "new_fold_actor_fits": 2,
+  "new_kernel_candidate_fits": 56,
+  "failed_before_training": 1,
+  "numerical_and_information_tests_passed": 41,
+  "best_new_neural_by_validation": "forced_driven_huber",
+  "primary_macro_mae_deg": {
+    "action_physics": 0.5548525017365976,
+    "driven": 0.5119289615111094,
+    "forced_driven_huber": 0.5004975138814781,
+    "forced_driven_mse": 0.5044363741604591,
+    "forced_observer_huber": 0.5154142028957175,
+    "forced_physics": 0.5542005849024781,
+    "full_kernel": 0.5254757341458642,
+    "gp_action_residual": 0.5166849764088435,
+    "gru_reference": 0.5420241091158929,
+    "measurement_driven": 0.5319963978126957,
+    "mlp_action_residual": 0.5356303082296657,
+    "observer": 0.5162628664123395,
+    "passive_m4": 0.5426714661900346,
+    "phase_driven": 0.553604634193661,
+    "phase_kernel": 0.5475875020409704,
+    "phase_passive": 0.5553308382206749,
+    "raw_driven_huber": 0.5085962366681085,
+    "uniform_control": 0.5237568398606303,
+    "zero_prior_gp": 0.525188448361655
+  },
+  "improvement_vs_previous_driven_percent": 2.2330144393253426,
+  "improvement_vs_first_pepm_percent": 7.771544099167327,
+  "primary_candidate_minus_old_gp_per_record_deg": [
+    -0.06557313013291188,
+    0.05563102174655282,
+    -0.016852964806086057,
+    -0.03795477691701632
+  ],
+  "four_record_descriptive_bootstrap_95pct_deg": [
+    -0.05339308880120543,
+    0.03223457208066054
+  ],
+  "cross_length_extrapolation_macro_mae_deg": [
+    {
+      "fold": "long_transfer",
+      "model": "forced_driven_huber",
+      "mae_deg": 0.5126405514277614
+    },
+    {
+      "fold": "long_transfer",
+      "model": "forced_physics",
+      "mae_deg": 0.6566272488885175
+    },
+    {
+      "fold": "long_transfer",
+      "model": "gp_reference",
+      "mae_deg": 0.5904772179384785
+    },
+    {
+      "fold": "long_transfer",
+      "model": "gru_reference",
+      "mae_deg": 0.5732985817310754
+    },
+    {
+      "fold": "long_transfer",
+      "model": "zero_prior_gp",
+      "mae_deg": 0.5962420167676742
+    },
+    {
+      "fold": "short_transfer",
+      "model": "forced_driven_huber",
+      "mae_deg": 0.4321306007709434
+    },
+    {
+      "fold": "short_transfer",
+      "model": "forced_physics",
+      "mae_deg": 0.46275461165561604
+    },
+    {
+      "fold": "short_transfer",
+      "model": "gp_reference",
+      "mae_deg": 1.7044843863534316
+    },
+    {
+      "fold": "short_transfer",
+      "model": "gru_reference",
+      "mae_deg": 0.4413964587140123
+    },
+    {
+      "fold": "short_transfer",
+      "model": "zero_prior_gp",
+      "mae_deg": 1.7036516934107637
+    }
+  ],
+  "unique_length_evaluation_records_including_cross_ranges": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    8
+  ],
+  "stress_records": [
+    10,
+    11,
+    12
+  ],
+  "latency": {
+    "scope": "warm single validation packet, preprocessing plus actor plus predictor; excludes model loading, data acquisition and I/O; not a hard real-time guarantee",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "torch_threads": 4,
+    "models": {
+      "three_seed_reference_flow": {
+        "median_ms": 59.043400000518886,
+        "p95_ms": 74.37471499852103,
+        "repetitions": 30
+      },
+      "three_seed_compiled_flow": {
+        "median_ms": 21.090650003316114,
+        "p95_ms": 21.73252000065986,
+        "repetitions": 30
+      },
+      "full_gp_1024": {
+        "median_ms": 5.234750000454369,
+        "p95_ms": 5.464779998146696,
+        "repetitions": 30
+      }
+    }
+  },
+  "inference_parity": {
+    "maximum_difference_deg": 2.148803709189906e-06,
+    "input": "history-only NPZ, no dataset read by inference process",
+    "n_origins": 3,
+    "compiled_vs_reference_maximum_difference_deg": 1.100000000064938e-05
+  },
+  "publication": "All work in this stage kept local; no GitHub writes"
+}

@@ -2,7 +2,7 @@
 
 3 November 2026. This design and configuration are fixed before evaluation of
 the current force-aware campaign. A draft is staged under .local while that
-campaign's guarded source snapshot is active. It is not yet a trained result.
+campaign's guarded source snapshot is active. The subsequent campaign has now completed; see the outcome below.
 
 The current observer networks consume a fixed duration in seconds and native
 command levels. The same 0.4 s packet spans different fractions of a swing
@@ -34,3 +34,12 @@ campaign. Both will be reported, regardless of which performs better. The
 configuration is configs/phase_normalized_campaign.json. The required phase
 history is checked explicitly; unsupported lengths must not silently extrapolate
 the observation packet. No best-model claim follows from this construction.
+
+## Completed outcome
+
+Six phase-normalized fits and three direct GRU reference fits completed.
+The phase variants did not improve the validation or primary extrapolation
+result. Their exact angular-similarity property passed independent tests but
+did not guarantee better prediction. Both negative variants remain in the
+complete report. No further architecture parameters were chosen from their
+evaluation errors.

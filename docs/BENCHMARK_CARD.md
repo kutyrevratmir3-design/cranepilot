@@ -72,3 +72,15 @@ novelty. To support a best-model claim, retain a strong matched baseline suite,
 compare released implementations where reproducible, broaden transfer cases,
 and define independent tests before selecting a final architecture. Until that
 is done, claim only the exact retained benchmark result and its limits.
+
+## Completed additional ranges
+
+The cross_length_campaign refits training calibration and actuator for
+short transfer (train 4/6/8, validation 5, extrapolation 1/2/3) and long
+transfer (train 1/3/5, validation 4, extrapolation 6/7/8). Interpolation
+records 7 and 2 are retained but excluded from extrapolation-only headlines.
+The selected neural variant has the lowest macro error among the retained
+methods in these two protocols and the primary protocol; per-horizon and
+load/shape stress winners still vary. These remain reused physical records.
+See MODEL_CARD.md for numerical values and RESEARCH_2026_11_03.md for all
+variants, negative results and the strengthened zero-residual-prior GP.

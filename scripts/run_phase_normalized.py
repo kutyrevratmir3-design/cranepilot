@@ -12,6 +12,7 @@ from cranepilot.physics import LengthCalibration
 from cranepilot.rollout import command_windows,stack_windows,tensors,NeuralActuator,train_module,HORIZON_INDEX,HORIZONS_S
 from cranepilot.forced_observer import refine_windows,analytic_rollout
 from cranepilot.phase_normalized import PhaseNormalizedForecaster,GRUResidualForecaster,phase_context
+from cranepilot.innovation import InnovationForecaster
 from cranepilot.benchmark import environment_record
 from cranepilot.metrics import regression_metrics
 
@@ -19,8 +20,9 @@ from cranepilot.metrics import regression_metrics
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--evaluate',action='store_true')
     parser.add_argument('--output',type=Path,default=Path('artifacts/runs/phase_normalized_campaign'))
+    parser.add_argument('--config',type=Path,default=Path('configs/phase_normalized_campaign.json'))
     args=parser.parse_args();run=args.output
-    cfg_path=Path('configs/phase_normalized_campaign.json');cfg=json.loads(cfg_path.read_text())
+    cfg_path=args.config;cfg=json.loads(cfg_path.read_text())
     if cfg['phase_points']!=25:raise ValueError('Model requires exactly 25 phase points')
     actor_path=Path('artifacts/runs/actuator_development/actuator.pt')
     guarded=[cfg_path,actor_path,Path('data/processed/dataset.npz'),Path('data/processed/manifest.json'),
@@ -44,6 +46,7 @@ def main():
     actor=NeuralActuator();actor.load_state_dict(torch.load(actor_path,weights_only=True));actor.eval()
     torch.set_num_threads(4)
     def make_model(choice):
+        if choice=='anchor':return InnovationForecaster(driven=True,measurement_anchor=True)
         return GRUResidualForecaster() if choice=='gru' else PhaseNormalizedForecaster(choice)
     def prepare(sids,stride):
         raw=stack_windows([command_windows(scenarios[s],cal,np.arange(40,len(scenarios[s].time)-150,stride)) for s in sids])

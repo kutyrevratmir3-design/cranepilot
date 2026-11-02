@@ -1,0 +1,4 @@
+model,seed,validation_mae_deg,parameters
+measurement_driven,0,0.24558666348457336,8821
+measurement_driven,1,0.21729494631290436,8821
+measurement_driven,2,0.24962709844112396,8821

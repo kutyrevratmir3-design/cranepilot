@@ -1,0 +1,15 @@
+{
+  "folds": {
+    "short_transfer": {"train":[4,6,8],"validation":[5],"evaluation":[1,2,3,7]},
+    "long_transfer": {"train":[1,3,5],"validation":[4],"evaluation":[2,6,7,8]}
+  },
+  "seeds":[0,1,2],"models":["forced_driven_huber","gru_reference"],
+  "training":{"epochs":100,"patience":15,"batch_size":256,"learning_rate":0.001},
+  "actuator_training":{"epochs":80,"patience":12,"batch_size":256,"learning_rate":0.002},
+  "train_stride":25,"evaluation_stride":10,"smooth_l1_beta":0.1,
+  "kernel":{"max_points":1024,"length_scales":[3.0,6.0,12.0,24.0],"families":["rbf","matern15"],"noise":0.03},
+  "selection":"fixed architectures and training settings; per-fold validation early stopping and kernel selection; mean of every fixed seed; report both interpolation and true extrapolation subsets",
+  "scope":"additional retrospective training-range tests on the same eight physical length records; repeated appearances are not independent experiments",
+  "actor":"fit a fresh actor using only that fold's train records; no reuse of actor trained on held-out lengths",
+  "publication":"local only; no GitHub publication"
+}

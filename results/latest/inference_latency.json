@@ -1,0 +1,23 @@
+{
+  "scope": "warm single validation packet, preprocessing plus actor plus predictor; excludes model loading, data acquisition and I/O; not a hard real-time guarantee",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+  "torch_threads": 4,
+  "models": {
+    "three_seed_reference_flow": {
+      "median_ms": 59.043400000518886,
+      "p95_ms": 74.37471499852103,
+      "repetitions": 30
+    },
+    "three_seed_compiled_flow": {
+      "median_ms": 21.090650003316114,
+      "p95_ms": 21.73252000065986,
+      "repetitions": 30
+    },
+    "full_gp_1024": {
+      "median_ms": 5.234750000454369,
+      "p95_ms": 5.464779998146696,
+      "repetitions": 30
+    }
+  }
+}

@@ -36,3 +36,11 @@ class InnovationTests(unittest.TestCase):
         _,d=m(self.batch(),torch.zeros(3,30))
         self.assertTrue(((d['frequency_ratio']>=.85-1e-6)&(d['frequency_ratio']<=1.15+1e-6)).all())
         self.assertEqual(float(d['innovation_force'].detach().abs().max()),0)
+
+    def test_measurement_anchor_respects_nominal_encoder_bin(self):
+        from cranepilot.data import QUANTIZATION_RAD
+        m=InnovationForecaster(True,measurement_anchor=True)
+        with torch.no_grad():m.observer.bias.fill_(100.)
+        b=self.batch();b['observed_q']=b['initial_q']+.01
+        with torch.no_grad():_,d=m(b,torch.zeros(3,30))
+        self.assertLessEqual(float((d['initial_angle']-b['observed_q']).abs().max()),.5*QUANTIZATION_RAD+1e-8)

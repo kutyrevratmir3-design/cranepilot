@@ -1,0 +1,258 @@
+{
+  "status": "complete",
+  "config": {
+    "folds": {
+      "primary": {
+        "train": [
+          3,
+          5,
+          6
+        ],
+        "validation": [
+          4
+        ],
+        "evaluation": [
+          1,
+          2,
+          7,
+          8
+        ],
+        "load_stress": [
+          10,
+          11,
+          12
+        ],
+        "base": "raw",
+        "actor": "artifacts/runs/actuator_development/actuator.pt"
+      },
+      "short_transfer": {
+        "train": [
+          4,
+          6,
+          8
+        ],
+        "validation": [
+          5
+        ],
+        "evaluation": [
+          1,
+          2,
+          3,
+          7
+        ],
+        "base": "forced",
+        "actor": "artifacts/runs/cross_length_campaign/short_transfer/actor.pt"
+      },
+      "long_transfer": {
+        "train": [
+          1,
+          3,
+          5
+        ],
+        "validation": [
+          4
+        ],
+        "evaluation": [
+          2,
+          6,
+          7,
+          8
+        ],
+        "base": "forced",
+        "actor": "artifacts/runs/cross_length_campaign/long_transfer/actor.pt"
+      }
+    },
+    "train_stride": 25,
+    "evaluation_stride": 10,
+    "kernel": {
+      "max_points": 1024,
+      "length_scales": [
+        3.0,
+        6.0,
+        12.0,
+        24.0
+      ],
+      "families": [
+        "rbf",
+        "matern15"
+      ],
+      "noise": 0.03
+    },
+    "prior": "zero residual away from training support; scale residual targets by train-only standard deviation without subtracting their mean",
+    "selection": "one kernel per fold chosen only by validation macro MAE; keep base and actor matched to the previous full-feature GP within each fold",
+    "scope": "retrospective baseline hardening after observing GP extrapolation instability; not an independent confirmatory experiment",
+    "publication": "local only; no GitHub publication"
+  },
+  "guarded_hashes": {
+    "configs\\zero_prior_gp_campaign.json": "7af84750780e581595d8c034dd56cad1b3d00eba7717c670a1e5db983dbe66b0",
+    "data\\processed\\dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "data\\processed\\manifest.json": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85",
+    "scripts\\run_zero_prior_gp.py": "7d18b44f6ade6b1a603258607bfe0eb0e5f568543879c398092c47ca8ecee034",
+    "artifacts\\runs\\actuator_development\\actuator.pt": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499",
+    "artifacts\\runs\\cross_length_campaign\\short_transfer\\actor.pt": "d08d829f21f02de819ca9a8b210d6eadbccda835d4de3b7893f5eeb73e8c52eb",
+    "artifacts\\runs\\cross_length_campaign\\long_transfer\\actor.pt": "4288d621134115dfcec60099725e4a22bce9e06a1ddad69fa7602e5976be082c",
+    "src\\cranepilot\\__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+    "src\\cranepilot\\adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+    "src\\cranepilot\\benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+    "src\\cranepilot\\cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+    "src\\cranepilot\\control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+    "src\\cranepilot\\data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+    "src\\cranepilot\\fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+    "src\\cranepilot\\forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+    "src\\cranepilot\\innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+    "src\\cranepilot\\metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+    "src\\cranepilot\\models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+    "src\\cranepilot\\passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+    "src\\cranepilot\\phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+    "src\\cranepilot\\physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+    "src\\cranepilot\\rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "source_sha256": {
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "84a7a7a1d58257b70ab98a2588a21a3f2cd196f4"
+  },
+  "calibrations": {
+    "primary": {
+      "a": 0.918229758605659,
+      "b": 0.17965738544181828,
+      "damping": 0.0,
+      "evidence": [
+        {
+          "sid": 3,
+          "L_m": 0.296163868,
+          "omega_rad_s": 4.662477296953985,
+          "effective_length_m": 0.4512690483721681,
+          "tail_rms_rad": 0.25687660706753235,
+          "relative_fit_error": 0.06855882097614344,
+          "calibration_start_s": 35.0,
+          "calibration_end_s": 90.0
+        },
+        {
+          "sid": 5,
+          "L_m": 0.503289556,
+          "omega_rad_s": 3.9063586606552967,
+          "effective_length_m": 0.6428723937755333,
+          "tail_rms_rad": 0.039774216690115036,
+          "relative_fit_error": 0.11292049174564424,
+          "calibration_start_s": 35.0,
+          "calibration_end_s": 90.0
+        },
+        {
+          "sid": 6,
+          "L_m": 0.59640658,
+          "omega_rad_s": 3.6745273018519664,
+          "effective_length_m": 0.7265509086979682,
+          "tail_rms_rad": 0.1164243422052729,
+          "relative_fit_error": 0.044949612310122754,
+          "calibration_start_s": 35.0,
+          "calibration_end_s": 90.0
+        }
+      ]
+    },
+    "short_transfer": {
+      "a": 0.9276143647968063,
+      "b": 0.17311496173911256,
+      "damping": 0.0,
+      "evidence": [
+        {
+          "sid": 4,
+          "L_m": 0.400821036,
+          "omega_rad_s": 4.243349721309399,
+          "effective_length_m": 0.5448178838065962,
+          "tail_rms_rad": 0.10856879432714135,
+          "relative_fit_error": 0.07030750239103864,
+          "calibration_start_s": 35.0,
+          "calibration_end_s": 90.0
+        },
+        {
+          "sid": 6,
+          "L_m": 0.59640658,
+          "omega_rad_s": 3.6745273018519664,
+          "effective_length_m": 0.7265509086979682,
+          "tail_rms_rad": 0.1164243422052729,
+          "relative_fit_error": 0.044949612310122754,
+          "calibration_start_s": 35.0,
+          "calibration_end_s": 90.0
+        },
+        {
+          "sid": 8,
+          "L_m": 0.808705436,
+          "omega_rad_s": 3.259792892267283,
+          "effective_length_m": 0.9231855336093117,
+          "tail_rms_rad": 0.17903255387005215,
+          "relative_fit_error": 0.08780357854503348,
+          "calibration_start_s": 35.0,
+          "calibration_end_s": 90.0
+        }
+      ]
+    },
+    "long_transfer": {
+      "a": 0.9384625330489874,
+      "b": 0.17146477786355716,
+      "damping": 0.0,
+      "evidence": [
+        {
+          "sid": 1,
+          "L_m": 0.098588644,
+          "omega_rad_s": 6.107035391446393,
+          "effective_length_m": 0.2630317253628017,
+          "tail_rms_rad": 0.08926442984950125,
+          "relative_fit_error": 0.21524491514912086,
+          "calibration_start_s": 35.0,
+          "calibration_end_s": 90.0
+        },
+        {
+          "sid": 3,
+          "L_m": 0.296163868,
+          "omega_rad_s": 4.662477296953985,
+          "effective_length_m": 0.4512690483721681,
+          "tail_rms_rad": 0.25687660706753235,
+          "relative_fit_error": 0.06855882097614344,
+          "calibration_start_s": 35.0,
+          "calibration_end_s": 90.0
+        },
+        {
+          "sid": 5,
+          "L_m": 0.503289556,
+          "omega_rad_s": 3.9063586606552967,
+          "effective_length_m": 0.6428723937755333,
+          "tail_rms_rad": 0.039774216690115036,
+          "relative_fit_error": 0.11292049174564424,
+          "calibration_start_s": 35.0,
+          "calibration_end_s": 90.0
+        }
+      ]
+    }
+  },
+  "checkpoint_hashes": {
+    "long_transfer.joblib": "ecdc2e60be813ddd8bd7c617a49d3c2b42a58d13e1dd027128e8332454e8cf8e",
+    "primary.joblib": "89c91514af670d8020388e3d9009227232a519e90e603b82973d528bfa77f1f5",
+    "short_transfer.joblib": "37b02cc9cd17217d5bef64fff14f5dbc88934bef4791057f7a06502e025a2821"
+  }
+}
