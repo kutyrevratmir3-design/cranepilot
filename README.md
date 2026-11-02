@@ -91,6 +91,12 @@ same-protocol model comparisons.
 - `paper`: English LaTeX manuscript and generated result tables/figures.
 - `results`: selected reproducible summaries, distinct from raw run archives.
 
+The current English manuscript compiles in the linked Overleaf project and
+is retained locally as `results/latest/CranePilot_Research_Draft.pdf`.
+The chronological adaptation pilot in `docs/VALIDATED_ADAPTATION.md` accepts
+no real-record updates; its equality with the physical prior is abstention,
+not evidence that adaptation improves forecasting.
+
 Each run keeps its configuration hash, input manifest hash, environment,
 calibration, predictions, training logs and completion status. A run is not
 considered complete merely because a process started. Metrics include all

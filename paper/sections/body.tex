@@ -179,7 +179,7 @@ scenarios. The calibrated oscillator outperforms all learned variants at
 0.1~s horizon but worsens the 1~s result. A uniform advantage of the
 candidate method is therefore not supported.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Retrospective cable-length extrapolation MAE in degrees.
 Each entry is the mean of four scenario scores; neural predictions are
@@ -188,14 +188,14 @@ three-seed ensembles. These scores are not independent-window inference.}
 \input{forecast_table}
 \end{table}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering\includegraphics[width=.92\linewidth]{figures/horizon_comparison.png}
 \caption{Horizon-dependent error in the initial extrapolation split.
 The plot includes unfavourable residual-learning results.}
 \label{fig:horizon}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering\includegraphics[width=.98\linewidth]{figures/activity_comparison.png}
 \caption{Scores separated by a causal activity diagnostic at the
 forecast origin. Quiet-at-origin does not imply an unforced future.}
@@ -208,7 +208,7 @@ per-scenario results are retained in the repository. Longer history
 constitutes additional information and is reported separately rather
 than attributed to model architecture.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering\includegraphics[width=.98\linewidth]{figures/all_family_baselines.png}
 \caption{Initial all-family physical baselines at 1~s. Families with
 two angular outputs are averaged over their scenario--axis scores.}
@@ -242,7 +242,7 @@ are not certified hard constraints. Solver failures trigger a predefined
 feedback fallback and remain part of the reporting.
 
 \subsection{Initial control results and interpretation}
-\begin{table}[htbp]
+\begin{table}[H]
 \centering\small
 \caption{Simulation-only pilot: means across 16 paired contexts.
 The neural forecaster is not used inside these controllers. Solve-time
@@ -262,7 +262,7 @@ reported solver failures or 50~ms solve-budget overruns. Timing covers
 the optimiser call, not sensor acquisition or a real operating system's
 end-to-end control latency.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering\includegraphics[width=.95\linewidth]{figures/control_paired.png}
 \caption{Paired control metrics in the initial synthetic campaign.
 Thin lines retain every context; the thick line shows the mean.}
@@ -281,7 +281,7 @@ physics remains strong on longitudinal motion. GP residuals are an
 especially important comparator and are not consistently surpassed by
 the projected network.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Mean 1~s MAE in degrees in the retrospective all-family
 neural benchmark, with 41-sample histories and fixed development settings.}
@@ -299,11 +299,27 @@ has a different calibration information set from the angle-only zero-shot
 benchmark. It shows that the chosen local estimator is inadequate, not
 that all forms of online adaptation fail.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering\includegraphics[width=.85\linewidth]{figures/adaptation_curve.png}
 \caption{Negative adaptation result retained as a reference. All budgets
 share the same scored tail; no calibration-prefix target enters evaluation.}
 \end{figure}
+
+An additional, fixed development protocol fits frequency-only and damped
+candidates on the first 60\% of each available prefix and evaluates them
+on the last 40\%. Acceptance requires at least two non-overlapping
+one-second target blocks, improvement in mean MAE of at least 5\%, no
+worse MAE at any of the three horizons, and wins on at least 75\% of
+those blocks. Accepted candidates would be retained without refitting.
+These thresholds were fixed before this run and were not tuned from its
+results. The same protocol first processes development scenario~4, then
+the four evaluation scenarios. It uses angles only, whereas the earlier
+ungated estimator also uses measured trolley motion during calibration.
+No configuration update is accepted in this pilot. Across the 16
+nonzero-budget evaluation cases, nine lack sufficient prefix data and
+seven fail the validation criteria. Consequently, the 1~s score remains
+0.673~degrees at every budget. This is abstention, not successful
+adaptation or evidence of a guarantee against future degradation.
 
 The main methodological hypothesis remains unconfirmed. Required next
 experiments include adaptive physical models under equal causal
@@ -354,4 +370,5 @@ while the exploratory learned correction has mixed horizon-dependent
 effects. These findings support further work on causal adaptation and
 action-conditioned modelling, and do not yet support a completed
 state-of-the-art-method claim.
+
 

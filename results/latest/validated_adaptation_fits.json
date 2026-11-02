@@ -1,0 +1,1249 @@
+[
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 0,
+    "model": "zero_shot",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 0,
+    "model": "ungated",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "status": "zero_shot",
+    "budget_s": 0.0
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 0,
+    "model": "validated",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "budget_s": 0.0,
+    "status": "zero_shot",
+    "accepted": false,
+    "information": "angle-only calibration prefix"
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 1,
+    "model": "zero_shot",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 1,
+    "model": "ungated",
+    "omega": 4.270909525647741,
+    "damping": 0.49999999999977424,
+    "input_gain": -3.4587717788835715,
+    "status": "fitted",
+    "budget_s": 1.4846292041350466,
+    "n_calibration_samples": 15,
+    "relative_residual_rms": 0.3045760419393979
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 1,
+    "model": "validated",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "budget_s": 1.4846292041350466,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 149,
+    "split_sample": 89,
+    "n_train_origins": 0,
+    "n_validation_origins": 0,
+    "n_validation_blocks": 0
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 3,
+    "model": "zero_shot",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 3,
+    "model": "ungated",
+    "omega": 4.204835865542966,
+    "damping": 0.49999999999999994,
+    "input_gain": -3.1250818231592263,
+    "status": "fitted",
+    "budget_s": 4.45388761240514,
+    "n_calibration_samples": 45,
+    "relative_residual_rms": 0.1595886382601471
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 3,
+    "model": "validated",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "budget_s": 4.45388761240514,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 446,
+    "split_sample": 267,
+    "n_train_origins": 13,
+    "n_validation_origins": 4,
+    "n_validation_blocks": 1
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 5,
+    "model": "zero_shot",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 5,
+    "model": "ungated",
+    "omega": 4.257629309343971,
+    "damping": 0.49999999960758634,
+    "input_gain": -2.791812907901653,
+    "status": "fitted",
+    "budget_s": 7.423146020675233,
+    "n_calibration_samples": 75,
+    "relative_residual_rms": 0.12226952904692592
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 5,
+    "model": "validated",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "budget_s": 7.423146020675233,
+    "status": "rejected_by_validation",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 743,
+    "split_sample": 445,
+    "n_train_origins": 31,
+    "n_validation_origins": 16,
+    "n_validation_blocks": 2,
+    "prior_validation_mae_rad": [
+      0.009365726220906201,
+      0.01890345950848124,
+      0.0178289900855038
+    ],
+    "candidates": [
+      {
+        "model": "frequency_only",
+        "omega": 4.339890401123922,
+        "damping": 0.0,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.012494371941573778,
+          0.028117761186928134,
+          0.028827675803945615
+        ],
+        "relative_improvement": -0.5063461342003075,
+        "block_win_fraction": 0.5,
+        "optimizer_success": true
+      },
+      {
+        "model": "damped",
+        "omega": 4.339890561064567,
+        "damping": 1.7246407084469634e-15,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.01249437751708155,
+          0.02811777747304999,
+          0.0288276986126522
+        ],
+        "relative_improvement": -0.506347103226422,
+        "block_win_fraction": 0.5,
+        "optimizer_success": true
+      }
+    ]
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 10,
+    "model": "zero_shot",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 10,
+    "model": "ungated",
+    "omega": 4.249626640029134,
+    "damping": 0.28506423902455835,
+    "input_gain": -2.494788167667341,
+    "status": "fitted",
+    "budget_s": 14.846292041350466,
+    "n_calibration_samples": 149,
+    "relative_residual_rms": 0.09566106107915144
+  },
+  {
+    "group": "validation",
+    "scenario": 4,
+    "cycles": 10,
+    "model": "validated",
+    "omega": 4.232157962189762,
+    "damping": 0.0,
+    "budget_s": 14.846292041350466,
+    "status": "rejected_by_validation",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 1485,
+    "split_sample": 891,
+    "n_train_origins": 76,
+    "n_validation_origins": 46,
+    "n_validation_blocks": 5,
+    "prior_validation_mae_rad": [
+      0.0033899391961244585,
+      0.0020496451175754803,
+      0.00391694170073249
+    ],
+    "candidates": [
+      {
+        "model": "frequency_only",
+        "omega": 4.288164163988067,
+        "damping": 0.0,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.003978003598271902,
+          0.004796301123585386,
+          0.0071458409226810085
+        ],
+        "relative_improvement": -0.7015017774739787,
+        "block_win_fraction": 0.4,
+        "optimizer_success": true
+      },
+      {
+        "model": "damped",
+        "omega": 4.2881641585877395,
+        "damping": 6.285199490918419e-15,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.003978003522197193,
+          0.0047963006709067415,
+          0.007145840144793615
+        ],
+        "relative_improvement": -0.7015016378237768,
+        "block_win_fraction": 0.4,
+        "optimizer_success": true
+      }
+    ]
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 0,
+    "model": "zero_shot",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 0,
+    "model": "ungated",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "status": "zero_shot",
+    "budget_s": 0.0
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 0,
+    "model": "validated",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "budget_s": 0.0,
+    "status": "zero_shot",
+    "accepted": false,
+    "information": "angle-only calibration prefix"
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 1,
+    "model": "zero_shot",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 1,
+    "model": "ungated",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "status": "insufficient_excitation",
+    "budget_s": 1.0427387415713618
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 1,
+    "model": "validated",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "budget_s": 1.0427387415713618,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 105,
+    "split_sample": 63,
+    "n_train_origins": 0,
+    "n_validation_origins": 0,
+    "n_validation_blocks": 0
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 3,
+    "model": "zero_shot",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 3,
+    "model": "ungated",
+    "omega": 6.137612989293639,
+    "damping": 0.05762369190259848,
+    "input_gain": -3.6474620141339984,
+    "status": "fitted",
+    "budget_s": 3.1282162247140857,
+    "n_calibration_samples": 32,
+    "relative_residual_rms": 0.05955512247907977
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 3,
+    "model": "validated",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "budget_s": 3.1282162247140857,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 313,
+    "split_sample": 187,
+    "n_train_origins": 5,
+    "n_validation_origins": 0,
+    "n_validation_blocks": 0
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 5,
+    "model": "zero_shot",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 5,
+    "model": "ungated",
+    "omega": 6.120402927812375,
+    "damping": 0.05419635822546178,
+    "input_gain": -3.7455633859489033,
+    "status": "fitted",
+    "budget_s": 5.213693707856809,
+    "n_calibration_samples": 53,
+    "relative_residual_rms": 0.05119063255350155
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 5,
+    "model": "validated",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "budget_s": 5.213693707856809,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 522,
+    "split_sample": 313,
+    "n_train_origins": 18,
+    "n_validation_origins": 7,
+    "n_validation_blocks": 1
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 10,
+    "model": "zero_shot",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 10,
+    "model": "ungated",
+    "omega": 6.134469129964942,
+    "damping": 0.08955139007297683,
+    "input_gain": -3.1567223409421263,
+    "status": "fitted",
+    "budget_s": 10.427387415713618,
+    "n_calibration_samples": 105,
+    "relative_residual_rms": 0.06980528653377549
+  },
+  {
+    "group": "test",
+    "scenario": 1,
+    "cycles": 10,
+    "model": "validated",
+    "omega": 6.025656338145737,
+    "damping": 0.0,
+    "budget_s": 10.427387415713618,
+    "status": "rejected_by_validation",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 1043,
+    "split_sample": 625,
+    "n_train_origins": 49,
+    "n_validation_origins": 28,
+    "n_validation_blocks": 3,
+    "prior_validation_mae_rad": [
+      0.028137692133600907,
+      0.048336555229282936,
+      0.07521322447573665
+    ],
+    "candidates": [
+      {
+        "model": "frequency_only",
+        "omega": 6.134673270517124,
+        "damping": 0.0,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.028632308817676703,
+          0.048297175609302176,
+          0.07688416187602318
+        ],
+        "relative_improvement": -0.014016809948837361,
+        "block_win_fraction": 0.6666666666666666,
+        "optimizer_success": true
+      },
+      {
+        "model": "damped",
+        "omega": 6.134254551192444,
+        "damping": 0.07404609585270121,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.027868030924438108,
+          0.04744882534464567,
+          0.0759631711258674
+        ],
+        "relative_improvement": 0.0026860784132707316,
+        "block_win_fraction": 0.6666666666666666,
+        "optimizer_success": true
+      }
+    ]
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 0,
+    "model": "zero_shot",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 0,
+    "model": "ungated",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "status": "zero_shot",
+    "budget_s": 0.0
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 0,
+    "model": "validated",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "budget_s": 0.0,
+    "status": "zero_shot",
+    "accepted": false,
+    "information": "angle-only calibration prefix"
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 1,
+    "model": "zero_shot",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 1,
+    "model": "ungated",
+    "omega": 5.374207722867603,
+    "damping": 3.2838243137742646e-20,
+    "input_gain": -1.8606300031197072,
+    "status": "fitted",
+    "budget_s": 1.2037603577500426,
+    "n_calibration_samples": 13,
+    "relative_residual_rms": 0.1267253611745071
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 1,
+    "model": "validated",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "budget_s": 1.2037603577500426,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 121,
+    "split_sample": 72,
+    "n_train_origins": 0,
+    "n_validation_origins": 0,
+    "n_validation_blocks": 0
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 3,
+    "model": "zero_shot",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 3,
+    "model": "ungated",
+    "omega": 5.301389319859818,
+    "damping": 0.02660217190906303,
+    "input_gain": -1.9220399540032347,
+    "status": "fitted",
+    "budget_s": 3.6112810732501277,
+    "n_calibration_samples": 37,
+    "relative_residual_rms": 0.07187819170687552
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 3,
+    "model": "validated",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "budget_s": 3.6112810732501277,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 362,
+    "split_sample": 217,
+    "n_train_origins": 8,
+    "n_validation_origins": 1,
+    "n_validation_blocks": 1
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 5,
+    "model": "zero_shot",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 5,
+    "model": "ungated",
+    "omega": 5.300570793050173,
+    "damping": 0.13989645283031962,
+    "input_gain": -2.1391102010455083,
+    "status": "fitted",
+    "budget_s": 6.018801788750213,
+    "n_calibration_samples": 61,
+    "relative_residual_rms": 0.08204403407716472
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 5,
+    "model": "validated",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "budget_s": 6.018801788750213,
+    "status": "rejected_by_validation",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 602,
+    "split_sample": 361,
+    "n_train_origins": 23,
+    "n_validation_origins": 11,
+    "n_validation_blocks": 2,
+    "prior_validation_mae_rad": [
+      0.024926073502414926,
+      0.04762785546702228,
+      0.0894484724973649
+    ],
+    "candidates": [
+      {
+        "model": "frequency_only",
+        "omega": 5.282642116857808,
+        "damping": 0.0,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.02458626361809664,
+          0.043469822681562124,
+          0.08272065449894894
+        ],
+        "relative_improvement": 0.06929317446256988,
+        "block_win_fraction": 0.5,
+        "optimizer_success": true
+      },
+      {
+        "model": "damped",
+        "omega": 5.282642111059491,
+        "damping": 7.633649207642687e-26,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.024586263649598795,
+          0.04346982305030696,
+          0.08272065512557937
+        ],
+        "relative_improvement": 0.0692931681239144,
+        "block_win_fraction": 0.5,
+        "optimizer_success": true
+      }
+    ]
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 10,
+    "model": "zero_shot",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 10,
+    "model": "ungated",
+    "omega": 5.267910381500829,
+    "damping": 0.11770550514723435,
+    "input_gain": -2.4802452289531756,
+    "status": "fitted",
+    "budget_s": 12.037603577500427,
+    "n_calibration_samples": 121,
+    "relative_residual_rms": 0.0771661959403868
+  },
+  {
+    "group": "test",
+    "scenario": 2,
+    "cycles": 10,
+    "model": "validated",
+    "omega": 5.219631354967972,
+    "damping": 0.0,
+    "budget_s": 12.037603577500427,
+    "status": "rejected_by_validation",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 1204,
+    "split_sample": 722,
+    "n_train_origins": 59,
+    "n_validation_origins": 35,
+    "n_validation_blocks": 4,
+    "prior_validation_mae_rad": [
+      0.01879297320532247,
+      0.03604968028407473,
+      0.05418404838420197
+    ],
+    "candidates": [
+      {
+        "model": "frequency_only",
+        "omega": 5.310841933925235,
+        "damping": 0.0,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.021327193329107933,
+          0.03931513582370445,
+          0.06324577958641728
+        ],
+        "relative_improvement": -0.13630979026459178,
+        "block_win_fraction": 0.0,
+        "optimizer_success": true
+      },
+      {
+        "model": "damped",
+        "omega": 5.313276426216813,
+        "damping": 0.22371358950519205,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.02513804251049834,
+          0.047738631296378155,
+          0.07603577694554144
+        ],
+        "relative_improvement": -0.3658346826363743,
+        "block_win_fraction": 0.0,
+        "optimizer_success": true
+      }
+    ]
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 0,
+    "model": "zero_shot",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 0,
+    "model": "ungated",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "status": "zero_shot",
+    "budget_s": 0.0
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 0,
+    "model": "validated",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "budget_s": 0.0,
+    "status": "zero_shot",
+    "accepted": false,
+    "information": "angle-only calibration prefix"
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 1,
+    "model": "zero_shot",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 1,
+    "model": "ungated",
+    "omega": 3.7542725621834556,
+    "damping": 0.49999999999999994,
+    "input_gain": -2.1379853644418416,
+    "status": "fitted",
+    "budget_s": 1.8316015965596528,
+    "n_calibration_samples": 19,
+    "relative_residual_rms": 0.3353480542824403
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 1,
+    "model": "validated",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "budget_s": 1.8316015965596528,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 184,
+    "split_sample": 110,
+    "n_train_origins": 0,
+    "n_validation_origins": 0,
+    "n_validation_blocks": 0
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 3,
+    "model": "zero_shot",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 3,
+    "model": "ungated",
+    "omega": 3.6648353617437035,
+    "damping": 0.49999999999999994,
+    "input_gain": -1.9516095839917615,
+    "status": "fitted",
+    "budget_s": 5.494804789678959,
+    "n_calibration_samples": 55,
+    "relative_residual_rms": 0.19000424722134904
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 3,
+    "model": "validated",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "budget_s": 5.494804789678959,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 550,
+    "split_sample": 330,
+    "n_train_origins": 19,
+    "n_validation_origins": 8,
+    "n_validation_blocks": 1
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 5,
+    "model": "zero_shot",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 5,
+    "model": "ungated",
+    "omega": 3.6300131456748583,
+    "damping": 0.49999999999999994,
+    "input_gain": -1.772214567087908,
+    "status": "fitted",
+    "budget_s": 9.158007982798264,
+    "n_calibration_samples": 92,
+    "relative_residual_rms": 0.16095299471318283
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 5,
+    "model": "validated",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "budget_s": 9.158007982798264,
+    "status": "rejected_by_validation",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 916,
+    "split_sample": 549,
+    "n_train_origins": 41,
+    "n_validation_origins": 23,
+    "n_validation_blocks": 3,
+    "prior_validation_mae_rad": [
+      0.004702862618548425,
+      0.013275273439490408,
+      0.01835030620776626
+    ],
+    "candidates": [
+      {
+        "model": "frequency_only",
+        "omega": 3.326777347066539,
+        "damping": 0.0,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.00442805206418327,
+          0.014241968160217408,
+          0.01711814284271068
+        ],
+        "relative_improvement": 0.014872071715617663,
+        "block_win_fraction": 0.6666666666666666,
+        "optimizer_success": true
+      },
+      {
+        "model": "damped",
+        "omega": 3.32767794975411,
+        "damping": 0.09033096455969619,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.004340054579596802,
+          0.014660573241236473,
+          0.016885191261841702
+        ],
+        "relative_improvement": 0.012183929602363808,
+        "block_win_fraction": 0.6666666666666666,
+        "optimizer_success": true
+      }
+    ]
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 10,
+    "model": "zero_shot",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 10,
+    "model": "ungated",
+    "omega": 3.5507062137795664,
+    "damping": 0.49999999999999994,
+    "input_gain": -1.702807039379165,
+    "status": "fitted",
+    "budget_s": 18.316015965596527,
+    "n_calibration_samples": 184,
+    "relative_residual_rms": 0.1268216352005395
+  },
+  {
+    "group": "test",
+    "scenario": 7,
+    "cycles": 10,
+    "model": "validated",
+    "omega": 3.4304323161660615,
+    "damping": 0.0,
+    "budget_s": 18.316015965596527,
+    "status": "rejected_by_validation",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 1832,
+    "split_sample": 1099,
+    "n_train_origins": 96,
+    "n_validation_origins": 60,
+    "n_validation_blocks": 6,
+    "prior_validation_mae_rad": [
+      0.00498441484870198,
+      0.007310694194853877,
+      0.008256570384943557
+    ],
+    "candidates": [
+      {
+        "model": "frequency_only",
+        "omega": 3.2190138399028654,
+        "damping": 0.0,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.006982965171616046,
+          0.018505661938534892,
+          0.02182074231550232
+        ],
+        "relative_improvement": -1.3019709698297661,
+        "block_win_fraction": 0.16666666666666666,
+        "optimizer_success": true
+      },
+      {
+        "model": "damped",
+        "omega": 3.220029306441515,
+        "damping": 0.1251294618406567,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.006961964510712191,
+          0.019349739490000073,
+          0.02276743867081165
+        ],
+        "relative_improvement": -1.3880842849010633,
+        "block_win_fraction": 0.16666666666666666,
+        "optimizer_success": true
+      }
+    ]
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 0,
+    "model": "zero_shot",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 0,
+    "model": "ungated",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "status": "zero_shot",
+    "budget_s": 0.0
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 0,
+    "model": "validated",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "budget_s": 0.0,
+    "status": "zero_shot",
+    "accepted": false,
+    "information": "angle-only calibration prefix"
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 1,
+    "model": "zero_shot",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 1,
+    "model": "ungated",
+    "omega": 3.6826763465067187,
+    "damping": 0.4999999999999961,
+    "input_gain": -1.5566739868852684,
+    "status": "fitted",
+    "budget_s": 1.9264871370597947,
+    "n_calibration_samples": 20,
+    "relative_residual_rms": 0.3527701023445964
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 1,
+    "model": "validated",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "budget_s": 1.9264871370597947,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 193,
+    "split_sample": 115,
+    "n_train_origins": 0,
+    "n_validation_origins": 0,
+    "n_validation_blocks": 0
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 3,
+    "model": "zero_shot",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 3,
+    "model": "ungated",
+    "omega": 3.437681356194808,
+    "damping": 0.49999999999999994,
+    "input_gain": -1.6395338200556242,
+    "status": "fitted",
+    "budget_s": 5.779461411179384,
+    "n_calibration_samples": 58,
+    "relative_residual_rms": 0.16416012682240153
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 3,
+    "model": "validated",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "budget_s": 5.779461411179384,
+    "status": "insufficient_prefix",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 578,
+    "split_sample": 346,
+    "n_train_origins": 21,
+    "n_validation_origins": 10,
+    "n_validation_blocks": 1
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 5,
+    "model": "zero_shot",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 5,
+    "model": "ungated",
+    "omega": 3.3870576769706497,
+    "damping": 0.49999999999999956,
+    "input_gain": -1.5888303678165892,
+    "status": "fitted",
+    "budget_s": 9.632435685298974,
+    "n_calibration_samples": 97,
+    "relative_residual_rms": 0.11249971227899291
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 5,
+    "model": "validated",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "budget_s": 9.632435685298974,
+    "status": "rejected_by_validation",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 964,
+    "split_sample": 578,
+    "n_train_origins": 44,
+    "n_validation_origins": 25,
+    "n_validation_blocks": 3,
+    "prior_validation_mae_rad": [
+      0.004907702196330639,
+      0.01292341576564991,
+      0.02205120573147974
+    ],
+    "candidates": [
+      {
+        "model": "frequency_only",
+        "omega": 3.120378561618285,
+        "damping": 0.0,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.0051774247283375855,
+          0.01449512575925941,
+          0.019175722059819756
+        ],
+        "relative_improvement": 0.02592755512420375,
+        "block_win_fraction": 0.3333333333333333,
+        "optimizer_success": true
+      },
+      {
+        "model": "damped",
+        "omega": 3.1203785466937894,
+        "damping": 6.697643754100223e-23,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.005177424927196976,
+          0.014495126387404071,
+          0.019175721946579016
+        ],
+        "relative_improvement": 0.025927537227470543,
+        "block_win_fraction": 0.3333333333333333,
+        "optimizer_success": true
+      }
+    ]
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 10,
+    "model": "zero_shot",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "status": "zero_shot"
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 10,
+    "model": "ungated",
+    "omega": 3.2945177382574955,
+    "damping": 0.2989098773198515,
+    "input_gain": -1.5410069979836711,
+    "status": "fitted",
+    "budget_s": 19.264871370597948,
+    "n_calibration_samples": 193,
+    "relative_residual_rms": 0.06936787357901597
+  },
+  {
+    "group": "test",
+    "scenario": 8,
+    "cycles": 10,
+    "model": "validated",
+    "omega": 3.2614727533395245,
+    "damping": 0.0,
+    "budget_s": 19.264871370597948,
+    "status": "rejected_by_validation",
+    "accepted": false,
+    "information": "angle-only calibration prefix",
+    "n_prefix_samples": 1927,
+    "split_sample": 1156,
+    "n_train_origins": 102,
+    "n_validation_origins": 64,
+    "n_validation_blocks": 7,
+    "prior_validation_mae_rad": [
+      0.005433598269222509,
+      0.009269432289045603,
+      0.007636087209763302
+    ],
+    "candidates": [
+      {
+        "model": "frequency_only",
+        "omega": 3.14182198706354,
+        "damping": 0.0,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.007226271423759336,
+          0.021515070859647396,
+          0.023244985970750302
+        ],
+        "relative_improvement": -1.3271433005538165,
+        "block_win_fraction": 0.14285714285714285,
+        "optimizer_success": true
+      },
+      {
+        "model": "damped",
+        "omega": 3.141821985463151,
+        "damping": 1.4460956115746393e-22,
+        "accepted": false,
+        "validation_mae_rad": [
+          0.00722627147771523,
+          0.02151507108476719,
+          0.023244986239464922
+        ],
+        "relative_improvement": -1.3271433250753897,
+        "block_win_fraction": 0.14285714285714285,
+        "optimizer_success": true
+      }
+    ]
+  }
+]

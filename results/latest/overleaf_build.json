@@ -1,0 +1,21 @@
+{
+  "project_url": "https://www.overleaf.com/project/6a786a989fc2401c9056fa44",
+  "main_document": "cranepilot_main.tex",
+  "pdf_sha256": "d76edfa1088c3cde6f91226ec788d00ac6b06f851ec3557c8283008156ba53dd",
+  "pages": 9,
+  "embedded_figures": 5,
+  "compile_errors": 0,
+  "compile_warnings": [
+    "microtype: Command showhyphens has changed"
+  ],
+  "visual_review": "all nine rendered pages inspected; tables and figures follow their introduction",
+  "source_export": {
+    "cranepilot_main.tex": "3e21fee388c19bde8598e76ae21d87b802f38c266982e6dd74a45ab9e6b56d33",
+    "cranepilot_refs.bib": "38ee2d76ffa42c3bb5cabf21e686d238fee37769d717373d659cef038b95aa45",
+    "cp_horizon_comparison.png": "99f34e23df79852a529c58b3ee631e764d642d6a8ea1aecedb30e4abd1a6d15f",
+    "cp_activity_comparison.png": "9e0914faeea3e8d97494f2776ad599a74ea72289cda374abaec9e0bf6a56e6e1",
+    "cp_all_family_baselines.png": "41465d2ca9cc2806f9051036c9f9787dbdaebf4c67acdff6fd13e285b2d54dac",
+    "cp_control_paired.png": "4c2a4e8c3474922510423e84b268e6131e581deee3f574d50e91a6fea6f608ae",
+    "cp_adaptation_curve.png": "caaffdc443c0844f452e5a01e89ca8920cc6c69dd14cdc328cf38beff229053f"
+  }
+}
