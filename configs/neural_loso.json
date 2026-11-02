@@ -1,0 +1,775 @@
+{
+  "description": "Retrospective all-family neural development benchmark; same fixed hyperparameters as first pilot.",
+  "horizons_steps": [
+    10,
+    20,
+    35,
+    50,
+    75,
+    100,
+    150
+  ],
+  "histories": [
+    41
+  ],
+  "train_stride": 10,
+  "eval_stride": 2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 80,
+  "projection_weight": 0.03,
+  "trees": true,
+  "gp": true,
+  "neural": true,
+  "folds": [
+    {
+      "name": "loso_trolley_theta_1",
+      "family": "trolley",
+      "axis": "theta",
+      "train": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "validation": [
+        5
+      ],
+      "test": [
+        1
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_trolley_theta_2",
+      "family": "trolley",
+      "axis": "theta",
+      "train": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "validation": [
+        5
+      ],
+      "test": [
+        2
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_trolley_theta_3",
+      "family": "trolley",
+      "axis": "theta",
+      "train": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8
+      ],
+      "validation": [
+        5
+      ],
+      "test": [
+        3
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_trolley_theta_4",
+      "family": "trolley",
+      "axis": "theta",
+      "train": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "validation": [
+        5
+      ],
+      "test": [
+        4
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_trolley_theta_5",
+      "family": "trolley",
+      "axis": "theta",
+      "train": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "validation": [
+        4
+      ],
+      "test": [
+        5
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_trolley_theta_6",
+      "family": "trolley",
+      "axis": "theta",
+      "train": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "validation": [
+        4
+      ],
+      "test": [
+        6
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_trolley_theta_7",
+      "family": "trolley",
+      "axis": "theta",
+      "train": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "validation": [
+        4
+      ],
+      "test": [
+        7
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_trolley_theta_8",
+      "family": "trolley",
+      "axis": "theta",
+      "train": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "validation": [
+        4
+      ],
+      "test": [
+        8
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_theta_14",
+      "family": "jib",
+      "axis": "theta",
+      "train": [
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "validation": [
+        17
+      ],
+      "test": [
+        14
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_beta_14",
+      "family": "jib",
+      "axis": "beta",
+      "train": [
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "validation": [
+        17
+      ],
+      "test": [
+        14
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_theta_15",
+      "family": "jib",
+      "axis": "theta",
+      "train": [
+        14,
+        16,
+        18,
+        19,
+        20
+      ],
+      "validation": [
+        17
+      ],
+      "test": [
+        15
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_beta_15",
+      "family": "jib",
+      "axis": "beta",
+      "train": [
+        14,
+        16,
+        18,
+        19,
+        20
+      ],
+      "validation": [
+        17
+      ],
+      "test": [
+        15
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_theta_16",
+      "family": "jib",
+      "axis": "theta",
+      "train": [
+        14,
+        15,
+        18,
+        19,
+        20
+      ],
+      "validation": [
+        17
+      ],
+      "test": [
+        16
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_beta_16",
+      "family": "jib",
+      "axis": "beta",
+      "train": [
+        14,
+        15,
+        18,
+        19,
+        20
+      ],
+      "validation": [
+        17
+      ],
+      "test": [
+        16
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_theta_17",
+      "family": "jib",
+      "axis": "theta",
+      "train": [
+        14,
+        15,
+        18,
+        19,
+        20
+      ],
+      "validation": [
+        16
+      ],
+      "test": [
+        17
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_beta_17",
+      "family": "jib",
+      "axis": "beta",
+      "train": [
+        14,
+        15,
+        18,
+        19,
+        20
+      ],
+      "validation": [
+        16
+      ],
+      "test": [
+        17
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_theta_18",
+      "family": "jib",
+      "axis": "theta",
+      "train": [
+        14,
+        15,
+        17,
+        19,
+        20
+      ],
+      "validation": [
+        16
+      ],
+      "test": [
+        18
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_beta_18",
+      "family": "jib",
+      "axis": "beta",
+      "train": [
+        14,
+        15,
+        17,
+        19,
+        20
+      ],
+      "validation": [
+        16
+      ],
+      "test": [
+        18
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_theta_19",
+      "family": "jib",
+      "axis": "theta",
+      "train": [
+        14,
+        15,
+        17,
+        18,
+        20
+      ],
+      "validation": [
+        16
+      ],
+      "test": [
+        19
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_beta_19",
+      "family": "jib",
+      "axis": "beta",
+      "train": [
+        14,
+        15,
+        17,
+        18,
+        20
+      ],
+      "validation": [
+        16
+      ],
+      "test": [
+        19
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_theta_20",
+      "family": "jib",
+      "axis": "theta",
+      "train": [
+        14,
+        15,
+        17,
+        18,
+        19
+      ],
+      "validation": [
+        16
+      ],
+      "test": [
+        20
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_jib_beta_20",
+      "family": "jib",
+      "axis": "beta",
+      "train": [
+        14,
+        15,
+        17,
+        18,
+        19
+      ],
+      "validation": [
+        16
+      ],
+      "test": [
+        20
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_theta_24",
+      "family": "simult",
+      "axis": "theta",
+      "train": [
+        25,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        28
+      ],
+      "test": [
+        24
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_beta_24",
+      "family": "simult",
+      "axis": "beta",
+      "train": [
+        25,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        28
+      ],
+      "test": [
+        24
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_theta_25",
+      "family": "simult",
+      "axis": "theta",
+      "train": [
+        24,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        28
+      ],
+      "test": [
+        25
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_beta_25",
+      "family": "simult",
+      "axis": "beta",
+      "train": [
+        24,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        28
+      ],
+      "test": [
+        25
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_theta_26",
+      "family": "simult",
+      "axis": "theta",
+      "train": [
+        24,
+        25,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        28
+      ],
+      "test": [
+        26
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_beta_26",
+      "family": "simult",
+      "axis": "beta",
+      "train": [
+        24,
+        25,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        28
+      ],
+      "test": [
+        26
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_theta_27",
+      "family": "simult",
+      "axis": "theta",
+      "train": [
+        24,
+        25,
+        26,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        28
+      ],
+      "test": [
+        27
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_beta_27",
+      "family": "simult",
+      "axis": "beta",
+      "train": [
+        24,
+        25,
+        26,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        28
+      ],
+      "test": [
+        27
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_theta_28",
+      "family": "simult",
+      "axis": "theta",
+      "train": [
+        24,
+        25,
+        26,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        27
+      ],
+      "test": [
+        28
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_beta_28",
+      "family": "simult",
+      "axis": "beta",
+      "train": [
+        24,
+        25,
+        26,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        27
+      ],
+      "test": [
+        28
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_theta_29",
+      "family": "simult",
+      "axis": "theta",
+      "train": [
+        24,
+        25,
+        26,
+        28,
+        30,
+        31
+      ],
+      "validation": [
+        27
+      ],
+      "test": [
+        29
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_beta_29",
+      "family": "simult",
+      "axis": "beta",
+      "train": [
+        24,
+        25,
+        26,
+        28,
+        30,
+        31
+      ],
+      "validation": [
+        27
+      ],
+      "test": [
+        29
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_theta_30",
+      "family": "simult",
+      "axis": "theta",
+      "train": [
+        24,
+        25,
+        26,
+        28,
+        29,
+        31
+      ],
+      "validation": [
+        27
+      ],
+      "test": [
+        30
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_beta_30",
+      "family": "simult",
+      "axis": "beta",
+      "train": [
+        24,
+        25,
+        26,
+        28,
+        29,
+        31
+      ],
+      "validation": [
+        27
+      ],
+      "test": [
+        30
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_theta_31",
+      "family": "simult",
+      "axis": "theta",
+      "train": [
+        24,
+        25,
+        26,
+        28,
+        29,
+        30
+      ],
+      "validation": [
+        27
+      ],
+      "test": [
+        31
+      ],
+      "evaluation": "retrospective_loso"
+    },
+    {
+      "name": "loso_simult_beta_31",
+      "family": "simult",
+      "axis": "beta",
+      "train": [
+        24,
+        25,
+        26,
+        28,
+        29,
+        30
+      ],
+      "validation": [
+        27
+      ],
+      "test": [
+        31
+      ],
+      "evaluation": "retrospective_loso"
+    }
+  ]
+}

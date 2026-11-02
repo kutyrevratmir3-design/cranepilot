@@ -1,0 +1,19 @@
+{
+  "train": [3, 5, 6],
+  "validation": [4],
+  "test": [1, 2, 7, 8],
+  "seeds": [0, 1, 2],
+  "actuator_seed": 0,
+  "history_raw_samples": 41,
+  "dt_s": 0.05,
+  "prediction_steps": 30,
+  "train_origin_stride_active": 10,
+  "train_origin_stride_tail": 50,
+  "train_tail_start_sample": 2000,
+  "evaluation_origin_stride": 10,
+  "actuator_training": {"epochs": 80, "patience": 12, "batch_size": 256, "learning_rate": 0.002},
+  "angular_training": {"epochs": 50, "patience": 9, "batch_size": 256, "learning_rate": 0.002},
+  "angular_memory_dimensions": [0, 4],
+  "scope": "retrospective fixed-length command-conditioned development; no novelty or safety claim",
+  "input_information": "41 samples of past angle, measured trolley position and reference; prescribed future reference, sampled at 50 ms; no future measured trolley position or acceleration"
+}

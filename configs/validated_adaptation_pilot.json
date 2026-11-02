@@ -1,0 +1,14 @@
+{
+  "train": [3, 5, 6],
+  "validation": [4],
+  "test": [1, 2, 7, 8],
+  "prefix_period_budgets": [0, 1, 3, 5, 10],
+  "score_start_s": 25.0,
+  "history_samples": 41,
+  "horizons_s": [0.1, 0.5, 1.0],
+  "train_fraction": 0.6,
+  "minimum_improvement": 0.05,
+  "minimum_blocks": 2,
+  "gate_rule": "all horizons no worse, mean MAE at least 5% lower, wins at least 75% of non-overlapping target blocks; no refit after selection",
+  "scope": "fixed retrospective development protocol, not a safety guarantee or new-method novelty claim"
+}

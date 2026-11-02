@@ -1,0 +1,23 @@
+{
+  "description": "Exploratory pilot. Hyperparameters fixed before this run; existing data already studied.",
+  "horizons_steps": [10, 20, 35, 50, 75, 100, 150],
+  "histories": [41],
+  "train_stride": 10,
+  "eval_stride": 2,
+  "seeds": [0, 1, 2],
+  "epochs": 80,
+  "projection_weight": 0.03,
+  "trees": true,
+  "gp": true,
+  "neural": true,
+  "folds": [{
+    "name": "trolley_length_extrapolation",
+    "family": "trolley",
+    "axis": "theta",
+    "train": [3, 5, 6],
+    "validation": [4],
+    "test": [1, 2, 7, 8],
+    "evaluation": "retrospective_length_extrapolation"
+  }]
+}
+
