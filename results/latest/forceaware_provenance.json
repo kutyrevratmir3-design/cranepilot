@@ -1,0 +1,181 @@
+{
+  "status": "complete",
+  "config": {
+    "train": [
+      3,
+      5,
+      6
+    ],
+    "validation": [
+      4
+    ],
+    "evaluation": [
+      1,
+      2,
+      7,
+      8
+    ],
+    "load_stress": [
+      10,
+      11,
+      12
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "train_stride": 25,
+    "evaluation_stride": 10,
+    "training": {
+      "epochs": 100,
+      "patience": 15,
+      "batch_size": 256,
+      "learning_rate": 0.001
+    },
+    "variants": {
+      "raw_driven_huber": {
+        "forced_observer": false,
+        "driven": true,
+        "loss": "huber"
+      },
+      "forced_driven_mse": {
+        "forced_observer": true,
+        "driven": true,
+        "loss": "mse"
+      },
+      "forced_driven_huber": {
+        "forced_observer": true,
+        "driven": true,
+        "loss": "huber"
+      },
+      "forced_observer_huber": {
+        "forced_observer": true,
+        "driven": false,
+        "loss": "huber"
+      }
+    },
+    "smooth_l1_beta": 0.1,
+    "kernel": {
+      "max_points": 1024,
+      "length_scales": [
+        3.0,
+        6.0,
+        12.0,
+        24.0
+      ],
+      "families": [
+        "rbf",
+        "matern15"
+      ],
+      "noise": 0.03
+    },
+    "selection": "early stop each neural seed on seven-horizon validation MAE; average all three seeds; choose one kernel per representation on same validation score; report all variants",
+    "scope": "retrospective fixed-length trolley forecast under length extrapolation; load stress separate; no best-in-literature claim",
+    "information": "41 past angle/x/reference samples, current cable length, prescribed 30 future references at 50 ms; no future measured x, acceleration or angle",
+    "publication": "local research only; no GitHub publication authorized for this campaign"
+  },
+  "guarded_hashes": {
+    "configs\\forceaware_campaign.json": "04c145437d193001774f1b14d74b0b83be597591bb6e1abacb403a333ddf0462",
+    "artifacts\\runs\\actuator_development\\actuator.pt": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499",
+    "data\\processed\\dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "data\\processed\\manifest.json": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85",
+    "scripts\\run_forceaware.py": "1f13de4aa807b3640bbf54101bb8bc29e509e6c7505ec9ffc713fb4318d3e3a1",
+    "src\\cranepilot\\__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+    "src\\cranepilot\\adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+    "src\\cranepilot\\benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+    "src\\cranepilot\\cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+    "src\\cranepilot\\control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+    "src\\cranepilot\\data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+    "src\\cranepilot\\forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+    "src\\cranepilot\\innovation.py": "2057c59a1d11e99a9e8c666ba298db0be344418777a6c0379ac7e7adbea4e12d",
+    "src\\cranepilot\\metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+    "src\\cranepilot\\models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+    "src\\cranepilot\\passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+    "src\\cranepilot\\physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+    "src\\cranepilot\\rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "source_sha256": {
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "innovation.py": "2057c59a1d11e99a9e8c666ba298db0be344418777a6c0379ac7e7adbea4e12d",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "c700063b9e3dbe74b88c7d55e2543f8517678c73"
+  },
+  "started_utc": "2026-11-02T23:16:52.107090+00:00",
+  "calibration": {
+    "a": 0.918229758605659,
+    "b": 0.17965738544181828,
+    "damping": 0.0,
+    "evidence": [
+      {
+        "sid": 3,
+        "L_m": 0.296163868,
+        "omega_rad_s": 4.662477296953985,
+        "effective_length_m": 0.4512690483721681,
+        "tail_rms_rad": 0.25687660706753235,
+        "relative_fit_error": 0.06855882097614344,
+        "calibration_start_s": 35.0,
+        "calibration_end_s": 90.0
+      },
+      {
+        "sid": 5,
+        "L_m": 0.503289556,
+        "omega_rad_s": 3.9063586606552967,
+        "effective_length_m": 0.6428723937755333,
+        "tail_rms_rad": 0.039774216690115036,
+        "relative_fit_error": 0.11292049174564424,
+        "calibration_start_s": 35.0,
+        "calibration_end_s": 90.0
+      },
+      {
+        "sid": 6,
+        "L_m": 0.59640658,
+        "omega_rad_s": 3.6745273018519664,
+        "effective_length_m": 0.7265509086979682,
+        "tail_rms_rad": 0.1164243422052729,
+        "relative_fit_error": 0.044949612310122754,
+        "calibration_start_s": 35.0,
+        "calibration_end_s": 90.0
+      }
+    ]
+  },
+  "checkpoint_hashes": {
+    "forced_driven_huber_seed0.pt": "ae1cd975a0d5c05ef813d7131b2bcfd3b87f7e325617ec5848824baa8625d1bb",
+    "forced_driven_huber_seed1.pt": "6fc2e9d080348c8d0fb91fc9f161cab34052d940a9f7637e9dac62254b5b8de9",
+    "forced_driven_huber_seed2.pt": "376db72b58c4cbf46fb2bf808be675a70e1b6ac4eaf091081edb8a3d4a1eb3fd",
+    "forced_driven_mse_seed0.pt": "1ec5c1f8613014104f8c2fd00b02dec3fbbaa9dae959e634c0596d6c311bba8e",
+    "forced_driven_mse_seed1.pt": "961da79bd4444afd95e3417e3ac4ebc6ad3dbbdac5fbc8a275cde6e3710f65e7",
+    "forced_driven_mse_seed2.pt": "2aef9e6bef8dedd74bcaac2b6d5dce32d79b58f05ae3a0cb44d6409714f0eecc",
+    "forced_observer_huber_seed0.pt": "609ec255f57c5e04d4ae41ce72a17c729de4def95e9e7d595da92802b01e8a60",
+    "forced_observer_huber_seed1.pt": "61171bd38bc7d6dd0f0008faec6df3e4be2b59d2b8e731c00fd027cdfe5c18fb",
+    "forced_observer_huber_seed2.pt": "1f214da34fce061c78ce3b32f1c5c9d40b2dad8049bd87436210d508ad2cd15f",
+    "full_kernel.joblib": "b910f404d570ec5d614633623ebcf30c672b310216fcfde3444acac9396ccce2",
+    "phase_kernel.joblib": "08572f03e37ef0e43f7fed1bcc63423c04c47651890a9bcbef0ad4bfc8a1b262",
+    "raw_driven_huber_seed0.pt": "97d7ad3d408a9b457a624967f89e078b646379d86d815247942aa3824f745d07",
+    "raw_driven_huber_seed1.pt": "a2aa0b90d5487eed50c09bf1201e9e0ad4a28c75aa6d0dfbf594bf3f46ecffa7",
+    "raw_driven_huber_seed2.pt": "0227da5c88a80f443201744709ac28ff19c327e367d4adcc2b3447e9c3bd5c7c"
+  },
+  "finished_utc": "2026-11-02T23:23:36.495496+00:00"
+}
