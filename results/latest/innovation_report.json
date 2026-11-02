@@ -1,0 +1,25 @@
+{
+  "scope": "retrospective development; same measurement and prescribed-command information; four records",
+  "tests_passed": 28,
+  "fits_this_campaign": 9,
+  "seeds_per_variant": 3,
+  "mean_across_seven_horizons_deg": {
+    "action_physics": 0.5548530252609788,
+    "passive_m4": 0.5426714661900346,
+    "gp_action_residual": 0.5166849764088435,
+    "uniform_control": 0.5237568398606303,
+    "observer": 0.5162628664123395,
+    "driven": 0.5119289615111094
+  },
+  "improvement_vs_original_percent": {
+    "uniform_control": 3.485465425738954,
+    "observer": 4.866406550376324,
+    "driven": 5.665030611386457
+  },
+  "wins_of_28_scenario_horizon_pairs_vs_gp": {
+    "uniform_control": 10,
+    "observer": 12,
+    "driven": 13
+  },
+  "caution": "Model variants and protocol changed; matched-training control separates part of that effect. No new independent physical trials. Learned innovation is an additional energy port, not a physical force identification or closed-loop safety claim."
+}

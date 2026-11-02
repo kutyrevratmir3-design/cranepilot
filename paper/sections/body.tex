@@ -16,6 +16,9 @@ synthetic plant mismatch. These controller experiments assume state
 feedback and do not validate the neural predictor inside MPC. The current
 evidence establishes a reproducible research baseline and identifies the
 need for stronger adaptive-physics comparisons before a novel-method claim.
+An additional command-conditioned passive-memory model is implemented with
+a discrete storage balance. Its short-horizon gains do not uniformly exceed
+a same-information GP residual reference.
 No new physical experiments or industrial safety claims are made.
 \end{abstract}
 
@@ -214,6 +217,101 @@ than attributed to model architecture.
 two angular outputs are averaged over their scenario--axis scores.}
 \end{figure}
 
+\section{Action-conditioned passive-memory development}
+\subsection{Information set and actuator identification}
+An additional fixed-length trolley experiment supplies a 41-sample
+history of sway, measured trolley position and recorded reference, together
+with the prescribed future reference. No future measured trolley position
+or acceleration enters a predictor. This information set differs from the
+earlier angle-only benchmark. Forecast origins are spaced by 0.1~s and
+rollout integration uses 0.05~s steps; scores must not be mixed with the
+earlier, denser origin grid.
+
+The reference is retained in its recorded numerical scale. In training
+scenario~3, a reference of 0.25 coexists with a stationary measured position
+near 0.508~m, so treating the reference as exact position or acceleration
+would be unjustified. A small recurrent actuator model is fitted to
+multi-step position error using scenarios 3, 5 and 6, with early stopping
+on scenario~4. On that validation scenario, 1~s position MAE is 2.43~mm,
+versus 4.86~mm for constant velocity. At 0.1~s the learned actuator is
+worse: 0.25 versus 0.16~mm. The actuator is frozen before sway fitting.
+These values do not establish an identified industrial drive model.
+
+\subsection{Phase-exact passive-memory surrogate}
+Output-error port-Hamiltonian identification with causal state encoding
+already exists\cite{moradi2025}; so do orthogonal model augmentation
+\cite{gyorok2025} and power-preserving neural discretisations
+\cite{linares2026}. The present candidate is a particular fixed-length,
+small-angle construction, not a claim to introduce those general ideas.
+For $\tau=\omega t$, let $z=[q,p,r^\mathsf T]^\mathsf T$, where
+$p=\dot q/\omega$ and $r$ contains four latent memory states.
+A causal encoder provides a bounded initial memory and a velocity
+correction. A small network supplies nonnegative damping $d$, positive
+rates $\Lambda$, and exchange coefficients $c$, fixed over each rollout.
+Its closure matrix and model storage are
+\begin{equation}
+ C=\begin{bmatrix}0&0&0\\0&-d&c^\mathsf T\\0&-c&-\Lambda\end{bmatrix},
+ \qquad E(z)=\tfrac12\|z\|^2 .
+\end{equation}
+Two Cayley closure half-steps surround an analytic forced-oscillator
+rotation with phase $\omega\Delta t$ and force $f=-\hat a_x/g$.
+For one closure step of dimensionless duration $\delta$,
+\begin{equation}
+ z^+=(I-\delta C/2)^{-1}(I+\delta C/2)z,\qquad
+ E(z^+)-E(z)=-\delta(d\bar p^2+\bar r^\mathsf T\Lambda\bar r),
+\end{equation}
+where $\bar z=(z+z^+)/2$. The central rotation supplies work
+$f(q^+_{\rm rot}-q^-_{\rm rot})$. Summing these terms yields an exact
+discrete storage balance in exact arithmetic. With no input, the full
+storage cannot increase. When closure is disabled, the base oscillator
+has no numerical phase error. These properties do not eliminate model
+error or imply closed-loop stability. Nonzero memory can change the modes
+of the complete model, and observer resets can change storage.
+
+Independent tests check analytic rotation, storage, finite-difference
+gradients, batch independence, and second-order convergence to a separate
+adaptive solver for constant coefficients. Maximum storage-balance
+residual in the float32 forecasting runs is about $8.4\times10^{-8}$ in
+normalised storage units. A comparison with the same encoder and no
+memory isolates part of the benefit of latent states; its parameter
+counts are 7266 without memory and 7662 with memory.
+
+\subsection{Same-information references and retained result}
+The neural actuator is shared across all action-conditioned methods.
+Three fixed seeds are averaged for each neural variant. Direct MLP and
+GP residual references receive the same available past packet and future
+command, including the deterministic actuator rollout. The GP uses up
+to 512 training points; four fixed kernel length scales are compared on
+scenario~4 before evaluation. The selected GP and MLP are forecasting
+references, not recursive plant models inside MPC.
+
+\begin{table}[H]
+\centering\small
+\caption{Additional retrospective trolley pilot: mean MAE in degrees
+across scenarios 1, 2, 7 and 8. The angle-only row has less information;
+the remaining rows share prescribed future commands and past trolley
+measurements. The origin grid differs from Table~\ref{tab:forecast}.}
+\label{tab:passive}
+\input{passive_rollout_table}
+\end{table}
+
+PEPM improves 0.1~s MAE over action-conditioned physics from 0.245 to
+0.228~degrees; the same observer without memory gives 0.235~degrees.
+However, the GP reference achieves 0.216~degrees and is stronger at several
+intermediate horizons. At 1~s, PEPM gives 0.765~degrees versus 0.757 for
+action-conditioned physics. Thus the passive construction is implemented
+and numerically checked, but broad predictive superiority is not established.
+No thresholds or architecture settings were retuned from these evaluation
+scores. The proposed neural model has not yet been evaluated inside MPC.
+
+\begin{figure}[H]
+\centering\includegraphics[width=\linewidth]{figures/passive_rollout.png}
+\caption{The action-conditioned pilot retains GP and simple-physics
+comparators. Active-at-origin labels use a backward-only velocity fit.
+Prescribed future commands change the information set relative to the
+angle-only harmonic reference.}
+\end{figure}
+
 \section{Separate simulation-based control pilot}
 \subsection{Plant and controller}
 The simulation uses a nonlinear prescribed-acceleration pendulum with
@@ -365,10 +463,11 @@ is assigned to a coauthor.
 \section{Conclusion of the current development stage}
 The first implementation establishes a causal, scenario-separated
 Python benchmark and a distinct simulation-based control pipeline.
-The strongest initial long-horizon predictor is calibrated physics,
-while the exploratory learned correction has mixed horizon-dependent
-effects. These findings support further work on causal adaptation and
-action-conditioned modelling, and do not yet support a completed
-state-of-the-art-method claim.
+Calibrated physics remains a strong long-horizon reference, while learned
+corrections have mixed horizon-dependent effects. The additional
+action-conditioned passive-memory model supplies a checked discrete storage
+balance but does not uniformly outperform a GP residual. Further work must
+resolve input-path uncertainty, test coupled dynamics and establish a
+predictive advantage before a state-of-the-art-method claim is supported.
 
 

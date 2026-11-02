@@ -1,0 +1,9 @@
+{
+  "train": [3, 5, 6], "validation": [4], "evaluation": [1, 2, 7, 8],
+  "seeds": [0, 1, 2], "variants": ["observer", "driven"],
+  "train_stride": 25, "evaluation_stride": 10,
+  "training": {"epochs": 100, "patience": 15, "batch_size": 256, "learning_rate": 0.001},
+  "selection": "per-variant early stopping on validation mean absolute error at seven horizons; average all three seeds; report both variants",
+  "scope": "retrospective development; no independent physical confirmation",
+  "change": "uniform training origins; bounded q and frequency observer; optional explicit learned forcing port; frozen original actuator"
+}

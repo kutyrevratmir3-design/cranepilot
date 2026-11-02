@@ -22,6 +22,9 @@ No claim of experimentally validating a newly designed controller.
 - Separate paired synthetic MPC pilot: 16 contexts, 32 episodes.
 - Causal-prefix adaptation pilot, including its negative result.
 - Scientific-contract and numerical tests, generated figures and LaTeX sources.
+- Causal native-reference drive identification and command-conditioned rollouts.
+- Passive-memory model with memory-free ablation, three seeds each.
+- Same-information GP and MLP residual references; 25 numerical/scientific tests.
 
 ## Findings that change the research direction
 
@@ -65,11 +68,27 @@ Do not claim that a useful baseline implementation is a new method.
 If a candidate cannot beat adaptive physics, GP residuals or a simpler model
 under a fair protocol, reject that candidate and preserve its results.
 
-## External dependencies
+## Current method decision
 
-Overleaf requires sign-in in the connected in-app browser before remote edits
-and renaming can be verified. The local manuscript remains editable meanwhile.
-GitHub access is authenticated, but the visible installation currently exposes
-only KrafterDen/pazzle; do not put crane research into that unrelated project.
-A separate empty cranepilot repository with write access is needed for publication.
+The passive-memory construction has an exact discrete storage balance and a
+verified differentiable implementation, but its retained pilot does not beat
+the GP residual across horizons. Keep its negative and mixed results. The
+reference-to-actual drive audit is complete for the initial fixed-length pilot;
+short-horizon drive error and causal state estimation remain development targets.
+See PASSIVE_ROLLOUT.md before defining any new experiment. Existing evaluation
+records are retrospective, not a fresh confirmatory test.
 
+## External state
+
+GitHub repository: https://github.com/kutyrevratmir3-design/cranepilot.
+Overleaf is authenticated and the original manuscript is preserved alongside
+the development draft. See CHECKPOINT.md and results/latest/overleaf_build.json
+for publication and compilation status.
+
+## Observer/innovation follow-up completed
+
+Nine further fits and a matched-training control are complete; see
+INNOVATION_RESULTS.md. Driven innovation helps active long-horizon motion but
+does not dominate GP across horizons. Next isolate initial-angle versus frequency
+correction on development data and define independent simulation tests before
+claiming controller performance. Do not select horizon mixtures on evaluation.

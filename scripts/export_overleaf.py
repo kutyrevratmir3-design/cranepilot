@@ -12,7 +12,7 @@ def main():
     out.mkdir(parents=True,exist_ok=True)
     main=(paper/"main.tex").read_text()
     body=(paper/"sections/body.tex").read_text()
-    for name in ["forecast_table","control_table","all_family_neural_table"]:
+    for name in ["forecast_table","control_table","all_family_neural_table","passive_rollout_table"]:
         body=body.replace("\\input{"+name+"}",(paper/f"{name}.tex").read_text())
     main=main.replace("\\input{sections/body}",body).replace("\\bibliography{refs}","\\bibliography{cranepilot_refs}")
     figures=re.findall(r"\\includegraphics(?:\[[^]]*\])?\{([^}]+)\}",main)
