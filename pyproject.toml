@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cranepilot-research"
+version = "0.1.0"
+description = "Physics-guided prediction and simulation control under cable-length shift"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Ratmir Kutyrev"}]
+dependencies = [
+  "numpy>=2.0", "scipy>=1.15", "pandas>=2.2", "openpyxl>=3.1",
+  "scikit-learn>=1.7", "matplotlib>=3.9", "torch>=2.6",
+]
+
+[project.optional-dependencies]
+reports = ["reportlab>=4.4", "pypdfium2>=5.0"]
+
+[project.scripts]
+cranepilot = "cranepilot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "n_folds": 24,
+  "note": "Historical indexing retained here only; newest input is at i-1, target at i+H.",
+  "max_absolute_difference_deg": 9.903189379656396e-14
+}

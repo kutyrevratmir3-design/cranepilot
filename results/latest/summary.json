@@ -1,0 +1,77 @@
+{
+  "status": "exploratory",
+  "forecast_test_scenarios": [
+    1,
+    2,
+    7,
+    8
+  ],
+  "n_forecast_models": 11,
+  "calibrated_mae_1s": 0.7578352286890591,
+  "projected_mae_1s": 0.9074396966570557,
+  "calibrated_mae_0p1s": 0.2999361469441922,
+  "projected_mae_0p1s": 0.21930277888481084,
+  "neural_seeds": [
+    0,
+    1,
+    2
+  ],
+  "config_sha256": "7c4ef91e0840afba2c56b2dccbfdf9e0a10c44c8c64d18374664bb17eedbf957",
+  "baseline_scenario_axis_folds": 38,
+  "baseline_histories": [
+    3,
+    41
+  ],
+  "neural_scenario_axis_folds": 38,
+  "trained_neural_networks": 342,
+  "adaptation_1s_mae_by_cycles": {
+    "0": 0.6725226149181135,
+    "1": 1.9820462196306479,
+    "3": 1.2960821338881394,
+    "5": 1.3203527686865928,
+    "10": 1.0993533728301395
+  },
+  "control_paired_contexts": 16,
+  "control_summary": {
+    "calibrated_mpc": {
+      "episode": 7.5,
+      "cable_m": 0.475,
+      "residual_rms_deg": 0.06393916615034835,
+      "peak_angle_deg": 5.523409253281729,
+      "sway_ise_deg2_s": 21.862918029621138,
+      "final_position_error_m": 0.0011377168794770374,
+      "settling_time_s": 2.9781250000000004,
+      "settled": 1.0,
+      "effort_proxy": 0.42509289640461595,
+      "angle_over_15deg": 0.0,
+      "speed_over_0p5ms": 0.0,
+      "solver_failures": 0.0,
+      "solve_p99_ms": 1.453892624996057,
+      "solve_max_ms": 2.7749812500417192,
+      "deadline_misses": 0.0
+    },
+    "nominal_mpc": {
+      "episode": 7.5,
+      "cable_m": 0.475,
+      "residual_rms_deg": 0.08050304164829335,
+      "peak_angle_deg": 5.692152151027021,
+      "sway_ise_deg2_s": 27.488385146428193,
+      "final_position_error_m": 0.0006727527122412125,
+      "settling_time_s": 2.9937500000000004,
+      "settled": 1.0,
+      "effort_proxy": 0.4555005801906588,
+      "angle_over_15deg": 0.0,
+      "speed_over_0p5ms": 0.0,
+      "solver_failures": 0.0,
+      "solve_p99_ms": 1.7877569999723155,
+      "solve_max_ms": 2.7161999999805175,
+      "deadline_misses": 0.0
+    }
+  },
+  "control_paired_statistics": {
+    "mean": -0.016563875497945003,
+    "low": -0.03219710452069414,
+    "high": -0.0036985998706519545,
+    "n": 16
+  }
+}
