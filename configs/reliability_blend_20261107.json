@@ -1,0 +1,15 @@
+{
+  "experiment": "reliability_blend_20261107",
+  "source_run": "artifacts/runs/temporal_20261106",
+  "folds": ["primary", "short_transfer", "long_transfer"],
+  "seeds": [0, 1, 2],
+  "tau_bins": [0.05, 0.1, 0.25, 0.5, 1.0, 2.0],
+  "evaluation_stride": 10,
+  "active_threshold": 0.005,
+  "validation_max_ratio": 1.01,
+  "development_config": "configs/cleanroom_20261106.json",
+  "confirmation_config": "configs/limit_audit_20261107_float64.json",
+  "confirmation_field": "confirmation_reserved_not_evaluated",
+  "selection": "Among validation-all/active/quiet within 1% of incumbent, minimize exposed synthetic development mean MAE over all damping and history modes. Incumbent is always eligible; report every threshold. Different objective from the accuracy-first continuation screen.",
+  "scope": "Frozen neural/actor/calibration weights; deterministic causal mixture; six fixed thresholds, no optimizer. Lock before any real test or reserved-grid evaluation. Same simulator family, not independent hardware validation. Local only."
+}
