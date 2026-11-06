@@ -1,0 +1,140 @@
+{
+  "history_only_inputs": [
+    "theta",
+    "x",
+    "reference",
+    "length_m",
+    "future_reference"
+  ],
+  "comparisons": [
+    {
+      "fold": "primary",
+      "variant": "dense_horizon",
+      "resolved_variant": "dense_horizon",
+      "max_absolute_difference_deg": 5.976415195618756e-06,
+      "packets": 3
+    },
+    {
+      "fold": "primary",
+      "variant": "temporal_uniform",
+      "resolved_variant": "temporal_uniform",
+      "max_absolute_difference_deg": 1.1952830391237512e-05,
+      "packets": 3
+    },
+    {
+      "fold": "primary",
+      "variant": "temporal_horizon",
+      "resolved_variant": "temporal_horizon",
+      "max_absolute_difference_deg": 6.830188794992864e-06,
+      "packets": 3
+    },
+    {
+      "fold": "primary",
+      "variant": "tcn_reference",
+      "resolved_variant": "tcn_reference",
+      "max_absolute_difference_deg": 6.40330199530581e-07,
+      "packets": 3
+    },
+    {
+      "fold": "primary",
+      "variant": "forced_driven_huber",
+      "resolved_variant": "forced_driven_huber",
+      "max_absolute_difference_deg": 5.122641596244648e-06,
+      "packets": 3
+    },
+    {
+      "fold": "primary",
+      "variant": "selected_candidate",
+      "resolved_variant": "forced_driven_huber",
+      "max_absolute_difference_deg": 5.122641596244648e-06,
+      "packets": 3
+    },
+    {
+      "fold": "short_transfer",
+      "variant": "dense_horizon",
+      "resolved_variant": "dense_horizon",
+      "max_absolute_difference_deg": 1.6221698388108052e-05,
+      "packets": 3
+    },
+    {
+      "fold": "short_transfer",
+      "variant": "temporal_uniform",
+      "resolved_variant": "temporal_uniform",
+      "max_absolute_difference_deg": 6.830188794992864e-06,
+      "packets": 3
+    },
+    {
+      "fold": "short_transfer",
+      "variant": "temporal_horizon",
+      "resolved_variant": "temporal_horizon",
+      "max_absolute_difference_deg": 7.683962394366972e-06,
+      "packets": 3
+    },
+    {
+      "fold": "short_transfer",
+      "variant": "tcn_reference",
+      "resolved_variant": "tcn_reference",
+      "max_absolute_difference_deg": 4.26886799687054e-07,
+      "packets": 3
+    },
+    {
+      "fold": "short_transfer",
+      "variant": "forced_driven_huber",
+      "resolved_variant": "forced_driven_huber",
+      "max_absolute_difference_deg": 9.391509593115188e-06,
+      "packets": 3
+    },
+    {
+      "fold": "short_transfer",
+      "variant": "selected_candidate",
+      "resolved_variant": "dense_horizon",
+      "max_absolute_difference_deg": 1.6221698388108052e-05,
+      "packets": 3
+    },
+    {
+      "fold": "long_transfer",
+      "variant": "dense_horizon",
+      "resolved_variant": "dense_horizon",
+      "max_absolute_difference_deg": 8.53773599374108e-06,
+      "packets": 3
+    },
+    {
+      "fold": "long_transfer",
+      "variant": "temporal_uniform",
+      "resolved_variant": "temporal_uniform",
+      "max_absolute_difference_deg": 8.53773599374108e-06,
+      "packets": 3
+    },
+    {
+      "fold": "long_transfer",
+      "variant": "temporal_horizon",
+      "resolved_variant": "temporal_horizon",
+      "max_absolute_difference_deg": 6.830188794992864e-06,
+      "packets": 3
+    },
+    {
+      "fold": "long_transfer",
+      "variant": "tcn_reference",
+      "resolved_variant": "tcn_reference",
+      "max_absolute_difference_deg": 8.53773599374108e-07,
+      "packets": 3
+    },
+    {
+      "fold": "long_transfer",
+      "variant": "forced_driven_huber",
+      "resolved_variant": "forced_driven_huber",
+      "max_absolute_difference_deg": 9.391509593115188e-06,
+      "packets": 3
+    },
+    {
+      "fold": "long_transfer",
+      "variant": "selected_candidate",
+      "resolved_variant": "temporal_horizon",
+      "max_absolute_difference_deg": 6.830188794992864e-06,
+      "packets": 3
+    }
+  ],
+  "max_absolute_difference_deg": 1.6221698388108052e-05,
+  "tolerance_deg": 5e-05,
+  "passed": true
+}

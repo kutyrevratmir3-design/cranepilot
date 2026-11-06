@@ -7,9 +7,42 @@ forecasting study. This repository separates measured-data forecasting from
 simulation-only controller evaluation. It is an evolving research implementation,
 not a finished industrial controller or an accepted journal paper.
 
-## Local research update: 3 November 2026
+## Local research update: 6 November 2026
 
-The current force-aware robust NN has the lowest mean error among the retained
+Completed 36 further angular fits with temporal-convolution encoders, a TCN
+reference and a matched training-objective ablation. Selection was locked using
+validation before this stage's evaluation. The selected long-transfer model
+improves macro MAE by 3.03%; the selected short-transfer model regresses 1.49%.
+The primary default remains the previous force-aware model.
+
+| Extrapolation protocol | Previous model | Validation-selected candidate |
+|---|---:|---:|
+| Primary | 0.50050 | 0.50050 (same model) |
+| Shorter lengths | 0.43213 | 0.43858 |
+| Longer lengths | 0.51264 | 0.49712 |
+
+Scores are mean scenario/horizon MAE in degrees, not independent-test proof.
+The long-transfer gain does not extend to active-at-origin windows: their
+seven-horizon average worsens from 0.93185 to 0.96782 degrees. All variants,
+including the unselected 0.41412 short-transfer result, remain in the report.
+No universal replacement or best-in-literature claim is justified.
+
+A frozen 576-case free-sway check exposes another limit: learned corrections
+can worsen a simple known physical regime. We also verified and causally
+reconstructed a separate Aalto industrial dataset; no model was trained or
+scored on it. There are now 49 passing tests. All new work remains local.
+
+See [the complete stage report](docs/RESEARCH_2026_11_06.md),
+[the fixed design](docs/TEMPORAL_DESIGN.md), and
+[the independent-data audit](docs/AALTO_DATA_AUDIT.md).
+
+```sh
+python -m scripts.predict_temporal --input examples/history_packet.npz --output forecast.csv
+```
+
+## Previous local research stage: 3 November 2026
+
+At that stage the force-aware robust NN had the lowest mean error among the retained
 methods in the primary length-extrapolation protocol and two additional training
 ranges. This is a retrospective development result, not a best-in-literature claim.
 
@@ -178,7 +211,8 @@ python scripts/report_innovation.py
 ```
 
 See [the full results](docs/INNOVATION_RESULTS.md). The separately compiled
-11-page paper predates this newest campaign. Tests now total 28.
+11-page paper predates this campaign. That historical checkpoint had 28 tests;
+the latest local stage has 49.
 
 ## Claims and limitations
 

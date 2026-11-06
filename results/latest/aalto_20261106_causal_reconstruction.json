@@ -1,0 +1,753 @@
+{
+  "source_doi": "10.5281/zenodo.6907569",
+  "license": "CC BY 4.0",
+  "source_sha256": "78269ff76e330910ed1789a20874bfccfcbbe26b38aac3d4f0bad37187d88952",
+  "output_sha256": "1d2579af4c65c8af611553aa0952376f217701bac080b4a84dd82631d0db0d31",
+  "script_sha256": "bb083dfff7adb429eb4294786c26be0f894d788d626a1c7b7d120ef708e52b6f",
+  "signals": {
+    "trolley_angle_rad": "Status.Trolley.RopeAngle.Angle_rad",
+    "bridge_angle_rad": "Status.Bridge.RopeAngle.Angle_rad",
+    "trolley_position_m": "Status.Trolley.Position.Position_m",
+    "bridge_position_m": "Status.Bridge.Position.Position_m",
+    "hoist_position_m": "Status.Hoist.Position.Position_m",
+    "trolley_speed_mmin": "Status.Trolley.ControlSignals.SpeedFeedback_mmin",
+    "bridge_speed_mmin": "Status.Bridge.ControlSignals.SpeedFeedback_mmin",
+    "trolley_speed_request_native": "Status.Trolley.ControlSignals.SpeedRequest",
+    "bridge_speed_request_native": "Status.Bridge.ControlSignals.SpeedRequest",
+    "sling_setting_mm": "RadioSelection.SwayControl_SlingLength_mm"
+  },
+  "summaries": [
+    {
+      "cycle": 1,
+      "signal": "trolley_angle_rad",
+      "rows": 2490,
+      "missing_rows": 88,
+      "events": 1900,
+      "median_log_age_s": 0.166,
+      "max_log_age_s": 12.776
+    },
+    {
+      "cycle": 1,
+      "signal": "bridge_angle_rad",
+      "rows": 2490,
+      "missing_rows": 12,
+      "events": 2004,
+      "median_log_age_s": 0.165,
+      "max_log_age_s": 0.419
+    },
+    {
+      "cycle": 1,
+      "signal": "trolley_position_m",
+      "rows": 2490,
+      "missing_rows": 88,
+      "events": 1285,
+      "median_log_age_s": 0.227,
+      "max_log_age_s": 31.673
+    },
+    {
+      "cycle": 1,
+      "signal": "bridge_position_m",
+      "rows": 2490,
+      "missing_rows": 12,
+      "events": 1162,
+      "median_log_age_s": 0.273,
+      "max_log_age_s": 47.214
+    },
+    {
+      "cycle": 1,
+      "signal": "hoist_position_m",
+      "rows": 2490,
+      "missing_rows": 32,
+      "events": 814,
+      "median_log_age_s": 7.77,
+      "max_log_age_s": 41.328
+    },
+    {
+      "cycle": 1,
+      "signal": "trolley_speed_mmin",
+      "rows": 2490,
+      "missing_rows": 69,
+      "events": 1136,
+      "median_log_age_s": 0.269,
+      "max_log_age_s": 39.473
+    },
+    {
+      "cycle": 1,
+      "signal": "bridge_speed_mmin",
+      "rows": 2490,
+      "missing_rows": 1,
+      "events": 1117,
+      "median_log_age_s": 0.273,
+      "max_log_age_s": 46.667
+    },
+    {
+      "cycle": 1,
+      "signal": "trolley_speed_request_native",
+      "rows": 2490,
+      "missing_rows": 69,
+      "events": 245,
+      "median_log_age_s": 6.468,
+      "max_log_age_s": 44.964
+    },
+    {
+      "cycle": 1,
+      "signal": "bridge_speed_request_native",
+      "rows": 2490,
+      "missing_rows": 1,
+      "events": 321,
+      "median_log_age_s": 5.617,
+      "max_log_age_s": 53.468
+    },
+    {
+      "cycle": 1,
+      "signal": "sling_setting_mm",
+      "rows": 2490,
+      "missing_rows": 0,
+      "events": 1,
+      "median_log_age_s": 313.749,
+      "max_log_age_s": 624.874
+    },
+    {
+      "cycle": 2,
+      "signal": "trolley_angle_rad",
+      "rows": 3709,
+      "missing_rows": 1,
+      "events": 2987,
+      "median_log_age_s": 0.164,
+      "max_log_age_s": 0.87
+    },
+    {
+      "cycle": 2,
+      "signal": "bridge_angle_rad",
+      "rows": 3709,
+      "missing_rows": 59,
+      "events": 2866,
+      "median_log_age_s": 0.166,
+      "max_log_age_s": 23.714
+    },
+    {
+      "cycle": 2,
+      "signal": "trolley_position_m",
+      "rows": 3709,
+      "missing_rows": 1,
+      "events": 1445,
+      "median_log_age_s": 0.565,
+      "max_log_age_s": 65.428
+    },
+    {
+      "cycle": 2,
+      "signal": "bridge_position_m",
+      "rows": 3709,
+      "missing_rows": 59,
+      "events": 1020,
+      "median_log_age_s": 4.5205,
+      "max_log_age_s": 61.272
+    },
+    {
+      "cycle": 2,
+      "signal": "hoist_position_m",
+      "rows": 3709,
+      "missing_rows": 34,
+      "events": 1165,
+      "median_log_age_s": 6.587,
+      "max_log_age_s": 53.525
+    },
+    {
+      "cycle": 2,
+      "signal": "trolley_speed_mmin",
+      "rows": 3709,
+      "missing_rows": 15,
+      "events": 1109,
+      "median_log_age_s": 1.6965,
+      "max_log_age_s": 65.116
+    },
+    {
+      "cycle": 2,
+      "signal": "bridge_speed_mmin",
+      "rows": 3709,
+      "missing_rows": 72,
+      "events": 1026,
+      "median_log_age_s": 4.375,
+      "max_log_age_s": 61.022
+    },
+    {
+      "cycle": 2,
+      "signal": "trolley_speed_request_native",
+      "rows": 3709,
+      "missing_rows": 15,
+      "events": 534,
+      "median_log_age_s": 4.3195,
+      "max_log_age_s": 65.725
+    },
+    {
+      "cycle": 2,
+      "signal": "bridge_speed_request_native",
+      "rows": 3709,
+      "missing_rows": 72,
+      "events": 456,
+      "median_log_age_s": 6.214,
+      "max_log_age_s": 61.365
+    },
+    {
+      "cycle": 2,
+      "signal": "sling_setting_mm",
+      "rows": 3709,
+      "missing_rows": 88,
+      "events": 1,
+      "median_log_age_s": 452.522,
+      "max_log_age_s": 905.022
+    },
+    {
+      "cycle": 3,
+      "signal": "trolley_angle_rad",
+      "rows": 2754,
+      "missing_rows": 96,
+      "events": 2100,
+      "median_log_age_s": 0.165,
+      "max_log_age_s": 14.875
+    },
+    {
+      "cycle": 3,
+      "signal": "bridge_angle_rad",
+      "rows": 2754,
+      "missing_rows": 12,
+      "events": 2216,
+      "median_log_age_s": 0.164,
+      "max_log_age_s": 0.567
+    },
+    {
+      "cycle": 3,
+      "signal": "trolley_position_m",
+      "rows": 2754,
+      "missing_rows": 96,
+      "events": 1602,
+      "median_log_age_s": 0.218,
+      "max_log_age_s": 34.273
+    },
+    {
+      "cycle": 3,
+      "signal": "bridge_position_m",
+      "rows": 2754,
+      "missing_rows": 12,
+      "events": 1554,
+      "median_log_age_s": 0.223,
+      "max_log_age_s": 37.723
+    },
+    {
+      "cycle": 3,
+      "signal": "hoist_position_m",
+      "rows": 2754,
+      "missing_rows": 32,
+      "events": 755,
+      "median_log_age_s": 10.444,
+      "max_log_age_s": 59.018
+    },
+    {
+      "cycle": 3,
+      "signal": "trolley_speed_mmin",
+      "rows": 2754,
+      "missing_rows": 65,
+      "events": 1493,
+      "median_log_age_s": 0.221,
+      "max_log_age_s": 47.073
+    },
+    {
+      "cycle": 3,
+      "signal": "bridge_speed_mmin",
+      "rows": 2754,
+      "missing_rows": 1,
+      "events": 1519,
+      "median_log_age_s": 0.222,
+      "max_log_age_s": 40.328
+    },
+    {
+      "cycle": 3,
+      "signal": "trolley_speed_request_native",
+      "rows": 2754,
+      "missing_rows": 65,
+      "events": 516,
+      "median_log_age_s": 2.667,
+      "max_log_age_s": 46.573
+    },
+    {
+      "cycle": 3,
+      "signal": "bridge_speed_request_native",
+      "rows": 2754,
+      "missing_rows": 1,
+      "events": 522,
+      "median_log_age_s": 3.217,
+      "max_log_age_s": 39.828
+    },
+    {
+      "cycle": 3,
+      "signal": "sling_setting_mm",
+      "rows": 2754,
+      "missing_rows": 0,
+      "events": 2,
+      "median_log_age_s": 241.851,
+      "max_log_age_s": 585.976
+    },
+    {
+      "cycle": 4,
+      "signal": "trolley_angle_rad",
+      "rows": 3671,
+      "missing_rows": 1,
+      "events": 2965,
+      "median_log_age_s": 0.165,
+      "max_log_age_s": 0.577
+    },
+    {
+      "cycle": 4,
+      "signal": "bridge_angle_rad",
+      "rows": 3671,
+      "missing_rows": 66,
+      "events": 2819,
+      "median_log_age_s": 0.167,
+      "max_log_age_s": 29.516
+    },
+    {
+      "cycle": 4,
+      "signal": "trolley_position_m",
+      "rows": 3671,
+      "missing_rows": 173,
+      "events": 1360,
+      "median_log_age_s": 0.4725,
+      "max_log_age_s": 70.528
+    },
+    {
+      "cycle": 4,
+      "signal": "bridge_position_m",
+      "rows": 3671,
+      "missing_rows": 66,
+      "events": 1243,
+      "median_log_age_s": 0.964,
+      "max_log_age_s": 40.217
+    },
+    {
+      "cycle": 4,
+      "signal": "hoist_position_m",
+      "rows": 3671,
+      "missing_rows": 40,
+      "events": 996,
+      "median_log_age_s": 5.274,
+      "max_log_age_s": 53.415
+    },
+    {
+      "cycle": 4,
+      "signal": "trolley_speed_mmin",
+      "rows": 3671,
+      "missing_rows": 11,
+      "events": 1117,
+      "median_log_age_s": 1.8775,
+      "max_log_age_s": 70.216
+    },
+    {
+      "cycle": 4,
+      "signal": "bridge_speed_mmin",
+      "rows": 3671,
+      "missing_rows": 80,
+      "events": 1179,
+      "median_log_age_s": 1.576,
+      "max_log_age_s": 66.113
+    },
+    {
+      "cycle": 4,
+      "signal": "trolley_speed_request_native",
+      "rows": 3671,
+      "missing_rows": 11,
+      "events": 541,
+      "median_log_age_s": 3.745,
+      "max_log_age_s": 71.121
+    },
+    {
+      "cycle": 4,
+      "signal": "bridge_speed_request_native",
+      "rows": 3671,
+      "missing_rows": 80,
+      "events": 614,
+      "median_log_age_s": 3.371,
+      "max_log_age_s": 66.722
+    },
+    {
+      "cycle": 4,
+      "signal": "sling_setting_mm",
+      "rows": 3671,
+      "missing_rows": 94,
+      "events": 1,
+      "median_log_age_s": 447.225,
+      "max_log_age_s": 894.225
+    },
+    {
+      "cycle": 5,
+      "signal": "trolley_angle_rad",
+      "rows": 4115,
+      "missing_rows": 64,
+      "events": 3214,
+      "median_log_age_s": 0.166,
+      "max_log_age_s": 14.525
+    },
+    {
+      "cycle": 5,
+      "signal": "bridge_angle_rad",
+      "rows": 4115,
+      "missing_rows": 12,
+      "events": 3308,
+      "median_log_age_s": 0.165,
+      "max_log_age_s": 0.379
+    },
+    {
+      "cycle": 5,
+      "signal": "trolley_position_m",
+      "rows": 4115,
+      "missing_rows": 64,
+      "events": 1917,
+      "median_log_age_s": 0.272,
+      "max_log_age_s": 40.67
+    },
+    {
+      "cycle": 5,
+      "signal": "bridge_position_m",
+      "rows": 4115,
+      "missing_rows": 12,
+      "events": 2413,
+      "median_log_age_s": 0.22,
+      "max_log_age_s": 36.375
+    },
+    {
+      "cycle": 5,
+      "signal": "hoist_position_m",
+      "rows": 4115,
+      "missing_rows": 76,
+      "events": 621,
+      "median_log_age_s": 22.572,
+      "max_log_age_s": 82.62
+    },
+    {
+      "cycle": 5,
+      "signal": "trolley_speed_mmin",
+      "rows": 4115,
+      "missing_rows": 56,
+      "events": 1790,
+      "median_log_age_s": 0.274,
+      "max_log_age_s": 58.167
+    },
+    {
+      "cycle": 5,
+      "signal": "bridge_speed_mmin",
+      "rows": 4115,
+      "missing_rows": 1,
+      "events": 2441,
+      "median_log_age_s": 0.217,
+      "max_log_age_s": 39.074
+    },
+    {
+      "cycle": 5,
+      "signal": "trolley_speed_request_native",
+      "rows": 4115,
+      "missing_rows": 56,
+      "events": 819,
+      "median_log_age_s": 4.12,
+      "max_log_age_s": 63.47
+    },
+    {
+      "cycle": 5,
+      "signal": "bridge_speed_request_native",
+      "rows": 4115,
+      "missing_rows": 1,
+      "events": 937,
+      "median_log_age_s": 2.364,
+      "max_log_age_s": 39.922
+    },
+    {
+      "cycle": 5,
+      "signal": "sling_setting_mm",
+      "rows": 4115,
+      "missing_rows": 0,
+      "events": 1,
+      "median_log_age_s": 516.476,
+      "max_log_age_s": 1030.726
+    },
+    {
+      "cycle": 6,
+      "signal": "trolley_angle_rad",
+      "rows": 7189,
+      "missing_rows": 13,
+      "events": 5763,
+      "median_log_age_s": 0.1645,
+      "max_log_age_s": 0.569
+    },
+    {
+      "cycle": 6,
+      "signal": "bridge_angle_rad",
+      "rows": 7189,
+      "missing_rows": 61,
+      "events": 5692,
+      "median_log_age_s": 0.165,
+      "max_log_age_s": 12.479
+    },
+    {
+      "cycle": 6,
+      "signal": "trolley_position_m",
+      "rows": 7189,
+      "missing_rows": 13,
+      "events": 3148,
+      "median_log_age_s": 0.2785,
+      "max_log_age_s": 41.073
+    },
+    {
+      "cycle": 6,
+      "signal": "bridge_position_m",
+      "rows": 7189,
+      "missing_rows": 61,
+      "events": 2310,
+      "median_log_age_s": 0.8155,
+      "max_log_age_s": 46.565
+    },
+    {
+      "cycle": 6,
+      "signal": "hoist_position_m",
+      "rows": 7189,
+      "missing_rows": 1,
+      "events": 582,
+      "median_log_age_s": 53.9695,
+      "max_log_age_s": 242.72
+    },
+    {
+      "cycle": 6,
+      "signal": "trolley_speed_mmin",
+      "rows": 7189,
+      "missing_rows": 24,
+      "events": 2568,
+      "median_log_age_s": 0.668,
+      "max_log_age_s": 156.421
+    },
+    {
+      "cycle": 6,
+      "signal": "bridge_speed_mmin",
+      "rows": 7189,
+      "missing_rows": 74,
+      "events": 2220,
+      "median_log_age_s": 1.966,
+      "max_log_age_s": 50.074
+    },
+    {
+      "cycle": 6,
+      "signal": "trolley_speed_request_native",
+      "rows": 7189,
+      "missing_rows": 24,
+      "events": 1713,
+      "median_log_age_s": 2.964,
+      "max_log_age_s": 161.569
+    },
+    {
+      "cycle": 6,
+      "signal": "bridge_speed_request_native",
+      "rows": 7189,
+      "missing_rows": 74,
+      "events": 1360,
+      "median_log_age_s": 4.917,
+      "max_log_age_s": 50.526
+    },
+    {
+      "cycle": 6,
+      "signal": "sling_setting_mm",
+      "rows": 7189,
+      "missing_rows": 95,
+      "events": 1,
+      "median_log_age_s": 886.644,
+      "max_log_age_s": 1773.269
+    },
+    {
+      "cycle": 7,
+      "signal": "trolley_angle_rad",
+      "rows": 3213,
+      "missing_rows": 123,
+      "events": 2447,
+      "median_log_age_s": 0.177,
+      "max_log_age_s": 15.488
+    },
+    {
+      "cycle": 7,
+      "signal": "bridge_angle_rad",
+      "rows": 3213,
+      "missing_rows": 15,
+      "events": 2584,
+      "median_log_age_s": 0.176,
+      "max_log_age_s": 0.39
+    },
+    {
+      "cycle": 7,
+      "signal": "trolley_position_m",
+      "rows": 3213,
+      "missing_rows": 123,
+      "events": 1682,
+      "median_log_age_s": 0.236,
+      "max_log_age_s": 29.575
+    },
+    {
+      "cycle": 7,
+      "signal": "bridge_position_m",
+      "rows": 3213,
+      "missing_rows": 15,
+      "events": 1838,
+      "median_log_age_s": 0.232,
+      "max_log_age_s": 39.905
+    },
+    {
+      "cycle": 7,
+      "signal": "hoist_position_m",
+      "rows": 3213,
+      "missing_rows": 46,
+      "events": 730,
+      "median_log_age_s": 15.079,
+      "max_log_age_s": 65.488
+    },
+    {
+      "cycle": 7,
+      "signal": "trolley_speed_mmin",
+      "rows": 3213,
+      "missing_rows": 101,
+      "events": 1429,
+      "median_log_age_s": 0.282,
+      "max_log_age_s": 64.486
+    },
+    {
+      "cycle": 7,
+      "signal": "bridge_speed_mmin",
+      "rows": 3213,
+      "missing_rows": 1,
+      "events": 1870,
+      "median_log_age_s": 0.229,
+      "max_log_age_s": 43.227
+    },
+    {
+      "cycle": 7,
+      "signal": "trolley_speed_request_native",
+      "rows": 3213,
+      "missing_rows": 101,
+      "events": 618,
+      "median_log_age_s": 3.93,
+      "max_log_age_s": 66.388
+    },
+    {
+      "cycle": 7,
+      "signal": "bridge_speed_request_native",
+      "rows": 3213,
+      "missing_rows": 1,
+      "events": 887,
+      "median_log_age_s": 1.737,
+      "max_log_age_s": 42.977
+    },
+    {
+      "cycle": 7,
+      "signal": "sling_setting_mm",
+      "rows": 3213,
+      "missing_rows": 0,
+      "events": 1,
+      "median_log_age_s": 405.689,
+      "max_log_age_s": 807.189
+    },
+    {
+      "cycle": 8,
+      "signal": "trolley_angle_rad",
+      "rows": 4162,
+      "missing_rows": 102,
+      "events": 3011,
+      "median_log_age_s": 0.18,
+      "max_log_age_s": 83.328
+    },
+    {
+      "cycle": 8,
+      "signal": "bridge_angle_rad",
+      "rows": 4162,
+      "missing_rows": 15,
+      "events": 3012,
+      "median_log_age_s": 0.181,
+      "max_log_age_s": 85.731
+    },
+    {
+      "cycle": 8,
+      "signal": "trolley_position_m",
+      "rows": 4162,
+      "missing_rows": 102,
+      "events": 1467,
+      "median_log_age_s": 0.533,
+      "max_log_age_s": 86.932
+    },
+    {
+      "cycle": 8,
+      "signal": "bridge_position_m",
+      "rows": 4162,
+      "missing_rows": 15,
+      "events": 1412,
+      "median_log_age_s": 0.734,
+      "max_log_age_s": 85.981
+    },
+    {
+      "cycle": 8,
+      "signal": "hoist_position_m",
+      "rows": 4162,
+      "missing_rows": 46,
+      "events": 1243,
+      "median_log_age_s": 6.5305,
+      "max_log_age_s": 83.328
+    },
+    {
+      "cycle": 8,
+      "signal": "trolley_speed_mmin",
+      "rows": 4162,
+      "missing_rows": 80,
+      "events": 1252,
+      "median_log_age_s": 3.3785,
+      "max_log_age_s": 93.64
+    },
+    {
+      "cycle": 8,
+      "signal": "bridge_speed_mmin",
+      "rows": 4162,
+      "missing_rows": 1,
+      "events": 1424,
+      "median_log_age_s": 1.277,
+      "max_log_age_s": 109.532
+    },
+    {
+      "cycle": 8,
+      "signal": "trolley_speed_request_native",
+      "rows": 4162,
+      "missing_rows": 80,
+      "events": 573,
+      "median_log_age_s": 7.527,
+      "max_log_age_s": 75.027
+    },
+    {
+      "cycle": 8,
+      "signal": "bridge_speed_request_native",
+      "rows": 4162,
+      "missing_rows": 1,
+      "events": 707,
+      "median_log_age_s": 6.688,
+      "max_log_age_s": 109.032
+    },
+    {
+      "cycle": 8,
+      "signal": "sling_setting_mm",
+      "rows": 4162,
+      "missing_rows": 0,
+      "events": 2,
+      "median_log_age_s": 357.212,
+      "max_log_age_s": 877.337
+    }
+  ],
+  "model_fits": 0,
+  "forecast_scores": 0,
+  "rule": "Last GOOD finite raw event with max(source,server) timestamp <= grid time.",
+  "grid_source": "Only Date and Cycle columns of combined_csv.csv; no exported signal values used.",
+  "caveats": [
+    "Log age is age since the last logged event, not necessarily sensor age.",
+    "No backward fill or synthetic fresh high-frequency observations.",
+    "Original year 2103 timestamps retained.",
+    "Native speed requests are not identified as force or known future planned commands.",
+    "Hoist position plus sling setting is not an established cable-length formula.",
+    "Not a plug-in dataset for the current 100 Hz model."
+  ]
+}

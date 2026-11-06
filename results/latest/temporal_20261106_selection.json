@@ -1,0 +1,35 @@
+{
+  "primary": {
+    "model": "forced_driven_huber",
+    "ensemble_validation_mae_deg": {
+      "forced_physics": 0.2512841522693634,
+      "dense_horizon": 0.20357051491737366,
+      "temporal_uniform": 0.24734313786029816,
+      "temporal_horizon": 0.24746878445148468,
+      "tcn_reference": 0.20793308317661285,
+      "forced_driven_huber": 0.1920269876718521
+    }
+  },
+  "short_transfer": {
+    "model": "dense_horizon",
+    "ensemble_validation_mae_deg": {
+      "forced_physics": 0.23156678676605225,
+      "dense_horizon": 0.2092040330171585,
+      "temporal_uniform": 0.21108119189739227,
+      "temporal_horizon": 0.20938806235790253,
+      "tcn_reference": 0.22786210477352142,
+      "forced_driven_huber": 0.21748210489749908
+    }
+  },
+  "long_transfer": {
+    "model": "temporal_horizon",
+    "ensemble_validation_mae_deg": {
+      "forced_physics": 0.2899892330169678,
+      "dense_horizon": 0.20240843296051025,
+      "temporal_uniform": 0.21311506628990173,
+      "temporal_horizon": 0.20188535749912262,
+      "tcn_reference": 0.19530527293682098,
+      "forced_driven_huber": 0.20616430044174194
+    }
+  }
+}

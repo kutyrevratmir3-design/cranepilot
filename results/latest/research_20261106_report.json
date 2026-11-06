@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-06",
+  "new_angular_fits": 36,
+  "new_actuator_fits": 0,
+  "tests_passed": 49,
+  "selected_by_validation": {
+    "primary": {
+      "model": "forced_driven_huber",
+      "ensemble_validation_mae_deg": {
+        "forced_physics": 0.2512841522693634,
+        "dense_horizon": 0.20357051491737366,
+        "temporal_uniform": 0.24734313786029816,
+        "temporal_horizon": 0.24746878445148468,
+        "tcn_reference": 0.20793308317661285,
+        "forced_driven_huber": 0.1920269876718521
+      }
+    },
+    "short_transfer": {
+      "model": "dense_horizon",
+      "ensemble_validation_mae_deg": {
+        "forced_physics": 0.23156678676605225,
+        "dense_horizon": 0.2092040330171585,
+        "temporal_uniform": 0.21108119189739227,
+        "temporal_horizon": 0.20938806235790253,
+        "tcn_reference": 0.22786210477352142,
+        "forced_driven_huber": 0.21748210489749908
+      }
+    },
+    "long_transfer": {
+      "model": "temporal_horizon",
+      "ensemble_validation_mae_deg": {
+        "forced_physics": 0.2899892330169678,
+        "dense_horizon": 0.20240843296051025,
+        "temporal_uniform": 0.21311506628990173,
+        "temporal_horizon": 0.20188535749912262,
+        "tcn_reference": 0.19530527293682098,
+        "forced_driven_huber": 0.20616430044174194
+      }
+    }
+  },
+  "extrapolation_macro_mae_deg": {
+    "long_transfer": {
+      "dense_horizon": 0.522771862924369,
+      "forced_driven_huber": 0.5126405514277614,
+      "forced_physics": 0.6566272486194276,
+      "selected_candidate": 0.4971202708187941,
+      "tcn_reference": 0.5540079406675827,
+      "temporal_horizon": 0.4971202708187941,
+      "temporal_uniform": 0.5070175005171076
+    },
+    "primary": {
+      "dense_horizon": 0.5160018120590657,
+      "forced_driven_huber": 0.5004975138814781,
+      "forced_physics": 0.5542005851163145,
+      "selected_candidate": 0.5004975138814781,
+      "tcn_reference": 0.5303615846145188,
+      "temporal_horizon": 0.5402616043622798,
+      "temporal_uniform": 0.5528920895651769
+    },
+    "short_transfer": {
+      "dense_horizon": 0.4385782630247688,
+      "forced_driven_huber": 0.4321306007709434,
+      "forced_physics": 0.46275461230674103,
+      "selected_candidate": 0.4385782630247688,
+      "tcn_reference": 0.44177226589461993,
+      "temporal_horizon": 0.41412469509982874,
+      "temporal_uniform": 0.43922702090432336
+    }
+  },
+  "selected_gain_percent": {
+    "long_transfer": 3.027517149344039,
+    "primary": 0.0,
+    "short_transfer": -1.4920633350941737
+  },
+  "primary_horizon_mae_deg": {
+    "dense_horizon": {
+      "0.1": 0.23556597444085348,
+      "0.2": 0.32183847800581494,
+      "0.35": 0.4445915108522096,
+      "0.5": 0.5223582646929867,
+      "0.75": 0.6759268209423436,
+      "1.0": 0.7147119456353379,
+      "1.5": 0.6970196898439135
+    },
+    "forced_driven_huber": {
+      "0.1": 0.23647336539279945,
+      "0.2": 0.3307750871020905,
+      "0.35": 0.4370555567579759,
+      "0.5": 0.5011343224764063,
+      "0.75": 0.6586301367055969,
+      "1.0": 0.6794424523950522,
+      "1.5": 0.6599716763404254
+    },
+    "forced_physics": {
+      "0.1": 0.2683884246673961,
+      "0.2": 0.3790561159133725,
+      "0.35": 0.47149526966508926,
+      "0.5": 0.5450531787849993,
+      "0.75": 0.728869422866397,
+      "1.0": 0.7521228112194522,
+      "1.5": 0.7344188726974956
+    },
+    "selected_candidate": {
+      "0.1": 0.23647336539279945,
+      "0.2": 0.3307750871020905,
+      "0.35": 0.4370555567579759,
+      "0.5": 0.5011343224764063,
+      "0.75": 0.6586301367055969,
+      "1.0": 0.6794424523950522,
+      "1.5": 0.6599716763404254
+    },
+    "tcn_reference": {
+      "0.1": 0.23867163310727832,
+      "0.2": 0.34115624967690844,
+      "0.35": 0.43892120943284657,
+      "0.5": 0.5269544328205763,
+      "0.75": 0.6803690345889766,
+      "1.0": 0.7526659985104027,
+      "1.5": 0.7337925341646424
+    },
+    "temporal_horizon": {
+      "0.1": 0.26757439131556615,
+      "0.2": 0.36371507541780757,
+      "0.35": 0.45216305843857063,
+      "0.5": 0.5352307249553783,
+      "0.75": 0.7142950663576894,
+      "1.0": 0.740704453683549,
+      "1.5": 0.7081484603673971
+    },
+    "temporal_uniform": {
+      "0.1": 0.2735949617639056,
+      "0.2": 0.3778980268241412,
+      "0.35": 0.45707285905943307,
+      "0.5": 0.5344874956723868,
+      "0.75": 0.7490568126166195,
+      "1.0": 0.7511766561624058,
+      "1.5": 0.7269578148573468
+    }
+  },
+  "active_origin_macro_mae_deg": {
+    "long_transfer": {
+      "dense_horizon": 1.055159254988585,
+      "forced_driven_huber": 0.931853006678527,
+      "forced_physics": 1.2528132963145455,
+      "selected_candidate": 0.9678205403026051,
+      "tcn_reference": 1.1854760587660682,
+      "temporal_horizon": 0.9678205403026051,
+      "temporal_uniform": 0.9459156227637635
+    },
+    "primary": {
+      "dense_horizon": 1.1443350036167406,
+      "forced_driven_huber": 1.068543125180094,
+      "forced_physics": 1.2649097176510575,
+      "selected_candidate": 1.068543125180094,
+      "tcn_reference": 1.2060239073703622,
+      "temporal_horizon": 1.2399125255562473,
+      "temporal_uniform": 1.2496758572129907
+    },
+    "short_transfer": {
+      "dense_horizon": 1.8343618796101926,
+      "forced_driven_huber": 1.811237691133893,
+      "forced_physics": 1.9244416694920978,
+      "selected_candidate": 1.8343618796101926,
+      "tcn_reference": 1.91134792492663,
+      "temporal_horizon": 1.8370305614877485,
+      "temporal_uniform": 1.8327084633285884
+    }
+  },
+  "load_stress_macro_mae_deg": {
+    "dense_horizon": 0.5722456503607317,
+    "forced_driven_huber": 0.5625985403516559,
+    "forced_physics": 0.5922178255655621,
+    "selected_candidate": 0.5625985403516559,
+    "tcn_reference": 0.5790599898236134,
+    "temporal_horizon": 0.5935951741679322,
+    "temporal_uniform": 0.5788370656876665
+  },
+  "cleanroom_mean_mae_deg": {
+    "exact": {
+      "dense_horizon": 0.23877537387611833,
+      "forced_driven_huber": 0.25071598308970594,
+      "forced_physics": 0.10297061214465486,
+      "tcn_reference": 0.15106705860882055,
+      "temporal_horizon": 0.1235473239394407,
+      "temporal_uniform": 0.11418071089722527
+    },
+    "quantized": {
+      "dense_horizon": 0.2387868096502249,
+      "forced_driven_huber": 0.25068972941804013,
+      "forced_physics": 0.10605683111800944,
+      "tcn_reference": 0.15156916675506896,
+      "temporal_horizon": 0.12457170220515164,
+      "temporal_uniform": 0.11541988303820787
+    }
+  },
+  "record_level_differences": {
+    "long_transfer": {
+      "per_record_deg": [
+        -0.03419395294349559,
+        -0.0038152414878892815,
+        -0.008551647395517281
+      ],
+      "descriptive_95pct_deg": [
+        -0.03419395294349559,
+        -0.0038152414878892815
+      ]
+    },
+    "primary": {
+      "per_record_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_95pct_deg": [
+        0.0,
+        0.0
+      ]
+    },
+    "short_transfer": {
+      "per_record_deg": [
+        0.01033658917841851,
+        0.007935712660189942,
+        0.0010706849228679371
+      ],
+      "descriptive_95pct_deg": [
+        0.0010706849228679371,
+        0.01033658917841851
+      ]
+    }
+  },
+  "cleanroom_exact_by_damping_mae_deg": {
+    "0.0": {
+      "dense_horizon": 0.2242649713473185,
+      "forced_driven_huber": 0.23572958056548596,
+      "forced_physics": 0.01212769240833342,
+      "tcn_reference": 0.10576113084428596,
+      "temporal_horizon": 0.06457228304894513,
+      "temporal_uniform": 0.045221944181568274
+    },
+    "0.05": {
+      "dense_horizon": 0.2127270819205795,
+      "forced_driven_huber": 0.22386369623051672,
+      "forced_physics": 0.06298524382892365,
+      "tcn_reference": 0.10882156729286949,
+      "temporal_horizon": 0.0789318283478134,
+      "temporal_uniform": 0.06965458659135734
+    },
+    "0.2": {
+      "dense_horizon": 0.279334068360457,
+      "forced_driven_huber": 0.2925546724731151,
+      "forced_physics": 0.23379890019670752,
+      "tcn_reference": 0.23861847768930622,
+      "temporal_horizon": 0.22713786042156356,
+      "temporal_uniform": 0.22766560191875018
+    }
+  },
+  "fit_seconds": 852.9316463999976,
+  "scope": "Retrospective real-data comparisons and frozen synthetic angular-only falsification; no SOTA or hardware claim"
+}

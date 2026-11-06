@@ -1,6 +1,35 @@
-# Checkpoint 4
+# Checkpoint 5
 
-3 November 2026. Working research, not a completed journal submission.
+6 November 2026. Working research, not a completed journal submission.
+
+## Latest completed stage
+
+`temporal_20261106` completed 36 further angular fits (four variants, three
+seeds, three folds), using verified actors/calibration from identical retained
+folds. Validation selection was locked before evaluation. Primary keeps the
+incumbent (0.50050 deg). Short transfer selects dense/horizon (0.43858 versus
+0.43213 incumbent, a regression). Long transfer selects temporal/horizon
+(0.49712 versus 0.51264, a 3.03% macro improvement), but active-origin error
+in that fold increases. All models, predictions and selection scores remain.
+
+The fixed 576-case angular-only nonlinear free-sway diagnostic also completed.
+It identifies a weakness in the incumbent's corrections: undamped exact-history
+error 0.23573 deg versus physical 0.01213. No model was tuned on this diagnostic.
+RK4 step-halving difference is 1.36e-9 deg. Forty-nine tests pass. History-only
+inference matches retained evaluation traces within 1.63e-5 deg across all
+18 model/fold comparisons (three packets each).
+
+The separate Aalto archive DOI 10.5281/zenodo.6907569 was downloaded, verified
+and audited: 31,303 exported rows, eight industrial cycles. An alignment audit
+found many exported angles matching subsequent raw events. A new causal raw
+event reconstruction retains ten signals, missing values and log ages. No
+models were trained or scored on Aalto. Geometry, angle provenance and command
+semantics still require resolution. See AALTO_DATA_AUDIT.md.
+
+Current evidence: RESEARCH_2026_11_06.md, results/latest/*20261106*,
+artifacts/runs/temporal_20261106 and the new evidence archive. The pretraining
+source/config/design commit is 678b754. All work remains LOCAL ONLY, with no
+GitHub or Overleaf changes. Earlier experiment details below are historical.
 
 ## What is actually complete
 
@@ -67,11 +96,14 @@ neural MPC performance or hardware validation. The manuscript states this.
 
 ## Immediate next work
 
-1. Reproduce additional released identification/forecasting methods under the
-   benchmark card before claiming best-in-niche status.
-2. Add a separately fixed independent simulation/public-data evaluation, with
-   state-estimation and actuator uncertainty separated from length transfer.
-3. Diagnose alternate-load and short-horizon cases where the candidate loses.
+1. Test residual constraints that preserve simple physical limits, with a newly
+   frozen follow-up protocol rather than tuning on the completed cleanroom cases.
+2. Make validation robust across motion regimes; long-transfer macro gains
+   currently hide active-window regressions, and one validation record can
+   select the worse short-transfer variant.
+3. Resolve the Aalto measurement/geometry/command contract, lock cycle/payload
+   holdouts and use the causal reconstruction at its native rate. Reproduce
+   additional identification methods; ReSMILE has only been inspected.
 4. Only then integrate an action-conditioned learned model in MPC and compare
    it with estimated-state physical control and input shaping.
 

@@ -1,8 +1,23 @@
 # Local research checkpoint: force-aware robust forecasting
 
-Updated 3 November 2026. Variant: `forced_driven_huber`, three fixed seeds.
+Updated 6 November 2026. Primary default: `forced_driven_huber`, three fixed seeds.
 This stage has not been published. Code retains the project's MIT license;
 the original experimental dataset requires its CC BY 4.0 attribution.
+
+The latest temporal/objective campaign did not replace this primary default.
+The separately trained `temporal_horizon` model (10,677 angular parameters per
+seed) improves the long-transfer fold from 0.51264 to 0.49712 deg, while its
+active-origin mean worsens from 0.93185 to 0.96782 deg. The validation-selected
+short-transfer `dense_horizon` model regresses from 0.43213 to 0.43858 deg.
+See RESEARCH_2026_11_06.md for every model and the locked selection. Do not
+present three independently trained fold models as one universally improved model.
+
+The fixed synthetic check also limits the generalization claim. In the
+undamped nonlinear free-sway subset with exact past measurements and known
+zero future acceleration, this incumbent has 0.23573 deg mean error versus
+0.01213 for the physical forecast. That check bypasses the actuator and uses
+the train-calibrated effective length. It exposes behavior outside the recorded
+training regimes; it is neither an industrial benchmark nor a controller test.
 
 ## Intended task and inputs
 

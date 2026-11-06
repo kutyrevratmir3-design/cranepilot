@@ -111,3 +111,29 @@ stress group and the active-origin 1.5 s subset still have different winners.
 Do not call this a global state-of-the-art model or a validated learned MPC.
 
 The current stage stays local; no GitHub publication is authorized.
+
+## Completed 6 November stage and next decision
+
+The matched TCN comparison and 36-fit temporal/objective ablation are complete.
+One validation-selected model improves long-transfer macro MAE by 3.03%, but
+worsens its active-window error. The short-transfer selection regresses 1.49%;
+the primary incumbent remains the default. Do not replace it using an
+evaluation-selected winner. All tested alternatives and 49 passing checks are
+retained in RESEARCH_2026_11_06.md.
+
+The independently implemented, fixed free-sway diagnostic revealed that learned
+corrections can spoil a simple physical limit. Next investigate a residual
+parameterization/regularizer that preserves that limit, while protecting active
+motion performance. Define fresh confirmation cases before any further tuning;
+the completed cleanroom set is now development evidence.
+
+The separate Aalto industrial data have been acquired and causally reconstructed.
+Their exported 4 Hz grid often associates an angle with a subsequent raw event;
+the new importer instead uses only logged events available at the grid time.
+Before training, resolve angle provenance, suspension geometry and native
+command semantics; fix whole-cycle/payload splits and a native-rate information
+contract. Do not upsample to claim 100 Hz observations or merge these results
+with the Inteco benchmark. See AALTO_DATA_AUDIT.md.
+
+ReSMILE was inspected but not implemented, and no new learned-controller or
+hardware result has been established. Publication remains local only.

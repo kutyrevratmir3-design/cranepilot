@@ -12,3 +12,18 @@ seed spread is not calibrated confidence.
 
 Original data DOI: 10.17632/x69hyyv3zw.2, CC BY 4.0. Dataset article:
 10.1016/j.dib.2025.111822. Cite the original creators when reusing the data.
+
+## November 6 history-only entry point
+
+The same `history_packet.npz` also works with the new multi-fold campaign:
+
+```sh
+python -m scripts.predict_temporal --input examples/history_packet.npz --output examples/NEW_FORECAST.csv
+```
+
+`history_forecast_20261106.csv` is the retained primary selected forecast, which
+still uses the incumbent. Pass `--fold long_transfer --variant temporal_horizon`
+for the separately trained experimental long-transfer model. These are different
+training folds, not interchangeable checkpoints of one universally better model.
+No future measured positions or angles are used; seed spread is not a calibrated
+confidence interval. See the model card and November 6 report.
