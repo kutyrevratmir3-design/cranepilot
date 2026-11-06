@@ -30,6 +30,7 @@ def main():
     if args.output.exists():
         raise FileExistsError('Preserve previous results; choose a fresh output')
     cfg = json.loads(args.config.read_text())
+    angular_dtype = {'float32': torch.float32, 'float64': torch.float64}[cfg.get('angular_dtype', 'float32')]
     run = Path(cfg['source_run'])
     prior = json.loads((run / 'provenance.json').read_text())
     if prior['status'] != 'complete':
@@ -52,7 +53,7 @@ def main():
     for path in info['weights']:
         model = InnovationForecaster(True).eval()
         model.load_state_dict(torch.load(path, weights_only=True))
-        models.append(model)
+        models.append(model.to(dtype=angular_dtype))
     torch.set_num_threads(4)
     sources = [args.config, Path(__file__).relative_to(Path.cwd()),
                Path('scripts/limit_ablation.py'), Path('scripts/run_cleanroom.py'),
@@ -77,7 +78,7 @@ def main():
 
         def evaluate(label, batch, target, subsets, metadata, expected=None, extra=None):
             # No future measured value or target key is delivered to a predictor.
-            batch = {k: v for k, v in batch.items() if not k.startswith('target_')}
+            batch = {k: v.to(dtype=angular_dtype) for k, v in batch.items() if not k.startswith('target_')}
             arrays = {'target': target, **(extra or {})}
             for name, disabled in cfg['variants'].items():
                 seed_predictions = []

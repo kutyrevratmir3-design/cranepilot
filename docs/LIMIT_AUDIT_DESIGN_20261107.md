@@ -66,3 +66,18 @@ pilot did not improve on matched controls; no literature superiority is claimed.
 Primary reference: [Yin et al., ICLR 2021](https://arxiv.org/abs/2010.04456).
 This audit is our diagnostic of the existing model, not a reproduction of that
 paper's optimization method. All work remains local.
+
+## Numerical revision before completing the audit
+
+The first run at commit `0e88122` stopped at its physical-limit self-check on
+training scenario 3: 5.3968668458029674e-5 degrees, above the 5e-5 bound. The
+float64 unit test of the same analytical identity passed. The all-off comparison
+in the runner had accumulated float32 rotation roundoff, including a float32
+phase in the NumPy reference. The failed run is retained under its original name.
+
+`limit_audit_20261107_float64.json` now fixes float64 for every angular variant
+and the analytical self-check. The frozen actuator remains float32, as in its
+retained use. Parameters are converted in memory; checkpoint bytes do not change.
+Intervention definitions, data boundaries, scores, reserved grid and all error
+tolerances remain unchanged. This is a numerical correction, not a response to
+comparative metric results. Freeze this revision before completing the run.
