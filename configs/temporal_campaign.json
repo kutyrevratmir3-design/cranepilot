@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-06",
+  "folds": {
+    "primary": {"train":[3,5,6],"validation":[4],"evaluation":[1,2,7,8],"load_stress":[10,11,12],"retained_run":"forceaware_campaign_v2"},
+    "short_transfer": {"train":[4,6,8],"validation":[5],"evaluation":[1,2,3,7],"load_stress":[],"retained_run":"cross_length_campaign"},
+    "long_transfer": {"train":[1,3,5],"validation":[4],"evaluation":[2,6,7,8],"load_stress":[],"retained_run":"cross_length_campaign"}
+  },
+  "seeds":[0,1,2],
+  "models": {
+    "dense_horizon":{"loss_steps":"seven"},
+    "temporal_uniform":{"loss_steps":"all"},
+    "temporal_horizon":{"loss_steps":"seven"},
+    "tcn_reference":{"loss_steps":"seven"}
+  },
+  "candidate_pool":["dense_horizon","temporal_uniform","temporal_horizon","forced_driven_huber"],
+  "training":{"epochs":100,"patience":15,"batch_size":256,"learning_rate":0.001},
+  "train_stride":25,"evaluation_stride":10,"smooth_l1_beta":0.1,
+  "selection":"All four architectures trained with all three seeds. Select one physics candidate per fold by ensemble seven-horizon validation MAE, including the retained incumbent. Lock all folds before evaluation. Always report every model.",
+  "actor":"Reuse only verified frozen actors and train-only length calibration from the identical retained split, never across folds.",
+  "scope":"Retrospective architecture and objective ablation on already reused records. No untouched-test, exact TCN-paper reproduction, or best-in-literature claim.",
+  "publication":"Local only. No GitHub publication."
+}
