@@ -1,0 +1,29 @@
+synthetic_development: incumbent
+synthetic_development: no_angle_shift
+synthetic_development: no_momentum_shift
+synthetic_development: no_frequency_shift
+synthetic_development: no_initial_memory
+synthetic_development: no_passive_closure
+synthetic_development: no_learned_force
+synthetic_development: observer_only
+synthetic_development: dynamics_only
+synthetic_development: physical_limit
+train_s3: incumbent
+train_s3: no_angle_shift
+train_s3: no_momentum_shift
+train_s3: no_frequency_shift
+train_s3: no_initial_memory
+train_s3: no_passive_closure
+train_s3: no_learned_force
+train_s3: observer_only
+train_s3: dynamics_only
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/audit_limits.py", line 197, in <module>
+    main()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/audit_limits.py", line 176, in main
+    evaluate(f'{role}_s{sid}', prepare(raw, actor), raw['target_q'],
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/audit_limits.py", line 105, in evaluate
+    raise AssertionError(f'Physical limit {label}: {difference} deg')
+AssertionError: Physical limit train_s3: 5.3968668458029674e-05 deg
