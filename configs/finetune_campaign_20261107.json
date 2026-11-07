@@ -1,0 +1,121 @@
+{
+  "experiment": "finetune_campaign_20261107",
+  "source_run": "artifacts/runs/temporal_20261106",
+  "broad_run": "artifacts/runs/broad_search_20261107",
+  "parent_run": "artifacts/runs/global_research_20261107",
+  "folds": [
+    "primary",
+    "short_transfer",
+    "long_transfer"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tau_bins": 0.5,
+  "train_stride": 25,
+  "evaluation_stride": 10,
+  "active_threshold": 0.005,
+  "replay_tolerance_deg": 0.00005,
+  "training": {
+    "epochs": 60,
+    "patience": 15,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "smooth_l1_beta": 0.1,
+    "lbfgs_epochs": 30,
+    "lbfgs_patience": 10
+  },
+  "variants": {
+    "continued": {
+      "strategy": "continued"
+    },
+    "observer_only": {
+      "strategy": "observer_only"
+    },
+    "innovation_only": {
+      "strategy": "innovation_only"
+    },
+    "l2sp": {
+      "strategy": "l2sp"
+    },
+    "function_anchor": {
+      "strategy": "function_anchor"
+    },
+    "sam": {
+      "strategy": "sam"
+    },
+    "ema": {
+      "strategy": "ema"
+    },
+    "phase_space": {
+      "strategy": "phase_space"
+    },
+    "group_dro": {
+      "strategy": "group_dro"
+    },
+    "lbfgs_polish": {
+      "strategy": "lbfgs_polish"
+    }
+  },
+  "selection": {
+    "all_max_ratio": 1,
+    "active_max_ratio": 1.01,
+    "quiet_max_ratio": 1.01
+  },
+  "acceptance": {
+    "primary_reference": "soft_symmetry",
+    "primary_max_ratio": 1,
+    "short_transfer_reference": "previous_local",
+    "short_transfer_max_ratio": 1.01,
+    "long_transfer_reference": "incumbent",
+    "long_transfer_max_ratio": 1.01,
+    "load_reference": "incumbent",
+    "load_max_ratio": 1.01
+  },
+  "simulation": {
+    "length_m": [
+      0.24,
+      0.59,
+      1.07
+    ],
+    "amplitude_deg": [
+      2,
+      7.5
+    ],
+    "phase_rad": [
+      0.7,
+      2.1
+    ],
+    "omega_ratio": [
+      0.84,
+      1.03,
+      1.2
+    ],
+    "damping_per_s": [
+      0.05,
+      0.21
+    ],
+    "drive_amplitude_m": [
+      0,
+      0.012
+    ],
+    "force_law": [
+      "effective",
+      "geometric"
+    ],
+    "future_acceleration_gain": [
+      1,
+      1.15
+    ],
+    "measurement": [
+      "exact",
+      "noisy_quantized"
+    ],
+    "noise_seed": 11112026,
+    "noise_std_bins": 0.25
+  },
+  "scope": "Matched new fine-tuning of frozen soft-symmetry seeds. Fixed actor, architecture, 41-sample history and prescribed future commands. Retrospective records. Control-inspired surrogate loss, NOT evaluated controller. No publication or APHYNITY changes."
+}
