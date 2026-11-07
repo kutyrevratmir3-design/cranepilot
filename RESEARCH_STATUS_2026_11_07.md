@@ -1,6 +1,52 @@
 # CranePilot: состояние исследования на 7 ноября 2026
 
-Последний завершённый этап: **active_qualification + drive_conditioned_20261107**.
+Последний завершённый этап: **regime_fusion_20261107**.
+Протокол/численный код до выбора `4f54dbc`; frozenselection/bundle до replay
+`e62efa4`. Никаких новых TRAINfits: четыре сохранённых эксперта,4sдоступной
+истории и причинные веса по последней уже наблюдённой1s. Один общий вариант
+`guarded_simplex_1` выбран поVAL среди11, с точным сохранениемlegacy на каждом
+quiet-окне. VALbalanced−19.31%vslegacy,5/5casewins; developmentgatePASS.
+
+| Режим по прошлой истории | Legacy MAE, ° | Новый router MAE, ° |
+|---|---:|---:|
+| Все окна | 0.545399 | 0.503624 |
+| Малое движение | 0.193369 | 0.193369 |
+| Движение привода | 1.726419 | 1.581653 |
+| Изменение длины | 0.098940 | 0.098940 |
+| Привод + длина | 3.157028 | 2.260336 |
+
+Это oldevaluation:33записи уже открыты раньше. Общий MAE−7.66%,6/7scenariowins;
+проигранные сценарии: [22]. Равные веса сценариев/осей/голов внутриregime;
+режимные популяции различаются. Quiet equality — свойство конструкции, а не
+свежая гарантия точности. Простой hardcontextдаёт .518683°, выбранныйconvexfit
+.503624°; после replay выбор не менялся. Все другие weights/варианты сохранены,
+в том числе варианты с лучшим и худшим старым balancedscore.
+
+Синтетическая чувствительность общего MAE: selected чистый .503624°,
+jitter±q/2 .505280°, jitter±q .509690°, anglelag50ms1.329985°.
+Задержка остаётся существенной слабостью. Это perturbations прошлых входов,
+не новые реальные записи и не независимые trials; по ним ничего не выбиралось.
+
+226unit testsPASS, независимая SciPyпроверка simplexsolver. Developmentreplay
+28125сравнений; fullraw/portableAPIreplay316125сравнений(включая VAL и3stress),
+ошибка replay0. Все1281originalmain/APHYNITYфайла целы,122EOLdiffs сохранены.
+Отдельный data-free bundle `artifacts/regime_bundle_20261107`:36files406575bytes.
+`FrozenRegimePilot`: past(N,401)100Hznewestfirst; futureplanаргумента нет.
+CPUmedian55–65ms/packet,15zero-probesmaxbias.035304°какlegacy, не exactzero.
+Прежние APIs/bundles/neuraldefault/APhynity не менялись. Новый predictor не
+идентифицирует nativeactuator и не доказывает hardware/MPCclosed-loopperformance.
+
+Отчёт: [regime fusion](docs/REGIME_FUSION_2026_11_07_RU.md),
+[API/bundle](docs/REGIME_BUNDLE_20261107.md); результаты/ZIP/frozenmirrors в
+`results/regime_fusion_20261107`. Author-data intake дополнен отдельным active
+протоколом: минимум4sистории и1.5sfutureдляscoring;≥25sотносится к старойзадаче.
+Независимая цель всёещё требует новых подходящих физических логов. Автору ничего
+не отправлялось. Старые33не объявлять fresh; не менять выбранныйкандидат по
+новымtargeterrors. GitHub разрешён только research-ветке; main остаётся прежней.
+
+## Предыдущий этап: active qualification и drive-conditioned fit
+
+Завершённый ранее этап: **active_qualification + drive_conditioned_20261107**.
 Независимая цель по-прежнему требует новых физических записей; старые33 уже
 многократно открыты. Ниже — ретроспективная разработка, не fresh/SOTA/hardware.
 

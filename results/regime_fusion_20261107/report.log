@@ -1,0 +1,79 @@
+{
+  "document": "docs/REGIME_FUSION_2026_11_07_RU.md",
+  "document_sha256": "117d8a664151687222c8198380dda40ee7365535c75becae00aa263a6b87c166",
+  "source_sha256": "35a75802f308be27059e640ff0e5956a2d08b5fec12296c15a09aa60c66d21cb",
+  "verification_sha256": "a774274ac6d2bae8f767234f5603377379381df1d9db4d5c30603f6d82b65fbe",
+  "selected": "guarded_simplex_1",
+  "validation_change_percent": -19.309216408363362,
+  "old_clean_mae_deg": 0.5036236619244757,
+  "old_legacy_mae_deg": 0.545399114067586,
+  "old_change_percent": -7.659611294845902,
+  "old_scenario_wins": 6,
+  "hard_context_better_on_old_all_mae": false,
+  "bundle_files": 36,
+  "bundle_bytes": 406575,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}
+condition                   group       method  mae_deg  scenarios
+    clean                     all       active 0.548902          7
+    clean                     all   active_arx 1.034083          7
+    clean                     all   frozen_arx 0.858100          7
+    clean                     all hard_context 0.518683          7
+    clean                     all       legacy 0.545399          7
+    clean                     all     selected 0.503624          7
+    clean            drive_active       active 1.652284          6
+    clean            drive_active   active_arx 2.229054          6
+    clean            drive_active   frozen_arx 1.805492          6
+    clean            drive_active hard_context 1.652284          6
+    clean            drive_active       legacy 1.726419          6
+    clean            drive_active     selected 1.581653          6
+    clean drive_and_length_active       active 2.289228          5
+    clean drive_and_length_active   active_arx 2.302904          5
+    clean drive_and_length_active   frozen_arx 3.215052          5
+    clean drive_and_length_active hard_context 2.289228          5
+    clean drive_and_length_active       legacy 3.157028          5
+    clean drive_and_length_active     selected 2.260336          5
+    clean           length_active       active 0.098331          2
+    clean           length_active   active_arx 0.922915          2
+    clean           length_active   frozen_arx 0.894749          2
+    clean           length_active hard_context 0.098940          2
+    clean           length_active       legacy 0.098940          2
+    clean           length_active     selected 0.098940          2
+    clean         low_past_motion       active 0.241997          7
+    clean         low_past_motion   active_arx 0.699870          7
+    clean         low_past_motion   frozen_arx 0.495183          7
+    clean         low_past_motion hard_context 0.193369          7
+    clean         low_past_motion       legacy 0.193369          7
+    clean         low_past_motion     selected 0.193369          7
+    clean     old_numerical_scope       active 0.237624          7
+    clean     old_numerical_scope   active_arx 0.672236          7
+    clean     old_numerical_scope   frozen_arx 0.477167          7
+    clean     old_numerical_scope hard_context 0.188822          7
+    clean     old_numerical_scope       legacy 0.188822          7
+    clean     old_numerical_scope     selected 0.188822          7
+                condition group       method  mae_deg  scenarios
+angle_jitter_half_quantum   all       active 0.551395          7
+angle_jitter_half_quantum   all   active_arx 1.043335          7
+angle_jitter_half_quantum   all   frozen_arx 0.860753          7
+angle_jitter_half_quantum   all hard_context 0.520559          7
+angle_jitter_half_quantum   all       legacy 0.546963          7
+angle_jitter_half_quantum   all     selected 0.505280          7
+ angle_jitter_one_quantum   all       active 0.556336          7
+ angle_jitter_one_quantum   all   active_arx 1.063580          7
+ angle_jitter_one_quantum   all   frozen_arx 0.865581          7
+ angle_jitter_one_quantum   all hard_context 0.524487          7
+ angle_jitter_one_quantum   all       legacy 0.550745          7
+ angle_jitter_one_quantum   all     selected 0.509690          7
+           angle_lag_50ms   all       active 1.363267          7
+           angle_lag_50ms   all   active_arx 1.470487          7
+           angle_lag_50ms   all   frozen_arx 1.403201          7
+           angle_lag_50ms   all hard_context 1.341866          7
+           angle_lag_50ms   all       legacy 1.377522          7
+           angle_lag_50ms   all     selected 1.329985          7
+                    clean   all       active 0.548902          7
+                    clean   all   active_arx 1.034083          7
+                    clean   all   frozen_arx 0.858100          7
+                    clean   all hard_context 0.518683          7
+                    clean   all       legacy 0.545399          7
+                    clean   all     selected 0.503624          7

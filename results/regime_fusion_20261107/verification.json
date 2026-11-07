@@ -1,0 +1,686 @@
+{
+  "passed": true,
+  "source_sha256": "bd09be7f9b374934bea79974e674d01ca428f4cefd19a4c6ae20c4cc66d8126c",
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "role": "validation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 15,
+      "quiet_windows": 338,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 325,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 325,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 325,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 325,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 340,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 340,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 340,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 340,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "role": "validation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 15,
+      "quiet_windows": 241,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 215,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 215,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 215,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 215,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "role": "validation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 15,
+      "quiet_windows": 241,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 215,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 215,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 215,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 215,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 367,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "role": "validation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 15,
+      "quiet_windows": 219,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 233,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 233,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 233,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 233,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 365,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 365,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 365,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 365,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "role": "validation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 15,
+      "quiet_windows": 219,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 233,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 233,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 233,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 233,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "condition": "clean",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 365,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_half_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 365,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "condition": "angle_jitter_one_quantum",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 365,
+      "maximum_replay_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "condition": "angle_lag_50ms",
+      "windows": 375,
+      "methods": 16,
+      "quiet_windows": 365,
+      "maximum_replay_error_rad": 0.0
+    }
+  ],
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "development_sha256": "33713f2749c8e6da159707bac1b0d69f8a4451fc29747b76bc5f587b80a8ef14",
+  "selected": "guarded_simplex_1",
+  "development_gate_reproduced": true,
+  "quiet_constraint_reproduced": true,
+  "forecast_comparisons": 316125,
+  "all_metrics_recomputed": true,
+  "portable_api_requires_no_raw_or_parent_runs": true,
+  "synthetic_zero_probes": [
+    {
+      "case": "trolley_theta",
+      "length_m": 0.1,
+      "maximum_bias_deg": 0.014435389800303044
+    },
+    {
+      "case": "trolley_theta",
+      "length_m": 0.4,
+      "maximum_bias_deg": 0.015328247620834044
+    },
+    {
+      "case": "trolley_theta",
+      "length_m": 0.8,
+      "maximum_bias_deg": 0.02417021574234939
+    },
+    {
+      "case": "jib_theta",
+      "length_m": 0.1,
+      "maximum_bias_deg": 0.020307490894019852
+    },
+    {
+      "case": "jib_theta",
+      "length_m": 0.4,
+      "maximum_bias_deg": 0.006034947840286374
+    },
+    {
+      "case": "jib_theta",
+      "length_m": 0.8,
+      "maximum_bias_deg": 0.024806469921111296
+    },
+    {
+      "case": "jib_beta",
+      "length_m": 0.1,
+      "maximum_bias_deg": 0.030701035643419323
+    },
+    {
+      "case": "jib_beta",
+      "length_m": 0.4,
+      "maximum_bias_deg": 0.010233925452953204
+    },
+    {
+      "case": "jib_beta",
+      "length_m": 0.8,
+      "maximum_bias_deg": 0.00977585525975977
+    },
+    {
+      "case": "simult_theta",
+      "length_m": 0.1,
+      "maximum_bias_deg": 0.035303942130334
+    },
+    {
+      "case": "simult_theta",
+      "length_m": 0.4,
+      "maximum_bias_deg": 0.030098725598277115
+    },
+    {
+      "case": "simult_theta",
+      "length_m": 0.8,
+      "maximum_bias_deg": 0.014869066788552297
+    },
+    {
+      "case": "simult_beta",
+      "length_m": 0.1,
+      "maximum_bias_deg": 0.002438979438193509
+    },
+    {
+      "case": "simult_beta",
+      "length_m": 0.4,
+      "maximum_bias_deg": 0.0014488184855990782
+    },
+    {
+      "case": "simult_beta",
+      "length_m": 0.8,
+      "maximum_bias_deg": 0.0011719886471526463
+    }
+  ],
+  "maximum_zero_bias_deg": 0.035303942130334,
+  "single_packet_timing": [
+    {
+      "case": "trolley_theta",
+      "packet_count": 1,
+      "repeats": 5,
+      "median_ms": 65.3628750005737,
+      "minimum_ms": 65.31429098686203
+    },
+    {
+      "case": "jib_theta",
+      "packet_count": 1,
+      "repeats": 5,
+      "median_ms": 55.13887500273995,
+      "minimum_ms": 55.02666701795533
+    },
+    {
+      "case": "jib_beta",
+      "packet_count": 1,
+      "repeats": 5,
+      "median_ms": 55.20437500672415,
+      "minimum_ms": 55.15679199015722
+    },
+    {
+      "case": "simult_theta",
+      "packet_count": 1,
+      "repeats": 5,
+      "median_ms": 55.54933400708251,
+      "minimum_ms": 55.315959005383775
+    },
+    {
+      "case": "simult_beta",
+      "packet_count": 1,
+      "repeats": 5,
+      "median_ms": 55.7144999911543,
+      "minimum_ms": 55.659832985838875
+    }
+  ],
+  "bundle_manifest_sha256": "922d0c6f85c70e855e4cf1bb85fc623c282f2b70891836f2326d19e6cd579be0",
+  "retrospective_sha256": "71f7edcaabd904afc1a894a71d005a0afa8327cd66a88a8d93bbd85177ff302f"
+}
