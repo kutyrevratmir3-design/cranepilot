@@ -1,0 +1,13 @@
+case,scenario,axis,origins_considered,eligible,past_length_gate,past_drive_gate,planned_reference_gate,eligible_fraction
+trolley_theta,9,theta,726,726,726,726,726,1.0
+trolley_theta,13,theta,726,160,160,726,726,0.22038567493112948
+jib_theta,21,theta,726,538,726,538,726,0.7410468319559229
+jib_theta,22,theta,726,726,726,726,726,1.0
+jib_theta,23,theta,726,726,726,726,726,1.0
+jib_beta,21,beta,726,538,726,538,726,0.7410468319559229
+jib_beta,22,beta,726,726,726,726,726,1.0
+jib_beta,23,beta,726,726,726,726,726,1.0
+simult_theta,32,theta,726,583,726,583,726,0.803030303030303
+simult_theta,33,theta,726,126,126,726,726,0.17355371900826447
+simult_beta,32,beta,726,583,726,583,726,0.803030303030303
+simult_beta,33,beta,726,126,126,726,726,0.17355371900826447

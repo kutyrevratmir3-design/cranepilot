@@ -1,0 +1,245 @@
+{
+  "status": "complete",
+  "git_head": "97afb5fd0a8fb278cc7bc89755b8a6791da5ced4",
+  "freeze": {
+    "parent_run": "artifacts/runs/modal_history_20261107",
+    "development_verification": "results/modal_history_20261107/verification.json",
+    "frozen_parent_hashes": {
+      "artifacts/runs/modal_history_20261107/provenance.json": "9d3f403ad1a732b30364e89fe8bbf88b591e62d69e93d5ec4b0519c138aefa0a",
+      "artifacts/runs/modal_history_20261107/selection.json": "36c3d87959cb8da51ad090bfd00d6a61e62f1913bf0cb922e0d23cded795e9db",
+      "results/modal_history_20261107/verification.json": "9fb27ae7934b97694f80d71526e69edca221b1d9504896bc9d14b2444433d8e9"
+    },
+    "selection_frozen_before_new_holdout_scores": true,
+    "no_refit_or_reselection": true,
+    "qualification": "Previously unscored conditional public holdout; NOT independently collected new measurements. Broad research goal remains open."
+  },
+  "config": {
+    "experiment": "modal_history_20261107",
+    "data": "data/processed",
+    "history_samples": 81,
+    "history_spacing_raw": 5,
+    "dt_s": 0.05,
+    "horizons_raw": [
+      10,
+      20,
+      35,
+      50,
+      75,
+      100,
+      150
+    ],
+    "origin_start_s": 25,
+    "origin_stride_raw": 10,
+    "past_length_range_m": 0.002,
+    "past_position_range": 0.002,
+    "future_reference_range": 1e-09,
+    "families": {
+      "trolley": {
+        "axes": [
+          "theta"
+        ],
+        "train": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "validation": [
+          4
+        ],
+        "confirmation": [
+          9,
+          13
+        ]
+      },
+      "jib": {
+        "axes": [
+          "theta",
+          "beta"
+        ],
+        "train": [
+          14,
+          15,
+          16,
+          18,
+          19,
+          20
+        ],
+        "validation": [
+          17
+        ],
+        "confirmation": [
+          21,
+          22,
+          23
+        ]
+      },
+      "simult": {
+        "axes": [
+          "theta",
+          "beta"
+        ],
+        "train": [
+          24,
+          25,
+          26,
+          27,
+          29,
+          30,
+          31
+        ],
+        "validation": [
+          28
+        ],
+        "confirmation": [
+          32,
+          33
+        ]
+      }
+    },
+    "ridge_grid": [
+      1e-10,
+      1e-08,
+      1e-06,
+      0.0001,
+      0.01,
+      1
+    ],
+    "arx_forms": [
+      "direct",
+      "harmonic_residual",
+      "lpv_direct",
+      "lpv_harmonic_residual"
+    ],
+    "frequency_ratios": {
+      "min": 0.5,
+      "max": 1.6,
+      "count": 89
+    },
+    "damping_grid": [
+      0,
+      0.04,
+      0.12,
+      0.3
+    ],
+    "modal_variants": [
+      "fixed",
+      "one_mode",
+      "two_mode"
+    ],
+    "secondary_ratios": {
+      "min": 0.5,
+      "max": 3,
+      "count": 101
+    },
+    "minimum_mode_separation_ratio": 0.2,
+    "minimum_amplitude_bins": 1,
+    "local_ar_orders": [
+      2,
+      4,
+      8
+    ],
+    "local_ar_ridge": [
+      1e-08,
+      0.0001,
+      0.01
+    ],
+    "development_gate": {
+      "maximum_mae_ratio": 0.9,
+      "minimum_case_wins": 4,
+      "cases": 5
+    },
+    "confirmation_gate": {
+      "maximum_mae_ratio": 0.9,
+      "minimum_scenario_wins": 5,
+      "scenarios": 7,
+      "bootstrap_samples": 10000,
+      "seed": 7112030,
+      "upper_change_percent_below": 0
+    },
+    "sealed_confirmation_ids": [
+      9,
+      13,
+      21,
+      22,
+      23,
+      32,
+      33
+    ],
+    "confirmation_status": "Previously imported public records with no saved fitting/validation/score use found; NOT newly collected or independently acquired data. Keep sealed until development gate and frozen checkpoint/selection hash.",
+    "scope": "Causal residual-sway forecasting after 25s, with stationary past length/drive and constant known future reference; not active-manoeuvre prediction, hoisting dynamics, hardware control or a new modal identification algorithm. No target-based eligibility or future measured positions/lengths."
+  },
+  "guarded_hashes": {
+    "configs/modal_confirmation_20261107.json": "aa684209f0a65254d35976f9c362a7813da044f94a77d58a35df5fbc0a3474e1",
+    "scripts/run_modal_confirmation.py": "0a840677c0b23d01227d486e633112cda07579a725a6b889c5045cd2c4340439",
+    "docs/MODAL_CONFIRMATION_DESIGN_20261107.md": "853782d750f751f1955469a5dc92c233001011653a69103872f7ed149c26cd49"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "source_sha256": {
+      "broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "97afb5fd0a8fb278cc7bc89755b8a6791da5ced4"
+  },
+  "records_read": [
+    9,
+    13,
+    21,
+    22,
+    23,
+    32,
+    33
+  ],
+  "independently_collected_confirmation": false,
+  "qualification": "Previously imported public records with no saved fitting/validation/score use found; NOT newly collected or independently acquired data. Keep sealed until development gate and frozen checkpoint/selection hash.",
+  "empty_cases": [],
+  "selection_unchanged_sha256": "36c3d87959cb8da51ad090bfd00d6a61e62f1913bf0cb922e0d23cded795e9db",
+  "result_hashes": {
+    "coverage.csv": "d61fe6809d64ed7fb9acac8864f1da335f379a5f3d4d1df55455adb9950b86fa",
+    "jib_beta_s22.npz": "d563a641b01f3c17be8619c4450a4b25242f8c2259dc002703d927504dd5ebd0",
+    "jib_theta_s21.npz": "1d7e9400745b7ae2ce7b477a279affa4ceaec8586e006bfe524ffbffa4813068",
+    "jib_beta_s23.npz": "08c9dcd369bd05a32287d20b5adbb88dc676382219a58181e6869cb18de5756b",
+    "jib_beta_s21.npz": "7d0c47181d0912fd8c81a6ccd95598df0ebf14c72b485354df2a89fa3acca7aa",
+    "jib_theta_s23.npz": "415bc06feeedb079ec1be842fd96e3b28da732a8bd7292822b5fbb4d6985e1b7",
+    "simult_beta_s33.npz": "146832c732a9c8a7861006ff06285fad9e9290595773c3a07e4eb317dfdfae2f",
+    "simult_beta_s32.npz": "819eca626a7cddb92071b3303b580d89beed19fe1cf656c8a59c52b326362aba",
+    "jib_theta_s22.npz": "3bcec47bd38c723c6ea52f7537e9e82b70739608feb2f1cb844fd9e2c4081748",
+    "metrics.csv": "b3f3930d0f3f251d40092539982abf478862eccc458a08ca220e26494eb25d92",
+    "simult_theta_s33.npz": "8f44b56e5fffc517032c86c44ebda42209abcf14fb54fa0d2bbdc7678d56cbbc",
+    "trolley_theta_s13.npz": "5209c5be608df4ddfd3e48474616c893736c2949f3da3a270a13182d99438982",
+    "simult_theta_s32.npz": "6ef98692f10bb1a716b9640e5acc4147bfb79cb14c4e03513b152b540c8e34e9",
+    "empty_cases.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "trolley_theta_s9.npz": "1a8aaaa668297eac5f668ae9fe2bc5199b4edb64fb1e5517834ba01e46a58f25"
+  }
+}

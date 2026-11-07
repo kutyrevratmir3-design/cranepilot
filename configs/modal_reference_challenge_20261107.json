@@ -1,0 +1,11 @@
+{
+  "experiment": "modal_reference_challenge_20261107",
+  "parent_development": "artifacts/runs/modal_history_20261107",
+  "parent_confirmation": "artifacts/runs/modal_confirmation_20261107",
+  "representations": ["theta_only","angle_lpv","difference","difference_lpv"],
+  "forms": ["direct","harmonic_residual"],
+  "ridge_grid": [1e-10,1e-8,1e-6,1e-4,0.01,1],
+  "selection": "Minimum validation MAE per case, including the original frozen strongARX as an eligible fallback; no modal change or holdout-based selection.",
+  "status": "Post-hoc reference robustness challenge: all seven confirmation scores were observed before this design. This cannot create or restore an independent test.",
+  "motivation": "Absolute drive/reference levels may make full-input ARX extrapolate spuriously. Challenge the apparent gain with angle-only, frequency-conditioned and angle-offset-invariant ARX; preserve initial scores."
+}

@@ -1,0 +1,26 @@
+{
+  "conditional_public_holdout_gate_passed": true,
+  "final_goal_achieved": false,
+  "independently_collected_confirmation": false,
+  "missing_scenarios": [],
+  "empty_cases": [],
+  "criteria": {
+    "maximum_mae_ratio": 0.9,
+    "minimum_scenario_wins": 5,
+    "scenarios": 7,
+    "bootstrap_samples": 10000,
+    "seed": 7112030,
+    "upper_change_percent_below": 0
+  },
+  "selected_modal": {
+    "method": "selected_modal",
+    "mae_deg": 0.26142095903005635,
+    "change_percent": -88.81970585795233,
+    "scenario_wins": 6,
+    "scenarios": 7,
+    "descriptive_low": -96.38634885408078,
+    "descriptive_high": -68.39473018847725
+  },
+  "primary_metric": "Seven-horizon MAE, axes equal within scenario, seven whole scenarios equal; no window-level bootstrap",
+  "qualification": "Previously imported public records with no saved fitting/validation/score use found; NOT newly collected or independently acquired data. Keep sealed until development gate and frozen checkpoint/selection hash."
+}

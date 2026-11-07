@@ -1,0 +1,11 @@
+{
+  "document": "docs/MODAL_CONFIRMATION_2026_11_07_RU.md",
+  "document_sha256": "23a33ef87b09c789cb9758e1b9a6ef9ba12e85c68241a301c87fb9eec0d1f167",
+  "provenance_sha256": "2f42746aefa7dab768021f4beb2b292effee258fe7c985beca96b1a711c51e7e",
+  "verification_sha256": "3ac2a986f1771706ec08b3485ddac088683571e1c9718db84cfe90dfaa6509c8",
+  "report_source_sha256": "093471ece064684c5b2ecfef779a3841547082393d07817ede2ccb6f6728f77c",
+  "aggregation_helper_sha256": "dce7a33a88806399c5d01f6e26658db8693b70db974a5b2b66202074bc8bb020",
+  "conditional_gate_passed": true,
+  "final_goal_achieved": false,
+  "independently_collected_confirmation": false
+}

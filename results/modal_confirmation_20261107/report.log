@@ -1,0 +1,8 @@
+        method  mae_deg  change_percent  scenario_wins  scenarios  descriptive_low  descriptive_high
+         fixed 1.843545      -21.156372              3          7       -46.465966         70.231513
+      local_ar 0.725632      -68.966587              5          7       -85.684386        -14.987397
+      one_mode 0.289476      -87.619871              6          7       -95.622872        -67.984782
+   persistence 6.477992      177.046864              1          7        47.259321        592.243726
+selected_modal 0.261421      -88.819706              6          7       -96.386349        -68.394730
+    strong_arx 2.338230        0.000000              0          7         0.000000          0.000000
+CONDITIONAL_GATE True FINAL_GOAL False
