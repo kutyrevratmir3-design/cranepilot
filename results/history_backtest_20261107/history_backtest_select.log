@@ -1,0 +1,7 @@
+SELECT primary combined {'all': 0.18955941919123756, 'active': 0.8629505408854461, 'quiet': 0.1530414624833087}
+REAL select primary 4 1.53 seconds
+SELECT short_transfer combined {'all': 0.20798210188172161, 'active': 0.989460371886783, 'quiet': 0.1779252453430654}
+REAL select short_transfer 5 1.48 seconds
+SELECT long_transfer incumbent {'all': 0.20616429981002884, 'active': 1.0409560922384782, 'quiet': 0.1608935952314795}
+REAL select long_transfer 4 1.28 seconds
+COMPLETE select

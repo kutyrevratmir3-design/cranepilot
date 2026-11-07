@@ -1,0 +1,4 @@
+fold,scenario,packets,all_variants_seconds
+primary,4,972,1.5273736250237562
+short_transfer,5,972,1.48228191700764
+long_transfer,4,972,1.2752655829826836
