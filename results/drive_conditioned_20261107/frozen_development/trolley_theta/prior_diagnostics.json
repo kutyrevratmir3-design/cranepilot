@@ -1,0 +1,33 @@
+{
+  "channels": [
+    "x_support"
+  ],
+  "normalized_gamma": [
+    0.00822276691547206
+  ],
+  "physical_basis_gain": [
+    0.4475807533501794
+  ],
+  "scale": [
+    0.018371582901909794
+  ],
+  "online_system_condition_median": 1.0,
+  "online_system_condition_max": 1.0,
+  "train_records": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+  ],
+  "validation_records": [
+    4
+  ],
+  "train_windows": 3750,
+  "validation_windows": 375
+}

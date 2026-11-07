@@ -1,0 +1,12 @@
+{
+  "document": "docs/ACTIVE_QUALIFICATION_2026_11_07_RU.md",
+  "document_sha256": "1536f7c4963d74fdeecc004ad686846c9be69db18e79f9314ac1dc0d2e58e4a4",
+  "provenance_sha256": "e5e56c1a64432c383b6c6b6f03d6ba5774f8338c3a7ac40dfa553d6ac70e3368",
+  "verification_sha256": "c3f5ca0f1a4b05c9172eb26951883627d100b833a29f1aac80b53b7f02165d9d",
+  "report_source_sha256": "450c3b1bd7a85f6c4a3bf300e61b14f60d803b8281b45e6dbc0071253daedaff",
+  "fitting_performed": false,
+  "scope_expansion_performed": false,
+  "api_gate_changed": false,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

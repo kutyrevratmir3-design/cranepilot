@@ -1,0 +1,514 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "scenario": 1,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 2,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 3,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 5,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 6,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 7,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 8,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 10,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 11,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 12,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "role": "validation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 14,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 15,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 16,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 18,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 19,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 20,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "role": "validation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 14,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 15,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 16,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 18,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 19,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 20,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "role": "validation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 24,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 25,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 26,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 27,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 29,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 30,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 31,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "role": "validation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 24,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 25,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 26,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 27,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 29,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 30,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 31,
+      "role": "train",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "role": "validation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "role": "old_evaluation",
+      "packets": 375,
+      "methods": 5,
+      "maximum_replay_error": 0.0,
+      "targets_kept_separate": true
+    }
+  ],
+  "source_sha256": "1d611b63f8f2a28fbf4a7f789e76aa4cf5101de779ae1befc85d44a3db7b37d8",
+  "provenance_sha256": "e5e56c1a64432c383b6c6b6f03d6ba5774f8338c3a7ac40dfa553d6ac70e3368",
+  "independent_confirmation": false,
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "axis_records": 53,
+  "records": 33,
+  "forecast_comparisons": 99375,
+  "all_regime_metrics_recomputed": true,
+  "original_api_gate_unchanged": true
+}
