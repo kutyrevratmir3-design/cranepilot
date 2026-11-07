@@ -1,0 +1,191 @@
+{
+  "experiment": "history_backtest_20261107",
+  "source_run": "artifacts/runs/temporal_20261106",
+  "broad_run": "artifacts/runs/broad_search_20261107",
+  "parent_run": "artifacts/runs/forced_adaptive_20261107",
+  "folds": [
+    "primary",
+    "short_transfer",
+    "long_transfer"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tau_bins": 0.5,
+  "evaluation_stride": 10,
+  "active_threshold": 0.005,
+  "variants": {
+    "damping_only": {
+      "ratios": [
+        1.0
+      ],
+      "dampings": [
+        0,
+        0.1,
+        0.2,
+        0.4
+      ],
+      "penalty": 1
+    },
+    "adaptive": {
+      "ratios": [
+        0.75,
+        0.85,
+        1.0,
+        1.15,
+        1.25
+      ],
+      "dampings": [
+        0,
+        0.1,
+        0.2,
+        0.4
+      ],
+      "penalty": 1
+    },
+    "adaptive_strong": {
+      "ratios": [
+        0.75,
+        0.85,
+        1.0,
+        1.15,
+        1.25
+      ],
+      "dampings": [
+        0,
+        0.1,
+        0.2,
+        0.4
+      ],
+      "penalty": 16
+    },
+    "adaptive_fine": {
+      "ratios": [
+        0.75,
+        0.775,
+        0.8,
+        0.825,
+        0.85,
+        0.875,
+        0.9,
+        0.925,
+        0.95,
+        0.975,
+        1.0,
+        1.025,
+        1.05,
+        1.075,
+        1.1,
+        1.125,
+        1.15,
+        1.175,
+        1.2,
+        1.225,
+        1.25
+      ],
+      "dampings": [
+        0,
+        0.1,
+        0.2,
+        0.4
+      ],
+      "penalty": 1
+    }
+  },
+  "selection": {
+    "all_max_ratio": 1.0,
+    "active_max_ratio": 1.01,
+    "quiet_max_ratio": 1.01
+  },
+  "acceptance": {
+    "primary_all_active_vs_soft": 1.0,
+    "transfer_all_active_vs_incumbent": 1.01,
+    "load_all_active_vs_incumbent": 1.01
+  },
+  "simulation": {
+    "length_m": [
+      0.19,
+      0.47,
+      0.97
+    ],
+    "amplitude_deg": [
+      2.5,
+      6.5
+    ],
+    "phase_rad": [
+      0.8,
+      2.6
+    ],
+    "omega_ratio": [
+      0.86,
+      1.02,
+      1.22
+    ],
+    "damping_per_s": [
+      0.06,
+      0.23
+    ],
+    "drive_amplitude_m": [
+      0.0,
+      0.012
+    ],
+    "force_law": [
+      "effective",
+      "geometric"
+    ],
+    "future_acceleration_gain": [
+      1.0,
+      1.15
+    ],
+    "measurement": [
+      "exact",
+      "noisy_quantized"
+    ],
+    "noise_seed": 9112026,
+    "noise_std_bins": 0.25
+  },
+  "scope": "Conditional backtest within the same41 observed samples. No extra history, neural/actor training or publication. Validation/evaluation records reused. Fresh within-generator simulation opened only afterselection lock. Guardthresholds fixed heuristics, no calibratedconfidence.",
+  "backtest_variants": {
+    "bt21": {
+      "prefixes": [
+        21
+      ]
+    },
+    "bt31": {
+      "prefixes": [
+        31
+      ]
+    },
+    "bt_multi": {
+      "prefixes": [
+        21,
+        31
+      ]
+    },
+    "bt_guarded": {
+      "prefixes": [
+        21,
+        31
+      ],
+      "guard_fraction": 0.1,
+      "guard_absolute_bins2": 1.0
+    }
+  },
+  "comparison_models": [
+    "incumbent",
+    "soft_symmetry",
+    "combined",
+    "physical",
+    "adaptive",
+    "adaptive_fine",
+    "bt21",
+    "bt31",
+    "bt_multi",
+    "bt_guarded",
+    "history_residual_transfer",
+    "history_residual_gate",
+    "history_soft_gate"
+  ]
+}
