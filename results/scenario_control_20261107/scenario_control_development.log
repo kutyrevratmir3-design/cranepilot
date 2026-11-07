@@ -1,0 +1,45 @@
+/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/scenario_control.py:15: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:219.)
+  batch['length_m']=torch.as_tensor(length,dtype=torch.float32)
+TICK nominal 0 batch_seconds 0.006
+TICK nominal 20 batch_seconds 0.005
+TICK nominal 40 batch_seconds 0.005
+TICK nominal 60 batch_seconds 0.005
+TICK nominal 80 batch_seconds 0.005
+TICK nominal 100 batch_seconds 0.005
+METHOD_COMPLETE development nominal 6
+TICK frequency 0 batch_seconds 0.006
+TICK frequency 20 batch_seconds 0.005
+TICK frequency 40 batch_seconds 0.005
+TICK frequency 60 batch_seconds 0.005
+TICK frequency 80 batch_seconds 0.006
+TICK frequency 100 batch_seconds 0.005
+METHOD_COMPLETE development frequency 6
+TICK joint 0 batch_seconds 0.006
+TICK joint 20 batch_seconds 0.006
+TICK joint 40 batch_seconds 0.006
+TICK joint 60 batch_seconds 0.006
+TICK joint 80 batch_seconds 0.006
+TICK joint 100 batch_seconds 0.006
+METHOD_COMPLETE development joint 6
+TICK spread 0 batch_seconds 0.006
+TICK spread 20 batch_seconds 0.006
+TICK spread 40 batch_seconds 0.006
+TICK spread 60 batch_seconds 0.006
+TICK spread 80 batch_seconds 0.006
+TICK spread 100 batch_seconds 0.006
+METHOD_COMPLETE development spread 6
+TICK hybrid 0 batch_seconds 0.022
+TICK hybrid 20 batch_seconds 0.029
+TICK hybrid 40 batch_seconds 0.023
+TICK hybrid 60 batch_seconds 0.023
+TICK hybrid 80 batch_seconds 0.022
+TICK hybrid 100 batch_seconds 0.022
+METHOD_COMPLETE development hybrid 6
+TICK joint_hybrid 0 batch_seconds 0.024
+TICK joint_hybrid 20 batch_seconds 0.024
+TICK joint_hybrid 40 batch_seconds 0.023
+TICK joint_hybrid 60 batch_seconds 0.023
+TICK joint_hybrid 80 batch_seconds 0.024
+TICK joint_hybrid 100 batch_seconds 0.022
+METHOD_COMPLETE development joint_hybrid 6
+COMPLETE development

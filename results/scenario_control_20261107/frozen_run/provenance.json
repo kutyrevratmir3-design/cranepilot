@@ -1,0 +1,198 @@
+{
+  "status": "complete",
+  "config": {
+    "experiment": "scenario_control_20261107",
+    "bundle": "artifacts/research_bundle_20261107",
+    "fold": "primary",
+    "methods": [
+      "nominal",
+      "frequency",
+      "joint",
+      "spread",
+      "hybrid",
+      "joint_hybrid"
+    ],
+    "duration_s": 6,
+    "raw_dt_s": 0.01,
+    "control_dt_s": 0.05,
+    "threads": 1,
+    "solver": {
+      "qp_iterations": 200,
+      "trust_region": 0.2,
+      "command_bound": 0.8,
+      "nominal_tau_s": 0.1
+    },
+    "initial_x_m": 0.1,
+    "target_x_m": 0.3,
+    "evaluation_lengths_m": [
+      0.29,
+      0.64,
+      1.11
+    ],
+    "evaluation_omega_ratios": [
+      0.86,
+      1.14
+    ],
+    "evaluation_tau_s": [
+      0.075,
+      0.205
+    ],
+    "evaluation_gains": [
+      0.85,
+      1.15
+    ],
+    "development_lengths_m": [
+      0.36,
+      0.56,
+      0.76
+    ],
+    "noise_seed": 1007112026,
+    "angle_quantum_rad": 0.0015339807878856412,
+    "position_quantum_m": 0.0001,
+    "angular_pulse_rad_s2": 0.17,
+    "angular_pulse_interval_s": [
+      2.65,
+      3.0
+    ],
+    "plant_substeps": 2,
+    "scope": "New offline acceleration-command ablation: finite scenario mean/spread cost and fixed neural residual with physical Jacobian. No neural training; native xr zero and learned actuator bypassed. No probability/stability/hardware guarantees.",
+    "variants": {
+      "nominal": {},
+      "frequency": {
+        "frequency": true
+      },
+      "joint": {
+        "frequency": true,
+        "joint": true
+      },
+      "spread": {
+        "frequency": true,
+        "joint": true,
+        "spread": 0.25
+      },
+      "hybrid": {
+        "hybrid": true
+      },
+      "joint_hybrid": {
+        "frequency": true,
+        "joint": true,
+        "hybrid": true
+      }
+    },
+    "frequency_grid": [
+      0.85,
+      1.0,
+      1.15
+    ],
+    "actuator_grid": [
+      [
+        0.07,
+        0.8
+      ],
+      [
+        0.1,
+        1.0
+      ],
+      [
+        0.18,
+        1.2
+      ]
+    ],
+    "residual_bound_rad": 0.015
+  },
+  "git_head": "de5d678b10013158e61f8a765d967c3a09edde98",
+  "guarded_hashes": {
+    "configs/scenario_control_20261107.json": "276d43d3d500624fdb26ef129c64b505e3c9f0d996e375a2040ac6a822b8c56c",
+    "docs/SCENARIO_CONTROL_DESIGN_20261107.md": "92fee68999385b8c32e135b46de28d853aacd371fd5af60b5f8408aaa8166fdd",
+    "scripts/scenario_control.py": "bd9b2365babdaf402893731fd4e185f53c8006ffa56e6ac8d55979c46b5c3d39",
+    "scripts/angular_control.py": "21aeeccc87469b1c11d7095645f69ac63750dba0df8e5e74eeacfe7c1db1845d",
+    "scripts/run_scenario_control.py": "265b1efd5df07192b3760e55660254747905c2bce3daa9bac7e04bcc36c4c351",
+    "tests/test_scenario_control.py": "9542653c76a50d6e00578fa5bce043d9d57f8df2caceff35c30f359ae8bfc3d3",
+    "artifacts/research_bundle_20261107/source_integrity_postexport.json": "813b7be21cc96984d5eac28003b0813a303971c949f94caea0d2906c28fe0a3f",
+    "artifacts/research_bundle_20261107/manifest.json": "cd200506a82237525d26af14b3983cb32d109a58f99c444b0e3a90dec094d7f8",
+    "artifacts/research_bundle_20261107/verification.json": "88d07c7162ce617ca453378b0dc2ee2ea2fc0d57a59386e0bb435ccc5eed943c",
+    "artifacts/research_bundle_20261107/short_transfer/retained_lpv.npz": "5200d852474e5550a8ac2d4aa4a947fba2af56ae46d9b6fb4e7605d600152c31",
+    "artifacts/research_bundle_20261107/short_transfer/actor.pt": "d08d829f21f02de819ca9a8b210d6eadbccda835d4de3b7893f5eeb73e8c52eb",
+    "artifacts/research_bundle_20261107/long_transfer/actor.pt": "4288d621134115dfcec60099725e4a22bce9e06a1ddad69fa7602e5976be082c",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed2.pt": "9a2e7806960abd00927671400fe5477dfb6a89ee60396c6624632b321e0149f7",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed2.pt": "69f50229f35b9dda1e6e166c2eab820ccc2766d729c20dc314565eb7c697d878",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed1.pt": "33559d2a55922170b3f5b1e32e58e43e33d80df94442befc596a88e8b6d87e37",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed0.pt": "a3ca8a7db01af33642bba95ec95332c58983296d48d5ec145f23d470b5ebfb4f",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed1.pt": "da78336820d84d09082b2f670440b15b5b87f1b4d9fab29479616ad1d38d858b",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed0.pt": "c643ddeffb8dca15357f697407df615f881f9c2fde6ca6a8b6845969f04ad1cd",
+    "artifacts/research_bundle_20261107/primary/actor.pt": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499",
+    "artifacts/research_bundle_20261107/primary/retained_seed2.pt": "8c11b5d8bf441a2ccd8bc49305112fdee8722507b276a09aa0d9799838ac809a",
+    "artifacts/research_bundle_20261107/primary/candidate_seed2.pt": "a46fd256af6c5c02cecaeba3311773df5c3367e57735eba607c8cf50d62a2646",
+    "artifacts/research_bundle_20261107/primary/candidate_seed1.pt": "f24e97c702b4c7587ade16d73de611f3b1e1246bd3c6eece256f0ab6955defe6",
+    "artifacts/research_bundle_20261107/primary/retained_seed0.pt": "8bca23d661a919e159618d57d85aeef62f078962b1702f0ab520c441568e4199",
+    "artifacts/research_bundle_20261107/primary/retained_seed1.pt": "2f7e8613b714e7e701b52ffe0ad59229294beb3b976c252d216299f3a0b28664",
+    "artifacts/research_bundle_20261107/primary/candidate_seed0.pt": "b42c0e9293beceb72ce2f31b6fe2a53df9054c010cb0e9734e9f6277e8780840"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "source_sha256": {
+      "broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "de5d678b10013158e61f8a765d967c3a09edde98"
+  },
+  "neural_training": false,
+  "scope": "New offline acceleration-command ablation: finite scenario mean/spread cost and fixed neural residual with physical Jacobian. No neural training; native xr zero and learned actuator bypassed. No probability/stability/hardware guarantees.",
+  "started_utc": "2026-11-07T13:51:21.190904+00:00",
+  "selection_performed": false,
+  "parameters_retuned": false,
+  "development_hashes": {
+    "development/cases.csv": "4f0533711596b22f3b8fb0e489dbfd0c06dd0010e656ba1f05bba4aa323393bf",
+    "development/nominal.npz": "068bd2c84603a0abac7a3fc746e8e2719ee0f6b8c2cdbfc0d822935a0c91a9a9",
+    "development/metrics.csv": "60dc1306f0a03cf42c9c8ea5d771e3e6d35f818ddd020e0130111b3f797603e2",
+    "development/joint_hybrid.npz": "0ae86aa71706907e80e851faa0c1a5d6b8e789e7a92ebd9681c49504a980001f",
+    "development/spread.npz": "b9a712bdaf225474c3260b1905f27d1eeeec3c5ec383735acea0d43b13cffcac",
+    "development/frequency.npz": "0a561067003bcbcb31aaab752f3ddf1d5fb4b52c3e0f0e2486d9e4b67ed21d5b",
+    "development/hybrid.npz": "fb5ab365fe1872b73306915fb7e6e34739d7dcbf2956ce7914de2763e4756895",
+    "development/joint.npz": "ad4b3016a2c48aea80a541b543a8782f502c4dc5f0ed902a4723a4c66145ac71"
+  },
+  "locked_utc": "2026-11-07T13:51:30.007637+00:00",
+  "finished_utc": "2026-11-07T13:52:58.269128+00:00",
+  "result_hashes": {
+    "development/cases.csv": "4f0533711596b22f3b8fb0e489dbfd0c06dd0010e656ba1f05bba4aa323393bf",
+    "development/nominal.npz": "068bd2c84603a0abac7a3fc746e8e2719ee0f6b8c2cdbfc0d822935a0c91a9a9",
+    "development/metrics.csv": "60dc1306f0a03cf42c9c8ea5d771e3e6d35f818ddd020e0130111b3f797603e2",
+    "development/joint_hybrid.npz": "0ae86aa71706907e80e851faa0c1a5d6b8e789e7a92ebd9681c49504a980001f",
+    "development/spread.npz": "b9a712bdaf225474c3260b1905f27d1eeeec3c5ec383735acea0d43b13cffcac",
+    "development/frequency.npz": "0a561067003bcbcb31aaab752f3ddf1d5fb4b52c3e0f0e2486d9e4b67ed21d5b",
+    "development/hybrid.npz": "fb5ab365fe1872b73306915fb7e6e34739d7dcbf2956ce7914de2763e4756895",
+    "development/joint.npz": "ad4b3016a2c48aea80a541b543a8782f502c4dc5f0ed902a4723a4c66145ac71",
+    "evaluate/cases.csv": "2fc92af766676629ead6fb1f71560c85c445239a67f0b9ff36a4161625415f1c",
+    "evaluate/nominal.npz": "8ad459038071fa3027bd8fc504c4b8380c4ab2666eccfed370103024d2eb415f",
+    "evaluate/metrics.csv": "7c12bbb0921d289d5ae83a0f7833454c28f925ba895eb6b4562781c72fbe58ba",
+    "evaluate/joint_hybrid.npz": "ed4b8e20c4d0066b9f79e61fa8eaf9f7b4e74c1850ede85dcfaa58d97db43ea3",
+    "evaluate/spread.npz": "6d6bb22b9f80ad85ee4a3722b8abf71d2dda1deec6925b085370dc82ab59b9e6",
+    "evaluate/frequency.npz": "dfd24ad536a9c67cc4eae68c9f179cae7f94f776ccbb207ac054d7a4e434d4d7",
+    "evaluate/hybrid.npz": "3804ec7e33da20cc657a0b7676b995ad4abffd8f40756fb3c03fa986c0a36f19",
+    "evaluate/joint.npz": "4cb4ff09dea46d206d4b7ba0cd3455cd2c242746aeb8bea33e323c51731085b3"
+  }
+}

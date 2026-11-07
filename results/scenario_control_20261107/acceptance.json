@@ -1,0 +1,47 @@
+{
+  "frequency": {
+    "cost_improved": false,
+    "sway_improved": false,
+    "tracking_improved": false,
+    "final_error_within_1percent": false,
+    "no_additional_raw_violations": false,
+    "majority_cost_wins": false,
+    "passed": false
+  },
+  "joint": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": false,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": false,
+    "passed": false
+  },
+  "spread": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": false,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": false,
+    "passed": false
+  },
+  "hybrid": {
+    "cost_improved": false,
+    "sway_improved": true,
+    "tracking_improved": false,
+    "final_error_within_1percent": false,
+    "no_additional_raw_violations": false,
+    "majority_cost_wins": false,
+    "passed": false
+  },
+  "joint_hybrid": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": false,
+    "final_error_within_1percent": false,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": false,
+    "passed": false
+  }
+}

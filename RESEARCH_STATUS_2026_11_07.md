@@ -1,6 +1,36 @@
 # CranePilot: состояние исследования на 7 ноября 2026
 
-Актуальный завершённый эксперимент: **angular_control_20261107**.
+Актуальный завершённый эксперимент: **scenario_control_20261107**.
+
+Проверены6стратегий на612новых синтетических closed-loop эпизодах:
+nominal physical, frequency, joint uncertainty, spread penalty, frozen neural
+residual и joint+residual. Параметры зафиксированы до запуска в de5d678.
+
+На новом наборе96условий относительно nominal:
+
+| Вариант | Realized cost | Sway ISE | Tracking ISE | Final error | Cost wins |
+|---|---:|---:|---:|---:|---:|
+| Joint+spread | −6.78% | −36.11% | +1.74% | −5.31% | 44/96 |
+| Joint+hybrid | −12.80% | −36.99% | +6.77% | +2.00% | 40/96 |
+
+У обоих0из96 превышений15deg против8из96 у nominal; это наблюдение конечного
+набора, не гарантия безопасности. Ни один вариант не прошёл все gates: tracking
+выросла, cost выигрывается не в большинстве пар. Средняя выгода сосредоточена
+в части тяжёлых случаев. Frequency-only и nominal+residual ухудшили общий cost.
+Joint одновременно меняет actuator и forcing uncertainty; отдельный вклад
+каждого этот опыт не устанавливает. Новая универсальная замена не принята.
+
+157tests PASS;612trajectories и forecasts73440решений воспроизведены точно.
+Сохранены1281исходный main/APHYNITY файл. Default neural weights не менялись.
+Это acceleration-command ablation с zero-xr features, не native-command пилот.
+
+[Новый отчёт](docs/SCENARIO_CONTROL_2026_11_07_RU.md),
+[протокол](docs/SCENARIO_CONTROL_DESIGN_20261107.md),
+[траектории и результаты](results/scenario_control_20261107/).
+Следующие гипотезы: разделить forcing/actuator ablations и уменьшить tracking
+tradeoff на новом TRAIN/development наборе. Не выбирать параметры по этим96cases.
+
+Предыдущий завершённый эксперимент: **angular_control_20261107**.
 
 Впервые выполнен отдельный замкнутый тест углового прогноза: 18 development
 и 288 evaluation эпизодов, по96 условий на три регулятора. Веса заморожены,

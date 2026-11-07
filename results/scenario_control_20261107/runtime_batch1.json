@@ -1,0 +1,7 @@
+{
+  "source_sha256": "af49a796cfa149d402e5c44b746b1113cdcadd107222286448117d3476e1e540",
+  "measurements": 90,
+  "includes": "history, observer, all model seeds, FD, QP, nonlinear backtracking",
+  "excludes": "model loading, I/O, scheduling",
+  "real_time_guarantee": false
+}
