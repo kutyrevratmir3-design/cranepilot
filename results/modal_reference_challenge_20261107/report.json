@@ -1,0 +1,21 @@
+{
+  "document": "docs/MODAL_REFERENCE_CHALLENGE_2026_11_07_RU.md",
+  "document_sha256": "f562b2dccd258095629ae671c67557c6f17565842b2e205c7cd681cf1fd734e0",
+  "development_sha256": "e512bf6b93ca9e08c9d224eef6fc9520ff1f2bbe7603cdcecfc4e3eb2dc639fb",
+  "retrospective_sha256": "ca77b6b775b0e3738deb36a2dcae564eebdedea123372a9ba1073b5b80300a46",
+  "verification_sha256": "f616758bb6eb74f9e24edce7d9b4501bd61b860e9a3f2e1cb9ddf2226a256342",
+  "report_source_sha256": "e259944eb6595c8dcc2c0644958874fddec533f4e5047c4ef6fe91588153378d",
+  "comparison": {
+    "modal_mae_deg": 0.26142095903005635,
+    "challenged_arx_mae_deg": 0.4923063812593299,
+    "change_percent": -46.89872628477085,
+    "scenario_wins": 6,
+    "scenarios": 7,
+    "descriptive_low": -85.04857402883445,
+    "descriptive_high": 15.603833273399804,
+    "numerical_gate_against_challenged_reference": false,
+    "independent_confirmation": false,
+    "final_goal_achieved": false,
+    "post_hoc_design": true
+  }
+}

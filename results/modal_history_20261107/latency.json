@@ -1,0 +1,120 @@
+{
+  "source_sha256": "9974ff81198991de688bb2b373034175e1f0b3cd2015eb9ee0aa82c76f577897",
+  "provenance_sha256": "9d3f403ad1a732b30364e89fe8bbf88b591e62d69e93d5ec4b0519c138aefa0a",
+  "selection_sha256": "36c3d87959cb8da51ad090bfd00d6a61e62f1913bf0cb922e0d23cded795e9db",
+  "timing_environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "source_sha256": {
+      "broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "d1f722adc9f638b70914754f9d991e7bace20cf7"
+  },
+  "rows": [
+    {
+      "case": "trolley_theta",
+      "variant": "two_mode",
+      "single_packet_ms": [
+        11.71779099968262,
+        12.10887500201352,
+        11.618458986049518,
+        11.521374981384724,
+        11.486292001791298,
+        11.520625004777685,
+        11.516084021423012,
+        11.519249994307756
+      ],
+      "median_ms": 11.520999993081205,
+      "p95_ms": 11.971995601197705
+    },
+    {
+      "case": "jib_theta",
+      "variant": "two_mode",
+      "single_packet_ms": [
+        11.15574999130331,
+        11.439458001405,
+        11.433582985773683,
+        11.420041002565995,
+        11.35858302586712,
+        11.387624981580302,
+        11.394333007046953,
+        11.3714580074884
+      ],
+      "median_ms": 11.390978994313627,
+      "p95_ms": 11.43740174593404
+    },
+    {
+      "case": "jib_beta",
+      "variant": "two_mode",
+      "single_packet_ms": [
+        11.422040988691151,
+        11.448708013631403,
+        11.401041003409773,
+        11.463458999060094,
+        11.452083999756724,
+        11.463166010798886,
+        11.438791989348829,
+        11.513292003655806
+      ],
+      "median_ms": 11.450396006694064,
+      "p95_ms": 11.495850452047307
+    },
+    {
+      "case": "simult_theta",
+      "variant": "two_mode",
+      "single_packet_ms": [
+        11.334124981658533,
+        11.320916994009167,
+        11.290041002212092,
+        11.275667027803138,
+        11.490834003780037,
+        11.474833998363465,
+        11.392832995625213,
+        11.38137499219738
+      ],
+      "median_ms": 11.357749986927956,
+      "p95_ms": 11.485234001884237
+    },
+    {
+      "case": "simult_beta",
+      "variant": "two_mode",
+      "single_packet_ms": [
+        11.331957997754216,
+        11.328332999255508,
+        11.311415990348905,
+        11.32191700162366,
+        11.309499997878447,
+        11.343124991981313,
+        11.390832980396226,
+        11.418750014854595
+      ],
+      "median_ms": 11.330145498504862,
+      "p95_ms": 11.408979052794166
+    }
+  ],
+  "scope": "Observed single-process wall time on first10 development windows per case, first2warmups discarded; includes all modal grid searches. Not a real-time scheduling or hardware guarantee."
+}

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "source_sha256": "bff10d1c657021992c893def1ce8a12b7e4d5b2137df27b13a73314251c28dc5",
+  "bundle_manifest_sha256": "213b7be8ea19691be4510dbb875b0b4d30652af8fe929f14d93d10a267a2d1ca",
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "origins_considered": 726,
+      "eligible": 726,
+      "maximum_modal_replay_error_deg": 0.0,
+      "maximum_reference_replay_error_deg": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "origins_considered": 726,
+      "eligible": 601,
+      "maximum_modal_replay_error_deg": 0.0,
+      "maximum_reference_replay_error_deg": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "origins_considered": 726,
+      "eligible": 601,
+      "maximum_modal_replay_error_deg": 0.0,
+      "maximum_reference_replay_error_deg": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "origins_considered": 726,
+      "eligible": 545,
+      "maximum_modal_replay_error_deg": 0.0,
+      "maximum_reference_replay_error_deg": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "origins_considered": 726,
+      "eligible": 545,
+      "maximum_modal_replay_error_deg": 0.0,
+      "maximum_reference_replay_error_deg": 0.0
+    }
+  ],
+  "eligible_packets": 3018,
+  "raw_data_in_bundle": false,
+  "inference_requires_no_training_data": true
+}
