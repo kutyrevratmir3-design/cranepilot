@@ -1,0 +1,249 @@
+{
+  "status": "complete",
+  "config": {
+    "experiment": "adaptive_actuator_20261107",
+    "bundle": "artifacts/research_bundle_20261107",
+    "fold": "primary",
+    "methods": [
+      "nominal",
+      "force_only",
+      "actuator_only",
+      "force_actuator",
+      "joint_previous",
+      "adaptive_params",
+      "adaptive_force",
+      "adaptive_observer",
+      "adaptive_force_observer"
+    ],
+    "duration_s": 6,
+    "raw_dt_s": 0.01,
+    "control_dt_s": 0.05,
+    "threads": 1,
+    "solver": {
+      "qp_iterations": 200,
+      "trust_region": 0.2,
+      "command_bound": 0.8,
+      "nominal_tau_s": 0.1
+    },
+    "initial_x_m": 0.1,
+    "target_x_m": 0.3,
+    "evaluation_lengths_m": [
+      0.25,
+      0.62,
+      1.07
+    ],
+    "evaluation_omega_ratios": [
+      0.87,
+      1.13
+    ],
+    "evaluation_tau_s": [
+      0.06,
+      0.19
+    ],
+    "evaluation_gains": [
+      0.78,
+      1.22
+    ],
+    "development_lengths_m": [
+      0.34,
+      0.54,
+      0.74
+    ],
+    "noise_seed": 1207112026,
+    "angle_quantum_rad": 0.0015339807878856412,
+    "position_quantum_m": 0.0001,
+    "angular_pulse_rad_s2": 0.16,
+    "angular_pulse_interval_s": [
+      2.45,
+      2.85
+    ],
+    "plant_substeps": 2,
+    "scope": "New acceleration-command ablation with explicit two-second position/applied-command memory. Online lag/gain identification, no neural training. Angular history remains41samples; native xr zero; no hardware/stability guarantee.",
+    "variants": {
+      "nominal": {},
+      "force_only": {
+        "force": true
+      },
+      "actuator_only": {
+        "actuator": true
+      },
+      "force_actuator": {
+        "force": true,
+        "actuator": true
+      },
+      "joint_previous": {
+        "frequency": true,
+        "force": true,
+        "actuator": true
+      },
+      "adaptive_params": {
+        "adaptive": true
+      },
+      "adaptive_force": {
+        "adaptive": true,
+        "force": true
+      },
+      "adaptive_observer": {
+        "adaptive": true,
+        "observer": true
+      },
+      "adaptive_force_observer": {
+        "adaptive": true,
+        "force": true,
+        "observer": true
+      }
+    },
+    "frequency_grid": [
+      0.85,
+      1.0,
+      1.15
+    ],
+    "actuator_grid": [
+      [
+        0.07,
+        0.8
+      ],
+      [
+        0.1,
+        1.0
+      ],
+      [
+        0.18,
+        1.2
+      ]
+    ],
+    "residual_bound_rad": 0.015,
+    "identification": {
+      "history_intervals": 40,
+      "minimum_samples": 21,
+      "update_every_ticks": 4,
+      "ema": 0.25,
+      "tau_grid": [
+        0.05,
+        0.065,
+        0.08,
+        0.1,
+        0.125,
+        0.16,
+        0.2,
+        0.25
+      ],
+      "gain_bounds": [
+        0.5,
+        1.6
+      ],
+      "gain_ridge": 1e-07,
+      "tau_penalty": 1e-09,
+      "minimum_information_m": 0.0004,
+      "maximum_fit_rmse_m": 0.001
+    }
+  },
+  "git_head": "522d01d16192635d0759ff0e5906906f497a7b8a",
+  "guarded_hashes": {
+    "configs/adaptive_actuator_20261107.json": "b38a249abb9cc5c4bbb270d1dcc57f40604132cc608f4b38233229ac82ec6eb2",
+    "docs/ADAPTIVE_ACTUATOR_DESIGN_20261107.md": "460191589fd3620d47ba9127960ebe439b3eda7b42e27e53b350fba3d080150c",
+    "scripts/adaptive_actuator.py": "beb1dd4381d79fcdb0c74d2c0b0a75ab9a1ae93f325eefbbf5f2b7cf99daff60",
+    "scripts/actuator_identification.py": "a88bb73227f80cfb8c1037c2ade46a4f72747ecebcae8bad913e1e3a84b5a173",
+    "scripts/angular_control.py": "21aeeccc87469b1c11d7095645f69ac63750dba0df8e5e74eeacfe7c1db1845d",
+    "scripts/run_adaptive_actuator.py": "74188a99fdc77e0f7622e4fdd648b6539da546ee717a7e26b8ec4c7ba45545d9",
+    "tests/test_adaptive_actuator.py": "daff75a0168cfc1fc14b9023abfa0affbcfaa4a7ae4115678916a8b0ec43df7a",
+    "artifacts/research_bundle_20261107/source_integrity_postexport.json": "813b7be21cc96984d5eac28003b0813a303971c949f94caea0d2906c28fe0a3f",
+    "artifacts/research_bundle_20261107/manifest.json": "cd200506a82237525d26af14b3983cb32d109a58f99c444b0e3a90dec094d7f8",
+    "artifacts/research_bundle_20261107/verification.json": "88d07c7162ce617ca453378b0dc2ee2ea2fc0d57a59386e0bb435ccc5eed943c",
+    "artifacts/research_bundle_20261107/short_transfer/retained_lpv.npz": "5200d852474e5550a8ac2d4aa4a947fba2af56ae46d9b6fb4e7605d600152c31",
+    "artifacts/research_bundle_20261107/short_transfer/actor.pt": "d08d829f21f02de819ca9a8b210d6eadbccda835d4de3b7893f5eeb73e8c52eb",
+    "artifacts/research_bundle_20261107/long_transfer/actor.pt": "4288d621134115dfcec60099725e4a22bce9e06a1ddad69fa7602e5976be082c",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed2.pt": "9a2e7806960abd00927671400fe5477dfb6a89ee60396c6624632b321e0149f7",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed2.pt": "69f50229f35b9dda1e6e166c2eab820ccc2766d729c20dc314565eb7c697d878",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed1.pt": "33559d2a55922170b3f5b1e32e58e43e33d80df94442befc596a88e8b6d87e37",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed0.pt": "a3ca8a7db01af33642bba95ec95332c58983296d48d5ec145f23d470b5ebfb4f",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed1.pt": "da78336820d84d09082b2f670440b15b5b87f1b4d9fab29479616ad1d38d858b",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed0.pt": "c643ddeffb8dca15357f697407df615f881f9c2fde6ca6a8b6845969f04ad1cd",
+    "artifacts/research_bundle_20261107/primary/actor.pt": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499",
+    "artifacts/research_bundle_20261107/primary/retained_seed2.pt": "8c11b5d8bf441a2ccd8bc49305112fdee8722507b276a09aa0d9799838ac809a",
+    "artifacts/research_bundle_20261107/primary/candidate_seed2.pt": "a46fd256af6c5c02cecaeba3311773df5c3367e57735eba607c8cf50d62a2646",
+    "artifacts/research_bundle_20261107/primary/candidate_seed1.pt": "f24e97c702b4c7587ade16d73de611f3b1e1246bd3c6eece256f0ab6955defe6",
+    "artifacts/research_bundle_20261107/primary/retained_seed0.pt": "8bca23d661a919e159618d57d85aeef62f078962b1702f0ab520c441568e4199",
+    "artifacts/research_bundle_20261107/primary/retained_seed1.pt": "2f7e8613b714e7e701b52ffe0ad59229294beb3b976c252d216299f3a0b28664",
+    "artifacts/research_bundle_20261107/primary/candidate_seed0.pt": "b42c0e9293beceb72ce2f31b6fe2a53df9054c010cb0e9734e9f6277e8780840"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "source_sha256": {
+      "broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "522d01d16192635d0759ff0e5906906f497a7b8a"
+  },
+  "neural_training": false,
+  "online_actuator_identification": true,
+  "available_actuator_history_s": 2.0,
+  "angular_history_s": 0.4,
+  "scope": "New acceleration-command ablation with explicit two-second position/applied-command memory. Online lag/gain identification, no neural training. Angular history remains41samples; native xr zero; no hardware/stability guarantee.",
+  "started_utc": "2026-11-07T14:24:23.361785+00:00",
+  "selection_performed": false,
+  "parameters_retuned": false,
+  "development_hashes": {
+    "development/cases.csv": "e2e152b40cc92d04a26fee79132fb97a8e2a2201d63e850de14f524d4371d7fc",
+    "development/adaptive_force_observer.npz": "740d20f72287f91eb16ac5bffed8cb0cbf228c00a602f89dd9dbe90c3095e5d4",
+    "development/nominal.npz": "b116040e94fa67b757c9b02514009067b29ed4a9df8f04c52fe75864f9a8fcda",
+    "development/adaptive_force.npz": "ff3d0a69a0b049d5b1d59a09c38122de02310d90c261ae963c74cbf1e9952e39",
+    "development/force_actuator.npz": "eb82636c6bc7e44206648f0f521e505afb229a6742d2daabdfdda196b02d91bb",
+    "development/metrics.csv": "e56bfe9223867a8ca6b78c3f99ee5e32bc1b7f2030c12cebfcf92af5959774db",
+    "development/joint_previous.npz": "f4e876b40e62529c301b9364e96254fc054db686a4e961f84427938d446d102a",
+    "development/force_only.npz": "f6c83742f6f4370b2222ed7db09e8ba744ec83f5243365057891ea8d0a7be030",
+    "development/actuator_only.npz": "20757b4adc422f51a21403c8d341ebccb82895eec4aebebd74bfbd7ceaf08007",
+    "development/adaptive_observer.npz": "7ef9467c1c84a58c0212e7ad44a9a36f5bfc69263265558b27d003156b7f0fd8",
+    "development/adaptive_params.npz": "dd82733b0035852069e97879aea5c839e3ce30c3ceee8c9724bb975353ccfced"
+  },
+  "locked_utc": "2026-11-07T14:24:30.579938+00:00",
+  "finished_utc": "2026-11-07T14:26:56.901363+00:00",
+  "result_hashes": {
+    "development/cases.csv": "e2e152b40cc92d04a26fee79132fb97a8e2a2201d63e850de14f524d4371d7fc",
+    "development/adaptive_force_observer.npz": "740d20f72287f91eb16ac5bffed8cb0cbf228c00a602f89dd9dbe90c3095e5d4",
+    "development/nominal.npz": "b116040e94fa67b757c9b02514009067b29ed4a9df8f04c52fe75864f9a8fcda",
+    "development/adaptive_force.npz": "ff3d0a69a0b049d5b1d59a09c38122de02310d90c261ae963c74cbf1e9952e39",
+    "development/force_actuator.npz": "eb82636c6bc7e44206648f0f521e505afb229a6742d2daabdfdda196b02d91bb",
+    "development/metrics.csv": "e56bfe9223867a8ca6b78c3f99ee5e32bc1b7f2030c12cebfcf92af5959774db",
+    "development/joint_previous.npz": "f4e876b40e62529c301b9364e96254fc054db686a4e961f84427938d446d102a",
+    "development/force_only.npz": "f6c83742f6f4370b2222ed7db09e8ba744ec83f5243365057891ea8d0a7be030",
+    "development/actuator_only.npz": "20757b4adc422f51a21403c8d341ebccb82895eec4aebebd74bfbd7ceaf08007",
+    "development/adaptive_observer.npz": "7ef9467c1c84a58c0212e7ad44a9a36f5bfc69263265558b27d003156b7f0fd8",
+    "development/adaptive_params.npz": "dd82733b0035852069e97879aea5c839e3ce30c3ceee8c9724bb975353ccfced",
+    "evaluate/cases.csv": "ef0c47c4d184652433df12cbea5778b615011e7e731bcf68c65436845f9316fc",
+    "evaluate/adaptive_force_observer.npz": "88a9bd971ed143d257b02e57090aa8e1797d019f8e3943fed766b19663d4cc19",
+    "evaluate/nominal.npz": "8f48fd6050f5d3414e2211b10571f4b9d7d5694d63f425fcb83108f67e184f7b",
+    "evaluate/adaptive_force.npz": "6ccc140961a96c9e908955d6ade0185a2876895402cde6d06c024647f723ce05",
+    "evaluate/force_actuator.npz": "c46e02f2227589aa3a4c8d868bf18fd4937cc5c35b393ef8c22a16b1b8f2be5b",
+    "evaluate/metrics.csv": "976f6d0b66178ecba8edc638e122a56f8529d21f821ee744d5b4fa73eefc1e2a",
+    "evaluate/joint_previous.npz": "0a3b4f032c875d21a6eeaad3f9fcf3d8dd99bdf4d08c67ee603a3aaafc69b46e",
+    "evaluate/force_only.npz": "bc85f57dbec401b1a32d1dfb38e16265ce84f6843802ab3065668f9455ee77ea",
+    "evaluate/actuator_only.npz": "64d99cbd46377a63e471415645cbc24c5b128b0054246422a4d552f78713ee89",
+    "evaluate/adaptive_observer.npz": "caae742aaed9f1b429eb5c1df06ca7cab282b10c818588d118a2399286ae2a13",
+    "evaluate/adaptive_params.npz": "c85c85e53f403a8fc10b3cc829eb517fbcd9c6791bed5a823028aecc218a89f7"
+  }
+}

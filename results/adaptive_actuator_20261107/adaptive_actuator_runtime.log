@@ -1,0 +1,11 @@
+                           median       max
+method                                     
+actuator_only            4.988250  5.276042
+adaptive_force           7.627459  8.370500
+adaptive_force_observer  8.631000  9.262584
+adaptive_observer        8.230625  8.724000
+adaptive_params          7.544417  7.623792
+force_actuator           5.180333  5.528541
+force_only               4.918208  5.068000
+joint_previous           5.184459  5.396667
+nominal                  4.910250  5.276292

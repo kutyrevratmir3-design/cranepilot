@@ -1,0 +1,88 @@
+{
+  "provenance_sha256": "7f5b54aa15ad56adf51bb67064a751f3d054abeb5489e501ed434064624ef327",
+  "report_source_sha256": "b50e92e982051de3c76fd731331da23d595828aced665c700ffc04d60dcc33c0",
+  "document": "docs/ADAPTIVE_ACTUATOR_2026_11_07_RU.md",
+  "document_sha256": "a0c5d5b5ac812d9e65d8f3636ced478e6e3cf00ee4839912ff390aa6cd4e6ba9",
+  "verification_sha256": "c392d91e977f08c7733c75a29d3bc0eefde024a637d81ecb2c5a9c3d0cc0a686",
+  "aggregation_helper_sha256": "dce7a33a88806399c5d01f6e26658db8693b70db974a5b2b66202074bc8bb020",
+  "runtime_batch1_sha256": "5dc88a0b46b0dfdf18ba2ef72785c85f599c60698c3ef468706ba0bc56ea3af7",
+  "acceptance": {
+    "force_only": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "passed": true
+    },
+    "actuator_only": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "passed": true
+    },
+    "force_actuator": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "passed": true
+    },
+    "joint_previous": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": false,
+      "final_error_within_1percent": false,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": false,
+      "passed": false
+    },
+    "adaptive_params": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "passed": true
+    },
+    "adaptive_force": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "passed": true
+    },
+    "adaptive_observer": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "passed": true
+    },
+    "adaptive_force_observer": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "passed": true
+    }
+  },
+  "evaluation_episodes": 864,
+  "development_episodes": 54,
+  "online_actuator_identification": true,
+  "neural_training": false,
+  "native_controller_evaluated": false
+}

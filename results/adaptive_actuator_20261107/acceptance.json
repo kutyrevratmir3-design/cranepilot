@@ -1,0 +1,74 @@
+{
+  "force_only": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "passed": true
+  },
+  "actuator_only": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "passed": true
+  },
+  "force_actuator": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "passed": true
+  },
+  "joint_previous": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": false,
+    "final_error_within_1percent": false,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": false,
+    "passed": false
+  },
+  "adaptive_params": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "passed": true
+  },
+  "adaptive_force": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "passed": true
+  },
+  "adaptive_observer": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "passed": true
+  },
+  "adaptive_force_observer": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "passed": true
+  }
+}

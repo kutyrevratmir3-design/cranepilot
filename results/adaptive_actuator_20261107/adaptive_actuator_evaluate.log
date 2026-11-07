@@ -1,0 +1,64 @@
+TICK nominal 0 batch_seconds 0.011
+TICK nominal 20 batch_seconds 0.007
+TICK nominal 40 batch_seconds 0.007
+TICK nominal 60 batch_seconds 0.007
+TICK nominal 80 batch_seconds 0.007
+TICK nominal 100 batch_seconds 0.007
+METHOD_COMPLETE evaluate nominal 96
+TICK force_only 0 batch_seconds 0.009
+TICK force_only 20 batch_seconds 0.008
+TICK force_only 40 batch_seconds 0.008
+TICK force_only 60 batch_seconds 0.008
+TICK force_only 80 batch_seconds 0.008
+TICK force_only 100 batch_seconds 0.008
+METHOD_COMPLETE evaluate force_only 96
+TICK actuator_only 0 batch_seconds 0.009
+TICK actuator_only 20 batch_seconds 0.009
+TICK actuator_only 40 batch_seconds 0.009
+TICK actuator_only 60 batch_seconds 0.009
+TICK actuator_only 80 batch_seconds 0.008
+TICK actuator_only 100 batch_seconds 0.008
+METHOD_COMPLETE evaluate actuator_only 96
+TICK force_actuator 0 batch_seconds 0.012
+TICK force_actuator 20 batch_seconds 0.012
+TICK force_actuator 40 batch_seconds 0.012
+TICK force_actuator 60 batch_seconds 0.011
+TICK force_actuator 80 batch_seconds 0.011
+TICK force_actuator 100 batch_seconds 0.011
+METHOD_COMPLETE evaluate force_actuator 96
+TICK joint_previous 0 batch_seconds 0.03
+TICK joint_previous 20 batch_seconds 0.021
+TICK joint_previous 40 batch_seconds 0.021
+TICK joint_previous 60 batch_seconds 0.021
+TICK joint_previous 80 batch_seconds 0.02
+TICK joint_previous 100 batch_seconds 0.02
+METHOD_COMPLETE evaluate joint_previous 96
+TICK adaptive_params 0 batch_seconds 0.007
+TICK adaptive_params 20 batch_seconds 0.01
+TICK adaptive_params 40 batch_seconds 0.01
+TICK adaptive_params 60 batch_seconds 0.01
+TICK adaptive_params 80 batch_seconds 0.01
+TICK adaptive_params 100 batch_seconds 0.01
+METHOD_COMPLETE evaluate adaptive_params 96
+TICK adaptive_force 0 batch_seconds 0.009
+TICK adaptive_force 20 batch_seconds 0.01
+TICK adaptive_force 40 batch_seconds 0.011
+TICK adaptive_force 60 batch_seconds 0.011
+TICK adaptive_force 80 batch_seconds 0.011
+TICK adaptive_force 100 batch_seconds 0.011
+METHOD_COMPLETE evaluate adaptive_force 96
+TICK adaptive_observer 0 batch_seconds 0.007
+TICK adaptive_observer 20 batch_seconds 0.01
+TICK adaptive_observer 40 batch_seconds 0.011
+TICK adaptive_observer 60 batch_seconds 0.011
+TICK adaptive_observer 80 batch_seconds 0.011
+TICK adaptive_observer 100 batch_seconds 0.01
+METHOD_COMPLETE evaluate adaptive_observer 96
+TICK adaptive_force_observer 0 batch_seconds 0.009
+TICK adaptive_force_observer 20 batch_seconds 0.012
+TICK adaptive_force_observer 40 batch_seconds 0.012
+TICK adaptive_force_observer 60 batch_seconds 0.012
+TICK adaptive_force_observer 80 batch_seconds 0.012
+TICK adaptive_force_observer 100 batch_seconds 0.012
+METHOD_COMPLETE evaluate adaptive_force_observer 96
+COMPLETE evaluate

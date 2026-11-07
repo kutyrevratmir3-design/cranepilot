@@ -1,6 +1,39 @@
 # CranePilot: состояние исследования на 7 ноября 2026
 
-Актуальный завершённый эксперимент: **scenario_control_20261107**.
+Актуальный завершённый эксперимент: **adaptive_actuator_20261107**.
+
+Выполнены918новых closed-loop эпизодов:9методов ×(6development+96evaluation).
+Протокол/код зарегистрированы до испытаний в522d01d. Neural weights неизменны.
+Семь из восьми альтернатив прошли все заранее заданные gates относительно
+nominal на этом новом симуляционном наборе.
+
+| Метод | Cost | Sway ISE | Tracking ISE | Final error | Cost wins |
+|---|---:|---:|---:|---:|---:|
+| Static force+actuator bank | −62.56% | −72.07% | −9.80% | −38.95% | 78/96 |
+| Online actuator+force+observer | −66.55% | −76.40% | −5.57% | −58.74% | 76/96 |
+
+У adaptive_force_observer settled84/96 против62/96 nominal, angle>15deg
+0/96 против8/96. Он точнее по sway/cost, но static force_actuator точнее по
+tracking. Нельзя объявлять один метод доминирующим по всем целям.
+Идентификатор использует только прошлые x и собственные applied commands,
+не true v/a/parameters. Явно добавлена память2s для actuator; angular history
+остаётся41samples/.4s. Observer меняет только trolley v/a.
+
+164tests PASS;918траекторий, online identifier states и прогнозы110160решений
+воспроизведены точно. Сохранены1281original main/APHYNITY файлов.
+Полное warm batch1 решение adaptive_force_observer median8.63ms в этом запуске;
+это не WCET/scheduling гарантия. Изменённых neural weights нет.
+
+Это acceleration-command simulation с zero-xr features. Структура actuator
+близка к fitted first-order model; победа ещё требует проверки delay/двух lag/
+friction/time-varying gain, fixed-parameter observer с той же2s памятью,
+а затем native xr qualification. Hardware/SOTA/native-controller успех не заявлен.
+
+[Отчёт](docs/ADAPTIVE_ACTUATOR_2026_11_07_RU.md),
+[протокол](docs/ADAPTIVE_ACTUATOR_DESIGN_20261107.md),
+[все fitted traces и результаты](results/adaptive_actuator_20261107/).
+
+Предыдущий завершённый эксперимент: **scenario_control_20261107**.
 
 Проверены6стратегий на612новых синтетических closed-loop эпизодах:
 nominal physical, frequency, joint uncertainty, spread penalty, frozen neural
