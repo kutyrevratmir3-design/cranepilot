@@ -1,0 +1,264 @@
+{
+  "status": "complete",
+  "git_head": "a0c6c185b58b61e7941d835c2f69b2af1ba4e7c8",
+  "config": {
+    "experiment": "modal_backtest_gate_20261107",
+    "parent_development": "artifacts/runs/modal_history_20261107",
+    "parent_reference": "artifacts/runs/modal_reference_challenge_20261107",
+    "parent_confirmation": "artifacts/runs/modal_confirmation_20261107",
+    "backtest_steps": 20,
+    "short_history_samples": 61,
+    "backtest_horizons_raw": [
+      10,
+      20,
+      35,
+      50,
+      75,
+      100
+    ],
+    "variants": [
+      "reference",
+      "modal",
+      "hard_0.8",
+      "hard_1",
+      "hard_1.2",
+      "soft"
+    ],
+    "reference_selection": "Choose long4s or short3s ARX percase on original validation, never on the seven opened records",
+    "short_arx_fit": "Reuse each case's prior validation-selected representation, form and alpha; fit exactly one3s model on the same TRAIN origins/records",
+    "selection": "Single global variant minimizing equal-case validation seven-horizon MAE; reference is an eligible fallback and wins exact ties",
+    "development_gate": {
+      "maximum_mae_ratio": 0.9,
+      "minimum_case_wins": 4,
+      "cases": 5
+    },
+    "evaluation_status": "All old public data are opened; subsequent evaluation is retrospective development, never independent confirmation",
+    "scope": "Same4s available raw history and settled-input task; predict the last observed1s from the preceding3s to estimate local model reliability. No new architecture or future-target gating."
+  },
+  "task": {
+    "experiment": "modal_history_20261107",
+    "data": "data/processed",
+    "history_samples": 81,
+    "history_spacing_raw": 5,
+    "dt_s": 0.05,
+    "horizons_raw": [
+      10,
+      20,
+      35,
+      50,
+      75,
+      100,
+      150
+    ],
+    "origin_start_s": 25,
+    "origin_stride_raw": 10,
+    "past_length_range_m": 0.002,
+    "past_position_range": 0.002,
+    "future_reference_range": 1e-09,
+    "families": {
+      "trolley": {
+        "axes": [
+          "theta"
+        ],
+        "train": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "validation": [
+          4
+        ],
+        "confirmation": [
+          9,
+          13
+        ]
+      },
+      "jib": {
+        "axes": [
+          "theta",
+          "beta"
+        ],
+        "train": [
+          14,
+          15,
+          16,
+          18,
+          19,
+          20
+        ],
+        "validation": [
+          17
+        ],
+        "confirmation": [
+          21,
+          22,
+          23
+        ]
+      },
+      "simult": {
+        "axes": [
+          "theta",
+          "beta"
+        ],
+        "train": [
+          24,
+          25,
+          26,
+          27,
+          29,
+          30,
+          31
+        ],
+        "validation": [
+          28
+        ],
+        "confirmation": [
+          32,
+          33
+        ]
+      }
+    },
+    "ridge_grid": [
+      1e-10,
+      1e-08,
+      1e-06,
+      0.0001,
+      0.01,
+      1
+    ],
+    "arx_forms": [
+      "direct",
+      "harmonic_residual",
+      "lpv_direct",
+      "lpv_harmonic_residual"
+    ],
+    "frequency_ratios": {
+      "min": 0.5,
+      "max": 1.6,
+      "count": 89
+    },
+    "damping_grid": [
+      0,
+      0.04,
+      0.12,
+      0.3
+    ],
+    "modal_variants": [
+      "fixed",
+      "one_mode",
+      "two_mode"
+    ],
+    "secondary_ratios": {
+      "min": 0.5,
+      "max": 3,
+      "count": 101
+    },
+    "minimum_mode_separation_ratio": 0.2,
+    "minimum_amplitude_bins": 1,
+    "local_ar_orders": [
+      2,
+      4,
+      8
+    ],
+    "local_ar_ridge": [
+      1e-08,
+      0.0001,
+      0.01
+    ],
+    "development_gate": {
+      "maximum_mae_ratio": 0.9,
+      "minimum_case_wins": 4,
+      "cases": 5
+    },
+    "confirmation_gate": {
+      "maximum_mae_ratio": 0.9,
+      "minimum_scenario_wins": 5,
+      "scenarios": 7,
+      "bootstrap_samples": 10000,
+      "seed": 7112030,
+      "upper_change_percent_below": 0
+    },
+    "sealed_confirmation_ids": [
+      9,
+      13,
+      21,
+      22,
+      23,
+      32,
+      33
+    ],
+    "confirmation_status": "Previously imported public records with no saved fitting/validation/score use found; NOT newly collected or independently acquired data. Keep sealed until development gate and frozen checkpoint/selection hash.",
+    "scope": "Causal residual-sway forecasting after 25s, with stationary past length/drive and constant known future reference; not active-manoeuvre prediction, hoisting dynamics, hardware control or a new modal identification algorithm. No target-based eligibility or future measured positions/lengths."
+  },
+  "guarded_hashes": {
+    "configs/modal_backtest_gate_20261107.json": "8e81aac9fbda1699d6b150e163110328b681cad8badd7ff9d7e7d41e83f6d688",
+    "docs/MODAL_BACKTEST_GATE_DESIGN_20261107.md": "6dd0b4db54c259fd68a640d6a05098ea5c73cee5ae944485ad14c99d7df0367a",
+    "scripts/modal_backtest_gate.py": "af1abf2159484c8c434d62ee88ddd20432ab811688607e6013510209405f42ba",
+    "scripts/run_modal_backtest_gate.py": "2a7f21f99a5877390a3d73951854da95844af34d4fe76f020d24a3a98f23c184",
+    "tests/test_modal_backtest_gate.py": "9d0211a1034b55ae59dac9f3f1d7c217c3ae98a455402afb54810d41435c7b04",
+    "artifacts/runs/modal_history_20261107/provenance.json": "9d3f403ad1a732b30364e89fe8bbf88b591e62d69e93d5ec4b0519c138aefa0a",
+    "artifacts/runs/modal_reference_challenge_20261107/development.json": "e512bf6b93ca9e08c9d224eef6fc9520ff1f2bbe7603cdcecfc4e3eb2dc639fb",
+    "artifacts/runs/modal_reference_challenge_20261107/selection.json": "37b99b7c984a5eb89902944bf1fe8a3225e5d4f6cc3b684f0818284043deaa0c",
+    "artifacts/runs/modal_confirmation_20261107/provenance.json": "2f42746aefa7dab768021f4beb2b292effee258fe7c985beca96b1a711c51e7e",
+    "scripts/modal_history.py": "11b21490fc78da67b2863a1b06c9c129bb294a9149f29c9bcda0896b928c5414",
+    "scripts/modal_reference_challenge.py": "23b26b08bfece5c768b386770751ee04773ea4e973ff4358edc854823f591858"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "source_sha256": {
+      "broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "modal_pilot.py": "d1e3b8d7a82ddd0f5c268569b4fad3480263d8b4d3e88b0a778afceac320cce9",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "a0c6c185b58b61e7941d835c2f69b2af1ba4e7c8"
+  },
+  "holdout_read_during_development": false,
+  "all_old_records_previously_opened": true,
+  "independent_confirmation": false,
+  "selection_sha256": "da7e904470ee4e3f7f1d0d2ebe72c367eda207e0d9e6b822b900e5fe12f19acf",
+  "result_hashes": {
+    "selection.json": "da7e904470ee4e3f7f1d0d2ebe72c367eda207e0d9e6b822b900e5fe12f19acf",
+    "validation_metrics.csv": "07d1cdaf93c0abdc55c63eb95d293b998202ee4982d6ca7dcfd86ffd34b50c9d",
+    "simult_theta/validation.npz": "75177b68b32981b4d5c5ff49dd779a8e0878c01f70b483a49f23d3f28b804704",
+    "simult_theta/short_arx.npz": "3b4200756e1721ede168fc7664bdba869965de5a0f648e6a9c94ce15c3a9e969",
+    "trolley_theta/validation.npz": "273d5061f5bf8f788cced2e2c7689f7e2d933b07fd0755500d606b25d30fb0da",
+    "trolley_theta/short_arx.npz": "bcc85e714e4553635020a32ac645e68920d948d0fe94069bd085fa7b59483327",
+    "jib_beta/validation.npz": "417546db214527d526e8513767b42c1d2e566c538fde4d91079c4545527a58ba",
+    "jib_beta/short_arx.npz": "e9b365c13b1f6b6815640df7ac16febab4b61d9e29ea43c7630f56d4a367c738",
+    "jib_theta/validation.npz": "1bd8dd86138fc8dc3faac03a8b7e7c3563d099b95e61620dd7eb2c1847fa270c",
+    "jib_theta/short_arx.npz": "1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd",
+    "simult_beta/validation.npz": "bacd7f298b5a4f91f6858f13f316dcad1f0d94206a51e399b9e1bb44203f1ab0",
+    "simult_beta/short_arx.npz": "5c60b6f8c987937bc4b2eadc39e6955fc227b598c47b403ffc78a1b63608da53"
+  }
+}
