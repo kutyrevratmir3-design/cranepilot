@@ -1,0 +1,138 @@
+{
+  "experiment": "adaptive_actuator_20261107",
+  "bundle": "artifacts/research_bundle_20261107",
+  "fold": "primary",
+  "methods": [
+    "nominal",
+    "force_only",
+    "actuator_only",
+    "force_actuator",
+    "joint_previous",
+    "adaptive_params",
+    "adaptive_force",
+    "adaptive_observer",
+    "adaptive_force_observer"
+  ],
+  "duration_s": 6,
+  "raw_dt_s": 0.01,
+  "control_dt_s": 0.05,
+  "threads": 1,
+  "solver": {
+    "qp_iterations": 200,
+    "trust_region": 0.2,
+    "command_bound": 0.8,
+    "nominal_tau_s": 0.1
+  },
+  "initial_x_m": 0.1,
+  "target_x_m": 0.3,
+  "evaluation_lengths_m": [
+    0.25,
+    0.62,
+    1.07
+  ],
+  "evaluation_omega_ratios": [
+    0.87,
+    1.13
+  ],
+  "evaluation_tau_s": [
+    0.06,
+    0.19
+  ],
+  "evaluation_gains": [
+    0.78,
+    1.22
+  ],
+  "development_lengths_m": [
+    0.34,
+    0.54,
+    0.74
+  ],
+  "noise_seed": 1207112026,
+  "angle_quantum_rad": 0.0015339807878856412,
+  "position_quantum_m": 0.0001,
+  "angular_pulse_rad_s2": 0.16,
+  "angular_pulse_interval_s": [
+    2.45,
+    2.85
+  ],
+  "plant_substeps": 2,
+  "scope": "New acceleration-command ablation with explicit two-second position/applied-command memory. Online lag/gain identification, no neural training. Angular history remains41samples; native xr zero; no hardware/stability guarantee.",
+  "variants": {
+    "nominal": {},
+    "force_only": {
+      "force": true
+    },
+    "actuator_only": {
+      "actuator": true
+    },
+    "force_actuator": {
+      "force": true,
+      "actuator": true
+    },
+    "joint_previous": {
+      "frequency": true,
+      "force": true,
+      "actuator": true
+    },
+    "adaptive_params": {
+      "adaptive": true
+    },
+    "adaptive_force": {
+      "adaptive": true,
+      "force": true
+    },
+    "adaptive_observer": {
+      "adaptive": true,
+      "observer": true
+    },
+    "adaptive_force_observer": {
+      "adaptive": true,
+      "force": true,
+      "observer": true
+    }
+  },
+  "frequency_grid": [
+    0.85,
+    1.0,
+    1.15
+  ],
+  "actuator_grid": [
+    [
+      0.07,
+      0.8
+    ],
+    [
+      0.1,
+      1.0
+    ],
+    [
+      0.18,
+      1.2
+    ]
+  ],
+  "residual_bound_rad": 0.015,
+  "identification": {
+    "history_intervals": 40,
+    "minimum_samples": 21,
+    "update_every_ticks": 4,
+    "ema": 0.25,
+    "tau_grid": [
+      0.05,
+      0.065,
+      0.08,
+      0.1,
+      0.125,
+      0.16,
+      0.2,
+      0.25
+    ],
+    "gain_bounds": [
+      0.5,
+      1.6
+    ],
+    "gain_ridge": 1e-07,
+    "tau_penalty": 1e-09,
+    "minimum_information_m": 0.0004,
+    "maximum_fit_rmse_m": 0.001
+  }
+}
