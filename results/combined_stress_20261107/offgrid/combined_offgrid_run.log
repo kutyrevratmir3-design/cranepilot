@@ -1,0 +1,4 @@
+OFFGRID primary 512 cases; max integration delta 1.1961304811707411e-09
+OFFGRID short_transfer 512 cases; max integration delta 1.2345013885942535e-09
+OFFGRID long_transfer 512 cases; max integration delta 1.232575264557626e-09
+COMPLETE artifacts/runs/combined_offgrid_20261107

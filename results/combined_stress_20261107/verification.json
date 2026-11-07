@@ -1,0 +1,306 @@
+{
+  "passed": true,
+  "tolerance_deg": 5e-05,
+  "checks": [
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 4,
+      "model": "incumbent",
+      "max_deg": 1.3660377589985728e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 4,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "history_only_and_target_invariance",
+      "fold": "primary",
+      "max_deg": 3.415094397496432e-06
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "incumbent",
+      "max_deg": 1.6221698388108052e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "incumbent",
+      "max_deg": 4.26886799687054e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "incumbent",
+      "max_deg": 8.53773599374108e-06
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "incumbent",
+      "max_deg": 1.707547198748216e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "incumbent",
+      "max_deg": 1.5367924788733944e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "incumbent",
+      "max_deg": 7.790684321662411e-06
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "incumbent",
+      "max_deg": 5.816332759422949e-06
+    },
+    {
+      "check": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "integrator_half_step",
+      "fold": "primary",
+      "max_deg": 2.1482321092675235e-09
+    },
+    {
+      "check": "identical_past_hidden_future",
+      "fold": "primary",
+      "pairs": 180,
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 5,
+      "model": "incumbent",
+      "max_deg": 8.53773599374108e-06
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 5,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "history_only_and_target_invariance",
+      "fold": "short_transfer",
+      "max_deg": 2.561320798122324e-06
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "incumbent",
+      "max_deg": 1.3660377589985728e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "incumbent",
+      "max_deg": 1.8783019186230376e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "incumbent",
+      "max_deg": 3.2443396776216105e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "incumbent",
+      "max_deg": 8.110849194054026e-06
+    },
+    {
+      "check": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "integrator_half_step",
+      "fold": "short_transfer",
+      "max_deg": 2.200241930911488e-09
+    },
+    {
+      "check": "identical_past_hidden_future",
+      "fold": "short_transfer",
+      "pairs": 180,
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 4,
+      "model": "incumbent",
+      "max_deg": 1.1099056791863404e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 4,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "history_only_and_target_invariance",
+      "fold": "long_transfer",
+      "max_deg": 1.707547198748216e-06
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "incumbent",
+      "max_deg": 3.585849117371254e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "incumbent",
+      "max_deg": 1.4514151189359836e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "incumbent",
+      "max_deg": 1.1952830391237512e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "incumbent",
+      "max_deg": 2.219811358372681e-05
+    },
+    {
+      "check": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "check": "integrator_half_step",
+      "fold": "long_transfer",
+      "max_deg": 2.2056774988621095e-09
+    },
+    {
+      "check": "identical_past_hidden_future",
+      "fold": "long_transfer",
+      "pairs": 180,
+      "max_deg": 0.0
+    }
+  ]
+}
