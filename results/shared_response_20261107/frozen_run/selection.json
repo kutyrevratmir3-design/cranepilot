@@ -1,0 +1,10 @@
+{
+  "selected": "nonlinear",
+  "blend": 1.0,
+  "validation_mae_deg": 0.03772393478022416,
+  "reference_mae_deg": 0.039572294429558084,
+  "change_percent": -4.670842760012716,
+  "independent_confirmation": false,
+  "old_test_evaluated": false,
+  "offset_rad": -0.007774698788430018
+}

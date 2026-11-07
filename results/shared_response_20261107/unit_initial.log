@@ -1,0 +1,8 @@
+test_causal_convolution_alignment (tests.test_shared_response.SharedResponseTests.test_causal_convolution_alignment) ... ok
+test_shared_fit_reload_and_target_invariance (tests.test_shared_response.SharedResponseTests.test_shared_fit_reload_and_target_invariance) ... ok
+test_shared_harmonic_represents_known_feature_map (tests.test_shared_response.SharedResponseTests.test_shared_harmonic_represents_known_feature_map) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.046s
+
+OK

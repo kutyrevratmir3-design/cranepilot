@@ -1,0 +1,549 @@
+{
+  "status": "complete",
+  "config": {
+    "experiment": "matched_adaptation_20261107",
+    "repository": "https://github.com/ikhemakhem/BehavioralTrajGenCrane",
+    "commit": "1aa26b5c358e885325f75cc0e89ef613ff4b26f3",
+    "commit_date": "2026-04-12T20:59:25Z",
+    "cache": "data/raw/behavioral_crane_1aa26b5",
+    "files": [
+      {
+        "path": "data/camera_coordinates.mat",
+        "bytes": 325,
+        "git_blob_sha1": "fd8c7d23a197db39726b2d28219cc366a498befe"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_1.mat",
+        "bytes": 23303,
+        "git_blob_sha1": "b6ee54d6a1bd715da1c5744d23614497de2bcf32"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_10.mat",
+        "bytes": 23196,
+        "git_blob_sha1": "755827ceef0dc0675049783acb869d618738594c"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_11.mat",
+        "bytes": 23363,
+        "git_blob_sha1": "d28f8f942506794329f7d1289037b1bfb97ddcad"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_12.mat",
+        "bytes": 23364,
+        "git_blob_sha1": "3cb33d147eed74f6864988fc0b04322d95b36df0"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_13.mat",
+        "bytes": 23298,
+        "git_blob_sha1": "f968847b1786f8d760b04247cefb10a3c076373a"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_14.mat",
+        "bytes": 23225,
+        "git_blob_sha1": "8c7656dbcf2812e2566600c65a414f1658927703"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_15.mat",
+        "bytes": 23208,
+        "git_blob_sha1": "ad6aba9d96c3158e3dd747c867239ee84c6d69d0"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_16.mat",
+        "bytes": 23318,
+        "git_blob_sha1": "307dd57db17948124d60e97e647357dffd32fc87"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_17.mat",
+        "bytes": 23268,
+        "git_blob_sha1": "496c7a26cefc876468f9dd66868020ac3ff87928"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_18.mat",
+        "bytes": 23273,
+        "git_blob_sha1": "2235880b88ecee6baf3849f2d998f92bc2498950"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_19.mat",
+        "bytes": 23352,
+        "git_blob_sha1": "61e11679e74638abd89d51543907c555ab2e852b"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_2.mat",
+        "bytes": 23329,
+        "git_blob_sha1": "d61fbcd3500b62ac1c262a8a34d5c90c64c84b4e"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_20.mat",
+        "bytes": 23322,
+        "git_blob_sha1": "473026e57383b26bc0f12a97406878d7376bf10a"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_3.mat",
+        "bytes": 23230,
+        "git_blob_sha1": "d37614bbd46c64d5ca65c2443e87c7f62a7b6424"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_4.mat",
+        "bytes": 23290,
+        "git_blob_sha1": "2d627fc907cc576a4dbdb453593ec7275f025af6"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_5.mat",
+        "bytes": 23278,
+        "git_blob_sha1": "9f74140fd9eca28289c8fca97dcbe31bcf4a5894"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_6.mat",
+        "bytes": 23309,
+        "git_blob_sha1": "2d46f1be20d06dec03b70de8df4e926659c4b3b8"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_7.mat",
+        "bytes": 23306,
+        "git_blob_sha1": "647bc6400f913ff712d4e50e72cb6021c907cefd"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_8.mat",
+        "bytes": 23297,
+        "git_blob_sha1": "9739f49af0f37a1349f0446f7b58ff7af744f312"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_9.mat",
+        "bytes": 23349,
+        "git_blob_sha1": "035bffc84ed36708a9254e9bce151db1819fd9db"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_1.mat",
+        "bytes": 48654,
+        "git_blob_sha1": "58c7cf2e8f6a0b16cb52c754398371a8bd1bccab"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_10.mat",
+        "bytes": 47404,
+        "git_blob_sha1": "a26f20441d3beb5e26e5f0db19ba4bcc5f17350c"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_11.mat",
+        "bytes": 48340,
+        "git_blob_sha1": "a02870d7d67f99324e6e0b62e41940a3d76fb8c6"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_12.mat",
+        "bytes": 48095,
+        "git_blob_sha1": "d52013d577d4b193e2975535e50e290d080a27a4"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_13.mat",
+        "bytes": 48669,
+        "git_blob_sha1": "bc9016bc4980903a765aa6fbb078d4b241998ddd"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_14.mat",
+        "bytes": 46823,
+        "git_blob_sha1": "71c46de245838e4ff1157152f4c168302685c746"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_15.mat",
+        "bytes": 47174,
+        "git_blob_sha1": "a1696795662feab2d69fbea0a3a4ae3935bbda94"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_16.mat",
+        "bytes": 48425,
+        "git_blob_sha1": "8417e1f3548d4b1e7bf68a810046305a45ef5b93"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_17.mat",
+        "bytes": 47212,
+        "git_blob_sha1": "f3fa6c8bcfda8b1073a2925d2630f08f47c8cb94"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_18.mat",
+        "bytes": 47253,
+        "git_blob_sha1": "999ac85a0db29e5773c38938cb8cf0a5ecd820d7"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_19.mat",
+        "bytes": 48034,
+        "git_blob_sha1": "638495c06ace35066512afa998ca06fe977a77e9"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_2.mat",
+        "bytes": 47911,
+        "git_blob_sha1": "928808cd6fe829b4d840c405b59224974b8ff245"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_20.mat",
+        "bytes": 48515,
+        "git_blob_sha1": "8ddf5ce140a7387cd6ba56d52804729cfc2db461"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_3.mat",
+        "bytes": 47239,
+        "git_blob_sha1": "03fa01c04e332e9c9f0a67d0ba6678a347834554"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_4.mat",
+        "bytes": 47710,
+        "git_blob_sha1": "1f4b37574f2cdcda1f8087793929ceb31812ae09"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_5.mat",
+        "bytes": 48025,
+        "git_blob_sha1": "d8fd4cace093d065d62b5e2e67cf11c5490d45d0"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_6.mat",
+        "bytes": 48418,
+        "git_blob_sha1": "aea93884797d172e74769cca1241e8d06373e022"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_7.mat",
+        "bytes": 48775,
+        "git_blob_sha1": "aae4d49cb1734cdc67de8a4aea2713808d5b72e4"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_8.mat",
+        "bytes": 47558,
+        "git_blob_sha1": "94e51e74d18820b84cb329082cf3103f976e0084"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_9.mat",
+        "bytes": 47516,
+        "git_blob_sha1": "02f75df1b0a0f27172eeb311dccc1246ed38958c"
+      }
+    ],
+    "train_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "validation_ids": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "test_ids": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "schema_record_seen_before_preregistration": [
+      1
+    ],
+    "dt_s": 0.05,
+    "history_samples": 9,
+    "steps": 30,
+    "horizon_index": [
+      1,
+      3,
+      6,
+      9,
+      14,
+      19,
+      29
+    ],
+    "train_stride": 2,
+    "evaluation_stride": 2,
+    "rope_length_m": 1,
+    "boom_elevation_rad": 0.8107963267948965,
+    "boom_tip_height_m": 1.55,
+    "pixel_scale": 1.7,
+    "threads": 2,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "arx_ridge": [
+      0.0001,
+      0.01,
+      1
+    ],
+    "pem": {
+      "omega_ratio_bounds": [
+        0.7,
+        1.3
+      ],
+      "damping_bounds": [
+        0,
+        1
+      ],
+      "gain_bounds": [
+        0.3,
+        2
+      ],
+      "start_omega_ratios": [
+        0.85,
+        1,
+        1.15
+      ],
+      "max_nfev": 100
+    },
+    "lstm": {
+      "hidden": 32,
+      "epochs": 100,
+      "patience": 15,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001
+    },
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 7112027
+    },
+    "methods": [
+      "strong_arx",
+      "physics_prior_arx",
+      "structured_narx",
+      "adapted_neural",
+      "equilibrium_neural"
+    ],
+    "scope": "Matched TRAIN1-12/VALIDATION13-16 development: strengthened direct/geometric ARX reference, fitted-physics residual ARX/NARX, and equal-data adaptation of existing angular networks. Optional TEST17-20 is retrospective. No independent confirmation yet; no native actuator or hardware control.",
+    "source_run": "artifacts/runs/external_benchmark_20261107",
+    "ridge_grid": [
+      1e-10,
+      1e-08,
+      1e-06,
+      0.0001,
+      0.01,
+      1.0
+    ],
+    "neural": {
+      "epochs": 100,
+      "patience": 20,
+      "batch_size": 128,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.0001,
+      "gradient_clip": 2.0
+    },
+    "candidates": [
+      "physics_prior_arx",
+      "structured_narx",
+      "adapted_neural",
+      "equilibrium_neural"
+    ],
+    "selection_reference": "strong_arx",
+    "development_only_until_selection": true,
+    "test_status": "IDs17-20 already seen in external_benchmark; any new score is retrospective, never independent confirmation",
+    "fresh_confirmation_source": null,
+    "oscillator_parameters": [
+      3.265577988448446,
+      0.05732448261272044,
+      0.9949534546912502
+    ]
+  },
+  "git_head": "b3ce41d9ef29e59ae37e90e064a2fbd4d9b8961c",
+  "guarded_hashes": {
+    "configs/matched_adaptation_20261107.json": "126a936d3d05080a052028457a59d4d719004f1f8a6e0a21c0e31e17c4413086",
+    "docs/MATCHED_ADAPTATION_DESIGN_20261107.md": "cf76e1a2834600b691dbe25161407322d99371407180dae3ba3af9a971e88474",
+    "docs/SAME_RIG_DATA_ACCESS_20261107.md": "78272bb673168c796cce670070ac8074992e1121852929793c8305faba2f701a",
+    "scripts/matched_adaptation.py": "06348a264a044f083c5f9966fa79e2dc470a588c9acc7ab303767e647ea79945",
+    "scripts/run_matched_adaptation.py": "95e13bd98134c355a92ae7d5d30bbd3ea6b1981cd38fbe3c1c7fea3803d94ebf",
+    "tests/test_matched_adaptation.py": "405c0218127cc3b3a8cd9f97342934608f3901fd574bfb163ac82eb0077ae904",
+    "src/cranepilot/broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+    "src/cranepilot/metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+    "src/cranepilot/benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+    "src/cranepilot/models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+    "src/cranepilot/temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+    "src/cranepilot/control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+    "src/cranepilot/fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+    "src/cranepilot/__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+    "src/cranepilot/phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+    "src/cranepilot/forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+    "src/cranepilot/physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+    "src/cranepilot/cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+    "src/cranepilot/rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+    "src/cranepilot/passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+    "src/cranepilot/innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+    "src/cranepilot/adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+    "src/cranepilot/data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+    "artifacts/research_bundle_20261107/source_integrity_postexport.json": "813b7be21cc96984d5eac28003b0813a303971c949f94caea0d2906c28fe0a3f",
+    "artifacts/research_bundle_20261107/manifest.json": "cd200506a82237525d26af14b3983cb32d109a58f99c444b0e3a90dec094d7f8",
+    "artifacts/research_bundle_20261107/verification.json": "88d07c7162ce617ca453378b0dc2ee2ea2fc0d57a59386e0bb435ccc5eed943c",
+    "artifacts/research_bundle_20261107/short_transfer/retained_lpv.npz": "5200d852474e5550a8ac2d4aa4a947fba2af56ae46d9b6fb4e7605d600152c31",
+    "artifacts/research_bundle_20261107/short_transfer/actor.pt": "d08d829f21f02de819ca9a8b210d6eadbccda835d4de3b7893f5eeb73e8c52eb",
+    "artifacts/research_bundle_20261107/long_transfer/actor.pt": "4288d621134115dfcec60099725e4a22bce9e06a1ddad69fa7602e5976be082c",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed2.pt": "9a2e7806960abd00927671400fe5477dfb6a89ee60396c6624632b321e0149f7",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed2.pt": "69f50229f35b9dda1e6e166c2eab820ccc2766d729c20dc314565eb7c697d878",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed1.pt": "33559d2a55922170b3f5b1e32e58e43e33d80df94442befc596a88e8b6d87e37",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed0.pt": "a3ca8a7db01af33642bba95ec95332c58983296d48d5ec145f23d470b5ebfb4f",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed1.pt": "da78336820d84d09082b2f670440b15b5b87f1b4d9fab29479616ad1d38d858b",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed0.pt": "c643ddeffb8dca15357f697407df615f881f9c2fde6ca6a8b6845969f04ad1cd",
+    "artifacts/research_bundle_20261107/primary/actor.pt": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499",
+    "artifacts/research_bundle_20261107/primary/retained_seed2.pt": "8c11b5d8bf441a2ccd8bc49305112fdee8722507b276a09aa0d9799838ac809a",
+    "artifacts/research_bundle_20261107/primary/candidate_seed2.pt": "a46fd256af6c5c02cecaeba3311773df5c3367e57735eba607c8cf50d62a2646",
+    "artifacts/research_bundle_20261107/primary/candidate_seed1.pt": "f24e97c702b4c7587ade16d73de611f3b1e1246bd3c6eece256f0ab6955defe6",
+    "artifacts/research_bundle_20261107/primary/retained_seed0.pt": "8bca23d661a919e159618d57d85aeef62f078962b1702f0ab520c441568e4199",
+    "artifacts/research_bundle_20261107/primary/retained_seed1.pt": "2f7e8613b714e7e701b52ffe0ad59229294beb3b976c252d216299f3a0b28664",
+    "artifacts/research_bundle_20261107/primary/candidate_seed0.pt": "b42c0e9293beceb72ce2f31b6fe2a53df9054c010cb0e9734e9f6277e8780840",
+    "scripts/external_baselines.py": "dbb1bf15defb2c7de4c22d558a8d7ae6ba7d77510be30d7e34ddc4028202f6ea",
+    "scripts/external_crane_data.py": "5fa8da821287b5ab0b1e57d58e3245509603683fab6f9dd5697ac0acd6493c6a",
+    "scripts/predict_cranepilot.py": "9d6461cc3c9943e661643b8c6ed7117e89c6688c66a32e8b0b258ae8e572e160",
+    "scripts/predict_research_bundle.py": "71b76f3b6d6d054c1092392cbed025f7ec6e36406b2d53108d2026f0655481eb",
+    "artifacts/runs/external_benchmark_20261107/selection.json": "33a9542cf2b6f5a4d2171ba9c2f3ad7aa783699f6000ed688b7581b278fd8153",
+    "artifacts/runs/external_benchmark_20261107/provenance.json": "d7670216c72b6ba9b04caea1a725bcb104393d25dc66053e77f5b132a5cc35b2"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "source_sha256": {
+      "broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "b3ce41d9ef29e59ae37e90e064a2fbd4d9b8961c"
+  },
+  "independent_confirmation": false,
+  "confirmation_source": null,
+  "development_reads": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "started_utc": "2026-11-07T17:03:13.522560+00:00",
+  "selection_sha256": "66c4edc8007428038dc36848c5fc2316fa09d54377156c1924f12c1782eb3c3a",
+  "locked_utc": "2026-11-07T17:09:09.289110+00:00",
+  "development_hashes": {
+    "adapted_neural_seed0.pt": "23132080d7fb50a82d84a3c2ce34059eef2964f1e4ed9d3c845a18746318f9db",
+    "training.csv": "5fa0ddd6a7ac22298ac77fcdeef6d228fc6cf91b2c37822938bf939f69a263e0",
+    "adapted_neural_seed1.pt": "b3184c91047e0f297240be8a1294a2b8e0702acea2dbacddd62c8de634c495cd",
+    "strong_arx.npz": "782bc8a073fc90415cab123c0ce629fc1036c043b01ed11c175aeee834e0e70f",
+    "equilibrium_neural_seed2.pt": "c3c5b6caeb293d8f6324b228edafbb399cbcf67d5e27371c3896fcd65f112085",
+    "ridge_validation.csv": "8998263ab4f4a64475e7ecaa8102e57656dd73664b00c8b380214735a81b214c",
+    "neural_fits.json": "3632226a83cc06e198e90df6244ee554620dbcdf1090cd580a9d03204c89ef26",
+    "physics_prior_arx.npz": "8d3f800dae34d26b923b1a9bc11cc01e1165efc2803045bd2f982d5b89a15db4",
+    "selection.json": "66c4edc8007428038dc36848c5fc2316fa09d54377156c1924f12c1782eb3c3a",
+    "adapted_neural_seed2.pt": "fe66f11ed28b6579e99aa608e0715c9e2eaf4aed020eb55509d2fef76848569f",
+    "structured_narx.npz": "71c200724cfcea2f340801fafa742a5e4299fbdd7768ccd0877fbeb91bb74f50",
+    "equilibrium_neural_seed1.pt": "2888094bf10134bd35769e59d6857e05e6d49fbfb654b42d478283e6994b77b9",
+    "equilibrium_neural_seed0.pt": "96e9403783dd672e72e831a9735ebaac1fd3f4b2ceb718ebc6e4618c6bb0741d",
+    "ridge_candidates/strong_arx_none_0.0001.npz": "e22aa86436511b1a6fde61213c325b7c1f22470d77622bf2fd269eea3d1003d0",
+    "ridge_candidates/structured_narx_fitted_0.01.npz": "72c38bc8aee1ec90c9ff7a783859632ee522fb122ac78932dec29a5e39e2f25e",
+    "ridge_candidates/strong_arx_geometric_1.npz": "599ff5cd21a9fc1941b17bb6a5e3bbdd5d11865b58416f2ac73b84b67d23dcab",
+    "ridge_candidates/strong_arx_none_1e-06.npz": "792e191b8579b36831526d01fd31d4647d8956d705094f0b5e1eea1d9bff3a77",
+    "ridge_candidates/physics_prior_arx_fitted_1.npz": "5107114669ed833c74b4d24b714e79b2864708add62dda210038701f35285901",
+    "ridge_candidates/strong_arx_none_1.npz": "9472b4b796736374fc9f7d6d0e253f85c04efcef94eec7e50b408b08b3fcb9f3",
+    "ridge_candidates/structured_narx_fitted_1e-08.npz": "c55f62d5f549e558520d18a8543288e35e865fdfe16658f2813efa2e78c8c03c",
+    "ridge_candidates/strong_arx_none_1e-10.npz": "28861b6f8a83be3d2e918f28b15d532e9a32950a1000df99d65ac7a91406add7",
+    "ridge_candidates/physics_prior_arx_fitted_1e-06.npz": "9beefaf698ed4605bac81092470824b64856a76b607a15acd44f9543e51ff3d8",
+    "ridge_candidates/structured_narx_fitted_1.npz": "e8172837a844f15aaea13171920184b959570cb37556e0efd0879ec32c906018",
+    "ridge_candidates/physics_prior_arx_fitted_1e-10.npz": "c51dc60230ae63f0ba8c36eb039a7daf25ddb4f884744e27bce37bba286ea9fa",
+    "ridge_candidates/structured_narx_fitted_0.0001.npz": "71c200724cfcea2f340801fafa742a5e4299fbdd7768ccd0877fbeb91bb74f50",
+    "ridge_candidates/strong_arx_geometric_1e-08.npz": "e36eee9630c74e8acf2fe83e06a22d5897f08f2a3554f525987cff6014aed7e0",
+    "ridge_candidates/strong_arx_geometric_0.0001.npz": "782bc8a073fc90415cab123c0ce629fc1036c043b01ed11c175aeee834e0e70f",
+    "ridge_candidates/strong_arx_none_0.01.npz": "8e4f2a435380589bc145c0fcb5f927e2ab16127a8bf8b82532ede002b341c8ba",
+    "ridge_candidates/strong_arx_geometric_1e-06.npz": "adb8b744d0bd45938f19e8d7230796880e76b12085f346d9a24e95940f9d622f",
+    "ridge_candidates/strong_arx_geometric_0.01.npz": "3b88987f6704286bee1d1c6cef9036f09473aaf90920fe11b64f85248d8dee69",
+    "ridge_candidates/strong_arx_geometric_1e-10.npz": "c3392cdee67a6240c45b88622aface73f614e92acda43ef6ba5d6133e5f832d2",
+    "ridge_candidates/physics_prior_arx_fitted_1e-08.npz": "3e7bf14d83a672df042d97850e74fa33ee051f4f41357d793edd4f92b274a07d",
+    "ridge_candidates/physics_prior_arx_fitted_0.0001.npz": "8d3f800dae34d26b923b1a9bc11cc01e1165efc2803045bd2f982d5b89a15db4",
+    "ridge_candidates/structured_narx_fitted_1e-10.npz": "cbeb58c2ce098c964b2c7b14696b316a2009a12c87bcfba8b2b02d4439164425",
+    "ridge_candidates/physics_prior_arx_fitted_0.01.npz": "8d75e817e0a0c7adc94b22d8b155cfce5175da2b0ef2e45bc786df6076e4e52b",
+    "ridge_candidates/strong_arx_none_1e-08.npz": "c25ad0ca41411bcccd71eaf688bf07396397594e2f1d6f73d871e04fa572d0b3",
+    "ridge_candidates/structured_narx_fitted_1e-06.npz": "6dce723dd8cede4f91979e89ad37cbbc8fa8d57f929ae21c6daf90adbfd7f982",
+    "validation/record_16.npz": "4023dcd2c2b14b51a5ceb5dddc2ab7f7d888e79a6e87d99aea0b1317ed173824",
+    "validation/record_14.npz": "f1a1121b3d9b1748985602f8a81b8f2adf33fd02b76a79374d019a3c57bb42ce",
+    "validation/record_15.npz": "2b12f54d629bac5870640b6038e92c7869ad9170ac39351a1aa87ab967e58419",
+    "validation/metrics.csv": "86f71d76acba8bd462d70f6c0703d3f62cda3041e88f61892019cbfe37ab5be5",
+    "validation/record_13.npz": "d4a2a5109b11a91d9a2889c6be84d36050f297dbae21b29aff566df3626e431e"
+  },
+  "test_records_previously_seen": true,
+  "no_refit_after_validation_lock": true,
+  "finished_utc": "2026-11-07T17:10:02.329387+00:00",
+  "result_hashes": {
+    "adapted_neural_seed0.pt": "23132080d7fb50a82d84a3c2ce34059eef2964f1e4ed9d3c845a18746318f9db",
+    "training.csv": "5fa0ddd6a7ac22298ac77fcdeef6d228fc6cf91b2c37822938bf939f69a263e0",
+    "adapted_neural_seed1.pt": "b3184c91047e0f297240be8a1294a2b8e0702acea2dbacddd62c8de634c495cd",
+    "strong_arx.npz": "782bc8a073fc90415cab123c0ce629fc1036c043b01ed11c175aeee834e0e70f",
+    "equilibrium_neural_seed2.pt": "c3c5b6caeb293d8f6324b228edafbb399cbcf67d5e27371c3896fcd65f112085",
+    "ridge_validation.csv": "8998263ab4f4a64475e7ecaa8102e57656dd73664b00c8b380214735a81b214c",
+    "neural_fits.json": "3632226a83cc06e198e90df6244ee554620dbcdf1090cd580a9d03204c89ef26",
+    "physics_prior_arx.npz": "8d3f800dae34d26b923b1a9bc11cc01e1165efc2803045bd2f982d5b89a15db4",
+    "selection.json": "66c4edc8007428038dc36848c5fc2316fa09d54377156c1924f12c1782eb3c3a",
+    "adapted_neural_seed2.pt": "fe66f11ed28b6579e99aa608e0715c9e2eaf4aed020eb55509d2fef76848569f",
+    "structured_narx.npz": "71c200724cfcea2f340801fafa742a5e4299fbdd7768ccd0877fbeb91bb74f50",
+    "equilibrium_neural_seed1.pt": "2888094bf10134bd35769e59d6857e05e6d49fbfb654b42d478283e6994b77b9",
+    "equilibrium_neural_seed0.pt": "96e9403783dd672e72e831a9735ebaac1fd3f4b2ceb718ebc6e4618c6bb0741d",
+    "retrospective/record_17.npz": "5c0959e0d3cd70d27eb199a191d3ade90c1416bfb1bea498a874b8450ace4f3d",
+    "retrospective/metrics.csv": "5be6dee978ac1b3442e77a511dfc8410e8786c38b33bc040d2745441f6d8b7f1",
+    "retrospective/record_20.npz": "6977bfb472f4e04a8b620129167afd8f94a99c7b46517912564da36a56c7d2fa",
+    "retrospective/record_18.npz": "ab31cebd3ec19fa811ac7a9b121c1ebf8e1827c9fb52c8771580d908815e011f",
+    "retrospective/record_19.npz": "98636ee51be77f1c380e3b9e35c2850a388b39a939c1b1191ea579a4560afe18",
+    "ridge_candidates/strong_arx_none_0.0001.npz": "e22aa86436511b1a6fde61213c325b7c1f22470d77622bf2fd269eea3d1003d0",
+    "ridge_candidates/structured_narx_fitted_0.01.npz": "72c38bc8aee1ec90c9ff7a783859632ee522fb122ac78932dec29a5e39e2f25e",
+    "ridge_candidates/strong_arx_geometric_1.npz": "599ff5cd21a9fc1941b17bb6a5e3bbdd5d11865b58416f2ac73b84b67d23dcab",
+    "ridge_candidates/strong_arx_none_1e-06.npz": "792e191b8579b36831526d01fd31d4647d8956d705094f0b5e1eea1d9bff3a77",
+    "ridge_candidates/physics_prior_arx_fitted_1.npz": "5107114669ed833c74b4d24b714e79b2864708add62dda210038701f35285901",
+    "ridge_candidates/strong_arx_none_1.npz": "9472b4b796736374fc9f7d6d0e253f85c04efcef94eec7e50b408b08b3fcb9f3",
+    "ridge_candidates/structured_narx_fitted_1e-08.npz": "c55f62d5f549e558520d18a8543288e35e865fdfe16658f2813efa2e78c8c03c",
+    "ridge_candidates/strong_arx_none_1e-10.npz": "28861b6f8a83be3d2e918f28b15d532e9a32950a1000df99d65ac7a91406add7",
+    "ridge_candidates/physics_prior_arx_fitted_1e-06.npz": "9beefaf698ed4605bac81092470824b64856a76b607a15acd44f9543e51ff3d8",
+    "ridge_candidates/structured_narx_fitted_1.npz": "e8172837a844f15aaea13171920184b959570cb37556e0efd0879ec32c906018",
+    "ridge_candidates/physics_prior_arx_fitted_1e-10.npz": "c51dc60230ae63f0ba8c36eb039a7daf25ddb4f884744e27bce37bba286ea9fa",
+    "ridge_candidates/structured_narx_fitted_0.0001.npz": "71c200724cfcea2f340801fafa742a5e4299fbdd7768ccd0877fbeb91bb74f50",
+    "ridge_candidates/strong_arx_geometric_1e-08.npz": "e36eee9630c74e8acf2fe83e06a22d5897f08f2a3554f525987cff6014aed7e0",
+    "ridge_candidates/strong_arx_geometric_0.0001.npz": "782bc8a073fc90415cab123c0ce629fc1036c043b01ed11c175aeee834e0e70f",
+    "ridge_candidates/strong_arx_none_0.01.npz": "8e4f2a435380589bc145c0fcb5f927e2ab16127a8bf8b82532ede002b341c8ba",
+    "ridge_candidates/strong_arx_geometric_1e-06.npz": "adb8b744d0bd45938f19e8d7230796880e76b12085f346d9a24e95940f9d622f",
+    "ridge_candidates/strong_arx_geometric_0.01.npz": "3b88987f6704286bee1d1c6cef9036f09473aaf90920fe11b64f85248d8dee69",
+    "ridge_candidates/strong_arx_geometric_1e-10.npz": "c3392cdee67a6240c45b88622aface73f614e92acda43ef6ba5d6133e5f832d2",
+    "ridge_candidates/physics_prior_arx_fitted_1e-08.npz": "3e7bf14d83a672df042d97850e74fa33ee051f4f41357d793edd4f92b274a07d",
+    "ridge_candidates/physics_prior_arx_fitted_0.0001.npz": "8d3f800dae34d26b923b1a9bc11cc01e1165efc2803045bd2f982d5b89a15db4",
+    "ridge_candidates/structured_narx_fitted_1e-10.npz": "cbeb58c2ce098c964b2c7b14696b316a2009a12c87bcfba8b2b02d4439164425",
+    "ridge_candidates/physics_prior_arx_fitted_0.01.npz": "8d75e817e0a0c7adc94b22d8b155cfce5175da2b0ef2e45bc786df6076e4e52b",
+    "ridge_candidates/strong_arx_none_1e-08.npz": "c25ad0ca41411bcccd71eaf688bf07396397594e2f1d6f73d871e04fa572d0b3",
+    "ridge_candidates/structured_narx_fitted_1e-06.npz": "6dce723dd8cede4f91979e89ad37cbbc8fa8d57f929ae21c6daf90adbfd7f982",
+    "validation/record_16.npz": "4023dcd2c2b14b51a5ceb5dddc2ab7f7d888e79a6e87d99aea0b1317ed173824",
+    "validation/record_14.npz": "f1a1121b3d9b1748985602f8a81b8f2adf33fd02b76a79374d019a3c57bb42ce",
+    "validation/record_15.npz": "2b12f54d629bac5870640b6038e92c7869ad9170ac39351a1aa87ab967e58419",
+    "validation/metrics.csv": "86f71d76acba8bd462d70f6c0703d3f62cda3041e88f61892019cbfe37ab5be5",
+    "validation/record_13.npz": "d4a2a5109b11a91d9a2889c6be84d36050f297dbae21b29aff566df3626e431e"
+  }
+}
