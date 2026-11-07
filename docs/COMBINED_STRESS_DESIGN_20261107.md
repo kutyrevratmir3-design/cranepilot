@@ -55,3 +55,17 @@ adaptive-physics comparisons even if incumbent is beaten. These fixed operationa
 thresholds are not statistical noninferiority bounds. Do not promote by pooled
 means, retune after seeing new stress, claim passivity for the blended output,
 or call this fresh hardware/SOTA evidence. Any failed subgroup remains visible.
+
+
+## Numerical revision before new simulation results
+
+First attempt `combined_stress_20261107` stopped on original-model replay for
+primary record2: compiled float32 flow differed from retained original flow by
+0.000052934degrees, above unchanged0.00005degree tolerance. Preserve failed run.
+For the revised run use the original InnovationForecaster implementation for
+incumbent and its gated comparator; soft_symmetry and combined stay unchanged.
+No metrics or simulation scores were interpreted to choose this revision.
+Hidden-input forecast equality uses the same numerical tolerance because paired
+histories can cross differently sized BLAS chunks; input histories remain
+bitwise equal. Parent reference files are now verified against parent hashes.
+All thresholds, weights, simulator parameters and candidate remain unchanged.

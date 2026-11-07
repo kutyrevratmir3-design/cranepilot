@@ -49,6 +49,7 @@ def main():
 def evaluate(cfg, out, prov):
     torch.set_num_threads(4)
     old = json.loads((Path(cfg['source_run']) / 'provenance.json').read_text())
+    broad_prov = json.loads((Path(cfg['broad_run']) / 'provenance.json').read_text())
     data = load_dataset(Path('data/processed'))
     real_rows, sim_rows, gate_rows, checks = [], [], [], []
     for fold in cfg['folds']:
@@ -63,6 +64,8 @@ def evaluate(cfg, out, prov):
                 pred, seeds, gate = predictor.from_raw(raw)
                 # Parent replay detects changed physical convention or model assembly.
                 previous = Path(cfg['broad_run']) / fold / f'predictions_s{sid}.npz'
+                if sha256(previous) != broad_prov['result_hashes'][f'{fold}/predictions_s{sid}.npz']:
+                    raise ValueError('Parent reference result changed')
                 with np.load(previous) as retained:
                     np.testing.assert_array_equal(k, retained['k'])
                     for name in ('incumbent', 'soft_symmetry'):
@@ -110,8 +113,9 @@ def evaluate(cfg, out, prov):
         # Unannounced future forcing must not leak into any forecast or past noise.
         nominal = np.flatnonzero(meta.condition.to_numpy()=='nominal'); hidden = np.flatnonzero(meta.condition.to_numpy()=='hidden_impulse')
         np.testing.assert_array_equal(theta[nominal],theta[hidden])
-        for name,y in pred.items(): np.testing.assert_array_equal(y[nominal],y[hidden])
-        checks.append({'check':'identical_past_hidden_future','fold':fold,'pairs':len(nominal),'max_deg':0.0})
+        hidden_delta = max(float(np.abs(np.rad2deg(y[nominal]-y[hidden])).max()) for y in pred.values())
+        if hidden_delta > 5e-5: raise AssertionError(('hidden_future_invariance',hidden_delta))
+        checks.append({'check':'identical_past_hidden_future','fold':fold,'pairs':len(nominal),'max_deg':hidden_delta})
         for name,y in pred.items():
             error = np.abs(np.rad2deg(y[:,HORIZON_INDEX]-target[:,HORIZON_INDEX]))
             for j,h in enumerate(HORIZONS_S):

@@ -5,6 +5,7 @@ import numpy as np
 import torch
 from cranepilot.broad_strategies import make_model
 from cranepilot.data import sha256
+from cranepilot.innovation import InnovationForecaster
 from cranepilot.forced_observer import refine_windows, analytic_rollout
 from cranepilot.physics import LengthCalibration
 from scripts.run_temporal import load_actor
@@ -33,7 +34,8 @@ class CombinedCandidate:
             models = []
             for i, seed in enumerate(config['seeds']):
                 path = Path(info['weights'][i].replace('\\', '/')) if name == 'incumbent' else broad / fold / f'soft_symmetry_seed{seed}.pt'
-                model = make_model(choice); model.load_state_dict(torch.load(path, weights_only=True)); model.eval(); models.append(model)
+                model = InnovationForecaster(True) if name == 'incumbent' else make_model(choice)
+                model.load_state_dict(torch.load(path, weights_only=True)); model.eval(); models.append(model)
             self.models[name] = models
 
     def from_packet(self, packet, autonomous=False):
