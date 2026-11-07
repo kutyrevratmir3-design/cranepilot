@@ -1,0 +1,154 @@
+{
+  "force_actuator": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "no_nonfinite_solves": true,
+    "global_passed": true,
+    "family_gates": {
+      "matched": true,
+      "delay": true,
+      "two_lag": true,
+      "friction": true,
+      "gain_change": true,
+      "combined": true
+    },
+    "structural_transfer_passed": true
+  },
+  "fixed_observer": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": false,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": false,
+    "no_nonfinite_solves": true,
+    "global_passed": false,
+    "family_gates": {
+      "matched": true,
+      "delay": true,
+      "two_lag": true,
+      "friction": true,
+      "gain_change": true,
+      "combined": true
+    },
+    "structural_transfer_passed": false
+  },
+  "fixed_force_observer": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "no_nonfinite_solves": true,
+    "global_passed": true,
+    "family_gates": {
+      "matched": true,
+      "delay": true,
+      "two_lag": true,
+      "friction": true,
+      "gain_change": true,
+      "combined": true
+    },
+    "structural_transfer_passed": true
+  },
+  "adaptive_params": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": false,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "no_nonfinite_solves": true,
+    "global_passed": false,
+    "family_gates": {
+      "matched": false,
+      "delay": true,
+      "two_lag": true,
+      "friction": false,
+      "gain_change": false,
+      "combined": true
+    },
+    "structural_transfer_passed": false
+  },
+  "adaptive_force": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "no_nonfinite_solves": true,
+    "global_passed": true,
+    "family_gates": {
+      "matched": true,
+      "delay": true,
+      "two_lag": true,
+      "friction": true,
+      "gain_change": true,
+      "combined": true
+    },
+    "structural_transfer_passed": true
+  },
+  "adaptive_observer": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "no_nonfinite_solves": true,
+    "global_passed": true,
+    "family_gates": {
+      "matched": true,
+      "delay": true,
+      "two_lag": true,
+      "friction": false,
+      "gain_change": true,
+      "combined": true
+    },
+    "structural_transfer_passed": false
+  },
+  "adaptive_force_observer": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "no_nonfinite_solves": true,
+    "global_passed": true,
+    "family_gates": {
+      "matched": true,
+      "delay": true,
+      "two_lag": true,
+      "friction": true,
+      "gain_change": true,
+      "combined": true
+    },
+    "structural_transfer_passed": true
+  },
+  "frozen_adaptive_force_observer": {
+    "cost_improved": true,
+    "sway_improved": true,
+    "tracking_improved": true,
+    "final_error_within_1percent": true,
+    "no_additional_raw_violations": true,
+    "majority_cost_wins": true,
+    "no_nonfinite_solves": true,
+    "global_passed": true,
+    "family_gates": {
+      "matched": true,
+      "delay": true,
+      "two_lag": true,
+      "friction": true,
+      "gain_change": true,
+      "combined": true
+    },
+    "structural_transfer_passed": true
+  }
+}

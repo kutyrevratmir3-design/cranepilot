@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "posthoc": true,
+  "source_sha256": "3374c820c7571c73f24cdc52b9774a1be1a5f51b384370f80b5ab4e7aad92fa8",
+  "checks": [
+    {
+      "method": "nominal",
+      "cases": 96,
+      "cost_max_abs_difference": 2.2737367544323206e-13,
+      "net_acceleration_exact": true
+    },
+    {
+      "method": "force_actuator",
+      "cases": 96,
+      "cost_max_abs_difference": 5.684341886080802e-14,
+      "net_acceleration_exact": true
+    },
+    {
+      "method": "fixed_observer",
+      "cases": 96,
+      "cost_max_abs_difference": 2.2737367544323206e-13,
+      "net_acceleration_exact": true
+    },
+    {
+      "method": "fixed_force_observer",
+      "cases": 96,
+      "cost_max_abs_difference": 2.2737367544323206e-13,
+      "net_acceleration_exact": true
+    },
+    {
+      "method": "adaptive_params",
+      "cases": 96,
+      "cost_max_abs_difference": 2.842170943040401e-14,
+      "net_acceleration_exact": true
+    },
+    {
+      "method": "adaptive_force",
+      "cases": 96,
+      "cost_max_abs_difference": 2.842170943040401e-14,
+      "net_acceleration_exact": true
+    },
+    {
+      "method": "adaptive_observer",
+      "cases": 96,
+      "cost_max_abs_difference": 1.4210854715202004e-14,
+      "net_acceleration_exact": true
+    },
+    {
+      "method": "adaptive_force_observer",
+      "cases": 96,
+      "cost_max_abs_difference": 2.842170943040401e-14,
+      "net_acceleration_exact": true
+    },
+    {
+      "method": "frozen_adaptive_force_observer",
+      "cases": 96,
+      "cost_max_abs_difference": 2.842170943040401e-14,
+      "net_acceleration_exact": true
+    }
+  ],
+  "new_and_frozen_observer_all_nontiming_arrays_identical": true,
+  "no_selection_or_tuning": true
+}

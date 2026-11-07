@@ -1,0 +1,167 @@
+{
+  "document": "docs/STRUCTURAL_TRANSFER_2026_11_07_RU.md",
+  "document_sha256": "7dca98010a287f832fe73c7f8c2f9db3cb6401a4574bcd297a418859721944f6",
+  "provenance_sha256": "ea86d6ff0fa7cfe92bf445d7116ad1af01ec77ab34dfe5dfd8d05145d4701f2e",
+  "report_source_sha256": "81f7971275866036ba4c66d10bf45fc43ff22720a68f077f238e686551e557ef",
+  "verification_sha256": "4011dda5ba47d91cf903d13f423c1d04c8dc4edc9044f1bfc25c11976a4c4689",
+  "aggregation_helper_sha256": "dce7a33a88806399c5d01f6e26658db8693b70db974a5b2b66202074bc8bb020",
+  "runtime_batch1_sha256": "8df7b41f1ff967c787b7d337bd0e3e291eae1a365cc543413072253c18fe2fc8",
+  "evaluation_episodes": 864,
+  "development_episodes": 54,
+  "neural_training": false,
+  "native_controller_evaluated": false,
+  "acceptance": {
+    "force_actuator": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "no_nonfinite_solves": true,
+      "global_passed": true,
+      "family_gates": {
+        "matched": true,
+        "delay": true,
+        "two_lag": true,
+        "friction": true,
+        "gain_change": true,
+        "combined": true
+      },
+      "structural_transfer_passed": true
+    },
+    "fixed_observer": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": false,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": false,
+      "no_nonfinite_solves": true,
+      "global_passed": false,
+      "family_gates": {
+        "matched": true,
+        "delay": true,
+        "two_lag": true,
+        "friction": true,
+        "gain_change": true,
+        "combined": true
+      },
+      "structural_transfer_passed": false
+    },
+    "fixed_force_observer": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "no_nonfinite_solves": true,
+      "global_passed": true,
+      "family_gates": {
+        "matched": true,
+        "delay": true,
+        "two_lag": true,
+        "friction": true,
+        "gain_change": true,
+        "combined": true
+      },
+      "structural_transfer_passed": true
+    },
+    "adaptive_params": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": false,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "no_nonfinite_solves": true,
+      "global_passed": false,
+      "family_gates": {
+        "matched": false,
+        "delay": true,
+        "two_lag": true,
+        "friction": false,
+        "gain_change": false,
+        "combined": true
+      },
+      "structural_transfer_passed": false
+    },
+    "adaptive_force": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "no_nonfinite_solves": true,
+      "global_passed": true,
+      "family_gates": {
+        "matched": true,
+        "delay": true,
+        "two_lag": true,
+        "friction": true,
+        "gain_change": true,
+        "combined": true
+      },
+      "structural_transfer_passed": true
+    },
+    "adaptive_observer": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "no_nonfinite_solves": true,
+      "global_passed": true,
+      "family_gates": {
+        "matched": true,
+        "delay": true,
+        "two_lag": true,
+        "friction": false,
+        "gain_change": true,
+        "combined": true
+      },
+      "structural_transfer_passed": false
+    },
+    "adaptive_force_observer": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "no_nonfinite_solves": true,
+      "global_passed": true,
+      "family_gates": {
+        "matched": true,
+        "delay": true,
+        "two_lag": true,
+        "friction": true,
+        "gain_change": true,
+        "combined": true
+      },
+      "structural_transfer_passed": true
+    },
+    "frozen_adaptive_force_observer": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": true,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": true,
+      "no_nonfinite_solves": true,
+      "global_passed": true,
+      "family_gates": {
+        "matched": true,
+        "delay": true,
+        "two_lag": true,
+        "friction": true,
+        "gain_change": true,
+        "combined": true
+      },
+      "structural_transfer_passed": true
+    }
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "scope": "New acceleration-command ablation, complete synthetic traces and frozen weights; repository code still required",
+  "files": {
+    "RESEARCH_STATUS_2026_11_07.md": {
+      "bytes": 17355,
+      "sha256": "6644f6daa2e12e2fb345a667dba252c314daec97c4ef6ac85c403eaf6d532939"
+    },
+    "artifacts/research_bundle_20261107/long_transfer/actor.pt": {
+      "bytes": 18469,
+      "sha256": "4288d621134115dfcec60099725e4a22bce9e06a1ddad69fa7602e5976be082c"
+    },
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed0.pt": {
+      "bytes": 63381,
+      "sha256": "c643ddeffb8dca15357f697407df615f881f9c2fde6ca6a8b6845969f04ad1cd"
+    },
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed1.pt": {
+      "bytes": 63381,
+      "sha256": "33559d2a55922170b3f5b1e32e58e43e33d80df94442befc596a88e8b6d87e37"
+    },
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed2.pt": {
+      "bytes": 63381,
+      "sha256": "69f50229f35b9dda1e6e166c2eab820ccc2766d729c20dc314565eb7c697d878"
+    },
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed0.pt": {
+      "bytes": 43481,
+      "sha256": "a3ca8a7db01af33642bba95ec95332c58983296d48d5ec145f23d470b5ebfb4f"
+    },
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed1.pt": {
+      "bytes": 43481,
+      "sha256": "da78336820d84d09082b2f670440b15b5b87f1b4d9fab29479616ad1d38d858b"
+    },
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed2.pt": {
+      "bytes": 43481,
+      "sha256": "9a2e7806960abd00927671400fe5477dfb6a89ee60396c6624632b321e0149f7"
+    },
+    "artifacts/research_bundle_20261107/manifest.json": {
+      "bytes": 17577,
+      "sha256": "cd200506a82237525d26af14b3983cb32d109a58f99c444b0e3a90dec094d7f8"
+    },
+    "artifacts/research_bundle_20261107/primary/actor.pt": {
+      "bytes": 18773,
+      "sha256": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499"
+    },
+    "artifacts/research_bundle_20261107/primary/candidate_seed0.pt": {
+      "bytes": 45141,
+      "sha256": "b42c0e9293beceb72ce2f31b6fe2a53df9054c010cb0e9734e9f6277e8780840"
+    },
+    "artifacts/research_bundle_20261107/primary/candidate_seed1.pt": {
+      "bytes": 45141,
+      "sha256": "f24e97c702b4c7587ade16d73de611f3b1e1246bd3c6eece256f0ab6955defe6"
+    },
+    "artifacts/research_bundle_20261107/primary/candidate_seed2.pt": {
+      "bytes": 45141,
+      "sha256": "a46fd256af6c5c02cecaeba3311773df5c3367e57735eba607c8cf50d62a2646"
+    },
+    "artifacts/research_bundle_20261107/primary/retained_seed0.pt": {
+      "bytes": 42553,
+      "sha256": "8bca23d661a919e159618d57d85aeef62f078962b1702f0ab520c441568e4199"
+    },
+    "artifacts/research_bundle_20261107/primary/retained_seed1.pt": {
+      "bytes": 42553,
+      "sha256": "2f7e8613b714e7e701b52ffe0ad59229294beb3b976c252d216299f3a0b28664"
+    },
+    "artifacts/research_bundle_20261107/primary/retained_seed2.pt": {
+      "bytes": 42553,
+      "sha256": "8c11b5d8bf441a2ccd8bc49305112fdee8722507b276a09aa0d9799838ac809a"
+    },
+    "artifacts/research_bundle_20261107/short_transfer/actor.pt": {
+      "bytes": 18469,
+      "sha256": "d08d829f21f02de819ca9a8b210d6eadbccda835d4de3b7893f5eeb73e8c52eb"
+    },
+    "artifacts/research_bundle_20261107/short_transfer/retained_lpv.npz": {
+      "bytes": 42243,
+      "sha256": "5200d852474e5550a8ac2d4aa4a947fba2af56ae46d9b6fb4e7605d600152c31"
+    },
+    "artifacts/research_bundle_20261107/source_integrity_postexport.json": {
+      "bytes": 2040,
+      "sha256": "813b7be21cc96984d5eac28003b0813a303971c949f94caea0d2906c28fe0a3f"
+    },
+    "artifacts/research_bundle_20261107/verification.json": {
+      "bytes": 11417,
+      "sha256": "88d07c7162ce617ca453378b0dc2ee2ea2fc0d57a59386e0bb435ccc5eed943c"
+    },
+    "configs/structural_transfer_20261107.json": {
+      "bytes": 4079,
+      "sha256": "317079cd93db59285808ddd7726856615d0a76f08f12ddca913f016ad987c911"
+    },
+    "docs/STRUCTURAL_TRANSFER_2026_11_07_RU.md": {
+      "bytes": 18387,
+      "sha256": "61c93c200d25084d6b0b8cb180195c4622bbd5ebbd2c0bf9ba0c6aea6161d566"
+    },
+    "docs/STRUCTURAL_TRANSFER_DESIGN_20261107.md": {
+      "bytes": 7305,
+      "sha256": "3d6967751029d66dd89f5c5111bf6d5912e681f71fcad05ccd67948a75362ca5"
+    },
+    "results/structural_transfer_20261107/README.md": {
+      "bytes": 2422,
+      "sha256": "3f4553233e43976b049a140e165a73b45c6e38146f2843e939c4e61ab6b75192"
+    },
+    "results/structural_transfer_20261107/ablation_effects.csv": {
+      "bytes": 1099,
+      "sha256": "be0cd572cf1812cadf69eb3aa7f031954a71866f93b2237ff7174c21e27ab281"
+    },
+    "results/structural_transfer_20261107/acceptance.json": {
+      "bytes": 4018,
+      "sha256": "c044ce203a0c5006d3ea0940356b2e7f8400eb6da5f170f6c3875e362e6b6e1f"
+    },
+    "results/structural_transfer_20261107/all_episode_metrics.csv": {
+      "bytes": 374567,
+      "sha256": "9334b7a34f6b708ce8dee3484995b5a28acde0b6223d0a272151d19828a2c15a"
+    },
+    "results/structural_transfer_20261107/benchmark.log": {
+      "bytes": 561,
+      "sha256": "2c2d5299af5d612e0409334df916254a38ed3c2f886d175e2efbddf235ac2c65"
+    },
+    "results/structural_transfer_20261107/context_bootstrap.csv": {
+      "bytes": 859,
+      "sha256": "ebc5f88ea966a45525980c26e485468cb84402c3dfc9bb2d928be405d8362c0d"
+    },
+    "results/structural_transfer_20261107/control_comparison.png": {
+      "bytes": 157895,
+      "sha256": "44c8d2bc4bf2f1ae07dde1b88af96dda5b884a7a89d2124909734001aaf60bfc"
+    },
+    "results/structural_transfer_20261107/development.log": {
+      "bytes": 3792,
+      "sha256": "6c59a787c250390e3d8357f7c7fc19e6dc4053073a2f91f470a47d60d76fa440"
+    },
+    "results/structural_transfer_20261107/evaluation.log": {
+      "bytes": 3760,
+      "sha256": "536f5293a8063cb92738ab49e00cd459614de5782958c0c6a235e15ee52a8b65"
+    },
+    "results/structural_transfer_20261107/family_effects.csv": {
+      "bytes": 4356,
+      "sha256": "d62043d07e73fa8e332a2991c334920a4c8dae823ce8cb1c13148cf086546743"
+    },
+    "results/structural_transfer_20261107/family_summary.csv": {
+      "bytes": 14490,
+      "sha256": "0eae7699213463678f0a7f177d8aad7c9ae0dc64d1d61d3db7c93a4edd6464f4"
+    },
+    "results/structural_transfer_20261107/fixed_examples.png": {
+      "bytes": 797197,
+      "sha256": "e2553235f02e076c1792a4322803c4177cd7898722459c30082a33cfab18f517"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/adaptive_force.npz": {
+      "bytes": 495522,
+      "sha256": "9e3336dda62215acf3bdf7f7b28b4327376aad827d755d716cccacec40ccc58c"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/adaptive_force_observer.npz": {
+      "bytes": 517043,
+      "sha256": "1193cde79934ff5443b00e170ea38e21aae9ac8dc2d53c2903dd0ea0fcb8cdd6"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/adaptive_observer.npz": {
+      "bytes": 516695,
+      "sha256": "4753e544d6418c2025a47c10c59cf527b3bfcf29b31be28e9cef4757929bfefb"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/adaptive_params.npz": {
+      "bytes": 495306,
+      "sha256": "83dce541b75b3bac7ee1a8e4a8ba396e16c830c1d7af8953b4fc682a927676a4"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/cases.csv": {
+      "bytes": 651,
+      "sha256": "f2da18a721ea20215bf9375e0a33010d16d210a9093ad30644bcb38383c25cbe"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/fixed_force_observer.npz": {
+      "bytes": 510367,
+      "sha256": "915895d7d77616ee1f4b343fbf8c2dfb11b58369c162cb2579b4a94b01a43882"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/fixed_observer.npz": {
+      "bytes": 510863,
+      "sha256": "b7284e827b9f6dd2c25d663e91cce2d82e16bf6505da81d35f06664c8d8e4bab"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/force_actuator.npz": {
+      "bytes": 489207,
+      "sha256": "c8611d2f8fbdf72d64272c2d7720f4883ae576b787597f01d82ce2aa3235fe77"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/frozen_adaptive_force_observer.npz": {
+      "bytes": 517043,
+      "sha256": "2aeedac59dfddb5cb2245a0b4b9f05803e6d019d5a03399a79348289204770d5"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/metrics.csv": {
+      "bytes": 20887,
+      "sha256": "ca78036b99b0ca096827ffd148163e9be825b497b51c57352e924c3d904bd3ac"
+    },
+    "results/structural_transfer_20261107/frozen_run/development/nominal.npz": {
+      "bytes": 489329,
+      "sha256": "e5b527992f3b6e14957848a921bbc0f5f1ddd2c1d0eae4de7719625756738c9d"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/adaptive_force.npz": {
+      "bytes": 7323503,
+      "sha256": "26ca9233d13c270404a0c251079b00dbd4a20ca538e8abd712a8d24e1203edd6"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/adaptive_force_observer.npz": {
+      "bytes": 7597137,
+      "sha256": "b267326ffc55790599b0b81765a64cf1641969f581b6b9d4696208fb63005e0a"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/adaptive_observer.npz": {
+      "bytes": 7599646,
+      "sha256": "5e40167fba0f9b6a1b79a84e71214c70121f914000b2e7eb5f77ed5a32f385ed"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/adaptive_params.npz": {
+      "bytes": 7318774,
+      "sha256": "7acf91b93c60a3b890bc3950000150815ec3766cf58d359d2e47917e7fb016a8"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/cases.csv": {
+      "bytes": 8657,
+      "sha256": "206d7ddc73a4081bbbb2bf2bbd4450bd8d3d253a07068446cc3f30b2508dd031"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/fixed_force_observer.npz": {
+      "bytes": 7526312,
+      "sha256": "9f6c1eab950266e5fbe72a7b620161d10c2a42bf5c6882c3296bb7234014d5e9"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/fixed_observer.npz": {
+      "bytes": 7525194,
+      "sha256": "fd955349d1054409677763f3fafe0c0918da80ca16cccccb0e9d91cf4cf2cbcd"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/force_actuator.npz": {
+      "bytes": 7248067,
+      "sha256": "a2048055f1d5f83caca2e73297c4935a20066d4dc7bc5dc097bccdc6aefb53f1"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/frozen_adaptive_force_observer.npz": {
+      "bytes": 7597149,
+      "sha256": "0c7e5e395867539901cd6ba24ac806e286cf913e01d514723b2af433b58012d9"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/metrics.csv": {
+      "bytes": 319961,
+      "sha256": "bcb2d8454a33094d4e01c175183c6192a42b06796ccee84cc7b9fd9b1bf9252a"
+    },
+    "results/structural_transfer_20261107/frozen_run/evaluate/nominal.npz": {
+      "bytes": 7252095,
+      "sha256": "7603a56b76c9ce001f91f28dc905cd05b921908c5865b48a9630dce30edc465e"
+    },
+    "results/structural_transfer_20261107/frozen_run/provenance.json": {
+      "bytes": 14601,
+      "sha256": "ea86d6ff0fa7cfe92bf445d7116ad1af01ec77ab34dfe5dfd8d05145d4701f2e"
+    },
+    "results/structural_transfer_20261107/groups_archetype.csv": {
+      "bytes": 10177,
+      "sha256": "d776a77fad59402d533b49e8da5d77fd1c3b1b3a90f1da345f39ff411b5b82f0"
+    },
+    "results/structural_transfer_20261107/groups_noisy_pulse.csv": {
+      "bytes": 10586,
+      "sha256": "2eb3c2d03b3d2275ee467c6a2818a3c1f50c27dc3682b4a139bbdc57dc1001e4"
+    },
+    "results/structural_transfer_20261107/identification_summary.csv": {
+      "bytes": 1175,
+      "sha256": "150ccdfdab6b292c6a39f91b763aa97936ba0482876863acf65daa69191a9948"
+    },
+    "results/structural_transfer_20261107/independent_metrics.json": {
+      "bytes": 1708,
+      "sha256": "c359d32584d54ea74ec4d549063127d7f31c38259c70665f322002b8c446a7b3"
+    },
+    "results/structural_transfer_20261107/independent_metrics.log": {
+      "bytes": 532,
+      "sha256": "23c468a380802a4630ee70e4ef68eca5da9c1e0af14e1b60c05330f45274af74"
+    },
+    "results/structural_transfer_20261107/paired_comparisons.csv": {
+      "bytes": 4290,
+      "sha256": "9422e96d037f1d0ff26fdb5c5612cf9eaf063758fe185db04f253c3ee815a1ab"
+    },
+    "results/structural_transfer_20261107/posthoc_adaptive_vs_static_families.csv": {
+      "bytes": 373,
+      "sha256": "5b42046cd1c2cca2080918bc14bcb0392eb3cd077b53656369586cbcf6cba4cc"
+    },
+    "results/structural_transfer_20261107/posthoc_cost_distribution.csv": {
+      "bytes": 867,
+      "sha256": "1a5fcbd4bbd23e3ec2b216f7f5e3a204df09944efadba0ac3956700d5888ad2a"
+    },
+    "results/structural_transfer_20261107/raw_sampling_metrics.csv": {
+      "bytes": 60926,
+      "sha256": "0b94b57cbd0dac0a89caf2800ac7e480a9dca0fad4c77ef4bfe325a2c4e6ce74"
+    },
+    "results/structural_transfer_20261107/report.json": {
+      "bytes": 5192,
+      "sha256": "d320e61ca83da8d0bc997f96bb84cfec177b9aa1d4b2a8d4884594bb2e42e9cf"
+    },
+    "results/structural_transfer_20261107/report.log": {
+      "bytes": 1966,
+      "sha256": "2d068b25dbad9caf950b2955ba1498c3596609c5de4cf596ab38fed438d2301c"
+    },
+    "results/structural_transfer_20261107/report_initial_draft.json": {
+      "bytes": 5092,
+      "sha256": "8177e298f7239cbc765eafc2651ca6ff7577d08b45009bf0cbe01a1c12ee97ca"
+    },
+    "results/structural_transfer_20261107/report_initial_draft.log": {
+      "bytes": 1966,
+      "sha256": "2d068b25dbad9caf950b2955ba1498c3596609c5de4cf596ab38fed438d2301c"
+    },
+    "results/structural_transfer_20261107/report_initial_draft.md": {
+      "bytes": 15596,
+      "sha256": "7dca98010a287f832fe73c7f8c2f9db3cb6401a4574bcd297a418859721944f6"
+    },
+    "results/structural_transfer_20261107/runtime_batch1.csv": {
+      "bytes": 7323,
+      "sha256": "8df7b41f1ff967c787b7d337bd0e3e291eae1a365cc543413072253c18fe2fc8"
+    },
+    "results/structural_transfer_20261107/runtime_batch1.json": {
+      "bytes": 377,
+      "sha256": "67ab99ad863249e5133805fe7e182b66b61a1f5427f7dded0662e32b2741742d"
+    },
+    "results/structural_transfer_20261107/runtime_batch1_summary.csv": {
+      "bytes": 562,
+      "sha256": "2d6a039f1a2df7f21f81f96a2cb7da57dbe343a8479592eee5c962087f3d0f51"
+    },
+    "results/structural_transfer_20261107/runtime_batches.csv": {
+      "bytes": 762,
+      "sha256": "3f630860e2684eb7db6afebbd9facefcfb49c367c7db6c89f67cc7f0cd9da4fe"
+    },
+    "results/structural_transfer_20261107/summary.csv": {
+      "bytes": 5435,
+      "sha256": "72cb26ca17120e02c2b6c66bc385a81ea2aabab7026b5dc5d242a2c4e8161c0d"
+    },
+    "results/structural_transfer_20261107/unittest.txt": {
+      "bytes": 29799,
+      "sha256": "a924a6988e35aa020cd3ab102ae3b829e4dc976fe1438dfa604728f1d682be1f"
+    },
+    "results/structural_transfer_20261107/verification.json": {
+      "bytes": 10652,
+      "sha256": "4011dda5ba47d91cf903d13f423c1d04c8dc4edc9044f1bfc25c11976a4c4689"
+    },
+    "results/structural_transfer_20261107/verification.log": {
+      "bytes": 8075,
+      "sha256": "79728adbad560b7f4fba49ed25929eb3ab7aee1cd4d155d138e63233b9f8c100"
+    },
+    "scripts/actuator_identification.py": {
+      "bytes": 3392,
+      "sha256": "a88bb73227f80cfb8c1037c2ade46a4f72747ecebcae8bad913e1e3a84b5a173"
+    },
+    "scripts/adaptive_actuator.py": {
+      "bytes": 8275,
+      "sha256": "beb1dd4381d79fcdb0c74d2c0b0a75ab9a1ae93f325eefbbf5f2b7cf99daff60"
+    },
+    "scripts/analyze_structural_transfer.py": {
+      "bytes": 3133,
+      "sha256": "3374c820c7571c73f24cdc52b9774a1be1a5f51b384370f80b5ab4e7aad92fa8"
+    },
+    "scripts/angular_control.py": {
+      "bytes": 6514,
+      "sha256": "21aeeccc87469b1c11d7095645f69ac63750dba0df8e5e74eeacfe7c1db1845d"
+    },
+    "scripts/benchmark_structural_transfer.py": {
+      "bytes": 3325,
+      "sha256": "6335c4e93bf67a664d028da2c841e47a78d7055efb397041d648743703c2c272"
+    },
+    "scripts/package_structural_transfer.py": {
+      "bytes": 2920,
+      "sha256": "c30bba6067f3c751e3fac2f40aaad58cbff6f29c240e70d5e049ad556ceb90bb"
+    },
+    "scripts/report_structural_transfer.py": {
+      "bytes": 20124,
+      "sha256": "1a01c597f6c43affbbf3ea6696adfd7dab7d4b6df87b8a140b3288c55d6a8522"
+    },
+    "scripts/run_adaptive_actuator.py": {
+      "bytes": 11836,
+      "sha256": "74188a99fdc77e0f7622e4fdd648b6539da546ee717a7e26b8ec4c7ba45545d9"
+    },
+    "scripts/run_structural_transfer.py": {
+      "bytes": 10986,
+      "sha256": "935b93b4c9121e2c2a313f368dbc17d9ac47cc2330a4992f48f7970b58a69793"
+    },
+    "scripts/structural_transfer.py": {
+      "bytes": 3254,
+      "sha256": "a102f803c88b6b6dc1f208a0eb0753c359058105f65d4eb1faf2dda88ad986f9"
+    },
+    "scripts/verify_structural_transfer.py": {
+      "bytes": 8923,
+      "sha256": "e03596ef2b84cc4085880210fa176d54b6abd8e326fb1ac6dccbc2ecde5ab9d9"
+    },
+    "tests/test_structural_transfer.py": {
+      "bytes": 5829,
+      "sha256": "3c662d5515f9ba47f19f88283a51bc12842c48385413d7b850dcca384f95516e"
+    }
+  }
+}

@@ -1,6 +1,47 @@
 # CranePilot: состояние исследования на 7 ноября 2026
 
-Актуальный завершённый эксперимент: **adaptive_actuator_20261107**.
+Актуальный завершённый эксперимент: **structural_transfer_20261107**.
+
+918 новых эпизодов, 9 регуляторов, шесть семейств привода: первый порядок,
+скрытая задержка, два лага, трение, смена gain и комбинированный случай.
+Разворот цели в 4s, длительность 8s. Протокол зарегистрирован в **540477f**,
+настройки после development не менялись. APHYNITY и neural weights без изменений.
+
+| Вариант против nominal | Cost | Sway ISE | Tracking ISE | Final error | Cost wins |
+|---|---:|---:|---:|---:|---:|
+| Static force+actuator | −74.90% | −40.63% | −8.57% | −52.82% | 78/96 |
+| Frozen adaptive+force+observer | −81.33% | −65.59% | −4.53% | −41.11% | 76/96 |
+
+Пять из восьми альтернатив прошли global и все шесть family gates; новая и
+прежняя квалификация adaptive observer дали одинаковые trajectories. Против
+сильного static варианта adaptive cost −25.62%, но только **25/96 cost wins**,
+tracking +4.41%, final error +24.83%; settling 36/96 против 52/96 static.
+Польза адаптации сосредоточена в тяжёлых delay/combined случаях, доминирования нет.
+Raw angle>15deg: adaptive 8/96, static и nominal 12/96; rail/speed нарушений нет.
+
+Fixed-parameter observer с той же 2s памятью дал cost всего −0.28% против
+nominal и tracking +1.01%. С учётом forcing bank адаптация относительно fixed
+observer дала cost −70.63%, но tracking +0.94%. Длинная история сама по себе не
+объясняет основной выигрыш; comparisons остаются policy-dependent.
+
+172 unit tests PASS; все 918 plant trajectories, identifier/observer states и
+146880 chosen forecasts/costs replayed EXACTLY. RK halfstep max<4.8e−7.
+Все 1281 original main/APHYNITY файлов сохранены. Независимо пересчитан cost из
+latent raw traces с учётом net acceleration/friction. Warm batch1 решения ~5–9ms;
+не WCET guarantee. Прежние 122 EOL-only изменения остаются отдельно.
+
+[Отчёт](docs/STRUCTURAL_TRANSFER_2026_11_07_RU.md),
+[протокол](docs/STRUCTURAL_TRANSFER_DESIGN_20261107.md),
+[полные данные](results/structural_transfer_20261107/).
+
+Это synthetic acceleration-command ablation, native xr zero и trained actuator
+bypass. Hardware/native/SOTA/stability успех не заявлен. Ни один default не
+заменён. Следующий метод должен уменьшить потери на обычных случаях относительно
+static force_actuator и улучшить слежение при задержке: явная delay/cascade model
+bank либо причинное blending static/adaptive на новых preregistered contexts.
+Текущие 96 cases повторно не использовать для tuning и подтверждающей оценки.
+
+Предыдущий завершённый эксперимент: **adaptive_actuator_20261107**.
 
 Выполнены918новых closed-loop эпизодов:9методов ×(6development+96evaluation).
 Протокол/код зарегистрированы до испытаний в522d01d. Neural weights неизменны.

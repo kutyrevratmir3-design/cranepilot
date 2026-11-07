@@ -1,0 +1,8 @@
+method,reference,realized_cost_change_percent,realized_cost_paired_wins,tracking_ise_m2_s_change_percent,tracking_ise_m2_s_paired_wins,sway_ise_deg2_s_change_percent,sway_ise_deg2_s_paired_wins,final_position_error_m_change_percent,final_position_error_m_paired_wins
+adaptive_observer,fixed_observer,-80.75200537897878,56,-2.047878710244011,38,-65.19384542282101,80,-23.408244953910774,44
+adaptive_force_observer,fixed_force_observer,-70.63027745355572,56,0.9384842174728236,48,-59.6469312664303,80,-25.30037515221374,43
+fixed_observer,nominal,-0.27556241828370354,28,1.0139040764902019,23,-0.8484632687627003,44,-4.568819878507502,34
+fixed_force_observer,fixed_observer,-36.25586885133287,74,-6.3682133867345225,72,-14.009346283575852,48,-17.387355899722255,46
+adaptive_force_observer,adaptive_force,-9.29122015274565,38,-0.12306012655932674,33,-9.2385085994099,64,-28.41873475048271,39
+adaptive_force_observer,frozen_adaptive_force_observer,0.0,0,0.0,0,0.0,0,0.0,0
+frozen_adaptive_force_observer,force_actuator,-25.623070107971667,25,4.41476534324412,24,-42.04864506271881,68,24.83163237912478,28
