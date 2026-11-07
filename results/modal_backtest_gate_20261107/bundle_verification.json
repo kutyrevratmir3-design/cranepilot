@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "source_sha256": "bc65fb892d5ff68b5623ceaae52858e0ae655ad8afc180981016c636eb4028ab",
+  "bundle_manifest_sha256": "9de59e82d7a05a16e4b3b2d9bf1d4aed251ffbd947d3434177f556ebba19ee24",
+  "checks": [
+    {
+      "group": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "eligible": 726,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "eligible": 726,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "eligible": 160,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "eligible": 601,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "eligible": 601,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "jib_theta",
+      "scenario": 21,
+      "eligible": 538,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "jib_theta",
+      "scenario": 22,
+      "eligible": 726,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "jib_theta",
+      "scenario": 23,
+      "eligible": 726,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "jib_beta",
+      "scenario": 21,
+      "eligible": 538,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "jib_beta",
+      "scenario": 22,
+      "eligible": 726,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "jib_beta",
+      "scenario": 23,
+      "eligible": 726,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "eligible": 545,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "eligible": 545,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "simult_theta",
+      "scenario": 32,
+      "eligible": 583,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "simult_theta",
+      "scenario": 33,
+      "eligible": 126,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "simult_beta",
+      "scenario": 32,
+      "eligible": 583,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    },
+    {
+      "group": "retrospective",
+      "case": "simult_beta",
+      "scenario": 33,
+      "eligible": 126,
+      "maximum_forecast_replay_deg": 0.0,
+      "maximum_reference_replay_deg": 0.0
+    }
+  ],
+  "independent_confirmation": false,
+  "case_records": 17,
+  "packets": 9302,
+  "no_dataset_or_ancestral_run_required_by_api": true
+}

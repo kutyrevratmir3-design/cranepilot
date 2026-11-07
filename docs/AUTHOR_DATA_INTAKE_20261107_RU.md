@@ -20,7 +20,13 @@ sampling/units/meaning/rig identity; не подбирать модель по �
 Не применять offline zero-phase smoothing или whole-record target centering.
 Не публиковать исходные новые логи без разрешения владельца данных.
 
-Текущий метод и более сильный ARX сохранены в artifacts/modal_bundle_20261107.
+Исходный frozenmodal и сильныйARX сохранены в artifacts/modal_bundle_20261107.
+Новый кандидат скаузальным выбором попрошлойошибке и усиленным3s/4sARX —
+artifacts/reliability_bundle_20261107 (см.RELIABILITY_BUNDLE_20261107.md).
+Выбирать кандидат/сравнения до оценки новых ошибок; старыеbundles не удалены.
+Проверить также encoder resolution: исходный2π/4096rad не переносить молча
+на другой датчик. При иной частоте/каналах/quantum сначала зафиксировать новый
+адаптер/протокол поmetadata, безподбора поновымtargeterrors.
 До оценки новых сигналов фиксировать SHA его manifest/source/weights, точный
 mapping каналов и заранее известный план, группы условий/trials, eligibility,
 горизонты и первичный критерий. Нельзя менять их по результатам. Если clock/

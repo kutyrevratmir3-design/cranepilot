@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "selection_sha256": "da7e904470ee4e3f7f1d0d2ebe72c367eda207e0d9e6b822b900e5fe12f19acf",
+  "development_sha256": "4bbe43070598c43d8ddfa911ad609003f54b48d0845419820739a4e304672ba2",
+  "independent_confirmation": false,
+  "scope": "Retrospective development on opened public records",
+  "result_hashes": {
+    "jib_beta_s22.npz": "f74eab1275da5cb11b8435bcef4c357188cb4fde48959ca59642f4702e8a052b",
+    "jib_theta_s21.npz": "c8c1c74f1a67ff8b947bb3d3f3272a23081972f05a25e2175fda1245582c3d0c",
+    "jib_beta_s23.npz": "c2c2f2b7c74cf17750dee3391b0996a343c5cb3152634afb347af81462093e6c",
+    "jib_beta_s21.npz": "b89f40b50f8176f5c59284ce09a93f8a2680962a2e756b965881fd1eac6ca0c2",
+    "jib_theta_s23.npz": "d40c2c1c261a846d44aaaf4c64932611dbed6fa58c7a5337508353bf406bc37f",
+    "simult_beta_s33.npz": "ae2d19e3e4a279c578694fef495d55bdc60dcd08e68296724c93533e27fe0b61",
+    "simult_beta_s32.npz": "f0632835b677647bba399201ef9a9e30870ca05bd30f7272388c1bb348b6a37d",
+    "jib_theta_s22.npz": "95731a23b03f98ef87480bb1aed00ffca9d1dc90a10b3547fdd865f0a9d8bcca",
+    "metrics.csv": "cf64f5a9c930fb52bb1e44ba265a0f208ff7d401c664b10c9b740a71619a23c9",
+    "simult_theta_s33.npz": "e0332531ea3bbad658f1a639f791bb944632befc3a5e3fbf19575b83cc15382c",
+    "trolley_theta_s13.npz": "be4464b2bf239775225f14d896efcc02a5de1e4507806de8bd213e7c39bbb297",
+    "simult_theta_s32.npz": "48b1396509af89a29b513dc9ec0f04f8388f5c905f5ccb25f3fa2e245790979d",
+    "trolley_theta_s9.npz": "89b5639f521cfa7856e8d35d5455b2f28560e0692bf9b1443aa3ed229523309e"
+  }
+}

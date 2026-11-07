@@ -1,0 +1,2 @@
+MAX_ZERO_DEG 0.035303942130334
+TIMING [{"case": "trolley_theta", "median_ms": 21.679124984075315, "p95_ms": 21.96894559019711}, {"case": "jib_theta", "median_ms": 21.298979001585394, "p95_ms": 21.989493843284436}, {"case": "jib_beta", "median_ms": 21.034541990957223, "p95_ms": 21.283791449968703}, {"case": "simult_theta", "median_ms": 20.898104005027562, "p95_ms": 20.953266446304042}, {"case": "simult_beta", "median_ms": 20.80431299691554, "p95_ms": 20.86757961224066}]

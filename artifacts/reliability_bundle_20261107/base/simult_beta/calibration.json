@@ -1,0 +1,77 @@
+{
+  "a": 0.9405722076482453,
+  "b": 0.15325365599680962,
+  "damping": 0.0,
+  "evidence": [
+    {
+      "sid": 24,
+      "L_m": 0.096300512,
+      "omega_rad_s": 6.239866450290314,
+      "effective_length_m": 0.2519523525997322,
+      "tail_rms_rad": 0.03911371130044743,
+      "relative_fit_error": 0.8856256372361817,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 25,
+      "L_m": 0.196878836,
+      "omega_rad_s": 5.415872995393607,
+      "effective_length_m": 0.33445066559152875,
+      "tail_rms_rad": 0.05094100655311839,
+      "relative_fit_error": 0.7729400470002239,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 26,
+      "L_m": 0.298452,
+      "omega_rad_s": 4.772217341556069,
+      "effective_length_m": 0.4307532652749769,
+      "tail_rms_rad": 0.2222860700962525,
+      "relative_fit_error": 0.49400628343928893,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 27,
+      "L_m": 0.400821036,
+      "omega_rad_s": 4.336842369844056,
+      "effective_length_m": 0.5215809642598944,
+      "tail_rms_rad": 0.21486432244509743,
+      "relative_fit_error": 0.427512272617147,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 29,
+      "L_m": 0.607150852,
+      "omega_rad_s": 3.653490997611771,
+      "effective_length_m": 0.7349417586616834,
+      "tail_rms_rad": 0.18359531747464072,
+      "relative_fit_error": 0.11726247470235404,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 30,
+      "L_m": 0.712205956,
+      "omega_rad_s": 3.458997124563399,
+      "effective_length_m": 0.8199145727291528,
+      "tail_rms_rad": 0.04422709504347184,
+      "relative_fit_error": 0.4239115245690416,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 31,
+      "L_m": 0.808705436,
+      "omega_rad_s": 3.2756817386817807,
+      "effective_length_m": 0.9142513455173011,
+      "tail_rms_rad": 0.09474334236758838,
+      "relative_fit_error": 0.135045879607472,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    }
+  ]
+}

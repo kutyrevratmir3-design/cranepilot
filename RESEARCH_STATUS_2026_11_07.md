@@ -292,7 +292,7 @@ MAE на4.24%, общая импульсная характеристика на
 и локальной авторегрессии. Сначала development gate; лишь затем возможен
 однократный holdout. Активное управление и прогноз во время подъёма не заявляются.
 
-## Текущий результат modal этапа
+## Итог первого modal этапа
 
 Development−26.38%,4/5case wins, затем зафиксированная проверка7условий:
 modal .261421° vs initial full-inputARX2.338230°,6/7wins. Дополнительный
@@ -312,3 +312,31 @@ Portable modal bundle12files107738bytes: прогноз и более сильн
 [Комплект и API](docs/MODAL_BUNDLE_20261107.md),
 [следующий шаг с данными авторов](docs/AUTHOR_DATA_INTAKE_20261107_RU.md).
 Пользователь может попросить авторов; агент сообщений не отправлял.
+
+## Текущий этап: выбор по прошлой ошибке прогноза
+
+Новая причинная проверка использует4sисторию: изпервых3s предсказывает
+последнюю уже наблюдённую1s и задаёт вес междуmodal иARX. Будущие после0s
+targets не участвуют. Одинsoftоператор выбран только по прежнимvalidation:
+−30.14%MAE,5/5cases. Reference дополнительно выбирает3s/4s историю поVAL.
+
+На7ранее открытых условиях .189779° vs .478509° уусиленногоARX:
+−60.34%,6/7wins, descriptive paired95%interval[−84.03%,−23.25%].
+Но это**ретроспективная разработка**, не новая независимая проверка.
+Scenario21 всёещё хужеARX(.403819°vs.375804°), прежнийmodal=.700020°.
+Общая цель остаётся открытой до подходящих новых сырых измерений.
+
+206tests PASS,80700forecastcomparisons replayточно, portableAPI9302окна
+во17case-recordsсовпали точно. Все1281оригинальные main/APHYNITY файла,
+старыеbundles/defaults сохранены. Новый отдельный bundle19files182278bytes,
+безtrainingdata/ancestralruns; observedmedian21–22ms/packet.
+Zero-inputbias смеси≤.035304°на15фиксированных probes; точный equilibrium
+или closed-loop guarantee не заявляется. Ошибкаimportвпервомverifierсохранена,
+исправлен толькоverifier, безпереобучения.
+
+Новыйотчёт: [causal backtest gate](docs/MODAL_BACKTEST_GATE_2026_11_07_RU.md),
+[bundle/API](docs/RELIABILITY_BUNDLE_20261107.md),
+[диагностика21](docs/MODAL_FAILURE_DIAGNOSIS_20261107_RU.md),
+[дополнительныйпоискданных](docs/DATA_ACCESS_FOLLOWUP_20261107.md).
+IRVоказалсятаблицейfreq/zeta/peakacceleration, Haarhoffрепозиторийописывает
+симуляции. Новые подходящие независимые raw records не получены.
