@@ -1,0 +1,22 @@
+TICK physical 0 batch_seconds 0.029
+TICK physical 20 batch_seconds 0.005
+TICK physical 40 batch_seconds 0.005
+TICK physical 60 batch_seconds 0.005
+TICK physical 80 batch_seconds 0.006
+TICK physical 100 batch_seconds 0.006
+METHOD_COMPLETE evaluate physical 96
+TICK retained 0 batch_seconds 0.086
+TICK retained 20 batch_seconds 0.079
+TICK retained 40 batch_seconds 0.076
+TICK retained 60 batch_seconds 0.079
+TICK retained 80 batch_seconds 0.073
+TICK retained 100 batch_seconds 0.075
+METHOD_COMPLETE evaluate retained 96
+TICK candidate 0 batch_seconds 0.173
+TICK candidate 20 batch_seconds 0.166
+TICK candidate 40 batch_seconds 0.183
+TICK candidate 60 batch_seconds 0.168
+TICK candidate 80 batch_seconds 0.17
+TICK candidate 100 batch_seconds 0.159
+METHOD_COMPLETE evaluate candidate 96
+COMPLETE evaluate

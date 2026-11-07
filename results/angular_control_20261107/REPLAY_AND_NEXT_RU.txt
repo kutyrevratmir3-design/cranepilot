@@ -1,0 +1,67 @@
+CranePilot — завершён angular_control_20261107, 7 ноября 2026.
+
+Текущая сводка: Crane Project/cranepilot/RESEARCH_STATUS_2026_11_07.md.
+Протокол/код до запуска: b0e9d2b. Config configs/angular_control_20261107.json.
+Run artifacts/runs/angular_control_20261107 complete; точная копия для Git:
+results/angular_control_20261107/frozen_run. Report docs/ANGULAR_CONTROL_2026_11_07_RU.md.
+
+Впервые реально выполнен closed-loop тест angular forecaster: три метода
+physical / retained phase_space / candidate adapter_direct8, PRIMARY split.
+18 development +288 evaluation эпизодов (96 на метод), 6s, 100Hz sensor history,
+50ms control, horizon30, 6 move-blocked levels, committed first command.
+Общий nominal actuator lag .1s; native xr features НУЛЕВЫЕ, NeuralActuator
+ОБХОДИТСЯ. Это НОВАЯ acceleration-command ablation, не полный native pilot.
+True plant state/actuator/будущие ускорения не передаются в контроллер.
+Глобальные параметры и веса не дообучались, настройки после development не менялись.
+
+Новый solver: central FD Jacobian по6levels (.002), 100FISTA steps для local QP,
+box±.8, trust region±.2, nonlinear backtracking fractions0/.25/.5/1.
+Изначально только toy compute-smoke сравнивал прямой backward с FD; никакие
+новые control evaluation данные не использовались для выбора настроек.
+
+РЕЗУЛЬТАТ НЕ ПРИНЯТ КАК ЗАМЕНА:
+Candidate vs retained: sway ISE −11.903%, tracking ISE +2.846%, final position
+error +30.055%, realized cost −.960%, но только43/96 paired cost wins.
+Tail RMS −3.555%, acceleration² effort −8.394%, command variation +7.412%.
+Физический baseline лучше по средней общей стоимости:74.5446 vs89.9145 candidate.
+Settled64/96 physical,10/96 retained,27/96 candidate. Raw100Hz rail violations
+0/4/4 соответственно; angle violations8/12/8. Все failures/violations сохранены.
+Нельзя выдавать снижение sway отдельно за победу управления.
+
+Проверки:150unit tests. Повторно интегрированы306эпизодов, exact plant/measurement
+replay0. Все36720выбранных predictor plans воспроизведены из измеренной истории:
+макс5.123e−6deg; max objective error .0001832. Estimator inputs exact.
+Half-RK-step error <8.75e−8 по state. 1281original main/APHYNITY файлов совпадают.
+Full replay не перезапускал optimizer. Первый verifier остановился на
+estimate roundoff2.53e−15 при non-contiguous NumPy dot; исправлена сборка
+contiguous history как у runner, tolerance НЕ менялся. Initial JSON/log сохранены.
+
+Изолированная full decision batch1 latency,15 замеров/метод: physical median3.55ms,
+retained19.34ms, candidate36.27ms. Это не WCET/real-time гарантия. Simulation
+офлайн: wall-clock solver delay не воздействует на plant сверх committed tick.
+Численные batch1/batch96 plan differences до .000461m/s² из-за FD rounding.
+
+POST-HOC DIAGNOSTIC, НЕ ВЫБОР МОДЕЛИ: все96cases на истории physical baseline,
+фиксированные ticks20/60/100,864model comparisons. Hidden true state используется
+только для oracle Jacobian plant; predictor его не получает.
+Mean absolute Jacobian error: physical .310385, retained .325708, candidate .347380.
+Cosine .883255/.868478/.838173. Средняя counterfactual forecast error
+1.499057/1.875392/1.778207deg. То есть улучшение forecast value не улучшило
+command sensitivity. Это диагностика, не доказательство единственной причины.
+8из288histories имеют near-zero true Jacobian (deadzone); relative/cosine
+для них undefined. Первая версия с делением на epsilon оставлена в sensitivity_initial;
+её огромные средние НЕ интерпретировать.
+
+Направления следующих НОВЫХ prereg experiments:
+- физический planner с robust/scenario frequency uncertainty;
+- physics command Jacobian плюс ограниченная learned residual/observer;
+- control-oriented response/Jacobian loss на НОВОМ TRAIN simulator set.
+Не подбирать новые модели по этим96cases. Native-command controller по-прежнему
+требует xr/actuator/timestamp qualification. Старые forecast load gates не отменены.
+
+Новых neural weights нет; portable research bundle unchanged/default retained.
+APHYNITY отдельно и не менялась. Истории GitHub публиковать разрешено и отдельно
+подтверждено пользователем; пушить только research/broad-search-20261107,
+main не трогать (другие roots). Сверять remote перед push. Прежние122EOL-only
+modifications не трогать. Сохранить все негативные результаты, code, reports,
+synthetic trajectories и source SHA. Большой evidence ZIP локально, не в Git.

@@ -1,0 +1,21 @@
+{
+  "provenance_sha256": "3a313ee829fca335a52ecd23fea568b85b08ade000ddac83cfe10cf882a14621",
+  "report_source_sha256": "dce7a33a88806399c5d01f6e26658db8693b70db974a5b2b66202074bc8bb020",
+  "document": "docs/ANGULAR_CONTROL_2026_11_07_RU.md",
+  "document_sha256": "e872d5e90fa4b1757758b05fbb7d8a85ebe1e689bd9ccf5b1333a1cfe884a6cb",
+  "verification_sha256": "ca995ad725fa71a051a4e4bc2408829e0bc9d9a420caddf61df1429830ff9a0f",
+  "acceptance": {
+    "sway_improved": true,
+    "tracking_improved": false,
+    "final_error_within_1percent": false,
+    "no_additional_raw_violations": true,
+    "majority_paired_cost_wins": false,
+    "passed": false
+  },
+  "development_episodes": 18,
+  "evaluation_episodes": 288,
+  "neural_training": false,
+  "native_controller_evaluated": false,
+  "sensitivity_diagnostic_sha256": "61c20aa7a6fb62b293b911be3ac99706c09eef8bbe964e508a4e6cbb0e739d6a",
+  "runtime_batch1_sha256": "c5f0b81f896e1dad4bcca3d3b008fc0690d760690fcc50ea79ee3d6f9e1c5b01"
+}

@@ -1,0 +1,5 @@
+           case  context  tick  relative_jacobian_error  jacobian_cosine  mean_counterfactual_forecast_error_deg
+method                                                                                                          
+candidate  47.5     11.5  60.0             1.323195e+10         0.814890                                1.778207
+physical   47.5     11.5  60.0             1.577013e+10         0.858720                                1.499057
+retained   47.5     11.5  60.0             1.080120e+10         0.844354                                1.875392
