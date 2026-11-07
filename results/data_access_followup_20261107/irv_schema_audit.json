@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/YWYucas/IRV-Datasets",
+  "commit": "f71bace80879067a05edbd655addbf338da771fe",
+  "commit_date": "2025-07-16T12:33:28Z",
+  "file": "Dataset-LOC-1.xlsx",
+  "bytes": 20921,
+  "git_blob_sha1": "a76d327dc7eabf9a78ae9d0e8256bf89f64c3db5",
+  "sha256": "567f1748176a72dc645a7bd3ea7d53ba52b00fdd6845c806bafe18b948668bf2",
+  "sheet": "Sheet1",
+  "rows_including_header": 581,
+  "columns": ["freq/HZ", "zeta/-", "Y-acceleration/|g|"],
+  "inspection": "Read workbook dimensions and header row only after verifying pinned Git blob and SHA256; numerical response rows not inspected or used",
+  "readme_definition": "System frequency and damping parameters, and absolute maximum Y acceleration for each configuration; eight vibration-control datasets from flexible-beam/overhead-crane platforms",
+  "suitability": "Not a timestamped payload-angle/command series. Cannot supply the requested rolling forecast confirmation contract.",
+  "fitting_or_model_evaluation_performed": false,
+  "original_spreadsheet_republished": false
+}

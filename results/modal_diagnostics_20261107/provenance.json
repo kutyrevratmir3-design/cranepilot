@@ -1,0 +1,11 @@
+{
+  "source_sha256": "28bd75721411336a4952caac380d62fad37811f61e793ca6ffc53363d4c83f96",
+  "confirmation_provenance_sha256": "2f42746aefa7dab768021f4beb2b292effee258fe7c985beca96b1a711c51e7e",
+  "reference_provenance_sha256": "ca77b6b775b0e3738deb36a2dcae564eebdedea123372a9ba1073b5b80300a46",
+  "post_hoc": true,
+  "independent_confirmation": false,
+  "source_models_changed": false,
+  "future_measured_channels_used_for_diagnosis_only": true,
+  "rows_sha256": "9db75903a986671282f594bb205fac2e72df91512ce6c4adc1287cd9b599dd0b",
+  "scope": "All12 previously scored case/records and fixed chronological quartiles. No fitting, exclusions, new predictions or operating threshold changes; future diagnostics cannot be used as an online gate."
+}
