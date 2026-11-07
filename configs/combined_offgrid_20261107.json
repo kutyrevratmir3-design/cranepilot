@@ -1,0 +1,78 @@
+{
+  "experiment": "combined_offgrid_20261107",
+  "parent_run": "artifacts/runs/combined_stress_20261107_replayfix",
+  "folds": [
+    "primary",
+    "short_transfer",
+    "long_transfer"
+  ],
+  "integrator_tolerance_deg": 5e-05,
+  "simulation": {
+    "length_m": [
+      0.17,
+      0.41,
+      0.83,
+      1.19
+    ],
+    "amplitude_deg": [
+      2,
+      8
+    ],
+    "phase_rad": [
+      1.1,
+      2.9
+    ],
+    "conditions": [
+      {
+        "name": "ratio_0.79_damping_0.07",
+        "omega_ratio": 0.79,
+        "damping_per_s": 0.07
+      },
+      {
+        "name": "ratio_0.79_damping_0.27",
+        "omega_ratio": 0.79,
+        "damping_per_s": 0.27
+      },
+      {
+        "name": "ratio_0.93_damping_0.07",
+        "omega_ratio": 0.93,
+        "damping_per_s": 0.07
+      },
+      {
+        "name": "ratio_0.93_damping_0.27",
+        "omega_ratio": 0.93,
+        "damping_per_s": 0.27
+      },
+      {
+        "name": "ratio_1.08_damping_0.07",
+        "omega_ratio": 1.08,
+        "damping_per_s": 0.07
+      },
+      {
+        "name": "ratio_1.08_damping_0.27",
+        "omega_ratio": 1.08,
+        "damping_per_s": 0.27
+      },
+      {
+        "name": "ratio_1.21_damping_0.07",
+        "omega_ratio": 1.21,
+        "damping_per_s": 0.07
+      },
+      {
+        "name": "ratio_1.21_damping_0.27",
+        "omega_ratio": 1.21,
+        "damping_per_s": 0.27
+      }
+    ],
+    "measurement": [
+      "exact",
+      "quantized",
+      "noisy_quantized",
+      "biased_quantized"
+    ],
+    "noise_seed": 7112027,
+    "noise_std_bins": 0.25,
+    "bias_bins": 0.5
+  },
+  "scope": "Post-hoc hypothesis test planned after grid-aligned combined-stress results were inspected. All seven predictor definitions, weights, tau and adaptive grid remain frozen. No model training, new selection, publication or default replacement; no independent hardware claim."
+}
