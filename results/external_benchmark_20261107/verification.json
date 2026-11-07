@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "provenance_sha256": "d7670216c72b6ba9b04caea1a725bcb104393d25dc66053e77f5b132a5cc35b2",
+  "verifier_sha256": "8b565a3bc0f5936926f08ae51550bf4e0add918b3489132bcba261b8f30ee4bd",
+  "checks": [
+    {
+      "stage": "validation",
+      "record": 13,
+      "packets": 231,
+      "methods": 8,
+      "replay_max_deg": 0.0,
+      "targets_and_future_times_ignored": true,
+      "metric_recomputation": true
+    },
+    {
+      "stage": "validation",
+      "record": 14,
+      "packets": 231,
+      "methods": 8,
+      "replay_max_deg": 0.0,
+      "targets_and_future_times_ignored": true,
+      "metric_recomputation": true
+    },
+    {
+      "stage": "validation",
+      "record": 15,
+      "packets": 231,
+      "methods": 8,
+      "replay_max_deg": 0.0,
+      "targets_and_future_times_ignored": true,
+      "metric_recomputation": true
+    },
+    {
+      "stage": "validation",
+      "record": 16,
+      "packets": 231,
+      "methods": 8,
+      "replay_max_deg": 0.0,
+      "targets_and_future_times_ignored": true,
+      "metric_recomputation": true
+    },
+    {
+      "stage": "test",
+      "record": 17,
+      "packets": 231,
+      "methods": 8,
+      "replay_max_deg": 0.0,
+      "targets_and_future_times_ignored": true,
+      "metric_recomputation": true
+    },
+    {
+      "stage": "test",
+      "record": 18,
+      "packets": 231,
+      "methods": 8,
+      "replay_max_deg": 0.0,
+      "targets_and_future_times_ignored": true,
+      "metric_recomputation": true
+    },
+    {
+      "stage": "test",
+      "record": 19,
+      "packets": 231,
+      "methods": 8,
+      "replay_max_deg": 0.0,
+      "targets_and_future_times_ignored": true,
+      "metric_recomputation": true
+    },
+    {
+      "stage": "test",
+      "record": 20,
+      "packets": 231,
+      "methods": 8,
+      "replay_max_deg": 0.0,
+      "targets_and_future_times_ignored": true,
+      "metric_recomputation": true
+    }
+  ],
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "methods": 8,
+  "records": 8,
+  "packets": 1848,
+  "forecast_trajectories": 14784,
+  "test_cases": 4,
+  "test_used_for_refitting": false,
+  "raw_external_data_redistributed": false,
+  "closed_loop_control_evaluated": false,
+  "all_model_predictions_replayed": true
+}

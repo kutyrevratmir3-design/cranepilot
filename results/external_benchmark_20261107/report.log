@@ -1,0 +1,18 @@
+     stage               method  mae_deg  rmse_deg  p95_absolute_error_deg                   track
+      test         arx_residual 0.037993  0.047470                0.090489          locally_fitted
+      test cranepilot_candidate 0.852720  1.079270                2.111631 frozen_external_weights
+      test  cranepilot_retained 0.895344  1.131293                2.199516 frozen_external_weights
+      test    fitted_oscillator 0.079552  0.088870                0.143377          locally_fitted
+      test            geometric 0.266333  0.341439                0.660041      unfitted_reference
+      test        lstm_residual 0.081588  0.093588                0.161091          locally_fitted
+      test          persistence 0.376173  0.466200                0.869469      unfitted_reference
+      test                 zero 0.399518  0.496060                0.983955      unfitted_reference
+validation         arx_residual 0.039572  0.050180                0.098839          locally_fitted
+validation cranepilot_candidate 0.864245  1.107519                2.241210 frozen_external_weights
+validation  cranepilot_retained 0.910616  1.158592                2.344998 frozen_external_weights
+validation    fitted_oscillator 0.069617  0.086075                0.163292          locally_fitted
+validation            geometric 0.303274  0.386037                0.753049      unfitted_reference
+validation        lstm_residual 0.068054  0.086783                0.175567          locally_fitted
+validation          persistence 0.824567  1.032134                1.996965      unfitted_reference
+validation                 zero 0.757875  0.937532                1.841491      unfitted_reference
+Frozen vs geometric % 236.175344894913

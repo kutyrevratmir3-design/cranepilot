@@ -1,6 +1,58 @@
 # CranePilot: состояние исследования на 7 ноября 2026
 
-Актуальный завершённый эксперимент: **structural_transfer_20261107**.
+Актуальный завершённый эксперимент: **external_benchmark_20261107**.
+
+Получен новый для проекта публичный источник реальных raw-camera записей
+другого поворотного крана (Khemakhem et al., pinned commit1aa26b5). Whole-record
+TRAIN12/VALIDATION4/закрытыйTEST4, протокол **a52db9d** до обучения/просмотраTEST.
+Причинное преобразование raw pixels; author filtfilt/whole-test centering исключены.
+Общие9samples over nominal.4s и30future prescribed input steps. Оценивается
+только tangential sway при fixed rope1m, не hardware controller.
+
+| Метод | TEST MAE, ° | Доступ к новому TRAIN |
+|---|---:|---|
+| ARX residual | **0.037993** | да |
+| Fitted damped oscillator | 0.079552 | да |
+| LSTM residual,3seeds | 0.081588 | да |
+| Geometric oscillator | 0.266333 | только camera offset |
+| Persistence | 0.376173 | только camera offset |
+| Zero | 0.399518 | только camera offset |
+| Frozen CranePilot candidate | 0.852720 | только camera offset |
+| Frozen CranePilot retained | **0.895344** | только camera offset |
+
+**Перенос текущих угловых весов НЕ подтверждён**: retained проиграл geometric
+на всех4TESTrecords, mean error +236.18%. ARX residual лучше fitted oscillator
+на52.24%,4/4records. Нет доказательства превосходства CranePilot над сильными
+классическими/нейронными сравнениями. При этом locally fitted и frozen методы
+имеют разный доступ к новой обучающей выборке: это не изолированное сравнение
+архитектур. Все результаты и отрицательный перенос сохранены без tuning послеTEST.
+
+Это отдельный domain adapter: omega из metadataновогостенда, x=R*boom_angle,
+a=R*planned_acceleration; native xr0, actor bypass,20→100Hz previous-samplehold
+без новой информации. Полная native pipeline не проверена. Одна TRAIN-only
+camera-centering constant применена ко всем. Actual camera time нерегулярен:
+nominal30steps не ровно1.5s; futuretimestamps не input. TRAIN meaninterval.051795s;
+часть fitted frequencyshift может объясняться timebase (diagnostic inference).
+Syntheticzero-input проверка дала ненулевой frozen отклик до.361° — posthoc,
+не аппаратное измерение и не доказанная единственная причина ошибки.
+
+179unit tests PASS. Все14784validation+TEST forecasts (1848packets×8methods)
+replayed EXACT0; метрики пересчитаны независимо. SHA всех данных/источников/
+checkpoints/selection и1281originalmain+APHYNITYfiles проверены. Originalexternal
+MAT/source остаются у авторов/вignoredcache; публикуются owncode,weights,metrics,
+derivedpredictions и pinned downloadmanifest. APHYNITY/defaultbundle unchanged.
+
+[Отчёт](docs/EXTERNAL_BENCHMARK_2026_11_07_RU.md),
+[протокол](docs/EXTERNAL_BENCHMARK_DESIGN_20261107.md),
+[все результаты](results/external_benchmark_20261107/).
+
+Следующая работа должна отделить timebase/domain adapter и локальное обучение
+от архитектуры: causal clock handling, zero-equilibrium constraint и same-data
+reference comparison. Текущие4TESTrecords уже использованы: следующая настроенная
+модель на них будет retrospective ablation; новое независимое подтверждение
+потребует свежих records. Нельзя заявлять SOTA/hardware/nativecontrol успех.
+
+Предыдущий завершённый эксперимент: **structural_transfer_20261107**.
 
 918 новых эпизодов, 9 регуляторов, шесть семейств привода: первый порядок,
 скрытая задержка, два лага, трение, смена gain и комбинированный случай.
