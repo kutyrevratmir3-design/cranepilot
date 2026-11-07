@@ -1,0 +1,224 @@
+{
+  "rules": {
+    "selected": {
+      "passed": false,
+      "cells": [
+        {
+          "rule": "selected",
+          "resolved_model": "adapter_direct8",
+          "scope": "evaluation_extrapolation",
+          "fold": "primary",
+          "regime": "all",
+          "mae_deg": 0.4736207372176916,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.49059764252306687,
+          "ratio": 0.9653954608952752,
+          "maximum_ratio": 1,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "adapter_direct8",
+          "scope": "evaluation_extrapolation",
+          "fold": "primary",
+          "regime": "active",
+          "mae_deg": 0.9546517987572385,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.0368376628782192,
+          "ratio": 0.9207341061542498,
+          "maximum_ratio": 1,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "short_transfer",
+          "regime": "all",
+          "mae_deg": 0.3835976651351221,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.3835976651351221,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "short_transfer",
+          "regime": "active",
+          "mae_deg": 1.6439684208282486,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.6439684208282486,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "latent_residual6",
+          "scope": "evaluation_extrapolation",
+          "fold": "long_transfer",
+          "regime": "all",
+          "mae_deg": 0.5011572552200797,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.512640577910214,
+          "ratio": 0.9775996610784378,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "latent_residual6",
+          "scope": "evaluation_extrapolation",
+          "fold": "long_transfer",
+          "regime": "active",
+          "mae_deg": 0.9013861638756983,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.9318530448861883,
+          "ratio": 0.9673050582624741,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "adapter_direct8",
+          "scope": "load_stress",
+          "fold": "primary",
+          "regime": "all",
+          "mae_deg": 0.5596974106813855,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.5486246367277247,
+          "ratio": 1.020182786576455,
+          "maximum_ratio": 1.01,
+          "passed": false
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "adapter_direct8",
+          "scope": "load_stress",
+          "fold": "primary",
+          "regime": "active",
+          "mae_deg": 1.0513915018786573,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.2768437254707166,
+          "ratio": 0.823430057183431,
+          "maximum_ratio": 1.01,
+          "passed": true
+        }
+      ]
+    },
+    "common": {
+      "passed": true,
+      "cells": [
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "primary",
+          "regime": "all",
+          "mae_deg": 0.49059764252306687,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.49059764252306687,
+          "ratio": 1.0,
+          "maximum_ratio": 1,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "primary",
+          "regime": "active",
+          "mae_deg": 1.0368376628782192,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.0368376628782192,
+          "ratio": 1.0,
+          "maximum_ratio": 1,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "short_transfer",
+          "regime": "all",
+          "mae_deg": 0.3835976651351221,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.3835976651351221,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "short_transfer",
+          "regime": "active",
+          "mae_deg": 1.6439684208282486,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.6439684208282486,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "long_transfer",
+          "regime": "all",
+          "mae_deg": 0.512640577910214,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.512640577910214,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "long_transfer",
+          "regime": "active",
+          "mae_deg": 0.9318530448861883,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.9318530448861883,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "load_stress",
+          "fold": "primary",
+          "regime": "all",
+          "mae_deg": 0.5486246367277247,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.5486246367277247,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "load_stress",
+          "fold": "primary",
+          "regime": "active",
+          "mae_deg": 1.2768437254707166,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.2768437254707166,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        }
+      ]
+    }
+  },
+  "common_model": "previous_local",
+  "operational_thresholds_not_statistical_bounds": true
+}

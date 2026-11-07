@@ -1,0 +1,19 @@
+REAL evaluate primary 1
+REAL evaluate primary 2
+REAL evaluate primary 7
+REAL evaluate primary 8
+REAL evaluate primary 10
+REAL evaluate primary 11
+REAL evaluate primary 12
+SIMULATION primary 1152
+REAL evaluate short_transfer 1
+REAL evaluate short_transfer 2
+REAL evaluate short_transfer 3
+REAL evaluate short_transfer 7
+SIMULATION short_transfer 1152
+REAL evaluate long_transfer 2
+REAL evaluate long_transfer 6
+REAL evaluate long_transfer 7
+REAL evaluate long_transfer 8
+SIMULATION long_transfer 1152
+COMPLETE evaluate

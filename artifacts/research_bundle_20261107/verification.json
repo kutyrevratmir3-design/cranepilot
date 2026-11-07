@@ -1,0 +1,371 @@
+{
+  "passed": true,
+  "records": 18,
+  "unique_packets": 17496,
+  "profile_comparisons": 36,
+  "max_error_deg": 0.0,
+  "tolerance_deg": 5e-05,
+  "history_only_inputs": true,
+  "checks": [
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "eef45d4fbeed904c753006cd21a3ab494780f470bb50f10c119a59868a363626"
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "profile": "candidate",
+      "method": "adapter_direct8",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "eef45d4fbeed904c753006cd21a3ab494780f470bb50f10c119a59868a363626"
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "702856cc8f29c79d0e445cf62f71f6ed690ad9b38e9fc4d48379047a3e425f2a"
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "profile": "candidate",
+      "method": "adapter_direct8",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "702856cc8f29c79d0e445cf62f71f6ed690ad9b38e9fc4d48379047a3e425f2a"
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "253be438adaa4fd21a77ae5a46a50d9e3ca7b2898cbdabcecc1eee53bc0a9747"
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "profile": "candidate",
+      "method": "adapter_direct8",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "253be438adaa4fd21a77ae5a46a50d9e3ca7b2898cbdabcecc1eee53bc0a9747"
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "92bdeaa0a31b356225a70fcf74c2c6e0e285970c222d96a8ca0c989f1b90942d"
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "profile": "candidate",
+      "method": "adapter_direct8",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "92bdeaa0a31b356225a70fcf74c2c6e0e285970c222d96a8ca0c989f1b90942d"
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "49d8af629b6895ef536568bc82ade95a152a4c2434b96ad553938c04b24fdaf4"
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "profile": "candidate",
+      "method": "adapter_direct8",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "49d8af629b6895ef536568bc82ade95a152a4c2434b96ad553938c04b24fdaf4"
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "ed700368c9c2e20d264b578c18ddf08e28c508e446be45e8286c470d09e0376a"
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "profile": "candidate",
+      "method": "adapter_direct8",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "ed700368c9c2e20d264b578c18ddf08e28c508e446be45e8286c470d09e0376a"
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "77876e7f972c5d421ae3c49aacfeab8af9e3e67a6a953eba4b410d0e67293a7e"
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "profile": "candidate",
+      "method": "adapter_direct8",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "77876e7f972c5d421ae3c49aacfeab8af9e3e67a6a953eba4b410d0e67293a7e"
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "a432fde2195d14d6aa2da19de41ffda8ef6e12cdade136cc574b3156c3df0ad8"
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "profile": "candidate",
+      "method": "adapter_direct8",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "a432fde2195d14d6aa2da19de41ffda8ef6e12cdade136cc574b3156c3df0ad8"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "3d12eb403387fe3174ce88cccdec610e1ac321afb16082f45d51c56fea67d7a6"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "profile": "candidate",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "3d12eb403387fe3174ce88cccdec610e1ac321afb16082f45d51c56fea67d7a6"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "058930d91d511168b7282c88439d9ca1dbf6d6f3a475d0f33d04625311300ccf"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "profile": "candidate",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "058930d91d511168b7282c88439d9ca1dbf6d6f3a475d0f33d04625311300ccf"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "1e943659f706a75aa3d15813fd68c07c1ce2b09f27b7032d24f5a7e5d5577381"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "profile": "candidate",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "1e943659f706a75aa3d15813fd68c07c1ce2b09f27b7032d24f5a7e5d5577381"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "824b7a4a8b819f1dced860d07306d0c16097710e01cb16a841abd5e464bf1159"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "profile": "candidate",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "824b7a4a8b819f1dced860d07306d0c16097710e01cb16a841abd5e464bf1159"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "8cd85d41b70afb25afd5177a77a6fcd1da1b8096532b538fbedb77c4b9566ce7"
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "profile": "candidate",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "8cd85d41b70afb25afd5177a77a6fcd1da1b8096532b538fbedb77c4b9566ce7"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "39ccc56009277afd64eef67246350950cc7e066b0d11208d8b74331e9119e59a"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "profile": "candidate",
+      "method": "latent_residual6",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "39ccc56009277afd64eef67246350950cc7e066b0d11208d8b74331e9119e59a"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "170dda61404f7c73c8497eddb53fdd61425d71386ad701e6c8e87aa7ac2246e1"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "profile": "candidate",
+      "method": "latent_residual6",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "170dda61404f7c73c8497eddb53fdd61425d71386ad701e6c8e87aa7ac2246e1"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "97cdfddde88c57f2dce5d85bace0fd94114c493cea810c3a85ba30d880e6123c"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "profile": "candidate",
+      "method": "latent_residual6",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "97cdfddde88c57f2dce5d85bace0fd94114c493cea810c3a85ba30d880e6123c"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "41fc2115e39838ba890cb95f9595ecec17bf403bdd81490e2664dd5b74adc309"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "profile": "candidate",
+      "method": "latent_residual6",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "41fc2115e39838ba890cb95f9595ecec17bf403bdd81490e2664dd5b74adc309"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "profile": "retained",
+      "method": "previous_local",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "97e4436d0df8f62dcca0ebd93ffd2ed9756d908189a38f17b131dfe2189da3dd"
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "profile": "candidate",
+      "method": "latent_residual6",
+      "packets": 972,
+      "max_error_deg": 0.0,
+      "max_acceleration_error_m_s2": 0.0,
+      "reference_sha256": "97e4436d0df8f62dcca0ebd93ffd2ed9756d908189a38f17b131dfe2189da3dd"
+    }
+  ]
+}

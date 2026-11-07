@@ -27,7 +27,17 @@ def main():
     if prov['status']!='complete':raise ValueError('Completed frozen study required')
     cfg=prov['config'];verify(prov['guarded_hashes']);verify(prov['checkpoint_hashes'],args.run)
     parent=Path(cfg['parent_run']);parent_prov=json.loads((parent/'provenance.json').read_text())
-    verify(parent_prov['checkpoint_hashes'],parent)
+    seen=set()
+    while parent not in seen:
+        seen.add(parent)
+        if parent_prov['status']!='complete':raise ValueError('Completed dependency required')
+        verify(parent_prov['guarded_hashes'])
+        for field in ['checkpoint_hashes','result_hashes']:
+            if field in parent_prov:verify(parent_prov[field],parent)
+        if 'selection_sha256' in parent_prov:verify({'selection.json':parent_prov['selection_sha256']},parent)
+        ancestor=parent_prov.get('config',{}).get('parent_run')
+        if not ancestor:break
+        parent=Path(ancestor);parent_prov=json.loads((parent/'provenance.json').read_text())
     verify({'selection.json':prov['selection_sha256']},args.run)
     selection=json.loads((args.run/'selection.json').read_text())
     name=selection['folds'][args.fold]['model'] if args.variant=='selected' else selection['common']['model'] if args.variant=='common' else args.variant

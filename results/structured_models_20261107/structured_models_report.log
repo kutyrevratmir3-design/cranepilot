@@ -1,0 +1,244 @@
+                   scope           fold    model regime  mae_deg  scenarios  incumbent_mae_deg  change_vs_incumbent_percent  soft_symmetry_mae_deg  change_vs_soft_symmetry_percent  previous_local_mae_deg  change_vs_previous_local_percent
+evaluation_extrapolation  long_transfer   common active 0.931853          3           0.931853                     0.000000               0.892822                         4.371636                0.931853                          0.000000
+evaluation_extrapolation  long_transfer   common    all 0.512641          3           0.512641                     0.000000               0.500935                         2.336650                0.512641                          0.000000
+evaluation_extrapolation  long_transfer   common  quiet 0.506077          3           0.506077                     0.000000               0.494582                         2.324217                0.506077                          0.000000
+evaluation_extrapolation  long_transfer selected active 0.901386          3           0.931853                    -3.269494               0.892822                         0.959211                0.931853                         -3.269494
+evaluation_extrapolation  long_transfer selected    all 0.501157          3           0.512641                    -2.240034               0.500935                         0.044274                0.512641                         -2.240034
+evaluation_extrapolation  long_transfer selected  quiet 0.494637          3           0.506077                    -2.260542               0.494582                         0.011135                0.506077                         -2.260542
+evaluation_extrapolation        primary   common active 1.036838          4           1.068543                    -2.967166               1.045093                        -0.789902                1.036838                          0.000000
+evaluation_extrapolation        primary   common    all 0.490598          4           0.500498                    -1.978018               0.492199                        -0.325405                0.490598                          0.000000
+evaluation_extrapolation        primary   common  quiet 0.464426          4           0.473318                    -1.878671               0.465714                        -0.276622                0.464426                          0.000000
+evaluation_extrapolation        primary selected active 0.954652          4           1.068543                   -10.658560               1.045093                        -8.653879                1.036838                         -7.926589
+evaluation_extrapolation        primary selected    all 0.473621          4           0.500498                    -5.370024               0.492199                        -3.774599                0.490598                         -3.460454
+evaluation_extrapolation        primary selected  quiet 0.450520          4           0.473318                    -4.816491               0.465714                        -3.262409                0.464426                         -2.994069
+evaluation_extrapolation short_transfer   common active 1.643968          3           1.811238                    -9.235082               1.805803                        -8.961917                1.643968                          0.000000
+evaluation_extrapolation short_transfer   common    all 0.383598          3           0.432130                   -11.231059               0.436635                       -12.146813                0.383598                          0.000000
+evaluation_extrapolation short_transfer   common  quiet 0.330570          3           0.375439                   -11.951104               0.380266                       -13.068897                0.330570                          0.000000
+evaluation_extrapolation short_transfer selected active 1.643968          3           1.811238                    -9.235082               1.805803                        -8.961917                1.643968                          0.000000
+evaluation_extrapolation short_transfer selected    all 0.383598          3           0.432130                   -11.231059               0.436635                       -12.146813                0.383598                          0.000000
+evaluation_extrapolation short_transfer selected  quiet 0.330570          3           0.375439                   -11.951104               0.380266                       -13.068897                0.330570                          0.000000
+ACCEPTANCE {
+  "rules": {
+    "selected": {
+      "passed": false,
+      "cells": [
+        {
+          "rule": "selected",
+          "resolved_model": "adapter_direct8",
+          "scope": "evaluation_extrapolation",
+          "fold": "primary",
+          "regime": "all",
+          "mae_deg": 0.4736207372176916,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.49059764252306687,
+          "ratio": 0.9653954608952752,
+          "maximum_ratio": 1,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "adapter_direct8",
+          "scope": "evaluation_extrapolation",
+          "fold": "primary",
+          "regime": "active",
+          "mae_deg": 0.9546517987572385,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.0368376628782192,
+          "ratio": 0.9207341061542498,
+          "maximum_ratio": 1,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "short_transfer",
+          "regime": "all",
+          "mae_deg": 0.3835976651351221,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.3835976651351221,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "short_transfer",
+          "regime": "active",
+          "mae_deg": 1.6439684208282486,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.6439684208282486,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "latent_residual6",
+          "scope": "evaluation_extrapolation",
+          "fold": "long_transfer",
+          "regime": "all",
+          "mae_deg": 0.5011572552200797,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.512640577910214,
+          "ratio": 0.9775996610784378,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "latent_residual6",
+          "scope": "evaluation_extrapolation",
+          "fold": "long_transfer",
+          "regime": "active",
+          "mae_deg": 0.9013861638756983,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.9318530448861883,
+          "ratio": 0.9673050582624741,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "adapter_direct8",
+          "scope": "load_stress",
+          "fold": "primary",
+          "regime": "all",
+          "mae_deg": 0.5596974106813855,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.5486246367277247,
+          "ratio": 1.020182786576455,
+          "maximum_ratio": 1.01,
+          "passed": false
+        },
+        {
+          "rule": "selected",
+          "resolved_model": "adapter_direct8",
+          "scope": "load_stress",
+          "fold": "primary",
+          "regime": "active",
+          "mae_deg": 1.0513915018786573,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.2768437254707166,
+          "ratio": 0.823430057183431,
+          "maximum_ratio": 1.01,
+          "passed": true
+        }
+      ]
+    },
+    "common": {
+      "passed": true,
+      "cells": [
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "primary",
+          "regime": "all",
+          "mae_deg": 0.49059764252306687,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.49059764252306687,
+          "ratio": 1.0,
+          "maximum_ratio": 1,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "primary",
+          "regime": "active",
+          "mae_deg": 1.0368376628782192,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.0368376628782192,
+          "ratio": 1.0,
+          "maximum_ratio": 1,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "short_transfer",
+          "regime": "all",
+          "mae_deg": 0.3835976651351221,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.3835976651351221,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "short_transfer",
+          "regime": "active",
+          "mae_deg": 1.6439684208282486,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.6439684208282486,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "long_transfer",
+          "regime": "all",
+          "mae_deg": 0.512640577910214,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.512640577910214,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "evaluation_extrapolation",
+          "fold": "long_transfer",
+          "regime": "active",
+          "mae_deg": 0.9318530448861883,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.9318530448861883,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "load_stress",
+          "fold": "primary",
+          "regime": "all",
+          "mae_deg": 0.5486246367277247,
+          "reference": "previous_local",
+          "reference_mae_deg": 0.5486246367277247,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        },
+        {
+          "rule": "common",
+          "resolved_model": "previous_local",
+          "scope": "load_stress",
+          "fold": "primary",
+          "regime": "active",
+          "mae_deg": 1.2768437254707166,
+          "reference": "previous_local",
+          "reference_mae_deg": 1.2768437254707166,
+          "ratio": 1.0,
+          "maximum_ratio": 1.01,
+          "passed": true
+        }
+      ]
+    }
+  },
+  "common_model": "previous_local",
+  "operational_thresholds_not_statistical_bounds": true
+}
+FITS 72 EPOCH_MINUS_ONE 9

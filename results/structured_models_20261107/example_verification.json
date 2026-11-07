@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "method": "adapter_direct8",
+  "examples": 3,
+  "max_error_deg": 3.786010740469692e-07,
+  "input_sha256": "59b5e9f7cd4d42c04ca1d27fb470d8f158f481f950851da270b900d0aa36c508",
+  "cli_source_sha256": "c402ee829b6985e048a408de6bc7ff3cb9bcf27d6a69b16ccb9c43410317d8d1",
+  "output_sha256": "fb5a5b29d42175f69a93ca2704b91064b9ec8c0004b4e4d73eb1240c093387a5"
+}

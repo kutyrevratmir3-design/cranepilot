@@ -1,0 +1,3845 @@
+[
+  {
+    "fold": "primary",
+    "model": "adapter_force8",
+    "elapsed_seconds": 2.997027458011871,
+    "strategy": "force8",
+    "seed": 0,
+    "best_epoch": 36,
+    "selected_epoch": 36,
+    "epochs_executed": 57,
+    "optimizer_steps": 285,
+    "backward_passes": 285,
+    "optimizer_closure_evaluations": 285,
+    "fit_seconds": 1.6787574170157313,
+    "cache_seconds": 0.12312066700542346,
+    "selection_score": 0.9892429496084159,
+    "validation": {
+      "all": 0.1960507035255432,
+      "active": 0.8751819133758545,
+      "quiet": 0.15922147035598755
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_force8",
+    "elapsed_seconds": 2.033140999992611,
+    "strategy": "force8",
+    "seed": 1,
+    "best_epoch": 51,
+    "selected_epoch": 51,
+    "epochs_executed": 72,
+    "optimizer_steps": 360,
+    "backward_passes": 360,
+    "optimizer_closure_evaluations": 360,
+    "fit_seconds": 1.9219951249833684,
+    "cache_seconds": 0.11102716700406745,
+    "selection_score": 0.9817327621042442,
+    "validation": {
+      "all": 0.19745872914791107,
+      "active": 0.8876135945320129,
+      "quiet": 0.16003164649009705
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_force8",
+    "elapsed_seconds": 1.1593412079964764,
+    "strategy": "force8",
+    "seed": 2,
+    "best_epoch": 16,
+    "selected_epoch": 16,
+    "epochs_executed": 37,
+    "optimizer_steps": 185,
+    "backward_passes": 185,
+    "optimizer_closure_evaluations": 185,
+    "fit_seconds": 1.0458575839875266,
+    "cache_seconds": 0.10910579198389314,
+    "selection_score": 0.9992598635321036,
+    "validation": {
+      "all": 0.18911249935626984,
+      "active": 0.8695215582847595,
+      "quiet": 0.15221397578716278
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_force16",
+    "elapsed_seconds": 1.9356367080181371,
+    "strategy": "force16",
+    "seed": 0,
+    "best_epoch": 35,
+    "selected_epoch": 35,
+    "epochs_executed": 56,
+    "optimizer_steps": 280,
+    "backward_passes": 280,
+    "optimizer_closure_evaluations": 280,
+    "fit_seconds": 1.8303918750025332,
+    "cache_seconds": 0.11634412501007318,
+    "selection_score": 0.9898489961754771,
+    "validation": {
+      "all": 0.19585548341274261,
+      "active": 0.8771416544914246,
+      "quiet": 0.1589093953371048
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 641,
+    "total_parameter_count": 9462,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 16,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_force16",
+    "elapsed_seconds": 1.7518783340055961,
+    "strategy": "force16",
+    "seed": 1,
+    "best_epoch": 33,
+    "selected_epoch": 33,
+    "epochs_executed": 54,
+    "optimizer_steps": 270,
+    "backward_passes": 270,
+    "optimizer_closure_evaluations": 270,
+    "fit_seconds": 1.6342146249953657,
+    "cache_seconds": 0.10228995801298879,
+    "selection_score": 0.9790239215387044,
+    "validation": {
+      "all": 0.1972135454416275,
+      "active": 0.8838384747505188,
+      "quiet": 0.15997792780399323
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 641,
+    "total_parameter_count": 9462,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 16,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_force16",
+    "elapsed_seconds": 1.137098583014449,
+    "strategy": "force16",
+    "seed": 2,
+    "best_epoch": 12,
+    "selected_epoch": 12,
+    "epochs_executed": 33,
+    "optimizer_steps": 165,
+    "backward_passes": 165,
+    "optimizer_closure_evaluations": 165,
+    "fit_seconds": 1.0226755840121768,
+    "cache_seconds": 0.11143395901308395,
+    "selection_score": 0.9985267030875954,
+    "validation": {
+      "all": 0.18908938765525818,
+      "active": 0.8683507442474365,
+      "quiet": 0.15225310623645782
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 641,
+    "total_parameter_count": 9462,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 16,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_direct8",
+    "elapsed_seconds": 1.3213315000175498,
+    "strategy": "direct8",
+    "seed": 0,
+    "best_epoch": 96,
+    "selected_epoch": 96,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 1.2110382500104606,
+    "cache_seconds": 0.10074845899362117,
+    "selection_score": 0.9029503067578105,
+    "validation": {
+      "all": 0.18128716945648193,
+      "active": 0.788283109664917,
+      "quiet": 0.14836981892585754
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "direct",
+    "bounded_head_radians": 0.02,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_direct8",
+    "elapsed_seconds": 1.3796889160003047,
+    "strategy": "direct8",
+    "seed": 1,
+    "best_epoch": 97,
+    "selected_epoch": 97,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 1.2683417499938514,
+    "cache_seconds": 0.11229408299550414,
+    "selection_score": 0.9108240888877601,
+    "validation": {
+      "all": 0.18761193752288818,
+      "active": 0.8039652109146118,
+      "quiet": 0.1541871428489685
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "direct",
+    "bounded_head_radians": 0.02,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_direct8",
+    "elapsed_seconds": 1.1577619170129765,
+    "strategy": "direct8",
+    "seed": 2,
+    "best_epoch": 97,
+    "selected_epoch": 97,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 1.041649624996353,
+    "cache_seconds": 0.11496720899594948,
+    "selection_score": 0.905166103541044,
+    "validation": {
+      "all": 0.17382988333702087,
+      "active": 0.7760104537010193,
+      "quiet": 0.14117367565631866
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "direct",
+    "bounded_head_radians": 0.02,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_force8_phase",
+    "elapsed_seconds": 2.159633249975741,
+    "strategy": "force8_phase",
+    "seed": 0,
+    "best_epoch": 36,
+    "selected_epoch": 36,
+    "epochs_executed": 57,
+    "optimizer_steps": 285,
+    "backward_passes": 285,
+    "optimizer_closure_evaluations": 285,
+    "fit_seconds": 2.045594124996569,
+    "cache_seconds": 0.12281316600274295,
+    "selection_score": 0.9935380657301691,
+    "validation": {
+      "all": 0.19742614030838013,
+      "active": 0.8766151666641235,
+      "quiet": 0.16059376299381256
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.25,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_force8_phase",
+    "elapsed_seconds": 1.6528999579895753,
+    "strategy": "force8_phase",
+    "seed": 1,
+    "best_epoch": 39,
+    "selected_epoch": 39,
+    "epochs_executed": 60,
+    "optimizer_steps": 300,
+    "backward_passes": 300,
+    "optimizer_closure_evaluations": 300,
+    "fit_seconds": 1.5298992079915479,
+    "cache_seconds": 0.114273040991975,
+    "selection_score": 0.9785070621585001,
+    "validation": {
+      "all": 0.1964893937110901,
+      "active": 0.886115550994873,
+      "quiet": 0.1590910255908966
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.25,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "adapter_force8_phase",
+    "elapsed_seconds": 1.4618572499894071,
+    "strategy": "force8_phase",
+    "seed": 2,
+    "best_epoch": 20,
+    "selected_epoch": 20,
+    "epochs_executed": 41,
+    "optimizer_steps": 205,
+    "backward_passes": 205,
+    "optimizer_closure_evaluations": 205,
+    "fit_seconds": 1.3359816250158474,
+    "cache_seconds": 0.12801366701023653,
+    "selection_score": 0.9964436382216527,
+    "validation": {
+      "all": 0.18851199746131897,
+      "active": 0.8673821091651917,
+      "quiet": 0.15169692039489746
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.25,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "primary",
+    "model": "latent_standalone6",
+    "elapsed_seconds": 2.4720833339961246,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 99,
+    "selected_epoch": 99,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 2.4585992920037825,
+    "selection_score": 0.7888441437256797,
+    "validation": {
+      "all": 0.1984909623861313,
+      "active": 0.856994092464447,
+      "quiet": 0.16278038918972015
+    },
+    "starting_validation": {
+      "all": 0.305643767118454,
+      "active": 0.9232174158096313,
+      "quiet": 0.27215278148651123
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 4290,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9984754323959351,
+      "max_transition_spectral_radius": 0.9984580874443054,
+      "max_generator_symmetric_eigenvalue": -0.008326927199959755,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_standalone6",
+    "elapsed_seconds": 2.132118542009266,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 98,
+    "selected_epoch": 98,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 2.1199474169989116,
+    "selection_score": 0.7663614338832812,
+    "validation": {
+      "all": 0.19145525991916656,
+      "active": 0.8367330431938171,
+      "quiet": 0.1564618945121765
+    },
+    "starting_validation": {
+      "all": 0.305643767118454,
+      "active": 0.9232174158096313,
+      "quiet": 0.27215278148651123
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 4290,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9984632134437561,
+      "max_transition_spectral_radius": 0.9984307885169983,
+      "max_generator_symmetric_eigenvalue": -0.008390330709517002,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_standalone6",
+    "elapsed_seconds": 2.713260499993339,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 98,
+    "selected_epoch": 98,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 2.699742957978742,
+    "selection_score": 0.7703170220036754,
+    "validation": {
+      "all": 0.19552086293697357,
+      "active": 0.8317563533782959,
+      "quiet": 0.16101785004138947
+    },
+    "starting_validation": {
+      "all": 0.305643767118454,
+      "active": 0.9232174158096313,
+      "quiet": 0.27215278148651123
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 4290,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9984561800956726,
+      "max_transition_spectral_radius": 0.9984319806098938,
+      "max_generator_symmetric_eigenvalue": -0.008430972695350647,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_standalone12",
+    "elapsed_seconds": 5.465327708021505,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "best_epoch": 99,
+    "selected_epoch": 99,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 5.451383875013562,
+    "selection_score": 0.7319258083778335,
+    "validation": {
+      "all": 0.18812520802021027,
+      "active": 0.7832085490226746,
+      "quiet": 0.15585386753082275
+    },
+    "starting_validation": {
+      "all": 0.305643767118454,
+      "active": 0.9232174158096313,
+      "quiet": 0.27215278148651123
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4620,
+    "total_parameter_count": 4620,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9986459016799927,
+      "max_transition_spectral_radius": 0.9986255764961243,
+      "max_generator_symmetric_eigenvalue": -0.007929801009595394,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_standalone12",
+    "elapsed_seconds": 4.925969833013369,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "best_epoch": 99,
+    "selected_epoch": 99,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 4.907717458991101,
+    "selection_score": 0.735331580116092,
+    "validation": {
+      "all": 0.1880320906639099,
+      "active": 0.7897783517837524,
+      "quiet": 0.15539944171905518
+    },
+    "starting_validation": {
+      "all": 0.305643767118454,
+      "active": 0.9232174158096313,
+      "quiet": 0.27215278148651123
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4620,
+    "total_parameter_count": 4620,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.998658299446106,
+      "max_transition_spectral_radius": 0.9986335635185242,
+      "max_generator_symmetric_eigenvalue": -0.007858495227992535,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_standalone12",
+    "elapsed_seconds": 4.688788125000428,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "best_epoch": 98,
+    "selected_epoch": 98,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 4.673944667010801,
+    "selection_score": 0.7321866745695449,
+    "validation": {
+      "all": 0.18739669024944305,
+      "active": 0.7858907580375671,
+      "quiet": 0.1549404263496399
+    },
+    "starting_validation": {
+      "all": 0.305643767118454,
+      "active": 0.9232174158096313,
+      "quiet": 0.27215278148651123
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4620,
+    "total_parameter_count": 4620,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9986481070518494,
+      "max_transition_spectral_radius": 0.9986188411712646,
+      "max_generator_symmetric_eigenvalue": -0.007914328016340733,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_residual6",
+    "elapsed_seconds": 7.973903417005204,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 56,
+    "selected_epoch": 56,
+    "epochs_executed": 77,
+    "optimizer_steps": 385,
+    "backward_passes": 385,
+    "optimizer_closure_evaluations": 385,
+    "fit_seconds": 7.897138917003758,
+    "selection_score": 0.9539497593990778,
+    "validation": {
+      "all": 0.19324520230293274,
+      "active": 0.8250465393066406,
+      "quiet": 0.15898264944553375
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9983688592910767,
+      "max_transition_spectral_radius": 0.9983683824539185,
+      "max_generator_symmetric_eigenvalue": -0.009046356193721294,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_residual6",
+    "elapsed_seconds": 11.519359124999028,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 97,
+    "selected_epoch": 97,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 11.456864582985872,
+    "selection_score": 0.9477856395368415,
+    "validation": {
+      "all": 0.20274199545383453,
+      "active": 0.8033286929130554,
+      "quiet": 0.17017221450805664
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9984766244888306,
+      "max_transition_spectral_radius": 0.9984631538391113,
+      "max_generator_symmetric_eigenvalue": -0.008324690163135529,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_residual6",
+    "elapsed_seconds": 7.618288917001337,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 61,
+    "selected_epoch": 61,
+    "epochs_executed": 82,
+    "optimizer_steps": 410,
+    "backward_passes": 410,
+    "optimizer_closure_evaluations": 410,
+    "fit_seconds": 7.57203566597309,
+    "selection_score": 0.9669140606536026,
+    "validation": {
+      "all": 0.18932050466537476,
+      "active": 0.8122105002403259,
+      "quiet": 0.15554122626781464
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9983421564102173,
+      "max_transition_spectral_radius": 0.9983222484588623,
+      "max_generator_symmetric_eigenvalue": -0.00920849572867155,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_residual6_phase",
+    "elapsed_seconds": 8.27615579101257,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    },
+    "best_epoch": 61,
+    "selected_epoch": 61,
+    "epochs_executed": 82,
+    "optimizer_steps": 410,
+    "backward_passes": 410,
+    "optimizer_closure_evaluations": 410,
+    "fit_seconds": 8.214528457989218,
+    "selection_score": 0.9576190480027116,
+    "validation": {
+      "all": 0.19315974414348602,
+      "active": 0.8319615125656128,
+      "quiet": 0.15851756930351257
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {
+      "increment": 0.25,
+      "terminal": 0.25
+    },
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9984374642372131,
+      "max_transition_spectral_radius": 0.9984087347984314,
+      "max_generator_symmetric_eigenvalue": -0.00853767804801464,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_residual6_phase",
+    "elapsed_seconds": 3.745036790991435,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    },
+    "best_epoch": 17,
+    "selected_epoch": 17,
+    "epochs_executed": 38,
+    "optimizer_steps": 190,
+    "backward_passes": 190,
+    "optimizer_closure_evaluations": 190,
+    "fit_seconds": 3.678735666006105,
+    "selection_score": 0.9807130036184819,
+    "validation": {
+      "all": 0.19772368669509888,
+      "active": 0.8846115469932556,
+      "quiet": 0.1604738086462021
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {
+      "increment": 0.25,
+      "terminal": 0.25
+    },
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.998188316822052,
+      "max_transition_spectral_radius": 0.9981870651245117,
+      "max_generator_symmetric_eigenvalue": -0.010066349990665913,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "primary",
+    "model": "latent_residual6_phase",
+    "elapsed_seconds": 7.756561916001374,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    },
+    "best_epoch": 53,
+    "selected_epoch": 53,
+    "epochs_executed": 74,
+    "optimizer_steps": 370,
+    "backward_passes": 370,
+    "optimizer_closure_evaluations": 370,
+    "fit_seconds": 7.694606749981176,
+    "selection_score": 0.9783636431058728,
+    "validation": {
+      "all": 0.18776272237300873,
+      "active": 0.8393357396125793,
+      "quiet": 0.15242795646190643
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {
+      "increment": 0.25,
+      "terminal": 0.25
+    },
+    "stability_train_omega": {
+      "omega_values": [
+        3.6726455688476562,
+        3.9096426963806152,
+        4.660748481750488
+      ],
+      "max_transition_singular_value": 0.9983116984367371,
+      "max_transition_spectral_radius": 0.9982814788818359,
+      "max_generator_symmetric_eigenvalue": -0.009221852757036686,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_force8",
+    "elapsed_seconds": 0.8042748750012834,
+    "strategy": "force8",
+    "seed": 0,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 21,
+    "optimizer_steps": 105,
+    "backward_passes": 105,
+    "optimizer_closure_evaluations": 105,
+    "fit_seconds": 0.6864099579979666,
+    "cache_seconds": 0.11976433300878853,
+    "selection_score": 0.9989771891969373,
+    "validation": {
+      "all": 0.21898500621318817,
+      "active": 0.9773205518722534,
+      "quiet": 0.18981824815273285
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_force8",
+    "elapsed_seconds": 0.6558101249975152,
+    "strategy": "force8",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 20,
+    "optimizer_steps": 100,
+    "backward_passes": 100,
+    "optimizer_closure_evaluations": 100,
+    "fit_seconds": 0.5641160419909284,
+    "cache_seconds": 0.10800633300095797,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_force8",
+    "elapsed_seconds": 0.574117332987953,
+    "strategy": "force8",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 20,
+    "optimizer_steps": 100,
+    "backward_passes": 100,
+    "optimizer_closure_evaluations": 100,
+    "fit_seconds": 0.48772875001304783,
+    "cache_seconds": 0.09188341602566652,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_force16",
+    "elapsed_seconds": 0.6375348750152625,
+    "strategy": "force16",
+    "seed": 0,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 21,
+    "optimizer_steps": 105,
+    "backward_passes": 105,
+    "optimizer_closure_evaluations": 105,
+    "fit_seconds": 0.548243665980408,
+    "cache_seconds": 0.09108670798013918,
+    "selection_score": 0.999214715377183,
+    "validation": {
+      "all": 0.2191491574048996,
+      "active": 0.9770521521568298,
+      "quiet": 0.1899990439414978
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 641,
+    "total_parameter_count": 9462,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 16,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_force16",
+    "elapsed_seconds": 0.6253156250168104,
+    "strategy": "force16",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 20,
+    "optimizer_steps": 100,
+    "backward_passes": 100,
+    "optimizer_closure_evaluations": 100,
+    "fit_seconds": 0.5333443330018781,
+    "cache_seconds": 0.09914920799201354,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 641,
+    "total_parameter_count": 9462,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 16,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_force16",
+    "elapsed_seconds": 0.7572862499800976,
+    "strategy": "force16",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 20,
+    "optimizer_steps": 100,
+    "backward_passes": 100,
+    "optimizer_closure_evaluations": 100,
+    "fit_seconds": 0.6389881250215694,
+    "cache_seconds": 0.09844029200030491,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 641,
+    "total_parameter_count": 9462,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 16,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_direct8",
+    "elapsed_seconds": 1.5417502079799306,
+    "strategy": "direct8",
+    "seed": 0,
+    "best_epoch": 72,
+    "selected_epoch": 72,
+    "epochs_executed": 93,
+    "optimizer_steps": 465,
+    "backward_passes": 465,
+    "optimizer_closure_evaluations": 465,
+    "fit_seconds": 1.4006096249795519,
+    "cache_seconds": 0.11804829197353683,
+    "selection_score": 0.9670025275898079,
+    "validation": {
+      "all": 0.21345092356204987,
+      "active": 0.9394486546516418,
+      "quiet": 0.18552792072296143
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "direct",
+    "bounded_head_radians": 0.02,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_direct8",
+    "elapsed_seconds": 1.3768255840113852,
+    "strategy": "direct8",
+    "seed": 1,
+    "best_epoch": 66,
+    "selected_epoch": 66,
+    "epochs_executed": 87,
+    "optimizer_steps": 435,
+    "backward_passes": 435,
+    "optimizer_closure_evaluations": 435,
+    "fit_seconds": 1.2547694999957457,
+    "cache_seconds": 0.13858249998884276,
+    "selection_score": 0.9696237918626877,
+    "validation": {
+      "all": 0.2091756910085678,
+      "active": 0.9626813530921936,
+      "quiet": 0.1801947057247162
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "direct",
+    "bounded_head_radians": 0.02,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_direct8",
+    "elapsed_seconds": 0.6670332080102526,
+    "strategy": "direct8",
+    "seed": 2,
+    "best_epoch": 18,
+    "selected_epoch": 18,
+    "epochs_executed": 39,
+    "optimizer_steps": 195,
+    "backward_passes": 195,
+    "optimizer_closure_evaluations": 195,
+    "fit_seconds": 0.5401172089914326,
+    "cache_seconds": 0.11486224998952821,
+    "selection_score": 0.9898120676892361,
+    "validation": {
+      "all": 0.2190079391002655,
+      "active": 0.9882761836051941,
+      "quiet": 0.189420685172081
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "direct",
+    "bounded_head_radians": 0.02,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_force8_phase",
+    "elapsed_seconds": 0.9484987079922576,
+    "strategy": "force8_phase",
+    "seed": 0,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 21,
+    "optimizer_steps": 105,
+    "backward_passes": 105,
+    "optimizer_closure_evaluations": 105,
+    "fit_seconds": 0.8244534999830648,
+    "cache_seconds": 0.14009262499166653,
+    "selection_score": 0.9986169835556283,
+    "validation": {
+      "all": 0.21893073618412018,
+      "active": 0.9768578410148621,
+      "quiet": 0.18977971374988556
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.25,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_force8_phase",
+    "elapsed_seconds": 1.0539067909994628,
+    "strategy": "force8_phase",
+    "seed": 1,
+    "best_epoch": 5,
+    "selected_epoch": 5,
+    "epochs_executed": 26,
+    "optimizer_steps": 130,
+    "backward_passes": 130,
+    "optimizer_closure_evaluations": 130,
+    "fit_seconds": 0.9298705830005929,
+    "cache_seconds": 0.11971033300505951,
+    "selection_score": 0.999102890469819,
+    "validation": {
+      "all": 0.21432766318321228,
+      "active": 0.9975907206535339,
+      "quiet": 0.1842021644115448
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.25,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "adapter_force8_phase",
+    "elapsed_seconds": 0.9695345840009395,
+    "strategy": "force8_phase",
+    "seed": 2,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 21,
+    "optimizer_steps": 105,
+    "backward_passes": 105,
+    "optimizer_closure_evaluations": 105,
+    "fit_seconds": 0.8097461250144988,
+    "cache_seconds": 0.11918762500863522,
+    "selection_score": 0.9992905269021616,
+    "validation": {
+      "all": 0.2231547236442566,
+      "active": 0.9886365532875061,
+      "quiet": 0.19371309876441956
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.25,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_standalone6",
+    "elapsed_seconds": 2.090263749996666,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 51,
+    "selected_epoch": 51,
+    "epochs_executed": 72,
+    "optimizer_steps": 360,
+    "backward_passes": 360,
+    "optimizer_closure_evaluations": 360,
+    "fit_seconds": 2.077702042006422,
+    "selection_score": 0.8605689735118419,
+    "validation": {
+      "all": 0.1970577985048294,
+      "active": 0.9364696145057678,
+      "quiet": 0.16861890256404877
+    },
+    "starting_validation": {
+      "all": 0.23890526592731476,
+      "active": 1.0448155403137207,
+      "quiet": 0.2079087197780609
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 4290,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9985482692718506,
+      "max_transition_spectral_radius": 0.9985439777374268,
+      "max_generator_symmetric_eigenvalue": -0.008955785073339939,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_standalone6",
+    "elapsed_seconds": 2.018907624995336,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 47,
+    "selected_epoch": 47,
+    "epochs_executed": 68,
+    "optimizer_steps": 340,
+    "backward_passes": 340,
+    "optimizer_closure_evaluations": 340,
+    "fit_seconds": 2.00648083401029,
+    "selection_score": 0.8572502256984517,
+    "validation": {
+      "all": 0.19458669424057007,
+      "active": 0.9403416514396667,
+      "quiet": 0.16590380668640137
+    },
+    "starting_validation": {
+      "all": 0.23890526592731476,
+      "active": 1.0448155403137207,
+      "quiet": 0.2079087197780609
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 4290,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9985445737838745,
+      "max_transition_spectral_radius": 0.9985182881355286,
+      "max_generator_symmetric_eigenvalue": -0.008949306793510914,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_standalone6",
+    "elapsed_seconds": 2.042827750003198,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 51,
+    "selected_epoch": 51,
+    "epochs_executed": 72,
+    "optimizer_steps": 360,
+    "backward_passes": 360,
+    "optimizer_closure_evaluations": 360,
+    "fit_seconds": 2.0225649579952005,
+    "selection_score": 0.8543642443655559,
+    "validation": {
+      "all": 0.1941937506198883,
+      "active": 0.9360294938087463,
+      "quiet": 0.16566161811351776
+    },
+    "starting_validation": {
+      "all": 0.23890526592731476,
+      "active": 1.0448155403137207,
+      "quiet": 0.2079087197780609
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 4290,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9985672831535339,
+      "max_transition_spectral_radius": 0.9985486268997192,
+      "max_generator_symmetric_eigenvalue": -0.008811897598206997,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_standalone12",
+    "elapsed_seconds": 3.6655147089913953,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "best_epoch": 51,
+    "selected_epoch": 51,
+    "epochs_executed": 72,
+    "optimizer_steps": 360,
+    "backward_passes": 360,
+    "optimizer_closure_evaluations": 360,
+    "fit_seconds": 3.6487881249922793,
+    "selection_score": 0.8640283991277177,
+    "validation": {
+      "all": 0.2023497372865677,
+      "active": 0.920555055141449,
+      "quiet": 0.1747264564037323
+    },
+    "starting_validation": {
+      "all": 0.23890526592731476,
+      "active": 1.0448155403137207,
+      "quiet": 0.2079087197780609
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4620,
+    "total_parameter_count": 4620,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9987211227416992,
+      "max_transition_spectral_radius": 0.9987156391143799,
+      "max_generator_symmetric_eigenvalue": -0.00832388922572136,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_standalone12",
+    "elapsed_seconds": 2.8885518749884795,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "best_epoch": 53,
+    "selected_epoch": 53,
+    "epochs_executed": 74,
+    "optimizer_steps": 370,
+    "backward_passes": 370,
+    "optimizer_closure_evaluations": 370,
+    "fit_seconds": 2.8686249580059666,
+    "selection_score": 0.8541158131437432,
+    "validation": {
+      "all": 0.19806532561779022,
+      "active": 0.9185786247253418,
+      "quiet": 0.17035327851772308
+    },
+    "starting_validation": {
+      "all": 0.23890526592731476,
+      "active": 1.0448155403137207,
+      "quiet": 0.2079087197780609
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4620,
+    "total_parameter_count": 4620,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9987448453903198,
+      "max_transition_spectral_radius": 0.9987423419952393,
+      "max_generator_symmetric_eigenvalue": -0.008169462904334068,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_standalone12",
+    "elapsed_seconds": 2.8069242920028046,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "best_epoch": 45,
+    "selected_epoch": 45,
+    "epochs_executed": 66,
+    "optimizer_steps": 330,
+    "backward_passes": 330,
+    "optimizer_closure_evaluations": 330,
+    "fit_seconds": 2.7896734579990152,
+    "selection_score": 0.8570321685926614,
+    "validation": {
+      "all": 0.19789771735668182,
+      "active": 0.925405740737915,
+      "quiet": 0.16991664469242096
+    },
+    "starting_validation": {
+      "all": 0.23890526592731476,
+      "active": 1.0448155403137207,
+      "quiet": 0.2079087197780609
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4620,
+    "total_parameter_count": 4620,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9987139105796814,
+      "max_transition_spectral_radius": 0.9987119436264038,
+      "max_generator_symmetric_eigenvalue": -0.008372652344405651,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_residual6",
+    "elapsed_seconds": 4.952822207997087,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 32,
+    "selected_epoch": 32,
+    "epochs_executed": 53,
+    "optimizer_steps": 265,
+    "backward_passes": 265,
+    "optimizer_closure_evaluations": 265,
+    "fit_seconds": 4.8887701659987215,
+    "selection_score": 0.9667435543507725,
+    "validation": {
+      "all": 0.20904214680194855,
+      "active": 0.9586396217346191,
+      "quiet": 0.18021148443222046
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9984738826751709,
+      "max_transition_spectral_radius": 0.9984740018844604,
+      "max_generator_symmetric_eigenvalue": -0.009510292671620846,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_residual6",
+    "elapsed_seconds": 5.552663541981019,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 32,
+    "selected_epoch": 32,
+    "epochs_executed": 53,
+    "optimizer_steps": 265,
+    "backward_passes": 265,
+    "optimizer_closure_evaluations": 265,
+    "fit_seconds": 5.479855667013908,
+    "selection_score": 0.9801495026935524,
+    "validation": {
+      "all": 0.2096254527568817,
+      "active": 0.9816388487815857,
+      "quiet": 0.1799326241016388
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.998487114906311,
+      "max_transition_spectral_radius": 0.99847811460495,
+      "max_generator_symmetric_eigenvalue": -0.009428183548152447,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_residual6",
+    "elapsed_seconds": 3.4273503329895902,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 10,
+    "selected_epoch": 10,
+    "epochs_executed": 31,
+    "optimizer_steps": 155,
+    "backward_passes": 155,
+    "optimizer_closure_evaluations": 155,
+    "fit_seconds": 3.3606204579991754,
+    "selection_score": 0.9905008413459078,
+    "validation": {
+      "all": 0.21768301725387573,
+      "active": 0.995525598526001,
+      "quiet": 0.18776600062847137
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9983137249946594,
+      "max_transition_spectral_radius": 0.9983131885528564,
+      "max_generator_symmetric_eigenvalue": -0.010509131476283073,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_residual6_phase",
+    "elapsed_seconds": 3.54179191600997,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    },
+    "best_epoch": 12,
+    "selected_epoch": 12,
+    "epochs_executed": 33,
+    "optimizer_steps": 165,
+    "backward_passes": 165,
+    "optimizer_closure_evaluations": 165,
+    "fit_seconds": 3.4786005839996506,
+    "selection_score": 0.9791967870658251,
+    "validation": {
+      "all": 0.2087402045726776,
+      "active": 0.9843686819076538,
+      "quiet": 0.1789083182811737
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {
+      "increment": 0.25,
+      "terminal": 0.25
+    },
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9983439445495605,
+      "max_transition_spectral_radius": 0.9983436465263367,
+      "max_generator_symmetric_eigenvalue": -0.010318616405129433,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_residual6_phase",
+    "elapsed_seconds": 5.094483624998247,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    },
+    "best_epoch": 28,
+    "selected_epoch": 28,
+    "epochs_executed": 49,
+    "optimizer_steps": 245,
+    "backward_passes": 245,
+    "optimizer_closure_evaluations": 245,
+    "fit_seconds": 5.021114416013006,
+    "selection_score": 0.9867770127987652,
+    "validation": {
+      "all": 0.2120392918586731,
+      "active": 0.98362135887146,
+      "quiet": 0.18236306309700012
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {
+      "increment": 0.25,
+      "terminal": 0.25
+    },
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.998460054397583,
+      "max_transition_spectral_radius": 0.998455822467804,
+      "max_generator_symmetric_eigenvalue": -0.009596183896064758,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "short_transfer",
+    "model": "latent_residual6_phase",
+    "elapsed_seconds": 3.0814309580018744,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    },
+    "best_epoch": 9,
+    "selected_epoch": 9,
+    "epochs_executed": 30,
+    "optimizer_steps": 150,
+    "backward_passes": 150,
+    "optimizer_closure_evaluations": 150,
+    "fit_seconds": 3.0162225419771858,
+    "selection_score": 0.9900867517052309,
+    "validation": {
+      "all": 0.2178996354341507,
+      "active": 0.9937430620193481,
+      "quiet": 0.1880594938993454
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {
+      "increment": 0.25,
+      "terminal": 0.25
+    },
+    "stability_train_omega": {
+      "omega_values": [
+        3.2596230506896973,
+        3.675034761428833,
+        4.242943286895752
+      ],
+      "max_transition_singular_value": 0.9983109831809998,
+      "max_transition_spectral_radius": 0.9983106255531311,
+      "max_generator_symmetric_eigenvalue": -0.010526793077588081,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_force8",
+    "elapsed_seconds": 1.4932560410234146,
+    "strategy": "force8",
+    "seed": 0,
+    "best_epoch": 27,
+    "selected_epoch": 27,
+    "epochs_executed": 48,
+    "optimizer_steps": 240,
+    "backward_passes": 240,
+    "optimizer_closure_evaluations": 240,
+    "fit_seconds": 1.3782784169889055,
+    "cache_seconds": 0.12466337499790825,
+    "selection_score": 0.9963405123401445,
+    "validation": {
+      "all": 0.2099759578704834,
+      "active": 1.0510832071304321,
+      "quiet": 0.16436277329921722
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_force8",
+    "elapsed_seconds": 0.7535119579988532,
+    "strategy": "force8",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 20,
+    "optimizer_steps": 100,
+    "backward_passes": 100,
+    "optimizer_closure_evaluations": 100,
+    "fit_seconds": 0.6361643749987707,
+    "cache_seconds": 0.11864683299791068,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_force8",
+    "elapsed_seconds": 0.7493350419972558,
+    "strategy": "force8",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 20,
+    "optimizer_steps": 100,
+    "backward_passes": 100,
+    "optimizer_closure_evaluations": 100,
+    "fit_seconds": 0.6262439579877537,
+    "cache_seconds": 0.11260566697455943,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_force16",
+    "elapsed_seconds": 1.4388092079898342,
+    "strategy": "force16",
+    "seed": 0,
+    "best_epoch": 17,
+    "selected_epoch": 17,
+    "epochs_executed": 38,
+    "optimizer_steps": 190,
+    "backward_passes": 190,
+    "optimizer_closure_evaluations": 190,
+    "fit_seconds": 1.3210672500135843,
+    "cache_seconds": 0.1187670000072103,
+    "selection_score": 0.9970019305529829,
+    "validation": {
+      "all": 0.2104301005601883,
+      "active": 1.0502161979675293,
+      "quiet": 0.16488854587078094
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 641,
+    "total_parameter_count": 9462,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 16,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_force16",
+    "elapsed_seconds": 1.6612347079790197,
+    "strategy": "force16",
+    "seed": 1,
+    "best_epoch": 25,
+    "selected_epoch": 25,
+    "epochs_executed": 46,
+    "optimizer_steps": 230,
+    "backward_passes": 230,
+    "optimizer_closure_evaluations": 230,
+    "fit_seconds": 1.5221287919848692,
+    "cache_seconds": 0.1177402499888558,
+    "selection_score": 0.997443443218673,
+    "validation": {
+      "all": 0.205219566822052,
+      "active": 1.0266268253326416,
+      "quiet": 0.16067467629909515
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 641,
+    "total_parameter_count": 9462,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 16,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_force16",
+    "elapsed_seconds": 0.7646263749920763,
+    "strategy": "force16",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 20,
+    "optimizer_steps": 100,
+    "backward_passes": 100,
+    "optimizer_closure_evaluations": 100,
+    "fit_seconds": 0.6588226250023581,
+    "cache_seconds": 0.1306560829980299,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 641,
+    "total_parameter_count": 9462,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 16,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_direct8",
+    "elapsed_seconds": 0.3317444999993313,
+    "strategy": "direct8",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 20,
+    "optimizer_steps": 100,
+    "backward_passes": 100,
+    "optimizer_closure_evaluations": 100,
+    "fit_seconds": 0.2410166659974493,
+    "cache_seconds": 0.09335283300606534,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "direct",
+    "bounded_head_radians": 0.02,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_direct8",
+    "elapsed_seconds": 1.3844464590074494,
+    "strategy": "direct8",
+    "seed": 1,
+    "best_epoch": 98,
+    "selected_epoch": 98,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 1.2469892920053098,
+    "cache_seconds": 0.09030412501306273,
+    "selection_score": 0.9474813357033338,
+    "validation": {
+      "all": 0.20169517397880554,
+      "active": 0.9419186115264893,
+      "quiet": 0.16155289113521576
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "direct",
+    "bounded_head_radians": 0.02,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_direct8",
+    "elapsed_seconds": 1.5932850840035826,
+    "strategy": "direct8",
+    "seed": 2,
+    "best_epoch": 99,
+    "selected_epoch": 99,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 1.4644073340168688,
+    "cache_seconds": 0.1376057919987943,
+    "selection_score": 0.9297190017054962,
+    "validation": {
+      "all": 0.20250849425792694,
+      "active": 0.8898209929466248,
+      "quiet": 0.16523556411266327
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.0,
+    "hidden": 8,
+    "correction": "direct",
+    "bounded_head_radians": 0.02,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_force8_phase",
+    "elapsed_seconds": 1.5805748329730704,
+    "strategy": "force8_phase",
+    "seed": 0,
+    "best_epoch": 27,
+    "selected_epoch": 27,
+    "epochs_executed": 48,
+    "optimizer_steps": 240,
+    "backward_passes": 240,
+    "optimizer_closure_evaluations": 240,
+    "fit_seconds": 1.4593474580033217,
+    "cache_seconds": 0.11866587499389425,
+    "selection_score": 0.9984144633626479,
+    "validation": {
+      "all": 0.20996512472629547,
+      "active": 1.0554978847503662,
+      "quiet": 0.16411192715168
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.25,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_force8_phase",
+    "elapsed_seconds": 0.9486357090063393,
+    "strategy": "force8_phase",
+    "seed": 1,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 21,
+    "optimizer_steps": 105,
+    "backward_passes": 105,
+    "optimizer_closure_evaluations": 105,
+    "fit_seconds": 0.8261433749867138,
+    "cache_seconds": 0.1540733749861829,
+    "selection_score": 0.9996165126519967,
+    "validation": {
+      "all": 0.20708805322647095,
+      "active": 1.021859884262085,
+      "quiet": 0.1629030406475067
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.25,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "adapter_force8_phase",
+    "elapsed_seconds": 0.8491567919845693,
+    "strategy": "force8_phase",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 20,
+    "optimizer_steps": 100,
+    "backward_passes": 100,
+    "optimizer_closure_evaluations": 100,
+    "fit_seconds": 0.7244307919754647,
+    "cache_seconds": 0.12365620897617191,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "adapter.0.weight",
+      "adapter.0.bias",
+      "adapter.2.weight",
+      "adapter.2.bias"
+    ],
+    "trainable_parameter_count": 321,
+    "total_parameter_count": 9142,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "base_frozen_exact": true,
+    "base_regularizers_omitted_as_constant": true,
+    "adapter_head_regularizer": 0.01,
+    "phase_space_weight": 0.25,
+    "hidden": 8,
+    "correction": "force",
+    "bounded_head_radians": 0.05,
+    "damping_ratio": 0.05,
+    "symmetry_mix": 0.5,
+    "optimizer": "AdamW"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_standalone6",
+    "elapsed_seconds": 2.739228499995079,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 99,
+    "selected_epoch": 99,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 2.7257183750043623,
+    "selection_score": 0.7571355548144223,
+    "validation": {
+      "all": 0.20704849064350128,
+      "active": 0.9080910086631775,
+      "quiet": 0.16903099417686462
+    },
+    "starting_validation": {
+      "all": 0.3326965868473053,
+      "active": 1.0181113481521606,
+      "quiet": 0.29552656412124634
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 4290,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9986196160316467,
+      "max_transition_spectral_radius": 0.9985968470573425,
+      "max_generator_symmetric_eigenvalue": -0.00709612388163805,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_standalone6",
+    "elapsed_seconds": 2.859345500008203,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 97,
+    "selected_epoch": 97,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 2.8436995829979423,
+    "selection_score": 0.7570348791100086,
+    "validation": {
+      "all": 0.20713362097740173,
+      "active": 0.9076254963874817,
+      "quiet": 0.16914598643779755
+    },
+    "starting_validation": {
+      "all": 0.3326965868473053,
+      "active": 1.0181113481521606,
+      "quiet": 0.29552656412124634
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 4290,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9986619353294373,
+      "max_transition_spectral_radius": 0.9986487627029419,
+      "max_generator_symmetric_eigenvalue": -0.006874940358102322,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_standalone6",
+    "elapsed_seconds": 2.654043749993434,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 99,
+    "selected_epoch": 99,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 2.638566459005233,
+    "selection_score": 0.7709785182718043,
+    "validation": {
+      "all": 0.20855630934238434,
+      "active": 0.9316641688346863,
+      "quiet": 0.16934220492839813
+    },
+    "starting_validation": {
+      "all": 0.3326965868473053,
+      "active": 1.0181113481521606,
+      "quiet": 0.29552656412124634
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 4290,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9985940456390381,
+      "max_transition_spectral_radius": 0.9985637068748474,
+      "max_generator_symmetric_eigenvalue": -0.007226673886179924,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_standalone12",
+    "elapsed_seconds": 4.225826124980813,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "best_epoch": 96,
+    "selected_epoch": 96,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 4.210675042006187,
+    "selection_score": 0.7105485947719001,
+    "validation": {
+      "all": 0.20355160534381866,
+      "active": 0.8239306807518005,
+      "quiet": 0.16990847885608673
+    },
+    "starting_validation": {
+      "all": 0.3326965868473053,
+      "active": 1.0181113481521606,
+      "quiet": 0.29552656412124634
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4620,
+    "total_parameter_count": 4620,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.998594343662262,
+      "max_transition_spectral_radius": 0.9985642433166504,
+      "max_generator_symmetric_eigenvalue": -0.0072142574936151505,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_standalone12",
+    "elapsed_seconds": 5.105747875000816,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "best_epoch": 97,
+    "selected_epoch": 97,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 5.090664791991003,
+    "selection_score": 0.7048380657336264,
+    "validation": {
+      "all": 0.20277614891529083,
+      "active": 0.8146758079528809,
+      "quiet": 0.16959284245967865
+    },
+    "starting_validation": {
+      "all": 0.3326965868473053,
+      "active": 1.0181113481521606,
+      "quiet": 0.29552656412124634
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4620,
+    "total_parameter_count": 4620,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9986196756362915,
+      "max_transition_spectral_radius": 0.9986118078231812,
+      "max_generator_symmetric_eigenvalue": -0.007097425404936075,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_standalone12",
+    "elapsed_seconds": 4.702930250001373,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "best_epoch": 98,
+    "selected_epoch": 98,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 4.688161166006466,
+    "selection_score": 0.7110508123603277,
+    "validation": {
+      "all": 0.2002505362033844,
+      "active": 0.8350551724433899,
+      "quiet": 0.16582509875297546
+    },
+    "starting_validation": {
+      "all": 0.3326965868473053,
+      "active": 1.0181113481521606,
+      "quiet": 0.29552656412124634
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4620,
+    "total_parameter_count": 4620,
+    "frozen_parameter_count": 0,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9986020922660828,
+      "max_transition_spectral_radius": 0.9985979199409485,
+      "max_generator_symmetric_eigenvalue": -0.00719054089859128,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_residual6",
+    "elapsed_seconds": 10.590596624999307,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 97,
+    "selected_epoch": 97,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 10.503569625027012,
+    "selection_score": 0.9019230492759938,
+    "validation": {
+      "all": 0.20375433564186096,
+      "active": 0.8834855556488037,
+      "quiet": 0.16689257323741913
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9987689256668091,
+      "max_transition_spectral_radius": 0.9987500309944153,
+      "max_generator_symmetric_eigenvalue": -0.006431769113987684,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_residual6",
+    "elapsed_seconds": 9.856699374999152,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 99,
+    "selected_epoch": 99,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 9.791085459000897,
+    "selection_score": 0.8953972890572184,
+    "validation": {
+      "all": 0.19845134019851685,
+      "active": 0.8514928221702576,
+      "quiet": 0.16303695738315582
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9988098740577698,
+      "max_transition_spectral_radius": 0.9987921714782715,
+      "max_generator_symmetric_eigenvalue": -0.006219649221748114,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_residual6",
+    "elapsed_seconds": 9.727780165994773,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "best_epoch": 97,
+    "selected_epoch": 97,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 9.668129041994689,
+    "selection_score": 0.9121701272186239,
+    "validation": {
+      "all": 0.19736333191394806,
+      "active": 0.8791348934173584,
+      "quiet": 0.16039089858531952
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {},
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9987576007843018,
+      "max_transition_spectral_radius": 0.9987513422966003,
+      "max_generator_symmetric_eigenvalue": -0.00648445775732398,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_residual6_phase",
+    "elapsed_seconds": 10.346986165997805,
+    "strategy": "stable_latent",
+    "seed": 0,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    },
+    "best_epoch": 97,
+    "selected_epoch": 97,
+    "epochs_executed": 100,
+    "optimizer_steps": 500,
+    "backward_passes": 500,
+    "optimizer_closure_evaluations": 500,
+    "fit_seconds": 10.276628166000592,
+    "selection_score": 0.9132386034973822,
+    "validation": {
+      "all": 0.20578749477863312,
+      "active": 0.8971706032752991,
+      "quiet": 0.16829384863376617
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {
+      "increment": 0.25,
+      "terminal": 0.25
+    },
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9987900853157043,
+      "max_transition_spectral_radius": 0.9987772107124329,
+      "max_generator_symmetric_eigenvalue": -0.006323148962110281,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_residual6_phase",
+    "elapsed_seconds": 3.395877125003608,
+    "strategy": "stable_latent",
+    "seed": 1,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    },
+    "best_epoch": 12,
+    "selected_epoch": 12,
+    "epochs_executed": 33,
+    "optimizer_steps": 165,
+    "backward_passes": 165,
+    "optimizer_closure_evaluations": 165,
+    "fit_seconds": 3.3285513329901733,
+    "selection_score": 0.991932281079456,
+    "validation": {
+      "all": 0.20488736033439636,
+      "active": 1.0170042514801025,
+      "quiet": 0.1608463078737259
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {
+      "increment": 0.25,
+      "terminal": 0.25
+    },
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9979736804962158,
+      "max_transition_spectral_radius": 0.9979726076126099,
+      "max_generator_symmetric_eigenvalue": -0.010561800561845303,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  },
+  {
+    "fold": "long_transfer",
+    "model": "latent_residual6_phase",
+    "elapsed_seconds": 4.169446542015066,
+    "strategy": "stable_latent",
+    "seed": 2,
+    "choice": {
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    },
+    "best_epoch": 15,
+    "selected_epoch": 15,
+    "epochs_executed": 36,
+    "optimizer_steps": 180,
+    "backward_passes": 180,
+    "optimizer_closure_evaluations": 180,
+    "fit_seconds": 4.099183207988972,
+    "selection_score": 0.9896856957090137,
+    "validation": {
+      "all": 0.20914776623249054,
+      "active": 0.976879894733429,
+      "quiet": 0.16751369833946228
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "skew_raw",
+      "damping_raw",
+      "input_raw",
+      "readout_delta",
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias"
+    ],
+    "trainable_parameter_count": 4290,
+    "total_parameter_count": 13111,
+    "frozen_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "optimizer": "AdamW",
+    "regularizers": {},
+    "phase_space_weights": {
+      "increment": 0.25,
+      "terminal": 0.25
+    },
+    "stability_train_omega": {
+      "omega_values": [
+        3.903594493865967,
+        4.672144889831543,
+        6.095981121063232
+      ],
+      "max_transition_singular_value": 0.9979833960533142,
+      "max_transition_spectral_radius": 0.997980535030365,
+      "max_generator_symmetric_eigenvalue": -0.010365091264247894,
+      "latent_homogeneous_only": true,
+      "plant_or_controller_certificate": false
+    }
+  }
+]
