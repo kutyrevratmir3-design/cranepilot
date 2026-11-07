@@ -1,0 +1,15 @@
+{
+  "experiment": "regime_fusion_20261107",
+  "parent": "results/drive_conditioned_20261107/frozen_development",
+  "bundle": "artifacts/reliability_bundle_20261107",
+  "qualification": "configs/active_qualification_20261107.json",
+  "variants": ["legacy", "active", "hard_context", "ramp_context", "guarded_inverse", "guarded_horizon_inverse", "guarded_winner", "guarded_simplex_0.01", "guarded_simplex_0.1", "guarded_simplex_1", "guarded_simplex_10"],
+  "experts": ["old_arx", "active_arx", "free_modal", "forced_modal"],
+  "quiet_constraint": "Every quiet validation forecast exactly equals the legacy forecast; no target-dependent exclusions.",
+  "selection": "One global minimum equal-five-case quiet/drive-balanced validation MAE among candidates satisfying exact quiet preservation. Legacy wins exact ties by declared order.",
+  "development_gate": {"maximum_legacy_ratio": 0.97, "maximum_active_arx_ratio": 0.9, "minimum_legacy_case_wins": 4},
+  "stress_conditions": ["angle_jitter_half_quantum", "angle_jitter_one_quantum", "angle_lag_50ms"],
+  "stress_seed": 20261107,
+  "scope": "Retrospective history-only forecast fusion, same available4s history and horizons. No new model fitting; online simplex weights use only six already observed prefix prediction errors. Original33records already opened. Future measured motion/length and future commands are absent. No new independent or hardware/control claim.",
+  "independent_confirmation": false
+}
