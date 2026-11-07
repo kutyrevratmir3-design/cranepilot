@@ -1,0 +1,315 @@
+{
+  "experiment": "external_benchmark_20261107",
+  "repository": "https://github.com/ikhemakhem/BehavioralTrajGenCrane",
+  "commit": "1aa26b5c358e885325f75cc0e89ef613ff4b26f3",
+  "commit_date": "2026-04-12T20:59:25Z",
+  "cache": "data/raw/behavioral_crane_1aa26b5",
+  "files": [
+    {
+      "path": "data/camera_coordinates.mat",
+      "bytes": 325,
+      "git_blob_sha1": "fd8c7d23a197db39726b2d28219cc366a498befe"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_1.mat",
+      "bytes": 23303,
+      "git_blob_sha1": "b6ee54d6a1bd715da1c5744d23614497de2bcf32"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_10.mat",
+      "bytes": 23196,
+      "git_blob_sha1": "755827ceef0dc0675049783acb869d618738594c"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_11.mat",
+      "bytes": 23363,
+      "git_blob_sha1": "d28f8f942506794329f7d1289037b1bfb97ddcad"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_12.mat",
+      "bytes": 23364,
+      "git_blob_sha1": "3cb33d147eed74f6864988fc0b04322d95b36df0"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_13.mat",
+      "bytes": 23298,
+      "git_blob_sha1": "f968847b1786f8d760b04247cefb10a3c076373a"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_14.mat",
+      "bytes": 23225,
+      "git_blob_sha1": "8c7656dbcf2812e2566600c65a414f1658927703"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_15.mat",
+      "bytes": 23208,
+      "git_blob_sha1": "ad6aba9d96c3158e3dd747c867239ee84c6d69d0"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_16.mat",
+      "bytes": 23318,
+      "git_blob_sha1": "307dd57db17948124d60e97e647357dffd32fc87"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_17.mat",
+      "bytes": 23268,
+      "git_blob_sha1": "496c7a26cefc876468f9dd66868020ac3ff87928"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_18.mat",
+      "bytes": 23273,
+      "git_blob_sha1": "2235880b88ecee6baf3849f2d998f92bc2498950"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_19.mat",
+      "bytes": 23352,
+      "git_blob_sha1": "61e11679e74638abd89d51543907c555ab2e852b"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_2.mat",
+      "bytes": 23329,
+      "git_blob_sha1": "d61fbcd3500b62ac1c262a8a34d5c90c64c84b4e"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_20.mat",
+      "bytes": 23322,
+      "git_blob_sha1": "473026e57383b26bc0f12a97406878d7376bf10a"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_3.mat",
+      "bytes": 23230,
+      "git_blob_sha1": "d37614bbd46c64d5ca65c2443e87c7f62a7b6424"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_4.mat",
+      "bytes": 23290,
+      "git_blob_sha1": "2d627fc907cc576a4dbdb453593ec7275f025af6"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_5.mat",
+      "bytes": 23278,
+      "git_blob_sha1": "9f74140fd9eca28289c8fca97dcbe31bcf4a5894"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_6.mat",
+      "bytes": 23309,
+      "git_blob_sha1": "2d46f1be20d06dec03b70de8df4e926659c4b3b8"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_7.mat",
+      "bytes": 23306,
+      "git_blob_sha1": "647bc6400f913ff712d4e50e72cb6021c907cefd"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_8.mat",
+      "bytes": 23297,
+      "git_blob_sha1": "9739f49af0f37a1349f0446f7b58ff7af744f312"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_9.mat",
+      "bytes": 23349,
+      "git_blob_sha1": "035bffc84ed36708a9254e9bce151db1819fd9db"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_1.mat",
+      "bytes": 48654,
+      "git_blob_sha1": "58c7cf2e8f6a0b16cb52c754398371a8bd1bccab"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_10.mat",
+      "bytes": 47404,
+      "git_blob_sha1": "a26f20441d3beb5e26e5f0db19ba4bcc5f17350c"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_11.mat",
+      "bytes": 48340,
+      "git_blob_sha1": "a02870d7d67f99324e6e0b62e41940a3d76fb8c6"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_12.mat",
+      "bytes": 48095,
+      "git_blob_sha1": "d52013d577d4b193e2975535e50e290d080a27a4"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_13.mat",
+      "bytes": 48669,
+      "git_blob_sha1": "bc9016bc4980903a765aa6fbb078d4b241998ddd"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_14.mat",
+      "bytes": 46823,
+      "git_blob_sha1": "71c46de245838e4ff1157152f4c168302685c746"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_15.mat",
+      "bytes": 47174,
+      "git_blob_sha1": "a1696795662feab2d69fbea0a3a4ae3935bbda94"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_16.mat",
+      "bytes": 48425,
+      "git_blob_sha1": "8417e1f3548d4b1e7bf68a810046305a45ef5b93"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_17.mat",
+      "bytes": 47212,
+      "git_blob_sha1": "f3fa6c8bcfda8b1073a2925d2630f08f47c8cb94"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_18.mat",
+      "bytes": 47253,
+      "git_blob_sha1": "999ac85a0db29e5773c38938cb8cf0a5ecd820d7"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_19.mat",
+      "bytes": 48034,
+      "git_blob_sha1": "638495c06ace35066512afa998ca06fe977a77e9"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_2.mat",
+      "bytes": 47911,
+      "git_blob_sha1": "928808cd6fe829b4d840c405b59224974b8ff245"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_20.mat",
+      "bytes": 48515,
+      "git_blob_sha1": "8ddf5ce140a7387cd6ba56d52804729cfc2db461"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_3.mat",
+      "bytes": 47239,
+      "git_blob_sha1": "03fa01c04e332e9c9f0a67d0ba6678a347834554"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_4.mat",
+      "bytes": 47710,
+      "git_blob_sha1": "1f4b37574f2cdcda1f8087793929ceb31812ae09"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_5.mat",
+      "bytes": 48025,
+      "git_blob_sha1": "d8fd4cace093d065d62b5e2e67cf11c5490d45d0"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_6.mat",
+      "bytes": 48418,
+      "git_blob_sha1": "aea93884797d172e74769cca1241e8d06373e022"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_7.mat",
+      "bytes": 48775,
+      "git_blob_sha1": "aae4d49cb1734cdc67de8a4aea2713808d5b72e4"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_8.mat",
+      "bytes": 47558,
+      "git_blob_sha1": "94e51e74d18820b84cb329082cf3103f976e0084"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_9.mat",
+      "bytes": 47516,
+      "git_blob_sha1": "02f75df1b0a0f27172eeb311dccc1246ed38958c"
+    }
+  ],
+  "train_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "validation_ids": [
+    13,
+    14,
+    15,
+    16
+  ],
+  "test_ids": [
+    17,
+    18,
+    19,
+    20
+  ],
+  "schema_record_seen_before_preregistration": [
+    1
+  ],
+  "dt_s": 0.05,
+  "history_samples": 9,
+  "steps": 30,
+  "horizon_index": [
+    1,
+    3,
+    6,
+    9,
+    14,
+    19,
+    29
+  ],
+  "train_stride": 2,
+  "evaluation_stride": 2,
+  "rope_length_m": 1,
+  "boom_elevation_rad": 0.8107963267948965,
+  "boom_tip_height_m": 1.55,
+  "pixel_scale": 1.7,
+  "threads": 2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "arx_ridge": [
+    0.0001,
+    0.01,
+    1
+  ],
+  "pem": {
+    "omega_ratio_bounds": [
+      0.7,
+      1.3
+    ],
+    "damping_bounds": [
+      0,
+      1
+    ],
+    "gain_bounds": [
+      0.3,
+      2
+    ],
+    "start_omega_ratios": [
+      0.85,
+      1,
+      1.15
+    ],
+    "max_nfev": 100
+  },
+  "lstm": {
+    "hidden": 32,
+    "epochs": 100,
+    "patience": 15,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001
+  },
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 7112027
+  },
+  "methods": [
+    "zero",
+    "persistence",
+    "geometric",
+    "fitted_oscillator",
+    "arx_residual",
+    "lstm_residual",
+    "cranepilot_retained",
+    "cranepilot_candidate"
+  ],
+  "scope": "New external real-camera tangential-sway prediction on fixed 1m rotary crane, sample-index task with nominal 20Hz clock. Causal raw pixels, no whole-record centering or zero-phase filtering. Frozen Inteco angular weights plus three locally fitted baselines; these have different training access and are reported separately. Not a replication of authors' full method, not active hardware control."
+}
