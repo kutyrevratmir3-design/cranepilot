@@ -1,0 +1,14 @@
+{
+  "experiment":"active_qualification_20261107",
+  "bundle":"artifacts/reliability_bundle_20261107",
+  "task_source":"artifacts/modal_bundle_20261107/task.json",
+  "data":"data/processed",
+  "origin_start_s":4,
+  "origin_stride_raw":25,
+  "methods":["strong_arx","frozen_modal","frozen_blend","fixed_frequency","persistence"],
+  "regime_names":["low_past_motion","drive_active","length_active","drive_and_length_active"],
+  "primary_role":"old_evaluation",
+  "status":"Retrospective qualification of frozen kernels outside their declared eligibility; all33records already opened. No fitting or selection, no API gate change, no independent confirmation.",
+  "scope":"Forecast origins >=4s, same4s available history and seven horizons. Group regimes only by past401samples of position/length. Future reference is used only to reconstruct the old numerical applicability indicator, never for prediction or primary regime labels. Future measured motion/length never input.",
+  "failure_policy":"Retain every considered origin and every prediction; nonfinite predictions fail the run instead of being dropped. First4s cannot be evaluated without recorded prehistory."
+}
