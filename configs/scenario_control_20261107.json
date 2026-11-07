@@ -1,0 +1,100 @@
+{
+  "experiment": "scenario_control_20261107",
+  "bundle": "artifacts/research_bundle_20261107",
+  "fold": "primary",
+  "methods": [
+    "nominal",
+    "frequency",
+    "joint",
+    "spread",
+    "hybrid",
+    "joint_hybrid"
+  ],
+  "duration_s": 6,
+  "raw_dt_s": 0.01,
+  "control_dt_s": 0.05,
+  "threads": 1,
+  "solver": {
+    "qp_iterations": 200,
+    "trust_region": 0.2,
+    "command_bound": 0.8,
+    "nominal_tau_s": 0.1
+  },
+  "initial_x_m": 0.1,
+  "target_x_m": 0.3,
+  "evaluation_lengths_m": [
+    0.29,
+    0.64,
+    1.11
+  ],
+  "evaluation_omega_ratios": [
+    0.86,
+    1.14
+  ],
+  "evaluation_tau_s": [
+    0.075,
+    0.205
+  ],
+  "evaluation_gains": [
+    0.85,
+    1.15
+  ],
+  "development_lengths_m": [
+    0.36,
+    0.56,
+    0.76
+  ],
+  "noise_seed": 1007112026,
+  "angle_quantum_rad": 0.0015339807878856412,
+  "position_quantum_m": 0.0001,
+  "angular_pulse_rad_s2": 0.17,
+  "angular_pulse_interval_s": [
+    2.65,
+    3.0
+  ],
+  "plant_substeps": 2,
+  "scope": "New offline acceleration-command ablation: finite scenario mean/spread cost and fixed neural residual with physical Jacobian. No neural training; native xr zero and learned actuator bypassed. No probability/stability/hardware guarantees.",
+  "variants": {
+    "nominal": {},
+    "frequency": {
+      "frequency": true
+    },
+    "joint": {
+      "frequency": true,
+      "joint": true
+    },
+    "spread": {
+      "frequency": true,
+      "joint": true,
+      "spread": 0.25
+    },
+    "hybrid": {
+      "hybrid": true
+    },
+    "joint_hybrid": {
+      "frequency": true,
+      "joint": true,
+      "hybrid": true
+    }
+  },
+  "frequency_grid": [
+    0.85,
+    1.0,
+    1.15
+  ],
+  "actuator_grid": [
+    [
+      0.07,
+      0.8
+    ],
+    [
+      0.1,
+      1.0
+    ],
+    [
+      0.18,
+      1.2
+    ]
+  ],
+  "residual_bound_rad": 0.015
+}
