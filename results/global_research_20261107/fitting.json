@@ -1,0 +1,488 @@
+[
+  {
+    "fold": "primary",
+    "model": "weak_r0",
+    "seconds": 0.004080957995029166,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "weak_r1",
+    "seconds": 0.0022020830074325204,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "weak_r2",
+    "seconds": 0.0020707919902633876,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "lpv_linear_actor_r0",
+    "path_fit_seconds": 0.019520375004503876,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "lpv_linear_actor_r1",
+    "path_fit_seconds": 0.019520375004503876,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "lpv_linear_actor_r2",
+    "path_fit_seconds": 0.019520375004503876,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "lpv_linear_command_r0",
+    "path_fit_seconds": 0.017299583996646106,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "lpv_linear_command_r1",
+    "path_fit_seconds": 0.017299583996646106,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "lpv_linear_command_r2",
+    "path_fit_seconds": 0.017299583996646106,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "nvar_quadratic_actor_r0",
+    "path_fit_seconds": 0.6201897910214029,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "nvar_quadratic_actor_r1",
+    "path_fit_seconds": 0.6201897910214029,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "nvar_quadratic_actor_r2",
+    "path_fit_seconds": 0.6201897910214029,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "nvar_quadratic_command_r0",
+    "path_fit_seconds": 0.5735558749875054,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "nvar_quadratic_command_r1",
+    "path_fit_seconds": 0.5735558749875054,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "primary",
+    "model": "nvar_quadratic_command_r2",
+    "path_fit_seconds": 0.5735558749875054,
+    "train_windows": 1167,
+    "train_scenarios": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "weak_r0",
+    "seconds": 0.005488291004439816,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "weak_r1",
+    "seconds": 0.014758833014639094,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "weak_r2",
+    "seconds": 0.003944166994187981,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "lpv_linear_actor_r0",
+    "path_fit_seconds": 0.0227319170080591,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "lpv_linear_actor_r1",
+    "path_fit_seconds": 0.0227319170080591,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "lpv_linear_actor_r2",
+    "path_fit_seconds": 0.0227319170080591,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "lpv_linear_command_r0",
+    "path_fit_seconds": 0.020526167005300522,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "lpv_linear_command_r1",
+    "path_fit_seconds": 0.020526167005300522,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "lpv_linear_command_r2",
+    "path_fit_seconds": 0.020526167005300522,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "nvar_quadratic_actor_r0",
+    "path_fit_seconds": 0.7062440000008792,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "nvar_quadratic_actor_r1",
+    "path_fit_seconds": 0.7062440000008792,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "nvar_quadratic_actor_r2",
+    "path_fit_seconds": 0.7062440000008792,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "nvar_quadratic_command_r0",
+    "path_fit_seconds": 0.48923620898858644,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "nvar_quadratic_command_r1",
+    "path_fit_seconds": 0.48923620898858644,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "short_transfer",
+    "model": "nvar_quadratic_command_r2",
+    "path_fit_seconds": 0.48923620898858644,
+    "train_windows": 1167,
+    "train_scenarios": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "weak_r0",
+    "seconds": 0.0032673340174369514,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "weak_r1",
+    "seconds": 0.0027001659909728914,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "weak_r2",
+    "seconds": 0.0025582500093150884,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "lpv_linear_actor_r0",
+    "path_fit_seconds": 0.020133207988692448,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "lpv_linear_actor_r1",
+    "path_fit_seconds": 0.020133207988692448,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "lpv_linear_actor_r2",
+    "path_fit_seconds": 0.020133207988692448,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "lpv_linear_command_r0",
+    "path_fit_seconds": 0.020708416996058077,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "lpv_linear_command_r1",
+    "path_fit_seconds": 0.020708416996058077,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "lpv_linear_command_r2",
+    "path_fit_seconds": 0.020708416996058077,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "nvar_quadratic_actor_r0",
+    "path_fit_seconds": 0.6118441250000615,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "nvar_quadratic_actor_r1",
+    "path_fit_seconds": 0.6118441250000615,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "nvar_quadratic_actor_r2",
+    "path_fit_seconds": 0.6118441250000615,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "nvar_quadratic_command_r0",
+    "path_fit_seconds": 0.5703063750115689,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "nvar_quadratic_command_r1",
+    "path_fit_seconds": 0.5703063750115689,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "fold": "long_transfer",
+    "model": "nvar_quadratic_command_r2",
+    "path_fit_seconds": 0.5703063750115689,
+    "train_windows": 1167,
+    "train_scenarios": [
+      1,
+      3,
+      5
+    ]
+  }
+]

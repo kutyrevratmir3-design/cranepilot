@@ -1,0 +1,9 @@
+scope,fold,regime,reference,ratio,maximum_ratio,passed
+evaluation_extrapolation,primary,all,soft_symmetry,1.016859615609402,1.0,False
+evaluation_extrapolation,primary,active,soft_symmetry,1.022438428575981,1.0,False
+evaluation_extrapolation,short_transfer,all,incumbent,1.0,1.01,True
+evaluation_extrapolation,short_transfer,active,incumbent,1.0,1.01,True
+evaluation_extrapolation,long_transfer,all,incumbent,1.0,1.01,True
+evaluation_extrapolation,long_transfer,active,incumbent,1.0,1.01,True
+load_stress,primary,all,incumbent,1.0,1.01,True
+load_stress,primary,active,incumbent,1.0,1.01,True

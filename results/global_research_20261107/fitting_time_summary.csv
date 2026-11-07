@@ -1,0 +1,10 @@
+fold,family,seconds,fitted_models,timed_units
+long_transfer,lpv_linear,0.040841624984750524,6,2
+long_transfer,nvar_quadratic,1.1821505000116304,6,2
+long_transfer,weak,0.008525750017724931,3,3
+primary,lpv_linear,0.03681995900114998,6,2
+primary,nvar_quadratic,1.1937456660089083,6,2
+primary,weak,0.008353832992725074,3,3
+short_transfer,lpv_linear,0.04325808401335962,6,2
+short_transfer,nvar_quadratic,1.1954802089894656,6,2
+short_transfer,weak,0.02419129101326689,3,3

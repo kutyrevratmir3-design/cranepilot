@@ -1,0 +1,3657 @@
+{
+  "passed": true,
+  "run": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/artifacts/runs/global_research_20261107",
+  "started_utc": "2026-11-07T01:24:48.555316+00:00",
+  "tolerance_deg": 5e-05,
+  "relative_tolerance": 0.0,
+  "fitting_performed": false,
+  "verifier_sha256": "5d204c6864a325cf921dcb37383ac669045fc60fe781554113704d94ec0bd1e4",
+  "provenance_sha256": "67fe308fa1b72f845e727856fe1f5f458030009ab7ab2486db5f408aba0b1a3c",
+  "integrity": {
+    "guarded_hashes": {
+      "passed": true,
+      "expected_files": 99,
+      "checked_files": 99,
+      "missing": [],
+      "changed": [],
+      "read_errors": []
+    },
+    "checkpoint_hashes": {
+      "passed": true,
+      "expected_files": 48,
+      "checked_files": 48,
+      "missing": [],
+      "changed": [],
+      "read_errors": []
+    },
+    "result_hashes": {
+      "passed": true,
+      "expected_files": 84,
+      "checked_files": 84,
+      "missing": [],
+      "changed": [],
+      "read_errors": []
+    },
+    "selection": {
+      "passed": true,
+      "expected_files": 1,
+      "checked_files": 1,
+      "missing": [],
+      "changed": [],
+      "read_errors": []
+    }
+  },
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "roots": {
+      "main": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot",
+      "aphynity": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/aphynity_pilot/cranepilot"
+    },
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "folds": [
+    "primary",
+    "short_transfer",
+    "long_transfer"
+  ],
+  "fitted_models_per_fold": 15,
+  "methods_per_fold": 19,
+  "fitted_models_total": 45,
+  "history_only_inputs": true,
+  "history_samples": 41,
+  "prediction_steps": 30,
+  "target_comparison": "exact_array_equal",
+  "records": [
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "file": "primary/predictions_s1.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "file": "primary/predictions_s2.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "file": "primary/predictions_s4.npz",
+      "packets": 972,
+      "methods": 19,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "file": "primary/predictions_s7.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "file": "primary/predictions_s8.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "file": "primary/predictions_s10.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "file": "primary/predictions_s11.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "file": "primary/predictions_s12.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "file": "short_transfer/predictions_s1.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "file": "short_transfer/predictions_s2.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "file": "short_transfer/predictions_s3.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "file": "short_transfer/predictions_s5.npz",
+      "packets": 972,
+      "methods": 19,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "file": "short_transfer/predictions_s7.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "file": "long_transfer/predictions_s2.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "file": "long_transfer/predictions_s4.npz",
+      "packets": 972,
+      "methods": 19,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "file": "long_transfer/predictions_s6.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "file": "long_transfer/predictions_s7.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "file": "long_transfer/predictions_s8.npz",
+      "packets": 972,
+      "methods": 21,
+      "targets_exact": true,
+      "all_shapes_finite": true,
+      "max_error_deg": 0.0,
+      "acceleration_max_abs_difference_m_s2": 0.0
+    }
+  ],
+  "checks": [
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 4,
+      "group": "validation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "selected",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 10,
+      "group": "load_stress",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "selected",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 11,
+      "group": "load_stress",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "selected",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "primary",
+      "scenario": 12,
+      "group": "load_stress",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 1,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 3,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 5,
+      "group": "validation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "short_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 2,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 4,
+      "group": "validation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 6,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 7,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "combined",
+      "resolved_model": "combined",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "common",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "incumbent",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r0",
+      "resolved_model": "lpv_linear_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r1",
+      "resolved_model": "lpv_linear_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_actor_r2",
+      "resolved_model": "lpv_linear_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r0",
+      "resolved_model": "lpv_linear_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r1",
+      "resolved_model": "lpv_linear_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "lpv_linear_command_r2",
+      "resolved_model": "lpv_linear_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r0",
+      "resolved_model": "nvar_quadratic_actor_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r1",
+      "resolved_model": "nvar_quadratic_actor_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_actor_r2",
+      "resolved_model": "nvar_quadratic_actor_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r0",
+      "resolved_model": "nvar_quadratic_command_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r1",
+      "resolved_model": "nvar_quadratic_command_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "nvar_quadratic_command_r2",
+      "resolved_model": "nvar_quadratic_command_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "physical",
+      "resolved_model": "physical",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "selected",
+      "resolved_model": "incumbent",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "soft_symmetry",
+      "resolved_model": "soft_symmetry",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "weak_r0",
+      "resolved_model": "weak_r0",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "weak_r1",
+      "resolved_model": "weak_r1",
+      "packets": 972,
+      "max_error_deg": 0.0
+    },
+    {
+      "fold": "long_transfer",
+      "scenario": 8,
+      "group": "evaluation",
+      "model": "weak_r2",
+      "resolved_model": "weak_r2",
+      "packets": 972,
+      "max_error_deg": 0.0
+    }
+  ],
+  "real_record_files": 18,
+  "packet_count": 17496,
+  "prediction_comparisons": 372,
+  "max_error_deg": 0.0,
+  "finished_utc": "2026-11-07T01:25:00.559214+00:00"
+}

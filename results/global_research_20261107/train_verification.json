@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 4,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 4,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 4,
+      "model": "combined",
+      "max_deg": 4.770832022195275e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 4,
+      "model": "physical",
+      "max_deg": 1.90833280887811e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "primary",
+      "scenario": 4,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "model": "combined",
+      "max_deg": 3.975693351829396e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "model": "physical",
+      "max_deg": 1.5902773407317584e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "model": "combined",
+      "max_deg": 4.770832022195275e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "model": "physical",
+      "max_deg": 2.2263882770244617e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "max_deg": 0.0
+    }
+  ],
+  "tolerance_deg": 5e-05
+}

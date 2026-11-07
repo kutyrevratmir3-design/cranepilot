@@ -1,0 +1,19 @@
+FIT primary lpv_linear actor 0.02 seconds
+FIT primary lpv_linear command 0.02 seconds
+FIT primary nvar_quadratic actor 0.62 seconds
+FIT primary nvar_quadratic command 0.57 seconds
+REAL train primary 4
+SELECT primary combined {'all': 0.18955941919123756, 'active': 0.8629505408854461, 'quiet': 0.1530414624833087}
+FIT short_transfer lpv_linear actor 0.02 seconds
+FIT short_transfer lpv_linear command 0.02 seconds
+FIT short_transfer nvar_quadratic actor 0.71 seconds
+FIT short_transfer nvar_quadratic command 0.49 seconds
+REAL train short_transfer 5
+SELECT short_transfer lpv_linear_actor_r1 {'all': 0.18762217229513656, 'active': 0.870784564584743, 'quiet': 0.16134669566861326}
+FIT long_transfer lpv_linear actor 0.02 seconds
+FIT long_transfer lpv_linear command 0.02 seconds
+FIT long_transfer nvar_quadratic actor 0.61 seconds
+FIT long_transfer nvar_quadratic command 0.57 seconds
+REAL train long_transfer 4
+SELECT long_transfer incumbent {'all': 0.20616429981002884, 'active': 1.0409560922384782, 'quiet': 0.1608935952314795}
+COMPLETE train
