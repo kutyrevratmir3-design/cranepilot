@@ -1,0 +1,37 @@
+{
+  "scope": "Post-hoc descriptive diagnosis, no new training or strategy selection. Only fixed nominal observer recomputed.",
+  "overlapping_windows_independent": false,
+  "summary_weighting": "Equal whole-record weights within fold/scope/model; all available records retained.",
+  "source_run": "artifacts/runs/forced_adaptive_20261107",
+  "source_provenance_sha256": "fb119909c4bbaa1b1f62d01135ba44526bb51c6591e266f27d92d1f17fc6827b",
+  "diagnostic_source_sha256": "5dff28df6d43f60dd187ae28540ed2aa62f3c8aba1b7809cd321487d29e2e14f",
+  "guarded_dependencies_verified": 83,
+  "retained_results_verified": 46,
+  "record_model_rows": 72,
+  "origin_spacing_s": [
+    0.1
+  ],
+  "scenario2_example_posthoc": [
+    {
+      "fold": "primary",
+      "group": "evaluation",
+      "scope": "evaluation_extrapolation",
+      "scenario": 2,
+      "length_m": 0.1964809,
+      "extrapolation": true,
+      "model": "adaptive",
+      "subset": "changed_frequency",
+      "packets": 69,
+      "future_mae_deg": 7.542925454720901,
+      "nominal_future_mae_deg": 0.6923371320694279,
+      "delta_mae_deg": 6.850588322651474
+    }
+  ],
+  "interpretation_limits": [
+    "A lower historical fit error does not establish predictive validity.",
+    "Switching over overlapping histories is a sensitivity diagnostic, not proof of a particular noise source.",
+    "Observer residual includes model mismatch and measurement effects; it is not a direct sensor-noise estimate.",
+    "Singleton frequency grids are excluded from frequency-boundary rate interpretation.",
+    "No inferential confidence intervals or causal attribution are claimed."
+  ]
+}

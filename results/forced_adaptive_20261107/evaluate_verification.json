@@ -1,0 +1,456 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "combined",
+      "max_deg": 1.7075472956837425e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "physical",
+      "max_deg": 9.100511695629704e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "combined",
+      "max_deg": 2.2767297275783233e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "physical",
+      "max_deg": 1.0195513729280446e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "combined",
+      "max_deg": 8.537736462515939e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "physical",
+      "max_deg": 4.400225863178603e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "combined",
+      "max_deg": 1.7075472956837425e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "physical",
+      "max_deg": 4.994209772264093e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "combined",
+      "max_deg": 1.1383648621988842e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "physical",
+      "max_deg": 6.598033270314711e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "combined",
+      "max_deg": 5.691745059523146e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "physical",
+      "max_deg": 5.86787155098051e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "combined",
+      "max_deg": 5.691824310994421e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "physical",
+      "max_deg": 6.804340387054112e-07
+    },
+    {
+      "kind": "integrator",
+      "fold": "primary",
+      "max_deg": 1.0731292875438377e-09
+    },
+    {
+      "kind": "future_gain_invariance",
+      "fold": "primary",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "combined",
+      "max_deg": 1.7075472925031877e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "physical",
+      "max_deg": 4.572768879336069e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "combined",
+      "max_deg": 2.2767297243977684e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "physical",
+      "max_deg": 4.565317746175484e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "combined",
+      "max_deg": 2.2767297243977684e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "physical",
+      "max_deg": 4.911655104118744e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "combined",
+      "max_deg": 8.537736446613165e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "physical",
+      "max_deg": 3.380125439047284e-07
+    },
+    {
+      "kind": "integrator",
+      "fold": "short_transfer",
+      "max_deg": 1.093418840995564e-09
+    },
+    {
+      "kind": "future_gain_invariance",
+      "fold": "short_transfer",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "combined",
+      "max_deg": 2.2767297243977684e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "physical",
+      "max_deg": 5.814879248044055e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "combined",
+      "max_deg": 1.138364855837775e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "physical",
+      "max_deg": 8.610608106864078e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "combined",
+      "max_deg": 8.537736462515939e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "physical",
+      "max_deg": 4.18663998343958e-07
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "combined",
+      "max_deg": 1.7075472956837425e-06
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "physical",
+      "max_deg": 3.111744955304621e-07
+    },
+    {
+      "kind": "integrator",
+      "fold": "long_transfer",
+      "max_deg": 1.0897200546856893e-09
+    },
+    {
+      "kind": "future_gain_invariance",
+      "fold": "long_transfer",
+      "max_deg": 0.0
+    }
+  ],
+  "tolerance_deg": 5e-05
+}
