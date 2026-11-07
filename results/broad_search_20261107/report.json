@@ -1,0 +1,538 @@
+{
+  "date": "2026-11-07",
+  "training_runs": 81,
+  "initial_checkpoints_selected": 35,
+  "epochs_executed": 1945,
+  "sum_fit_seconds": 282.8074881270877,
+  "selection": {
+    "broad_search": {
+      "folds": {
+        "primary": {
+          "model": "soft_symmetry",
+          "eligible": [
+            "incumbent",
+            "soft_symmetry",
+            "regime_balanced",
+            "physics_aug",
+            "balanced_physics"
+          ],
+          "validation": {
+            "incumbent": {
+              "all": 0.19202711171407882,
+              "active": 0.8717016521719415,
+              "quiet": 0.15516840561549625
+            },
+            "continued_control": {
+              "all": 0.19243289804499608,
+              "active": 0.87037169956067,
+              "quiet": 0.15566832095629363
+            },
+            "residual_bound": {
+              "all": 0.19648890066660754,
+              "active": 0.8642903773838696,
+              "quiet": 0.16027407004202715
+            },
+            "odd_symmetry": {
+              "all": 0.19448507699185544,
+              "active": 0.8745336937568959,
+              "quiet": 0.15760608475947796
+            },
+            "soft_symmetry": {
+              "all": 0.19114356524314544,
+              "active": 0.8631451684886422,
+              "quiet": 0.154700962030266
+            },
+            "regime_balanced": {
+              "all": 0.19202711171407882,
+              "active": 0.8717016521719415,
+              "quiet": 0.15516840561549625
+            },
+            "physics_aug": {
+              "all": 0.19202711171407882,
+              "active": 0.8717016521719415,
+              "quiet": 0.15516840561549625
+            },
+            "bound_physics": {
+              "all": 0.19741293139565774,
+              "active": 0.8618590432466241,
+              "quiet": 0.16138006198942315
+            },
+            "odd_physics": {
+              "all": 0.19473109537422895,
+              "active": 0.8749374386835465,
+              "quiet": 0.1578435496416195
+            },
+            "balanced_physics": {
+              "all": 0.19202711171407882,
+              "active": 0.8717016521719415,
+              "quiet": 0.15516840561549625
+            }
+          }
+        },
+        "short_transfer": {
+          "model": "odd_physics",
+          "eligible": [
+            "incumbent",
+            "continued_control",
+            "residual_bound",
+            "odd_symmetry",
+            "regime_balanced",
+            "physics_aug",
+            "bound_physics",
+            "odd_physics",
+            "balanced_physics"
+          ],
+          "validation": {
+            "incumbent": {
+              "all": 0.21748208968614752,
+              "active": 0.9848231448922276,
+              "quiet": 0.1879689721782213
+            },
+            "continued_control": {
+              "all": 0.21748208968614752,
+              "active": 0.9848231448922276,
+              "quiet": 0.1879689721782213
+            },
+            "residual_bound": {
+              "all": 0.2109411907147523,
+              "active": 0.9693116102583964,
+              "quiet": 0.1817730976553814
+            },
+            "odd_symmetry": {
+              "all": 0.20866481766283387,
+              "active": 0.9849728499158118,
+              "quiet": 0.17880681642233473
+            },
+            "soft_symmetry": {
+              "all": 0.2177110773407505,
+              "active": 0.9880258350246649,
+              "quiet": 0.1880835866605999
+            },
+            "regime_balanced": {
+              "all": 0.2167628641432712,
+              "active": 0.9832771942155769,
+              "quiet": 0.1872815437558748
+            },
+            "physics_aug": {
+              "all": 0.21748208968614752,
+              "active": 0.9848231448922276,
+              "quiet": 0.1879689721782213
+            },
+            "bound_physics": {
+              "all": 0.2137302259665354,
+              "active": 0.976539697402119,
+              "quiet": 0.18439140014208988
+            },
+            "odd_physics": {
+              "all": 0.20831348044384004,
+              "active": 0.985038894810758,
+              "quiet": 0.1784394260451124
+            },
+            "balanced_physics": {
+              "all": 0.21748208968614752,
+              "active": 0.9848231448922276,
+              "quiet": 0.1879689721782213
+            }
+          }
+        },
+        "long_transfer": {
+          "model": "continued_control",
+          "eligible": [
+            "incumbent",
+            "continued_control",
+            "regime_balanced",
+            "physics_aug",
+            "balanced_physics"
+          ],
+          "validation": {
+            "incumbent": {
+              "all": 0.20616427920722724,
+              "active": 1.0409559555775225,
+              "quiet": 0.16089358092250408
+            },
+            "continued_control": {
+              "all": 0.20581290925215154,
+              "active": 1.0391730807141184,
+              "quiet": 0.16061984138545052
+            },
+            "residual_bound": {
+              "all": 0.21141149982126292,
+              "active": 1.0338587086073114,
+              "quiet": 0.16681024121030583
+            },
+            "odd_symmetry": {
+              "all": 0.24406473309657206,
+              "active": 1.0050095411860336,
+              "quiet": 0.2027987456730655
+            },
+            "soft_symmetry": {
+              "all": 0.2075056635073961,
+              "active": 1.0116880356115863,
+              "quiet": 0.16389490580109517
+            },
+            "regime_balanced": {
+              "all": 0.20616427920722724,
+              "active": 1.0409559555775225,
+              "quiet": 0.16089358092250408
+            },
+            "physics_aug": {
+              "all": 0.20616427920722724,
+              "active": 1.0409559555775225,
+              "quiet": 0.16089358092250408
+            },
+            "bound_physics": {
+              "all": 0.21556033696415225,
+              "active": 1.0313381833665598,
+              "quiet": 0.17132075744124514
+            },
+            "odd_physics": {
+              "all": 0.2443839568348251,
+              "active": 1.0041780272000909,
+              "quiet": 0.20318037384321636
+            },
+            "balanced_physics": {
+              "all": 0.20616427920722724,
+              "active": 1.0409559555775225,
+              "quiet": 0.16089358092250408
+            }
+          }
+        }
+      },
+      "global_strategy": {
+        "model": "regime_balanced",
+        "eligible": [
+          "incumbent",
+          "regime_balanced",
+          "physics_aug",
+          "balanced_physics"
+        ],
+        "mean_validation_all_ratio": 0.9988976478570194
+      },
+      "uses_test": false,
+      "uses_confirmation": false
+    },
+    "reliability_blend": {
+      "folds": {
+        "primary": {
+          "model": "gate_0.5",
+          "eligible": [
+            "incumbent",
+            "gate_0.05",
+            "gate_0.1",
+            "gate_0.25",
+            "gate_0.5"
+          ],
+          "validation": {
+            "incumbent": {
+              "all": 0.19202711171407882,
+              "active": 0.8717016521719415,
+              "quiet": 0.15516840561549625
+            },
+            "physical": {
+              "all": 0.25128414949113775,
+              "active": 0.9839101985468204,
+              "quiet": 0.21155388652716364
+            },
+            "gate_0.05": {
+              "all": 0.1920271054210334,
+              "active": 0.8717016168674245,
+              "quiet": 0.15516840089574105
+            },
+            "gate_0.1": {
+              "all": 0.19202710566678222,
+              "active": 0.8717016168674245,
+              "quiet": 0.15516840115481675
+            },
+            "gate_0.25": {
+              "all": 0.191968404451271,
+              "active": 0.8717012755280119,
+              "quiet": 0.15510653508702257
+            },
+            "gate_0.5": {
+              "all": 0.1914119693041749,
+              "active": 0.8716682682127865,
+              "quiet": 0.1545217144826667
+            },
+            "gate_1": {
+              "all": 0.19831006615975402,
+              "active": 0.8715641375480468,
+              "quiet": 0.16179954168099628
+            },
+            "gate_2": {
+              "all": 0.2183282897961386,
+              "active": 0.8918977548025447,
+              "quiet": 0.18180066154199512
+            }
+          },
+          "development_synthetic_mae": {
+            "incumbent": 0.25070289256423883,
+            "physical": 0.10451371985968266,
+            "gate_0.05": 0.18601570946168197,
+            "gate_0.1": 0.17767174941951663,
+            "gate_0.25": 0.14816265102578116,
+            "gate_0.5": 0.10950088790569402,
+            "gate_1": 0.10103882455786961,
+            "gate_2": 0.10281207203604563
+          }
+        },
+        "short_transfer": {
+          "model": "gate_1",
+          "eligible": [
+            "incumbent",
+            "gate_0.05",
+            "gate_0.1",
+            "gate_0.25",
+            "gate_0.5",
+            "gate_1"
+          ],
+          "validation": {
+            "incumbent": {
+              "all": 0.21748208968614752,
+              "active": 0.9848231448922276,
+              "quiet": 0.1879689721782213
+            },
+            "physical": {
+              "all": 0.23156678987895804,
+              "active": 1.0825258523359813,
+              "quiet": 0.1988375951690725
+            },
+            "gate_0.05": {
+              "all": 0.2174820910002182,
+              "active": 0.984823150335952,
+              "quiet": 0.18796897333345922
+            },
+            "gate_0.1": {
+              "all": 0.21748055291233737,
+              "active": 0.984823150335952,
+              "quiet": 0.18796737608835223
+            },
+            "gate_0.25": {
+              "all": 0.21492303591883724,
+              "active": 0.9848257777412374,
+              "quiet": 0.18531139200259109
+            },
+            "gate_0.5": {
+              "all": 0.2070207178321101,
+              "active": 0.9860492169994791,
+              "quiet": 0.17705808324874978
+            },
+            "gate_1": {
+              "all": 0.20869450381421484,
+              "active": 0.9931744506993813,
+              "quiet": 0.1785221981647854
+            },
+            "gate_2": {
+              "all": 0.21950362389480588,
+              "active": 1.0035963756619584,
+              "quiet": 0.18934621036530003
+            }
+          },
+          "development_synthetic_mae": {
+            "incumbent": 0.2160014960751063,
+            "physical": 0.10476335475670363,
+            "gate_0.05": 0.16412545616877292,
+            "gate_0.1": 0.1572522007011712,
+            "gate_0.25": 0.13323957352777804,
+            "gate_0.5": 0.10363491460985601,
+            "gate_1": 0.0998099168240989,
+            "gate_2": 0.10281800448596053
+          }
+        },
+        "long_transfer": {
+          "model": "gate_0.5",
+          "eligible": [
+            "incumbent",
+            "gate_0.05",
+            "gate_0.1",
+            "gate_0.25",
+            "gate_0.5"
+          ],
+          "validation": {
+            "incumbent": {
+              "all": 0.20616427920722724,
+              "active": 1.0409559555775225,
+              "quiet": 0.16089358092250408
+            },
+            "physical": {
+              "all": 0.28998911823629436,
+              "active": 1.117121259272516,
+              "quiet": 0.24513379605428678
+            },
+            "gate_0.05": {
+              "all": 0.20616427796721773,
+              "active": 1.0409559563850819,
+              "quiet": 0.160893579571455
+            },
+            "gate_0.1": {
+              "all": 0.20616427711962834,
+              "active": 1.0409559563850819,
+              "quiet": 0.16089357867790094
+            },
+            "gate_0.25": {
+              "all": 0.20612378800062126,
+              "active": 1.040953228242567,
+              "quiet": 0.160851041783596
+            },
+            "gate_0.5": {
+              "all": 0.20732983105698227,
+              "active": 1.0388602514354417,
+              "quiet": 0.16223599047246715
+            },
+            "gate_1": {
+              "all": 0.21653476635024016,
+              "active": 1.0162605773917346,
+              "quiet": 0.1731656876603544
+            },
+            "gate_2": {
+              "all": 0.23919239756086552,
+              "active": 0.9492272303613876,
+              "quiet": 0.20068725478426455
+            }
+          },
+          "development_synthetic_mae": {
+            "incumbent": 0.5816929631191178,
+            "physical": 0.1050408944341929,
+            "gate_0.05": 0.4167316772529822,
+            "gate_0.1": 0.38511269676008125,
+            "gate_0.25": 0.28896562561819655,
+            "gate_0.5": 0.16064796338912446,
+            "gate_1": 0.1102942242327018,
+            "gate_2": 0.10402944496226613
+          }
+        }
+      },
+      "global_strategy": {
+        "model": "gate_0.5",
+        "eligible": [
+          "incumbent",
+          "gate_0.05",
+          "gate_0.1",
+          "gate_0.25",
+          "gate_0.5"
+        ],
+        "normalized_development_error": 0.39757886656600155
+      },
+      "uses_real_test": false,
+      "uses_reserved_grid": false
+    }
+  },
+  "source_provenance_sha256": {
+    "broad_search": "baa7bf0c01df8d01505a32af63f04ce868013d3144fb7011a3dbfebcb65914ef",
+    "reliability_blend": "93c3509c902dc6da7ca69cf53bf19736d38ed47564667cfbb8ebcd54ba79a1bd"
+  },
+  "descriptive_intervals": [
+    {
+      "family": "broad_search",
+      "fold": "primary",
+      "policy": "selected_candidate",
+      "mean": -0.008298228156976166,
+      "low": -0.014703456116363617,
+      "high": -0.001893000197588715,
+      "n": 4
+    },
+    {
+      "family": "broad_search",
+      "fold": "primary",
+      "policy": "global_strategy",
+      "mean": 2.197380109120184e-08,
+      "low": -1.1916568411207695e-07,
+      "high": 1.4260315094744014e-07,
+      "n": 4
+    },
+    {
+      "family": "broad_search",
+      "fold": "short_transfer",
+      "policy": "selected_candidate",
+      "mean": 0.012359930462320756,
+      "low": -0.026077073565075548,
+      "high": 0.03596363162074129,
+      "n": 3
+    },
+    {
+      "family": "broad_search",
+      "fold": "short_transfer",
+      "policy": "global_strategy",
+      "mean": 0.007389323288175746,
+      "low": -0.0028774721057628905,
+      "high": 0.015378206719169452,
+      "n": 3
+    },
+    {
+      "family": "broad_search",
+      "fold": "long_transfer",
+      "policy": "selected_candidate",
+      "mean": 0.002662721282496542,
+      "low": 0.001621869992878,
+      "high": 0.004002451230738835,
+      "n": 3
+    },
+    {
+      "family": "broad_search",
+      "fold": "long_transfer",
+      "policy": "global_strategy",
+      "mean": -9.289173016902019e-08,
+      "low": -2.0000050970914174e-07,
+      "high": 2.7047372952448967e-09,
+      "n": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "primary",
+      "policy": "selected_candidate",
+      "mean": 0.00015652462881386026,
+      "low": -0.0005865495780375055,
+      "high": 0.0008288079701126022,
+      "n": 4
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "primary",
+      "policy": "global_strategy",
+      "mean": 0.00015652462881386026,
+      "low": -0.0005865495780375055,
+      "high": 0.0008288079701126022,
+      "n": 4
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "short_transfer",
+      "policy": "selected_candidate",
+      "mean": -0.006406203694543773,
+      "low": -0.01522280649859814,
+      "high": -2.9893849497530933e-05,
+      "n": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "short_transfer",
+      "policy": "global_strategy",
+      "mean": -0.0007370112533050532,
+      "low": -0.002096753821799524,
+      "high": -3.753846228121693e-05,
+      "n": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "long_transfer",
+      "policy": "selected_candidate",
+      "mean": 0.002360210287499257,
+      "low": -0.0004085414764858353,
+      "high": 0.004343582473197216,
+      "n": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "long_transfer",
+      "policy": "global_strategy",
+      "mean": 0.002360210287499257,
+      "low": -0.0004085414764858353,
+      "high": 0.004343582473197216,
+      "n": 3
+    }
+  ],
+  "new_hardware_evidence": false,
+  "source_data_reused": true,
+  "model_default_changed": false,
+  "confirmation_cases_per_family": 432,
+  "confirmation_targets_identical": true
+}

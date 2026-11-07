@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "tolerance_deg": 5e-05,
+  "max_error_deg": 4.695754796557594e-06,
+  "checks": [
+    {
+      "family": "broad_search",
+      "fold": "primary",
+      "policy": "selected",
+      "resolved": "soft_symmetry",
+      "max_error_deg": 2.13443399843527e-06,
+      "packets": 3
+    },
+    {
+      "family": "broad_search",
+      "fold": "primary",
+      "policy": "global",
+      "resolved": "regime_balanced",
+      "max_error_deg": 4.695754796557594e-06,
+      "packets": 3
+    },
+    {
+      "family": "broad_search",
+      "fold": "short_transfer",
+      "policy": "selected",
+      "resolved": "odd_physics",
+      "max_error_deg": 2.2678361233374744e-07,
+      "packets": 3
+    },
+    {
+      "family": "broad_search",
+      "fold": "short_transfer",
+      "policy": "global",
+      "resolved": "regime_balanced",
+      "max_error_deg": 4.26886799687054e-07,
+      "packets": 3
+    },
+    {
+      "family": "broad_search",
+      "fold": "long_transfer",
+      "policy": "selected",
+      "resolved": "continued_control",
+      "max_error_deg": 8.53773599374108e-07,
+      "packets": 3
+    },
+    {
+      "family": "broad_search",
+      "fold": "long_transfer",
+      "policy": "global",
+      "resolved": "regime_balanced",
+      "max_error_deg": 1.280660399061162e-06,
+      "packets": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "primary",
+      "policy": "selected",
+      "resolved": "gate_0.5",
+      "max_error_deg": 3.984277016105818e-06,
+      "packets": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "primary",
+      "policy": "global",
+      "resolved": "gate_0.5",
+      "max_error_deg": 3.984277016105818e-06,
+      "packets": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "short_transfer",
+      "policy": "selected",
+      "resolved": "gate_1",
+      "max_error_deg": 2.8459121435701305e-07,
+      "packets": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "short_transfer",
+      "policy": "global",
+      "resolved": "gate_0.5",
+      "max_error_deg": 2.8459121435701305e-07,
+      "packets": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "long_transfer",
+      "policy": "selected",
+      "resolved": "gate_0.5",
+      "max_error_deg": 1.1369042608433478e-06,
+      "packets": 3
+    },
+    {
+      "family": "reliability_blend",
+      "fold": "long_transfer",
+      "policy": "global",
+      "resolved": "gate_0.5",
+      "max_error_deg": 1.1369042608433478e-06,
+      "packets": 3
+    }
+  ]
+}
