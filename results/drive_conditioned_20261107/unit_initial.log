@@ -1,0 +1,10 @@
+test_constant_support_level_is_invariant (tests.test_drive_conditioned.DriveConditionedTests.test_constant_support_level_is_invariant) ... ok
+test_foh_transition_matches_independent_matrix_exponential (tests.test_drive_conditioned.DriveConditionedTests.test_foh_transition_matches_independent_matrix_exponential) ... ok
+test_record_regime_weights_balance_present_groups (tests.test_drive_conditioned.DriveConditionedTests.test_record_regime_weights_balance_present_groups) ... ok
+test_targets_rejected_and_given_path_starts_at_current_state (tests.test_drive_conditioned.DriveConditionedTests.test_targets_rejected_and_given_path_starts_at_current_state) ... ok
+test_zero_equilibrium_and_hypothetical_support_sensitivity (tests.test_drive_conditioned.DriveConditionedTests.test_zero_equilibrium_and_hypothetical_support_sensitivity) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.092s
+
+OK
