@@ -1,0 +1,99 @@
+                   scope           fold    model regime  mae_deg  scenarios  incumbent_mae_deg  change_vs_incumbent_percent  soft_symmetry_mae_deg  change_vs_soft_symmetry_percent  previous_local_mae_deg  change_vs_previous_local_percent  continued_mae_deg  change_vs_continued_percent
+evaluation_extrapolation  long_transfer   common active 0.931853          3           0.931853                     0.000000               0.892822                         4.371636                0.931853                          0.000000           0.892822                     4.371636
+evaluation_extrapolation  long_transfer   common    all 0.512641          3           0.512641                     0.000000               0.500935                         2.336650                0.512641                          0.000000           0.500935                     2.336650
+evaluation_extrapolation  long_transfer   common  quiet 0.506077          3           0.506077                     0.000000               0.494582                         2.324217                0.506077                          0.000000           0.494582                     2.324217
+evaluation_extrapolation  long_transfer selected active 0.931853          3           0.931853                     0.000000               0.892822                         4.371636                0.931853                          0.000000           0.892822                     4.371636
+evaluation_extrapolation  long_transfer selected    all 0.512641          3           0.512641                     0.000000               0.500935                         2.336650                0.512641                          0.000000           0.500935                     2.336650
+evaluation_extrapolation  long_transfer selected  quiet 0.506077          3           0.506077                     0.000000               0.494582                         2.324217                0.506077                          0.000000           0.494582                     2.324217
+evaluation_extrapolation        primary   common active 1.045718          4           1.068543                    -2.136066               1.045093                         0.059847                1.045718                          0.000000           1.045074                     0.061606
+evaluation_extrapolation        primary   common    all 0.492268          4           0.500498                    -1.644331               0.492199                         0.013908                0.492268                          0.000000           0.491737                     0.107869
+evaluation_extrapolation        primary   common  quiet 0.465767          4           0.473318                    -1.595232               0.465714                         0.011445                0.465767                          0.000000           0.465238                     0.113704
+evaluation_extrapolation        primary selected active 1.036838          4           1.068543                    -2.967166               1.045093                        -0.789902                1.045718                         -0.849240           1.045074                    -0.788157
+evaluation_extrapolation        primary selected    all 0.490598          4           0.500498                    -1.978018               0.492199                        -0.325405                0.492268                         -0.339266           0.491737                    -0.231763
+evaluation_extrapolation        primary selected  quiet 0.464426          4           0.473318                    -1.878671               0.465714                        -0.276622                0.465767                         -0.288034           0.465238                    -0.174658
+evaluation_extrapolation short_transfer   common active 1.643968          3           1.811238                    -9.235082               1.805803                        -8.961917                1.643968                          0.000000           1.788738                    -8.093407
+evaluation_extrapolation short_transfer   common    all 0.383598          3           0.432130                   -11.231059               0.436635                       -12.146813                0.383598                          0.000000           0.439642                   -12.747694
+evaluation_extrapolation short_transfer   common  quiet 0.330570          3           0.375439                   -11.951104               0.380266                       -13.068897                0.330570                          0.000000           0.384027                   -13.920224
+evaluation_extrapolation short_transfer selected active 1.643968          3           1.811238                    -9.235082               1.805803                        -8.961917                1.643968                          0.000000           1.788738                    -8.093407
+evaluation_extrapolation short_transfer selected    all 0.383598          3           0.432130                   -11.231059               0.436635                       -12.146813                0.383598                          0.000000           0.439642                   -12.747694
+evaluation_extrapolation short_transfer selected  quiet 0.330570          3           0.375439                   -11.951104               0.380266                       -13.068897                0.330570                          0.000000           0.384027                   -13.920224
+ACCEPTANCE {
+  "common_model": "previous_local",
+  "passed": false,
+  "cells": [
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "primary",
+      "regime": "all",
+      "reference": "soft_symmetry",
+      "ratio": 1.0001390811083188,
+      "maximum_ratio": 1,
+      "passed": false
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "primary",
+      "regime": "active",
+      "reference": "soft_symmetry",
+      "ratio": 1.0005984671581718,
+      "maximum_ratio": 1,
+      "passed": false
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "short_transfer",
+      "regime": "all",
+      "reference": "previous_local",
+      "ratio": 1.0,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "short_transfer",
+      "regime": "active",
+      "reference": "previous_local",
+      "ratio": 1.0,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "long_transfer",
+      "regime": "all",
+      "reference": "incumbent",
+      "ratio": 1.0,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "long_transfer",
+      "regime": "active",
+      "reference": "incumbent",
+      "ratio": 1.0,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "load_stress",
+      "fold": "primary",
+      "regime": "all",
+      "reference": "incumbent",
+      "ratio": 1.0096025008156553,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "load_stress",
+      "fold": "primary",
+      "regime": "active",
+      "reference": "incumbent",
+      "ratio": 0.9898361311783819,
+      "maximum_ratio": 1.01,
+      "passed": true
+    }
+  ],
+  "operational_thresholds_not_statistical_bounds": true
+}
+FITS 90 EPOCH_MINUS_ONE 59

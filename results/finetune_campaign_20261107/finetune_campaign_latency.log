@@ -1,0 +1,101 @@
+LATENCY primary scenario=4 methods=['soft_symmetry', 'continued', 'phase_space'] packets=3 repeats=10
+LATENCY short_transfer scenario=5 methods=['soft_symmetry', 'continued'] packets=3 repeats=10
+LATENCY long_transfer scenario=4 methods=['soft_symmetry', 'continued'] packets=3 repeats=10
+{
+  "passed": true,
+  "timed_forecasts": 210,
+  "max_prediction_error_deg": 2.561320798122324e-06,
+  "summary": [
+    {
+      "fold": "long_transfer",
+      "model": "continued",
+      "measurements": 30,
+      "packets": 3,
+      "median_ms": 18.513562,
+      "p95_ms": 23.6124958,
+      "max_ms": 26.765542,
+      "min_ms": 14.807125,
+      "mean_ms": 18.399795733333335,
+      "fraction_over_50ms": 0.0,
+      "p95_over_reference_interval": 0.47224991600000005
+    },
+    {
+      "fold": "long_transfer",
+      "model": "soft_symmetry",
+      "measurements": 30,
+      "packets": 3,
+      "median_ms": 18.5139165,
+      "p95_ms": 22.335660599999997,
+      "max_ms": 23.877209,
+      "min_ms": 14.975125,
+      "mean_ms": 18.194777833333333,
+      "fraction_over_50ms": 0.0,
+      "p95_over_reference_interval": 0.4467132119999999
+    },
+    {
+      "fold": "primary",
+      "model": "continued",
+      "measurements": 30,
+      "packets": 3,
+      "median_ms": 17.473125000000003,
+      "p95_ms": 25.72060609999999,
+      "max_ms": 27.318875,
+      "min_ms": 13.408875,
+      "mean_ms": 18.052091700000002,
+      "fraction_over_50ms": 0.0,
+      "p95_over_reference_interval": 0.5144121219999999
+    },
+    {
+      "fold": "primary",
+      "model": "phase_space",
+      "measurements": 30,
+      "packets": 3,
+      "median_ms": 17.334771,
+      "p95_ms": 25.0478474,
+      "max_ms": 37.285292,
+      "min_ms": 13.394917,
+      "mean_ms": 18.134141633333332,
+      "fraction_over_50ms": 0.0,
+      "p95_over_reference_interval": 0.500956948
+    },
+    {
+      "fold": "primary",
+      "model": "soft_symmetry",
+      "measurements": 30,
+      "packets": 3,
+      "median_ms": 18.158271,
+      "p95_ms": 27.647849999999988,
+      "max_ms": 30.710208,
+      "min_ms": 13.410625,
+      "mean_ms": 18.457894466666666,
+      "fraction_over_50ms": 0.0,
+      "p95_over_reference_interval": 0.5529569999999997
+    },
+    {
+      "fold": "short_transfer",
+      "model": "continued",
+      "measurements": 30,
+      "packets": 3,
+      "median_ms": 16.744687499999998,
+      "p95_ms": 23.083112349999997,
+      "max_ms": 26.820167,
+      "min_ms": 13.567917,
+      "mean_ms": 17.5964181,
+      "fraction_over_50ms": 0.0,
+      "p95_over_reference_interval": 0.4616622469999999
+    },
+    {
+      "fold": "short_transfer",
+      "model": "soft_symmetry",
+      "measurements": 30,
+      "packets": 3,
+      "median_ms": 16.7366035,
+      "p95_ms": 23.2431189,
+      "max_ms": 23.475625,
+      "min_ms": 13.575333,
+      "mean_ms": 17.38854716666667,
+      "fraction_over_50ms": 0.0,
+      "p95_over_reference_interval": 0.46486237799999997
+    }
+  ]
+}

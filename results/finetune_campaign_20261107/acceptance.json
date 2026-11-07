@@ -1,0 +1,79 @@
+{
+  "common_model": "previous_local",
+  "passed": false,
+  "cells": [
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "primary",
+      "regime": "all",
+      "reference": "soft_symmetry",
+      "ratio": 1.0001390811083188,
+      "maximum_ratio": 1,
+      "passed": false
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "primary",
+      "regime": "active",
+      "reference": "soft_symmetry",
+      "ratio": 1.0005984671581718,
+      "maximum_ratio": 1,
+      "passed": false
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "short_transfer",
+      "regime": "all",
+      "reference": "previous_local",
+      "ratio": 1.0,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "short_transfer",
+      "regime": "active",
+      "reference": "previous_local",
+      "ratio": 1.0,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "long_transfer",
+      "regime": "all",
+      "reference": "incumbent",
+      "ratio": 1.0,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "evaluation_extrapolation",
+      "fold": "long_transfer",
+      "regime": "active",
+      "reference": "incumbent",
+      "ratio": 1.0,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "load_stress",
+      "fold": "primary",
+      "regime": "all",
+      "reference": "incumbent",
+      "ratio": 1.0096025008156553,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "scope": "load_stress",
+      "fold": "primary",
+      "regime": "active",
+      "reference": "incumbent",
+      "ratio": 0.9898361311783819,
+      "maximum_ratio": 1.01,
+      "passed": true
+    }
+  ],
+  "operational_thresholds_not_statistical_bounds": true
+}

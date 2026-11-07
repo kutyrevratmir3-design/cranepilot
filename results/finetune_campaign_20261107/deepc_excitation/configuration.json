@@ -1,0 +1,23 @@
+{
+  "input": "xr in original recorded reference scale; servo scaling unverified",
+  "input_preprocessing": "raw sequence sampled with[::5]; no demeaning, shifting, filtering or concatenation",
+  "sample_interval_s": 0.05,
+  "depths": [
+    39,
+    45,
+    51
+  ],
+  "provisional_depth_interpretation": "9 history +30 future +assumedorders0/6/12; only a probe",
+  "machine_tolerance": "max(matrix.shape)*float64_eps*sigma_max",
+  "relative_thresholds": [
+    0.001,
+    0.01
+  ],
+  "known_system_order": null,
+  "known_system_lag": null,
+  "operational_multirate_contract_implemented": false,
+  "command_to_output_index_alignment_implemented": false,
+  "model_training": false,
+  "affects_current_campaign_selection": false,
+  "exploratory_after_campaign_preregistration": true
+}

@@ -1,0 +1,74 @@
+CranePilot: завершённый этап fine-tuning и обзора управления, 7 ноября 2026.
+
+Основной проект: Crane Project/cranepilot. APHYNITY не изменена. Публикаций нет.
+Протокол/код до обучения: локальный коммит 3b6a72f.
+Run: artifacts/runs/finetune_campaign_20261107, status complete.
+Отчёт: docs/FINETUNE_CAMPAIGN_2026_11_07_RU.md.
+Все результаты, проверки и архив: results/finetune_campaign_20261107.
+
+90 fits = 10 стратегий x 3 fold x 3 исходных seed. Начало у всех — одинаковые
+soft_symmetry веса из broad_search, symmetry_mix=.5, актор неизменный.
+Стратегии: continued, observer_only, innovation_only, l2sp, function_anchor,
+sam, ema, phase_space, group_dro, lbfgs_polish. Точные настройки в config/design.
+1750 эпох, 8350 optimizer steps, 9978 backward, 483.8s собственно fit.
+В 59/90 случаях выбран исходный checkpoint epoch -1. Не считать их улучшениями.
+
+Замороженный выбор по validation:
+primary phase_space; short_transfer previous_local (старый LPV actor ridge.01);
+long_transfer incumbent. Common previous_local — это прежнее правило выбора
+отдельной модели каждого fold, а не единая новая архитектура.
+
+Primary, extrapolation, all: soft .492199 -> phase .490598deg (-.3254%).
+Primary active: 1.045093 ->1.036838deg (-.7899%).
+Primary load all: soft .553962 -> phase .548625deg (около-.96%).
+Primary load active:1.304335 ->1.276844deg (около-2.11%).
+Short выбранный LPV сохраняет .383598deg; новые fine-tune варианты его не обошли.
+Common gate не выполнен: прежний combined на primary на .014% all/.060% active
+хуже soft. Другие6 checks проходят. Не утверждать универсальную победу.
+Innovation_only на evaluation primary .488774deg/active1.023271 оказался ещё
+лучше, но НЕ был выбран по validation. Это разведочное направление для нового
+протокола, не повод переписать selection.json или назвать его выбранным лидером.
+
+Данные исторически использованы. Все числа ретроспективны, нет нового hardware
+теста/SOTA. Симуляция3456 cases — прежняя angular-family, actor bypass.
+Проверки:122unit tests;108train+96evaluation checks;840 replaycomparisons
+(300ensemble/control+540seed) на17496packets, max0deg. Все90state_dict проверены:
+точная заморозка параметров и epoch-1fallback.1111main+170APH исходных файлов
+сохранились. CLI: scripts/predict_finetune_campaign.py, --fold primary --variant
+selected; пример history-only прогнозов и его независимая проверка сохранены.
+
+Warm CPU batch1 latency выбранного primary phase_space: median17.33ms,
+p95 25.05ms, max37.29ms в30замерах. Включены actor,observer,3angular seeds,
+ensemble; исключены загрузка/хеши/сборкапакета/MPC. Это не RT/WCET гарантия.
+
+Литература:
+- docs/FINETUNING_METHODS_RESEARCH_20261107.md:9работ, anchor/partial/SAM/SWA/
+  PCGrad/Adam->LBFGS и границы EWC/LoRA для сети8821параметр.
+- docs/CONTROL_METHOD_SELECTION_RESEARCH_20261107.md:10работ (есть пересечение
+  с предыдущими обзорами), task-aware/DiffTune/robustMPC/KNODE/orthogonal PGNN.
+- docs/CONTROL_DATA_AND_REGULARIZATION_20261107.md:DeePC/W-PGNN/groupDRO,
+  предположения о возбуждении и различие их метода с нашими адаптациями.
+
+Отдельная post-prereg exploratory диагностика DeePC не влияла на90fits:
+scripts/audit_deepc_excitation.py; results/.../deepc_excitation/FINDINGS_RU.md.
+Только union TRAIN IDs1/3/4/5/6/8, раздельные матрицы каждого сценария.
+15/18матриц full machine rank. Сценарий6 имеет rank20 при depth39/45/51 и
+одно изменениекоманды; остальные5сценариев имеют7изменений. Не обобщать это
+на бесполезность всех данных: неизвестны порядок/lag и чувствительность к шуму.
+Контракт41past100Hz/30future20Hz требует отдельного согласования для DeePC.
+
+Следующие существенно разные направления из литературы:
+1) Малый нулевой residual adapter при замороженной базе (KNODE-inspired),
+   отдельно от уже проверенного innovation-only обновления существующего блока.
+2) Global stable latent operator с физическим масштабом omega(L), multistep loss.
+3) TRAIN-информативность/physical-sensitivity regularization, с мягким penalty.
+4) Regularized DeePC после проверки multirate/alignment/lag, сначала прогноз.
+Это предложения, они ещё НЕ реализованы. Не выдавать их за выполненные fits.
+
+Существующий LinearMPC НЕ использует нашу neuralforecast. Улучшение MAE не
+равно улучшению контроллера. Для следующего closed-loop опыта нужно подключить
+прогноз к выбору команды, согласовать native reference/актуатор с plant input,
+дать всем одинаковый estimator/history, измерить sway/tracking/control effort/
+constraints/runtime на парных возмущениях и отдельных model/plant параметрах.
+Не подставлять reference из датасета в acceleration-command симулятора без
+проверки единиц и смысла. Не менять старые122CRLF/LF Git modifications.

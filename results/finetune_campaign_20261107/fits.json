@@ -1,0 +1,7769 @@
+[
+  {
+    "fold": "primary",
+    "model": "continued",
+    "elapsed_seconds": 6.682243249990279,
+    "strategy": "continued",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 4.223158375010826,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "continued",
+    "elapsed_seconds": 3.749084499984747,
+    "strategy": "continued",
+    "seed": 1,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 3.6661056250159163,
+    "selection_score": 0.9935023059739351,
+    "validation": {
+      "all": 0.20083768665790558,
+      "active": 0.8937779068946838,
+      "quiet": 0.1632596105337143
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "continued",
+    "elapsed_seconds": 4.048769124987302,
+    "strategy": "continued",
+    "seed": 2,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 3.9629297500068787,
+    "selection_score": 0.9987761243898452,
+    "validation": {
+      "all": 0.18798254430294037,
+      "active": 0.8738853335380554,
+      "quiet": 0.15078608691692352
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "observer_only",
+    "elapsed_seconds": 3.3847219170129392,
+    "strategy": "observer_only",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.2946024170087185,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "initial.weight",
+      "initial.bias",
+      "observer.weight",
+      "observer.bias"
+    ],
+    "trainable_parameter_count": 231,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "observer_only",
+    "elapsed_seconds": 3.2121988329745363,
+    "strategy": "observer_only",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.1196258749987464,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "initial.weight",
+      "initial.bias",
+      "observer.weight",
+      "observer.bias"
+    ],
+    "trainable_parameter_count": 231,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "observer_only",
+    "elapsed_seconds": 3.902873249986442,
+    "strategy": "observer_only",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.7813628329895437,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "initial.weight",
+      "initial.bias",
+      "observer.weight",
+      "observer.bias"
+    ],
+    "trainable_parameter_count": 231,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "innovation_only",
+    "elapsed_seconds": 12.425027084012982,
+    "strategy": "innovation_only",
+    "seed": 0,
+    "best_epoch": 39,
+    "selected_epoch": 39,
+    "epochs_executed": 55,
+    "optimizer_steps": 275,
+    "backward_passes": 275,
+    "optimizer_closure_evaluations": 275,
+    "fit_seconds": 12.301277499995194,
+    "selection_score": 0.9852740762358603,
+    "validation": {
+      "all": 0.19452601671218872,
+      "active": 0.8750029802322388,
+      "quiet": 0.1576237976551056
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 1093,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "innovation_only",
+    "elapsed_seconds": 16.017225332994713,
+    "strategy": "innovation_only",
+    "seed": 1,
+    "best_epoch": 57,
+    "selected_epoch": 57,
+    "epochs_executed": 60,
+    "optimizer_steps": 300,
+    "backward_passes": 300,
+    "optimizer_closure_evaluations": 300,
+    "fit_seconds": 15.940097167011118,
+    "selection_score": 0.9886695558753371,
+    "validation": {
+      "all": 0.20041616261005402,
+      "active": 0.8869724869728088,
+      "quiet": 0.163184255361557
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 1093,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "innovation_only",
+    "elapsed_seconds": 3.338331790990196,
+    "strategy": "innovation_only",
+    "seed": 2,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 3.254538125009276,
+    "selection_score": 0.9999914956051026,
+    "validation": {
+      "all": 0.18847069144248962,
+      "active": 0.8737534880638123,
+      "quiet": 0.1513078659772873
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 1093,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "l2sp",
+    "elapsed_seconds": 3.7513655000075232,
+    "strategy": "l2sp",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.667840125010116,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "l2sp",
+    "elapsed_seconds": 4.368351541023003,
+    "strategy": "l2sp",
+    "seed": 1,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 4.2454397920228075,
+    "selection_score": 0.9938007291439966,
+    "validation": {
+      "all": 0.2009376436471939,
+      "active": 0.893871009349823,
+      "quiet": 0.16335992515087128
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "l2sp",
+    "elapsed_seconds": 3.996566375019029,
+    "strategy": "l2sp",
+    "seed": 2,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 3.899541583028622,
+    "selection_score": 0.9981708634886468,
+    "validation": {
+      "all": 0.18784776329994202,
+      "active": 0.8734518885612488,
+      "quiet": 0.15066750347614288
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "function_anchor",
+    "elapsed_seconds": 4.180051792005543,
+    "strategy": "function_anchor",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 4.038408624997828,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "function_anchor",
+    "elapsed_seconds": 3.9352006250119302,
+    "strategy": "function_anchor",
+    "seed": 1,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 3.786062416009372,
+    "selection_score": 0.9929708507661961,
+    "validation": {
+      "all": 0.20059546828269958,
+      "active": 0.893896222114563,
+      "quiet": 0.16299781203269958
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "function_anchor",
+    "elapsed_seconds": 4.234031125000911,
+    "strategy": "function_anchor",
+    "seed": 2,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 4.073532875016099,
+    "selection_score": 0.9966456935107455,
+    "validation": {
+      "all": 0.1873542070388794,
+      "active": 0.8730689287185669,
+      "quiet": 0.15016795694828033
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "sam",
+    "elapsed_seconds": 7.6262827909959015,
+    "strategy": "sam",
+    "seed": 0,
+    "best_epoch": 2,
+    "selected_epoch": 2,
+    "epochs_executed": 18,
+    "optimizer_steps": 90,
+    "backward_passes": 180,
+    "optimizer_closure_evaluations": 180,
+    "fit_seconds": 7.541949542006478,
+    "selection_score": 0.9974786368716146,
+    "validation": {
+      "all": 0.19643241167068481,
+      "active": 0.8881133198738098,
+      "quiet": 0.15892261266708374
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "sam",
+    "elapsed_seconds": 15.696867582999403,
+    "strategy": "sam",
+    "seed": 1,
+    "best_epoch": 22,
+    "selected_epoch": 22,
+    "epochs_executed": 38,
+    "optimizer_steps": 190,
+    "backward_passes": 380,
+    "optimizer_closure_evaluations": 380,
+    "fit_seconds": 15.607987665978726,
+    "selection_score": 0.9873032632014299,
+    "validation": {
+      "all": 0.19994966685771942,
+      "active": 0.8865854144096375,
+      "quiet": 0.1627134531736374
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "sam",
+    "elapsed_seconds": 9.958448124991264,
+    "strategy": "sam",
+    "seed": 2,
+    "best_epoch": 5,
+    "selected_epoch": 5,
+    "epochs_executed": 21,
+    "optimizer_steps": 105,
+    "backward_passes": 210,
+    "optimizer_closure_evaluations": 210,
+    "fit_seconds": 9.776231584022753,
+    "selection_score": 0.9939331333501046,
+    "validation": {
+      "all": 0.186812162399292,
+      "active": 0.8708407282829285,
+      "quiet": 0.1497173309326172
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "ema",
+    "elapsed_seconds": 4.127288832998602,
+    "strategy": "ema",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 4.032642417005263,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "ema_only",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "ema",
+    "elapsed_seconds": 4.209623375005322,
+    "strategy": "ema",
+    "seed": 1,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 4.068177459004801,
+    "selection_score": 0.9999055149074019,
+    "validation": {
+      "all": 0.202631413936615,
+      "active": 0.8973289132118225,
+      "quiet": 0.16495800018310547
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "ema_only",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "ema",
+    "elapsed_seconds": 3.918050541979028,
+    "strategy": "ema",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.817992875003256,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "ema_only",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "phase_space",
+    "elapsed_seconds": 5.128824791987427,
+    "strategy": "phase_space",
+    "seed": 0,
+    "best_epoch": 2,
+    "selected_epoch": 2,
+    "epochs_executed": 18,
+    "optimizer_steps": 90,
+    "backward_passes": 90,
+    "optimizer_closure_evaluations": 90,
+    "fit_seconds": 5.0538903340057,
+    "selection_score": 0.9996943436863234,
+    "validation": {
+      "all": 0.1979454904794693,
+      "active": 0.8852250576019287,
+      "quiet": 0.16067437827587128
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "phase_space",
+    "elapsed_seconds": 13.731494499981636,
+    "strategy": "phase_space",
+    "seed": 1,
+    "best_epoch": 51,
+    "selected_epoch": 51,
+    "epochs_executed": 60,
+    "optimizer_steps": 300,
+    "backward_passes": 300,
+    "optimizer_closure_evaluations": 300,
+    "fit_seconds": 13.647094042011304,
+    "selection_score": 0.9717794074002863,
+    "validation": {
+      "all": 0.1982913762331009,
+      "active": 0.8660712838172913,
+      "quiet": 0.16207771003246307
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "phase_space",
+    "elapsed_seconds": 4.944950750010321,
+    "strategy": "phase_space",
+    "seed": 2,
+    "best_epoch": 2,
+    "selected_epoch": 2,
+    "epochs_executed": 18,
+    "optimizer_steps": 90,
+    "backward_passes": 90,
+    "optimizer_closure_evaluations": 90,
+    "fit_seconds": 4.831351458997233,
+    "selection_score": 0.9969067163120049,
+    "validation": {
+      "all": 0.18706493079662323,
+      "active": 0.8748565912246704,
+      "quiet": 0.14976602792739868
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "group_dro",
+    "elapsed_seconds": 3.717378542001825,
+    "strategy": "group_dro",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.654550165985711,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": [
+      0.13835550844669342,
+      0.2591860294342041,
+      0.1337520182132721,
+      0.17900818586349487,
+      0.13141365349292755,
+      0.15828454494476318
+    ],
+    "group_dro_batch_rule": "conditional weights over present group means; update observed groups only"
+  },
+  {
+    "fold": "primary",
+    "model": "group_dro",
+    "elapsed_seconds": 3.9041105000069365,
+    "strategy": "group_dro",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.809264917013934,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": [
+      0.13947166502475739,
+      0.25884512066841125,
+      0.13529422879219055,
+      0.18116404116153717,
+      0.13318894803524017,
+      0.15203598141670227
+    ],
+    "group_dro_batch_rule": "conditional weights over present group means; update observed groups only"
+  },
+  {
+    "fold": "primary",
+    "model": "group_dro",
+    "elapsed_seconds": 3.6739280420006253,
+    "strategy": "group_dro",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.577769833005732,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": [
+      0.14448745548725128,
+      0.23148924112319946,
+      0.1406993269920349,
+      0.19163528084754944,
+      0.13814114034175873,
+      0.15354754030704498
+    ],
+    "group_dro_batch_rule": "conditional weights over present group means; update observed groups only"
+  },
+  {
+    "fold": "primary",
+    "model": "lbfgs_polish",
+    "elapsed_seconds": 3.284228082979098,
+    "strategy": "lbfgs_polish",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 10,
+    "optimizer_steps": 10,
+    "backward_passes": 22,
+    "optimizer_closure_evaluations": 22,
+    "fit_seconds": 3.187915541988332,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "starting_validation": {
+      "all": 0.19707372784614563,
+      "active": 0.8897045850753784,
+      "quiet": 0.15951238572597504
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "LBFGS",
+    "lbfgs": {
+      "lr": 0.3,
+      "max_iter": 1,
+      "max_eval": 4,
+      "history_size": 10,
+      "line_search_fn": "strong_wolfe",
+      "max_eval_is_not_a_strict_closure_cap": true,
+      "gradient_clipping": false
+    },
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "lbfgs_polish",
+    "elapsed_seconds": 2.7120916249987204,
+    "strategy": "lbfgs_polish",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 10,
+    "optimizer_steps": 10,
+    "backward_passes": 22,
+    "optimizer_closure_evaluations": 22,
+    "fit_seconds": 2.6319060410023667,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "starting_validation": {
+      "all": 0.2027270644903183,
+      "active": 0.8970751762390137,
+      "quiet": 0.16507259011268616
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "LBFGS",
+    "lbfgs": {
+      "lr": 0.3,
+      "max_iter": 1,
+      "max_eval": 4,
+      "history_size": 10,
+      "line_search_fn": "strong_wolfe",
+      "max_eval_is_not_a_strict_closure_cap": true,
+      "gradient_clipping": false
+    },
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "primary",
+    "model": "lbfgs_polish",
+    "elapsed_seconds": 3.151853957999265,
+    "strategy": "lbfgs_polish",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 10,
+    "optimizer_steps": 10,
+    "backward_passes": 21,
+    "optimizer_closure_evaluations": 21,
+    "fit_seconds": 3.064326791994972,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "starting_validation": {
+      "all": 0.1890505701303482,
+      "active": 0.8710963726043701,
+      "quiet": 0.1520632803440094
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "LBFGS",
+    "lbfgs": {
+      "lr": 0.3,
+      "max_iter": 1,
+      "max_eval": 4,
+      "history_size": 10,
+      "line_search_fn": "strong_wolfe",
+      "max_eval_is_not_a_strict_closure_cap": true,
+      "gradient_clipping": false
+    },
+    "group_labels": [
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "continued",
+    "elapsed_seconds": 6.25883174999035,
+    "strategy": "continued",
+    "seed": 0,
+    "best_epoch": 12,
+    "selected_epoch": 12,
+    "epochs_executed": 28,
+    "optimizer_steps": 140,
+    "backward_passes": 140,
+    "optimizer_closure_evaluations": 140,
+    "fit_seconds": 6.172083834011573,
+    "selection_score": 0.999512682139174,
+    "validation": {
+      "all": 0.22281013429164886,
+      "active": 0.9612786173820496,
+      "quiet": 0.19440747797489166
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "continued",
+    "elapsed_seconds": 10.638248583010864,
+    "strategy": "continued",
+    "seed": 1,
+    "best_epoch": 28,
+    "selected_epoch": 28,
+    "epochs_executed": 44,
+    "optimizer_steps": 220,
+    "backward_passes": 220,
+    "optimizer_closure_evaluations": 220,
+    "fit_seconds": 10.546747042011702,
+    "selection_score": 0.9968696540405533,
+    "validation": {
+      "all": 0.21653831005096436,
+      "active": 0.9827948808670044,
+      "quiet": 0.18706689774990082
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "continued",
+    "elapsed_seconds": 3.6643927909899503,
+    "strategy": "continued",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.597310666984413,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "observer_only",
+    "elapsed_seconds": 3.3009141250222456,
+    "strategy": "observer_only",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.2118358750012703,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "initial.weight",
+      "initial.bias",
+      "observer.weight",
+      "observer.bias"
+    ],
+    "trainable_parameter_count": 231,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "observer_only",
+    "elapsed_seconds": 3.6894178749935236,
+    "strategy": "observer_only",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.5066993750224356,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "initial.weight",
+      "initial.bias",
+      "observer.weight",
+      "observer.bias"
+    ],
+    "trainable_parameter_count": 231,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "observer_only",
+    "elapsed_seconds": 3.1870002089999616,
+    "strategy": "observer_only",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.1196325829951093,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "initial.weight",
+      "initial.bias",
+      "observer.weight",
+      "observer.bias"
+    ],
+    "trainable_parameter_count": 231,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "innovation_only",
+    "elapsed_seconds": 3.998247833980713,
+    "strategy": "innovation_only",
+    "seed": 0,
+    "best_epoch": 2,
+    "selected_epoch": 2,
+    "epochs_executed": 18,
+    "optimizer_steps": 90,
+    "backward_passes": 90,
+    "optimizer_closure_evaluations": 90,
+    "fit_seconds": 3.9163632499985397,
+    "selection_score": 0.9998259906514557,
+    "validation": {
+      "all": 0.21988080441951752,
+      "active": 0.9749799370765686,
+      "quiet": 0.1908385306596756
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 1093,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "innovation_only",
+    "elapsed_seconds": 4.572552458994323,
+    "strategy": "innovation_only",
+    "seed": 1,
+    "best_epoch": 5,
+    "selected_epoch": 5,
+    "epochs_executed": 21,
+    "optimizer_steps": 105,
+    "backward_passes": 105,
+    "optimizer_closure_evaluations": 105,
+    "fit_seconds": 4.4735527090088,
+    "selection_score": 0.9980392079821312,
+    "validation": {
+      "all": 0.21467280387878418,
+      "active": 0.9938501715660095,
+      "quiet": 0.18470445275306702
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 1093,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "innovation_only",
+    "elapsed_seconds": 4.084862333984347,
+    "strategy": "innovation_only",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.922192833997542,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 1093,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "l2sp",
+    "elapsed_seconds": 4.3099780829797965,
+    "strategy": "l2sp",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 4.208665833983105,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "l2sp",
+    "elapsed_seconds": 7.8282999170187395,
+    "strategy": "l2sp",
+    "seed": 1,
+    "best_epoch": 15,
+    "selected_epoch": 15,
+    "epochs_executed": 31,
+    "optimizer_steps": 155,
+    "backward_passes": 155,
+    "optimizer_closure_evaluations": 155,
+    "fit_seconds": 7.735657958022784,
+    "selection_score": 0.9978180116054867,
+    "validation": {
+      "all": 0.2156626433134079,
+      "active": 0.9887832403182983,
+      "quiet": 0.18592721223831177
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "l2sp",
+    "elapsed_seconds": 4.816004333988531,
+    "strategy": "l2sp",
+    "seed": 2,
+    "best_epoch": 3,
+    "selected_epoch": 3,
+    "epochs_executed": 19,
+    "optimizer_steps": 95,
+    "backward_passes": 95,
+    "optimizer_closure_evaluations": 95,
+    "fit_seconds": 4.72508950001793,
+    "selection_score": 0.998912693863222,
+    "validation": {
+      "all": 0.2232508361339569,
+      "active": 0.9874610900878906,
+      "quiet": 0.19385814666748047
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "function_anchor",
+    "elapsed_seconds": 10.027777707990026,
+    "strategy": "function_anchor",
+    "seed": 0,
+    "best_epoch": 20,
+    "selected_epoch": 20,
+    "epochs_executed": 36,
+    "optimizer_steps": 180,
+    "backward_passes": 180,
+    "optimizer_closure_evaluations": 180,
+    "fit_seconds": 9.902066500013461,
+    "selection_score": 0.9967090786542514,
+    "validation": {
+      "all": 0.22195371985435486,
+      "active": 0.9596163034439087,
+      "quiet": 0.19358208775520325
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "function_anchor",
+    "elapsed_seconds": 12.647865166014526,
+    "strategy": "function_anchor",
+    "seed": 1,
+    "best_epoch": 28,
+    "selected_epoch": 28,
+    "epochs_executed": 44,
+    "optimizer_steps": 220,
+    "backward_passes": 220,
+    "optimizer_closure_evaluations": 220,
+    "fit_seconds": 12.495249416009756,
+    "selection_score": 0.9931758110902105,
+    "validation": {
+      "all": 0.21475432813167572,
+      "active": 0.9837391376495361,
+      "quiet": 0.1851779818534851
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "function_anchor",
+    "elapsed_seconds": 4.247377207997488,
+    "strategy": "function_anchor",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 4.078340125008253,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "sam",
+    "elapsed_seconds": 29.732494083989877,
+    "strategy": "sam",
+    "seed": 0,
+    "best_epoch": 50,
+    "selected_epoch": 50,
+    "epochs_executed": 60,
+    "optimizer_steps": 300,
+    "backward_passes": 600,
+    "optimizer_closure_evaluations": 600,
+    "fit_seconds": 29.61161920899758,
+    "selection_score": 0.9836806454217921,
+    "validation": {
+      "all": 0.21643956005573273,
+      "active": 0.9587469100952148,
+      "quiet": 0.18788927793502808
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "sam",
+    "elapsed_seconds": 24.251223708997713,
+    "strategy": "sam",
+    "seed": 1,
+    "best_epoch": 58,
+    "selected_epoch": 58,
+    "epochs_executed": 60,
+    "optimizer_steps": 300,
+    "backward_passes": 600,
+    "optimizer_closure_evaluations": 600,
+    "fit_seconds": 24.151203916000668,
+    "selection_score": 0.9851366655447991,
+    "validation": {
+      "all": 0.21120819449424744,
+      "active": 0.9842222929000854,
+      "quiet": 0.181476891040802
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "sam",
+    "elapsed_seconds": 26.495080082997447,
+    "strategy": "sam",
+    "seed": 2,
+    "best_epoch": 57,
+    "selected_epoch": 57,
+    "epochs_executed": 60,
+    "optimizer_steps": 300,
+    "backward_passes": 600,
+    "optimizer_closure_evaluations": 600,
+    "fit_seconds": 26.418389208003646,
+    "selection_score": 0.9874169724973035,
+    "validation": {
+      "all": 0.22174125909805298,
+      "active": 0.9713906049728394,
+      "quiet": 0.1929086148738861
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "ema",
+    "elapsed_seconds": 3.78102975001093,
+    "strategy": "ema",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.697573209006805,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "ema_only",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "ema",
+    "elapsed_seconds": 3.487441334000323,
+    "strategy": "ema",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.400314124999568,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "ema_only",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "ema",
+    "elapsed_seconds": 3.740559208992636,
+    "strategy": "ema",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.620240249991184,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "ema_only",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "phase_space",
+    "elapsed_seconds": 3.343007542018313,
+    "strategy": "phase_space",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.277525290992344,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "phase_space",
+    "elapsed_seconds": 4.263172332983231,
+    "strategy": "phase_space",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 4.169064791989513,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "phase_space",
+    "elapsed_seconds": 3.498564583976986,
+    "strategy": "phase_space",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.4056474160170183,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "group_dro",
+    "elapsed_seconds": 6.1206988749909215,
+    "strategy": "group_dro",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.8724727090157103,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": [
+      0.12671007215976715,
+      0.20893318951129913,
+      0.12404035776853561,
+      0.17252832651138306,
+      0.20469625294208527,
+      0.1630917638540268
+    ],
+    "group_dro_batch_rule": "conditional weights over present group means; update observed groups only"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "group_dro",
+    "elapsed_seconds": 4.785210540983826,
+    "strategy": "group_dro",
+    "seed": 1,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 2.7469283329846803,
+    "selection_score": 0.9985140506317063,
+    "validation": {
+      "all": 0.21563339233398438,
+      "active": 0.9903124570846558,
+      "quiet": 0.18583804368972778
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": [
+      0.1260514259338379,
+      0.21493126451969147,
+      0.1227419301867485,
+      0.1650097817182541,
+      0.2102327197790146,
+      0.16103290021419525
+    ],
+    "group_dro_batch_rule": "conditional weights over present group means; update observed groups only"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "group_dro",
+    "elapsed_seconds": 3.8527233749919105,
+    "strategy": "group_dro",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.7664175830141176,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": [
+      0.12696729600429535,
+      0.20505569875240326,
+      0.12387808412313461,
+      0.17763188481330872,
+      0.20472487807273865,
+      0.16174215078353882
+    ],
+    "group_dro_batch_rule": "conditional weights over present group means; update observed groups only"
+  },
+  {
+    "fold": "short_transfer",
+    "model": "lbfgs_polish",
+    "elapsed_seconds": 5.3191323339997325,
+    "strategy": "lbfgs_polish",
+    "seed": 0,
+    "best_epoch": 9,
+    "selected_epoch": 9,
+    "epochs_executed": 20,
+    "optimizer_steps": 20,
+    "backward_passes": 40,
+    "optimizer_closure_evaluations": 40,
+    "fit_seconds": 5.231382291007321,
+    "selection_score": 0.9982384489916062,
+    "validation": {
+      "all": 0.22016066312789917,
+      "active": 0.9706215858459473,
+      "quiet": 0.19129681587219238
+    },
+    "starting_validation": {
+      "all": 0.21908798813819885,
+      "active": 0.9788628220558167,
+      "quiet": 0.18986590206623077
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "LBFGS",
+    "lbfgs": {
+      "lr": 0.3,
+      "max_iter": 1,
+      "max_eval": 4,
+      "history_size": 10,
+      "line_search_fn": "strong_wolfe",
+      "max_eval_is_not_a_strict_closure_cap": true,
+      "gradient_clipping": false
+    },
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "lbfgs_polish",
+    "elapsed_seconds": 2.7232482499966864,
+    "strategy": "lbfgs_polish",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 10,
+    "optimizer_steps": 10,
+    "backward_passes": 21,
+    "optimizer_closure_evaluations": 21,
+    "fit_seconds": 2.6464719159994274,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "starting_validation": {
+      "all": 0.2141219675540924,
+      "active": 1.0003465414047241,
+      "quiet": 0.18388256430625916
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "LBFGS",
+    "lbfgs": {
+      "lr": 0.3,
+      "max_iter": 1,
+      "max_eval": 4,
+      "history_size": 10,
+      "line_search_fn": "strong_wolfe",
+      "max_eval_is_not_a_strict_closure_cap": true,
+      "gradient_clipping": false
+    },
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "short_transfer",
+    "model": "lbfgs_polish",
+    "elapsed_seconds": 3.0586012080020737,
+    "strategy": "lbfgs_polish",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 10,
+    "optimizer_steps": 10,
+    "backward_passes": 22,
+    "optimizer_closure_evaluations": 22,
+    "fit_seconds": 2.996345499996096,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "starting_validation": {
+      "all": 0.223027765750885,
+      "active": 0.9906060695648193,
+      "quiet": 0.19350551068782806
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "LBFGS",
+    "lbfgs": {
+      "lr": 0.3,
+      "max_iter": 1,
+      "max_eval": 4,
+      "history_size": 10,
+      "line_search_fn": "strong_wolfe",
+      "max_eval_is_not_a_strict_closure_cap": true,
+      "gradient_clipping": false
+    },
+    "group_labels": [
+      {
+        "scenario": 4,
+        "active": false
+      },
+      {
+        "scenario": 4,
+        "active": true
+      },
+      {
+        "scenario": 6,
+        "active": false
+      },
+      {
+        "scenario": 6,
+        "active": true
+      },
+      {
+        "scenario": 8,
+        "active": false
+      },
+      {
+        "scenario": 8,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "continued",
+    "elapsed_seconds": 3.40531220898265,
+    "strategy": "continued",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.3282570840092376,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "continued",
+    "elapsed_seconds": 3.512438666977687,
+    "strategy": "continued",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.3800547090067994,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "continued",
+    "elapsed_seconds": 3.2472735000192188,
+    "strategy": "continued",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.1735924999811687,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "observer_only",
+    "elapsed_seconds": 3.000501250004163,
+    "strategy": "observer_only",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 2.906078375002835,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "initial.weight",
+      "initial.bias",
+      "observer.weight",
+      "observer.bias"
+    ],
+    "trainable_parameter_count": 231,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "observer_only",
+    "elapsed_seconds": 3.7220853750186507,
+    "strategy": "observer_only",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.628851790999761,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "initial.weight",
+      "initial.bias",
+      "observer.weight",
+      "observer.bias"
+    ],
+    "trainable_parameter_count": 231,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "observer_only",
+    "elapsed_seconds": 2.962591417017393,
+    "strategy": "observer_only",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 2.902663874992868,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "initial.weight",
+      "initial.bias",
+      "observer.weight",
+      "observer.bias"
+    ],
+    "trainable_parameter_count": 231,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "innovation_only",
+    "elapsed_seconds": 2.872206957981689,
+    "strategy": "innovation_only",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 2.808795499993721,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 1093,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "innovation_only",
+    "elapsed_seconds": 3.372657625004649,
+    "strategy": "innovation_only",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.3067906250071246,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 1093,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "innovation_only",
+    "elapsed_seconds": 2.918525707995286,
+    "strategy": "innovation_only",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 2.8345237080066,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 1093,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "l2sp",
+    "elapsed_seconds": 3.7211622079776134,
+    "strategy": "l2sp",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.5730955000035465,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "l2sp",
+    "elapsed_seconds": 3.790335582976695,
+    "strategy": "l2sp",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.685037415998522,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "l2sp",
+    "elapsed_seconds": 4.042150166991632,
+    "strategy": "l2sp",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.954480332991807,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "function_anchor",
+    "elapsed_seconds": 3.6019017090147827,
+    "strategy": "function_anchor",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.4682858750165906,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "function_anchor",
+    "elapsed_seconds": 3.520985124981962,
+    "strategy": "function_anchor",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.3875344170082826,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "function_anchor",
+    "elapsed_seconds": 4.024584541999502,
+    "strategy": "function_anchor",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.8736721250170376,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "sam",
+    "elapsed_seconds": 6.919216292008059,
+    "strategy": "sam",
+    "seed": 0,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 160,
+    "optimizer_closure_evaluations": 160,
+    "fit_seconds": 6.828306458017323,
+    "selection_score": 0.9972534621789249,
+    "validation": {
+      "all": 0.21260733902454376,
+      "active": 1.0399210453033447,
+      "quiet": 0.16774216294288635
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "sam",
+    "elapsed_seconds": 6.168140833004145,
+    "strategy": "sam",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 150,
+    "optimizer_closure_evaluations": 150,
+    "fit_seconds": 6.094802334002452,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "sam",
+    "elapsed_seconds": 6.510159208002733,
+    "strategy": "sam",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 150,
+    "optimizer_closure_evaluations": 150,
+    "fit_seconds": 6.402348917006748,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "ema",
+    "elapsed_seconds": 3.6064579999947455,
+    "strategy": "ema",
+    "seed": 0,
+    "best_epoch": 0,
+    "selected_epoch": 0,
+    "epochs_executed": 16,
+    "optimizer_steps": 80,
+    "backward_passes": 80,
+    "optimizer_closure_evaluations": 80,
+    "fit_seconds": 3.5227093329885975,
+    "selection_score": 0.9991269532828368,
+    "validation": {
+      "all": 0.21136793494224548,
+      "active": 1.050022006034851,
+      "quiet": 0.16588778793811798
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "ema_only",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "ema",
+    "elapsed_seconds": 3.0947910840041004,
+    "strategy": "ema",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.019602415995905,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "ema_only",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "ema",
+    "elapsed_seconds": 3.192288040998392,
+    "strategy": "ema",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.0863146249903366,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "ema_only",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "phase_space",
+    "elapsed_seconds": 3.4166919170238543,
+    "strategy": "phase_space",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.329950999992434,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "phase_space",
+    "elapsed_seconds": 3.3309538750036154,
+    "strategy": "phase_space",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.2470630839816295,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "phase_space",
+    "elapsed_seconds": 3.826346707995981,
+    "strategy": "phase_space",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.7231104579987004,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "group_dro",
+    "elapsed_seconds": 3.9930140000069514,
+    "strategy": "group_dro",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.89199308300158,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": [
+      0.11975198239088058,
+      0.2670246660709381,
+      0.1209479570388794,
+      0.2022005319595337,
+      0.11779273301362991,
+      0.17228205502033234
+    ],
+    "group_dro_batch_rule": "conditional weights over present group means; update observed groups only"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "group_dro",
+    "elapsed_seconds": 4.00734533299692,
+    "strategy": "group_dro",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.9305391249945387,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": [
+      0.11713821440935135,
+      0.2726016044616699,
+      0.1174263209104538,
+      0.2170269638299942,
+      0.11429624259471893,
+      0.16151055693626404
+    ],
+    "group_dro_batch_rule": "conditional weights over present group means; update observed groups only"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "group_dro",
+    "elapsed_seconds": 3.681294333015103,
+    "strategy": "group_dro",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 15,
+    "optimizer_steps": 75,
+    "backward_passes": 75,
+    "optimizer_closure_evaluations": 75,
+    "fit_seconds": 3.5908524159749504,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "AdamW",
+    "lbfgs": null,
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": [
+      0.11343292146921158,
+      0.28431710600852966,
+      0.11365889757871628,
+      0.22271916270256042,
+      0.10996221750974655,
+      0.1559097170829773
+    ],
+    "group_dro_batch_rule": "conditional weights over present group means; update observed groups only"
+  },
+  {
+    "fold": "long_transfer",
+    "model": "lbfgs_polish",
+    "elapsed_seconds": 2.787392625003122,
+    "strategy": "lbfgs_polish",
+    "seed": 0,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 10,
+    "optimizer_steps": 10,
+    "backward_passes": 22,
+    "optimizer_closure_evaluations": 22,
+    "fit_seconds": 2.680031458992744,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "starting_validation": {
+      "all": 0.2114737331867218,
+      "active": 1.0513317584991455,
+      "quiet": 0.16592827439308167
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "LBFGS",
+    "lbfgs": {
+      "lr": 0.3,
+      "max_iter": 1,
+      "max_eval": 4,
+      "history_size": 10,
+      "line_search_fn": "strong_wolfe",
+      "max_eval_is_not_a_strict_closure_cap": true,
+      "gradient_clipping": false
+    },
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "lbfgs_polish",
+    "elapsed_seconds": 3.0624635420099366,
+    "strategy": "lbfgs_polish",
+    "seed": 1,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 10,
+    "optimizer_steps": 10,
+    "backward_passes": 21,
+    "optimizer_closure_evaluations": 21,
+    "fit_seconds": 2.9496377920149826,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "starting_validation": {
+      "all": 0.20731736719608307,
+      "active": 1.0215134620666504,
+      "quiet": 0.16316357254981995
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "LBFGS",
+    "lbfgs": {
+      "lr": 0.3,
+      "max_iter": 1,
+      "max_eval": 4,
+      "history_size": 10,
+      "line_search_fn": "strong_wolfe",
+      "max_eval_is_not_a_strict_closure_cap": true,
+      "gradient_clipping": false
+    },
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  },
+  {
+    "fold": "long_transfer",
+    "model": "lbfgs_polish",
+    "elapsed_seconds": 3.18156616599299,
+    "strategy": "lbfgs_polish",
+    "seed": 2,
+    "best_epoch": -1,
+    "selected_epoch": -1,
+    "epochs_executed": 10,
+    "optimizer_steps": 10,
+    "backward_passes": 22,
+    "optimizer_closure_evaluations": 22,
+    "fit_seconds": 3.095640582992928,
+    "selection_score": 1.0,
+    "validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "starting_validation": {
+      "all": 0.21251104772090912,
+      "active": 0.9815937280654907,
+      "quiet": 0.1708037108182907
+    },
+    "trainable_parameter_names": [
+      "encoder.0.weight",
+      "encoder.0.bias",
+      "encoder.2.weight",
+      "encoder.2.bias",
+      "initial.weight",
+      "initial.bias",
+      "cell.coefficients.0.weight",
+      "cell.coefficients.0.bias",
+      "cell.coefficients.2.weight",
+      "cell.coefficients.2.bias",
+      "cell.coefficients.4.weight",
+      "cell.coefficients.4.bias",
+      "observer.weight",
+      "observer.bias",
+      "hidden_initial.weight",
+      "hidden_initial.bias",
+      "innovation.weight_ih",
+      "innovation.weight_hh",
+      "innovation.bias_ih",
+      "innovation.bias_hh",
+      "force_output.weight",
+      "force_output.bias"
+    ],
+    "trainable_parameter_count": 8821,
+    "total_parameter_count": 8821,
+    "epoch_minus_one_eligible": true,
+    "validation_gradients": false,
+    "regularizers": {
+      "initial_memory": 0.01,
+      "innovation_force": 0.01
+    },
+    "selection_candidate": "raw_weights",
+    "optimizer": "LBFGS",
+    "lbfgs": {
+      "lr": 0.3,
+      "max_iter": 1,
+      "max_eval": 4,
+      "history_size": 10,
+      "line_search_fn": "strong_wolfe",
+      "max_eval_is_not_a_strict_closure_cap": true,
+      "gradient_clipping": false
+    },
+    "group_labels": [
+      {
+        "scenario": 1,
+        "active": false
+      },
+      {
+        "scenario": 1,
+        "active": true
+      },
+      {
+        "scenario": 3,
+        "active": false
+      },
+      {
+        "scenario": 3,
+        "active": true
+      },
+      {
+        "scenario": 5,
+        "active": false
+      },
+      {
+        "scenario": 5,
+        "active": true
+      }
+    ],
+    "group_weights_final": null,
+    "group_dro_batch_rule": null
+  }
+]
