@@ -1,0 +1,543 @@
+{
+  "selected": "guarded_simplex_1",
+  "case_scores": {
+    "trolley_theta": {
+      "legacy": {
+        "balanced": 1.0264507388473139,
+        "quiet": 0.14021382986054406,
+        "drive": 1.9126876478340837
+      },
+      "active": {
+        "balanced": 0.4990553432768366,
+        "quiet": 0.15336725448988878,
+        "drive": 0.8447434320637844
+      },
+      "hard_context": {
+        "balanced": 0.49247863096216427,
+        "quiet": 0.14021382986054406,
+        "drive": 0.8447434320637844
+      },
+      "ramp_context": {
+        "balanced": 0.49247863096216427,
+        "quiet": 0.14021382986054406,
+        "drive": 0.8447434320637844
+      },
+      "guarded_inverse": {
+        "balanced": 0.5289108865341743,
+        "quiet": 0.14021382986054406,
+        "drive": 0.9176079432078045
+      },
+      "guarded_horizon_inverse": {
+        "balanced": 0.656483955526431,
+        "quiet": 0.14021382986054406,
+        "drive": 1.172754081192318
+      },
+      "guarded_winner": {
+        "balanced": 0.539200221050453,
+        "quiet": 0.14021382986054406,
+        "drive": 0.9381866122403619
+      },
+      "guarded_simplex_0.01": {
+        "balanced": 0.4812862486465059,
+        "quiet": 0.14021382986054406,
+        "drive": 0.8223586674324677
+      },
+      "guarded_simplex_0.1": {
+        "balanced": 0.47939639727640754,
+        "quiet": 0.14021382986054406,
+        "drive": 0.818578964692271
+      },
+      "guarded_simplex_1": {
+        "balanced": 0.4852884616382891,
+        "quiet": 0.14021382986054406,
+        "drive": 0.8303630934160341
+      },
+      "guarded_simplex_10": {
+        "balanced": 0.4910081782281436,
+        "quiet": 0.14021382986054406,
+        "drive": 0.8418025265957431
+      },
+      "frozen_arx": {
+        "balanced": 1.3034258458993562,
+        "quiet": 0.2882907164746425,
+        "drive": 2.3185609753240697
+      },
+      "active_arx": {
+        "balanced": 0.6458499415949404,
+        "quiet": 0.39580056599940616,
+        "drive": 0.8958993171904747
+      },
+      "free_modal": {
+        "balanced": 1.2055656127990422,
+        "quiet": 0.12873843261419848,
+        "drive": 2.282392792983886
+      },
+      "forced_modal": {
+        "balanced": 0.9883062821034685,
+        "quiet": 0.12873843261419843,
+        "drive": 1.8478741315927385
+      }
+    },
+    "jib_theta": {
+      "legacy": {
+        "balanced": 1.2526761848112318,
+        "quiet": 0.25173012236204406,
+        "drive": 2.2536222472604193
+      },
+      "active": {
+        "balanced": 1.20695488398319,
+        "quiet": 0.2517209263810621,
+        "drive": 2.162188841585318
+      },
+      "hard_context": {
+        "balanced": 1.2069594819736809,
+        "quiet": 0.25173012236204406,
+        "drive": 2.162188841585318
+      },
+      "ramp_context": {
+        "balanced": 1.2069628199561468,
+        "quiet": 0.25173012236204406,
+        "drive": 2.1621955175502494
+      },
+      "guarded_inverse": {
+        "balanced": 1.220166876008732,
+        "quiet": 0.25173012236204406,
+        "drive": 2.1886036296554203
+      },
+      "guarded_horizon_inverse": {
+        "balanced": 1.2452807580282554,
+        "quiet": 0.25173012236204406,
+        "drive": 2.238831393694467
+      },
+      "guarded_winner": {
+        "balanced": 1.36006382872986,
+        "quiet": 0.25173012236204406,
+        "drive": 2.468397535097676
+      },
+      "guarded_simplex_0.01": {
+        "balanced": 1.2907697183742965,
+        "quiet": 0.25173012236204406,
+        "drive": 2.329809314386549
+      },
+      "guarded_simplex_0.1": {
+        "balanced": 1.2828293372193365,
+        "quiet": 0.25173012236204406,
+        "drive": 2.313928552076629
+      },
+      "guarded_simplex_1": {
+        "balanced": 1.241479764431403,
+        "quiet": 0.25173012236204406,
+        "drive": 2.231229406500762
+      },
+      "guarded_simplex_10": {
+        "balanced": 1.2116096079473855,
+        "quiet": 0.25173012236204406,
+        "drive": 2.171489093532727
+      },
+      "frozen_arx": {
+        "balanced": 1.405091184538786,
+        "quiet": 0.3843988882380538,
+        "drive": 2.425783480839518
+      },
+      "active_arx": {
+        "balanced": 1.405091184538786,
+        "quiet": 0.3843988882380538,
+        "drive": 2.425783480839518
+      },
+      "free_modal": {
+        "balanced": 1.42027203482391,
+        "quiet": 0.28592273588397027,
+        "drive": 2.5546213337638495
+      },
+      "forced_modal": {
+        "balanced": 1.3802918315826889,
+        "quiet": 0.285899251302046,
+        "drive": 2.4746844118633318
+      }
+    },
+    "jib_beta": {
+      "legacy": {
+        "balanced": 1.5153809915012149,
+        "quiet": 0.15230030541245515,
+        "drive": 2.8784616775899745
+      },
+      "active": {
+        "balanced": 1.191296170184214,
+        "quiet": 0.16575555456290875,
+        "drive": 2.216836785805519
+      },
+      "hard_context": {
+        "balanced": 1.1845685456089872,
+        "quiet": 0.15230030541245515,
+        "drive": 2.216836785805519
+      },
+      "ramp_context": {
+        "balanced": 1.184090327584337,
+        "quiet": 0.15230030541245515,
+        "drive": 2.215880349756219
+      },
+      "guarded_inverse": {
+        "balanced": 1.2307886122575464,
+        "quiet": 0.15230030541245515,
+        "drive": 2.3092769191026377
+      },
+      "guarded_horizon_inverse": {
+        "balanced": 1.354636810426844,
+        "quiet": 0.15230030541245515,
+        "drive": 2.556973315441233
+      },
+      "guarded_winner": {
+        "balanced": 1.2230209791910014,
+        "quiet": 0.15230030541245515,
+        "drive": 2.2937416529695476
+      },
+      "guarded_simplex_0.01": {
+        "balanced": 1.2480831786516573,
+        "quiet": 0.15230030541245515,
+        "drive": 2.3438660518908594
+      },
+      "guarded_simplex_0.1": {
+        "balanced": 1.2224401630069264,
+        "quiet": 0.15230030541245515,
+        "drive": 2.2925800206013975
+      },
+      "guarded_simplex_1": {
+        "balanced": 1.1843146045600508,
+        "quiet": 0.15230030541245515,
+        "drive": 2.2163289037076463
+      },
+      "guarded_simplex_10": {
+        "balanced": 1.1840276044286127,
+        "quiet": 0.15230030541245515,
+        "drive": 2.21575490344477
+      },
+      "frozen_arx": {
+        "balanced": 1.6809863393840296,
+        "quiet": 0.24380183166085725,
+        "drive": 3.118170847107202
+      },
+      "active_arx": {
+        "balanced": 1.4187540139409673,
+        "quiet": 0.49713119532784633,
+        "drive": 2.3403768325540883
+      },
+      "free_modal": {
+        "balanced": 1.7944272939106394,
+        "quiet": 0.1626938776420173,
+        "drive": 3.4261607101792615
+      },
+      "forced_modal": {
+        "balanced": 1.7865768436701683,
+        "quiet": 0.16273453174861555,
+        "drive": 3.410419155591721
+      }
+    },
+    "simult_theta": {
+      "legacy": {
+        "balanced": 2.3953981667527615,
+        "quiet": 0.755379702475253,
+        "drive": 4.03541663103027
+      },
+      "active": {
+        "balanced": 2.0595361678846764,
+        "quiet": 0.7772016483897256,
+        "drive": 3.3418706873796276
+      },
+      "hard_context": {
+        "balanced": 2.0486251949274403,
+        "quiet": 0.755379702475253,
+        "drive": 3.3418706873796276
+      },
+      "ramp_context": {
+        "balanced": 2.0490150116033528,
+        "quiet": 0.755379702475253,
+        "drive": 3.342650320731453
+      },
+      "guarded_inverse": {
+        "balanced": 2.136642236950254,
+        "quiet": 0.755379702475253,
+        "drive": 3.517904771425255
+      },
+      "guarded_horizon_inverse": {
+        "balanced": 2.233899911312603,
+        "quiet": 0.755379702475253,
+        "drive": 3.7124201201499525
+      },
+      "guarded_winner": {
+        "balanced": 2.176248962486754,
+        "quiet": 0.755379702475253,
+        "drive": 3.5971182224982554
+      },
+      "guarded_simplex_0.01": {
+        "balanced": 2.068799485488669,
+        "quiet": 0.755379702475253,
+        "drive": 3.382219268502085
+      },
+      "guarded_simplex_0.1": {
+        "balanced": 2.0329967537720455,
+        "quiet": 0.755379702475253,
+        "drive": 3.3106138050688383
+      },
+      "guarded_simplex_1": {
+        "balanced": 1.9897284298051983,
+        "quiet": 0.755379702475253,
+        "drive": 3.2240771571351434
+      },
+      "guarded_simplex_10": {
+        "balanced": 2.0372720172496774,
+        "quiet": 0.755379702475253,
+        "drive": 3.3191643320241018
+      },
+      "frozen_arx": {
+        "balanced": 2.5964592218502194,
+        "quiet": 1.1083304695918919,
+        "drive": 4.084587974108547
+      },
+      "active_arx": {
+        "balanced": 2.2058162504677212,
+        "quiet": 1.2412107316046586,
+        "drive": 3.170421769330784
+      },
+      "free_modal": {
+        "balanced": 2.9631460645412844,
+        "quiet": 0.8296177322018576,
+        "drive": 5.0966743968807116
+      },
+      "forced_modal": {
+        "balanced": 3.008279331186719,
+        "quiet": 0.8295251536821033,
+        "drive": 5.187033508691335
+      }
+    },
+    "simult_beta": {
+      "legacy": {
+        "balanced": 2.164768090638098,
+        "quiet": 0.4042488387138711,
+        "drive": 3.925287342562325
+      },
+      "active": {
+        "balanced": 2.027991438102532,
+        "quiet": 0.6351252861687087,
+        "drive": 3.420857590036355
+      },
+      "hard_context": {
+        "balanced": 1.9125532143751132,
+        "quiet": 0.4042488387138711,
+        "drive": 3.420857590036355
+      },
+      "ramp_context": {
+        "balanced": 1.8975521290427846,
+        "quiet": 0.4042488387138711,
+        "drive": 3.390855419371698
+      },
+      "guarded_inverse": {
+        "balanced": 1.7964565077799262,
+        "quiet": 0.4042488387138711,
+        "drive": 3.188664176845981
+      },
+      "guarded_horizon_inverse": {
+        "balanced": 1.98758509286714,
+        "quiet": 0.4042488387138711,
+        "drive": 3.5709213470204086
+      },
+      "guarded_winner": {
+        "balanced": 2.015155843017291,
+        "quiet": 0.4042488387138711,
+        "drive": 3.6260628473207115
+      },
+      "guarded_simplex_0.01": {
+        "balanced": 1.9338238930427942,
+        "quiet": 0.4042488387138711,
+        "drive": 3.4633989473717173
+      },
+      "guarded_simplex_0.1": {
+        "balanced": 1.8524142932457066,
+        "quiet": 0.4042488387138711,
+        "drive": 3.300579747777542
+      },
+      "guarded_simplex_1": {
+        "balanced": 1.8406407959242383,
+        "quiet": 0.4042488387138711,
+        "drive": 3.2770327531346055
+      },
+      "guarded_simplex_10": {
+        "balanced": 1.8963998961588453,
+        "quiet": 0.4042488387138711,
+        "drive": 3.3885509536038194
+      },
+      "frozen_arx": {
+        "balanced": 2.451309186484463,
+        "quiet": 0.42650382329100006,
+        "drive": 4.476114549677926
+      },
+      "active_arx": {
+        "balanced": 2.260636635319557,
+        "quiet": 0.9091279167249562,
+        "drive": 3.612145353914157
+      },
+      "free_modal": {
+        "balanced": 2.9335230405045323,
+        "quiet": 0.7428777016348836,
+        "drive": 5.124168379374181
+      },
+      "forced_modal": {
+        "balanced": 2.6513549007010413,
+        "quiet": 0.7427053581607549,
+        "drive": 4.560004443241327
+      }
+    }
+  },
+  "validation_means": {
+    "legacy": 1.670934834510124,
+    "active": 1.3969668006862899,
+    "hard_context": 1.3690370135694772,
+    "ramp_context": 1.366019783829757,
+    "guarded_inverse": 1.3825930239061264,
+    "guarded_horizon_inverse": 1.4955773056322548,
+    "guarded_winner": 1.462737966895072,
+    "guarded_simplex_0.01": 1.4045525048407845,
+    "guarded_simplex_0.1": 1.3740153889040845,
+    "guarded_simplex_1": 1.348290411271836,
+    "guarded_simplex_10": 1.364063460802533,
+    "frozen_arx": 1.887454355631371,
+    "active_arx": 1.5872296051723942,
+    "free_modal": 2.063386809315882,
+    "forced_modal": 1.9629618378488172
+  },
+  "quiet_feasible": {
+    "legacy": true,
+    "active": false,
+    "hard_context": true,
+    "ramp_context": true,
+    "guarded_inverse": true,
+    "guarded_horizon_inverse": true,
+    "guarded_winner": true,
+    "guarded_simplex_0.01": true,
+    "guarded_simplex_0.1": true,
+    "guarded_simplex_1": true,
+    "guarded_simplex_10": true
+  },
+  "validation_legacy_change_percent": -19.309216408363362,
+  "legacy_case_wins": 5,
+  "development_gate_passed": true,
+  "parent_cases": {
+    "trolley_theta": {
+      "family": "trolley",
+      "axis": "theta",
+      "long_model": "arx_io_lpv_direct_1e-06.npz",
+      "reference": "short",
+      "reference_validation_scores": {
+        "long": 0.7407908200473943,
+        "short": 0.6458499415949404,
+        "old": 1.3034258458993562
+      },
+      "train_records": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "validation_records": [
+        4
+      ]
+    },
+    "jib_theta": {
+      "family": "jib",
+      "axis": "theta",
+      "long_model": "arx_io_lpv_direct_1e-06.npz",
+      "reference": "old",
+      "reference_validation_scores": {
+        "long": 1.6196234652727912,
+        "short": 1.7392459731504513,
+        "old": 1.405091184538786
+      },
+      "train_records": [
+        14,
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "validation_records": [
+        17
+      ]
+    },
+    "jib_beta": {
+      "family": "jib",
+      "axis": "beta",
+      "long_model": "arx_angle_lpv_direct_1e-08.npz",
+      "reference": "long",
+      "reference_validation_scores": {
+        "long": 1.4187540139409673,
+        "short": 1.5525188308127522,
+        "old": 1.6809863393840296
+      },
+      "train_records": [
+        14,
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "validation_records": [
+        17
+      ]
+    },
+    "simult_theta": {
+      "family": "simult",
+      "axis": "theta",
+      "long_model": "arx_angle_lpv_direct_1e-10.npz",
+      "reference": "long",
+      "reference_validation_scores": {
+        "long": 2.2058162504677212,
+        "short": 2.254090762262079,
+        "old": 2.5964592218502194
+      },
+      "train_records": [
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation_records": [
+        28
+      ]
+    },
+    "simult_beta": {
+      "family": "simult",
+      "axis": "beta",
+      "long_model": "arx_angle_lpv_direct_1e-10.npz",
+      "reference": "long",
+      "reference_validation_scores": {
+        "long": 2.260636635319557,
+        "short": 2.2979444103570743,
+        "old": 2.451309186484463
+      },
+      "train_records": [
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation_records": [
+        28
+      ]
+    }
+  },
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

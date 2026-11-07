@@ -1,0 +1,67 @@
+{
+  "a": 0.9318564126929851,
+  "b": 0.16300454093270061,
+  "damping": 0.0,
+  "evidence": [
+    {
+      "sid": 14,
+      "L_m": 0.096101544,
+      "omega_rad_s": 6.2319783578584005,
+      "effective_length_m": 0.2525905708722334,
+      "tail_rms_rad": 0.0806804536373532,
+      "relative_fit_error": 0.8224320448552195,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 15,
+      "L_m": 0.197376256,
+      "omega_rad_s": 5.346403108194603,
+      "effective_length_m": 0.3431986779248265,
+      "tail_rms_rad": 0.1316437186888178,
+      "relative_fit_error": 0.47203846344975464,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 16,
+      "L_m": 0.298352516,
+      "omega_rad_s": 4.715252110102067,
+      "effective_length_m": 0.4412240444095848,
+      "tail_rms_rad": 0.1973318313865156,
+      "relative_fit_error": 0.5410111482417015,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 18,
+      "L_m": 0.502991104,
+      "omega_rad_s": 3.920956192911824,
+      "effective_length_m": 0.6380945379157834,
+      "tail_rms_rad": 0.30327075572458434,
+      "relative_fit_error": 0.6705714350006406,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 19,
+      "L_m": 0.60734982,
+      "omega_rad_s": 3.6567656981422694,
+      "effective_length_m": 0.733626040490333,
+      "tail_rms_rad": 0.18736219283935818,
+      "relative_fit_error": 0.12797231023553687,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    },
+    {
+      "sid": 20,
+      "L_m": 0.71180802,
+      "omega_rad_s": 3.461402503560346,
+      "effective_length_m": 0.818775427522307,
+      "tail_rms_rad": 0.04571611244212571,
+      "relative_fit_error": 0.3886297389682165,
+      "calibration_start_s": 35.0,
+      "calibration_end_s": 90.0
+    }
+  ]
+}
