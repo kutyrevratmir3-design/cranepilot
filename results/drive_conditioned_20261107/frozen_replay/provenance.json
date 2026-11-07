@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "selection_sha256": "ccd0002d34dded0d014f49b1d532b85575f73534810315329b0e1cfe1bd959f1",
+  "development_sha256": "38e3de0924971bc537d6c5776e41d98b89646775715a251f753136a75ad28ac5",
+  "scope": "Previously opened old records; retrospective, not independent",
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "result_hashes": {
+    "jib_beta_s22.npz": "1cf68a08ec8d1d412fc5de60a492817dba538b7cb440c35398ea7bf926c6f193",
+    "jib_theta_s21.npz": "8b0df6201a1a8b572d5e23d7dfeb95a64649d440156823170dc8488702a804d3",
+    "jib_beta_s23.npz": "6d838b3a094044075d711f07d37ecfd16433ddf82f4df52ac8df63eaa3710781",
+    "jib_beta_s21.npz": "e7f4737295194e93141f3cdb0576b9b10d2a96f0c7f520238a56ceff4ace0a5c",
+    "jib_theta_s23.npz": "6d3c04ce1be4a6567f1070fde7cea4035341acddecced1d21957bd60fe5ce31a",
+    "simult_beta_s33.npz": "7f71a43b302ee0d7094150fef2f9e692383758bb2e95859f052555852d758317",
+    "simult_beta_s32.npz": "20cbad05e524d310454c1795ff8957f0b952e009dc54c131e59392fcc300bd23",
+    "jib_theta_s22.npz": "2888871658ba37a1e7fd3a5ebacfc6d2fdfa500edb7ce8f759d71a17cbe76820",
+    "metrics.csv": "a80122a470f3cd87422ef71215b72220bff734b8e824a48877a05eeea075765b",
+    "simult_theta_s33.npz": "1a81b44ccd05b17d81f07b9aadb018cf50c28fa0722b1e919265839182f3b41e",
+    "trolley_theta_s13.npz": "3a575a597b32d730d962b241be819cb644c31586c11e2bc7bf04a67a4393ed4e",
+    "simult_theta_s32.npz": "9e6de865b940241d4c3d8c3f5933e03f09b01638fd1aeebd2ea6dac8417ada8d",
+    "trolley_theta_s9.npz": "5c8180869c8fe1be662a76b7432914fece595d9380c64e260ad26ce427a77558"
+  }
+}

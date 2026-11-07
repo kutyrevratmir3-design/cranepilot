@@ -1,0 +1,16 @@
+method,mae_deg
+blend_hold_adapt,1.190435898559203
+blend_hold_fixed,1.1700900031457764
+blend_linear_adapt,1.1882709983889834
+blend_linear_fixed,1.1691299576839067
+free_modal,1.676142386018742
+frozen_arx,1.4144019368880703
+matched_free_blend,1.228539394904725
+matched_local_zero_blend,1.2285581067276683
+old_blend,1.2308957266894756
+physical_hold_adapt,1.6039097920799315
+physical_hold_fixed,1.6617556519568422
+physical_linear_adapt,1.6002323979802302
+physical_linear_fixed,1.6587140698407636
+selected,1.1882709983889834
+strong_arx,1.663312767647475

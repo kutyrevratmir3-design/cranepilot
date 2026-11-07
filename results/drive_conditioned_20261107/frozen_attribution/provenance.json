@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "source_hashes": {
+    "docs/DRIVE_ATTRIBUTION_DESIGN_20261107.md": "d8fbd9bb6ca05e6e88cd41f6c4534a98dc48862372c1a818a2d7690b5463a8ff",
+    "scripts/drive_attribution.py": "c8ddf1bb5cfb3182df6203be43f5c14ab910dc59f370a927762883f993655ee0",
+    "scripts/run_drive_attribution.py": "39d731bb2b29ced60223e134e905fdff11661bcd626fa9e35dd6a739d597df2c"
+  },
+  "selection_sha256": "ccd0002d34dded0d014f49b1d532b85575f73534810315329b0e1cfe1bd959f1",
+  "development_sha256": "38e3de0924971bc537d6c5776e41d98b89646775715a251f753136a75ad28ac5",
+  "late_diagnostic_after_trolley_validation": true,
+  "used_for_selection": false,
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "result_hashes": {
+    "validation_simult_beta_s28.npz": "18db54350a0c1905b15c849a0192be5fa557baa28d65089e585113d5aa0f2267",
+    "validation_simult_theta_s28.npz": "b605eb5d1c628bdf0213a19c2661bf3b598cfc869abc4d21ccb81af9c49a189c",
+    "metrics.csv": "c911ff45cf0bb7dc463caea86448023229bdcb3ede63c5a584a28502d409b81e",
+    "validation_jib_theta_s17.npz": "fe4470df9596c64f8c655bbbc5c664c0ff6e388c98afea810f3ee5c264a38f56",
+    "validation_trolley_theta_s4.npz": "693b730973f0246ababc5b3b9b8bf1ba5d3146bf3de1d252a4724608dd5b9926",
+    "validation_jib_beta_s17.npz": "d727a7b97ea27cbde59b7b72f5385d26f7741921ac625095e944a95811eb8569",
+    "old_evaluation_simult_beta_s33.npz": "7389aec5fd70b8b8745971a58932ca65091fc7587a0118c1e7a4397ab08cafca",
+    "old_evaluation_jib_theta_s21.npz": "8671c7fda4b6543a585d9e956bdd93ccda46c28080b8cde9cbc4827313b31f69",
+    "old_evaluation_jib_beta_s21.npz": "c0513a10b72b1c49c06affabcfb0500f64fef3955ec3eabcc5e28c009d1b2cf0",
+    "old_evaluation_simult_beta_s32.npz": "4c5da94538a3bda148ab261bbea1f7c6ed31f138d83634af47e416a00763e51e",
+    "old_evaluation_jib_beta_s23.npz": "038e16974d583846e3b48d89afb02f23a4d60ca17b20ecf29aa916c4ca3fe925",
+    "old_evaluation_jib_theta_s22.npz": "7e05c0156dc7218f33e0aabf0e5add9494e789a15f32849459a3f8ed4adabe6a",
+    "old_evaluation_jib_theta_s23.npz": "ea37d88b015dc0e24ea0866b3612f1023adc5ce6c7f854c7c21165c4d42fc0bc",
+    "old_evaluation_jib_beta_s22.npz": "a69e575a3c8674b3397a65212e4813af3d0b2e208b78396c878f49f4c0ed0dc5",
+    "old_evaluation_trolley_theta_s13.npz": "4678e3562cbc0698e693096dedf85cb202c3aa532e7a4c4289781f2b2f70e422",
+    "old_evaluation_trolley_theta_s9.npz": "f0f7aa235f5955297bc33e3ec88fb35a5cd8211eecdb20a31409cf34129346d6",
+    "old_evaluation_simult_theta_s33.npz": "07aa08353e9dcab6d5885817a44b92d0bfaa39d0687233482ea378a40020defa",
+    "old_evaluation_simult_theta_s32.npz": "1df9d959f86b030607185b86610f366270c86b55cce7b226a393b7ded81b97ec"
+  }
+}
