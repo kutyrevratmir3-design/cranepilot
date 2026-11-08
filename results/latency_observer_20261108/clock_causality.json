@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "source_sha256": "30c18871802faf2facfa6d4b9e89f8903c8d743c0c822daca4cfde82f3543f97",
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 0,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 3,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 15,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 0,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 3,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 15,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 0,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 3,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 15,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 0,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 3,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 15,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 0,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 3,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 15,
+      "origin_raw": 425,
+      "unreceived_angle_and_future_poison_had_no_effect": true
+    }
+  ],
+  "scope": "Validation-only metadata-fixed input causality audit; no new model selection",
+  "independent_confirmation": false,
+  "probes": 15
+}

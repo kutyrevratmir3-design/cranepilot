@@ -1,0 +1,15 @@
+CLOCK_VERIFIED trolley_theta 0
+CLOCK_VERIFIED trolley_theta 3
+CLOCK_VERIFIED trolley_theta 15
+CLOCK_VERIFIED jib_theta 0
+CLOCK_VERIFIED jib_theta 3
+CLOCK_VERIFIED jib_theta 15
+CLOCK_VERIFIED jib_beta 0
+CLOCK_VERIFIED jib_beta 3
+CLOCK_VERIFIED jib_beta 15
+CLOCK_VERIFIED simult_theta 0
+CLOCK_VERIFIED simult_theta 3
+CLOCK_VERIFIED simult_theta 15
+CLOCK_VERIFIED simult_beta 0
+CLOCK_VERIFIED simult_beta 3
+CLOCK_VERIFIED simult_beta 15

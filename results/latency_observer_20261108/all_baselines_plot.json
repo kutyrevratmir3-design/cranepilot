@@ -1,0 +1,15 @@
+{
+  "source_sha256": "513855d9261d26bcf8a6c3219acfc64e574117202bcb447625e60b5e8ce47fa5",
+  "data_sha256": "4876d77b6ce2786b3ede4e78af9341c9e584831845f0cf9c9e2147677a5784f5",
+  "image_sha256": "693f0fed1b656e5b176ece997ab462a0ba6e38892577824ee5b63aec554babfe",
+  "original_plot_preserved": true,
+  "methods": [
+    "unaware",
+    "timestamp_hold",
+    "selected",
+    "dated_modal",
+    "matched_arx",
+    "conditional_arx"
+  ],
+  "independent_confirmation": false
+}

@@ -1,0 +1,29 @@
+{
+  "document": "docs/LATENCY_OBSERVER_2026_11_08_RU.md",
+  "document_sha256": "ee67ed81e2f250d65e87ca8cdb8d0fc58d3f9149f71a3eb490c89cdf958b09d9",
+  "source_sha256": "66c063d635180381d7cea33b8f9f6bbb7e564d2d8b7e66f5ea53776aada71508",
+  "verification_sha256": "e77149237723104dc1271f111e923d69809a8f271550bb7eb454c810b8b0571a",
+  "selected": "quadratic_0.25",
+  "development_gate_passed": true,
+  "validation_gate_failures": [],
+  "age50_unaware_mae_deg": 1.329576838585478,
+  "age50_selected_mae_deg": 0.5774265648261424,
+  "age50_matched_arx_mae_deg": 1.1679750769955206,
+  "age50_conditional_arx_mae_deg": 1.0654049635717115,
+  "age50_hold_mae_deg": 0.7956553275971883,
+  "age50_change_vs_unaware_percent": -56.57065104710608,
+  "age50_change_vs_matched_arx_percent": -50.56173918440925,
+  "bundle_files": 44,
+  "bundle_bytes": 673872,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}
+method  augmented_arx  conditional_arx  dated_modal  matched_arx  selected  timestamp_hold   unaware
+age_ms                                                                                              
+0            1.132371         1.073798     0.756674     1.073798  0.525065        0.525065  0.525065
+20           1.124305         1.096148     0.775769     1.095626  0.554539        0.598439  0.765346
+30           1.132674         1.114533     0.783741     1.110991  0.560087        0.656029  0.946681
+50           1.178339         1.065405     0.794328     1.167975  0.577427        0.795655  1.329577
+70           1.204813         1.108055     0.800317     1.207349  0.605676        0.935587  1.722844
+100          1.260237         1.091054     0.814696     1.281577  0.667135        1.166826  2.347684
+150          1.753807         1.331673     0.833476     1.678464  0.846449        1.574849  3.430990

@@ -1,0 +1,6 @@
+case,reference_type,reference,augmented_model
+trolley_theta,aligned,"{'type': 'aligned', 'method': 'forced_3s_fixed', 'expert': 'active_arx'}",arx_angle_lpv_direct_1e-06.npz
+jib_theta,aligned,"{'type': 'aligned', 'method': 'forced_3s_fixed', 'expert': 'frozen_arx'}",arx_angle_lpv_direct_0.0001.npz
+jib_beta,aligned,"{'type': 'aligned', 'method': 'quadratic_0.25', 'expert': 'active_arx'}",arx_angle_lpv_direct_0.0001.npz
+simult_theta,augmented,"{'type': 'augmented', 'file': 'arx_angle_lpv_direct_1e-10.npz'}",arx_angle_lpv_direct_1e-10.npz
+simult_beta,aligned,"{'type': 'aligned', 'method': 'quadratic_0.25', 'expert': 'active_arx'}",arx_io_lpv_modal_age_residual_1.npz

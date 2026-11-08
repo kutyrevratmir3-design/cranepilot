@@ -1,6 +1,65 @@
-# CranePilot: состояние исследования на 7 ноября 2026
+# CranePilot: состояние исследования на 8 ноября 2026
 
-Последний завершённый этап: **regime_fusion_20261107**.
+Последний завершённый этап: **latency_observer_20261108**.
+Протокол/численные исходники доfitting `5d1ba2a`; weights/selection/bundle
+доreplay `265ba6a`. Timestampage — известный вход, одинаково доступный методам.
+Приage0прогноз точно прежнийregimepilot. Unknownlag не оценивался поtargets.
+
+Выбран `quadratic_0.25`: локальнаяквадратичная экстраполяция последней.25s,
+reindex реальнойpastθистории, headestimates исключены изbacktesttruth.
+Физические3sobservers,hold,linear и все120новыхARXfits сохранены. VALgatePASS,
+5/5casewins противпервоначальногоmatchedreference. Данные теже33ужеоткрыты:
+это syntheticdelay/noise qualification, не независимыеphysicaltrials.
+
+| Известныйвозраст угла, ms | Безучётаage, MAE° | Timestamp+hold | Выбранныйметод | Age-conditionedARX |
+|---|---:|---:|---:|---:|
+| 0 | 0.525065 | 0.525065 | 0.525065 | 1.073798 |
+| 20 | 0.765346 | 0.598439 | 0.554539 | 1.096148 |
+| 30 | 0.946681 | 0.656029 | 0.560087 | 1.114533 |
+| 50 | 1.329577 | 0.795655 | 0.577427 | 1.065405 |
+| 70 | 1.722844 | 0.935587 | 0.605676 | 1.108055 |
+| 100 | 2.347684 | 1.166826 | 0.667135 | 1.091054 |
+| 150 | 3.430990 | 1.574849 | 0.846449 | 1.331673 |
+
+При50ms:−56.57%vsunaware,−27.43%vsplainhold; originalglobalARX1.167975°,
+дополнительныйconditionalARX1.065405°, выбранный.577427°. При150ms
+простойdated-modal.833476° чутьлучшеselected.846449°; проигрышнеудалён,
+selectionнеперевыбирался. Новыеnumericalages30/70/150ms неучаствовали ввыборе,
+но относятся к старымrecordings. Это не новые независимые данные.
+
+Age-conditionedARX — отдельныйlatepost-hocконтрольпослепросмотраисходнойкривой:
+20case/ageвыборов только поVAL; source/choices заморожены `7d01029` доегоreplay.
+Он не менял primarymodel/gate/bundle. Наunknownageнетзаявленияработоспособности.
+Вход:401θsamples заканчиваются наt−age,401L/support/reference samplesнаt;
+100Hz,age0..15целыхsamples. Rawprehistoryреальная,неpadding. Origins4.25s,
+stride1s; этиMAEнесравниватьнапрямуюс прежней.25sсеткой.
+
+235testsPASS;5selectedARXTRAINrefits,все120VALscores/8methods/selection/gate
+воспроизведены(41360comparisons). Fullraw/API102272comparisonsточно0error;
+дополнительныйARX15792comparisonsточно0error/20VALchoices.15clockpoisonprobes:
+unreceivedθ/futurechannels не влияют наinference. Headtruth используется
+толькопозднимofflineVALdiagnostic,непопадаетвмодель.1281originalmain/APHYNITY
+файлацелы.122старыеEOL-onlyразличиясохранены. Всеoutputs/провалы сохранены.
+
+Отдельный data-free `artifacts/latency_bundle_20261108`:44files673872bytes,
+`FrozenLatencyPilot.forecast(...,angle_age_samples=...,include_reference=...)`.
+ПрежниеAPIs/default/bundles/APhynityнеизменны. Portableinferenceблокировалnp.load
+внеbundle. CPUmedian52–62ms/packet,15zero probesL.4m×ages0/50/150ms:
+maxbias.033350°,неexactequilibrium. Никакойreal-time/controller/hardwareguarantee.
+
+Отчёты: [latency study](docs/LATENCY_OBSERVER_2026_11_08_RU.md),
+[API](docs/LATENCY_BUNDLE_20261108.md), [lateARXchallenge](docs/LATENCY_REFERENCE_CHALLENGE_20261108.md).
+Всеweights/forecasts/validation/verification/diagnostics/ZIP в
+`results/latency_observer_20261108`. Intakeдополненacquisition/arrivalclock,
+фильтрами/ихзадержками и genuine4s+ageпредысторией. Новыхauthorrawlogs
+неполучено. Независимаяцельещёоткрыта; старые33несчитатьfresh. Nativeactuator
+иclosed-loop/MPCпреимущество не доказаны; авторуагентнеписал.
+
+Полный график всехbaselineвключаяdatedmodal: `results/latency_observer_20261108/latency_all_baselines.png`.
+
+## Предыдущий этап: причинное смешивание по режимам
+
+Завершённый ранее этап: **regime_fusion_20261107**.
 Протокол/численный код до выбора `4f54dbc`; frozenselection/bundle до replay
 `e62efa4`. Никаких новых TRAINfits: четыре сохранённых эксперта,4sдоступной
 истории и причинные веса по последней уже наблюдённой1s. Один общий вариант
