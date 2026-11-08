@@ -1,0 +1,3036 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "validation",
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 24,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 25,
+      "noise": 0,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "role": "old_evaluation",
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 25,
+      "noise": 1,
+      "windows": 94,
+      "methods": 25,
+      "maximum_error_rad": 0.0
+    }
+  ],
+  "source_sha256": "4d4f17b5de7a4398069ed487011fe19fe8a852a2f939223a34f1cde73a2b1f76",
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "development_sha256": "30b455d6f812bc3cc1e8d1299712ef3ed5ccc4f57a0e86f2a005a978709a1507",
+  "retrospective_sha256": "f22abef4257cd6311a69866265beeb4540dfb78c77c9fd5ab450c9de0c1ec705",
+  "bundle_sha256": "8e8255a57c655cb2d34bc6777e698214d1ef832981b1002ff1385604115a5c73",
+  "forecast_comparisons": 642960,
+  "all_retrospective_metrics_recomputed": true,
+  "portable_api_no_dataset_or_parent_runs": true,
+  "age_zero_identity": true,
+  "clock_poison_probes": [
+    {
+      "case": "trolley_theta",
+      "age_raw": 0,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 5,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 15,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 0,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 5,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 15,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 0,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 5,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 15,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 0,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 5,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 15,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 25,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 0,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 5,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 15,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 25,
+      "maximum_error_rad": 0.0
+    }
+  ],
+  "zero_probes": [
+    {
+      "case": "trolley_theta",
+      "age_raw": 0,
+      "maximum_bias_deg": 0.015328247620834044
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 5,
+      "maximum_bias_deg": 0.010527247666156281
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 15,
+      "maximum_bias_deg": 0.006316348599693768
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 25,
+      "maximum_bias_deg": 0.004511677571209834
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 0,
+      "maximum_bias_deg": 0.006034947840286374
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 5,
+      "maximum_bias_deg": 0.0040804179243260665
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 15,
+      "maximum_bias_deg": 0.0024482507545956394
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 25,
+      "maximum_bias_deg": 0.0017487505389968852
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 0,
+      "maximum_bias_deg": 0.010233925452953204
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 5,
+      "maximum_bias_deg": 0.006705332161920317
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 15,
+      "maximum_bias_deg": 0.00402319929715219
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 25,
+      "maximum_bias_deg": 0.002873713783680135
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 0,
+      "maximum_bias_deg": 0.030098725598277115
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 5,
+      "maximum_bias_deg": 0.022233192911045103
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 15,
+      "maximum_bias_deg": 0.013339915746627061
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 25,
+      "maximum_bias_deg": 0.009528511247590757
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 0,
+      "maximum_bias_deg": 0.0014488184855990782
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 5,
+      "maximum_bias_deg": 0.0012032036621233378
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 15,
+      "maximum_bias_deg": 0.0007219221972740026
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 25,
+      "maximum_bias_deg": 0.0005156587123385733
+    }
+  ],
+  "cpu_timing": [
+    {
+      "case": "trolley_theta",
+      "age_raw": 15,
+      "repeats": 3,
+      "median_ms": 134.7414170159027
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 15,
+      "repeats": 3,
+      "median_ms": 127.22004199167714
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 15,
+      "repeats": 3,
+      "median_ms": 126.91175000509247
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 15,
+      "repeats": 3,
+      "median_ms": 139.83837503474206
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 15,
+      "repeats": 3,
+      "median_ms": 128.73462500283495
+    }
+  ],
+  "maximum_forecast_error_rad": 0.0
+}

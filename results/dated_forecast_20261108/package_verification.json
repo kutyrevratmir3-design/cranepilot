@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "archive": "results/dated_forecast_20261108/dated_forecast_evidence.zip",
+  "archive_bytes": 46999375,
+  "archive_sha256": "a7f87cc685c1cbd6ab26c1daadb329ef25dc767ad3ae85e35bc85b0be4dbff86",
+  "entries": 554,
+  "manifest_sha256": "b83cfc7c6dec06f5ef2ee2404d3ecafbf5322272c704231ed052f0c788700a71",
+  "all_entry_crc_and_sha256_verified": true,
+  "all_manifest_live_files_verified": true,
+  "development_and_replay_mirrors_byte_identical": true,
+  "package_report_excluded_from_its_own_archive": true
+}

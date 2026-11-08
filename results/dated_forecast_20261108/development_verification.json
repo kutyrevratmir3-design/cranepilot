@@ -1,0 +1,520 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 20,
+      "noise": 0,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "age_raw": 20,
+      "noise": 1,
+      "windows": 94,
+      "methods": 21,
+      "maximum_error_rad": 0.0
+    }
+  ],
+  "source_sha256": "4d4f17b5de7a4398069ed487011fe19fe8a852a2f939223a34f1cde73a2b1f76",
+  "independent_confirmation": false,
+  "development_sha256": "30b455d6f812bc3cc1e8d1299712ef3ed5ccc4f57a0e86f2a005a978709a1507",
+  "all_120_train_fits_rebuilt": [
+    {
+      "case": "trolley_theta",
+      "train_windows": 11280,
+      "fits": 24
+    },
+    {
+      "case": "jib_theta",
+      "train_windows": 6768,
+      "fits": 24
+    },
+    {
+      "case": "jib_beta",
+      "train_windows": 6768,
+      "fits": 24
+    },
+    {
+      "case": "simult_theta",
+      "train_windows": 7896,
+      "fits": 24
+    },
+    {
+      "case": "simult_beta",
+      "train_windows": 7896,
+      "fits": 24
+    }
+  ],
+  "all_30_conditional_reference_choices_reproduced": true,
+  "all_21_method_scores_recomputed": true,
+  "gate_reproduced": true,
+  "age_zero_identity": true,
+  "all_validation_metrics_recomputed": true
+}

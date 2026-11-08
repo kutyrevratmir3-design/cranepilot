@@ -1,0 +1,162 @@
+{
+  "experiment": "modal_history_20261107",
+  "data": "data/processed",
+  "history_samples": 81,
+  "history_spacing_raw": 5,
+  "dt_s": 0.05,
+  "horizons_raw": [
+    10,
+    20,
+    35,
+    50,
+    75,
+    100,
+    150
+  ],
+  "origin_start_s": 25,
+  "origin_stride_raw": 10,
+  "past_length_range_m": 0.002,
+  "past_position_range": 0.002,
+  "future_reference_range": 1e-09,
+  "families": {
+    "trolley": {
+      "axes": [
+        "theta"
+      ],
+      "train": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "validation": [
+        4
+      ],
+      "confirmation": [
+        9,
+        13
+      ]
+    },
+    "jib": {
+      "axes": [
+        "theta",
+        "beta"
+      ],
+      "train": [
+        14,
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "validation": [
+        17
+      ],
+      "confirmation": [
+        21,
+        22,
+        23
+      ]
+    },
+    "simult": {
+      "axes": [
+        "theta",
+        "beta"
+      ],
+      "train": [
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation": [
+        28
+      ],
+      "confirmation": [
+        32,
+        33
+      ]
+    }
+  },
+  "ridge_grid": [
+    1e-10,
+    1e-08,
+    1e-06,
+    0.0001,
+    0.01,
+    1
+  ],
+  "arx_forms": [
+    "direct",
+    "harmonic_residual",
+    "lpv_direct",
+    "lpv_harmonic_residual"
+  ],
+  "frequency_ratios": {
+    "min": 0.5,
+    "max": 1.6,
+    "count": 89
+  },
+  "damping_grid": [
+    0,
+    0.04,
+    0.12,
+    0.3
+  ],
+  "modal_variants": [
+    "fixed",
+    "one_mode",
+    "two_mode"
+  ],
+  "secondary_ratios": {
+    "min": 0.5,
+    "max": 3,
+    "count": 101
+  },
+  "minimum_mode_separation_ratio": 0.2,
+  "minimum_amplitude_bins": 1,
+  "local_ar_orders": [
+    2,
+    4,
+    8
+  ],
+  "local_ar_ridge": [
+    1e-08,
+    0.0001,
+    0.01
+  ],
+  "development_gate": {
+    "maximum_mae_ratio": 0.9,
+    "minimum_case_wins": 4,
+    "cases": 5
+  },
+  "confirmation_gate": {
+    "maximum_mae_ratio": 0.9,
+    "minimum_scenario_wins": 5,
+    "scenarios": 7,
+    "bootstrap_samples": 10000,
+    "seed": 7112030,
+    "upper_change_percent_below": 0
+  },
+  "sealed_confirmation_ids": [
+    9,
+    13,
+    21,
+    22,
+    23,
+    32,
+    33
+  ],
+  "confirmation_status": "Previously imported public records with no saved fitting/validation/score use found; NOT newly collected or independently acquired data. Keep sealed until development gate and frozen checkpoint/selection hash.",
+  "scope": "Causal residual-sway forecasting after 25s, with stationary past length/drive and constant known future reference; not active-manoeuvre prediction, hoisting dynamics, hardware control or a new modal identification algorithm. No target-based eligibility or future measured positions/lengths."
+}

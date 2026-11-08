@@ -18,4 +18,6 @@ No fit, parameter, historical source, test expectation or workflow is changed.
 
 A clean `git archive` checkout is tested using the restored Python 3.12
 environment. This verifies missing-file and source-hash behavior without
-relying on the local ignored runs. Actual Linux CI remains a separate check.
+relying on the local ignored runs. All 243 tests passed in that clean copy.
+Actual Linux CI also passed at commit `d93121d`:
+[run 42490990869](https://github.com/kutyrevratmir3-design/cranepilot/actions/runs/42490990869).

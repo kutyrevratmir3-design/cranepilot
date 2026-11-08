@@ -18,12 +18,12 @@ def main():
     for (age,noise),frame in m.groupby(['age_ms','noise_quantum']):
         c,_=balanced_cases(frame)
         for method,value in c.groupby('method').mae_deg.mean().items():balanced.append(dict(age_ms=int(age),noise_quantum=float(noise),method=method,balanced_mae_deg=float(value)))
-    pd.DataFrame(balanced).to_csv(OUT/'balanced_summary.csv',index=False);val=pd.DataFrame([dict(method=k,balanced_mae_deg=value,selected=k==s['selected']) for k,value in s['validation_means'].items()]).sort_values('balanced_mae_deg');val.to_csv(OUT/'validation_summary.csv',index=False);refs=pd.DataFrame([dict(case=name,age_ms=int(age)*10,reference=c['key']) for name,case in s['cases'].items() for age,c in case['reference'].items()]);refs.to_csv(OUT/'reference_choices.csv',index=False);pairs=records[records['group']=='all'].pivot(index=['age_ms','noise_quantum','scenario'],columns='method',values='mae_deg').reset_index();pairs['delta_parent_deg']=pairs.selected-pairs.parent_quad;pairs['delta_arx_deg']=pairs.selected-pairs.matched_arx;pairs['delta_bare_modal_deg']=pairs.selected-pairs.bare_dated_modal;pairs.to_csv(OUT/'paired_scenario_changes.csv',index=False);fig,axs=plt.subplots(1,2,figsize=(13,5),layout='constrained')
+    balanced=pd.DataFrame(balanced);balanced.to_csv(OUT/'balanced_summary.csv',index=False);balanced_clean=balanced[balanced.noise_quantum==0].pivot(index='age_ms',columns='method',values='balanced_mae_deg').sort_index();val=pd.DataFrame([dict(method=k,balanced_mae_deg=value,selected=k==s['selected']) for k,value in s['validation_means'].items()]).sort_values('balanced_mae_deg');val.to_csv(OUT/'validation_summary.csv',index=False);refs=pd.DataFrame([dict(case=name,age_ms=int(age)*10,reference=c['key']) for name,case in s['cases'].items() for age,c in case['reference'].items()]);refs.to_csv(OUT/'reference_choices.csv',index=False);pairs=records[records['group']=='all'].pivot(index=['age_ms','noise_quantum','scenario'],columns='method',values='mae_deg').reset_index();pairs['delta_parent_deg']=pairs.selected-pairs.parent_quad;pairs['delta_arx_deg']=pairs.selected-pairs.matched_arx;pairs['delta_bare_modal_deg']=pairs.selected-pairs.bare_dated_modal;pairs.to_csv(OUT/'paired_scenario_changes.csv',index=False);fig,axs=plt.subplots(1,2,figsize=(13,5),layout='constrained')
     for j,noise in enumerate([0,1]):
         frame=summary[(summary['group']=='all')&(summary.noise_quantum==noise)].pivot(index='age_ms',columns='method',values='mae_deg').sort_index()
-        for method,label in [('parent_quad','Previous quadratic adapter'),('selected','Frozen VAL selection'),('bare_dated_modal','Bare dated modal (4s)'),('direct_variable_length','Variable-length propagation (2.5s)'),('matched_arx','Age-conditioned ARX pool')]:axs[j].plot(frame.index,frame[method],marker='o',markersize=4,label=label)
+        for method,label in [('parent_quad','Previous quadratic adapter'),('selected','Frozen VAL selection'),('bank_simplex_1','Direct bank alone (simplex 1)'),('bare_dated_modal','Bare dated modal (4s)'),('direct_variable_length','Variable-length propagation (2.5s)'),('matched_arx','Age-conditioned ARX pool')]:axs[j].plot(frame.index,frame[method],marker='o',markersize=4,label=label)
         axs[j].set_xlabel('Known acquisition age of angle (ms)');axs[j].set_ylabel('MAE (degrees), equal old scenarios/axes/horizons');axs[j].set_title('Clean history' if noise==0 else 'Synthetic history jitter ±encoder quantum');axs[j].grid(alpha=.2)
-    axs[0].legend(frameon=False,fontsize=8);fig.suptitle('Retrospective sensitivity; 30/70/250ms absent from new TRAIN/VAL');fig.savefig(OUT/'dated_forecast.png',dpi=170);plt.close(fig);headline=curve[['parent_quad','selected','bare_dated_modal','direct_variable_length','matched_arx','augmented_arx']].reset_index();timing=pd.DataFrame(v['cpu_timing']);timing.to_csv(OUT/'cpu_timing.csv',index=False);zero=pd.DataFrame(v['zero_probes']);zero.to_csv(OUT/'zero_probes.csv',index=False);oldrank=curve.drop(columns='selected').mean().sort_values().rename('old_clean_mean_mae_deg').reset_index();oldrank.to_csv(OUT/'all_candidate_old_ranking.csv',index=False);cfg=p['config'];g=cfg['development_gate'];chosen=s['selected'];means=s['validation_means'];failed=[]
+    axs[0].legend(frameon=False,fontsize=8);fig.suptitle('Retrospective sensitivity; 30/70/250ms absent from new TRAIN/VAL');fig.savefig(OUT/'dated_forecast.png',dpi=170);plt.close(fig);headline=curve[['parent_quad','selected','bank_simplex_1','bare_dated_modal','direct_variable_length','matched_arx','augmented_arx']].reset_index();timing=pd.DataFrame(v['cpu_timing']);timing.to_csv(OUT/'cpu_timing.csv',index=False);zero=pd.DataFrame(v['zero_probes']);zero.to_csv(OUT/'zero_probes.csv',index=False);oldrank=curve.drop(columns='selected').mean().sort_values().rename('old_clean_mean_mae_deg').reset_index();oldrank.to_csv(OUT/'all_candidate_old_ranking.csv',index=False);cfg=p['config'];g=cfg['development_gate'];chosen=s['selected'];means=s['validation_means'];failed=[]
     if means[chosen]>g['maximum_parent_ratio']*means['parent_quad']:failed.append('меньше 3% выигрыша у прежнего адаптера')
     if means[chosen]>g['maximum_arx_ratio']*means['matched_arx']:failed.append('меньше 5% выигрыша у условного ARX')
     if s['arx_case_wins']<g['minimum_arx_case_wins']:failed.append('меньше 4/5 выигранных случаев у ARX')
@@ -87,6 +87,9 @@ quiet/drive. Полная таблица, включая отрицательн�
 не получены. Это ретроспективное испытание синтетической задержки/шума.
 30/70/250 мс не участвовали в новой сетке TRAIN/VAL. Угол задержан искусственно,
 записанные команды/положение остаются прежними, замкнутый контур не пересчитан.
+Шум добавлен только к полученной истории; цель — прежний encoder, а не
+независимый высокоточный физический эталон. Непрерывный сетевой процесс,
+потери пакетов и неизвестная меняющаяся задержка здесь не проверены.
 
 {table(headline)}
 
@@ -95,6 +98,18 @@ quiet/drive. Полная таблица, включая отрицательн�
 ошибке или амплитуде. Перекрывающиеся окна не являются независимыми trials.
 
 {chr(10).join(lines)}
+
+При 200 и 250 мс один прямой банк `bank_simplex_1` точнее выбранной смеси:
+{curve.loc[200,'bank_simplex_1']:.6f}° и {curve.loc[250,'bank_simplex_1']:.6f}°
+соответственно. Выбор не менялся по этим числам. Член переменной длины меняет
+общую чистую MAE относительно свободной модели 2.5 с максимум на
+{np.abs(curve.direct_variable_length-curve.direct_free2p5).max():.6f}°; это не
+основание приписывать ему основной выигрыш смеси.
+
+Для сопоставления с критерием выбора ниже также приведена balanced MAE:
+равные пять случаев, записи внутри случая и quiet/drive при их наличии.
+
+{table(balanced_clean[['parent_quad','selected','bank_simplex_1','matched_arx']].reset_index())}
 
 Все индивидуальные проигрыши, режимы, шумы и кандидаты сохранены в CSV/NPZ.
 График включает простой dated modal и переменную длину даже при их выигрыше
@@ -125,7 +140,11 @@ ARX, общий выбор, gate и все метрики. Полный raw/API 
 401 отсчёт newest-first; age обязателен из реальных метаданных, не оценён по
 будущей ошибке. Проверка API запрещала np.load вне этого bundle: данные и
 ранние runs для inference не нужны, нужен репозиторий и его зависимости.
-Новый профиль экспериментальный; прежний default не заменён.
+Новый профиль экспериментальный; прежний default не заменён. Отдельно
+исправлена воспроизводимость старых тестов: точный сохранённый JSON параметров
+добавлен в Git без изменения его содержимого. На чистом git archive прошли
+243 теста, затем прошёл Linux GitHub CI (run 42490990869, commit d93121d).
+Подробности в CI_FIXTURE_20261108.md; это исправление комплектации, не обучение.
 
 {table(timing)}
 
