@@ -1,0 +1,12 @@
+test_dated_modal_advances_the_sensor_clock (tests.test_latency_observer.LatencyObserverTests.test_dated_modal_advances_the_sensor_clock) ... ok
+test_forced_head_uses_known_support_gap_without_angle_truth (tests.test_latency_observer.LatencyObserverTests.test_forced_head_uses_known_support_gap_without_angle_truth) ... ok
+test_linear_completion_recovers_ramp_and_preserves_input (tests.test_latency_observer.LatencyObserverTests.test_linear_completion_recovers_ramp_and_preserves_input) ... ok
+test_mixed_step_force_basis_matches_independent_foh_integration (tests.test_latency_observer.LatencyObserverTests.test_mixed_step_force_basis_matches_independent_foh_integration) ... ok
+test_observed_tail_is_reindexed_without_extrapolation (tests.test_latency_observer.LatencyObserverTests.test_observed_tail_is_reindexed_without_extrapolation) ... ok
+test_unknown_unsupported_age_and_future_fields_are_rejected (tests.test_latency_observer.LatencyObserverTests.test_unknown_unsupported_age_and_future_fields_are_rejected) ... ok
+test_zero_age_is_exact_identity_for_every_adapter (tests.test_latency_observer.LatencyObserverTests.test_zero_age_is_exact_identity_for_every_adapter) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.076s
+
+OK
