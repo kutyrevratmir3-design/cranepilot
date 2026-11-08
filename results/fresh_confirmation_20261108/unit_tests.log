@@ -1,0 +1,28 @@
+TICK adaptive_observer 0 batch_seconds 0.008
+TICK physical 0 batch_seconds 0.009
+  continued seed=7 epoch=0 selection=0.692764 best=0.692764
+  observer_only seed=7 epoch=0 selection=0.842692 best=0.842692
+  innovation_only seed=7 epoch=0 selection=0.931493 best=0.931493
+  l2sp seed=7 epoch=0 selection=0.692799 best=0.692799
+  function_anchor seed=7 epoch=0 selection=0.692924 best=0.692924
+  sam seed=7 epoch=0 selection=0.692375 best=0.692375
+  ema seed=7 epoch=0 selection=0.977414 best=0.977414
+  phase_space seed=7 epoch=0 selection=0.692816 best=0.692816
+  group_dro seed=7 epoch=0 selection=0.690545 best=0.690545
+  lbfgs_polish seed=7 epoch=0 selection=0.696313 best=0.696313
+  continued seed=0 epoch=0 selection=1.100000 best=1.000000
+  force8 seed=42 epoch=0 selection=0.994077 best=0.994077
+  force16 seed=42 epoch=0 selection=0.992518 best=0.992518
+  direct8 seed=42 epoch=0 selection=0.997309 best=0.997309
+  force8_phase seed=42 epoch=0 selection=0.993083 best=0.993083
+  direct8 seed=19 epoch=0 selection=1.006554 best=1.000000
+  stable_residual6 seed=7 epoch=0 selection=2426262322.613474 best=0.000000
+  stable_standalone6 seed=6 epoch=0 selection=0.872713 best=0.872713
+  stable_standalone12 seed=6 epoch=0 selection=0.887221 best=0.887221
+  stable_residual6 seed=6 epoch=0 selection=0.991339 best=0.991339
+  stable_residual6 seed=6 epoch=0 selection=0.991620 best=0.991620
+TICK fixed_force_observer 0 batch_seconds 0.009
+----------------------------------------------------------------------
+Ran 297 tests in 32.152s
+
+OK

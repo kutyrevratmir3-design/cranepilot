@@ -1,0 +1,12 @@
+{
+  "contract_id": "inteco_x69hyyv3zw2_raw_export_20261108",
+  "training_dataset_doi": "10.17632/x69hyyv3zw.2",
+  "training_processed_manifest": "data/processed/manifest.json",
+  "training_processed_manifest_sha256": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85",
+  "references": {
+    "xr": {"unit": "native", "semantics": "inteco_xr_as_logged_unverified_servo_scale"},
+    "Jr": {"unit": "native", "semantics": "inteco_Jr_as_logged_unverified_servo_scale"}
+  },
+  "interpretation": "The source importer reports coordinate-reference labels but servo scaling/actuator meaning remains unconfirmed. The frozen predictors consume the original numerical export. This contract preserves that fact; it does not identify motor force, voltage, acceleration or desired position. A new source needs explicit evidence of equivalent exporter/scale/semantics, or a separately preregistered verified conversion contract. Channel names alone are insufficient.",
+  "physical_semantics_confirmed": false
+}

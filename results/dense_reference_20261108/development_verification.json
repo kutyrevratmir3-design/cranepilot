@@ -1,0 +1,583 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 0,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 0,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 2,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 2,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 5,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 5,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 10,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 10,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 15,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 15,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 20,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 20,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 15,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 15,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 20,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 20,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 15,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 15,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 20,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 20,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 15,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 15,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 20,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 20,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 15,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 15,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 20,
+      "noise": 0,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 20,
+      "noise": 1,
+      "options": 304,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    }
+  ],
+  "train_refits": [
+    {
+      "case": "trolley_theta",
+      "fits": 24,
+      "train_windows": 44880
+    },
+    {
+      "case": "jib_theta",
+      "fits": 24,
+      "train_windows": 26928
+    },
+    {
+      "case": "jib_beta",
+      "fits": 24,
+      "train_windows": 26928
+    },
+    {
+      "case": "simult_theta",
+      "fits": 24,
+      "train_windows": 31416
+    },
+    {
+      "case": "simult_beta",
+      "fits": 24,
+      "train_windows": 31416
+    }
+  ],
+  "source_sha256": "208428694653f13987027103dc84a4d7706bae4dd41afd5993384face3a51999",
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "development_sha256": "bfcb43f8c19f9bf14c3ff6341eb2955270a424188e846072b121ab35ce9f7fe0",
+  "all_120_train_fits_rebuilt": true,
+  "all_30_reference_choices_reproduced": true,
+  "all_validation_option_scores_recomputed": true,
+  "validation_option_scores": 18240,
+  "dense_source_support_verified": true,
+  "original_first_origins_retained": true,
+  "primary_unchanged": true
+}
