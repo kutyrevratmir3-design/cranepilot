@@ -1,0 +1,1296 @@
+{
+  "passed": true,
+  "mode": "full_saved_array_audit",
+  "source_sha256": "cac7b1fe298366b2da3197d0c73b4b6e40d235c2a6b6c2f89ea2c947fa8fd57b",
+  "provenance_sha256": "18906f59d11633596823f47bc96c2bd5f72485f105c844b125377beb778c2a18",
+  "input_manifest_sha256": "4790c96ba395e562f714475a8a3b33e1bc2d58631344158d20fd6285570ba009",
+  "hashes_verified": {
+    "producer_sources": 4,
+    "frozen_evidence": 524,
+    "old_guarded_inputs": 711,
+    "primary_bundle_files": 45,
+    "primary_source_files": 3,
+    "reference_bundle_files": 19,
+    "reference_source_files": 11,
+    "saved_results": 92
+  },
+  "batches": 84,
+  "physical_records": 7,
+  "paired_angle_history_batches": 372,
+  "forecast_vectors": 69936,
+  "zero_offset_vectors_checked": 15792,
+  "maximum_zero_offset_error_rad": 0.0,
+  "axis_horizon_metric_cells": 5208,
+  "common_true_ages_raw": [
+    2,
+    5,
+    10,
+    15,
+    20
+  ],
+  "exact_processed_targets": true,
+  "complete_paired_coverage": true,
+  "csv_checks": [
+    {
+      "file": "axis_horizon_metrics.csv",
+      "rows": 5208,
+      "maximum_error_deg": 6.994405055138486e-15
+    },
+    {
+      "file": "record_horizon_metrics.csv",
+      "rows": 3038,
+      "maximum_error_deg": 3.1086244689504383e-15
+    },
+    {
+      "file": "mean_by_horizon.csv",
+      "rows": 434,
+      "maximum_error_deg": 7.494005416219807e-16
+    },
+    {
+      "file": "paired_record_all_horizons.csv",
+      "rows": 217,
+      "maximum_error_deg": 4.440892098500626e-16
+    },
+    {
+      "file": "mean_by_true_age_offset.csv",
+      "rows": 62,
+      "maximum_error_deg": 3.0531133177191805e-16
+    },
+    {
+      "file": "reference_routes.csv",
+      "rows": 372,
+      "maximum_error_deg": 0.0
+    },
+    {
+      "file": "available_support_offset_means.csv",
+      "rows": 10,
+      "maximum_error_deg": 2.220446049250313e-16
+    },
+    {
+      "file": "common_interior_offset_means.csv",
+      "rows": 10,
+      "maximum_error_deg": 8.673617379884035e-17
+    }
+  ],
+  "batch_checks": [
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s21_a0.npz",
+      "sha256": "dc3b7d6ab57742d6fe9da18640a2fce9ce05834d6147db66fb6bba2f2f21b714",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s21_a10.npz",
+      "sha256": "5859dfe972f8f9b8d92e2941c738e878952bb766d47ea81bf849b33bc8c62d3f",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s21_a15.npz",
+      "sha256": "4191e8c08f05bd95ae1624585c1575e09ce925832f7dc66e71263205958261b8",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s21_a2.npz",
+      "sha256": "ffb40a1aaadd3ff108651ac2ac7b38d729803824cacde9363fd4e27f7fc20f22",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s21_a20.npz",
+      "sha256": "c620517985ef8339afba026aa096eb8b510169c2eca5e219c79e71ad1ed7f374",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s21_a25.npz",
+      "sha256": "5336bb1cf87dc2114a7ec68d000125eef45d75adf2d6e6edb8ad3693e2a1f9a0",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s21_a5.npz",
+      "sha256": "2820189874340f53875ec71776c4308a7bd2a067313a40b1a36279d38bb42ffa",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s22_a0.npz",
+      "sha256": "e1c803d19a0850419729efe42e6ab908dacf0ef45375d5bc1f99028286b1db0e",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s22_a10.npz",
+      "sha256": "f4143378114f395f024fca3912924217ae9d7578fe1d59f8ad03a1e0d06ee1a2",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s22_a15.npz",
+      "sha256": "24cf8bfb07d6b3a398bd20919047b4576b1f91ceb096ae1a78ca3156cb341591",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s22_a2.npz",
+      "sha256": "49dea26ea1954bc5adca17265f1ba00d62fd02473bc8b3b24c3a528d1f4a9254",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s22_a20.npz",
+      "sha256": "82a81d0dc2d7fea06dcb8e28d62dba5e9bb6ea570e7304e7f3ee53558a45ab6c",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s22_a25.npz",
+      "sha256": "cdc338431c55da2b1cb7c63ad9c696c373888ef5bfe18fc2f1d6e24f09647e9c",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s22_a5.npz",
+      "sha256": "f42730a01d3e6d49e990d92bd487c5f6238f876ccaa3c9382324d2f748d01936",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s23_a0.npz",
+      "sha256": "4ca21d7598713babbd7c5860c35103509913ce3b429b513ee94e9a3c8b857c38",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s23_a10.npz",
+      "sha256": "fb52d45e1ec8507430d06f70dc46bcd475e652c0726b63c072465ee087a6e0a2",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s23_a15.npz",
+      "sha256": "a7cc9cc98c93f32598df15df94e5010ffe685212e230b33cb4b8bb23cbd0aed1",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s23_a2.npz",
+      "sha256": "3416e8925ef4677ba380e9efa80f48557b7db3132f30a7c077266e51c6633e09",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s23_a20.npz",
+      "sha256": "770181186ab3c2ed01f2ddde0c00fcfaf846cf7fc741d922ecdead152e07334b",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s23_a25.npz",
+      "sha256": "6d1f1aad2f7c3903ae87cd59086eec7b4f0616e23ba826a86b29936e743b5ce8",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_beta_s23_a5.npz",
+      "sha256": "7bdff9a1404b70a6a1360f1cf3ac9291125f3e02f29f0f45408c8b978e81459f",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s21_a0.npz",
+      "sha256": "10946391dbf824cbef7a216e78766f796a88e5076573318cd5f09f382a8d20c5",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s21_a10.npz",
+      "sha256": "a38b3383192e278bedb637898099c4b52b1a3ac21878f828f63e319ba6fce3d6",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s21_a15.npz",
+      "sha256": "17d82b05a38e87cb5ce02702892fb20716553cdcb81b27775d0294e67f58ff38",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s21_a2.npz",
+      "sha256": "258cb99d59210815ff9a35a90ff08309af809b056f940460ae66bd76a38b0156",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s21_a20.npz",
+      "sha256": "43cc704e78d929d62279b0baa811ff1c301fc442ea397bd0bf9b86d3e432610b",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s21_a25.npz",
+      "sha256": "eb78d5cdf4f192230930448e6c8062ce06bf0b5770c88571725e366522ec4e65",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s21_a5.npz",
+      "sha256": "ef714cbaf5859b4e0441de3f8759bfe3b89b9e13b8ec659fd5dd7bbe985d5f17",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s22_a0.npz",
+      "sha256": "62e85ab1e71e0d57e347d67d6bb05210b434a98d5439440ea87fbcd6ac2d3d4d",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s22_a10.npz",
+      "sha256": "3f3b7397ce12fb23fe5531e496f584c034e3910804d0b3b039b09a553f20a810",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s22_a15.npz",
+      "sha256": "3e50de927ae42cabdf5ad6592f9f84f9ba66bbad1bb2cde87ec1681589ef8471",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s22_a2.npz",
+      "sha256": "6a63aa24cff3477eb5c99278d37afbb83b76034d5759361431063c27c96e97e9",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s22_a20.npz",
+      "sha256": "953efd7f3db2a4a09aa36d2552a4cf2f7b52ebbacb7b334e3216a287e1ed7874",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s22_a25.npz",
+      "sha256": "840026c724da3c146194cf80f1eb452c3804ca4fdb131c648e4fb5e3f2bccda9",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s22_a5.npz",
+      "sha256": "bcb4ffd783cf77eb3bf0ff86570b661c8d549dd42009866b50c671a89e4d84c8",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s23_a0.npz",
+      "sha256": "fb33fcb236c2fd374756a8114545b50147ae45149c4f98a9136b1b652c4da6d4",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s23_a10.npz",
+      "sha256": "db35eb3638da45c1e2625b1502c483a7a3a9495aa8f749d4dfee3bab11bc8106",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s23_a15.npz",
+      "sha256": "cb2c46f5720d7240529cb530c532d0c262c07ace09b7aef87101cb086d766e26",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s23_a2.npz",
+      "sha256": "8fb20e9b4cca83322845fc9da609e8a3bcd6458d9346374ecaac14f43a671b0f",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s23_a20.npz",
+      "sha256": "ac31004a4862ac85d38076d164a98c9bc410372f0a2da121c915ddafa8b6941b",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s23_a25.npz",
+      "sha256": "a2fe1f3957cb7294515a6338e85bcb2f6962d4d1fd63dbe4798035f1a572f7e8",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/jib_theta_s23_a5.npz",
+      "sha256": "9a125aea11e9c9bbf4ebe3e7ecb7e5097a3f19adeaad2c04d16411c4de6dc92c",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s32_a0.npz",
+      "sha256": "ac58d030856cc91005025f5155db4ad542c809b83adc9abd3d12a1a6abd89750",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s32_a10.npz",
+      "sha256": "7bc888023c2024209a6050b4a3baf7ab8144817c401e72a6808c5642bd57d6a3",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s32_a15.npz",
+      "sha256": "124c4ccafea12d0a5911f42b2ea1b141c65becefe25920faf1307e337a959083",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s32_a2.npz",
+      "sha256": "02af750f8c5fa70bc3a6048871c0667b12efe9723cd49e5ca18c9f052a387585",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s32_a20.npz",
+      "sha256": "e96dfff9d2484d710ca609ac7f03d8fcf2f46be39d768e2b98630b170b15478d",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s32_a25.npz",
+      "sha256": "5dac239aeda586f3ce8c481574026adc402a409e4f1fce7a46ce26aef1b153ab",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s32_a5.npz",
+      "sha256": "b413d196ca0f6144297cfe03af72636c4c6bda6e27714dc0751a9026f8bb855a",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s33_a0.npz",
+      "sha256": "9f40b18c4d9fe26eabb66e65274158c92fb709e0a41dbe89a39d819f55b4be30",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s33_a10.npz",
+      "sha256": "2dbe741cac8a7226203ff09df532bab48323f743b662d0796ba26b06a08845f0",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s33_a15.npz",
+      "sha256": "f558d847da6a07e3526506d844235a48124ddc6301b99a2ef62bfb3cc0c7f58d",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s33_a2.npz",
+      "sha256": "8616535d9521d229e45ec1ebdacdd2568b63b731de9ca4d3af031e5a4851aadd",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s33_a20.npz",
+      "sha256": "1c3c3515380e66d224cbf800a880263ca70395f93ea70c6c680d1f5ea5df8190",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s33_a25.npz",
+      "sha256": "a0656e3e1fe9574da82340738c80b3148c506ccb210d837ac66cc498967e8b49",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_beta_s33_a5.npz",
+      "sha256": "5cb482cf93903bc048134e8cd039f7f490c9c6e4456abc595911d91174a5e49f",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s32_a0.npz",
+      "sha256": "48101563ca709bff54b5e25dfaa2dd490c1296aa5d4ab0d3f56b8b828ad0c179",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s32_a10.npz",
+      "sha256": "e266d4333b0da9cb50c173b0603d94eed8195d0e0dc1becb8eb2d9b08fdf96c1",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s32_a15.npz",
+      "sha256": "87e690910fd3688ff3737675433f9b07818f56f1178d2d08be131c492a1a8fab",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s32_a2.npz",
+      "sha256": "a38b0ff48219ff43af3b4268bbee41fc768a9ecc4117e5013f0f5835dcb0f5ba",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s32_a20.npz",
+      "sha256": "a994e243c091698a2fa4f2be9e126944b401c2aae92ce40df3bf29bc9ea5f89f",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s32_a25.npz",
+      "sha256": "35d42b9b34ebbfd81a90bd911253c65487145f85bb2a96a93aa094db07091752",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s32_a5.npz",
+      "sha256": "b0f2bc15189a7cdd7d9941c906765567b6477ed57eb5d271e1222f5344028d6a",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s33_a0.npz",
+      "sha256": "d78dbafd95d3f6ee3eb82a3600abbc48dab23a6ffde6626d2873fc29ea09b202",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s33_a10.npz",
+      "sha256": "ab8d4d7732a99a9e0e3d76f7feb82cb1a92c48ddefebead320104a1be24944fa",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s33_a15.npz",
+      "sha256": "a859bb0d2d3cc6755e5cf35857d522ab2a1d17dfff7fcc5d4720a04d44a51e9c",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s33_a2.npz",
+      "sha256": "6f44f9e62f6e0f7d6ccaecc2b1d1c802b105991849f1b2b14911fc36283d4a14",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s33_a20.npz",
+      "sha256": "dadf1a98042d82ee28b1e412f9cc0d39a8d3adba0222fb2f1d013151884f33fb",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s33_a25.npz",
+      "sha256": "b375fecfe69096b984e859989a469641b20c57a79a9a45f9cdea42a08dfbcc73",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/simult_theta_s33_a5.npz",
+      "sha256": "b470df89504ee8a32d0b9b1448617837cbea494c30b4f5651cb140d93fffe3db",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s13_a0.npz",
+      "sha256": "269e837416fca06cacc78082491e3cfd7a6c444e34db8cb4855fd712b1307419",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s13_a10.npz",
+      "sha256": "87963e1f2b546c1a3047462608c2f8868df68897681b7e18d44416d6487150af",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s13_a15.npz",
+      "sha256": "7cd2df6fc4c8f0bf4fbf344b00f2965a5c7747fae3d1fb327621eb298c557ac6",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s13_a2.npz",
+      "sha256": "81d3a1041d0dda0bd0e2ef28ae07ee72bee175a12294139428e54307850b6540",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s13_a20.npz",
+      "sha256": "bd7953a2688bbc3131ac5004509c81ad919e7edbe3269b9b15744d20c9aecda3",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s13_a25.npz",
+      "sha256": "879b72e0176e1d70f052ebc64d844c727d9b6793848c4b8788d51848bb39bb50",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s13_a5.npz",
+      "sha256": "d66e45a8fc6312f1d99d9d0a750b0919ab3bfdcc07edf5d69df11e4361ec162b",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s9_a0.npz",
+      "sha256": "4860257d1fae7e507c4ea0ff5b79e767c2278602df669e9bca3943e9c12e4a80",
+      "windows": 94,
+      "supported_offsets": [
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s9_a10.npz",
+      "sha256": "ff8874f974f8371429681334a1f4a09fd0e4f64416423593347ca78cff31d559",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s9_a15.npz",
+      "sha256": "03e3bbe63579c03e88c304f2c9dc8e24eeb3172b94de47c0067cdc564569edf3",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s9_a2.npz",
+      "sha256": "eace378b97255972745b7d74158ad4e78f0777ab9c9436409a4ae4af07edc859",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s9_a20.npz",
+      "sha256": "ea99298689c43a6dcc0a55ce1bd31dccbbe180ea28afffe1ffc2584eecf195f8",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s9_a25.npz",
+      "sha256": "ec4b3b514b19a53b53c809281cd300142b05f61af10dc2e36d4690eb09732237",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    },
+    {
+      "batch": "results/timestamp_offset_20261109/batches/trolley_theta_s9_a5.npz",
+      "sha256": "bd7f165742841bcdad3d02169776b472d89d4056257ef7d006e8ab27b397b286",
+      "windows": 94,
+      "supported_offsets": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "target_exact": true,
+      "nearest_age_route_exact": true,
+      "maximum_zero_offset_error_rad": 0.0
+    }
+  ],
+  "model_calls": 0,
+  "model_fits": 0,
+  "retrospective": true,
+  "independent_confirmation": false,
+  "hardware_success_claimed": false,
+  "final_goal_achieved": false,
+  "limitation": "Nonzero forecasts are audited as archived finite arrays; they are not independently rerun. Timestamp histories are not saved in these NPZs, so unchanged-history construction is covered by the locked producer and its tests, not reconstructed from saved histories."
+}
