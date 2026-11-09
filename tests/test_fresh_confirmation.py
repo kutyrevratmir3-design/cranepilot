@@ -10,8 +10,8 @@ from scripts.fresh_record_guard import sha256_file,canonical_json_hash
 class FreshConfirmationTests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.base=Path(self.tmp.name).resolve();self.root=self.base/'private';self.root.mkdir();self.repo=self.base/'repo';(self.repo/'docs').mkdir(parents=True);self.p=fc.policy();self.p.update(bootstrap_draws=128,minimum_conditions=1,minimum_independent_clusters=1)
-        self.policy=self.repo/'policy.json';self.policy.write_text(json.dumps(self.p));self.index=self.root/'seen.json';self.index.write_text(json.dumps(dict(policy_sha256=sha256_file(self.policy),known_file_sha256={},sequences={})));self.review=self.root/'review.json';self.card=self.repo/'docs'/'card.json';self.make_file()
-        self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+        self.policy=self.repo/'policy.json';self.policy.write_text(json.dumps(self.p));self.index=self.root/'seen.json';self.index.write_text(json.dumps(dict(policy_sha256=sha256_file(self.policy),known_file_sha256={},sequences={},source_hashes={},previously_opened_corpora=['SYNTHETIC_ONLY'])));self.review=self.root/'review.json';self.card=self.repo/'docs'/'card.json';self.make_file();self.seal_index()
+        self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True,exist_ok=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
         self.r=dict(record_id='fixture',session_id='s',trial_id='t',condition_id='c',independent_cluster_id='g',file='trial.npz',sha256=sha256_file(self.root/'trial.npz'),family='trolley',axes=['theta'],sample_rate_hz=100,clock_scope='synchronous_acquisition_offline',angle_age_samples=0,history_s=4.,target_tail_s=1.5,genuine_history=True,encoder_quantum_rad=.001,filters=dict(kind='none',description='fixture',evidence='synthetic fixture'),acquisition=dict(time_column='t',clock_id='daq',unit='s',evidence='synthetic fixture',synchronized=True,synchronization_evidence='synthetic common grid'),arrival=None,channels=dict(theta=dict(column='theta',unit='rad'),L=dict(column='L',unit='m'),x=dict(column='x',unit='m'),xr=dict(column='xr',unit='native',training_unit='native',semantics='synthetic_fixture',training_semantics='synthetic_fixture',compatibility_evidence='fixture only, not an Inteco semantic assertion')))
         self.m=dict(schema_version=1,source=dict(source_id='fixture',rig_id='fixture',physical_recordings=True,provenance_evidence='SYNTHETIC DECLARATION TEST ONLY',research_use_permitted=True,research_use_evidence='software fixture'),records=[self.r]);self.manifest=self.root/'manifest.json';self.manifest.write_text(json.dumps(self.m))
     def make_file(self,**changes):
@@ -19,6 +19,8 @@ class FreshConfirmationTests(unittest.TestCase):
         if hasattr(self,'r'):self.r['sha256']=sha256_file(self.root/'trial.npz')
     def patches(self):
         return patch.multiple(fc,ROOT=self.repo,POLICY=self.policy)
+    def seal_index(self):
+        index=fc.read(self.index);seal=self.repo/'configs/seen_registry_commitment_20261108.json';seal.parent.mkdir(parents=True,exist_ok=True);seal.write_text(json.dumps(dict(index_sha256=sha256_file(self.index),policy_sha256=index['policy_sha256'],source_hashes=index['source_hashes'],previously_opened_corpora=index['previously_opened_corpora'])))
     def create_lock(self):
         for r in self.m['records']:
             for ref in ['xr','Jr']:
@@ -58,7 +60,7 @@ class FreshConfirmationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'arrival timestamps'):fc.load_record(r,self.root,self.p)
     def test_numeric_overlap_quarantines_whole_trial_without_forecasts(self):
         with np.load(self.root/'trial.npz') as z:known=fc.fingerprint(z['theta'])
-        index=fc.read(self.index);index['sequences']={'previous':known};self.index.write_text(json.dumps(index));lock=self.create_lock()
+        index=fc.read(self.index);index['sequences']={'previous':known};self.index.write_text(json.dumps(index));self.seal_index();lock=self.create_lock()
         with self.patches(),patch.object(fc,'committed'):
             result=fc.screen(lock,self.card)
         self.assertEqual(result['status'],'blocked');self.assertTrue(result['records'][0]['potential_overlaps']);self.assertFalse(result['candidate_scores_computed'])

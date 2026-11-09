@@ -1,0 +1,312 @@
+{
+  "cases": {
+    "trolley_theta": {
+      "reference": {
+        "0": "drive3/forced_3s_adapt",
+        "2": "drive3/quadratic_0.25",
+        "5": "augmented/dense/arx_io_lpv_direct_1e-06.npz",
+        "10": "drive3/forced_3s_fixed",
+        "15": "drive3/forced_3s_fixed",
+        "20": "drive3/forced_3s_fixed"
+      },
+      "specs": {
+        "augmented/dense/arx_io_lpv_direct_1e-06.npz": {
+          "kind": "augmented",
+          "source": "dense",
+          "history_samples": 81,
+          "source_sha256": "2887d2caea2b3703ab5fd2458960e0ecb9f7446260c02e13df87a20b8ea87c1a",
+          "original_model_file": "artifacts/runs/dense_reference_20261108/trolley_theta/arx_io_lpv_direct_1e-06.npz",
+          "weight_file": "trolley_theta/model_2887d2caea2b3703ab5fd2458960e0ecb9f7446260c02e13df87a20b8ea87c1a.npz"
+        },
+        "drive3/forced_3s_adapt": {
+          "kind": "drive",
+          "source": "original_dense3",
+          "history_samples": 61,
+          "head": "forced_3s_adapt",
+          "source_sha256": "5d6f127d3923fa9df673667efd6edd2fd9918fac17252e04ade4fdf7cb15fe53",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/trolley_theta/short_arx.npz",
+          "weight_file": "trolley_theta/model_5d6f127d3923fa9df673667efd6edd2fd9918fac17252e04ade4fdf7cb15fe53.npz"
+        },
+        "drive3/forced_3s_fixed": {
+          "kind": "drive",
+          "source": "original_dense3",
+          "history_samples": 61,
+          "head": "forced_3s_fixed",
+          "source_sha256": "5d6f127d3923fa9df673667efd6edd2fd9918fac17252e04ade4fdf7cb15fe53",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/trolley_theta/short_arx.npz",
+          "weight_file": "trolley_theta/model_5d6f127d3923fa9df673667efd6edd2fd9918fac17252e04ade4fdf7cb15fe53.npz"
+        },
+        "drive3/quadratic_0.25": {
+          "kind": "drive",
+          "source": "original_dense3",
+          "history_samples": 61,
+          "head": "quadratic_0.25",
+          "source_sha256": "5d6f127d3923fa9df673667efd6edd2fd9918fac17252e04ade4fdf7cb15fe53",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/trolley_theta/short_arx.npz",
+          "weight_file": "trolley_theta/model_5d6f127d3923fa9df673667efd6edd2fd9918fac17252e04ade4fdf7cb15fe53.npz"
+        }
+      }
+    },
+    "jib_theta": {
+      "reference": {
+        "0": "legacy3/forced_3s_adapt",
+        "2": "legacy3/quadratic_0.25",
+        "5": "legacy3/quadratic_0.25",
+        "10": "legacy4/forced_3s_fixed",
+        "15": "legacy3/forced_3s_adapt",
+        "20": "legacy3/forced_3s_fixed"
+      },
+      "specs": {
+        "legacy3/forced_3s_adapt": {
+          "kind": "legacy",
+          "source": "legacy3",
+          "history_samples": 61,
+          "head": "forced_3s_adapt",
+          "source_sha256": "1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd",
+          "original_model_file": "artifacts/dated_bundle_20261108/regime/legacy/jib_theta/short_arx.npz",
+          "weight_file": "jib_theta/model_1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd.npz"
+        },
+        "legacy3/forced_3s_fixed": {
+          "kind": "legacy",
+          "source": "legacy3",
+          "history_samples": 61,
+          "head": "forced_3s_fixed",
+          "source_sha256": "1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd",
+          "original_model_file": "artifacts/dated_bundle_20261108/regime/legacy/jib_theta/short_arx.npz",
+          "weight_file": "jib_theta/model_1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd.npz"
+        },
+        "legacy3/quadratic_0.25": {
+          "kind": "legacy",
+          "source": "legacy3",
+          "history_samples": 61,
+          "head": "quadratic_0.25",
+          "source_sha256": "1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd",
+          "original_model_file": "artifacts/dated_bundle_20261108/regime/legacy/jib_theta/short_arx.npz",
+          "weight_file": "jib_theta/model_1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd.npz"
+        },
+        "legacy4/forced_3s_fixed": {
+          "kind": "legacy",
+          "source": "legacy4",
+          "history_samples": 81,
+          "head": "forced_3s_fixed",
+          "source_sha256": "427eacfb6c9143a0fdf3c14e0f1fa7a3834a1706190e3470192a9401a988064a",
+          "original_model_file": "artifacts/dated_bundle_20261108/regime/legacy/base/jib_theta/reference_arx.npz",
+          "weight_file": "jib_theta/model_427eacfb6c9143a0fdf3c14e0f1fa7a3834a1706190e3470192a9401a988064a.npz"
+        }
+      }
+    },
+    "jib_beta": {
+      "reference": {
+        "0": "drive4/forced_3s_adapt/arx_angle_lpv_direct_1e-06.npz",
+        "2": "drive4/quadratic_0.25/arx_angle_lpv_direct_1e-08.npz",
+        "5": "drive4/quadratic_0.25/arx_angle_lpv_direct_1e-06.npz",
+        "10": "drive4/quadratic_0.25/arx_io_lpv_direct_0.01.npz",
+        "15": "augmented/dense/arx_io_lpv_direct_0.0001.npz",
+        "20": "augmented/dense/arx_io_lpv_direct_0.0001.npz"
+      },
+      "specs": {
+        "augmented/dense/arx_io_lpv_direct_0.0001.npz": {
+          "kind": "augmented",
+          "source": "dense",
+          "history_samples": 81,
+          "source_sha256": "5ce1b79b2013d2e6c4bc62f371e2c5a42c7bf33fc0a5c1e24b4d9f84f25839c1",
+          "original_model_file": "artifacts/runs/dense_reference_20261108/jib_beta/arx_io_lpv_direct_0.0001.npz",
+          "weight_file": "jib_beta/model_5ce1b79b2013d2e6c4bc62f371e2c5a42c7bf33fc0a5c1e24b4d9f84f25839c1.npz"
+        },
+        "drive4/forced_3s_adapt/arx_angle_lpv_direct_1e-06.npz": {
+          "kind": "drive",
+          "source": "original_dense4",
+          "history_samples": 81,
+          "head": "forced_3s_adapt",
+          "source_sha256": "7b32fdc2fed1014fd554285252a12c8f25ce137d522914aa28a5a719a1711b68",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_direct_1e-06.npz",
+          "weight_file": "jib_beta/model_7b32fdc2fed1014fd554285252a12c8f25ce137d522914aa28a5a719a1711b68.npz"
+        },
+        "drive4/quadratic_0.25/arx_angle_lpv_direct_1e-06.npz": {
+          "kind": "drive",
+          "source": "original_dense4",
+          "history_samples": 81,
+          "head": "quadratic_0.25",
+          "source_sha256": "7b32fdc2fed1014fd554285252a12c8f25ce137d522914aa28a5a719a1711b68",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_direct_1e-06.npz",
+          "weight_file": "jib_beta/model_7b32fdc2fed1014fd554285252a12c8f25ce137d522914aa28a5a719a1711b68.npz"
+        },
+        "drive4/quadratic_0.25/arx_angle_lpv_direct_1e-08.npz": {
+          "kind": "drive",
+          "source": "original_dense4",
+          "history_samples": 81,
+          "head": "quadratic_0.25",
+          "source_sha256": "7ad1007c32b76e985f4f473a57cfcca0d96275c17fdefb60d84ea96f9feb6ff6",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_direct_1e-08.npz",
+          "weight_file": "jib_beta/model_7ad1007c32b76e985f4f473a57cfcca0d96275c17fdefb60d84ea96f9feb6ff6.npz"
+        },
+        "drive4/quadratic_0.25/arx_io_lpv_direct_0.01.npz": {
+          "kind": "drive",
+          "source": "original_dense4",
+          "history_samples": 81,
+          "head": "quadratic_0.25",
+          "source_sha256": "4ef83efae55963cf758949e5b80c594db2923d117552de9408765931c3b3fd26",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_direct_0.01.npz",
+          "weight_file": "jib_beta/model_4ef83efae55963cf758949e5b80c594db2923d117552de9408765931c3b3fd26.npz"
+        }
+      }
+    },
+    "simult_theta": {
+      "reference": {
+        "0": "augmented/latency/arx_angle_lpv_direct_1e-10.npz",
+        "2": "augmented/latency/arx_angle_lpv_direct_1e-10.npz",
+        "5": "augmented/dated/arx_angle_lpv_direct_1e-10.npz",
+        "10": "augmented/dated/arx_angle_lpv_direct_1e-10.npz",
+        "15": "augmented/dated/arx_angle_lpv_direct_1e-08.npz",
+        "20": "augmented/dated/arx_io_lpv_direct_0.01.npz"
+      },
+      "specs": {
+        "augmented/dated/arx_angle_lpv_direct_1e-08.npz": {
+          "kind": "augmented",
+          "source": "dated",
+          "history_samples": 81,
+          "source_sha256": "09e07cfb8102aee55735b8644fa3aa6f9c169992e0e697f33bcd3b8db7751d01",
+          "original_model_file": "results/dated_forecast_20261108/frozen_development/simult_theta/arx_angle_lpv_direct_1e-08.npz",
+          "weight_file": "simult_theta/model_09e07cfb8102aee55735b8644fa3aa6f9c169992e0e697f33bcd3b8db7751d01.npz"
+        },
+        "augmented/dated/arx_angle_lpv_direct_1e-10.npz": {
+          "kind": "augmented",
+          "source": "dated",
+          "history_samples": 81,
+          "source_sha256": "2a505baaac3b2e68413819946663c5d68ee59faad2e1a252f92aa02c67dc0741",
+          "original_model_file": "results/dated_forecast_20261108/frozen_development/simult_theta/arx_angle_lpv_direct_1e-10.npz",
+          "weight_file": "simult_theta/model_2a505baaac3b2e68413819946663c5d68ee59faad2e1a252f92aa02c67dc0741.npz"
+        },
+        "augmented/dated/arx_io_lpv_direct_0.01.npz": {
+          "kind": "augmented",
+          "source": "dated",
+          "history_samples": 81,
+          "source_sha256": "be75b12a74e06e9e251ba75d0be0615577e0107c54c80c91c54a5fbc2fb47eec",
+          "original_model_file": "results/dated_forecast_20261108/frozen_development/simult_theta/arx_io_lpv_direct_0.01.npz",
+          "weight_file": "simult_theta/model_be75b12a74e06e9e251ba75d0be0615577e0107c54c80c91c54a5fbc2fb47eec.npz"
+        },
+        "augmented/latency/arx_angle_lpv_direct_1e-10.npz": {
+          "kind": "augmented",
+          "source": "latency",
+          "history_samples": 81,
+          "source_sha256": "834d2e1fd46c49265ecb0c5ab7cf24eb71de42c267717fa2e54797d8bc37f780",
+          "original_model_file": "results/latency_observer_20261108/frozen_development/simult_theta/arx_angle_lpv_direct_1e-10.npz",
+          "weight_file": "simult_theta/model_834d2e1fd46c49265ecb0c5ab7cf24eb71de42c267717fa2e54797d8bc37f780.npz"
+        }
+      }
+    },
+    "simult_beta": {
+      "reference": {
+        "0": "drive4/forced_3s_adapt/arx_angle_lpv_direct_1e-10.npz",
+        "2": "augmented/dense/arx_angle_lpv_direct_1e-06.npz",
+        "5": "augmented/dense/arx_angle_lpv_direct_1e-08.npz",
+        "10": "augmented/dense/arx_angle_lpv_direct_1e-10.npz",
+        "15": "drive4/forced_3s_fixed/arx_angle_lpv_direct_0.0001.npz",
+        "20": "drive3/forced_3s_fixed"
+      },
+      "specs": {
+        "augmented/dense/arx_angle_lpv_direct_1e-06.npz": {
+          "kind": "augmented",
+          "source": "dense",
+          "history_samples": 81,
+          "source_sha256": "0422f20aa109631fe18c2eb39d90f639ac53c81eb81f51517e3f650a1a856fc2",
+          "original_model_file": "artifacts/runs/dense_reference_20261108/simult_beta/arx_angle_lpv_direct_1e-06.npz",
+          "weight_file": "simult_beta/model_0422f20aa109631fe18c2eb39d90f639ac53c81eb81f51517e3f650a1a856fc2.npz"
+        },
+        "augmented/dense/arx_angle_lpv_direct_1e-08.npz": {
+          "kind": "augmented",
+          "source": "dense",
+          "history_samples": 81,
+          "source_sha256": "5479c2afd7ff1688e60a26d3e469377c1a683efa06c809f1ba1b955a4e337cfb",
+          "original_model_file": "artifacts/runs/dense_reference_20261108/simult_beta/arx_angle_lpv_direct_1e-08.npz",
+          "weight_file": "simult_beta/model_5479c2afd7ff1688e60a26d3e469377c1a683efa06c809f1ba1b955a4e337cfb.npz"
+        },
+        "augmented/dense/arx_angle_lpv_direct_1e-10.npz": {
+          "kind": "augmented",
+          "source": "dense",
+          "history_samples": 81,
+          "source_sha256": "61af280f20fa566417e8dda402f7c6df70c6cee9babdd65ceba9e2f23bb69f15",
+          "original_model_file": "artifacts/runs/dense_reference_20261108/simult_beta/arx_angle_lpv_direct_1e-10.npz",
+          "weight_file": "simult_beta/model_61af280f20fa566417e8dda402f7c6df70c6cee9babdd65ceba9e2f23bb69f15.npz"
+        },
+        "drive3/forced_3s_fixed": {
+          "kind": "drive",
+          "source": "original_dense3",
+          "history_samples": 61,
+          "head": "forced_3s_fixed",
+          "source_sha256": "cdacedde3d969fbb14a024e0c96f10cfb1b40d8e37717b18df58c714ea352176",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/simult_beta/short_arx.npz",
+          "weight_file": "simult_beta/model_cdacedde3d969fbb14a024e0c96f10cfb1b40d8e37717b18df58c714ea352176.npz"
+        },
+        "drive4/forced_3s_adapt/arx_angle_lpv_direct_1e-10.npz": {
+          "kind": "drive",
+          "source": "original_dense4",
+          "history_samples": 81,
+          "head": "forced_3s_adapt",
+          "source_sha256": "64533980f5fb3c36a27c143a6f7e87b7e73af0783de1c525b72cd982368883e9",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_direct_1e-10.npz",
+          "weight_file": "simult_beta/model_64533980f5fb3c36a27c143a6f7e87b7e73af0783de1c525b72cd982368883e9.npz"
+        },
+        "drive4/forced_3s_fixed/arx_angle_lpv_direct_0.0001.npz": {
+          "kind": "drive",
+          "source": "original_dense4",
+          "history_samples": 81,
+          "head": "forced_3s_fixed",
+          "source_sha256": "360bb34343dc1c3ea000432f16a8f09f99126e1cbd8d90df72d1188fb1c599fd",
+          "original_model_file": "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_direct_0.0001.npz",
+          "weight_file": "simult_beta/model_360bb34343dc1c3ea000432f16a8f09f99126e1cbd8d90df72d1188fb1c599fd.npz"
+        }
+      }
+    }
+  },
+  "train_ages_raw": [
+    0,
+    2,
+    5,
+    10,
+    15,
+    20
+  ],
+  "primary_selected": "mix_bank_10",
+  "primary_manifest_sha256": "8e8255a57c655cb2d34bc6777e698214d1ef832981b1002ff1385604115a5c73",
+  "files": {
+    "selection.json": "67c14c435bddbc9691253adf113c28fc0ff8e3150f6ddab96dad6d512de3965a",
+    "simult_theta/model_2a505baaac3b2e68413819946663c5d68ee59faad2e1a252f92aa02c67dc0741.npz": "2a505baaac3b2e68413819946663c5d68ee59faad2e1a252f92aa02c67dc0741",
+    "simult_theta/model_834d2e1fd46c49265ecb0c5ab7cf24eb71de42c267717fa2e54797d8bc37f780.npz": "834d2e1fd46c49265ecb0c5ab7cf24eb71de42c267717fa2e54797d8bc37f780",
+    "simult_theta/model_09e07cfb8102aee55735b8644fa3aa6f9c169992e0e697f33bcd3b8db7751d01.npz": "09e07cfb8102aee55735b8644fa3aa6f9c169992e0e697f33bcd3b8db7751d01",
+    "simult_theta/model_be75b12a74e06e9e251ba75d0be0615577e0107c54c80c91c54a5fbc2fb47eec.npz": "be75b12a74e06e9e251ba75d0be0615577e0107c54c80c91c54a5fbc2fb47eec",
+    "trolley_theta/model_2887d2caea2b3703ab5fd2458960e0ecb9f7446260c02e13df87a20b8ea87c1a.npz": "2887d2caea2b3703ab5fd2458960e0ecb9f7446260c02e13df87a20b8ea87c1a",
+    "trolley_theta/model_5d6f127d3923fa9df673667efd6edd2fd9918fac17252e04ade4fdf7cb15fe53.npz": "5d6f127d3923fa9df673667efd6edd2fd9918fac17252e04ade4fdf7cb15fe53",
+    "jib_beta/model_7b32fdc2fed1014fd554285252a12c8f25ce137d522914aa28a5a719a1711b68.npz": "7b32fdc2fed1014fd554285252a12c8f25ce137d522914aa28a5a719a1711b68",
+    "jib_beta/model_4ef83efae55963cf758949e5b80c594db2923d117552de9408765931c3b3fd26.npz": "4ef83efae55963cf758949e5b80c594db2923d117552de9408765931c3b3fd26",
+    "jib_beta/model_7ad1007c32b76e985f4f473a57cfcca0d96275c17fdefb60d84ea96f9feb6ff6.npz": "7ad1007c32b76e985f4f473a57cfcca0d96275c17fdefb60d84ea96f9feb6ff6",
+    "jib_beta/model_5ce1b79b2013d2e6c4bc62f371e2c5a42c7bf33fc0a5c1e24b4d9f84f25839c1.npz": "5ce1b79b2013d2e6c4bc62f371e2c5a42c7bf33fc0a5c1e24b4d9f84f25839c1",
+    "jib_theta/model_427eacfb6c9143a0fdf3c14e0f1fa7a3834a1706190e3470192a9401a988064a.npz": "427eacfb6c9143a0fdf3c14e0f1fa7a3834a1706190e3470192a9401a988064a",
+    "jib_theta/model_1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd.npz": "1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd",
+    "simult_beta/model_61af280f20fa566417e8dda402f7c6df70c6cee9babdd65ceba9e2f23bb69f15.npz": "61af280f20fa566417e8dda402f7c6df70c6cee9babdd65ceba9e2f23bb69f15",
+    "simult_beta/model_360bb34343dc1c3ea000432f16a8f09f99126e1cbd8d90df72d1188fb1c599fd.npz": "360bb34343dc1c3ea000432f16a8f09f99126e1cbd8d90df72d1188fb1c599fd",
+    "simult_beta/model_64533980f5fb3c36a27c143a6f7e87b7e73af0783de1c525b72cd982368883e9.npz": "64533980f5fb3c36a27c143a6f7e87b7e73af0783de1c525b72cd982368883e9",
+    "simult_beta/model_0422f20aa109631fe18c2eb39d90f639ac53c81eb81f51517e3f650a1a856fc2.npz": "0422f20aa109631fe18c2eb39d90f639ac53c81eb81f51517e3f650a1a856fc2",
+    "simult_beta/model_5479c2afd7ff1688e60a26d3e469377c1a683efa06c809f1ba1b955a4e337cfb.npz": "5479c2afd7ff1688e60a26d3e469377c1a683efa06c809f1ba1b955a4e337cfb",
+    "simult_beta/model_cdacedde3d969fbb14a024e0c96f10cfb1b40d8e37717b18df58c714ea352176.npz": "cdacedde3d969fbb14a024e0c96f10cfb1b40d8e37717b18df58c714ea352176"
+  },
+  "source_hashes": {
+    "scripts/dense_reference.py": "cd523948e82edc20bccca0361d41e276ad230204bcb1bfddf8061afca1beb529",
+    "src/cranepilot/matched_dated_pilot.py": "e1aa3a2efd00527bbc5ce6d881f3b7754da8b8c3d71450571b3b491dd3d2088f",
+    "scripts/dated_forecast.py": "27e5cb45f09b2b13041c61fbed72af67d4e14e436c6e7262d475715bffae18fb",
+    "scripts/latency_observer.py": "9634b2afc59908171399a7298cecdac825df4198995e50537a6b31390e9fcc6b",
+    "scripts/drive_conditioned.py": "8150f16d5fcc261f05fc1985d0116994fdebdbc1c4cf322ec1186514425f1cbf",
+    "scripts/modal_reference_challenge.py": "23b26b08bfece5c768b386770751ee04773ea4e973ff4358edc854823f591858",
+    "scripts/modal_history.py": "11b21490fc78da67b2863a1b06c9c129bb294a9149f29c9bcda0896b928c5414",
+    "scripts/modal_backtest_gate.py": "af1abf2159484c8c434d62ee88ddd20432ab811688607e6013510209405f42ba",
+    "scripts/regime_fusion.py": "9dee2fe0a8d9c053e2c5ae3b94ab7d0d78c8f5da1eb75a0e83066ffafe12b0e5",
+    "src/cranepilot/physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+    "src/cranepilot/data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+  },
+  "scope": "Stronger reference development on already opened33 Inteco records. Synthetic known-age/noise study and retrospective replay only; no fresh independent data, no primary reselection, no hardware/control superiority claim.",
+  "development_sha256": "bfcb43f8c19f9bf14c3ff6341eb2955270a424188e846072b121ab35ce9f7fe0",
+  "selection_sha256": "67c14c435bddbc9691253adf113c28fc0ff8e3150f6ddab96dad6d512de3965a",
+  "development_verification_sha256": "c6cefae2a737883b28270a9333dac17f676f936f8c1b6384b284209a05bab8e1",
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

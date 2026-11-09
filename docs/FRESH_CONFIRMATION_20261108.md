@@ -103,6 +103,14 @@ profiles are recorded as auxiliary assets. Reusing them does not by itself
 reuse a measured trial. Only response-bearing files trigger the exact-byte
 freshness block; every signal still needs its source/availability audit.
 
+The complete old registry is sealed by
+`configs/seen_registry_commitment_20261108.json`. Lock and later verification
+require its exact bytes, declared corpus coverage, frozen screening policy and
+unchanged source hashes. Supplying an empty or pruned registry with the same
+policy does not pass. The seal publishes no private fingerprint entries or
+new-trial identifiers. A later legitimate registry revision requires a new
+reviewed commitment before any new errors.
+
 Full exact and offset/sign-invariant numerical hashes detect renamed/reformatted
 copies. A 256-sample block index at seen stride16 is compared with every candidate
 offset. Constant blocks are skipped for duplicate search only. Short unaligned
@@ -110,6 +118,10 @@ crops, changed rounding, resampling, noise or other transformations may evade
 this screen. A hit is potential overlap requiring resolution before scoring;
 a nonmatch never proves that a physical trial is independent. New session/source
 provenance and the concrete review remain necessary.
+The same numerical overlap screen also compares separate records within the
+incoming cohort. Reserializing a response under another record/cluster name
+does not silently multiply independent trials. Axes of a single physical trial
+are kept together and are not screened against each other as separate trials.
 
 ## Commands and immutable order
 
@@ -138,6 +150,25 @@ checked again. All scoring outputs stay under the private lock directory.
 Each scoring attempt gets a new immutable directory; a rerun cannot overwrite
 forecasts or a failed attempt. These commands do not authorize publication of
 private data or contact with authors.
+
+Before the first predictor call, the full declared cohort is reserved in the
+project's private `performance_exposures` ledger. Subsequent locks check file
+hashes, physical session/trial identities and stored numerical fingerprints
+against that ledger, even when incoming files are moved to another private
+folder. A failed forecast remains a performance attempt. Replaying the same
+frozen lock for verification is distinguished from claiming another fresh set.
+Keep this private ledger with the project when transferring devices; its
+absence cannot establish independence. Model-construction failures create no
+performance exposure. An interruption after the final reservation can
+conservatively consume a cohort even if a forecast has not returned.
+
+Reservation rechecks the public lock, all prior ledger commitments and the
+whole overlap screen under one atomic directory lease before entering the
+first predictor. Two distinct locks cannot both reserve an overlapping cohort
+from stale prechecks. Deleted or changed previously committed events block
+verification; added unrelated events are allowed. A busy or abandoned lease
+fails closed and is never automatically removed by age. Investigate interrupted
+runs and preserve their evidence before any manual recovery.
 
 The software reports a statistical gate and evidence coverage. It never
 certifies authentic physical independence or declares the overall research

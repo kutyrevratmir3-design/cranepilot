@@ -12,12 +12,17 @@ import pandas as pd
 
 from scripts.fresh_record_guard import (sha256_file, canonical_json_hash,
     metadata_preflight, fingerprint_sequence, potential_overlap)
+from scripts.fresh_exposure_guard import ledger_transaction, verify_prior_commitments
 
 ROOT=Path(__file__).resolve().parents[1]
 POLICY=ROOT/'configs/fresh_confirmation_20261108.json'
 LOCKED=['configs/fresh_confirmation_20261108.json','configs/inteco_native_contract_20261108.json','data/.gitignore','docs/FRESH_CONFIRMATION_20261108.md',
+        'configs/seen_registry_commitment_20261108.json',
         'scripts/fresh_record_guard.py','scripts/fresh_confirmation.py',
-        'tests/test_fresh_record_guard.py','tests/test_fresh_confirmation.py','tests/test_fresh_score_e2e.py']
+        'tests/test_fresh_record_guard.py','tests/test_fresh_confirmation.py','tests/test_fresh_score_e2e.py',
+        'tests/test_fresh_exposure.py','scripts/fresh_exposure_guard.py',
+        'tests/test_fresh_reservation.py','tests/test_fresh_registry.py',
+        'tests/test_fresh_atomic_integration.py']
 
 def read(path):return json.loads(Path(path).read_text())
 def git_head():return subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
@@ -40,6 +45,18 @@ def private_output(root):
     return root
 
 def policy():return read(POLICY)
+
+def verify_seen_index(path):
+    """An exact public seal prevents a pruned old-response registry passing as fresh."""
+    seal=read(ROOT/'configs/seen_registry_commitment_20261108.json')
+    if sha256_file(path)!=seal['index_sha256']:raise ValueError('Seen registry differs from the committed complete-registry seal')
+    index=read(path)
+    if index['policy_sha256']!=seal['policy_sha256'] or index['policy_sha256']!=sha256_file(POLICY):raise ValueError('Seen registry policy differs from its public seal')
+    if index.get('source_hashes')!=seal['source_hashes'] or index.get('previously_opened_corpora')!=seal['previously_opened_corpora']:raise ValueError('Seen registry corpus/source coverage differs from its public seal')
+    for relative,digest in seal['source_hashes'].items():
+        source=(ROOT/relative).resolve()
+        if not source.is_relative_to(ROOT) or sha256_file(source)!=digest:raise ValueError('Seen registry source changed')
+    return index
 def fingerprint(values,*,candidate=False):
     p=policy();return fingerprint_sequence(np.asarray(values),rounding=p['rounding_rad'],
         block_size=p['overlap_block_samples'],seen_stride=p['seen_block_stride'],
@@ -123,14 +140,34 @@ def hierarchy(records):
     for r in records:by_cluster.setdefault(r['independent_cluster_id'],set()).add(r['condition_id'])
     return 'conditions_then_clusters' if all(len(c)==1 for c in by_cluster.values()) else 'shared_clusters_fixed_conditions'
 
+def exposure_root():return ROOT/'data/private_confirmation_20261108/performance_exposures'
+
+def exposure_view(index,exclude_lock=None):
+    """Previously attempted confirmation cohorts across private input folders."""
+    merged=dict(index,known_file_sha256=dict(index['known_file_sha256']),sequences=dict(index['sequences']))
+    identities=set();commitments={}
+    for file in sorted(exposure_root().glob('*.json')):
+        event=read(file)
+        if event['lock_sha256']==exclude_lock:continue  # The same frozen experiment may be verified.
+        commitments[file.name]=sha256_file(file)
+        for record in event['records']:
+            merged['known_file_sha256'][record['sha256']]=['previous_confirmation_performance_attempt']
+            identities.add((event['source_id'],event['rig_id'],record['session_id'],record['trial_id']))
+            for axis,fp in record['fingerprints'].items():merged['sequences'][event['lock_sha256']+'/'+record['record_id']+'/'+axis]=fp
+    return merged,identities,commitments
+
+def reused_identity(manifest,identities):
+    return any((manifest['source']['source_id'],manifest['source']['rig_id'],r['session_id'],r['trial_id']) in identities for r in manifest['records'])
+
 def lock(manifest_path,private_root,index_path,review_path,public_card):
-    committed(LOCKED);p=policy();root=private_output(private_root);manifest=read(manifest_path);index=read(index_path)
+    committed(LOCKED);p=policy();root=private_output(private_root);manifest=read(manifest_path);base_index=verify_seen_index(index_path);index,identities,exposures=exposure_view(base_index)
     if index['policy_sha256']!=sha256_file(POLICY):raise ValueError('Seen index uses a different frozen screening policy')
     audit=metadata_preflight(manifest,root,seen_file_hashes=index['known_file_sha256'])
     audit_name='preflight_'+str(audit['canonical_manifest_sha256'])[:20]+'_'+canonical_json_hash(audit)[:12]+'.json'
     audit_path=root/'audits'/audit_name
     if not audit_path.exists():write_new(audit_path,audit)
     if not audit['metadata_declarations_complete']:return dict(status='blocked',metadata_audit=audit,final_goal_achieved=False)
+    if reused_identity(manifest,identities):return dict(status='blocked',reason='Physical trial was already reserved for a previous performance attempt',final_goal_achieved=False)
     records=manifest['records'];conditions={r['condition_id'] for r in records};clusters={r['independent_cluster_id'] for r in records}
     if len(conditions)<p['minimum_conditions'] or len(clusters)<p['minimum_independent_clusters']:
         return dict(status='blocked',reason='Insufficient declared independent conditions/clusters for this fixed confirmation policy',final_goal_achieved=False)
@@ -168,6 +205,7 @@ def lock(manifest_path,private_root,index_path,review_path,public_card):
         seen_index=str(Path(index_path).resolve()),seen_index_sha256=sha256_file(index_path),
         source_review_path=str(review),source_review_sha256=sha256_file(review),
         original_source_hashes=source_files,
+        prior_performance_exposure_commitments=exposures,
         guarded_hashes=hashes,policy=p,bootstrap_scheme=hierarchy(records),
         prelock_git_head=git_head(),
         numerical_candidate_data_read=False,scores_computed=False,independent_trial_proven=False)
@@ -194,9 +232,13 @@ def verify_lock(lockfile,cardfile):
         if sha256_file(path)!=digest:raise ValueError('Original source lineage bytes changed')
     for rel,digest in v['guarded_hashes'].items():
         if sha256_file(ROOT/rel)!=digest:raise ValueError('Frozen source/model/policy changed: '+rel)
-    audit=metadata_preflight(v['manifest'],v['private_root'],seen_file_hashes=read(v['seen_index'])['known_file_sha256'])
+    verify_prior_commitments(exposure_root(),v['prior_performance_exposure_commitments'])
+    current,identities,_=exposure_view(verify_seen_index(v['seen_index']),lock_sha)
+    if reused_identity(v['manifest'],identities):raise ValueError('This physical trial was used in another performance attempt')
+    audit=metadata_preflight(v['manifest'],v['private_root'],seen_file_hashes=current['known_file_sha256'])
     if not audit['metadata_declarations_complete'] or audit['canonical_manifest_sha256']!=v['metadata_audit']['canonical_manifest_sha256']:raise ValueError('Private raw/declarations changed')
     v['_verified_lock_sha256']=lock_sha
+    v['_current_seen_index']=current
     return v
 
 def required_channels(record):
@@ -222,7 +264,7 @@ def load_record(record,root,p):
         if any(a.shape!=t.shape or not np.isfinite(a).all() for a in arrays.values()) or (arrays['L']<=0).any():raise ValueError('Invalid/missing aligned physical signals; no imputation')
         if record['clock_scope']=='known_arrival_age':
             if record['arrival']['clock_id']!=record['acquisition']['clock_id']:raise ValueError('Different actual clocks need a separately frozen conversion adapter')
-            arrival=record['arrival'];axis_columns=arrival.get('angle_time_columns',{axis:arrival['time_column'] for axis in record['axes']})
+            arrival=record['arrival'];axis_columns=arrival['angle_time_columns'] if 'angle_time_columns' in arrival else {axis:arrival['time_column'] for axis in record['axes']}
             for column in axis_columns.values():
                 available=real(z,column)
                 if available.shape!=t.shape or not np.isfinite(available).all() or not np.all(np.abs(available-t-record['angle_age_samples']*.01)<=p['clock_grid_tolerance_s']):raise ValueError('Actual arrival timestamps disagree with fixed declared age')
@@ -234,18 +276,24 @@ def load_record(record,root,p):
     return t,arrays,k
 
 def screen_records(v,lock_sha):
-    index=read(v['seen_index']);report=dict(status='blocked',records=[],
+    index=v.get('_current_seen_index',read(v['seen_index']));report=dict(status='blocked',records=[],
         private_lock_sha256=lock_sha,candidate_scores_computed=False,
         nonmatch_is_not_independence=True,source_provenance_requires_evidence_audit=True)
+    cohort_sequences={}
     for record in v['manifest']['records']:
         item=dict(record_id=record['record_id'],passed=False)
         try:
-            t,arrays,k=load_record(record,v['private_root'],v['policy']);hits=[]
+            t,arrays,k=load_record(record,v['private_root'],v['policy']);hits=[];fps={}
             for axis in record['axes']:
-                overlap=potential_overlap(fingerprint(arrays[axis],candidate=True),index['sequences'])
+                fp=fingerprint(arrays[axis],candidate=True);overlap=potential_overlap(fp,index['sequences']|cohort_sequences)
                 if overlap['status']=='potential_overlap_found':hits.append(dict(axis=axis,result=overlap))
+                # Retain sparse known-use hashes for subsequent private confirmation cohorts.
+                fps[axis]=dict(fp,blocks=[b for b in fp['blocks'] if b['start']%v['policy']['seen_block_stride']==0],block_step=v['policy']['seen_block_stride'],candidate_every_offset=False)
             item.update(passed=not hits,potential_overlaps=hits,origins=len(k),samples=len(t),
-                        axes=record['axes'],origin_index_sha256=hashlib.sha256(k.astype('<i8').tobytes()).hexdigest())
+                        axes=record['axes'],numeric_fingerprints=fps,origin_index_sha256=hashlib.sha256(k.astype('<i8').tobytes()).hexdigest())
+            # Axes of one trial may coincide; separate trial records cannot silently
+            # inflate independent clusters by reserializing the same response.
+            cohort_sequences.update({'incoming_cohort/'+record['record_id']+'/'+axis:fp for axis,fp in fps.items()})
         except Exception as error:item['failure']=f'{type(error).__name__}: {error}'
         report['records'].append(item)
     report['status']='schema_screened_no_detected_overlap' if all(r['passed'] for r in report['records']) else 'blocked'
@@ -292,13 +340,24 @@ def score(lockfile,cardfile):
     # Imports/construction occur after all immutable protocol/data checks.
     from cranepilot.dated_pilot import FrozenDatedPilot
     from cranepilot.matched_dated_pilot import FrozenDenseReference
-    p=v['policy'];candidate=FrozenDatedPilot(ROOT/p['primary_bundle']);reference=FrozenDenseReference(ROOT/p['reference_bundle'],primary_bundle=ROOT/p['primary_bundle']);rows=[];failures=[]
+    p=v['policy'];candidate=FrozenDatedPilot(ROOT/p['primary_bundle']);reference=FrozenDenseReference(ROOT/p['reference_bundle'],primary_bundle=ROOT/p['primary_bundle']);rows=[];failures=[];exposure_written=False
     for record in v['manifest']['records']:
         try:
             t,a,k=load_record(record,v['private_root'],p);age=record['angle_age_samples'];history=k[:,None]-np.arange(401);predictions={};errors=[]
             for axis in record['axes']:
                 raw={key:values[history].copy() for key,values in a.items() if key not in ['theta','beta']};raw[axis]=a[axis][history-age].copy();target=a[axis][k[:,None]+np.array(p['horizons_raw'])]
                 input_one={key:value.copy() for key,value in raw.items()};input_two={key:value.copy() for key,value in raw.items()}
+                if not exposure_written:
+                    # The ledger recheck and reservation are one transaction across
+                    # different private folders/locks, before either API is called.
+                    with ledger_transaction(exposure_root()):
+                        current=verify_lock(lockfile,cardfile)
+                        checked=screen_records(current,current['_verified_lock_sha256'])
+                        if checked['status']!='schema_screened_no_detected_overlap' or canonical_json_hash(checked)!=canonical_json_hash(screening):raise ValueError('Cohort freshness changed before atomic reservation')
+                        screened={r['record_id']:r for r in checked['records']}
+                        entry=dict(lock_sha256=v['_verified_lock_sha256'],source_id=v['manifest']['source']['source_id'],rig_id=v['manifest']['source']['rig_id'],access='performance_attempt',records=[{k:r[k] for k in ['record_id','session_id','trial_id','sha256']}|dict(fingerprints=screened[r['record_id']]['numeric_fingerprints']) for r in v['manifest']['records']])
+                        write_new(exposure_root()/(v['_verified_lock_sha256']+'.json'),entry)
+                    exposure_written=True
                 output_one=candidate.forecast(input_one,family=record['family'],axis=axis,angle_age_samples=age);output_two=reference.forecast(input_two,family=record['family'],axis=axis,angle_age_samples=age)
                 expected_horizons=np.array(p['horizons_raw'])*.01
                 for result in [output_one,output_two]:

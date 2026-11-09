@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "index_sha256": "c13c98d5c810b3776f56e53cc2a5e751d5f5831cfa668ebd18990e48564a833c",
+  "policy_sha256": "8a700962058725b1226c5260ebd4e8ef72f0db209b462e083d6fdb7e3c0b03c2",
+  "source_hashes": {
+    "data/processed/manifest.json": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85",
+    "data/processed/dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "data/raw/aalto_6907569/crane_dataset.zip": "78269ff76e330910ed1789a20874bfccfcbbe26b38aac3d4f0bad37187d88952",
+    "data/processed/aalto_6907569/observations.npz": "1d2579af4c65c8af611553aa0952376f217701bac080b4a84dd82631d0db0d31",
+    "data/raw/behavioral_crane_1aa26b5/download_manifest.json": "2f43847f46e864a3077b4790839ad8b309c751fc869c2025c107d513257234c7",
+    "configs/external_benchmark_20261107.json": "1080741d80487fcef9a64dbb68f4ddcccda6bcf87af9f575a226927323db72e6",
+    "scripts/external_crane_data.py": "5fa8da821287b5ab0b1e57d58e3245509603683fab6f9dd5697ac0acd6493c6a"
+  },
+  "previously_opened_corpora": [
+    "Inteco33",
+    "Aalto6907569",
+    "Behavioral20"
+  ],
+  "scope": "Public commitment to the complete private registry of old response-bearing assets and angle fingerprints; no private fingerprint entries or new-trial identifiers are published here. A replacement/pruned registry is not accepted."
+}

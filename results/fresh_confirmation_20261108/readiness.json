@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "original_files_checked": 1281,
+  "existing_eol_only_paths_preserved": 122,
+  "preceding_dated_evidence_live_files_verified": 553,
+  "primary_manifest_sha256": "8e8255a57c655cb2d34bc6777e698214d1ef832981b1002ff1385604115a5c73",
+  "reference_manifest_sha256": "3baf2d68f522fedd86e9b2823fa7cc2ad8d125fb5eaea6d59ca4c9711d9373d5",
+  "guarded_bundle_code_train_files": 102,
+  "unit_tests": 316,
+  "final_unit_tests_sha256": "f43b4c0232e148a1254848757824dd1e95918313bbb272fe48e55ee8f827705f",
+  "final_unit_test_report": "final_unit_tests_hardened.log",
+  "old_registry": {
+    "sha256": "c13c98d5c810b3776f56e53cc2a5e751d5f5831cfa668ebd18990e48564a833c",
+    "response_file_hashes": 145,
+    "auxiliary_file_hashes": 37,
+    "sequence_segments": 109,
+    "informative_blocks": 35076,
+    "policy_and_source_hashes_verified": true
+  },
+  "private_intake_ignored": true,
+  "exact_old_registry_seal_verified": true,
+  "sealed_registry_sha256": "41ad9017b9958856abdf3e4f7b8c22252b8a249f666205ed46db57a1c442ceff",
+  "real_confirmation_locks": 0,
+  "real_performance_exposures": 0,
+  "suitable_new_physical_records_received": 0,
+  "scope": "Software readiness and retrospective reproducibility only; no candidate numerical files loaded by this audit.",
+  "independent_confirmation": false,
+  "hardware_success_claimed": false,
+  "final_goal_achieved": false
+}
