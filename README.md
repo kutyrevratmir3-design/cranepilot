@@ -6,7 +6,11 @@ Forecasting tower-crane payload sway when angle measurements arrive late. CraneP
 
 ## Results
 
-The latest comparison replays seven previously inspected recordings from the 100 Hz Inteco dataset. The baseline is a validation-selected autoregressive model with exogenous inputs (ARX). At an angle age of 250 ms, with no added noise, the average over seven horizons favors CranePilot. Dense ARX has lower error at the 100 ms horizon.
+The latest comparison replays seven previously inspected recordings from the 100 Hz Inteco dataset. The baseline is a validation-selected autoregressive model with exogenous inputs (ARX).
+
+![Mean absolute error by forecast horizon with 0 ms and 250 ms angle age. At 250 ms, dense ARX has lower error at the 100 ms horizon, then rises faster than CranePilot.](paper/figures/forecast_by_horizon.png)
+
+At an angle age of 250 ms, with no added noise, the average over seven horizons favors CranePilot. Dense ARX has lower error at the 100 ms horizon.
 
 | Mean absolute angle error | CranePilot | Dense ARX |
 | --- | ---: | ---: |
