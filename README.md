@@ -1,231 +1,46 @@
 # CranePilot
 
-**Physics-Guided Prediction and Control under Cable-Length Shift**
+Forecasting tower-crane payload sway when angle measurements arrive late. CranePilot uses past angle and crane motion to predict sway from 0.10 to 1.50 seconds ahead. This repository contains the manuscript, the frozen predictors, and the experiment records.
 
-Research by Ratmir Kutyrev, extending his previous experimental payload-sway
-forecasting study. This repository separates measured-data forecasting from
-simulation-only controller evaluation. It is an evolving research implementation,
-not a finished industrial controller or an accepted journal paper.
+[Read the manuscript (PDF)](paper/CranePilot_Manuscript.pdf) · [Manuscript source and figure data](paper/README.md) · [Research notes](docs/README.md)
 
-## Local research update: 6 November 2026
+## Results
 
-Completed 36 further angular fits with temporal-convolution encoders, a TCN
-reference and a matched training-objective ablation. Selection was locked using
-validation before this stage's evaluation. The selected long-transfer model
-improves macro MAE by 3.03%; the selected short-transfer model regresses 1.49%.
-The primary default remains the previous force-aware model.
+The latest comparison replays seven previously inspected recordings from the 100 Hz Inteco dataset. The baseline is a validation-selected autoregressive model with exogenous inputs (ARX). At an angle age of 250 ms, with no added noise, the average over seven horizons favors CranePilot. Dense ARX has lower error at the 100 ms horizon.
 
-| Extrapolation protocol | Previous model | Validation-selected candidate |
-|---|---:|---:|
-| Primary | 0.50050 | 0.50050 (same model) |
-| Shorter lengths | 0.43213 | 0.43858 |
-| Longer lengths | 0.51264 | 0.49712 |
+| Mean absolute angle error | CranePilot | Dense ARX |
+| --- | ---: | ---: |
+| Average over seven horizons | 0.742° | 1.316° |
+| 100 ms horizon | 0.700° | 0.653° |
 
-Scores are mean scenario/horizon MAE in degrees, not independent-test proof.
-The long-transfer gain does not extend to active-at-origin windows: their
-seven-horizon average worsens from 0.93185 to 0.96782 degrees. All variants,
-including the unselected 0.41412 short-transfer result, remain in the report.
-No universal replacement or best-in-literature claim is justified.
+An additional replay changed only the reported angle age. Over the five tested interior ages, a +20 ms reporting error raised CranePilot's mean absolute error from 0.581° to 0.869°. Both studies reuse the same laboratory recordings and simulate timing errors. Independent physical validation is pending.
 
-A frozen 576-case free-sway check exposes another limit: learned corrections
-can worsen a simple known physical regime. We also verified and causally
-reconstructed a separate Aalto industrial dataset; no model was trained or
-scored on it. There are now 49 passing tests. All new work remains local.
+[Horizon results](results/dense_horizons_20261109/paired_horizon_summary.csv) · [Timestamp results](results/timestamp_offset_20261109/common_interior_offset_means.csv) · [Confirmation protocol](docs/FRESH_CONFIRMATION_20261108.md)
 
-See [the complete stage report](docs/RESEARCH_2026_11_06.md),
-[the fixed design](docs/TEMPORAL_DESIGN.md), and
-[the independent-data audit](docs/AALTO_DATA_AUDIT.md).
+## Run the checks
 
-```sh
-python -m scripts.predict_temporal --input examples/history_packet.npz --output forecast.csv
-```
-
-## Previous local research stage: 3 November 2026
-
-At that stage the force-aware robust NN had the lowest mean error among the retained
-methods in the primary length-extrapolation protocol and two additional training
-ranges. This is a retrospective development result, not a best-in-literature claim.
-
-| Extrapolation protocol | Force-aware NN | Direct GRU | Zero-prior GP | Physics |
-|---|---:|---:|---:|---:|
-| Primary | 0.50050 | 0.54202 | 0.52519 | 0.55420 |
-| Shorter lengths, extrapolation subset | 0.43213 | 0.44140 | 1.70365 | 0.46275 |
-| Longer lengths, extrapolation subset | 0.51264 | 0.57330 | 0.59624 | 0.65663 |
-
-Scores are equal means of scenario/horizon MAE in degrees. Each extra fold
-refits both calibration and actuator from its own training records. Individual
-horizons and load/shape stress cases have different winners. All negative
-phase-normalization and measurement-anchoring experiments are retained.
-
-This stage completed 36 angular neural fits, two fresh fold-specific actuators,
-56 GP candidates and 41 passing tests. Warm three-seed CPU inference is about
-21 ms with a precomputed flow versus 59 ms with reference solves. GP remains
-faster in this microbenchmark. Latest source, metrics and checkpoints are local;
-this stage has not been uploaded.
-
-See [model card](docs/MODEL_CARD.md), [full report](docs/RESEARCH_2026_11_03.md)
-and [benchmark contract](docs/BENCHMARK_CARD.md). The compiled 11-page PDF
-predates this stage. A history-only prediction command requires no dataset file:
-
-```sh
-python scripts/predict_cranepilot.py --run artifacts/runs/forceaware_campaign_v2 --variant forced_driven_huber --input examples/history_packet.npz --output forecast.csv --fast
-```
-
-## Research question
-
-Can a physically calibrated oscillator and a structured learned correction
-transfer across cable lengths more efficiently than a black-box predictor?
-Does any improvement survive strong physical baselines and closed-loop tests?
-
-The projection-based model is an exploratory candidate, with explicit
-predecessors in orthogonal Gaussian processes and physics-guided neural
-feedforward control. A claim of methodological novelty requires further
-literature comparison and evidence; it is not established by this README.
-
-## Data and scope
-
-Experiments use the existing 33-scenario, 100 Hz Inteco tower-crane dataset:
-[Mendeley version 2](https://doi.org/10.17632/x69hyyv3zw.2), CC BY 4.0.
-See [the dataset article](https://doi.org/10.1016/j.dib.2025.111822).
-The raw XLSX records are never edited. Import records their SHA-256 checksums.
-
-The dataset has already informed this research and previous audits. Its splits
-are retrospective, not an untouched prospective test. Nearby time windows are
-not independent trials. Existing logs cannot experimentally validate a newly
-designed controller. No new hardware data collection is assumed or required.
-
-## Setup
+The repository's continuous integration uses Python 3.12 and CPU PyTorch. From the repository root:
 
 ```sh
 python -m venv .venv
-# Activate the environment using your operating system's normal command.
+source .venv/bin/activate
 python -m pip install -e .
-```
-
-The working machine can also use compatible cached wheels in an isolated
-environment. Those machine-specific caches and paths are excluded from Git.
-The checked-in dependency snapshot records the actually used package versions.
-
-## Reproduce the first experiment
-
-Download and extract all dataset XLSX files, including the time file.
-
-```sh
-cranepilot import-data --source /path/to/extracted/dataset --output data/processed
 python -m unittest discover -s tests -v
-cranepilot benchmark --config configs/extrapolation_pilot.json --output artifacts/runs/extrapolation_pilot
-python scripts/make_report.py --run artifacts/runs/extrapolation_pilot
 ```
 
-The pilot trains on trolley scenarios 3, 5, and 6; validates on scenario 4;
-and evaluates separately on scenarios 1, 2, 7, and 8. Whole scenarios remain
-disjoint. Hyperparameters in this pilot are fixed development choices, not a
-claim of optimal or nested-cross-validated performance.
+The [forecast API](docs/DATED_BUNDLE_20261108.md) takes a known measurement age and four seconds of history per channel. Its [frozen forecast bundle](artifacts/dated_bundle_20261108) and [dense ARX bundle](artifacts/dense_reference_bundle_20261108) are included. The inference API and unit tests can run without downloading the source recordings.
 
-Newest measurement is `theta[k]`; horizon `H` means exactly `theta[k+H]` at
-`H*0.01` seconds. Every method uses the declared finite observation history.
-Frequency/length calibration uses training records only. Evaluation of the
-pilot uses a 0.02 s origin stride; it is not described as every-sample scoring.
+## Repository layout
 
-## Models
+| Path | Contents |
+| --- | --- |
+| [`paper/`](paper) | LaTeX, bibliography, and manuscript figures |
+| [`src/cranepilot/`](src/cranepilot) | Forecasting models, data import, and benchmarks |
+| [`configs/`](configs) | Experiment settings and record-level splits |
+| [`artifacts/`](artifacts) | Frozen model bundles |
+| [`results/`](results) | Saved predictions, metrics, and verification reports |
+| [`docs/`](docs/README.md) | Evaluation protocols and research reports |
 
-- Persistence, ordinary least squares, and a length-varying linear baseline.
-- Ideal and train-calibrated harmonic oscillator forecasts.
-- Python gradient-boosted trees and a three-seed MLP ensemble.
-- Capped-size fixed-kernel GP residual reference.
-- Phase-coordinate neural residual and its sensitivity-projection ablation.
-- Command-conditioned recurrent actuator and phase-exact passive-memory model.
+## Data and citation
 
-The oscillator is a finite-history harmonic forecasting baseline, not a full
-nonlinear command-conditioned plant model. Its frequency is estimated from a
-training calibration tail. That tail is not automatically called free decay.
-The active/quiet diagnostic is based on backward differences at the forecast
-origin and does not assert that the future horizon remains quiet.
-
-Python neural/tree implementations are new fits with a documented common
-protocol, not bit-identical MATLAB fits. Legacy OLS reproduction is checked
-separately. Saved historical MATLAB NN errors must not be mixed into new
-same-protocol model comparisons.
-
-## Research artifacts
-
-- `src/cranepilot`: import, physics, models, metrics, benchmark, simulation.
-- `configs`: frozen, inspectable scenario splits and model choices.
-- `tests`: causality, horizon indexing, analytic physics and numerical checks.
-- `docs`: experimental contract, data audit, research checkpoint.
-- `paper`: English LaTeX manuscript and generated result tables/figures.
-- `results`: selected reproducible summaries, distinct from raw run archives.
-
-The current English manuscript compiles in the linked Overleaf project and
-is retained locally as `results/latest/CranePilot_Research_Draft.pdf`.
-The chronological adaptation pilot in `docs/VALIDATED_ADAPTATION.md` accepts
-no real-record updates; its equality with the physical prior is abstention,
-not evidence that adaptation improves forecasting.
-
-## Passive-memory development pilot
-
-PEPM combines a causal initial-state encoder, analytic oscillator rotation,
-and a dissipative latent-memory closure. The implementation checks its discrete
-storage balance, exact base rotation, independent-solver convergence and
-finite-difference gradients. The fixed-length forecast uses prescribed future
-reference commands and past measured trolley positions; it never consumes
-future measured trolley positions or accelerations.
-
-At 0.1 s the retained four-scenario mean MAE is 0.228 degrees for PEPM,
-0.245 for action-conditioned physics, and 0.216 for a same-information GP
-residual. At 1 s PEPM does not improve action-conditioned physics. This is
-a completed development pilot with a mixed result, not established superiority.
-See [the method and evidence](docs/PASSIVE_ROLLOUT.md).
-
-After importing the public data, reproduce this pilot using fresh output paths:
-
-```sh
-python scripts/run_passive_rollout.py --actuator-only --output artifacts/runs/actuator_development
-python scripts/run_passive_rollout.py --output artifacts/runs/passive_rollout_pilot --actuator-checkpoint artifacts/runs/actuator_development/actuator.pt
-python scripts/run_rollout_references.py
-python scripts/report_passive_rollout.py
-```
-
-Retained runs keep their configurations, environment, predictions, training
-logs and completion status. The new innovation campaign also serializes
-train-only calibration and guards evaluation with source/configuration hashes. A run is not
-considered complete merely because a process started. Metrics include all
-declared scenarios; failures must be retained and discussed.
-
-## Observer and driven-innovation campaign
-
-Nine further fits compare a refined causal angle/frequency observer, an explicit
-learned forcing port and the old architecture under matching training rules.
-Three seeds are averaged per variant; no best evaluation seed is selected.
-Mean MAE across seven horizons and four scenarios is 0.51193 deg for the driven
-variant versus 0.54267 for original PEPM, 0.52376 for the matched-training control,
-and 0.51668 for GP. GP remains stronger at several intermediate horizons;
-this small aggregate difference does not establish broad superiority.
-The learned forcing is an extra energy port, not identified physical force.
-
-```sh
-python scripts/run_innovation_development.py
-python scripts/run_innovation_development.py --evaluate
-python scripts/run_uniform_control.py
-python scripts/report_innovation.py
-```
-
-See [the full results](docs/INNOVATION_RESULTS.md). The separately compiled
-11-page paper predates this campaign. That historical checkpoint had 28 tests;
-the latest local stage has 49.
-
-## Claims and limitations
-
-Do not report the earlier aspirational 72%, 28%, or 41% improvements as results.
-Do not call offline forecasting a hardware controller experiment. Do not infer
-industrial safety or full-scale similarity from a laboratory pendulum.
-Performance comparisons belong to the exact retained run and information set.
-
-## Citation and authorship
-
-See `CITATION.cff` and the manuscript bibliography. Cite the original data
-creators as well as any reused method or software. The original research and
-its experimental analysis belong to Ratmir Kutyrev; this project builds on that
-work. AI-assisted software and manuscript preparation will be disclosed in the
-paper, with human review and responsibility for the final submission.
-
+The source is the [33-record Inteco tower-crane dataset, version 2](https://doi.org/10.17632/x69hyyv3zw.2) (CC BY 4.0). See the [dataset paper](https://doi.org/10.1016/j.dib.2025.111822) and the [benchmark card](docs/BENCHMARK_CARD.md) for the experiment design. Cite the dataset authors and [CranePilot](CITATION.cff) when reusing this work. The code is available under the [MIT license](LICENSE).
