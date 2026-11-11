@@ -1,0 +1,9 @@
+{
+  "scope": "Post-hoc retrospective reference exercise on the already examined Inteco dataset. Hold original fitting, validation, and seven-record replay roles fixed. Choose within each family/axis on validation only, pooling all six validation ages and both noise levels with drive/low-motion balance. No independent test or hardware latency inference.",
+  "observation_variance": "Encoder increment squared / 12, fixed across clean and jittered inputs. No jitter condition label enters inference.",
+  "damping_per_s": [0.1, 0.5, 1.5],
+  "acceleration_process_std": [0.003, 0.03, 0.3],
+  "continuations": ["coast", "decay"],
+  "local_ar_orders": [4, 8],
+  "local_ar_ridge": [0.0001, 0.01, 0.1]
+}

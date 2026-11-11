@@ -1,0 +1,193 @@
+{
+  "cases": {
+    "jib_beta": {
+      "axis": "beta",
+      "family": "jib",
+      "kalman": {
+        "acceleration_std": 0.03,
+        "continuation": "decay",
+        "damping": 0.1,
+        "drive_coefficient": [
+          -0.22274612197776364,
+          0.38646348765961497
+        ],
+        "validation_mae_deg": 1.2782112798608734
+      },
+      "length_calibration": [
+        0.9385221961765879,
+        0.16451379535292082
+      ],
+      "local_ar": {
+        "order": 8,
+        "ridge": 0.0001,
+        "validation_mae_deg": 2.081394035698666
+      },
+      "train_ids": [
+        14,
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "validation_ids": [
+        17
+      ]
+    },
+    "jib_theta": {
+      "axis": "theta",
+      "family": "jib",
+      "kalman": {
+        "acceleration_std": 0.03,
+        "continuation": "coast",
+        "damping": 0.1,
+        "drive_coefficient": [
+          0.05757916054849709,
+          0.19779329104717744
+        ],
+        "validation_mae_deg": 1.4352962563406624
+      },
+      "length_calibration": [
+        0.9190948915354353,
+        0.16731036188661713
+      ],
+      "local_ar": {
+        "order": 8,
+        "ridge": 0.0001,
+        "validation_mae_deg": 1.9930380193212482
+      },
+      "train_ids": [
+        14,
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "validation_ids": [
+        17
+      ]
+    },
+    "simult_beta": {
+      "axis": "beta",
+      "family": "simult",
+      "kalman": {
+        "acceleration_std": 0.03,
+        "continuation": "decay",
+        "damping": 0.1,
+        "drive_coefficient": [
+          -0.09094948166937082,
+          1.4051576042774518,
+          -0.4951342617135218,
+          -2.3041172625117836
+        ],
+        "validation_mae_deg": 2.8848970701224346
+      },
+      "length_calibration": [
+        0.9417761262805215,
+        0.15328611972291906
+      ],
+      "local_ar": {
+        "order": 8,
+        "ridge": 0.0001,
+        "validation_mae_deg": 3.479235132538926
+      },
+      "train_ids": [
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation_ids": [
+        28
+      ]
+    },
+    "simult_theta": {
+      "axis": "theta",
+      "family": "simult",
+      "kalman": {
+        "acceleration_std": 0.03,
+        "continuation": "coast",
+        "damping": 0.1,
+        "drive_coefficient": [
+          -0.2779306487478694,
+          0.9156144803879112,
+          0.17777685227136006,
+          0.44527921800017206
+        ],
+        "validation_mae_deg": 2.647190243141601
+      },
+      "length_calibration": [
+        0.9359534573475158,
+        0.1637825353444249
+      ],
+      "local_ar": {
+        "order": 8,
+        "ridge": 0.0001,
+        "validation_mae_deg": 3.2196908017650796
+      },
+      "train_ids": [
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "validation_ids": [
+        28
+      ]
+    },
+    "trolley_theta": {
+      "axis": "theta",
+      "family": "trolley",
+      "kalman": {
+        "acceleration_std": 0.03,
+        "continuation": "coast",
+        "damping": 0.1,
+        "drive_coefficient": [
+          -0.5206275389844538
+        ],
+        "validation_mae_deg": 0.7278395417366434
+      },
+      "length_calibration": [
+        0.9410430183548024,
+        0.19087268594949516
+      ],
+      "local_ar": {
+        "order": 8,
+        "ridge": 0.0001,
+        "validation_mae_deg": 1.4330033872086443
+      },
+      "train_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "validation_ids": [
+        4
+      ]
+    }
+  },
+  "hashes": {
+    "dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "dated_forecast_20261108.json": "e0ac71a763cdfab23f458124d3b5ffa8e76c85621614dc7d9c4bf58d0d21e616",
+    "delayed_baselines.py": "83e374aba22fe95c6c4b95195d9b9f6c3755331b7b60ff66d1f9cede6b23e9ae",
+    "delayed_baselines_design.json": "3f2ac33465d0318dfc1393683c8b8528c5adfc6509297964f8fee66073b12bac",
+    "task.json": "96fe0a7b705dd99fcab30534a9b53a82eae09e9393084441f30b805a24c956d1"
+  },
+  "independent_test": false,
+  "scope": "Post-hoc retrospective reference exercise on the already examined Inteco dataset. Hold original fitting, validation, and seven-record replay roles fixed. Choose within each family/axis on validation only, pooling all six validation ages and both noise levels with drive/low-motion balance. No independent test or hardware latency inference.",
+  "score_file_sha256": "6651ef52382c1278c1cc22047da116f262c1fe80a364b3db1a8303cdab263ffe"
+}

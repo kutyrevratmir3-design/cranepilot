@@ -1,7 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, cite this repository and the original dataset."
-title: "CranePilot: Physics-Guided Prediction and Control under Cable-Length Shift"
+title: "CranePilot: Crane Payload-Sway Forecasting with Delayed Angle Measurements"
 type: software
+repository-code: "https://github.com/kutyrevratmir3-design/cranepilot"
 version: 0.1.0
 date-released: 2026-11-02
 authors:

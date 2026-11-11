@@ -1,0 +1,24 @@
+{
+  "archive_origins_and_regimes_exact": true,
+  "engine": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "python": "3.12.14"
+  },
+  "generated_sha256": {
+    "age_summary.csv": "76fb21d432046bf519234b15aa89fa618bad803c27c83f5a9a7c599cd97d096e",
+    "horizon_summary.csv": "c6683477f0a942663659c96a708ef6e2fc0cfd663055b5a44bdd5d6d56c93038",
+    "record_horizon_summary.csv": "66510c457bca9edd4a5b63285ae6f23f65507a1baaeb15a2ee9183427b6668be",
+    "replay_metrics.csv": "ee6c372ab490ef23eff904e02bb63163c27ee74ef47292849d0c9331714bbc96"
+  },
+  "inputs_sha256": {
+    "dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "dated_forecast_20261108.json": "e0ac71a763cdfab23f458124d3b5ffa8e76c85621614dc7d9c4bf58d0d21e616",
+    "delayed_baselines.py": "83e374aba22fe95c6c4b95195d9b9f6c3755331b7b60ff66d1f9cede6b23e9ae",
+    "delayed_baselines_design.json": "3f2ac33465d0318dfc1393683c8b8528c5adfc6509297964f8fee66073b12bac",
+    "task.json": "96fe0a7b705dd99fcab30534a9b53a82eae09e9393084441f30b805a24c956d1"
+  },
+  "matched_packet_conditions": 216,
+  "replay_record_count": 7,
+  "selection_sha256": "5b3291a18ae3526e79464f1bfdc9df942c7b0934fafdec0a7bc86af676758d0f"
+}

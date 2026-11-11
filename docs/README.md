@@ -1,6 +1,6 @@
 # Research notes
 
-Start with the [manuscript](../paper/README.md) for the current account of the study. The records below preserve the setup and results of individual experiments. Reports marked **RU** are in Russian.
+The [manuscript](../paper/README.md) describes the current delayed-angle study. The [paired reanalysis](../results/delayed_angle_review_20261111/README.md) compares the blend with its components and both ARX references. The [reference study](../results/delayed_baselines_20261111/README.md) adds a timestamp-aware Kalman filter and other baselines using the same previously examined recordings.
 
 ## Delayed angle measurements
 
@@ -11,6 +11,8 @@ Start with the [manuscript](../paper/README.md) for the current account of the s
 | Error by forecast horizon | [Horizon report (RU)](DENSE_HORIZONS_2026_11_09_RU.md) | [Paired results by record](../results/dense_horizons_20261109/paired_record_horizons.csv) |
 | Error in the supplied angle age | [Design](TIMESTAMP_OFFSET_DESIGN_20261109.md), [results (RU)](TIMESTAMP_OFFSET_2026_11_09_RU.md) | [Offset replay](../results/timestamp_offset_20261109), [replay audit](../results/timestamp_offset_audit_20261109/verification.json) |
 | Prospective confirmation | [Frozen intake and scoring protocol](FRESH_CONFIRMATION_20261108.md), [session coverage plan (RU)](FRESH_SESSION_DESIGN_20261109_RU.md) | [Planning calculation](../results/fresh_session_design_20261109/planning.json) |
+
+Reports marked **RU** are in Russian.
 
 ## Earlier experiments
 

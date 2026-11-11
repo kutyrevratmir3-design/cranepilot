@@ -1,0 +1,37 @@
+{
+  "design": {
+    "acceleration_process_std": [
+      0.003,
+      0.03,
+      0.3
+    ],
+    "continuations": [
+      "coast",
+      "decay"
+    ],
+    "damping_per_s": [
+      0.1,
+      0.5,
+      1.5
+    ],
+    "local_ar_orders": [
+      4,
+      8
+    ],
+    "local_ar_ridge": [
+      0.0001,
+      0.01,
+      0.1
+    ],
+    "observation_variance": "Encoder increment squared / 12, fixed across clean and jittered inputs. No jitter condition label enters inference.",
+    "scope": "Post-hoc retrospective reference exercise on the already examined Inteco dataset. Hold original fitting, validation, and seven-record replay roles fixed. Choose within each family/axis on validation only, pooling all six validation ages and both noise levels with drive/low-motion balance. No independent test or hardware latency inference."
+  },
+  "hashes": {
+    "dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "dated_forecast_20261108.json": "e0ac71a763cdfab23f458124d3b5ffa8e76c85621614dc7d9c4bf58d0d21e616",
+    "delayed_baselines.py": "83e374aba22fe95c6c4b95195d9b9f6c3755331b7b60ff66d1f9cede6b23e9ae",
+    "delayed_baselines_design.json": "3f2ac33465d0318dfc1393683c8b8528c5adfc6509297964f8fee66073b12bac",
+    "task.json": "96fe0a7b705dd99fcab30534a9b53a82eae09e9393084441f30b805a24c956d1"
+  },
+  "stage": "before_development"
+}

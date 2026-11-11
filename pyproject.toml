@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cranepilot-research"
 version = "0.1.0"
-description = "Physics-guided prediction and simulation control under cable-length shift"
+description = "Crane payload-sway forecasting with delayed angle measurements"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"

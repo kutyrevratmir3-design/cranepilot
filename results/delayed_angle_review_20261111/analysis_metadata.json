@@ -1,0 +1,29 @@
+{
+  "source": "dense_horizons_20261109/paired_record_horizons.csv",
+  "source_cross_check": "dense_horizons_20261109/recombined_age_summary.csv",
+  "all_origins": true,
+  "zero_age_bank_bypassed": true,
+  "age_selection_max_ms": 200,
+  "bootstrap": {
+    "replicates": 20000,
+    "seed": 20261111,
+    "resample_unit": "paired physical record",
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "interpretation": "Descriptive sensitivity for seven reused records; not confirmatory inference."
+  },
+  "hoisting_record_ids": [
+    9,
+    13,
+    21,
+    32,
+    33
+  ],
+  "post_hoc_grouped_gain_record_ids": [
+    13,
+    32,
+    33
+  ]
+}

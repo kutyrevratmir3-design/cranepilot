@@ -1,25 +1,25 @@
 # CranePilot
 
-Forecasting tower-crane payload sway when angle measurements arrive late. CranePilot uses past angle and crane motion to predict sway from 0.10 to 1.50 seconds ahead. This repository contains the manuscript, the frozen predictors, and the experiment records.
+Forecasting tower-crane payload sway from 0.10 to 1.50 seconds ahead when angle measurements arrive after support measurements. The repository contains the manuscript, frozen predictors, and records of the experiments.
 
-[Read the manuscript (PDF)](paper/CranePilot_Manuscript.pdf) · [Manuscript source and figure data](paper/README.md) · [Research notes](docs/README.md)
+[Read the manuscript (PDF)](paper/CranePilot_Manuscript.pdf) · [Source and figure data](paper/README.md) · [Research index](docs/README.md)
 
-## Results
+## What the replay shows
 
-The latest comparison replays seven previously inspected recordings from the 100 Hz Inteco dataset. The baseline is a validation-selected autoregressive model with exogenous inputs (ARX).
+The delayed-angle blend combines a forecast based on quadratic completion with forecasts from a bank of modal experts. At zero angle age, all three return the original synchronous predictor. The error gap against both autoregressive references already exists at this age.
 
-![Mean absolute error by forecast horizon with 0 ms and 250 ms angle age. At 250 ms, dense ARX has lower error at the 100 ms horizon, then rises faster than CranePilot.](paper/figures/forecast_by_horizon.png)
+| Angle age and score | Blend | Quadratic completion | Direct bank | Earlier ARX | Dense ARX |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 0 ms, seven horizons | 0.525° | 0.525° | 0.525° | 1.074° | 1.071° |
+| 100 ms, seven horizons | 0.566° | 0.667° | 0.626° | 1.077° | 1.183° |
+| 250 ms, seven horizons | 0.742° | 1.479° | 0.692° | 1.246° | 1.316° |
+| 250 ms, 100 ms horizon | 0.700° | 1.733° | 0.583° | 0.666° | 0.653° |
 
-At an angle age of 250 ms, with no added noise, the average over seven horizons favors CranePilot. Dense ARX has lower error at the 100 ms horizon.
+Values are mean absolute angle errors with no added noise, weighting each of the seven recordings equally. The blend improves the mean over quadratic completion at every positive age. The bank alone has lower mean error at 200 and 250 ms. At 250 ms the blend has lower error than earlier ARX on three recordings. Those three hoisting records account for the overall mean improvement against that reference.
 
-| Mean absolute angle error | CranePilot | Dense ARX |
-| --- | ---: | ---: |
-| Average over seven horizons | 0.742° | 1.316° |
-| 100 ms horizon | 0.700° | 0.653° |
+The original method used three validation records, one per motion family, and its validation grid ended at 200 ms. The new Kalman, local autoregressive, oscillator, and persistence comparisons also reuse previously examined Inteco recordings with simulated measurement age. Independent physical validation is pending.
 
-An additional replay changed only the reported angle age. Over the five tested interior ages, a +20 ms reporting error raised CranePilot's mean absolute error from 0.581° to 0.869°. Both studies reuse the same laboratory recordings and simulate timing errors. Independent physical validation is pending.
-
-[Horizon results](results/dense_horizons_20261109/paired_horizon_summary.csv) · [Timestamp results](results/timestamp_offset_20261109/common_interior_offset_means.csv) · [Confirmation protocol](docs/FRESH_CONFIRMATION_20261108.md)
+[Paired reanalysis](results/delayed_angle_review_20261111/README.md) · [Delayed-measurement baselines](results/delayed_baselines_20261111/README.md) · [Confirmation protocol](docs/FRESH_CONFIRMATION_20261108.md)
 
 ## Run the checks
 
