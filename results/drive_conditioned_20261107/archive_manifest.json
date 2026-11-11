@@ -1,0 +1,1003 @@
+{
+  "scope": "Own derived results, fitted weights, frozen selection, source, tests and documentation; original measurements/private correspondence excluded. Original main repository and datasets required for full replay. New drive-conditioned models are research parameters, not a released controller or portable API.",
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "files": {
+    "RESEARCH_STATUS_2026_11_07.md": {
+      "bytes": 32650,
+      "sha256": "f738e922be2b99b234f2e83b99993135926c5c71e08b93d89e2a5e4e5a51751f"
+    },
+    "artifacts/reliability_bundle_20261107/base/jib_beta/calibration.json": {
+      "bytes": 1905,
+      "sha256": "0ec85f41d42774f91995311bdfc86f931b3d5383424fa4c5b5d7440fa95fa238"
+    },
+    "artifacts/reliability_bundle_20261107/base/jib_beta/reference_arx.npz": {
+      "bytes": 18081,
+      "sha256": "bec0128f678f472bc2ce3c77b4bbb92329a75f554d1c2bfde15d70c2cd18018c"
+    },
+    "artifacts/reliability_bundle_20261107/base/jib_theta/calibration.json": {
+      "bytes": 1909,
+      "sha256": "0230fca36bde7b4d390b42ad00b48b8ec02564aed9d6706d2060958b7356ae45"
+    },
+    "artifacts/reliability_bundle_20261107/base/jib_theta/reference_arx.npz": {
+      "bytes": 18078,
+      "sha256": "427eacfb6c9143a0fdf3c14e0f1fa7a3834a1706190e3470192a9401a988064a"
+    },
+    "artifacts/reliability_bundle_20261107/base/manifest.json": {
+      "bytes": 3262,
+      "sha256": "213b7be8ea19691be4510dbb875b0b4d30652af8fe929f14d93d10a267a2d1ca"
+    },
+    "artifacts/reliability_bundle_20261107/base/simult_beta/calibration.json": {
+      "bytes": 2208,
+      "sha256": "27b9b1ab2c8935d369a83afa2f4f6804d1b34538580406120fac71370dfc62c4"
+    },
+    "artifacts/reliability_bundle_20261107/base/simult_beta/reference_arx.npz": {
+      "bytes": 18024,
+      "sha256": "d135ad203e76098e1be445386476bbc0c503583aecce2dd0166b21f5501085d7"
+    },
+    "artifacts/reliability_bundle_20261107/base/simult_theta/calibration.json": {
+      "bytes": 2206,
+      "sha256": "0430e7a5ddb5072a9562120cbf446b7fcea43fff5cfca3d0f43f7fb8e475eae7"
+    },
+    "artifacts/reliability_bundle_20261107/base/simult_theta/reference_arx.npz": {
+      "bytes": 18044,
+      "sha256": "7b9f8e69ec0e8af54c91de96fdc55e09a1520fd2962efab323d5ccd0951c8e05"
+    },
+    "artifacts/reliability_bundle_20261107/base/task.json": {
+      "bytes": 2850,
+      "sha256": "96fe0a7b705dd99fcab30534a9b53a82eae09e9393084441f30b805a24c956d1"
+    },
+    "artifacts/reliability_bundle_20261107/base/trolley_theta/calibration.json": {
+      "bytes": 3119,
+      "sha256": "9d094502422cbc56857ffa6747011d283c03ec7a4529a778b0f724498395ca55"
+    },
+    "artifacts/reliability_bundle_20261107/base/trolley_theta/reference_arx.npz": {
+      "bytes": 18052,
+      "sha256": "065a94490e4413c685662dd0b5cd9aa33b4d5dce8a886bbea500b81444b00d5b"
+    },
+    "artifacts/reliability_bundle_20261107/gate.json": {
+      "bytes": 1373,
+      "sha256": "aafcec3962ea70f58d538c362c781893a39bbb64d35c32d157e37fb712cf4150"
+    },
+    "artifacts/reliability_bundle_20261107/jib_beta/short_arx.npz": {
+      "bytes": 13960,
+      "sha256": "e9b365c13b1f6b6815640df7ac16febab4b61d9e29ea43c7630f56d4a367c738"
+    },
+    "artifacts/reliability_bundle_20261107/jib_theta/short_arx.npz": {
+      "bytes": 13966,
+      "sha256": "1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd"
+    },
+    "artifacts/reliability_bundle_20261107/manifest.json": {
+      "bytes": 3460,
+      "sha256": "9de59e82d7a05a16e4b3b2d9bf1d4aed251ffbd947d3434177f556ebba19ee24"
+    },
+    "artifacts/reliability_bundle_20261107/simult_beta/short_arx.npz": {
+      "bytes": 13940,
+      "sha256": "5c60b6f8c987937bc4b2eadc39e6955fc227b598c47b403ffc78a1b63608da53"
+    },
+    "artifacts/reliability_bundle_20261107/simult_theta/short_arx.npz": {
+      "bytes": 13916,
+      "sha256": "3b4200756e1721ede168fc7664bdba869965de5a0f648e6a9c94ce15c3a9e969"
+    },
+    "artifacts/reliability_bundle_20261107/trolley_theta/short_arx.npz": {
+      "bytes": 13925,
+      "sha256": "bcc85e714e4553635020a32ac645e68920d948d0fe94069bd085fa7b59483327"
+    },
+    "configs/active_qualification_20261107.json": {
+      "bytes": 1167,
+      "sha256": "02b301a8f6ba5c4087ce3cb11dcca958354bca89982c7ef59d98792bfba79741"
+    },
+    "configs/drive_conditioned_20261107.json": {
+      "bytes": 1165,
+      "sha256": "84949e4021fc913e183327a3fdc81eebdf31e9a2ec4da9371d992494db2343c0"
+    },
+    "docs/ACTIVE_QUALIFICATION_2026_11_07_RU.md": {
+      "bytes": 9105,
+      "sha256": "1536f7c4963d74fdeecc004ad686846c9be69db18e79f9314ac1dc0d2e58e4a4"
+    },
+    "docs/ACTIVE_QUALIFICATION_DESIGN_20261107.md": {
+      "bytes": 3408,
+      "sha256": "bea2a80363c6e171d3d8cf0a677d20262090bf8eb08e1214e8120f8fdf5c4f4b"
+    },
+    "docs/DRIVE_ATTRIBUTION_DESIGN_20261107.md": {
+      "bytes": 1573,
+      "sha256": "d8fbd9bb6ca05e6e88cd41f6c4534a98dc48862372c1a818a2d7690b5463a8ff"
+    },
+    "docs/DRIVE_CONDITIONED_2026_11_07_RU.md": {
+      "bytes": 11074,
+      "sha256": "2e2592ee64c32389c9a83d7ce9605f222a3dbd108ea8315d1e0a3130221a3454"
+    },
+    "docs/DRIVE_CONDITIONED_DESIGN_20261107.md": {
+      "bytes": 5611,
+      "sha256": "e34accf4c04d53b9e03e206ed0af82926d403c4608b4f89a53cea5f5d679c552"
+    },
+    "docs/RELIABILITY_BUNDLE_20261107.md": {
+      "bytes": 4271,
+      "sha256": "54914b69888b15fd709ab60416830a9904324af8d9eded65c86953833f475118"
+    },
+    "results/drive_conditioned_20261107/all_metrics.csv": {
+      "bytes": 1013775,
+      "sha256": "f13cd6836c6ea9c21be68cb535c498cfa46dfa4dc0477c05419c5f62f12c694a"
+    },
+    "results/drive_conditioned_20261107/attribution.log": {
+      "bytes": 681,
+      "sha256": "bb79af413825ea5fc2a22d5f104e181550cc983c7d27b6a1a9f2fa46b3d77cee"
+    },
+    "results/drive_conditioned_20261107/axis_record_summary.csv": {
+      "bytes": 93755,
+      "sha256": "6aa670e0079bedd6b078605f73bb5d6995fa092635b4eb2deff72b62ee8cb052"
+    },
+    "results/drive_conditioned_20261107/balanced_axis_record_summary.csv": {
+      "bytes": 8980,
+      "sha256": "be71e29ef1ce6b00c28ec37d12050b4a0768182b112f84a740b83ad85c980967"
+    },
+    "results/drive_conditioned_20261107/balanced_case_summary.csv": {
+      "bytes": 3560,
+      "sha256": "f0fc0db6ec753495996cf4de2deb928f2462f0cf3b8ab5405d0bc7fe0363db7e"
+    },
+    "results/drive_conditioned_20261107/balanced_summary.csv": {
+      "bytes": 548,
+      "sha256": "cccc30d58c226c2733ba82af3c14df3d11da321157d6d77123277e78ccd69979"
+    },
+    "results/drive_conditioned_20261107/conditioning_summary.csv": {
+      "bytes": 342,
+      "sha256": "9fe6189136e291913f47fa78524bc8ae69d921ec90d8462d2dcd9739d4d9f974"
+    },
+    "results/drive_conditioned_20261107/development.log": {
+      "bytes": 7239,
+      "sha256": "ce956590c836d4977595b6ebf8dac5950deb8c3a23fc1ac909afac96fe293d45"
+    },
+    "results/drive_conditioned_20261107/drive_conditioned.png": {
+      "bytes": 62003,
+      "sha256": "721b3a35ec109dc8c3d8410acbd44d9b8e72f3f03eabf5292ac30fc3b3819c62"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/metrics.csv": {
+      "bytes": 149006,
+      "sha256": "c911ff45cf0bb7dc463caea86448023229bdcb3ede63c5a584a28502d409b81e"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_jib_beta_s21.npz": {
+      "bytes": 41537,
+      "sha256": "c0513a10b72b1c49c06affabcfb0500f64fef3955ec3eabcc5e28c009d1b2cf0"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_jib_beta_s22.npz": {
+      "bytes": 21086,
+      "sha256": "a69e575a3c8674b3397a65212e4813af3d0b2e208b78396c878f49f4c0ed0dc5"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_jib_beta_s23.npz": {
+      "bytes": 31147,
+      "sha256": "038e16974d583846e3b48d89afb02f23a4d60ca17b20ecf29aa916c4ca3fe925"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_jib_theta_s21.npz": {
+      "bytes": 41012,
+      "sha256": "8671c7fda4b6543a585d9e956bdd93ccda46c28080b8cde9cbc4827313b31f69"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_jib_theta_s22.npz": {
+      "bytes": 41546,
+      "sha256": "7e05c0156dc7218f33e0aabf0e5add9494e789a15f32849459a3f8ed4adabe6a"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_jib_theta_s23.npz": {
+      "bytes": 41586,
+      "sha256": "ea37d88b015dc0e24ea0866b3612f1023adc5ce6c7f854c7c21165c4d42fc0bc"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_simult_beta_s32.npz": {
+      "bytes": 41610,
+      "sha256": "4c5da94538a3bda148ab261bbea1f7c6ed31f138d83634af47e416a00763e51e"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_simult_beta_s33.npz": {
+      "bytes": 41515,
+      "sha256": "7389aec5fd70b8b8745971a58932ca65091fc7587a0118c1e7a4397ab08cafca"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_simult_theta_s32.npz": {
+      "bytes": 41572,
+      "sha256": "1df9d959f86b030607185b86610f366270c86b55cce7b226a393b7ded81b97ec"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_simult_theta_s33.npz": {
+      "bytes": 41519,
+      "sha256": "07aa08353e9dcab6d5885817a44b92d0bfaa39d0687233482ea378a40020defa"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_trolley_theta_s13.npz": {
+      "bytes": 41429,
+      "sha256": "4678e3562cbc0698e693096dedf85cb202c3aa532e7a4c4289781f2b2f70e422"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/old_evaluation_trolley_theta_s9.npz": {
+      "bytes": 41404,
+      "sha256": "f0f7aa235f5955297bc33e3ec88fb35a5cd8211eecdb20a31409cf34129346d6"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/provenance.json": {
+      "bytes": 2664,
+      "sha256": "5c8c857d2a5a825520e45e60d3d4dadcbdd52291c19b26275749e256e4379d3b"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/validation_jib_beta_s17.npz": {
+      "bytes": 41561,
+      "sha256": "d727a7b97ea27cbde59b7b72f5385d26f7741921ac625095e944a95811eb8569"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/validation_jib_theta_s17.npz": {
+      "bytes": 41480,
+      "sha256": "fe4470df9596c64f8c655bbbc5c664c0ff6e388c98afea810f3ee5c264a38f56"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/validation_simult_beta_s28.npz": {
+      "bytes": 41579,
+      "sha256": "18db54350a0c1905b15c849a0192be5fa557baa28d65089e585113d5aa0f2267"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/validation_simult_theta_s28.npz": {
+      "bytes": 41556,
+      "sha256": "b605eb5d1c628bdf0213a19c2661bf3b598cfc869abc4d21ccb81af9c49a189c"
+    },
+    "results/drive_conditioned_20261107/frozen_attribution/validation_trolley_theta_s4.npz": {
+      "bytes": 41413,
+      "sha256": "693b730973f0246ababc5b3b9b8bf1ba5d3146bf3de1d252a4724608dd5b9926"
+    },
+    "results/drive_conditioned_20261107/frozen_development/arx_grid.csv": {
+      "bytes": 10654,
+      "sha256": "4f1ae5da41e045b84efc14b3ff9fd06a6bfeba404080edcf153adf483efaed38"
+    },
+    "results/drive_conditioned_20261107/frozen_development/development.json": {
+      "bytes": 29569,
+      "sha256": "38e3de0924971bc537d6c5776e41d98b89646775715a251f753136a75ad28ac5"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_direct_0.0001.npz": {
+      "bytes": 18056,
+      "sha256": "86bb71b64cd78e912e155414561adc9934ebf023edfd704180436ca997dc5930"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_direct_0.01.npz": {
+      "bytes": 18068,
+      "sha256": "0588ba82d961debd39c8ea920fa082c1f41bb02985fc473a33cea5ea04b55199"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_direct_1.npz": {
+      "bytes": 18049,
+      "sha256": "00429431340ee161afbbcd65e21f75d98e99d413a07354fb834d7cb6fd278730"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_direct_1e-06.npz": {
+      "bytes": 18065,
+      "sha256": "7b32fdc2fed1014fd554285252a12c8f25ce137d522914aa28a5a719a1711b68"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_direct_1e-08.npz": {
+      "bytes": 18221,
+      "sha256": "7ad1007c32b76e985f4f473a57cfcca0d96275c17fdefb60d84ea96f9feb6ff6"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_direct_1e-10.npz": {
+      "bytes": 18224,
+      "sha256": "1f58ebf7162fbc2c7b1e1271b504928ffa915166c6c2e396fa1878d096108569"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_modal_residual_0.0001.npz": {
+      "bytes": 18068,
+      "sha256": "3497337943747c1380988d852fc0d04798c644011ff5856d1ea34d9ba40bcf79"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_modal_residual_0.01.npz": {
+      "bytes": 18076,
+      "sha256": "9446583d49b5ac10b765ff7204297ccceda9532bb68cbcc39498aa68543c1164"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_modal_residual_1.npz": {
+      "bytes": 18083,
+      "sha256": "cb6e89e7476e46e7bd84f5888d4fb457987818a61375300cd12d099aec39c362"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_modal_residual_1e-06.npz": {
+      "bytes": 18086,
+      "sha256": "52537e8c4f793967f89bea78dee8e921be1fc2ae1f94b41bb8ccac8f680a8f62"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_modal_residual_1e-08.npz": {
+      "bytes": 18234,
+      "sha256": "1272a334fb17b239a7d4126accc8c7f3cb570d28af5df24e994154274b8fbed8"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_angle_lpv_modal_residual_1e-10.npz": {
+      "bytes": 18206,
+      "sha256": "2d854b19e44def90681419da952e5401e65b2b26f6643ccd4b5ad074c990416e"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_direct_0.0001.npz": {
+      "bytes": 31481,
+      "sha256": "d11378638b10410311aeb1307ac4deb94a4e3ad298495636d60f201ecc845d80"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_direct_0.01.npz": {
+      "bytes": 31252,
+      "sha256": "4ef83efae55963cf758949e5b80c594db2923d117552de9408765931c3b3fd26"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_direct_1.npz": {
+      "bytes": 31193,
+      "sha256": "11304865658e4b2f3bf8592eedc6638266c2ff4f8d8f53f340b619946465577a"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_direct_1e-06.npz": {
+      "bytes": 31596,
+      "sha256": "4bf3dd74868232d9fdc0e0d729efe261e65f62b9f327d43ed50a60541c4e6aff"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_direct_1e-08.npz": {
+      "bytes": 31910,
+      "sha256": "fa26bf3545e193cc97dff9085c8062dce70436a51fa1cd30f9a5bdb3ab95c53e"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_direct_1e-10.npz": {
+      "bytes": 32020,
+      "sha256": "7317058231f86ca190dd7d94a96f72d82ffb122ed62ccef85fca3dbca6cbb37d"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_modal_residual_0.0001.npz": {
+      "bytes": 31490,
+      "sha256": "8fdad5d52967182ce36bb5fb629721cc08ec0d345f9f5bf8dc45fc17eda62136"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_modal_residual_0.01.npz": {
+      "bytes": 31238,
+      "sha256": "d35676068b72edce0b5629a2e3fb827e168328c6c092b2eab5ca978a6599fdde"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_modal_residual_1.npz": {
+      "bytes": 31166,
+      "sha256": "e1f64111e5da76f5770107323b41f448c7d34e8a57860c732205f18293be35ac"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_modal_residual_1e-06.npz": {
+      "bytes": 31597,
+      "sha256": "d44f6656d2b35272e608ab2c5a4392f4ff6b2f95af28d4613a3b147176383597"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_modal_residual_1e-08.npz": {
+      "bytes": 31900,
+      "sha256": "807110318b37408a0e1919770820803c9f51bc4c86c72df86309ddd55ebc2127"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/arx_io_lpv_modal_residual_1e-10.npz": {
+      "bytes": 32061,
+      "sha256": "f80d28b540a8c5b2892484873f5bd826d8bff197fef3ba99e06daa2f5d6de9c9"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/prior.npz": {
+      "bytes": 1050,
+      "sha256": "92a81bce45beb9615c8bf2e127ae7a637e13eb3b9d967a4899ffd143adbe1d82"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/prior_diagnostics.json": {
+      "bytes": 548,
+      "sha256": "959d80b63af7926b5e3dc799b62d1ed9646f9e72bd369a526e1fc31fe1e19862"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/short_arx.npz": {
+      "bytes": 14070,
+      "sha256": "1f3a903a3f461d46c8ba753f1f576b3e093b1d6cbcada26d60f0b5b450cb09ed"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_beta/validation.npz": {
+      "bytes": 350988,
+      "sha256": "eba6bf4996a1010e3f41a5600676f881b7eddf568c64c50e82f0bfb974685042"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_direct_0.0001.npz": {
+      "bytes": 18026,
+      "sha256": "e83d41fcfedf5bed06dc300fc0e886483b748a68ac998e66613c8a179cb3e12f"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_direct_0.01.npz": {
+      "bytes": 18032,
+      "sha256": "572fb5febcc398dc532cbeaf76d1c4ed3c489dee16e8e1e36154c2b7736bde99"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_direct_1.npz": {
+      "bytes": 18009,
+      "sha256": "1573d8666b0bbdd8852c26efa90d5cd8200d83d0b6e8a45311d75dcf723c0813"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_direct_1e-06.npz": {
+      "bytes": 18031,
+      "sha256": "5bd7232e80eb6790f0a7c499a95e24ea0707b271957e551c03024698695bc62e"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_direct_1e-08.npz": {
+      "bytes": 18185,
+      "sha256": "0ec8d56bb282d697e210440ab7d355e19473c7781f4230766023d31ddddc7104"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_direct_1e-10.npz": {
+      "bytes": 18166,
+      "sha256": "8cbe71e211f204cbf6c633f3dd3b2c16fa962b2fdec03ee6dcadd488417ca2a0"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_modal_residual_0.0001.npz": {
+      "bytes": 18024,
+      "sha256": "d79cace53e4145eeb6188b83a647e5a9b474e28c529a57e714491e36aa93b434"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_modal_residual_0.01.npz": {
+      "bytes": 18039,
+      "sha256": "39cd7e00272f1f978ce95cfc21a883074b567a5dec55928091a22d08c827d9e1"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_modal_residual_1.npz": {
+      "bytes": 18050,
+      "sha256": "f5659517b1d32d861038e505575430c5fe95179dea477aee8d69801865fddf1d"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_modal_residual_1e-06.npz": {
+      "bytes": 18059,
+      "sha256": "dae86444829c999fba15195f4d4f8c877a177893435bb45c4e654453c5f73249"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_modal_residual_1e-08.npz": {
+      "bytes": 18217,
+      "sha256": "4b3c3085d3ce6e257da3d34a5e6648fa4068f98e0c1e7ea0886ddb97e5167450"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_angle_lpv_modal_residual_1e-10.npz": {
+      "bytes": 18126,
+      "sha256": "e8918f55503aa3c41e88de0afe20af39c443913c166cea101ce3c5d5ba575ad0"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_direct_0.0001.npz": {
+      "bytes": 31480,
+      "sha256": "5c322c78b27954569c5e792ab7ba45332fed843b5438b2aa88aa8c6f41eb2442"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_direct_0.01.npz": {
+      "bytes": 31296,
+      "sha256": "e322fa74feb65d00767ed02b4225b215a2b4bf527cea8c8ebbbfa0d22afd20f0"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_direct_1.npz": {
+      "bytes": 31145,
+      "sha256": "bcaeb45c54dad38a6738d50254b08bb6f21b55a920032198c1275ddeb053a0e4"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_direct_1e-06.npz": {
+      "bytes": 31598,
+      "sha256": "deb008a33e3767bb1c0358004c0087975e23051994fc86bc2026434f81cce1c5"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_direct_1e-08.npz": {
+      "bytes": 31951,
+      "sha256": "99aea654345bd8fc1e82e084cc217b36c2c1db7becfb57c5f195dfc32bf48c31"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_direct_1e-10.npz": {
+      "bytes": 32062,
+      "sha256": "3e76b06671e8e0214f66461bb1913fcc3fd7fa9f171ca69208000534cf4feb35"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_modal_residual_0.0001.npz": {
+      "bytes": 31456,
+      "sha256": "65f8fbd2c68e8f9017dcd767045df9f759aabaf6f11b55d9b9f131e696aa74e5"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_modal_residual_0.01.npz": {
+      "bytes": 31309,
+      "sha256": "1f6b223233819fe2138ff889e67af9ca92a99da5c4dbe32623179d986417cba5"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_modal_residual_1.npz": {
+      "bytes": 31148,
+      "sha256": "0f8c8a9801ec1f01e0ec5acae4c8d254b7c04ebe969eae4225c8bf9fe3011594"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_modal_residual_1e-06.npz": {
+      "bytes": 31655,
+      "sha256": "52b2c67c9df14c6e75b4e1255155b8adaf050d5219b0e57419e300f5c6040c8f"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_modal_residual_1e-08.npz": {
+      "bytes": 31973,
+      "sha256": "b29d20e8ffcf2566ddeb19da0881f1f7f64270f61a5f27379187bef1ab0fcce0"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/arx_io_lpv_modal_residual_1e-10.npz": {
+      "bytes": 32108,
+      "sha256": "f47ddc10a39211e88fb58bccaf6d298c14013017f12049e76a0e307024fa129c"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/prior.npz": {
+      "bytes": 1050,
+      "sha256": "f5dc17dfc76b9cf45b6cd3f91b59a3fa8dfe1ced28b74e45332011ba51072a7d"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/prior_diagnostics.json": {
+      "bytes": 555,
+      "sha256": "18a1ecaa410bd582b298182d09a9d8dfb54dfc3718e7f934bda74ef64d1bd9ea"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/short_arx.npz": {
+      "bytes": 23923,
+      "sha256": "d67017aa86490d68f6bd79b4551193caf521d60c3f2da0f081177c4e645fd723"
+    },
+    "results/drive_conditioned_20261107/frozen_development/jib_theta/validation.npz": {
+      "bytes": 352032,
+      "sha256": "f8f0925aa5315c4e91fb7d6a7bfbaba4a9c74f35e6a75e2a409f70fe64612e97"
+    },
+    "results/drive_conditioned_20261107/frozen_development/selection.json": {
+      "bytes": 12086,
+      "sha256": "ccd0002d34dded0d014f49b1d532b85575f73534810315329b0e1cfe1bd959f1"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_direct_0.0001.npz": {
+      "bytes": 18028,
+      "sha256": "360bb34343dc1c3ea000432f16a8f09f99126e1cbd8d90df72d1188fb1c599fd"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_direct_0.01.npz": {
+      "bytes": 18038,
+      "sha256": "998b5335047b84aa9817b48df0dd980e6c441b9f47b3acd28323e59484a6e5b4"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_direct_1.npz": {
+      "bytes": 18029,
+      "sha256": "35b39b77dbd42d97e5166b30fa7343caebabaf35e4e806a36cdc141d3ebdec29"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_direct_1e-06.npz": {
+      "bytes": 18031,
+      "sha256": "50db871aec6ff56bfd2ff6d90abac7e1ff1e2e95a08aa676149e8e909a3697b5"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_direct_1e-08.npz": {
+      "bytes": 18197,
+      "sha256": "edd77c9bebb3656b1e96ed7b436cf2150491202207a79b84214b1e0a314d6356"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_direct_1e-10.npz": {
+      "bytes": 18202,
+      "sha256": "64533980f5fb3c36a27c143a6f7e87b7e73af0783de1c525b72cd982368883e9"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_modal_residual_0.0001.npz": {
+      "bytes": 18038,
+      "sha256": "41718e4d9d42f1badcf906a2927849ca75132b16a5e7f5c2dca12e96333903de"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_modal_residual_0.01.npz": {
+      "bytes": 18038,
+      "sha256": "6d0f4413cd95601af9b45223cce11b23b57f09a2f9b37f3696c6c6f825ba52f8"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_modal_residual_1.npz": {
+      "bytes": 18047,
+      "sha256": "8d7630a620aa984c0d1c6622013e82f0a69ad9336226586c716a467fa8338db3"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_modal_residual_1e-06.npz": {
+      "bytes": 18048,
+      "sha256": "140314d55dcebdeefde01a13d952e96ca035c71b76d1d40a42bd8c2e2c308d7b"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_modal_residual_1e-08.npz": {
+      "bytes": 18219,
+      "sha256": "dbe45d9975acda5677bc92d5f700d0a55d86b53ba083d6f2769e884eb6b3a047"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_angle_lpv_modal_residual_1e-10.npz": {
+      "bytes": 18170,
+      "sha256": "cad486f3fbf53244b58217384ec327d30790c9d698bba045722b9cfbd6a44bb3"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_direct_0.0001.npz": {
+      "bytes": 49388,
+      "sha256": "0799257d8293d5bfb0da37180884d671384887b38a4d7f67efefc68f0f956add"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_direct_0.01.npz": {
+      "bytes": 49050,
+      "sha256": "b307ff7440c1c315b74911b0b611fe57b12b332ada916d98f1d0ccc066b6817f"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_direct_1.npz": {
+      "bytes": 48939,
+      "sha256": "1c51df1fbabdc6b1f264151f47a7568b73adc006a4e772c3d1e6486f7761495e"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_direct_1e-06.npz": {
+      "bytes": 49572,
+      "sha256": "eb53b2a2a7c5ad8d0bbeff09ad4ee6119568f4d6b077711e551ea793ee082bd6"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_direct_1e-08.npz": {
+      "bytes": 49948,
+      "sha256": "018bb7701217bbdba05401bd010795ef1fa17fb6232762a1bc6f52c4cde1a96e"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_direct_1e-10.npz": {
+      "bytes": 50359,
+      "sha256": "7796babfbae4f1dd9a069984e05909aa97958fb97fae8d502e0648ed7e5d37a0"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_modal_residual_0.0001.npz": {
+      "bytes": 49397,
+      "sha256": "9a9999fe8c95f64c3f401da6a304674c696a38b19670cce351ffa49b620df692"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_modal_residual_0.01.npz": {
+      "bytes": 49008,
+      "sha256": "f5030f799ecbd14c29985170651f3c2acae7eb94c981074a3a7f4221c7ad47a2"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_modal_residual_1.npz": {
+      "bytes": 48952,
+      "sha256": "1d5c098cdb26bef0ff583c4f50fa49e2cc56be0fc1a2bcfaabb2894de6e0de8f"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_modal_residual_1e-06.npz": {
+      "bytes": 49555,
+      "sha256": "a33e57855093ec2e807a273e6e3dbfa9baffbf4b86519b8debd83c6bb35c8bf5"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_modal_residual_1e-08.npz": {
+      "bytes": 50020,
+      "sha256": "e96d2cf4959d8bfd805fd343129e1cdd95000d0fc4c6c18cc37fd4f9bf637834"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/arx_io_lpv_modal_residual_1e-10.npz": {
+      "bytes": 50435,
+      "sha256": "c2dbd7f00bdfae6d40715bcc4d8b7eafa26c91a297f2c6351d65c38abdaf2e59"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/prior.npz": {
+      "bytes": 1128,
+      "sha256": "5516ddd59cd0994764bb4efb116c35c5d44082303b1c5826826624195600ae22"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/prior_diagnostics.json": {
+      "bytes": 868,
+      "sha256": "696f157a620c88c73d8b7ca37ad16d4f0e2a08fc247b8699c3d4202bfda14ea7"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/short_arx.npz": {
+      "bytes": 14045,
+      "sha256": "cdacedde3d969fbb14a024e0c96f10cfb1b40d8e37717b18df58c714ea352176"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_beta/validation.npz": {
+      "bytes": 360472,
+      "sha256": "ee649b2c7280d364b767658fac5c14ecbd360ecb559aa159c1a639f1e54efc47"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_direct_0.0001.npz": {
+      "bytes": 18047,
+      "sha256": "f68cc7a4fee79f2717031635951be96787b90aa61766dd4a7188c8ae169aadbd"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_direct_0.01.npz": {
+      "bytes": 18062,
+      "sha256": "94a0745a7c17ba963c5532b56493c8d1a42ea7803dc0a6114df30bdb528658c4"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_direct_1.npz": {
+      "bytes": 18037,
+      "sha256": "016c65175f63cd0295a3131574418ab84117bbcf27f07ad76dbe9719845472f4"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_direct_1e-06.npz": {
+      "bytes": 18048,
+      "sha256": "996ddf4b5db50c97e248d12615972b66c01d76e64f5ac9d1a2720090c79e5ccb"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_direct_1e-08.npz": {
+      "bytes": 18222,
+      "sha256": "7c9d76bee1c32259b9b606107520ed6df769fbe3e3f6e1a31c79c2d1e0fa4bb5"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_direct_1e-10.npz": {
+      "bytes": 18216,
+      "sha256": "a5b55a82a5594ad4b251dce40896942d55d1ee5ce75ad67e6ce5faa8d4613c72"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_modal_residual_0.0001.npz": {
+      "bytes": 18054,
+      "sha256": "b8e49c8eff4c4c08c105568ae4d8ba435348e150b59d2d1f3f27b59ad4e67772"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_modal_residual_0.01.npz": {
+      "bytes": 18057,
+      "sha256": "67888a46f9195fd1528d7a929ebc84075005f68cb74a0cc717aeb6a9a86f743a"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_modal_residual_1.npz": {
+      "bytes": 18081,
+      "sha256": "a0ebeb4d918c7667186f02851fa875fc82347e43ea606a3c07567a83102b5b98"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_modal_residual_1e-06.npz": {
+      "bytes": 18066,
+      "sha256": "c7449fcb6148ce476b0534800694c61f642d5c3e9726b7a814e0b957c498ce51"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_modal_residual_1e-08.npz": {
+      "bytes": 18242,
+      "sha256": "78cdb5497f406e48d29ad91674fdf3da82d279f662cec7d273d345a3d4d6449f"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_angle_lpv_modal_residual_1e-10.npz": {
+      "bytes": 18191,
+      "sha256": "4838b0bba35f8e76fdb8954d33d9ec71e8f573d914000d1a6bb3b7f82cdf061e"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_direct_0.0001.npz": {
+      "bytes": 49507,
+      "sha256": "cd1239b3e28756f86890ba638c2fc188341f4c889702ceeb277d794b0f00f841"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_direct_0.01.npz": {
+      "bytes": 49008,
+      "sha256": "63eb5e8f9681dab99ad7f4001b7f83728e4ad857eb183519dea7c727633c9cd9"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_direct_1.npz": {
+      "bytes": 49041,
+      "sha256": "7c30e109ac44e0034f81b0117ef32d1e6579959844e3b05a5076c7548a1df763"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_direct_1e-06.npz": {
+      "bytes": 49577,
+      "sha256": "0d19dea5543699fa1cde6c805247f0303b4b06eaa5532b2b899ff64f5d19ef18"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_direct_1e-08.npz": {
+      "bytes": 50003,
+      "sha256": "373f6443a78fe9e1639b311548ca805f9c7001c4e47e582f3d915dda07465189"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_direct_1e-10.npz": {
+      "bytes": 50391,
+      "sha256": "e754e8175242e3c57e2608aefa9fa22b48ec78c47dde729ce751b1ce624fcb99"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_modal_residual_0.0001.npz": {
+      "bytes": 49517,
+      "sha256": "153959bb107125937d96fb6c39613a1f93c1ec018f1672762b00c6ba61484f03"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_modal_residual_0.01.npz": {
+      "bytes": 49003,
+      "sha256": "d92a1511bbb2f8e9e5ae79c2a049578cee8f8173af520df13ab57831d40ebf35"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_modal_residual_1.npz": {
+      "bytes": 48982,
+      "sha256": "991a97c811cbf205ecfdfc66bd490d4a01c22fbd1b021672d3e808949a587afa"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_modal_residual_1e-06.npz": {
+      "bytes": 49612,
+      "sha256": "0eb03725514728743b581976c12bd6521de80a95058b3496e7013465c499c94d"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_modal_residual_1e-08.npz": {
+      "bytes": 50152,
+      "sha256": "7bb0d1597bbd34c2d145db5b5daa389e0edfb1b20cd09e797285bc742daa2c52"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/arx_io_lpv_modal_residual_1e-10.npz": {
+      "bytes": 50394,
+      "sha256": "49b280474d76c9510d7ec639e1c1a1fbb8afcd54f3cbb260c522c59755447693"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/prior.npz": {
+      "bytes": 1128,
+      "sha256": "455b9130c9bca89c2a1bd880348c65f2d9b90fc32fb82fe719f573bcd6f8bb2b"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/prior_diagnostics.json": {
+      "bytes": 871,
+      "sha256": "62cd6226dc62d8705fdbce6f4fbed10dc1208241c12aa099d5f400f70059dc4a"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/short_arx.npz": {
+      "bytes": 14059,
+      "sha256": "1695113b7a4218816f66a21d346ccf34c883985858a477f20872faac14e582be"
+    },
+    "results/drive_conditioned_20261107/frozen_development/simult_theta/validation.npz": {
+      "bytes": 360607,
+      "sha256": "8523ee8160e83a8d7c6c9faf54a679379c34138ab33fc7c49129496b4660f704"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_direct_0.0001.npz": {
+      "bytes": 18066,
+      "sha256": "54fcb8ca5370bff337ab9aae452a22d18ad821d1a1a65af714d7bdff9f1ac2ad"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_direct_0.01.npz": {
+      "bytes": 18059,
+      "sha256": "26289fdc2ab6e0fec810ad789f00dd80cf73c520c15786ec807265bac47bd3bc"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_direct_1.npz": {
+      "bytes": 18051,
+      "sha256": "18c10950d257cbefe56f87c6a4910ae6bcbca97c8ffeac359d0b73700c33c8c7"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_direct_1e-06.npz": {
+      "bytes": 18051,
+      "sha256": "6b23c5dd5561fca423be27193da6547b1b270f541c0b56d6da478090bfd66ff5"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_direct_1e-08.npz": {
+      "bytes": 18199,
+      "sha256": "de402ab5dfea580cfc88c9d28f44a8749e570c63dba14e7a8fa7d68af1d67625"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_direct_1e-10.npz": {
+      "bytes": 18238,
+      "sha256": "20ddb91ef01b851edfb60caba740d8870d63314472e95d3be0656225d6605a96"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_modal_residual_0.0001.npz": {
+      "bytes": 18067,
+      "sha256": "3c4294220b060332374881fbeca97f9e8606086f08968f4a718336b24c54b27c"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_modal_residual_0.01.npz": {
+      "bytes": 18073,
+      "sha256": "b6a67c619fc3228b157955adb0bb50ddea4e270e66dd0d2a72a0605cc52cf67e"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_modal_residual_1.npz": {
+      "bytes": 18147,
+      "sha256": "22fde89efff03aad25f61edc13134c692ad58f734468ff30b10d151276cd9c9b"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_modal_residual_1e-06.npz": {
+      "bytes": 18061,
+      "sha256": "3900464464e261e8ba3d0e876277702d445bf915ebf285ae1a00b223d1372a0c"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_modal_residual_1e-08.npz": {
+      "bytes": 18235,
+      "sha256": "2d62cc3983c7759a87bac2718a4bc096afebcb9faeef7cda33bce7539bb9d00a"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_angle_lpv_modal_residual_1e-10.npz": {
+      "bytes": 18255,
+      "sha256": "6cd8c77b22bac10f7d7cb38e0dd0d227715f0bcfbda726ce6099d708a9f2d001"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_direct_0.0001.npz": {
+      "bytes": 26107,
+      "sha256": "9a1c40f7d970ba5782663da3c4795046536479730e6404ac9fb9078cde29c1f4"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_direct_0.01.npz": {
+      "bytes": 25961,
+      "sha256": "85b5e3dd6451401f24bbe24396e9836eefb34b6bce5e88411c2b6a7b2a0ad446"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_direct_1.npz": {
+      "bytes": 25804,
+      "sha256": "4d8de3ae371ac28af54b9307d91ed47884ff3230acf9272ece1b525dfb09b392"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_direct_1e-06.npz": {
+      "bytes": 26185,
+      "sha256": "41100b6c33be4c6b582cb40f4ca2e071085c5efc605c9d235903e0979efbb20f"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_direct_1e-08.npz": {
+      "bytes": 26380,
+      "sha256": "23761c91e195a8adbfbec9fb1fa90f4550eb5f65f591239e10db591a474c0866"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_direct_1e-10.npz": {
+      "bytes": 26574,
+      "sha256": "f5d499a692223b49d4a61c36229b32a1a9400ac936743d4f6d4b6f0e550aa766"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_modal_residual_0.0001.npz": {
+      "bytes": 26079,
+      "sha256": "5604fbb618b97e21a04aaa85c675cb16e8c8f5f94c26393a3a4369bdb8ec2225"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_modal_residual_0.01.npz": {
+      "bytes": 25971,
+      "sha256": "a28317ef61f07568e2f9f25e657681049ffc20be054dd0280723f4abcd3ef07b"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_modal_residual_1.npz": {
+      "bytes": 25890,
+      "sha256": "28a7b7de56363f6b479129953de6ae8c8b69c96981bde75566ff00d999d42512"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_modal_residual_1e-06.npz": {
+      "bytes": 26143,
+      "sha256": "bc0795fe8e673a3766e62fc557c6ae1192832cecb7235421430f2aecc8afd5db"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_modal_residual_1e-08.npz": {
+      "bytes": 26488,
+      "sha256": "98d1c4ef79110773a601b31e352d5055986a3a1aeefcc5f4679526fd93a5b9ac"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/arx_io_lpv_modal_residual_1e-10.npz": {
+      "bytes": 26595,
+      "sha256": "18619e8e57a75f4ab920cb0de6b58bc8069b8adaca4d2e6280ae0ab34e3d0975"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/prior.npz": {
+      "bytes": 1004,
+      "sha256": "c1581b4407b03cc9c845bcef852695885c6e53b26004810b2a05b03fd72b46df"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/prior_diagnostics.json": {
+      "bytes": 459,
+      "sha256": "d8d8c66a7546019bffd82b16922ecdd97778645df113f57db1d1d4b60abb3f4f"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/short_arx.npz": {
+      "bytes": 19960,
+      "sha256": "5d6f127d3923fa9df673667efd6edd2fd9918fac17252e04ade4fdf7cb15fe53"
+    },
+    "results/drive_conditioned_20261107/frozen_development/trolley_theta/validation.npz": {
+      "bytes": 346085,
+      "sha256": "0c17b71d6256e9b8af615bde56bc4153a707b26277a7fefe3965d23bb46bea77"
+    },
+    "results/drive_conditioned_20261107/frozen_development/validation_metrics.csv": {
+      "bytes": 215593,
+      "sha256": "60b914682c91f4a2fd362159bca2b9e79429dbba5da739cfe28b3dea6b649b92"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/jib_beta_s21.npz": {
+      "bytes": 372561,
+      "sha256": "e7f4737295194e93141f3cdb0576b9b10d2a96f0c7f520238a56ceff4ace0a5c"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/jib_beta_s22.npz": {
+      "bytes": 181490,
+      "sha256": "1cf68a08ec8d1d412fc5de60a492817dba538b7cb440c35398ea7bf926c6f193"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/jib_beta_s23.npz": {
+      "bytes": 269861,
+      "sha256": "6d838b3a094044075d711f07d37ecfd16433ddf82f4df52ac8df63eaa3710781"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/jib_theta_s21.npz": {
+      "bytes": 368833,
+      "sha256": "8b0df6201a1a8b572d5e23d7dfeb95a64649d440156823170dc8488702a804d3"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/jib_theta_s22.npz": {
+      "bytes": 365842,
+      "sha256": "2888871658ba37a1e7fd3a5ebacfc6d2fdfa500edb7ce8f759d71a17cbe76820"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/jib_theta_s23.npz": {
+      "bytes": 366261,
+      "sha256": "6d3c04ce1be4a6567f1070fde7cea4035341acddecced1d21957bd60fe5ce31a"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/metrics.csv": {
+      "bytes": 611958,
+      "sha256": "a80122a470f3cd87422ef71215b72220bff734b8e824a48877a05eeea075765b"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/provenance.json": {
+      "bytes": 1596,
+      "sha256": "006a10c7ca33761d7a06dc348942e1243a20f08478a9d6ad38af9568b8c3b85a"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/simult_beta_s32.npz": {
+      "bytes": 377347,
+      "sha256": "20cbad05e524d310454c1795ff8957f0b952e009dc54c131e59392fcc300bd23"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/simult_beta_s33.npz": {
+      "bytes": 367281,
+      "sha256": "7f71a43b302ee0d7094150fef2f9e692383758bb2e95859f052555852d758317"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/simult_theta_s32.npz": {
+      "bytes": 379401,
+      "sha256": "9e6de865b940241d4c3d8c3f5933e03f09b01638fd1aeebd2ea6dac8417ada8d"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/simult_theta_s33.npz": {
+      "bytes": 366459,
+      "sha256": "1a81b44ccd05b17d81f07b9aadb018cf50c28fa0722b1e919265839182f3b41e"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/trolley_theta_s13.npz": {
+      "bytes": 364889,
+      "sha256": "3a575a597b32d730d962b241be819cb644c31586c11e2bc7bf04a67a4393ed4e"
+    },
+    "results/drive_conditioned_20261107/frozen_replay/trolley_theta_s9.npz": {
+      "bytes": 365826,
+      "sha256": "5c8180869c8fe1be662a76b7432914fece595d9380c64e260ad26ce427a77558"
+    },
+    "results/drive_conditioned_20261107/original_git_worktree_integrity.json": {
+      "bytes": 6106,
+      "sha256": "873dd2cf6465e241371cf4b923b395334af4123839420ccc6b29a32239e9ae9e"
+    },
+    "results/drive_conditioned_20261107/original_integrity.json": {
+      "bytes": 671,
+      "sha256": "accc2f0fc916f472e882c22a1c31d3ca0b72fbd404f3b0d34300af02f3e68aa9"
+    },
+    "results/drive_conditioned_20261107/primary_regime_comparison.csv": {
+      "bytes": 2386,
+      "sha256": "d9da10b3db045655bbc35347e633fb350f4c0953defc94f98bab5868f3795875"
+    },
+    "results/drive_conditioned_20261107/record_summary.csv": {
+      "bytes": 45737,
+      "sha256": "bb62c0b118d7330b600234e77d8ea48a04255ad1d1a27ccbcf5fc9f30aede708"
+    },
+    "results/drive_conditioned_20261107/reference_choices.csv": {
+      "bytes": 549,
+      "sha256": "d1c45a244b97609c59140c65f8ab97160419f2ce710d38fd86a484a1558cda1f"
+    },
+    "results/drive_conditioned_20261107/regime_summary.csv": {
+      "bytes": 9677,
+      "sha256": "7b2a3d2942a0a2d4f92f1759ed347fc10a69efddf3728da5d40d1a35f08bb0a6"
+    },
+    "results/drive_conditioned_20261107/report.json": {
+      "bytes": 716,
+      "sha256": "5806e3819db50564c87be2d44ae9ea1fce301c2ea51c58c491643ff7a09880e0"
+    },
+    "results/drive_conditioned_20261107/report.log": {
+      "bytes": 3824,
+      "sha256": "4cf274b53f5cee16759d962b456aa0abf395138707e4ccbd0b8a1d8e9c553af0"
+    },
+    "results/drive_conditioned_20261107/retrospective.log": {
+      "bytes": 338,
+      "sha256": "debf2f7dd7822c40a5ae88a6d201d66913b16295ff80b8557400d9df71512d9b"
+    },
+    "results/drive_conditioned_20261107/unit_initial.log": {
+      "bytes": 938,
+      "sha256": "0ff73c74cc5ee641f9bdd7dd29eded815ceec4965bd29ddcbb4d32e6b25f5807"
+    },
+    "results/drive_conditioned_20261107/unit_prereg.log": {
+      "bytes": 1458,
+      "sha256": "0a6df332bc77783ff87faad83bb86cd77030b4439988bde5b85fca06ae2d323d"
+    },
+    "results/drive_conditioned_20261107/unittest_prereg.log": {
+      "bytes": 36522,
+      "sha256": "1a7e5e6981f96fb059e52e819afc6f0cbcf07a8e897a362bd16de2740fbf2228"
+    },
+    "results/drive_conditioned_20261107/validation_summary.csv": {
+      "bytes": 719,
+      "sha256": "2b9a4513a75950fbcbef5f5567eb73c902c89f8cd637e94f40fdfb76409d995b"
+    },
+    "results/drive_conditioned_20261107/verification.json": {
+      "bytes": 4325,
+      "sha256": "edb06100fecd820a4dba70c7cc6e87d65bc659856f9603a64e691301af5de5fe"
+    },
+    "results/drive_conditioned_20261107/verification.log": {
+      "bytes": 641,
+      "sha256": "85ba67fb24f0b82aa31783f8a0a029dcb262459d3a6a5e538aa0c25e7dfac3e6"
+    },
+    "scripts/active_qualification.py": {
+      "bytes": 2722,
+      "sha256": "536ebc749c6eef1dd9b279a11130a52b62ae1f08b7395f91de7a4d161418fb67"
+    },
+    "scripts/drive_attribution.py": {
+      "bytes": 1296,
+      "sha256": "c8ddf1bb5cfb3182df6203be43f5c14ab910dc59f370a927762883f993655ee0"
+    },
+    "scripts/drive_conditioned.py": {
+      "bytes": 8744,
+      "sha256": "8150f16d5fcc261f05fc1985d0116994fdebdbc1c4cf322ec1186514425f1cbf"
+    },
+    "scripts/modal_backtest_gate.py": {
+      "bytes": 2165,
+      "sha256": "af1abf2159484c8c434d62ee88ddd20432ab811688607e6013510209405f42ba"
+    },
+    "scripts/modal_history.py": {
+      "bytes": 8619,
+      "sha256": "11b21490fc78da67b2863a1b06c9c129bb294a9149f29c9bcda0896b928c5414"
+    },
+    "scripts/modal_reference_challenge.py": {
+      "bytes": 2125,
+      "sha256": "23b26b08bfece5c768b386770751ee04773ea4e973ff4358edc854823f591858"
+    },
+    "scripts/package_active_stages.py": {
+      "bytes": 4460,
+      "sha256": "24a9d733f1aad5d6dba1da1888ec436f6be62a155fe9c1b03b9e360cb8980392"
+    },
+    "scripts/report_active_qualification.py": {
+      "bytes": 9578,
+      "sha256": "450c3b1bd7a85f6c4a3bf300e61b14f60d803b8281b45e6dbc0071253daedaff"
+    },
+    "scripts/report_drive_conditioned.py": {
+      "bytes": 14195,
+      "sha256": "c03cd3e6774a7b2f3cab99a16ed2d680626fc1faccd54f27819d6c6af5f45246"
+    },
+    "scripts/run_active_qualification.py": {
+      "bytes": 4808,
+      "sha256": "5049b0cc4bd06aac32cae6f593fa14b36d82384494ad13b5064941406b954a3f"
+    },
+    "scripts/run_drive_attribution.py": {
+      "bytes": 3417,
+      "sha256": "39d731bb2b29ced60223e134e905fdff11661bcd626fa9e35dd6a739d597df2c"
+    },
+    "scripts/run_drive_conditioned.py": {
+      "bytes": 13293,
+      "sha256": "3912ca5eae89d07e1a0d96f7b0678e2845e04c171a1c23e3ebe709417d68aeeb"
+    },
+    "scripts/verify_active_qualification.py": {
+      "bytes": 4650,
+      "sha256": "1d611b63f8f2a28fbf4a7f789e76aa4cf5101de779ae1befc85d44a3db7b37d8"
+    },
+    "scripts/verify_drive_conditioned.py": {
+      "bytes": 9484,
+      "sha256": "4ce05a7cb7776ab5cc1b3b93fc4170960a638abc48b74273ff97447b4df5c4f9"
+    },
+    "src/cranepilot/data.py": {
+      "bytes": 6295,
+      "sha256": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "src/cranepilot/modal_pilot.py": {
+      "bytes": 4173,
+      "sha256": "d1e3b8d7a82ddd0f5c268569b4fad3480263d8b4d3e88b0a778afceac320cce9"
+    },
+    "src/cranepilot/physics.py": {
+      "bytes": 5675,
+      "sha256": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c"
+    },
+    "src/cranepilot/reliability_pilot.py": {
+      "bytes": 2541,
+      "sha256": "285999fd36413e55f9c05dda0e538f299604a684403dfc57663ecac77119a500"
+    },
+    "tests/test_active_qualification.py": {
+      "bytes": 3021,
+      "sha256": "bd5e9592e60f2c394addccb4323326a79eac48b61f0b470bb5cff9ea42243b71"
+    },
+    "tests/test_drive_conditioned.py": {
+      "bytes": 3964,
+      "sha256": "f25a4e7b0600281cb6a82d8424f33dc446908d98b94a60c5d8e3186ac378be29"
+    }
+  }
+}

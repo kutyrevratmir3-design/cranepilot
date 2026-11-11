@@ -1,0 +1,26 @@
+{
+  "scope": "Post-hoc descriptive matched-window diagnosis; no fitting or new selection.",
+  "source_run": "artifacts/runs/history_backtest_20261107",
+  "source_provenance_sha256": "503448dc943b7337209b7f84fd8cc4101ea11c8a0b60c1dadef85111b5c8e13f",
+  "diagnostic_source_sha256": "fde5c02c7e4084790ae4ef7760e7ef37ade716b21226a15094e8c02f1a24c8b6",
+  "guarded_dependencies_verified": 90,
+  "retained_results_verified": 52,
+  "record_model_rows": 72,
+  "models": [
+    "bt21",
+    "bt31",
+    "bt_multi",
+    "bt_guarded"
+  ],
+  "summary_weighting": "Equal whole-record weights within fold/scope/model. Fractions first computed within records.",
+  "backtest_ratio_definition": "Mean final-choice historical holdout MSE divided by mean nominal holdout MSE within a record; no floor. Undefined if denominator is zero, with defined-record count retained.",
+  "guarded_score_semantics": "Final selected historical MSE is nominal after fallback; no pre-guard score is substituted.",
+  "comparisons": "Strict lower/greater comparisons without inferential significance; seven horizon absolute errors averaged per window.",
+  "interpretation_limits": [
+    "All windows overlap; no independent-observation claim or p-values.",
+    "Backtest scores with different prefixes do not represent identical held-back samples.",
+    "Lower historical error and worse future error co-occurrence is descriptive, not causal attribution.",
+    "Accepted adaptation includes damping-only changes; frequency switching alone omits them.",
+    "No candidate or threshold changed after these diagnostics."
+  ]
+}

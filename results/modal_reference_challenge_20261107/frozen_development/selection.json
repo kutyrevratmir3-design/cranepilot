@@ -1,0 +1,47 @@
+{
+  "trolley_theta": {
+    "source": "challenge",
+    "validation_mae_deg": 0.3326174988858437,
+    "file": "trolley_theta/candidates/difference_lpv_direct_1e-06.npz",
+    "representation": "difference_lpv",
+    "form": "direct",
+    "alpha": 1e-06,
+    "checkpoint_sha256": "065a94490e4413c685662dd0b5cd9aa33b4d5dce8a886bbea500b81444b00d5b"
+  },
+  "jib_theta": {
+    "source": "challenge",
+    "validation_mae_deg": 0.39366097173384546,
+    "file": "jib_theta/candidates/difference_lpv_direct_1e-08.npz",
+    "representation": "difference_lpv",
+    "form": "direct",
+    "alpha": 1e-08,
+    "checkpoint_sha256": "427eacfb6c9143a0fdf3c14e0f1fa7a3834a1706190e3470192a9401a988064a"
+  },
+  "jib_beta": {
+    "source": "challenge",
+    "validation_mae_deg": 0.2705605382420919,
+    "file": "jib_beta/candidates/difference_lpv_direct_1e-08.npz",
+    "representation": "difference_lpv",
+    "form": "direct",
+    "alpha": 1e-08,
+    "checkpoint_sha256": "bec0128f678f472bc2ce3c77b4bbb92329a75f554d1c2bfde15d70c2cd18018c"
+  },
+  "simult_theta": {
+    "source": "challenge",
+    "validation_mae_deg": 1.191091639492115,
+    "file": "simult_theta/candidates/difference_lpv_direct_1e-06.npz",
+    "representation": "difference_lpv",
+    "form": "direct",
+    "alpha": 1e-06,
+    "checkpoint_sha256": "7b9f8e69ec0e8af54c91de96fdc55e09a1520fd2962efab323d5ccd0951c8e05"
+  },
+  "simult_beta": {
+    "source": "challenge",
+    "validation_mae_deg": 0.5170200727220623,
+    "file": "simult_beta/candidates/angle_lpv_direct_1e-10.npz",
+    "representation": "angle_lpv",
+    "form": "direct",
+    "alpha": 1e-10,
+    "checkpoint_sha256": "d135ad203e76098e1be445386476bbc0c503583aecce2dd0166b21f5501085d7"
+  }
+}

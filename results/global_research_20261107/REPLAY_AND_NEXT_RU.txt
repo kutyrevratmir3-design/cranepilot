@@ -1,0 +1,49 @@
+CranePilot: продолжение после большого литературного и экспериментального шага, 7 ноября 2026.
+
+Основная папка: CraneTransfer/Crane Project/cranepilot.
+APHYNITY остаётся отдельной, не изменена. Ничего не публиковалось.
+
+Прочитать:
+- docs/LITERATURE_CRANE_20261107.md: 6 первичных работ по кранам, включая ограничения сопоставимости.
+- docs/LITERATURE_ADJACENT_20261107.md: 7 работ по идентификации/Koopman/weak form.
+- docs/GLOBAL_RESEARCH_DESIGN_20261107.md: протокол зафиксирован коммитом4c57451 до fit.
+- docs/GLOBAL_RESEARCH_2026_11_07_RU.md: итоговые таблицы и выводы.
+
+Новый завершённый run: artifacts/runs/global_research_20261107.
+Результаты/архив: results/global_research_20261107.
+45 детерминированных fit: 3 fold × (3 weak + 6 LPV + 6 quadratic).
+Нейросети/актор не переобучались; обучение новых регрессий только TRAIN.
+19 методов/fold с контролями. Все реальные записи исторически использованы.
+Headline evaluation всегда EXTRAPOLATION, не interpolation; последнее отдельно.
+
+Полезный новый результат: short_transfer, lpv_linear_actor_r1, alpha=.01.
+Выбран по validation до evaluation. Средняя MAE .432130 -> .383598deg (-11.23%).
+Active1.811238 ->1.643968deg (-9.24%). Лучше на всех3 коротких extrapolation-записях.
+Но all MAE хуже на.1/.2/.75s, лучше на.35/.5/1/1.5s.
+На1s .571826 ->.432910; на1.5s .841383 ->.687761deg.
+В primary тот же метод .528435vsinc.500498, long .530040vsinc.512641.
+Общий validation-выбор остаётся incumbent; общий критерий принятия не выполнен.
+Локальные решения: primary combined; short LPV; long incumbent.
+Не заменять общий default этим кандидатом и не заявлять SOTA.
+
+Weak-физика учит3 общих c,kscale,bscale интегралами по1/2/4s TRAIN.
+На short даёт сильную регрессию6.226746deg при ridge0; сохранено как отрицательный результат.
+Quadratic lift также не дал универсального улучшения; не выдавать за Koopman.
+Прямые модели видят весь известный будущий план; prefix-causality внутри горизонта не гарантирована.
+Command-варианты оставляют актор в physical baseline; это не полный actor bypass.
+Синтетика3456case, только13 actor/angular методов;6 command-моделей исключены,
+поскольку симулятор использует команды-заглушки. Это не новый симулятор/аппаратный тест.
+
+Проверки:112 unit tests,96 stagechecks(max1.49e-9deg),372 full-replaycomparisons
+на17496history-only packets из18realfiles(max0deg). Original snapshot1111main+170APH
+совпадает побайтно. Реплей: scripts/verify_global_research.py.
+
+Команды из CraneTransfer:
+sh handoff/restoration_20261107/main-python.sh -m scripts.predict_global_research --fold short_transfer --variant selected --input examples/history_packet.npz --output results/global_research_20261107/NEW_prediction.csv
+Выход должен быть новым файлом. CLI проверяет hashes и читает history-only packet.
+
+Следующий крупный исследовательский вариант из обзора: глобальный устойчивый
+latent operator с масштабом omega(L), encoder строго41samples и multi-step loss.
+Он пока НЕ реализован. Не продолжать мелкие варианты онлайн-подгонки частоты;
+они уже неоднократно проиграли. Сначала прочитать итоговые выводы этого этапа.
+Исходные122Git-изменения старых файлов были толькоCRLF/LF; не stage/resetих.

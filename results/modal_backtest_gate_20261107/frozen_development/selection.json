@@ -1,0 +1,135 @@
+{
+  "selected": "soft",
+  "cases": {
+    "trolley_theta": {
+      "family": "trolley",
+      "axis": "theta",
+      "reference": "short",
+      "reference_validation_scores": {
+        "long_arx": 0.3326174988858437,
+        "short_arx": 0.2809563568588913
+      },
+      "short_model_sha256": "bcc85e714e4553635020a32ac645e68920d948d0fe94069bd085fa7b59483327",
+      "short_model_representation": "difference_lpv",
+      "short_model_form": "direct",
+      "short_model_alpha": 1e-06
+    },
+    "jib_theta": {
+      "family": "jib",
+      "axis": "theta",
+      "reference": "long",
+      "reference_validation_scores": {
+        "long_arx": 0.39366097173384546,
+        "short_arx": 0.41482938371948264
+      },
+      "short_model_sha256": "1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd",
+      "short_model_representation": "difference_lpv",
+      "short_model_form": "direct",
+      "short_model_alpha": 1e-08
+    },
+    "jib_beta": {
+      "family": "jib",
+      "axis": "beta",
+      "reference": "short",
+      "reference_validation_scores": {
+        "long_arx": 0.2705605382420919,
+        "short_arx": 0.23581757393554043
+      },
+      "short_model_sha256": "e9b365c13b1f6b6815640df7ac16febab4b61d9e29ea43c7630f56d4a367c738",
+      "short_model_representation": "difference_lpv",
+      "short_model_form": "direct",
+      "short_model_alpha": 1e-08
+    },
+    "simult_theta": {
+      "family": "simult",
+      "axis": "theta",
+      "reference": "short",
+      "reference_validation_scores": {
+        "long_arx": 1.191091639492115,
+        "short_arx": 1.1108899516603858
+      },
+      "short_model_sha256": "3b4200756e1721ede168fc7664bdba869965de5a0f648e6a9c94ce15c3a9e969",
+      "short_model_representation": "difference_lpv",
+      "short_model_form": "direct",
+      "short_model_alpha": 1e-06
+    },
+    "simult_beta": {
+      "family": "simult",
+      "axis": "beta",
+      "reference": "short",
+      "reference_validation_scores": {
+        "long_arx": 0.5170200727220623,
+        "short_arx": 0.4245107580645713
+      },
+      "short_model_sha256": "5c60b6f8c987937bc4b2eadc39e6955fc227b598c47b403ffc78a1b63608da53",
+      "short_model_representation": "angle_lpv",
+      "short_model_form": "direct",
+      "short_model_alpha": 1e-10
+    }
+  },
+  "case_scores": {
+    "trolley_theta": {
+      "long_arx": 0.3326174988858437,
+      "short_arx": 0.2809563568588913,
+      "reference": 0.2809563568588913,
+      "modal": 0.12651739964551836,
+      "hard_0.8": 0.13052889194253992,
+      "hard_1": 0.1267601696535306,
+      "hard_1.2": 0.12651739964551836,
+      "soft": 0.13651152586952933
+    },
+    "jib_theta": {
+      "long_arx": 0.39366097173384546,
+      "short_arx": 0.41482938371948264,
+      "reference": 0.39366097173384546,
+      "modal": 0.2821047731354835,
+      "hard_0.8": 0.28865039844515467,
+      "hard_1": 0.2827920152501253,
+      "hard_1.2": 0.281988454778296,
+      "soft": 0.25239356251653533
+    },
+    "jib_beta": {
+      "long_arx": 0.2705605382420919,
+      "short_arx": 0.23581757393554043,
+      "reference": 0.23581757393554043,
+      "modal": 0.16379131660617557,
+      "hard_0.8": 0.1805365986391312,
+      "hard_1": 0.17007063556938215,
+      "hard_1.2": 0.16748682157351105,
+      "soft": 0.15122406521464957
+    },
+    "simult_theta": {
+      "long_arx": 1.191091639492115,
+      "short_arx": 1.1108899516603858,
+      "reference": 1.1108899516603858,
+      "modal": 0.8287740119790185,
+      "hard_0.8": 0.8256761722891853,
+      "hard_1": 0.8130442873802267,
+      "hard_1.2": 0.8201122757238031,
+      "soft": 0.7619695139444574
+    },
+    "simult_beta": {
+      "long_arx": 0.5170200727220623,
+      "short_arx": 0.4245107580645713,
+      "reference": 0.4245107580645713,
+      "modal": 0.7429270312484327,
+      "hard_0.8": 0.43193197790495974,
+      "hard_1": 0.45593876515583015,
+      "hard_1.2": 0.4945993209408936,
+      "soft": 0.4065500482935204
+    }
+  },
+  "validation_means": {
+    "reference": 0.4891671224506468,
+    "modal": 0.4288229065229257,
+    "hard_0.8": 0.37146480784419417,
+    "hard_1": 0.369721174601819,
+    "hard_1.2": 0.3781408545324044,
+    "soft": 0.3417297431677384
+  },
+  "validation_change_percent": -30.14049238310853,
+  "validation_case_wins": 5,
+  "development_gate_passed": true,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

@@ -1,0 +1,16 @@
+{
+  "selected": "soft",
+  "development_gate_passed": true,
+  "retrospective_numerical_gate": true,
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "comparison": {
+    "method": "selected",
+    "mae_deg": 0.1897794743623161,
+    "change_percent": -60.33944858316869,
+    "scenario_wins": 6,
+    "descriptive_low": -84.03377296213507,
+    "descriptive_high": -23.246197309936644
+  },
+  "scope": "Reliability development on fully opened public records; no fresh confirmation"
+}

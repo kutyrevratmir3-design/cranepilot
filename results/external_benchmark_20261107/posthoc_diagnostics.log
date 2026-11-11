@@ -1,0 +1,31 @@
+{
+  "posthoc": true,
+  "no_controller_or_weight_changes": true,
+  "source_sha256": "98543981a20c1518daedc0b51d716622190bf5c271dc8f3cceeb68176abdcad7",
+  "train_mean_camera_interval_s": 0.05179475617902471,
+  "train_per_record_mean_camera_interval_s": [
+    0.052294589178356714,
+    0.05197595190380762,
+    0.05190981963927856,
+    0.05184569138276553,
+    0.05175150300601203,
+    0.05174749498997996,
+    0.051683366733466934,
+    0.051717434869739475,
+    0.05165330661322645,
+    0.05168537074148297,
+    0.051619238476953905,
+    0.05165330661322645
+  ],
+  "clock_ratio_actual_over_nominal": 1.035895123580494,
+  "fitted_omega_per_nominal_second": 3.265577988448446,
+  "clock_rescaled_fitted_omega_rad_per_actual_second": 3.1524214315839427,
+  "geometric_omega_rad_per_second": 3.132091952673165,
+  "inference": "Clock mismatch may explain part of fitted frequency shift. This is a diagnostic inference, not a new evaluated correction.",
+  "zero_packet_peak_deg": {
+    "geometric": 0.0,
+    "cranepilot_retained": 0.3608171045780182,
+    "cranepilot_candidate": 0.32320839166641235
+  },
+  "zero_packet_interpretation": "Synthetic mathematical equilibrium input, not an observed test/hardware performance metric. A learned bias on this packet identifies no physical failure mechanism by itself."
+}

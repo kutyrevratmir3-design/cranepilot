@@ -1,0 +1,37 @@
+{
+  "experiment": "broad_search_20261107",
+  "source_run": "artifacts/runs/temporal_20261106",
+  "seeds": [0, 1, 2],
+  "folds": ["primary", "short_transfer", "long_transfer"],
+  "train_stride": 25,
+  "evaluation_stride": 10,
+  "active_threshold": 0.005,
+  "training": {"epochs": 50, "patience": 12, "batch_size": 256, "learning_rate": 0.0003, "weight_decay": 0.0001},
+  "synthetic_batch_size": 64,
+  "smooth_l1_beta": 0.1,
+  "variants": {
+    "continued_control": {},
+    "residual_bound": {"angle_bound": true},
+    "odd_symmetry": {"symmetry_mix": 1.0},
+    "soft_symmetry": {"symmetry_mix": 0.5},
+    "regime_balanced": {"balanced": true},
+    "physics_aug": {"synthetic_weight": 0.1},
+    "bound_physics": {"angle_bound": true, "synthetic_weight": 0.1},
+    "odd_physics": {"symmetry_mix": 1.0, "synthetic_weight": 0.1},
+    "balanced_physics": {"balanced": true, "synthetic_weight": 0.1}
+  },
+  "synthetic_training": {
+    "length_rule": "five evenly spaced measured lengths between this fold's training min and max",
+    "amplitude_deg": [0.75, 3.0, 6.0],
+    "phase_rad": [0.2, 1.2, 2.2, 3.2],
+    "damping_per_s": [0.0, 0.05],
+    "measurement": ["exact", "quantized"]
+  },
+  "checkpoint_selection": "Minimum mean of validation all/seed-incumbent-all and validation active/seed-incumbent-active; initial epoch -1 eligible. Same rule for every strategy.",
+  "ensemble_selection": {"all_max_ratio": 1.0, "active_max_ratio": 1.01, "quiet_max_ratio": 1.01, "minimize": "validation_all_mae", "fallback": "incumbent"},
+  "confirmation_config": "configs/limit_audit_20261107_float64.json",
+  "confirmation_field": "confirmation_reserved_not_evaluated",
+  "confirmation_fold": "primary",
+  "replay_tolerance_deg": 0.00005,
+  "scope": "Retrospective matched warm-start strategy screen, 81 maximum training runs. Freeze every fold selection before test and reserved synthetic evaluation. Preserve every negative result. No SOTA or hardware-control claim; local only."
+}

@@ -1,0 +1,21 @@
+{
+  "experiment":"dated_forecast_20261108",
+  "bundle":"artifacts/regime_bundle_20261107",
+  "qualification":"configs/active_qualification_20261107.json",
+  "old_arx":"results/latency_observer_20261108/frozen_development",
+  "origin_start_s":4.25,
+  "origin_stride_raw":100,
+  "train_ages_raw":[0,2,5,10,15,20],
+  "evaluation_ages_raw":[0,2,5,10,15,20,3,7,25],
+  "noise_quantum_multipliers":[0,1],
+  "noise_seed":20261108,
+  "representations":["angle_lpv","io_lpv"],
+  "forms":["direct","modal_age_residual"],
+  "ridge_grid":[1e-10,1e-8,1e-6,1e-4,0.01,1],
+  "head_methods":["unaware","hold","linear_0.10","linear_0.25","quadratic_0.25","modal_3s","forced_3s_fixed","forced_3s_adapt"],
+  "methods":["parent_quad","direct_free4","direct_free2p5","direct_hold_fixed","direct_hold_adapt","direct_linear_fixed","direct_linear_adapt","direct_variable_length","bank_inverse","bank_simplex_0.1","bank_simplex_1","bank_simplex_10","mix_free_5","mix_free_10","mix_free_20","mix_bank_5","mix_bank_10","mix_bank_20","mix_horizon_10","mix_horizon_20","mix_quiet_10"],
+  "development_gate":{"maximum_parent_ratio":0.97,"maximum_arx_ratio":0.95,"minimum_arx_case_wins":4,"maximum_each_age_parent_ratio":1.05},
+  "scope":"Retrospective direct dated-angle forecast and past-observation fusion. Known scalar age0..25samples100Hz, current support histories. Old33records already opened; no new independent/hardware/control claim. Future support/L are assumptions; no future measured inputs. Zero age exactly preserves original regime predictor.",
+  "selection":"One global minimum equal-case/age/noise quiet-drive-balanced VALMAE. Strong ARX chooses percase/perknownTRAINage from new120fits, old120fits and both frozenARXs under all8head adapters; unseenages nearest lower-on-tie TRAINage. Freeze before evaluation.",
+  "independent_confirmation":false
+}

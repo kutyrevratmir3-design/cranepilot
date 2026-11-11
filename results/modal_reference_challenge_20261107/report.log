@@ -1,0 +1,13 @@
+{
+  "modal_mae_deg": 0.26142095903005635,
+  "challenged_arx_mae_deg": 0.4923063812593299,
+  "change_percent": -46.89872628477085,
+  "scenario_wins": 6,
+  "scenarios": 7,
+  "descriptive_low": -85.04857402883445,
+  "descriptive_high": 15.603833273399804,
+  "numerical_gate_against_challenged_reference": false,
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "post_hoc_design": true
+}

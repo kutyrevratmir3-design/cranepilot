@@ -1,0 +1,295 @@
+{
+  "repository": "https://github.com/ikhemakhem/BehavioralTrajGenCrane",
+  "commit": "1aa26b5c358e885325f75cc0e89ef613ff4b26f3",
+  "files": [
+    {
+      "path": "data/camera_coordinates.mat",
+      "bytes": 325,
+      "git_blob_sha1": "fd8c7d23a197db39726b2d28219cc366a498befe",
+      "sha256": "8f9fa4e4f52720565d33ac60bb8a928783540df51825bb0652d834f1a19e30e9",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/camera_coordinates.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_1.mat",
+      "bytes": 23303,
+      "git_blob_sha1": "b6ee54d6a1bd715da1c5744d23614497de2bcf32",
+      "sha256": "d79886d59874d52752485a4ceeefe8152afecf149539a9d10ee9d9c486b211b4",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_1.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_10.mat",
+      "bytes": 23196,
+      "git_blob_sha1": "755827ceef0dc0675049783acb869d618738594c",
+      "sha256": "0658cbfb877ec4da756d19c938ca4b57a0b72e515b7c4cb2b941ff4c72c2b0ad",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_10.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_11.mat",
+      "bytes": 23363,
+      "git_blob_sha1": "d28f8f942506794329f7d1289037b1bfb97ddcad",
+      "sha256": "ed198b261b5ccc06af8660bc038baae86b9e0d1f5337460290c75ad17c63beb4",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_11.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_12.mat",
+      "bytes": 23364,
+      "git_blob_sha1": "3cb33d147eed74f6864988fc0b04322d95b36df0",
+      "sha256": "924863cdc172fe44ca29f726e2818b63a10eaa9565c5ddfc0142a4f9be54adc2",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_12.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_13.mat",
+      "bytes": 23298,
+      "git_blob_sha1": "f968847b1786f8d760b04247cefb10a3c076373a",
+      "sha256": "8821e18aa27991446c059c974acfb6c699626d3ef16375963c54e6a851431568",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_13.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_14.mat",
+      "bytes": 23225,
+      "git_blob_sha1": "8c7656dbcf2812e2566600c65a414f1658927703",
+      "sha256": "5f59ea9482f06a0a5c127401b0b1c51ffffcbfca41949f7cc02df71c0f305b31",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_14.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_15.mat",
+      "bytes": 23208,
+      "git_blob_sha1": "ad6aba9d96c3158e3dd747c867239ee84c6d69d0",
+      "sha256": "926ec5e919d69ea96177c9869772711b4e4fc3a12b786b2315b61437f651c3ba",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_15.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_16.mat",
+      "bytes": 23318,
+      "git_blob_sha1": "307dd57db17948124d60e97e647357dffd32fc87",
+      "sha256": "8cf6d31d3053293987076f2ebf461a44382e752254776fd377245cef7361521d",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_16.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_17.mat",
+      "bytes": 23268,
+      "git_blob_sha1": "496c7a26cefc876468f9dd66868020ac3ff87928",
+      "sha256": "504ae7888afaaa5d7e8fbab827edab52826d71712799840c841e92d8bff90ff2",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_17.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_18.mat",
+      "bytes": 23273,
+      "git_blob_sha1": "2235880b88ecee6baf3849f2d998f92bc2498950",
+      "sha256": "33f7a85959f87941c9a52b19800c30c8999e58c89ba6683fa01740c0fa63ae31",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_18.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_19.mat",
+      "bytes": 23352,
+      "git_blob_sha1": "61e11679e74638abd89d51543907c555ab2e852b",
+      "sha256": "7a6986c7a5a49467b4ae88c730a818c69af5a198adf0810040068a532ef1c73a",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_19.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_2.mat",
+      "bytes": 23329,
+      "git_blob_sha1": "d61fbcd3500b62ac1c262a8a34d5c90c64c84b4e",
+      "sha256": "cb458d02ef8b32f62844baf44c48d18cd982e80fcd20ba5f825d488c7f1b967b",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_2.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_20.mat",
+      "bytes": 23322,
+      "git_blob_sha1": "473026e57383b26bc0f12a97406878d7376bf10a",
+      "sha256": "d5f542cd83056393f5920df54d80303ffc81d31426bec10a13b24f383c2ed908",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_20.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_3.mat",
+      "bytes": 23230,
+      "git_blob_sha1": "d37614bbd46c64d5ca65c2443e87c7f62a7b6424",
+      "sha256": "00bce1c56cef598fde7d2b507d3102cd24b3306360d57d8713bc24c766afc27d",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_3.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_4.mat",
+      "bytes": 23290,
+      "git_blob_sha1": "2d627fc907cc576a4dbdb453593ec7275f025af6",
+      "sha256": "3969e8770df661e3ff7eb47743ba369c2199eb654b2708b57487ba385837f6a7",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_4.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_5.mat",
+      "bytes": 23278,
+      "git_blob_sha1": "9f74140fd9eca28289c8fca97dcbe31bcf4a5894",
+      "sha256": "29a9e3dd7ecc11da3c16cbcd6fbae1031ecd907be297f982b6fa85ca6c140415",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_5.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_6.mat",
+      "bytes": 23309,
+      "git_blob_sha1": "2d46f1be20d06dec03b70de8df4e926659c4b3b8",
+      "sha256": "1c16d43436c1085e6e8ae29f57213be62662efc1c0fbab619402ab70b3c09b2e",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_6.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_7.mat",
+      "bytes": 23306,
+      "git_blob_sha1": "647bc6400f913ff712d4e50e72cb6021c907cefd",
+      "sha256": "e4a2ca06de0b67fc1317aa4208c6baddec03bd2c1430a162014ce8e75660c00a",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_7.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_8.mat",
+      "bytes": 23297,
+      "git_blob_sha1": "9739f49af0f37a1349f0446f7b58ff7af744f312",
+      "sha256": "f97be8306210b8738969ab0bfd0328344785d23d5c86c8acc0f4e92c83a18276",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_8.mat"
+    },
+    {
+      "path": "data/validation_data/input_seq_sim_500_9.mat",
+      "bytes": 23349,
+      "git_blob_sha1": "035bffc84ed36708a9254e9bce151db1819fd9db",
+      "sha256": "4f4251cae7aabb3ed0b934c6ecf6a407dd7b3acac4f617490c957d1f6f6687d5",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/input_seq_sim_500_9.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_1.mat",
+      "bytes": 48654,
+      "git_blob_sha1": "58c7cf2e8f6a0b16cb52c754398371a8bd1bccab",
+      "sha256": "86985b7a8f066907ae4d3341e5b558552af03b56e68050e7d047d6b4c0cc7793",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_1.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_10.mat",
+      "bytes": 47404,
+      "git_blob_sha1": "a26f20441d3beb5e26e5f0db19ba4bcc5f17350c",
+      "sha256": "20428eec9a1909b1d41db7fc3563c6b8c45a60512eb4348fe639b779aaa6857a",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_10.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_11.mat",
+      "bytes": 48340,
+      "git_blob_sha1": "a02870d7d67f99324e6e0b62e41940a3d76fb8c6",
+      "sha256": "3f32d10297c37c612ae787c32efd63ce0cfda593620fff657b2882ee2dad5241",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_11.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_12.mat",
+      "bytes": 48095,
+      "git_blob_sha1": "d52013d577d4b193e2975535e50e290d080a27a4",
+      "sha256": "cd256c9875f48ac6868ca2b6fe2c20d82b5933a51deac76b8ee10bb557e78bda",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_12.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_13.mat",
+      "bytes": 48669,
+      "git_blob_sha1": "bc9016bc4980903a765aa6fbb078d4b241998ddd",
+      "sha256": "f6fd247b6fa564ed1deb6350104f1b2564caea66538004899fe342403d8a4cc1",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_13.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_14.mat",
+      "bytes": 46823,
+      "git_blob_sha1": "71c46de245838e4ff1157152f4c168302685c746",
+      "sha256": "81a6ead8fdd6354bd180a75a0651ab99a902de0dc4b5c1f8d3a577ea1160d473",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_14.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_15.mat",
+      "bytes": 47174,
+      "git_blob_sha1": "a1696795662feab2d69fbea0a3a4ae3935bbda94",
+      "sha256": "167b55a15d9f671e307bdec5c580e98280a0fdf7115b1504dcc43f2522af61d8",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_15.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_16.mat",
+      "bytes": 48425,
+      "git_blob_sha1": "8417e1f3548d4b1e7bf68a810046305a45ef5b93",
+      "sha256": "b21109ed5605ded1610a652c22826b43b5f484420409ed97bcd1e6f7106fc096",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_16.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_17.mat",
+      "bytes": 47212,
+      "git_blob_sha1": "f3fa6c8bcfda8b1073a2925d2630f08f47c8cb94",
+      "sha256": "cd0e1053edb745b93e9302253640d7718923603b37a60bf5090818ff1f23aba0",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_17.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_18.mat",
+      "bytes": 47253,
+      "git_blob_sha1": "999ac85a0db29e5773c38938cb8cf0a5ecd820d7",
+      "sha256": "8f6b90c3cdd4a63f262708c24bf8d0ea35a0a3204083424fbb6fbeb3b230d1ca",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_18.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_19.mat",
+      "bytes": 48034,
+      "git_blob_sha1": "638495c06ace35066512afa998ca06fe977a77e9",
+      "sha256": "1bcc0bbf9584115b6c30743b9ce1d7c04565d7e82aec94c87dab841a6a599e5e",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_19.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_2.mat",
+      "bytes": 47911,
+      "git_blob_sha1": "928808cd6fe829b4d840c405b59224974b8ff245",
+      "sha256": "746aef4708bc9fbe79de7dfb44eae82294cd37c8a614908fc49aa8307df5708a",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_2.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_20.mat",
+      "bytes": 48515,
+      "git_blob_sha1": "8ddf5ce140a7387cd6ba56d52804729cfc2db461",
+      "sha256": "0c29f34aaa9c1adf4457c5270bf6aad6af382a04e6ae7b02e4f9fd4a9f77dbf5",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_20.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_3.mat",
+      "bytes": 47239,
+      "git_blob_sha1": "03fa01c04e332e9c9f0a67d0ba6678a347834554",
+      "sha256": "a59f3bc1a34a0a33dda9cf89ace412e315aa55f8bd1254d6d6b9d474693c4520",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_3.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_4.mat",
+      "bytes": 47710,
+      "git_blob_sha1": "1f4b37574f2cdcda1f8087793929ceb31812ae09",
+      "sha256": "a8a7282309ca2ac0bd2c44aabe534643bbc171c30e5b945a2680bfdbd7556f01",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_4.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_5.mat",
+      "bytes": 48025,
+      "git_blob_sha1": "d8fd4cace093d065d62b5e2e67cf11c5490d45d0",
+      "sha256": "82bf91fca2894ae50e5df8ab566cd3053a530cef0b1f95f5561733d2cd4f3308",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_5.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_6.mat",
+      "bytes": 48418,
+      "git_blob_sha1": "aea93884797d172e74769cca1241e8d06373e022",
+      "sha256": "370c9122aabe328f6c2c936430e9f6456c55630fdb8e6b594cdfb29bcb8983ea",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_6.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_7.mat",
+      "bytes": 48775,
+      "git_blob_sha1": "aae4d49cb1734cdc67de8a4aea2713808d5b72e4",
+      "sha256": "248aa37f953fba284d6f218870851dd99d0428f43b1a10e27837e4b8ba7d8511",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_7.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_8.mat",
+      "bytes": 47558,
+      "git_blob_sha1": "94e51e74d18820b84cb329082cf3103f976e0084",
+      "sha256": "9baee8bf25f23347e564f6db1fdc23b89e3c77d2f1e3513bd05519822edf0f18",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_8.mat"
+    },
+    {
+      "path": "data/validation_data/results_seq_sim_500_9.mat",
+      "bytes": 47516,
+      "git_blob_sha1": "02f75df1b0a0f27172eeb311dccc1246ed38958c",
+      "sha256": "abffee02caa66df7e1714cbedfbd9ab24ed2c93da258d862e061d236edb387e5",
+      "url": "https://raw.githubusercontent.com/ikhemakhem/BehavioralTrajGenCrane/1aa26b5c358e885325f75cc0e89ef613ff4b26f3/data/validation_data/results_seq_sim_500_9.mat"
+    }
+  ],
+  "parsed_test_records": false,
+  "redistributed_raw_files": false
+}

@@ -1,0 +1,1 @@
+Initial relative Jacobian error divided by epsilon for locally unresponsive deadzone cases, producing misleadingly enormous means. Final diagnosis reports absolute error for all cases and leaves relative/cosine undefined when true Jacobian norm <1e-6. No controller fitting or selection used either version.

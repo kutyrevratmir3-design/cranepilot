@@ -1,0 +1,17 @@
+rule,resolved_model,scope,fold,regime,mae_deg,reference,reference_mae_deg,ratio,maximum_ratio,passed
+selected,adapter_direct8,evaluation_extrapolation,primary,all,0.4736207372176916,previous_local,0.49059764252306687,0.9653954608952752,1.0,True
+selected,adapter_direct8,evaluation_extrapolation,primary,active,0.9546517987572385,previous_local,1.0368376628782192,0.9207341061542498,1.0,True
+selected,previous_local,evaluation_extrapolation,short_transfer,all,0.3835976651351221,previous_local,0.3835976651351221,1.0,1.01,True
+selected,previous_local,evaluation_extrapolation,short_transfer,active,1.6439684208282486,previous_local,1.6439684208282486,1.0,1.01,True
+selected,latent_residual6,evaluation_extrapolation,long_transfer,all,0.5011572552200797,previous_local,0.512640577910214,0.9775996610784378,1.01,True
+selected,latent_residual6,evaluation_extrapolation,long_transfer,active,0.9013861638756983,previous_local,0.9318530448861883,0.9673050582624741,1.01,True
+selected,adapter_direct8,load_stress,primary,all,0.5596974106813855,previous_local,0.5486246367277247,1.020182786576455,1.01,False
+selected,adapter_direct8,load_stress,primary,active,1.0513915018786573,previous_local,1.2768437254707166,0.823430057183431,1.01,True
+common,previous_local,evaluation_extrapolation,primary,all,0.49059764252306687,previous_local,0.49059764252306687,1.0,1.0,True
+common,previous_local,evaluation_extrapolation,primary,active,1.0368376628782192,previous_local,1.0368376628782192,1.0,1.0,True
+common,previous_local,evaluation_extrapolation,short_transfer,all,0.3835976651351221,previous_local,0.3835976651351221,1.0,1.01,True
+common,previous_local,evaluation_extrapolation,short_transfer,active,1.6439684208282486,previous_local,1.6439684208282486,1.0,1.01,True
+common,previous_local,evaluation_extrapolation,long_transfer,all,0.512640577910214,previous_local,0.512640577910214,1.0,1.01,True
+common,previous_local,evaluation_extrapolation,long_transfer,active,0.9318530448861883,previous_local,0.9318530448861883,1.0,1.01,True
+common,previous_local,load_stress,primary,all,0.5486246367277247,previous_local,0.5486246367277247,1.0,1.01,True
+common,previous_local,load_stress,primary,active,1.2768437254707166,previous_local,1.2768437254707166,1.0,1.01,True

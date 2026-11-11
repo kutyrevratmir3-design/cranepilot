@@ -1,6 +1,35 @@
-# Checkpoint 3
+# Checkpoint 5
 
-2 November 2026. Working research, not a completed journal submission.
+6 November 2026. Working research, not a completed journal submission.
+
+## Latest completed stage
+
+`temporal_20261106` completed 36 further angular fits (four variants, three
+seeds, three folds), using verified actors/calibration from identical retained
+folds. Validation selection was locked before evaluation. Primary keeps the
+incumbent (0.50050 deg). Short transfer selects dense/horizon (0.43858 versus
+0.43213 incumbent, a regression). Long transfer selects temporal/horizon
+(0.49712 versus 0.51264, a 3.03% macro improvement), but active-origin error
+in that fold increases. All models, predictions and selection scores remain.
+
+The fixed 576-case angular-only nonlinear free-sway diagnostic also completed.
+It identifies a weakness in the incumbent's corrections: undamped exact-history
+error 0.23573 deg versus physical 0.01213. No model was tuned on this diagnostic.
+RK4 step-halving difference is 1.36e-9 deg. Forty-nine tests pass. History-only
+inference matches retained evaluation traces within 1.63e-5 deg across all
+18 model/fold comparisons (three packets each).
+
+The separate Aalto archive DOI 10.5281/zenodo.6907569 was downloaded, verified
+and audited: 31,303 exported rows, eight industrial cycles. An alignment audit
+found many exported angles matching subsequent raw events. A new causal raw
+event reconstruction retains ten signals, missing values and log ages. No
+models were trained or scored on Aalto. Geometry, angle provenance and command
+semantics still require resolution. See AALTO_DATA_AUDIT.md.
+
+Current evidence: RESEARCH_2026_11_06.md, results/latest/*20261106*,
+artifacts/runs/temporal_20261106 and the new evidence archive. The pretraining
+source/config/design commit is 678b754. All work remains LOCAL ONLY, with no
+GitHub or Overleaf changes. Earlier experiment details below are historical.
 
 ## What is actually complete
 
@@ -12,10 +41,17 @@ tests, generated figures and an English LaTeX research draft.
 The full neural development benchmark completed 38 scenario-axis folds and
 342 network fits. All-family physical baselines additionally used 3- and
 41-sample histories. The simulation-only MPC pilot completed 16 paired
-contexts (32 episodes). Twenty-eight scientific/numerical tests passed.
+contexts (32 episodes). Forty-one scientific/numerical tests passed.
 The command-conditioned passive-memory pilot and same-information GP/MLP
 references have also completed. See PASSIVE_ROLLOUT.md for the derivation,
 information contract, ablations and numerical verification.
+
+The further 3 November campaign completed 36 angular fits, two fold-specific
+actors and 56 GP candidate fits. The selected force-aware robust NN obtains
+0.50050 deg primary macro MAE versus 0.51193 for the previous driven model.
+Two additional extrapolation-only scores are 0.43213 (shorter) and 0.51264
+(longer). Same-fold GRU scores are 0.44140 and 0.57330. See MODEL_CARD.md
+and RESEARCH_2026_11_03.md; all methods and limitations remain in the tables.
 
 ## Retained runs
 
@@ -60,24 +96,22 @@ neural MPC performance or hardware validation. The manuscript states this.
 
 ## Immediate next work
 
-The reference/actual audit and first command-conditioned model are complete.
-The learned drive gives 2.43 mm validation MAE at 1 s versus 4.86 mm for
-constant velocity, while losing at shorter horizons. The four-memory model
-obtains 0.228 degrees at 0.1 s versus 0.245 for action-conditioned physics;
-the same-information GP is stronger at 0.216. At 1 s the passive model is
-0.765 versus 0.757 for action-conditioned physics. This is a mixed result,
-not a successful superiority claim. The memory-free observer ablation is
-included. The new learned model has not been evaluated inside MPC.
+1. Test residual constraints that preserve simple physical limits, with a newly
+   frozen follow-up protocol rather than tuning on the completed cleanroom cases.
+2. Make validation robust across motion regimes; long-transfer macro gains
+   currently hide active-window regressions, and one validation record can
+   select the worse short-transfer variant.
+3. Resolve the Aalto measurement/geometry/command contract, lock cycle/payload
+   holdouts and use the causal reconstruction at its native rate. Reproduce
+   additional identification methods; ReSMILE has only been inspected.
+4. Only then integrate an action-conditioned learned model in MPC and compare
+   it with estimated-state physical control and input shaping.
 
-1. Diagnose causal drive/state-estimation error on development records;
-   compare against the retained GP, without retuning on evaluation scenarios.
-2. Test whether multiple passive memory modes are identifiable from the
-   quantized, short observation packet before increasing model complexity.
-3. Extend coupled-axis/hoisting modelling only after a revised frozen protocol.
-4. Integrate an independently validated action-conditioned model in MPC;
-   add estimated-state, input-shaping and adaptive-physics comparisons.
-
-See RESEARCH_PLAN.md for the detailed decision rules and remaining stages.
+The causal forced observer and robust loss help in the retained primary score.
+Phase-normalized and measurement-bin-anchored models did not improve it.
+The earlier driven NN remains stronger in the active-origin 1.5 s subset.
+Warm CPU flow compilation reduces inference time without changing weights.
+No new hardware control result is established.
 
 ## External state
 
@@ -85,9 +119,10 @@ The public repository is https://github.com/kutyrevratmir3-design/cranepilot.
 Publication uses the authenticated browser because the connector cannot write
 this repository and local Git network access is unavailable. Public web commits
 and the retained local Git history are separate; neither history is force-pushed.
-Public web commits contain the source, configurations, tests and manuscript
-figures. The new campaign, documentation and complete selected metrics are
-being synchronized through the same browser workflow.
+Public web commits contain the previous source, configurations, tests, metrics
+and manuscript figures. GitHub CI passed for that previously published state.
+The 3 November campaign is LOCAL ONLY under the user's publication preference;
+no new GitHub writes were performed. The current tests pass locally.
 
 Overleaf is authenticated. The selected main document is cranepilot_main.tex;
 the original article and figures are preserved. The eleven-page PDF including the passive-memory section,
@@ -124,3 +159,16 @@ passive-memory pilot. Mean seven-horizon MAE: old PEPM 0.54267 deg; matched
 training control 0.52376; refined observer 0.51626; driven innovation 0.51193;
 GP reference 0.51668. The tiny aggregate difference from GP is not convincing
 evidence of superiority. See INNOVATION_RESULTS.md for exact horizons and limits.
+
+## New retained runs
+
+- forceaware_campaign: failed before training; technical cause recorded.
+- forceaware_campaign_v2: complete, 12 neural fits and 16 GP fits.
+- phase_normalized_campaign: complete, six phase-model fits plus three GRU fits.
+- measurement_consistent_campaign: complete, three nominal-bin-anchor fits.
+- cross_length_campaign: complete, 12 angular fits, two actors and 16 GP fits.
+- zero_prior_gp_campaign: complete, 24 GP fits with a physical zero-residual prior.
+
+The compact research_20261103_evidence.zip retains neural weights, actors,
+prediction traces, configurations, source, tests, metrics and a content manifest.
+Large GP joblib checkpoints remain local and are reproducible from scripts.

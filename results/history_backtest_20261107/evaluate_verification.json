@@ -1,0 +1,666 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 1,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 2,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 7,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 8,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 10,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 11,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "sid": 12,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "integrator",
+      "fold": "primary",
+      "max_deg": 1.2810419482864403e-09
+    },
+    {
+      "kind": "future_gain_invariance",
+      "fold": "primary",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 1,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 2,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 3,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "sid": 7,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "integrator",
+      "fold": "short_transfer",
+      "max_deg": 1.3029722703844664e-09
+    },
+    {
+      "kind": "future_gain_invariance",
+      "fold": "short_transfer",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 2,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 6,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 7,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "combined",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "adaptive",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "sid": 8,
+      "model": "adaptive_fine",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "integrator",
+      "fold": "long_transfer",
+      "max_deg": 1.2998863372047764e-09
+    },
+    {
+      "kind": "future_gain_invariance",
+      "fold": "long_transfer",
+      "max_deg": 0.0
+    }
+  ],
+  "tolerance_deg": 5e-05
+}

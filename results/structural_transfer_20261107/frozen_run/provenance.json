@@ -1,0 +1,309 @@
+{
+  "status": "complete",
+  "config": {
+    "experiment": "structural_transfer_20261107",
+    "bundle": "artifacts/research_bundle_20261107",
+    "fold": "primary",
+    "methods": [
+      "nominal",
+      "force_actuator",
+      "fixed_observer",
+      "fixed_force_observer",
+      "adaptive_params",
+      "adaptive_force",
+      "adaptive_observer",
+      "adaptive_force_observer",
+      "frozen_adaptive_force_observer"
+    ],
+    "duration_s": 8,
+    "raw_dt_s": 0.01,
+    "control_dt_s": 0.05,
+    "threads": 1,
+    "solver": {
+      "qp_iterations": 200,
+      "trust_region": 0.2,
+      "command_bound": 0.8,
+      "nominal_tau_s": 0.1
+    },
+    "initial_x_m": 0.1,
+    "target_x_m": 0.3,
+    "development_lengths_m": [
+      0.35,
+      0.6,
+      0.85
+    ],
+    "noise_seed": 1407112026,
+    "angle_quantum_rad": 0.0015339807878856412,
+    "position_quantum_m": 0.0001,
+    "angular_pulse_rad_s2": 0.13,
+    "angular_pulse_interval_s": [
+      5.25,
+      5.6
+    ],
+    "plant_substeps": 2,
+    "scope": "Synthetic acceleration-command structural mismatch and target reversal. All controllers have identical causal two-second issued-command/position access, .4-second angles. No trained actuator, native xr zero, no hardware or stability guarantee. Historical adaptive controller retained separately; matched observer qualification is a new ablation.",
+    "variants": {
+      "nominal": {},
+      "force_actuator": {
+        "force": true,
+        "actuator": true
+      },
+      "adaptive_params": {
+        "adaptive": true
+      },
+      "adaptive_force": {
+        "adaptive": true,
+        "force": true
+      },
+      "adaptive_observer": {
+        "adaptive": true,
+        "observer": true
+      },
+      "adaptive_force_observer": {
+        "adaptive": true,
+        "force": true,
+        "observer": true
+      },
+      "fixed_observer": {
+        "observer": true
+      },
+      "fixed_force_observer": {
+        "observer": true,
+        "force": true
+      },
+      "frozen_adaptive_force_observer": {
+        "adaptive": true,
+        "observer": true,
+        "force": true,
+        "frozen_gate": true
+      }
+    },
+    "frequency_grid": [
+      0.85,
+      1.0,
+      1.15
+    ],
+    "actuator_grid": [
+      [
+        0.07,
+        0.8
+      ],
+      [
+        0.1,
+        1.0
+      ],
+      [
+        0.18,
+        1.2
+      ]
+    ],
+    "residual_bound_rad": 0.015,
+    "identification": {
+      "history_intervals": 40,
+      "minimum_samples": 21,
+      "update_every_ticks": 4,
+      "ema": 0.25,
+      "tau_grid": [
+        0.05,
+        0.065,
+        0.08,
+        0.1,
+        0.125,
+        0.16,
+        0.2,
+        0.25
+      ],
+      "gain_bounds": [
+        0.5,
+        1.6
+      ],
+      "gain_ridge": 1e-07,
+      "tau_penalty": 1e-09,
+      "minimum_information_m": 0.0004,
+      "maximum_fit_rmse_m": 0.001
+    },
+    "reverse_time_s": 4.0,
+    "reverse_target_x_m": 0.15,
+    "gain_switch_time_s": 3.5,
+    "friction_velocity_scale_m_s": 0.015,
+    "viscous_friction_per_s": 0.08,
+    "families": [
+      "matched",
+      "delay",
+      "two_lag",
+      "friction",
+      "gain_change",
+      "combined"
+    ],
+    "archetypes": [
+      {
+        "length": 0.28,
+        "omega_ratio": 0.91,
+        "tau": 0.075,
+        "tau2": 0.04,
+        "gain": 0.86,
+        "deadzone": 0.0,
+        "angle_deg": 2.5,
+        "damping": 0.02,
+        "delay_s": 0.04,
+        "coulomb": 0.025,
+        "switch_factor": 0.7,
+        "force_law": "geometric"
+      },
+      {
+        "length": 0.28,
+        "omega_ratio": 1.09,
+        "tau": 0.17,
+        "tau2": 0.085,
+        "gain": 1.14,
+        "deadzone": 0.02,
+        "angle_deg": 5.5,
+        "damping": 0.08,
+        "delay_s": 0.09,
+        "coulomb": 0.055,
+        "switch_factor": 1.3,
+        "force_law": "effective"
+      },
+      {
+        "length": 0.98,
+        "omega_ratio": 1.09,
+        "tau": 0.075,
+        "tau2": 0.04,
+        "gain": 1.14,
+        "deadzone": 0.02,
+        "angle_deg": 5.5,
+        "damping": 0.08,
+        "delay_s": 0.04,
+        "coulomb": 0.025,
+        "switch_factor": 1.3,
+        "force_law": "geometric"
+      },
+      {
+        "length": 0.98,
+        "omega_ratio": 0.91,
+        "tau": 0.17,
+        "tau2": 0.085,
+        "gain": 0.86,
+        "deadzone": 0.0,
+        "angle_deg": 2.5,
+        "damping": 0.02,
+        "delay_s": 0.09,
+        "coulomb": 0.055,
+        "switch_factor": 0.7,
+        "force_law": "effective"
+      }
+    ]
+  },
+  "git_head": "540477f7be091293d3c58ceb80230df51c0bd00f",
+  "guarded_hashes": {
+    "configs/structural_transfer_20261107.json": "317079cd93db59285808ddd7726856615d0a76f08f12ddca913f016ad987c911",
+    "docs/STRUCTURAL_TRANSFER_DESIGN_20261107.md": "3d6967751029d66dd89f5c5111bf6d5912e681f71fcad05ccd67948a75362ca5",
+    "scripts/structural_transfer.py": "a102f803c88b6b6dc1f208a0eb0753c359058105f65d4eb1faf2dda88ad986f9",
+    "scripts/adaptive_actuator.py": "beb1dd4381d79fcdb0c74d2c0b0a75ab9a1ae93f325eefbbf5f2b7cf99daff60",
+    "scripts/run_adaptive_actuator.py": "74188a99fdc77e0f7622e4fdd648b6539da546ee717a7e26b8ec4c7ba45545d9",
+    "scripts/actuator_identification.py": "a88bb73227f80cfb8c1037c2ade46a4f72747ecebcae8bad913e1e3a84b5a173",
+    "scripts/angular_control.py": "21aeeccc87469b1c11d7095645f69ac63750dba0df8e5e74eeacfe7c1db1845d",
+    "scripts/run_structural_transfer.py": "935b93b4c9121e2c2a313f368dbc17d9ac47cc2330a4992f48f7970b58a69793",
+    "tests/test_structural_transfer.py": "3c662d5515f9ba47f19f88283a51bc12842c48385413d7b850dcca384f95516e",
+    "scripts/verify_structural_transfer.py": "e03596ef2b84cc4085880210fa176d54b6abd8e326fb1ac6dccbc2ecde5ab9d9",
+    "scripts/benchmark_structural_transfer.py": "6335c4e93bf67a664d028da2c841e47a78d7055efb397041d648743703c2c272",
+    "artifacts/research_bundle_20261107/source_integrity_postexport.json": "813b7be21cc96984d5eac28003b0813a303971c949f94caea0d2906c28fe0a3f",
+    "artifacts/research_bundle_20261107/manifest.json": "cd200506a82237525d26af14b3983cb32d109a58f99c444b0e3a90dec094d7f8",
+    "artifacts/research_bundle_20261107/verification.json": "88d07c7162ce617ca453378b0dc2ee2ea2fc0d57a59386e0bb435ccc5eed943c",
+    "artifacts/research_bundle_20261107/short_transfer/retained_lpv.npz": "5200d852474e5550a8ac2d4aa4a947fba2af56ae46d9b6fb4e7605d600152c31",
+    "artifacts/research_bundle_20261107/short_transfer/actor.pt": "d08d829f21f02de819ca9a8b210d6eadbccda835d4de3b7893f5eeb73e8c52eb",
+    "artifacts/research_bundle_20261107/long_transfer/actor.pt": "4288d621134115dfcec60099725e4a22bce9e06a1ddad69fa7602e5976be082c",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed2.pt": "9a2e7806960abd00927671400fe5477dfb6a89ee60396c6624632b321e0149f7",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed2.pt": "69f50229f35b9dda1e6e166c2eab820ccc2766d729c20dc314565eb7c697d878",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed1.pt": "33559d2a55922170b3f5b1e32e58e43e33d80df94442befc596a88e8b6d87e37",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed0.pt": "a3ca8a7db01af33642bba95ec95332c58983296d48d5ec145f23d470b5ebfb4f",
+    "artifacts/research_bundle_20261107/long_transfer/retained_seed1.pt": "da78336820d84d09082b2f670440b15b5b87f1b4d9fab29479616ad1d38d858b",
+    "artifacts/research_bundle_20261107/long_transfer/candidate_seed0.pt": "c643ddeffb8dca15357f697407df615f881f9c2fde6ca6a8b6845969f04ad1cd",
+    "artifacts/research_bundle_20261107/primary/actor.pt": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499",
+    "artifacts/research_bundle_20261107/primary/retained_seed2.pt": "8c11b5d8bf441a2ccd8bc49305112fdee8722507b276a09aa0d9799838ac809a",
+    "artifacts/research_bundle_20261107/primary/candidate_seed2.pt": "a46fd256af6c5c02cecaeba3311773df5c3367e57735eba607c8cf50d62a2646",
+    "artifacts/research_bundle_20261107/primary/candidate_seed1.pt": "f24e97c702b4c7587ade16d73de611f3b1e1246bd3c6eece256f0ab6955defe6",
+    "artifacts/research_bundle_20261107/primary/retained_seed0.pt": "8bca23d661a919e159618d57d85aeef62f078962b1702f0ab520c441568e4199",
+    "artifacts/research_bundle_20261107/primary/retained_seed1.pt": "2f7e8613b714e7e701b52ffe0ad59229294beb3b976c252d216299f3a0b28664",
+    "artifacts/research_bundle_20261107/primary/candidate_seed0.pt": "b42c0e9293beceb72ce2f31b6fe2a53df9054c010cb0e9734e9f6277e8780840"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "source_sha256": {
+      "broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "540477f7be091293d3c58ceb80230df51c0bd00f"
+  },
+  "neural_training": false,
+  "online_actuator_identification": true,
+  "available_actuator_history_s": 2.0,
+  "angular_history_s": 0.4,
+  "scope": "Synthetic acceleration-command structural mismatch and target reversal. All controllers have identical causal two-second issued-command/position access, .4-second angles. No trained actuator, native xr zero, no hardware or stability guarantee. Historical adaptive controller retained separately; matched observer qualification is a new ablation.",
+  "started_utc": "2026-11-07T15:26:41.895102+00:00",
+  "selection_performed": false,
+  "parameters_retuned": false,
+  "development_hashes": {
+    "development/fixed_observer.npz": "b7284e827b9f6dd2c25d663e91cce2d82e16bf6505da81d35f06664c8d8e4bab",
+    "development/cases.csv": "f2da18a721ea20215bf9375e0a33010d16d210a9093ad30644bcb38383c25cbe",
+    "development/adaptive_force_observer.npz": "1193cde79934ff5443b00e170ea38e21aae9ac8dc2d53c2903dd0ea0fcb8cdd6",
+    "development/nominal.npz": "e5b527992f3b6e14957848a921bbc0f5f1ddd2c1d0eae4de7719625756738c9d",
+    "development/adaptive_force.npz": "9e3336dda62215acf3bdf7f7b28b4327376aad827d755d716cccacec40ccc58c",
+    "development/force_actuator.npz": "c8611d2f8fbdf72d64272c2d7720f4883ae576b787597f01d82ce2aa3235fe77",
+    "development/metrics.csv": "ca78036b99b0ca096827ffd148163e9be825b497b51c57352e924c3d904bd3ac",
+    "development/frozen_adaptive_force_observer.npz": "2aeedac59dfddb5cb2245a0b4b9f05803e6d019d5a03399a79348289204770d5",
+    "development/fixed_force_observer.npz": "915895d7d77616ee1f4b343fbf8c2dfb11b58369c162cb2579b4a94b01a43882",
+    "development/adaptive_observer.npz": "4753e544d6418c2025a47c10c59cf527b3bfcf29b31be28e9cef4757929bfefb",
+    "development/adaptive_params.npz": "83dce541b75b3bac7ee1a8e4a8ba396e16c830c1d7af8953b4fc682a927676a4"
+  },
+  "locked_utc": "2026-11-07T15:26:52.034994+00:00",
+  "finished_utc": "2026-11-07T15:28:49.130856+00:00",
+  "result_hashes": {
+    "development/fixed_observer.npz": "b7284e827b9f6dd2c25d663e91cce2d82e16bf6505da81d35f06664c8d8e4bab",
+    "development/cases.csv": "f2da18a721ea20215bf9375e0a33010d16d210a9093ad30644bcb38383c25cbe",
+    "development/adaptive_force_observer.npz": "1193cde79934ff5443b00e170ea38e21aae9ac8dc2d53c2903dd0ea0fcb8cdd6",
+    "development/nominal.npz": "e5b527992f3b6e14957848a921bbc0f5f1ddd2c1d0eae4de7719625756738c9d",
+    "development/adaptive_force.npz": "9e3336dda62215acf3bdf7f7b28b4327376aad827d755d716cccacec40ccc58c",
+    "development/force_actuator.npz": "c8611d2f8fbdf72d64272c2d7720f4883ae576b787597f01d82ce2aa3235fe77",
+    "development/metrics.csv": "ca78036b99b0ca096827ffd148163e9be825b497b51c57352e924c3d904bd3ac",
+    "development/frozen_adaptive_force_observer.npz": "2aeedac59dfddb5cb2245a0b4b9f05803e6d019d5a03399a79348289204770d5",
+    "development/fixed_force_observer.npz": "915895d7d77616ee1f4b343fbf8c2dfb11b58369c162cb2579b4a94b01a43882",
+    "development/adaptive_observer.npz": "4753e544d6418c2025a47c10c59cf527b3bfcf29b31be28e9cef4757929bfefb",
+    "development/adaptive_params.npz": "83dce541b75b3bac7ee1a8e4a8ba396e16c830c1d7af8953b4fc682a927676a4",
+    "evaluate/fixed_observer.npz": "fd955349d1054409677763f3fafe0c0918da80ca16cccccb0e9d91cf4cf2cbcd",
+    "evaluate/cases.csv": "206d7ddc73a4081bbbb2bf2bbd4450bd8d3d253a07068446cc3f30b2508dd031",
+    "evaluate/adaptive_force_observer.npz": "b267326ffc55790599b0b81765a64cf1641969f581b6b9d4696208fb63005e0a",
+    "evaluate/nominal.npz": "7603a56b76c9ce001f91f28dc905cd05b921908c5865b48a9630dce30edc465e",
+    "evaluate/adaptive_force.npz": "26ca9233d13c270404a0c251079b00dbd4a20ca538e8abd712a8d24e1203edd6",
+    "evaluate/force_actuator.npz": "a2048055f1d5f83caca2e73297c4935a20066d4dc7bc5dc097bccdc6aefb53f1",
+    "evaluate/metrics.csv": "bcb2d8454a33094d4e01c175183c6192a42b06796ccee84cc7b9fd9b1bf9252a",
+    "evaluate/frozen_adaptive_force_observer.npz": "0c7e5e395867539901cd6ba24ac806e286cf913e01d514723b2af433b58012d9",
+    "evaluate/fixed_force_observer.npz": "9f6c1eab950266e5fbe72a7b620161d10c2a42bf5c6882c3296bb7234014d5e9",
+    "evaluate/adaptive_observer.npz": "5e40167fba0f9b6a1b79a84e71214c70121f914000b2e7eb5f77ed5a32f385ed",
+    "evaluate/adaptive_params.npz": "7acf91b93c60a3b890bc3950000150815ec3766cf58d359d2e47917e7fb016a8"
+  }
+}

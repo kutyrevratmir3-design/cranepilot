@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "posthoc_diagnostic": true,
+  "used_for_selection": false,
+  "validation_sensor_gap_changed": 0,
+  "old_sensor_gap_changed": 671,
+  "validation_forecasts_differ": 0,
+  "old_forecasts_differ": 671,
+  "repeated_windows_across_ages_are_not_independent": true
+}

@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checked_utc": "2026-11-07T12:02:35.776824+00:00",
+  "exporter_sha256": "d944a8114fb0ce38ed38f69f5ee847fbe51a8e87bb05fc39e9311dfa9c783bbf",
+  "scope": "After initial export and 36 exact replays, exporter was strengthened to check result_hashes. All four frozen source maps were explicitly verified now; original replay references and copied weights remain byte-identical. Forecasts were not repeated for this code-only export hardening.",
+  "replayed_reference_hashes_rechecked": 36,
+  "copied_model_hashes_rechecked": 16,
+  "checks": [
+    {
+      "run": "artifacts/runs/structured_models_20261107",
+      "provenance_sha256": "53173528b76b765d13498c707d5f24f2f5ae6170b576a8bdf4e732b32583d196",
+      "guarded_files_checked": 117,
+      "checkpoint_files_checked": 72,
+      "result_files_checked": 108,
+      "result_mapping_sha256": "e45b107c337bb4fed9f62e5fa270d774e575e764ab793a5b7b9cc97818716289"
+    },
+    {
+      "run": "artifacts/runs/finetune_campaign_20261107",
+      "provenance_sha256": "1101b062eee2db05bca7b6a4d5dc6e5fef69bb1b7f4a406ac6fb864a77e8b890",
+      "guarded_files_checked": 107,
+      "checkpoint_files_checked": 90,
+      "result_files_checked": 126,
+      "result_mapping_sha256": "96442beeb25cffcd39d0ac21e5d091bbb6922a349210de8ec29858f8b3abb128"
+    },
+    {
+      "run": "artifacts/runs/global_research_20261107",
+      "provenance_sha256": "67fe308fa1b72f845e727856fe1f5f458030009ab7ab2486db5f408aba0b1a3c",
+      "guarded_files_checked": 99,
+      "checkpoint_files_checked": 48,
+      "result_files_checked": 84,
+      "result_mapping_sha256": "e8a1bf074f8561d80d1537d9350cd769a6af72f40a8da03631782859191f4bf4"
+    },
+    {
+      "run": "artifacts/runs/temporal_20261106",
+      "provenance_sha256": "9c835a5c3b3608340cddd86cdf905c8c4f53e073504afa61864632766d5d13b5",
+      "guarded_files_checked": 38,
+      "checkpoint_files_checked": 37,
+      "result_files_checked": 0,
+      "result_mapping_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  ]
+}

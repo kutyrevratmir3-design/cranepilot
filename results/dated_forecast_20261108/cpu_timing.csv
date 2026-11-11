@@ -1,0 +1,6 @@
+case,age_raw,repeats,median_ms
+trolley_theta,15,3,134.7414170159027
+jib_theta,15,3,127.22004199167714
+jib_beta,15,3,126.91175000509247
+simult_theta,15,3,139.83837503474206
+simult_beta,15,3,128.73462500283495

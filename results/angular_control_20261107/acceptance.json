@@ -1,0 +1,8 @@
+{
+  "sway_improved": true,
+  "tracking_improved": false,
+  "final_error_within_1percent": false,
+  "no_additional_raw_violations": true,
+  "majority_paired_cost_wins": false,
+  "passed": false
+}

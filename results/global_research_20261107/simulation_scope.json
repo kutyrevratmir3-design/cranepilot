@@ -1,0 +1,80 @@
+{
+  "primary": {
+    "excluded_command_models": [
+      "lpv_linear_command_r0",
+      "lpv_linear_command_r1",
+      "lpv_linear_command_r2",
+      "nvar_quadratic_command_r0",
+      "nvar_quadratic_command_r1",
+      "nvar_quadratic_command_r2"
+    ],
+    "reason": "No actuator/reference generator; zero references are placeholders",
+    "angular_methods": [
+      "incumbent",
+      "soft_symmetry",
+      "physical",
+      "combined",
+      "weak_r0",
+      "weak_r1",
+      "weak_r2",
+      "lpv_linear_actor_r0",
+      "lpv_linear_actor_r1",
+      "lpv_linear_actor_r2",
+      "nvar_quadratic_actor_r0",
+      "nvar_quadratic_actor_r1",
+      "nvar_quadratic_actor_r2"
+    ]
+  },
+  "short_transfer": {
+    "excluded_command_models": [
+      "lpv_linear_command_r0",
+      "lpv_linear_command_r1",
+      "lpv_linear_command_r2",
+      "nvar_quadratic_command_r0",
+      "nvar_quadratic_command_r1",
+      "nvar_quadratic_command_r2"
+    ],
+    "reason": "No actuator/reference generator; zero references are placeholders",
+    "angular_methods": [
+      "incumbent",
+      "soft_symmetry",
+      "physical",
+      "combined",
+      "weak_r0",
+      "weak_r1",
+      "weak_r2",
+      "lpv_linear_actor_r0",
+      "lpv_linear_actor_r1",
+      "lpv_linear_actor_r2",
+      "nvar_quadratic_actor_r0",
+      "nvar_quadratic_actor_r1",
+      "nvar_quadratic_actor_r2"
+    ]
+  },
+  "long_transfer": {
+    "excluded_command_models": [
+      "lpv_linear_command_r0",
+      "lpv_linear_command_r1",
+      "lpv_linear_command_r2",
+      "nvar_quadratic_command_r0",
+      "nvar_quadratic_command_r1",
+      "nvar_quadratic_command_r2"
+    ],
+    "reason": "No actuator/reference generator; zero references are placeholders",
+    "angular_methods": [
+      "incumbent",
+      "soft_symmetry",
+      "physical",
+      "combined",
+      "weak_r0",
+      "weak_r1",
+      "weak_r2",
+      "lpv_linear_actor_r0",
+      "lpv_linear_actor_r1",
+      "lpv_linear_actor_r2",
+      "nvar_quadratic_actor_r0",
+      "nvar_quadratic_actor_r1",
+      "nvar_quadratic_actor_r2"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+case,records,original_windows,new_dense_base_windows
+jib_beta,6,2250,2244
+jib_theta,6,2250,2244
+simult_beta,7,2625,2618
+simult_theta,7,2625,2618
+trolley_theta,10,3750,3740

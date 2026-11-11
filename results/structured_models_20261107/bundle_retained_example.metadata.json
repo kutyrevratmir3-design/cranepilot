@@ -1,0 +1,12 @@
+{
+  "fold": "primary",
+  "profile": "retained",
+  "method": "phase_space",
+  "architecture": "soft_strategy",
+  "manifest_sha256": "cd200506a82237525d26af14b3983cb32d109a58f99c444b0e3a90dec094d7f8",
+  "fold_is_research_split_not_operational_router": true,
+  "seed_spread": "descriptive_not_calibrated_uncertainty",
+  "candidate_promoted": false,
+  "closed_loop_control_evaluated": false,
+  "gate_warning": null
+}

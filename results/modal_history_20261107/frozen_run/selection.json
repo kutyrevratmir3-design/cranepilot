@@ -1,0 +1,128 @@
+{
+  "cases": {
+    "trolley_theta": {
+      "family": "trolley",
+      "axis": "theta",
+      "modal": "two_mode",
+      "local_ar": {
+        "order": 8,
+        "alpha": 1e-08,
+        "tls": false
+      },
+      "arx_form": "lpv_harmonic_residual",
+      "arx_alpha": 0.0001,
+      "validation_scores": {
+        "strong_arx": 0.35088311837082575,
+        "fixed": 1.296919355799673,
+        "one_mode": 0.1330644133712605,
+        "two_mode": 0.12651739964551836,
+        "selected_modal": 0.12651739964551836,
+        "local_ar": 0.563978291330114,
+        "persistence": 6.518137288961012
+      },
+      "arx_checkpoint_sha256": "14fb9904c3a3f75fd54b077adba412e524c4c06b3f936d4fbff02e897d76df62",
+      "calibration_sha256": "9d094502422cbc56857ffa6747011d283c03ec7a4529a778b0f724498395ca55"
+    },
+    "jib_theta": {
+      "family": "jib",
+      "axis": "theta",
+      "modal": "two_mode",
+      "local_ar": {
+        "order": 8,
+        "alpha": 1e-08,
+        "tls": false
+      },
+      "arx_form": "lpv_direct",
+      "arx_alpha": 1e-08,
+      "validation_scores": {
+        "strong_arx": 0.39466682620316645,
+        "fixed": 1.2833285322497776,
+        "one_mode": 0.30412679145466004,
+        "two_mode": 0.2821047731354835,
+        "selected_modal": 0.2821047731354835,
+        "local_ar": 0.970558129765133,
+        "persistence": 12.783579243971696
+      },
+      "arx_checkpoint_sha256": "7011bdf7623ceb426953cf46a9a5afb5fe739864505b6f5c7deabbd7793a0a4a",
+      "calibration_sha256": "0230fca36bde7b4d390b42ad00b48b8ec02564aed9d6706d2060958b7356ae45"
+    },
+    "jib_beta": {
+      "family": "jib",
+      "axis": "beta",
+      "modal": "two_mode",
+      "local_ar": {
+        "order": 8,
+        "alpha": 1e-08,
+        "tls": false
+      },
+      "arx_form": "lpv_direct",
+      "arx_alpha": 1e-08,
+      "validation_scores": {
+        "strong_arx": 0.2871646891444603,
+        "fixed": 0.6992995937089862,
+        "one_mode": 0.1833423520345688,
+        "two_mode": 0.16379131660617557,
+        "selected_modal": 0.16379131660617557,
+        "local_ar": 0.43408678287517316,
+        "persistence": 4.714441411355042
+      },
+      "arx_checkpoint_sha256": "9c574630763ba160fda6d3f75e34e898c4bdd64831baca64e269a67e21a022e6",
+      "calibration_sha256": "0ec85f41d42774f91995311bdfc86f931b3d5383424fa4c5b5d7440fa95fa238"
+    },
+    "simult_theta": {
+      "family": "simult",
+      "axis": "theta",
+      "modal": "two_mode",
+      "local_ar": {
+        "order": 8,
+        "alpha": 1e-08,
+        "tls": false
+      },
+      "arx_form": "lpv_direct",
+      "arx_alpha": 1e-10,
+      "validation_scores": {
+        "strong_arx": 1.3472858389404208,
+        "fixed": 3.879371045798195,
+        "one_mode": 1.1935548082674288,
+        "two_mode": 0.8287740119790185,
+        "selected_modal": 0.8287740119790185,
+        "local_ar": 1.036303349467917,
+        "persistence": 13.109337035211714
+      },
+      "arx_checkpoint_sha256": "6473c5cb5432005579dfab0a41a9f26df8d0a9a24318794aebc61f1d4a633aee",
+      "calibration_sha256": "0430e7a5ddb5072a9562120cbf446b7fcea43fff5cfca3d0f43f7fb8e475eae7"
+    },
+    "simult_beta": {
+      "family": "simult",
+      "axis": "beta",
+      "modal": "two_mode",
+      "local_ar": {
+        "order": 8,
+        "alpha": 1e-08,
+        "tls": false
+      },
+      "arx_form": "lpv_direct",
+      "arx_alpha": 1e-10,
+      "validation_scores": {
+        "strong_arx": 0.5325862024662965,
+        "fixed": 2.6567839415282872,
+        "one_mode": 1.1160515275866212,
+        "two_mode": 0.7429270312484327,
+        "selected_modal": 0.7429270312484327,
+        "local_ar": 1.4638061437228809,
+        "persistence": 14.432142304360255
+      },
+      "arx_checkpoint_sha256": "99e42acfa2d5ef7169d9770e784c8496785955f65172500746af4397fb510ab4",
+      "calibration_sha256": "27b9b1ab2c8935d369a83afa2f4f6804d1b34538580406120fac71370dfc62c4"
+    }
+  },
+  "development_gate_passed": true,
+  "validation_mean_arx_deg": 0.5825173350250339,
+  "validation_mean_selected_deg": 0.4288229065229257,
+  "validation_mean_local_ar_deg": 0.8937465394322436,
+  "change_percent": -26.384524418574273,
+  "case_wins": 4,
+  "confirmation_records_read": false,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "scenario": 3,
+    "nominal_bin_rad": 0.0015339807878856412,
+    "empirical_grid_offset_bins": 0.0,
+    "max_grid_mismatch_bins": 3.410605131648481e-13
+  },
+  {
+    "scenario": 5,
+    "nominal_bin_rad": 0.0015339807878856412,
+    "empirical_grid_offset_bins": 0.4477320346103455,
+    "max_grid_mismatch_bins": 3.861691610040907e-05
+  },
+  {
+    "scenario": 6,
+    "nominal_bin_rad": 0.0015339807878856412,
+    "empirical_grid_offset_bins": 0.0,
+    "max_grid_mismatch_bins": 3.268496584496461e-13
+  }
+]

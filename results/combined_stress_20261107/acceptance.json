@@ -1,0 +1,537 @@
+{
+  "real": [
+    {
+      "fold": "primary",
+      "regime": "all",
+      "ratio_to_incumbent": 0.983556689359829,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "regime": "active",
+      "ratio_to_incumbent": 0.9786393358005421,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "regime": "all",
+      "ratio_to_incumbent": 1.0093718650138659,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "regime": "active",
+      "ratio_to_incumbent": 0.9969065976684526,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "regime": "all",
+      "ratio_to_incumbent": 0.9977907314508971,
+      "maximum_ratio": 1.01,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "regime": "active",
+      "ratio_to_incumbent": 0.9595829023295006,
+      "maximum_ratio": 1.01,
+      "passed": true
+    }
+  ],
+  "simulation": [
+    {
+      "fold": "primary",
+      "condition": "damped",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.830678832666027,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "damped",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.8785232491078444,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "damped",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.8496412496639054,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "damped",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.8520886928317539,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "fast",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.9980080238213984,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "fast",
+      "measurement": "exact",
+      "ratio_to_incumbent": 1.0020614952571036,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "primary",
+      "condition": "fast",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.9990486540083775,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "fast",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 1.0005446992917812,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "primary",
+      "condition": "hidden_impulse",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 1.0388221139213782,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "primary",
+      "condition": "hidden_impulse",
+      "measurement": "exact",
+      "ratio_to_incumbent": 1.0753051970099314,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "primary",
+      "condition": "hidden_impulse",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 1.0260608973134808,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "primary",
+      "condition": "hidden_impulse",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 1.043008839883152,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "primary",
+      "condition": "nominal",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.3464811420659579,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "nominal",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.11688119432501913,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "nominal",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.40091970561692747,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "nominal",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.2835247693298928,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "slow",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.9827829713081735,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "slow",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.9823586788010283,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "slow",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.985192557905395,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "primary",
+      "condition": "slow",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.9835955698915606,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "damped",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.8756797978002553,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "damped",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.9061099788154282,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "damped",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.8778336703770102,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "damped",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.8845308262256696,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "fast",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 1.0017213294216452,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "fast",
+      "measurement": "exact",
+      "ratio_to_incumbent": 1.0055962909497085,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "fast",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 1.0027647422847241,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "fast",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 1.0045466103985272,
+      "maximum_ratio": 1.0,
+      "passed": false
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "hidden_impulse",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.9211137534567596,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "hidden_impulse",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.924610806632789,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "hidden_impulse",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.9262023328531974,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "hidden_impulse",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.9229677741487197,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "nominal",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.33272773269866457,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "nominal",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.1286252993984259,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "nominal",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.38041130169853776,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "nominal",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.2786641945632165,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "slow",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.9811552625946992,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "slow",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.9793342863420117,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "slow",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.9826223250284293,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "short_transfer",
+      "condition": "slow",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.9812397859907078,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "damped",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.5310781895124956,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "damped",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.5021513991345925,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "damped",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.5817031097533311,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "damped",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.5375192774841551,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "fast",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.9822037102384941,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "fast",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.9839983289354036,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "fast",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.9863616407798855,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "fast",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.9857397114437995,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "hidden_impulse",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.7431970153514875,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "hidden_impulse",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.7648961873668487,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "hidden_impulse",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.7539823413417637,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "hidden_impulse",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.754167853718385,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "nominal",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.2268336317804488,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "nominal",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.04769324471776319,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "nominal",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.29842558009191616,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "nominal",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.20263311886991317,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "slow",
+      "measurement": "biased_quantized",
+      "ratio_to_incumbent": 0.9226850273397917,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "slow",
+      "measurement": "exact",
+      "ratio_to_incumbent": 0.9189100595279353,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "slow",
+      "measurement": "noisy_quantized",
+      "ratio_to_incumbent": 0.9269388429399087,
+      "maximum_ratio": 1.0,
+      "passed": true
+    },
+    {
+      "fold": "long_transfer",
+      "condition": "slow",
+      "measurement": "quantized",
+      "ratio_to_incumbent": 0.9239363815689129,
+      "maximum_ratio": 1.0,
+      "passed": true
+    }
+  ],
+  "real_passed": true,
+  "simulation_passed": false,
+  "simulation_groups_per_fold": {
+    "primary": 20,
+    "short_transfer": 20,
+    "long_transfer": 20
+  },
+  "statistical_noninferiority_claim": false,
+  "overall_passed": false
+}

@@ -1,0 +1,356 @@
+{
+  "status": "complete",
+  "config": {
+    "date": "2026-11-06",
+    "folds": {
+      "primary": {
+        "train": [
+          3,
+          5,
+          6
+        ],
+        "validation": [
+          4
+        ],
+        "evaluation": [
+          1,
+          2,
+          7,
+          8
+        ],
+        "load_stress": [
+          10,
+          11,
+          12
+        ],
+        "retained_run": "forceaware_campaign_v2"
+      },
+      "short_transfer": {
+        "train": [
+          4,
+          6,
+          8
+        ],
+        "validation": [
+          5
+        ],
+        "evaluation": [
+          1,
+          2,
+          3,
+          7
+        ],
+        "load_stress": [],
+        "retained_run": "cross_length_campaign"
+      },
+      "long_transfer": {
+        "train": [
+          1,
+          3,
+          5
+        ],
+        "validation": [
+          4
+        ],
+        "evaluation": [
+          2,
+          6,
+          7,
+          8
+        ],
+        "load_stress": [],
+        "retained_run": "cross_length_campaign"
+      }
+    },
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "models": {
+      "dense_horizon": {
+        "loss_steps": "seven"
+      },
+      "temporal_uniform": {
+        "loss_steps": "all"
+      },
+      "temporal_horizon": {
+        "loss_steps": "seven"
+      },
+      "tcn_reference": {
+        "loss_steps": "seven"
+      }
+    },
+    "candidate_pool": [
+      "dense_horizon",
+      "temporal_uniform",
+      "temporal_horizon",
+      "forced_driven_huber"
+    ],
+    "training": {
+      "epochs": 100,
+      "patience": 15,
+      "batch_size": 256,
+      "learning_rate": 0.001
+    },
+    "train_stride": 25,
+    "evaluation_stride": 10,
+    "smooth_l1_beta": 0.1,
+    "selection": "All four architectures trained with all three seeds. Select one physics candidate per fold by ensemble seven-horizon validation MAE, including the retained incumbent. Lock all folds before evaluation. Always report every model.",
+    "actor": "Reuse only verified frozen actors and train-only length calibration from the identical retained split, never across folds.",
+    "scope": "Retrospective architecture and objective ablation on already reused records. No untouched-test, exact TCN-paper reproduction, or best-in-literature claim.",
+    "publication": "Local only. No GitHub publication."
+  },
+  "inputs": {
+    "primary": {
+      "actor": "artifacts\\runs\\actuator_development\\actuator.pt",
+      "weights": [
+        "artifacts\\runs\\forceaware_campaign_v2\\forced_driven_huber_seed0.pt",
+        "artifacts\\runs\\forceaware_campaign_v2\\forced_driven_huber_seed1.pt",
+        "artifacts\\runs\\forceaware_campaign_v2\\forced_driven_huber_seed2.pt"
+      ],
+      "calibration": {
+        "a": 0.918229758605659,
+        "b": 0.17965738544181828,
+        "damping": 0.0,
+        "evidence": [
+          {
+            "sid": 3,
+            "L_m": 0.296163868,
+            "omega_rad_s": 4.662477296953985,
+            "effective_length_m": 0.4512690483721681,
+            "tail_rms_rad": 0.25687660706753235,
+            "relative_fit_error": 0.06855882097614344,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 5,
+            "L_m": 0.503289556,
+            "omega_rad_s": 3.9063586606552967,
+            "effective_length_m": 0.6428723937755333,
+            "tail_rms_rad": 0.039774216690115036,
+            "relative_fit_error": 0.11292049174564424,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 6,
+            "L_m": 0.59640658,
+            "omega_rad_s": 3.6745273018519664,
+            "effective_length_m": 0.7265509086979682,
+            "tail_rms_rad": 0.1164243422052729,
+            "relative_fit_error": 0.044949612310122754,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          }
+        ]
+      },
+      "source_provenance": "artifacts\\runs\\forceaware_campaign_v2\\provenance.json"
+    },
+    "short_transfer": {
+      "actor": "artifacts\\runs\\cross_length_campaign\\short_transfer\\actor.pt",
+      "weights": [
+        "artifacts\\runs\\cross_length_campaign\\short_transfer\\forced_driven_huber_seed0.pt",
+        "artifacts\\runs\\cross_length_campaign\\short_transfer\\forced_driven_huber_seed1.pt",
+        "artifacts\\runs\\cross_length_campaign\\short_transfer\\forced_driven_huber_seed2.pt"
+      ],
+      "calibration": {
+        "a": 0.9276143647968063,
+        "b": 0.17311496173911256,
+        "damping": 0.0,
+        "evidence": [
+          {
+            "sid": 4,
+            "L_m": 0.400821036,
+            "omega_rad_s": 4.243349721309399,
+            "effective_length_m": 0.5448178838065962,
+            "tail_rms_rad": 0.10856879432714135,
+            "relative_fit_error": 0.07030750239103864,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 6,
+            "L_m": 0.59640658,
+            "omega_rad_s": 3.6745273018519664,
+            "effective_length_m": 0.7265509086979682,
+            "tail_rms_rad": 0.1164243422052729,
+            "relative_fit_error": 0.044949612310122754,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 8,
+            "L_m": 0.808705436,
+            "omega_rad_s": 3.259792892267283,
+            "effective_length_m": 0.9231855336093117,
+            "tail_rms_rad": 0.17903255387005215,
+            "relative_fit_error": 0.08780357854503348,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          }
+        ]
+      },
+      "source_provenance": "artifacts\\runs\\cross_length_campaign\\provenance.json"
+    },
+    "long_transfer": {
+      "actor": "artifacts\\runs\\cross_length_campaign\\long_transfer\\actor.pt",
+      "weights": [
+        "artifacts\\runs\\cross_length_campaign\\long_transfer\\forced_driven_huber_seed0.pt",
+        "artifacts\\runs\\cross_length_campaign\\long_transfer\\forced_driven_huber_seed1.pt",
+        "artifacts\\runs\\cross_length_campaign\\long_transfer\\forced_driven_huber_seed2.pt"
+      ],
+      "calibration": {
+        "a": 0.9384625330489874,
+        "b": 0.17146477786355716,
+        "damping": 0.0,
+        "evidence": [
+          {
+            "sid": 1,
+            "L_m": 0.098588644,
+            "omega_rad_s": 6.107035391446393,
+            "effective_length_m": 0.2630317253628017,
+            "tail_rms_rad": 0.08926442984950125,
+            "relative_fit_error": 0.21524491514912086,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 3,
+            "L_m": 0.296163868,
+            "omega_rad_s": 4.662477296953985,
+            "effective_length_m": 0.4512690483721681,
+            "tail_rms_rad": 0.25687660706753235,
+            "relative_fit_error": 0.06855882097614344,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          },
+          {
+            "sid": 5,
+            "L_m": 0.503289556,
+            "omega_rad_s": 3.9063586606552967,
+            "effective_length_m": 0.6428723937755333,
+            "tail_rms_rad": 0.039774216690115036,
+            "relative_fit_error": 0.11292049174564424,
+            "calibration_start_s": 35.0,
+            "calibration_end_s": 90.0
+          }
+        ]
+      },
+      "source_provenance": "artifacts\\runs\\cross_length_campaign\\provenance.json"
+    }
+  },
+  "guarded_hashes": {
+    "configs\\temporal_campaign.json": "1e55242724e1a53935cd4942b2685c8f954a5b2f24c225a21d04666b83ca2c9a",
+    "configs\\cleanroom_20261106.json": "f60a31955e1bdeee07bb8a8266666e30d5714fb18023ae20464cd2768838b5b3",
+    "docs\\TEMPORAL_DESIGN.md": "f2daaf06bc01d670f7bfe3452fd884c634b46390c86b567cedd4c0c39fb34027",
+    "scripts\\run_temporal.py": "cd0d940cbb574c3daac5afe70cac29773bd7a0044839ea0f7384340902049a56",
+    "scripts\\run_cleanroom.py": "57d3de46704258d6caf404b49a95f19c7b0cf549504befe49883bf0c80c7ef7e",
+    "scripts\\predict_cranepilot.py": "9d6461cc3c9943e661643b8c6ed7117e89c6688c66a32e8b0b258ae8e572e160",
+    "data\\processed\\dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "data\\processed\\manifest.json": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85",
+    "src\\cranepilot\\__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+    "src\\cranepilot\\adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+    "src\\cranepilot\\benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+    "src\\cranepilot\\cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+    "src\\cranepilot\\control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+    "src\\cranepilot\\data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+    "src\\cranepilot\\fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+    "src\\cranepilot\\forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+    "src\\cranepilot\\innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+    "src\\cranepilot\\metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+    "src\\cranepilot\\models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+    "src\\cranepilot\\passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+    "src\\cranepilot\\phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+    "src\\cranepilot\\physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+    "src\\cranepilot\\rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+    "src\\cranepilot\\temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+    "artifacts\\runs\\actuator_development\\actuator.pt": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499",
+    "artifacts\\runs\\forceaware_campaign_v2\\provenance.json": "1b206fe0772a0ce36496eacecf6f42660742b348f28610a6d5721aefb15bb3e9",
+    "artifacts\\runs\\forceaware_campaign_v2\\forced_driven_huber_seed0.pt": "ae1cd975a0d5c05ef813d7131b2bcfd3b87f7e325617ec5848824baa8625d1bb",
+    "artifacts\\runs\\forceaware_campaign_v2\\forced_driven_huber_seed1.pt": "6fc2e9d080348c8d0fb91fc9f161cab34052d940a9f7637e9dac62254b5b8de9",
+    "artifacts\\runs\\forceaware_campaign_v2\\forced_driven_huber_seed2.pt": "376db72b58c4cbf46fb2bf808be675a70e1b6ac4eaf091081edb8a3d4a1eb3fd",
+    "artifacts\\runs\\cross_length_campaign\\short_transfer\\actor.pt": "d08d829f21f02de819ca9a8b210d6eadbccda835d4de3b7893f5eeb73e8c52eb",
+    "artifacts\\runs\\cross_length_campaign\\provenance.json": "d3cd0c8794119c845a1fce3e7462b79d49e19a766c134ea8a977eca3f3a8601e",
+    "artifacts\\runs\\cross_length_campaign\\short_transfer\\forced_driven_huber_seed0.pt": "28fb561e805f14268d134966b5051afd1c9c5c98c9b8129b2d68a9f16b918566",
+    "artifacts\\runs\\cross_length_campaign\\short_transfer\\forced_driven_huber_seed1.pt": "1a05ad59e0fd4657b744a3c4a452ffcc07daf15656e7fe90c60812a5020f1a7e",
+    "artifacts\\runs\\cross_length_campaign\\short_transfer\\forced_driven_huber_seed2.pt": "c535428ddc2aa15d777ee1aea364bf7f8ccbdefeb6f9fe02f9774cbefe842e09",
+    "artifacts\\runs\\cross_length_campaign\\long_transfer\\actor.pt": "4288d621134115dfcec60099725e4a22bce9e06a1ddad69fa7602e5976be082c",
+    "artifacts\\runs\\cross_length_campaign\\long_transfer\\forced_driven_huber_seed0.pt": "a3ca8a7db01af33642bba95ec95332c58983296d48d5ec145f23d470b5ebfb4f",
+    "artifacts\\runs\\cross_length_campaign\\long_transfer\\forced_driven_huber_seed1.pt": "da78336820d84d09082b2f670440b15b5b87f1b4d9fab29479616ad1d38d858b",
+    "artifacts\\runs\\cross_length_campaign\\long_transfer\\forced_driven_huber_seed2.pt": "9a2e7806960abd00927671400fe5477dfb6a89ee60396c6624632b321e0149f7"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "source_sha256": {
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "678b754258662bdea8ed6e407d83e716687697b5"
+  },
+  "started_utc": "2026-11-06T21:01:27.443327+00:00",
+  "checkpoint_hashes": {
+    "long_transfer\\dense_horizon_seed0.pt": "6281f8cdd642c67f3f32859fe7b4dc244ac2aaebc2e0b3ba90cce262e7e1b3f8",
+    "long_transfer\\dense_horizon_seed1.pt": "5096db2470004c1cd7a331fe2ab8cb7c2e68883f0e82e67baee1c507bcbf765a",
+    "long_transfer\\dense_horizon_seed2.pt": "411955e610cc48cc158ecba505f0e65e30237b64fbc851f7442a207bfcfe050d",
+    "long_transfer\\tcn_reference_seed0.pt": "e78c254d055407be8f25e0a68962238dd69d31be6e27e0a9a8ba1aad4fe6db78",
+    "long_transfer\\tcn_reference_seed1.pt": "e632f07325989189ca7a582e0c1a4a8982e1a0311514652ca1d47d76e235fbd2",
+    "long_transfer\\tcn_reference_seed2.pt": "6400b26044d66359fd6aba4b42508d44c151910bf2ea1f94156088c947a0c149",
+    "long_transfer\\temporal_horizon_seed0.pt": "33d362d67dc55773a47b829d45b2dcfcf15bcbcdb6f9bf59caeb575d53f630db",
+    "long_transfer\\temporal_horizon_seed1.pt": "827439349ad20af4a1f96c41df96b0b8b2f14686c0f2bc6dbe73aefc3a6fe5db",
+    "long_transfer\\temporal_horizon_seed2.pt": "1ddbba2cf85ba4299abb1c80db6f263cdd88a01f7da4b93ed3cece375f1c38de",
+    "long_transfer\\temporal_uniform_seed0.pt": "90fec63b1fd1b62ff1b5bb86e4f367873ff80a833ff62aeed5392fb406a2493c",
+    "long_transfer\\temporal_uniform_seed1.pt": "abc8099c66455f9ab6cac35561860da9e9184495aa489eabfffe671ff866e0b2",
+    "long_transfer\\temporal_uniform_seed2.pt": "9c7b55a0b720de07b53166ba3604f022f30c990211d4d4c34ca6a15e1e48a86d",
+    "primary\\dense_horizon_seed0.pt": "3ed74c590aa4005da47c67895e8afcb80c32bd77f372aac9854013a31b0c018b",
+    "primary\\dense_horizon_seed1.pt": "eb00ffe0e1c606121d0a0454673e1f4ec37508fbfac132a9c0574edef846e0c4",
+    "primary\\dense_horizon_seed2.pt": "e5ca21e4ad467d94da2ca8ad0d6aab41e534aa29ffbd094c5336e711d0735558",
+    "primary\\tcn_reference_seed0.pt": "91d5b271d0d390aa1b658fcef9da8f7fd9516620729cb604e47c54e33426fa84",
+    "primary\\tcn_reference_seed1.pt": "76628c6e65aaa16d04d80026f5ab052589b989f21123958d547457d8364d3aee",
+    "primary\\tcn_reference_seed2.pt": "d2ed467596ad6b498ed3c1a1aa77ac7df01dc1ca4198d91c101efc7f0b2fb675",
+    "primary\\temporal_horizon_seed0.pt": "0f3b136fd8fa486358713aeefd733675651a473e84c75c167daad0b79ef1d319",
+    "primary\\temporal_horizon_seed1.pt": "3d17edf8f13a685a8eb7842b57f359d60399be03080b84acebb19e1ac95484d5",
+    "primary\\temporal_horizon_seed2.pt": "5cf05861b5bc38d4834be9b12e10ed6819c2863bae92f5f34c87b77cf09563a9",
+    "primary\\temporal_uniform_seed0.pt": "39481a02c7bb5adbf864b085cd0926eab3eba3a2956b39bb2a9511319850ed97",
+    "primary\\temporal_uniform_seed1.pt": "7f4d3523fcad6a56dd914c8c8fad9ff75d26953814fab4ebae5ad68d657d61ba",
+    "primary\\temporal_uniform_seed2.pt": "f9850a053550f29e7a9b30e92b8d3ef600452d08cf3c92b9f4d20caac26d1e65",
+    "short_transfer\\dense_horizon_seed0.pt": "79cfea31459fd0a4d7d3d316c088274ffcb228cb7b8a05358dabde35a1c3ca59",
+    "short_transfer\\dense_horizon_seed1.pt": "9a008258486eddfe5af3fd81a7ece1977cd76bcff9e268a76421d2b0289fae55",
+    "short_transfer\\dense_horizon_seed2.pt": "79401d6cef792c4dce753f6d3b328ef6327c038212c79487dd0d4a18c3ba7d6b",
+    "short_transfer\\tcn_reference_seed0.pt": "1e6fa4ae5ade40d70bbd2d66ba74dd18cb10850ff258044643ffc4bb044d0732",
+    "short_transfer\\tcn_reference_seed1.pt": "9a09809f77aa1b86283adc25b929cb6d26607154d4565e4aa05742653e627c76",
+    "short_transfer\\tcn_reference_seed2.pt": "6be201e725cf42f7a51f9b8380f7a649fe8a481b4f34452512f4de4e07ec5f4a",
+    "short_transfer\\temporal_horizon_seed0.pt": "6c49c308d085d202a68b9d91a529f17c4feb33bc2b13d7343a1fb363a638ff12",
+    "short_transfer\\temporal_horizon_seed1.pt": "15b64ca733ba568ff8372c50b94de00d05d7a318afc18cf7621f4622d9b91bb7",
+    "short_transfer\\temporal_horizon_seed2.pt": "9c15cf79f3aa2eef1ec5094bea4896bfe00f0dc77a32e28a32633f84ca5530c2",
+    "short_transfer\\temporal_uniform_seed0.pt": "ce351f4be334b8560786a014acc30a80f7060f83c9c48aa91d539053d2cdb470",
+    "short_transfer\\temporal_uniform_seed1.pt": "929b3f758c10bb94f0b0b7115f204331c395d91e46959bdae39533544fb8c13a",
+    "short_transfer\\temporal_uniform_seed2.pt": "0b683314723bbc3b507c4b11c193122bddd7f450524b405083699c3f320675e3",
+    "selection.json": "ee55c4644061f3c7a8257ddc2d4dc8d1e05a35b6a85d6709844e6eea660607e0"
+  },
+  "finished_utc": "2026-11-06T21:16:25.193924+00:00"
+}

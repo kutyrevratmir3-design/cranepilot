@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "independent_confirmation": false,
+  "provenance_sha256": "6f00fc5330106101a1439345c846d58bcee6aec7f9658626ab28663d9f955a6e",
+  "verifier_sha256": "a7f5684bd049c1132b01808b2d674d6dd1c467aad06c5edb84b5a4df96b2e425",
+  "checks": [
+    {
+      "group": "validation",
+      "record": 13,
+      "packets": 231,
+      "methods": 5,
+      "replay_max_deg": 0.0,
+      "metrics_independently_recomputed": true,
+      "targets_and_future_timestamps_ignored": true
+    },
+    {
+      "group": "validation",
+      "record": 14,
+      "packets": 231,
+      "methods": 5,
+      "replay_max_deg": 0.0,
+      "metrics_independently_recomputed": true,
+      "targets_and_future_timestamps_ignored": true
+    },
+    {
+      "group": "validation",
+      "record": 15,
+      "packets": 231,
+      "methods": 5,
+      "replay_max_deg": 0.0,
+      "metrics_independently_recomputed": true,
+      "targets_and_future_timestamps_ignored": true
+    },
+    {
+      "group": "validation",
+      "record": 16,
+      "packets": 231,
+      "methods": 5,
+      "replay_max_deg": 0.0,
+      "metrics_independently_recomputed": true,
+      "targets_and_future_timestamps_ignored": true
+    },
+    {
+      "group": "retrospective",
+      "record": 17,
+      "packets": 231,
+      "methods": 5,
+      "replay_max_deg": 0.0,
+      "metrics_independently_recomputed": true,
+      "targets_and_future_timestamps_ignored": true
+    },
+    {
+      "group": "retrospective",
+      "record": 18,
+      "packets": 231,
+      "methods": 5,
+      "replay_max_deg": 0.0,
+      "metrics_independently_recomputed": true,
+      "targets_and_future_timestamps_ignored": true
+    },
+    {
+      "group": "retrospective",
+      "record": 19,
+      "packets": 231,
+      "methods": 5,
+      "replay_max_deg": 0.0,
+      "metrics_independently_recomputed": true,
+      "targets_and_future_timestamps_ignored": true
+    },
+    {
+      "group": "retrospective",
+      "record": 20,
+      "packets": 231,
+      "methods": 5,
+      "replay_max_deg": 0.0,
+      "metrics_independently_recomputed": true,
+      "targets_and_future_timestamps_ignored": true
+    }
+  ],
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "forecasts": 9240,
+  "records": 8,
+  "selection_validation_only": true,
+  "no_default_changed": true
+}

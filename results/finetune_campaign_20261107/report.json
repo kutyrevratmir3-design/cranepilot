@@ -1,0 +1,409 @@
+{
+  "source_provenance_sha256": "1101b062eee2db05bca7b6a4d5dc6e5fef69bb1b7f4a406ac6fb864a77e8b890",
+  "report_source_sha256": "500d8a02b47c5480df70fda4a571811f3e1c19f76ba4d39a3750bc625ff77dcc",
+  "document": "docs/FINETUNE_CAMPAIGN_2026_11_07_RU.md",
+  "document_sha256": "9629ccf8ae1d7090e0af24d859639cfd04b3b32a67ce384ea88113948b97ec90",
+  "verified_hash_counts": {
+    "guarded_hashes": 107,
+    "checkpoint_hashes": 90,
+    "result_hashes": 126,
+    "source_run_checkpoints": 37,
+    "broad_run_checkpoints": 82,
+    "parent_run_checkpoints": 48,
+    "train_checks": 108,
+    "evaluate_checks": 96
+  },
+  "new_fits": 90,
+  "methods": [
+    "incumbent",
+    "soft_symmetry",
+    "combined",
+    "physical",
+    "previous_local",
+    "continued",
+    "observer_only",
+    "innovation_only",
+    "l2sp",
+    "function_anchor",
+    "sam",
+    "ema",
+    "phase_space",
+    "group_dro",
+    "lbfgs_polish"
+  ],
+  "selection": {
+    "folds": {
+      "primary": {
+        "model": "phase_space",
+        "eligible": [
+          "incumbent",
+          "soft_symmetry",
+          "combined",
+          "previous_local",
+          "continued",
+          "observer_only",
+          "innovation_only",
+          "l2sp",
+          "function_anchor",
+          "sam",
+          "ema",
+          "phase_space",
+          "group_dro",
+          "lbfgs_polish"
+        ],
+        "validation": {
+          "incumbent": {
+            "all": 0.19202698645588978,
+            "active": 0.8717016023057481,
+            "quiet": 0.1551682762688042
+          },
+          "soft_symmetry": {
+            "all": 0.19114356524314544,
+            "active": 0.8631451684886422,
+            "quiet": 0.154700962030266
+          },
+          "combined": {
+            "all": 0.18955941919123756,
+            "active": 0.8629505408854461,
+            "quiet": 0.1530414624833087
+          },
+          "physical": {
+            "all": 0.25128415303288104,
+            "active": 0.9839102234024051,
+            "quiet": 0.21155388891305874
+          },
+          "previous_local": {
+            "all": 0.18955941919123756,
+            "active": 0.8629505408854461,
+            "quiet": 0.1530414624833087
+          },
+          "continued": {
+            "all": 0.19076383324522167,
+            "active": 0.8621337741466218,
+            "quiet": 0.1543554850401566
+          },
+          "observer_only": {
+            "all": 0.19114356524314544,
+            "active": 0.8631451684886422,
+            "quiet": 0.154700962030266
+          },
+          "innovation_only": {
+            "all": 0.19031635500988867,
+            "active": 0.8665665211982397,
+            "quiet": 0.1536433525050974
+          },
+          "l2sp": {
+            "all": 0.19075035863372733,
+            "active": 0.8621119156426795,
+            "quiet": 0.15434246508660412
+          },
+          "function_anchor": {
+            "all": 0.19052087485933186,
+            "active": 0.8619556427153985,
+            "quiet": 0.1541090110927339
+          },
+          "sam": {
+            "all": 0.18977367304161014,
+            "active": 0.8602079622191663,
+            "quiet": 0.1534160651686407
+          },
+          "ema": {
+            "all": 0.1910712921106925,
+            "active": 0.8633117766766554,
+            "quiet": 0.1546157343793496
+          },
+          "phase_space": {
+            "all": 0.18917946258765608,
+            "active": 0.8581336627743381,
+            "quiet": 0.1529021198443436
+          },
+          "group_dro": {
+            "all": 0.19114356524314544,
+            "active": 0.8631451684886422,
+            "quiet": 0.154700962030266
+          },
+          "lbfgs_polish": {
+            "all": 0.19114356524314544,
+            "active": 0.8631451684886422,
+            "quiet": 0.154700962030266
+          }
+        }
+      },
+      "short_transfer": {
+        "model": "previous_local",
+        "eligible": [
+          "incumbent",
+          "combined",
+          "previous_local",
+          "sam"
+        ],
+        "validation": {
+          "incumbent": {
+            "all": 0.21748212846410728,
+            "active": 0.9848234859212797,
+            "quiet": 0.18796899933113914
+          },
+          "soft_symmetry": {
+            "all": 0.2177110773407505,
+            "active": 0.9880258350246649,
+            "quiet": 0.1880835866605999
+          },
+          "combined": {
+            "all": 0.20798210188172161,
+            "active": 0.989460371886783,
+            "quiet": 0.1779252453430654
+          },
+          "physical": {
+            "all": 0.23156679281950215,
+            "active": 1.0825258685949644,
+            "quiet": 0.19883759759736896
+          },
+          "previous_local": {
+            "all": 0.18762217229513656,
+            "active": 0.870784564584743,
+            "quiet": 0.16134669566861326
+          },
+          "continued": {
+            "all": 0.21863816477704512,
+            "active": 0.9733914277514819,
+            "quiet": 0.1896091931241822
+          },
+          "observer_only": {
+            "all": 0.2177110773407505,
+            "active": 0.9880258350246649,
+            "quiet": 0.1880835866605999
+          },
+          "innovation_only": {
+            "all": 0.2182631265469207,
+            "active": 0.984043239481524,
+            "quiet": 0.1888100452802052
+          },
+          "l2sp": {
+            "all": 0.21793928367803117,
+            "active": 0.9816453762613745,
+            "quiet": 0.18856597242482562
+          },
+          "function_anchor": {
+            "all": 0.21789037891600926,
+            "active": 0.9732819882370203,
+            "quiet": 0.18883685548058576
+          },
+          "sam": {
+            "all": 0.2151851217952955,
+            "active": 0.9690254249834465,
+            "quiet": 0.1861912639803666
+          },
+          "ema": {
+            "all": 0.2177110773407505,
+            "active": 0.9880258350246649,
+            "quiet": 0.1880835866605999
+          },
+          "phase_space": {
+            "all": 0.2177110773407505,
+            "active": 0.9880258350246649,
+            "quiet": 0.1880835866605999
+          },
+          "group_dro": {
+            "all": 0.21756175668817354,
+            "active": 0.984502162700973,
+            "quiet": 0.18806404876460436
+          },
+          "lbfgs_polish": {
+            "all": 0.21788422037621713,
+            "active": 0.984567419293276,
+            "quiet": 0.18839640503325333
+          }
+        }
+      },
+      "long_transfer": {
+        "model": "incumbent",
+        "eligible": [
+          "incumbent",
+          "previous_local"
+        ],
+        "validation": {
+          "incumbent": {
+            "all": 0.20616429981002884,
+            "active": 1.0409560922384782,
+            "quiet": 0.1608935952314795
+          },
+          "soft_symmetry": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "combined": {
+            "all": 0.20886759944347097,
+            "active": 1.0099141210095313,
+            "quiet": 0.1654268987077844
+          },
+          "physical": {
+            "all": 0.28998912407021,
+            "active": 1.1171212864106632,
+            "quiet": 0.2451338007328752
+          },
+          "previous_local": {
+            "all": 0.20616429981002884,
+            "active": 1.0409560922384782,
+            "quiet": 0.1608935952314795
+          },
+          "continued": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "observer_only": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "innovation_only": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "l2sp": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "function_anchor": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "sam": {
+            "all": 0.20791515349271342,
+            "active": 1.00673622578892,
+            "quiet": 0.16459513872610781
+          },
+          "ema": {
+            "all": 0.2075730770805772,
+            "active": 1.0110527117016443,
+            "quiet": 0.16400042878225465
+          },
+          "phase_space": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "group_dro": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "lbfgs_polish": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          }
+        }
+      }
+    },
+    "common": {
+      "model": "previous_local",
+      "eligible": [
+        "incumbent",
+        "previous_local"
+      ]
+    },
+    "uses_evaluation_this_stage": false,
+    "uses_simulation": false,
+    "real_records_reused": true
+  },
+  "acceptance": {
+    "common_model": "previous_local",
+    "passed": false,
+    "cells": [
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "primary",
+        "regime": "all",
+        "reference": "soft_symmetry",
+        "ratio": 1.0001390811083188,
+        "maximum_ratio": 1,
+        "passed": false
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "primary",
+        "regime": "active",
+        "reference": "soft_symmetry",
+        "ratio": 1.0005984671581718,
+        "maximum_ratio": 1,
+        "passed": false
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "short_transfer",
+        "regime": "all",
+        "reference": "previous_local",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "short_transfer",
+        "regime": "active",
+        "reference": "previous_local",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "long_transfer",
+        "regime": "all",
+        "reference": "incumbent",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "long_transfer",
+        "regime": "active",
+        "reference": "incumbent",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "load_stress",
+        "fold": "primary",
+        "regime": "all",
+        "reference": "incumbent",
+        "ratio": 1.0096025008156553,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "load_stress",
+        "fold": "primary",
+        "regime": "active",
+        "reference": "incumbent",
+        "ratio": 0.9898361311783819,
+        "maximum_ratio": 1.01,
+        "passed": true
+      }
+    ],
+    "operational_thresholds_not_statistical_bounds": true
+  },
+  "epoch_minus_one_count": 59,
+  "fit_seconds": 483.7852739182417,
+  "optimizer_steps": 8350,
+  "backward_passes": 9978,
+  "closure_evaluations": 9978,
+  "simulation_cases_per_fold": {
+    "long_transfer": 1152,
+    "primary": 1152,
+    "short_transfer": 1152
+  },
+  "seed_note": "Descriptive variation across the three retained starting seeds; not confidence intervals or independent hardware repetitions.",
+  "risk_quantile_aggregation": "Mean of record-wise packet MAE p95; not pooled p95",
+  "real_records_retrospective": true,
+  "closed_loop_control_evaluated": false,
+  "headline_scope": "evaluation_extrapolation",
+  "inference_latency_sha256": "e1688570a749fefb368b63e26460b87508db5b512e7a3d7598d32037a09f9f16"
+}

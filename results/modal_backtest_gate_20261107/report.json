@@ -1,0 +1,25 @@
+{
+  "document": "docs/MODAL_BACKTEST_GATE_2026_11_07_RU.md",
+  "document_sha256": "e814a1d8c7e453de57cc0fa0a68df948ba1b7e7d8542d81a69f5287c8beaaa24",
+  "development_sha256": "4bbe43070598c43d8ddfa911ad609003f54b48d0845419820739a4e304672ba2",
+  "retrospective_sha256": "c61a5af73934933921d34ae8fba4b62825488d0d97dda74116815c61deda54d8",
+  "verification_sha256": "71a893a7d1a6911f21e490f49f6b5657fdded470020f09e910ff931b1e82e14b",
+  "report_source_sha256": "69133315a3a2dd172d13b49430b69b19cfcd8e7fa6b3fd9303398a8f7e3c399a",
+  "selection": "soft",
+  "acceptance": {
+    "selected": "soft",
+    "development_gate_passed": true,
+    "retrospective_numerical_gate": true,
+    "independent_confirmation": false,
+    "final_goal_achieved": false,
+    "comparison": {
+      "method": "selected",
+      "mae_deg": 0.1897794743623161,
+      "change_percent": -60.33944858316869,
+      "scenario_wins": 6,
+      "descriptive_low": -84.03377296213507,
+      "descriptive_high": -23.246197309936644
+    },
+    "scope": "Reliability development on fully opened public records; no fresh confirmation"
+  }
+}

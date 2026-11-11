@@ -1,0 +1,77 @@
+CranePilot: завершённый этап structured_models_20261107, 7 ноября 2026.
+
+Главная сводка: Crane Project/cranepilot/RESEARCH_STATUS_2026_11_07.md.
+Отчёт: docs/STRUCTURED_MODELS_2026_11_07_RU.md.
+Run: artifacts/runs/structured_models_20261107, status complete.
+Результаты: results/structured_models_20261107. APHYNITY не изменена.
+Протокол и код зафиксированы до обучения: b2183ab.
+
+Выполнены 72 fit: 8 архитектур × 3 разбиения × 3 seed, 4472 эпохи,
+22360 optimizer steps, 218.239 секунды fit. Четыре новых нулевых adapter
+поверх frozen soft (321/641 обучаемых параметров); четыре stable-latent
+варианта (standalone6/12 и residual6 с/без phase loss). Все 9 начальных
+fallback принадлежат adapter и точно сохраняют soft. Фактические значения
+и полные логи — в report.json/fits.json; не смешивать начальные standalone
+и soft fallback при будущих экспериментах.
+
+Выбор по validation ДО evaluation:
+- primary: adapter_direct8;
+- short_transfer: previous_local, то есть прежний LPV actor ridge .01;
+- long_transfer: latent_residual6;
+- common: previous_local (phase/LPV/incumbent), не новая общая архитектура.
+
+Primary all: .490598 → .473621 градуса (−3.46%); active: 1.036838 → .954652
+(−7.93%). Все четыре primary extrapolation-сценария улучшены.
+Long all: .512641 → .501157 (−2.24%) относительно прежнего выбранного incumbent.
+Это чуть хуже soft (.500935); long tail MAE выросла на 5.64%.
+Primary load all: .548625 → .559697 (+2.018%), quiet +2.80%: допуск 1% НЕ пройден.
+Load active: 1.276844 → 1.051392 (−17.66%). Этот компромисс нельзя скрывать.
+Common gate pass означает сохранение контроля. Не заменять validation selection
+другим победителем evaluation и не объявлять candidate общей заменой.
+
+Проверки: 142 unit tests; 87 train + 81 evaluation checks; 678 полных replay
+(246 ensemble/control + 432 seed) на 17496 пакетах из 18 файлов, max 0°.
+Проверены 72 state_dict, 54 неизменные базы, 36 сокращающихся latent operators,
+144 buffers; 1281 исходный файл main/APHYNITY совпадает со snapshot.
+CLI: 3 примера, max 3.79e−7°. Первый CLI вызов упал при обходе ancestor без
+checkpoint_hashes; исправлен обход разных схем, обучение не менялось. Лог сохранён.
+Warm CPU batch1: primary adapter median 20.57ms, p95 22.22ms; long latent
+median 9.98ms, p95 12.10ms. Включены actor, observer и 3 seed, исключён MPC.
+Первоначальный timing пересекался с CLI startup; сохранён в latency_initial.
+В отчёте использован повторный изолированный замер. Это не гарантия WCET.
+
+Переносимые веса: artifacts/research_bundle_20261107, 19 файлов, 712656 байт.
+Loader: scripts/predict_research_bundle.py; exporter: export_research_bundle.py.
+Default profile — retained; candidate включается явно. Fold обязателен: это
+исследовательские разбиения, а не автоматический выбор по текущей длине.
+Inference не читает ancestral runs/data. Оба профиля проверены на всех 18
+файлах: 36 сравнений, 17496 пакетов, max 0°. Пять новых тестов проверяют перенос
+каталога, запрет внешних чтений, повреждение SHA, target poisoning и контракт.
+Исходники модели/входов проверяются с нормализацией CRLF → LF. Отдельный
+source_integrity_postexport проверяет 318 upstream result files и фиксирует
+усиление exporter после первоначального экспорта. Инструкции установки и запуска:
+docs/RESEARCH_BUNDLE_20261107.md. Веса и этот код входят в Git.
+
+Литература: docs/STRUCTURED_MODELS_LITERATURE_20261107.md, 8 первоисточников
+(часть пересекается с прежними обзорами): KNODE, stable Koopman, CON, REN,
+Youla-REN, PGNN. Свойства скрытой системы не равны устойчивости крана.
+Аудит управления: docs/CONTROL_INTEGRATION_AUDIT_20261107.md.
+LinearMPC получает acceleration, neural actor — native xr. На TRAIN одинаковый
+xr наблюдается при разных остановившихся x. Наивный position servo не установлен;
+это НЕ доказывает, что xr — напряжение или скорость.
+Следующий конкретный опыт: отдельная angular closed-loop ablation с командами
+ускорения, общим observer и независимым plant/actuator. True future acceleration
+должно оставаться скрытым. Это новый контракт, не полный native-command пилот.
+Native-controller требует квалификации xr, привода и временных индексов.
+Новые замкнутые эксперименты ещё НЕ запускались.
+
+ПУБЛИКАЦИЯ ТЕПЕРЬ РАЗРЕШЕНА. Пользователь заменил прежний запрет, затем отдельно
+подтвердил состав полной ветки после auto-review rejection. Первая блокировка
+устранена точным согласием. Уже опубликованы 28 прежних коммитов и prereg b2183ab:
+https://github.com/kutyrevratmir3-design/cranepilot/tree/research/broad-search-20261107
+Итоговый коммит добавляет результаты, код и небольшой bundle. Большие ZIP/data
+остаются локально. Main не перезаписывать: локальная и удалённая истории имеют
+разные корни. Перед следующей отправкой сверить remote; новое разрешение сохраняется.
+
+Не трогать 122 старых EOL-only Git modifications. Данные исторически многократно
+переиспользованы. Нет untouched test, SOTA или hardware-control claim.

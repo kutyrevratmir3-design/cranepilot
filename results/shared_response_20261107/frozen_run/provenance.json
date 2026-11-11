@@ -1,0 +1,453 @@
+{
+  "status": "complete",
+  "git_head": "b8b430487c41c45f421cda1cfa9a2c2ea1150489",
+  "config": {
+    "experiment": "shared_response_20261107",
+    "repository": "https://github.com/ikhemakhem/BehavioralTrajGenCrane",
+    "commit": "1aa26b5c358e885325f75cc0e89ef613ff4b26f3",
+    "commit_date": "2026-04-12T20:59:25Z",
+    "cache": "data/raw/behavioral_crane_1aa26b5",
+    "files": [
+      {
+        "path": "data/camera_coordinates.mat",
+        "bytes": 325,
+        "git_blob_sha1": "fd8c7d23a197db39726b2d28219cc366a498befe"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_1.mat",
+        "bytes": 23303,
+        "git_blob_sha1": "b6ee54d6a1bd715da1c5744d23614497de2bcf32"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_10.mat",
+        "bytes": 23196,
+        "git_blob_sha1": "755827ceef0dc0675049783acb869d618738594c"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_11.mat",
+        "bytes": 23363,
+        "git_blob_sha1": "d28f8f942506794329f7d1289037b1bfb97ddcad"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_12.mat",
+        "bytes": 23364,
+        "git_blob_sha1": "3cb33d147eed74f6864988fc0b04322d95b36df0"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_13.mat",
+        "bytes": 23298,
+        "git_blob_sha1": "f968847b1786f8d760b04247cefb10a3c076373a"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_14.mat",
+        "bytes": 23225,
+        "git_blob_sha1": "8c7656dbcf2812e2566600c65a414f1658927703"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_15.mat",
+        "bytes": 23208,
+        "git_blob_sha1": "ad6aba9d96c3158e3dd747c867239ee84c6d69d0"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_16.mat",
+        "bytes": 23318,
+        "git_blob_sha1": "307dd57db17948124d60e97e647357dffd32fc87"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_17.mat",
+        "bytes": 23268,
+        "git_blob_sha1": "496c7a26cefc876468f9dd66868020ac3ff87928"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_18.mat",
+        "bytes": 23273,
+        "git_blob_sha1": "2235880b88ecee6baf3849f2d998f92bc2498950"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_19.mat",
+        "bytes": 23352,
+        "git_blob_sha1": "61e11679e74638abd89d51543907c555ab2e852b"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_2.mat",
+        "bytes": 23329,
+        "git_blob_sha1": "d61fbcd3500b62ac1c262a8a34d5c90c64c84b4e"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_20.mat",
+        "bytes": 23322,
+        "git_blob_sha1": "473026e57383b26bc0f12a97406878d7376bf10a"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_3.mat",
+        "bytes": 23230,
+        "git_blob_sha1": "d37614bbd46c64d5ca65c2443e87c7f62a7b6424"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_4.mat",
+        "bytes": 23290,
+        "git_blob_sha1": "2d627fc907cc576a4dbdb453593ec7275f025af6"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_5.mat",
+        "bytes": 23278,
+        "git_blob_sha1": "9f74140fd9eca28289c8fca97dcbe31bcf4a5894"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_6.mat",
+        "bytes": 23309,
+        "git_blob_sha1": "2d46f1be20d06dec03b70de8df4e926659c4b3b8"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_7.mat",
+        "bytes": 23306,
+        "git_blob_sha1": "647bc6400f913ff712d4e50e72cb6021c907cefd"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_8.mat",
+        "bytes": 23297,
+        "git_blob_sha1": "9739f49af0f37a1349f0446f7b58ff7af744f312"
+      },
+      {
+        "path": "data/validation_data/input_seq_sim_500_9.mat",
+        "bytes": 23349,
+        "git_blob_sha1": "035bffc84ed36708a9254e9bce151db1819fd9db"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_1.mat",
+        "bytes": 48654,
+        "git_blob_sha1": "58c7cf2e8f6a0b16cb52c754398371a8bd1bccab"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_10.mat",
+        "bytes": 47404,
+        "git_blob_sha1": "a26f20441d3beb5e26e5f0db19ba4bcc5f17350c"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_11.mat",
+        "bytes": 48340,
+        "git_blob_sha1": "a02870d7d67f99324e6e0b62e41940a3d76fb8c6"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_12.mat",
+        "bytes": 48095,
+        "git_blob_sha1": "d52013d577d4b193e2975535e50e290d080a27a4"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_13.mat",
+        "bytes": 48669,
+        "git_blob_sha1": "bc9016bc4980903a765aa6fbb078d4b241998ddd"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_14.mat",
+        "bytes": 46823,
+        "git_blob_sha1": "71c46de245838e4ff1157152f4c168302685c746"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_15.mat",
+        "bytes": 47174,
+        "git_blob_sha1": "a1696795662feab2d69fbea0a3a4ae3935bbda94"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_16.mat",
+        "bytes": 48425,
+        "git_blob_sha1": "8417e1f3548d4b1e7bf68a810046305a45ef5b93"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_17.mat",
+        "bytes": 47212,
+        "git_blob_sha1": "f3fa6c8bcfda8b1073a2925d2630f08f47c8cb94"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_18.mat",
+        "bytes": 47253,
+        "git_blob_sha1": "999ac85a0db29e5773c38938cb8cf0a5ecd820d7"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_19.mat",
+        "bytes": 48034,
+        "git_blob_sha1": "638495c06ace35066512afa998ca06fe977a77e9"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_2.mat",
+        "bytes": 47911,
+        "git_blob_sha1": "928808cd6fe829b4d840c405b59224974b8ff245"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_20.mat",
+        "bytes": 48515,
+        "git_blob_sha1": "8ddf5ce140a7387cd6ba56d52804729cfc2db461"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_3.mat",
+        "bytes": 47239,
+        "git_blob_sha1": "03fa01c04e332e9c9f0a67d0ba6678a347834554"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_4.mat",
+        "bytes": 47710,
+        "git_blob_sha1": "1f4b37574f2cdcda1f8087793929ceb31812ae09"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_5.mat",
+        "bytes": 48025,
+        "git_blob_sha1": "d8fd4cace093d065d62b5e2e67cf11c5490d45d0"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_6.mat",
+        "bytes": 48418,
+        "git_blob_sha1": "aea93884797d172e74769cca1241e8d06373e022"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_7.mat",
+        "bytes": 48775,
+        "git_blob_sha1": "aae4d49cb1734cdc67de8a4aea2713808d5b72e4"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_8.mat",
+        "bytes": 47558,
+        "git_blob_sha1": "94e51e74d18820b84cb329082cf3103f976e0084"
+      },
+      {
+        "path": "data/validation_data/results_seq_sim_500_9.mat",
+        "bytes": 47516,
+        "git_blob_sha1": "02f75df1b0a0f27172eeb311dccc1246ed38958c"
+      }
+    ],
+    "train_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "validation_ids": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "test_ids": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "schema_record_seen_before_preregistration": [
+      1
+    ],
+    "dt_s": 0.05,
+    "history_samples": 9,
+    "steps": 30,
+    "horizon_index": [
+      1,
+      3,
+      6,
+      9,
+      14,
+      19,
+      29
+    ],
+    "train_stride": 2,
+    "evaluation_stride": 2,
+    "rope_length_m": 1,
+    "boom_elevation_rad": 0.8107963267948965,
+    "boom_tip_height_m": 1.55,
+    "pixel_scale": 1.7,
+    "threads": 2,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "arx_ridge": [
+      0.0001,
+      0.01,
+      1
+    ],
+    "pem": {
+      "omega_ratio_bounds": [
+        0.7,
+        1.3
+      ],
+      "damping_bounds": [
+        0,
+        1
+      ],
+      "gain_bounds": [
+        0.3,
+        2
+      ],
+      "start_omega_ratios": [
+        0.85,
+        1,
+        1.15
+      ],
+      "max_nfev": 100
+    },
+    "lstm": {
+      "hidden": 32,
+      "epochs": 100,
+      "patience": 15,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001
+    },
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 7112027
+    },
+    "methods": [
+      "strong_arx",
+      "physics_prior_arx",
+      "structured_narx",
+      "adapted_neural",
+      "equilibrium_neural"
+    ],
+    "scope": "Train/validation development of shared harmonic state response and causal convolution residual; old records only. Fresh author recordings still required for confirmation. No neural architecture search.",
+    "source_run": "artifacts/runs/external_benchmark_20261107",
+    "ridge_grid": [
+      1e-10,
+      1e-08,
+      1e-06,
+      0.0001,
+      0.01,
+      1.0
+    ],
+    "neural": {
+      "epochs": 100,
+      "patience": 20,
+      "batch_size": 128,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.0001,
+      "gradient_clip": 2.0
+    },
+    "candidates": [
+      "physics_prior_arx",
+      "structured_narx",
+      "adapted_neural",
+      "equilibrium_neural"
+    ],
+    "selection_reference": "strong_arx",
+    "development_only_until_selection": true,
+    "test_status": "IDs17-20 already seen in external_benchmark; any new score is retrospective, never independent confirmation",
+    "fresh_confirmation_source": null,
+    "parent_run": "artifacts/runs/matched_adaptation_20261107",
+    "variants": [
+      "harmonic",
+      "sensitivity",
+      "nonlinear"
+    ],
+    "blend_grid": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "oscillator_parameters": [
+      3.265577988448446,
+      0.05732448261272044,
+      0.9949534546912502
+    ]
+  },
+  "guarded_hashes": {
+    "configs/shared_response_20261107.json": "6e88aa6db3f8acf604314cfe9f4be06ba21a625928b74cc3e4fa81906f90f5fb",
+    "docs/SHARED_RESPONSE_DESIGN_20261107.md": "5b1b070661af7c9881a439fdf0d58f52a4ec83883b5bdc22517c0c83f426b33f",
+    "scripts/shared_response.py": "5ebd4f7df2e7ec94b3ddb90471ba2ba483cb54e8018b5ecf55f5caff38696679",
+    "scripts/run_shared_response.py": "ccccec6cf079dbcb39ec9f020735796566dee7539e62b79bcad9e0165d97e265",
+    "tests/test_shared_response.py": "560726f635dc731b8433654353f4b7f228ed6a0c5d2cd8e2aac40a435b650357",
+    "scripts/external_crane_data.py": "5fa8da821287b5ab0b1e57d58e3245509603683fab6f9dd5697ac0acd6493c6a",
+    "scripts/external_baselines.py": "dbb1bf15defb2c7de4c22d558a8d7ae6ba7d77510be30d7e34ddc4028202f6ea",
+    "scripts/matched_adaptation.py": "06348a264a044f083c5f9966fa79e2dc470a588c9acc7ab303767e647ea79945",
+    "artifacts/runs/matched_adaptation_20261107/provenance.json": "6f00fc5330106101a1439345c846d58bcee6aec7f9658626ab28663d9f955a6e",
+    "artifacts/runs/matched_adaptation_20261107/strong_arx.npz": "782bc8a073fc90415cab123c0ce629fc1036c043b01ed11c175aeee834e0e70f",
+    "artifacts/runs/matched_adaptation_20261107/structured_narx.npz": "71c200724cfcea2f340801fafa742a5e4299fbdd7768ccd0877fbeb91bb74f50",
+    "artifacts/runs/external_benchmark_20261107/selection.json": "33a9542cf2b6f5a4d2171ba9c2f3ad7aa783699f6000ed688b7581b278fd8153"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "source_sha256": {
+      "broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "b8b430487c41c45f421cda1cfa9a2c2ea1150489"
+  },
+  "records_read": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "old_test_records_read": false,
+  "independent_confirmation": false,
+  "selection_sha256": "d5f80889e51d7aa1f6b976ceac1be552ea2ac3b40dee65398a35bd8cb02874fd",
+  "result_hashes": {
+    "selected.npz": "0dcc3322aea720699073a16ecfbce45de86bb15b78f3229d9a91104ef82c45fb",
+    "selection.json": "d5f80889e51d7aa1f6b976ceac1be552ea2ac3b40dee65398a35bd8cb02874fd",
+    "candidate_validation.csv": "9941bbfbb2ec9d5c547a4e60e61e005e5a87e7d9cfd049842a4b0f4fa924840b",
+    "validation_predictions.npz": "fe9908b5f2119c2d2cbf529d6fe05f24d23d572c50cae3f8b95124e855395845",
+    "validation_metrics.csv": "81afd47b92d34171b2da8d55b565e2adaf2eb29201e8bae495ace048ab935536",
+    "candidates/nonlinear_1e-08.npz": "2956ea3052ec2da46a05107f703440a2a96d277d30ac2b7335e15284ddc167b5",
+    "candidates/harmonic_1e-08.npz": "de0e3fedb232c8d50cf1221fd3e7075604cbb3f0e872e6b7b54609c6705c646f",
+    "candidates/harmonic_1.npz": "5bb5fbdc7cade78a188a2fb00a2918a296472e21d83bf2a971bcd5d0b01a8e3b",
+    "candidates/sensitivity_0.0001.npz": "cc634b0619e6b71c09fe17f5b6113c7c1664081d4541994a0ff68b751256da02",
+    "candidates/sensitivity_1e-10.npz": "c2599eaf13b78189f55ea2390bc3dbb8c223e4369269e8e2851e33afdab5de4e",
+    "candidates/sensitivity_1e-06.npz": "87d5baf56dde58bc78a3458355f19a30bcae4b1354c92021b47ee6bf4385c2b3",
+    "candidates/nonlinear_0.01.npz": "fa219333233ba8d0d331fa3437c9d79a51ae6560c137d58d7d6facd8f65392d3",
+    "candidates/sensitivity_1e-08.npz": "2068a2886e395d6c91de5e85b10b2862e4de7b8ad8a518e4b4a4926947ecbe24",
+    "candidates/nonlinear_1.npz": "67222983d7aa26e247d2868d1dd29803b6fe6cda5b5924db505f023c18d62ade",
+    "candidates/harmonic_1e-06.npz": "db5937e4ad446ceeaa80dbadc51f2452b5dbca11a4a0210a593531b140355248",
+    "candidates/harmonic_1e-10.npz": "c727f27a886597566e0fded2033417cccb65efb2a0e1d3c2b3aaa278cdf7f372",
+    "candidates/nonlinear_0.0001.npz": "0dcc3322aea720699073a16ecfbce45de86bb15b78f3229d9a91104ef82c45fb",
+    "candidates/sensitivity_1.npz": "c63dba0f444a4cf516667c2d3e01b12d5cdf35d48ebb963d5cd15ae7687d0451",
+    "candidates/nonlinear_1e-06.npz": "796ec57da8c83afb3754a845478cab2eb3278688de8567588cb18619d31ef33e",
+    "candidates/sensitivity_0.01.npz": "25feb0690e72518e1d2cfa5019f27f555c35fe30f6518ed97656c1f6339de1b9",
+    "candidates/nonlinear_1e-10.npz": "76a5cd86d70b061e9040fee6220f064935e1a866d342ef5decf951bfdf44521b",
+    "candidates/harmonic_0.0001.npz": "e3e0a025a41bf30598cb502e01724e908f2dc60e93ca84ec3bd3feebac4c5bb1",
+    "candidates/harmonic_0.01.npz": "2c8c884693a21a81652595cddf84f42fef88db5d48e73a6790dd58d6385f57cb"
+  }
+}

@@ -1,0 +1,69 @@
+CranePilot: завершён adaptive_actuator_20261107, 7 ноября 2026.
+
+Главная сводка: Crane Project/cranepilot/RESEARCH_STATUS_2026_11_07.md.
+Run artifacts/runs/adaptive_actuator_20261107 complete, копия для Git:
+results/adaptive_actuator_20261107/frozen_run. Отчёт:
+docs/ADAPTIVE_ACTUATOR_2026_11_07_RU.md. Протокол configs/adaptive_actuator_20261107.json
+и ADAPTIVE_ACTUATOR_DESIGN_20261107.md. Код до запуска: 522d01d.
+APHYNITY отдельно и без изменений; neural weights/default bundle не менялись.
+
+Проверены 9 controller: nominal, force_only, actuator_only, force_actuator,
+joint_previous, adaptive_params, adaptive_force, adaptive_observer,
+adaptive_force_observer. Static факториал разделяет forcing/actuator/frequency.
+Сетка actuator прежняя; force laws effective/geometric. Adaptive fit:
+first-order lag a_dot=(K*c-a)/tau, профилирование неизвестных initial x/v/a,
+8 tau points, scalar ridge gain с prior1, gain bounds .5..1.6. Только прошлые
+измеренные позиции и applied commands. Нет true v/a/parameters или будущих x.
+
+ЯВНО НОВЫЙ КОНТРАКТ: 2s памяти x/command для actuator; angular history по-прежнему
+41samples100Hz/.4s. Всем controller память доступна, static не fit параметры.
+Minimum21positions, information RMS .0004m, max fit RMSE .001m, update .2s,
+EMA .25, иначе prior/последняя оценка. Observer восстанавливает endpoint v/a
+при filtered tau/K; меняет только trolley initial v/a, не angular q/p.
+Information gate для gain не гарантирует идентифицируемость tau при почти
+постоянных командах. Deadzone не fit; estimated gain может быть effective.
+Это finite-window LS, не RLS/IV convergence theorem.
+
+918эпизодов =54development+864evaluation (96cases на метод).
+Новый grid L .25/.62/1.07, omega ratios .87/1.13, true tau .06/.19,
+gain .78/1.22. Nuisance damping .02/.08, deadzone0/.02, initialangle3/5deg,
+effective/geometric forcing; exact/noisy sensors × pulse absent/present.
+Новый seed1207112026, pulse .16rad/s² на[2.45,2.85)s. Development6cases/метод
+только qualification; hyperparameters после него не менялись. Online updates
+на evaluation — часть заранее заданной policy, не offline tuning по test.
+Native xr features0, learned NeuralActuator bypass; acceleration ablation.
+
+На этом grid 7из8альтернатив проходят ВСЕ gates (joint_previous не проходит).
+Относительно nominal:
+force_actuator: cost−62.56%, sway−72.07%, tracking−9.80%, final error−38.95%,
+78/96 paired cost wins. Adaptive_force_observer: cost−66.55%, sway−76.40%,
+tracking−5.57%, final error−58.74%, 76/96 cost wins; settled84/96 против62/96,
+angle>15deg0/96 против8/96. Но его tracking хуже static force_actuator.
+Adaptive_force даёт ещё меньшую final error, чем observer variant: все tradeoffs
+сохранены. Не объявлять один controller доминирующим по всем метрикам.
+
+164unit tests PASS. Все918trajectories и110160chosen forecasts/costs,
+а также ВСЕ последовательные identifier states воспроизведены точно.
+Replay не читает saved estimates как вход и не перезапускает optimizer.
+1281original main/APHYNITY файла сохранены. RK half-step convergence проверена.
+Первый unit-test ждал observer до fit qualification; исправлен до preregistration,
+final PASS log сохранён вместе с первоначальным fail log. Core после freeze не менялся.
+
+Изолированное warm full decision batch1,15замеров/метод: nominal median4.91ms,
+static force_actuator5.18ms, adaptive_force_observer8.63ms. В timing включены
+window assembly/update/observer/solver. Pre-tick estimator state восстанавливается
+перед каждым повтором, не накапливает повторные EMA updates на одном sample.
+Batch1/batch96 планы совпали точно. Это не hardware/WCET гарантия; offline plant
+не получает wall-clock delay сверх committed .05s pipeline.
+
+ОГРАНИЧЕНИЕ: структура actuator в true simulator близка к модели identifier.
+Следующая необходимая проверка: новые delay/два lag/friction/gain changes,
+fixed-nominal-parameter observer с той же 2s памятью (этого baseline ещё нет),
+более длинные/обратные движения и затем native xr qualification. Эти опыты
+ещё НЕ выполнены. Не tuning по этим96cases. Старый real forecast load gate
+остаётся в силе. Не заявлять SOTA/hardware/native-controller успех.
+
+История GitHub разрешена пользователем и отдельно подтверждена. Публиковать
+в research/broad-search-20261107, main не менять (истории с разными roots).
+Оставить прежние122EOL-only изменения; большой evidence ZIP локально.
+Code/config/docs/synthetic trajectories и все отрицательные ablations — в Git.

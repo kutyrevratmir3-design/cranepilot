@@ -1,0 +1,12 @@
+{
+  "parent_run": "artifacts/runs/modal_history_20261107",
+  "development_verification": "results/modal_history_20261107/verification.json",
+  "frozen_parent_hashes": {
+    "artifacts/runs/modal_history_20261107/provenance.json": "9d3f403ad1a732b30364e89fe8bbf88b591e62d69e93d5ec4b0519c138aefa0a",
+    "artifacts/runs/modal_history_20261107/selection.json": "36c3d87959cb8da51ad090bfd00d6a61e62f1913bf0cb922e0d23cded795e9db",
+    "results/modal_history_20261107/verification.json": "9fb27ae7934b97694f80d71526e69edca221b1d9504896bc9d14b2444433d8e9"
+  },
+  "selection_frozen_before_new_holdout_scores": true,
+  "no_refit_or_reselection": true,
+  "qualification": "Previously unscored conditional public holdout; NOT independently collected new measurements. Broad research goal remains open."
+}

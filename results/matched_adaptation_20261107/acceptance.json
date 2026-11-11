@@ -1,0 +1,8 @@
+{
+  "development_gate_passed": false,
+  "criterion": "validation MAE <=.90 strongARX and >=3/4 record wins",
+  "validation_selected": "structured_narx",
+  "validation_change_percent": -4.242657362108925,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

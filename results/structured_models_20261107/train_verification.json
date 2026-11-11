@@ -1,0 +1,612 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_force8",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_force8",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_force8",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_force16",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_force16",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_force16",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_direct8",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_direct8",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_direct8",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_force8_phase",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_force8_phase",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "adapter_force8_phase",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_standalone6",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_standalone6",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_standalone6",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_standalone12",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_standalone12",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_standalone12",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_residual6",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_residual6",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_residual6",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_residual6_phase",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_residual6_phase",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "primary",
+      "model": "latent_residual6_phase",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 4,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 4,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 4,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 4,
+      "model": "previous_local",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "history_only",
+      "fold": "primary",
+      "scenario": 4,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_force8",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_force8",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_force8",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_force16",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_force16",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_force16",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_direct8",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_direct8",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_direct8",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_force8_phase",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_force8_phase",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "adapter_force8_phase",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_standalone6",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_standalone6",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_standalone6",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_standalone12",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_standalone12",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_standalone12",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_residual6",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_residual6",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_residual6",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_residual6_phase",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_residual6_phase",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "short_transfer",
+      "model": "latent_residual6_phase",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "model": "previous_local",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "history_only",
+      "fold": "short_transfer",
+      "scenario": 5,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_force8",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_force8",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_force8",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_force16",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_force16",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_force16",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_direct8",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_direct8",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_direct8",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_force8_phase",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_force8_phase",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "adapter_force8_phase",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_standalone6",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_standalone6",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_standalone6",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_standalone12",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_standalone12",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_standalone12",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_residual6",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_residual6",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_residual6",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_residual6_phase",
+      "seed": 0,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_residual6_phase",
+      "seed": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "checkpoint_reload",
+      "fold": "long_transfer",
+      "model": "latent_residual6_phase",
+      "seed": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "model": "physical",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "model": "previous_local",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "history_only",
+      "fold": "long_transfer",
+      "scenario": 4,
+      "max_deg": 0.0
+    }
+  ],
+  "tolerance_deg": 5e-05
+}

@@ -1,0 +1,28 @@
+{
+  "experiment": "combined_stress_20261107",
+  "source_run": "artifacts/runs/temporal_20261106",
+  "broad_run": "artifacts/runs/broad_search_20261107",
+  "folds": ["primary", "short_transfer", "long_transfer"],
+  "seeds": [0, 1, 2],
+  "tau_bins": 0.5,
+  "evaluation_stride": 10,
+  "active_threshold": 0.005,
+  "acceptance": {"primary_all_active_max_ratio": 1.0, "transfer_all_active_max_ratio": 1.01, "each_simulation_group_max_ratio": 1.0},
+  "simulation": {
+    "length_m": [0.13, 0.29, 0.53, 0.91, 1.27],
+    "amplitude_deg": [1.5, 5.0, 12.0],
+    "phase_rad": [0.6, 1.8, 3.7],
+    "conditions": [
+      {"name": "nominal", "omega_ratio": 1.0, "damping_per_s": 0.0},
+      {"name": "slow", "omega_ratio": 0.85, "damping_per_s": 0.0},
+      {"name": "fast", "omega_ratio": 1.15, "damping_per_s": 0.0},
+      {"name": "damped", "omega_ratio": 1.0, "damping_per_s": 0.2},
+      {"name": "hidden_impulse", "omega_ratio": 1.0, "damping_per_s": 0.0, "future_accel_m_s2": 0.15}
+    ],
+    "measurement": ["exact", "quantized", "noisy_quantized", "biased_quantized"],
+    "noise_seed": 7112026,
+    "noise_std_bins": 0.25,
+    "bias_bins": 0.5
+  },
+  "scope": "Fixed combination decided after previous results; all measured records retrospective. New structural mismatch simulation, no optimizer or threshold selection. Frozen actors bypassed only for explicitly autonomous angular simulation. No publication or default replacement."
+}

@@ -1,0 +1,41 @@
+TIMESTAMP_OFFSET trolley 9 theta
+TIMESTAMP_OFFSET trolley 13 theta
+TIMESTAMP_OFFSET jib 21 theta
+TIMESTAMP_OFFSET jib 21 beta
+TIMESTAMP_OFFSET jib 22 theta
+TIMESTAMP_OFFSET jib 22 beta
+TIMESTAMP_OFFSET jib 23 theta
+TIMESTAMP_OFFSET jib 23 beta
+TIMESTAMP_OFFSET simult 32 theta
+TIMESTAMP_OFFSET simult 32 beta
+TIMESTAMP_OFFSET simult 33 theta
+TIMESTAMP_OFFSET simult 33 beta
+TIMESTAMP_OFFSET_COMPLETE 372 15792 0.0
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/timestamp_offset.py", line 176, in <module>
+    run()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/timestamp_offset.py", line 172, in run
+    write(out / 'provenance.json', v)
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/run_external_benchmark.py", line 15, in write
+    def write(path,value):path.write_text(json.dumps(value,indent=2,allow_nan=False)+'\n')
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable

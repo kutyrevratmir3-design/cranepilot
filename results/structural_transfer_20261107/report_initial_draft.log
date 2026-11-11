@@ -1,0 +1,11 @@
+                        method  realized_cost  tracking_ise_m2_s  sway_ise_deg2_s  final_position_error_m  settled  rail_violation_100hz  speed_violation_100hz  angle_violation_100hz
+                adaptive_force      69.971917           0.066022       127.832241                0.015925 0.375000                     0                      0                      8
+       adaptive_force_observer      63.470672           0.065941       116.022449                0.011399 0.375000                     0                      0                      8
+             adaptive_observer      65.255712           0.068342       116.377830                0.014148 0.343750                     0                      0                      5
+               adaptive_params      86.415365           0.068355       144.523001                0.019901 0.354167                     0                      0                      5
+          fixed_force_observer     216.109198           0.065328       287.518279                0.015260 0.468750                     0                      0                     12
+                fixed_observer     339.026031           0.069771       334.359918                0.018471 0.416667                     0                      0                     12
+                force_actuator      85.336504           0.063153       200.206620                0.009131 0.541667                     0                      0                     12
+frozen_adaptive_force_observer      63.470672           0.065941       116.022449                0.011399 0.375000                     0                      0                      8
+                       nominal     339.962840           0.069071       337.221115                0.019356 0.375000                     0                      0                     12
+TRANSFER_PASS ['force_actuator', 'fixed_force_observer', 'adaptive_force', 'adaptive_force_observer', 'frozen_adaptive_force_observer']

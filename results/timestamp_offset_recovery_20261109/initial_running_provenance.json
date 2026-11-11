@@ -1,0 +1,16 @@
+{
+  "status": "running",
+  "git_head": "8ea1fa38902640d65e645530c71ecd95fa4d1594",
+  "source_hashes": {
+    "configs/timestamp_offset_20261109.json": "a9c3375f52dcbcd1a0511fd86ddf5a2c9ef03d928dee465cd4c83c132b2a5284",
+    "docs/TIMESTAMP_OFFSET_DESIGN_20261109.md": "e277f5289861193aa3ab99b99d0f2e0d62e0ef7ea0895e66e6439d4b7d1623c6",
+    "scripts/timestamp_offset.py": "e0a6f07ccee0519b4f5ceec206186d4e3ef107a2d7714cfb9a43745427e0a3eb",
+    "tests/test_timestamp_offset.py": "719dab68db08903bec72506ce07a0ed8bce4a5855efa528a38240a28324b0146"
+  },
+  "input_manifest_sha256": "4790c96ba395e562f714475a8a3b33e1bc2d58631344158d20fd6285570ba009",
+  "retrospective": true,
+  "independent_confirmation": false,
+  "hardware_success_claimed": false,
+  "model_selection_or_fit": false,
+  "final_goal_achieved": false
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "fixed_commit": "d93121d47003c8ebd57c3049a6b04b77c6093bfa",
+  "linux_workflow_run_id": 42490990869,
+  "linux_workflow_url": "https://github.com/kutyrevratmir3-design/cranepilot/actions/runs/42490990869",
+  "linux_conclusion": "success",
+  "clean_archive_tests": 243,
+  "clean_archive_exit_code": 0,
+  "previous_failed_run_id": 42470306321,
+  "cause": "Ignored frozen selection.json was absent in clean checkout; two setUpClass errors",
+  "fixture_bytes": 1109,
+  "fixture_sha256": "33a9542cf2b6f5a4d2171ba9c2f3ad7aa783699f6000ed688b7581b278fd8153",
+  "fixture_identical_to_existing_public_mirror": true,
+  "parameters_tests_workflow_unchanged": true
+}

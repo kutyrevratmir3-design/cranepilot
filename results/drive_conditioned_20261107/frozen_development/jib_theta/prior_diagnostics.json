@@ -1,0 +1,33 @@
+{
+  "channels": [
+    "J_support",
+    "J_rate_squared"
+  ],
+  "normalized_gamma": [
+    -0.0014546862899666932,
+    0.0005359648251341913
+  ],
+  "physical_basis_gain": [
+    -0.022894067972030883,
+    0.044400125814671045
+  ],
+  "scale": [
+    0.06353987817909196,
+    0.012071245639513336
+  ],
+  "online_system_condition_median": 1.0,
+  "online_system_condition_max": 8.514715815746857,
+  "train_records": [
+    14,
+    15,
+    16,
+    18,
+    19,
+    20
+  ],
+  "validation_records": [
+    17
+  ],
+  "train_windows": 2250,
+  "validation_windows": 375
+}

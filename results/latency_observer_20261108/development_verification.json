@@ -1,0 +1,402 @@
+{
+  "passed": true,
+  "source_sha256": "91e5847bd211df4f234c351e71d0fcf98cee89dd5aee283a317a8d92089c537c",
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 4,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 17,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 28,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "methods": 11,
+      "maximum_error_rad": 0.0
+    }
+  ],
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "selected": "quadratic_0.25",
+  "gate_reproduced": true,
+  "selected_arx_train_refits": [
+    {
+      "case": "trolley_theta",
+      "file": "arx_angle_lpv_direct_1e-06.npz",
+      "train_windows": 7520
+    },
+    {
+      "case": "jib_theta",
+      "file": "arx_angle_lpv_direct_0.0001.npz",
+      "train_windows": 4512
+    },
+    {
+      "case": "jib_beta",
+      "file": "arx_angle_lpv_direct_0.0001.npz",
+      "train_windows": 4512
+    },
+    {
+      "case": "simult_theta",
+      "file": "arx_angle_lpv_direct_1e-10.npz",
+      "train_windows": 5264
+    },
+    {
+      "case": "simult_beta",
+      "file": "arx_io_lpv_modal_age_residual_1.npz",
+      "train_windows": 5264
+    }
+  ],
+  "all_120_arx_validation_scores_recomputed": true,
+  "age_zero_identity_verified": true,
+  "missing_head_truth_excluded": true,
+  "forecast_comparisons": 41360,
+  "development_sha256": "daf3a93bec11f6fa0d496c833ab91a37560c73f75f75880a45c041787f93c190"
+}

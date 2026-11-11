@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "archive": "results/dense_reference_20261108/dense_fresh_evidence.zip",
+  "archive_bytes": 41769695,
+  "archive_sha256": "10a72d83922a669d5b0609ff44c0ffeb1dacc93ac79cd0bc5623ae87f8dace4f",
+  "entries": 525,
+  "manifest_sha256": "4790c96ba395e562f714475a8a3b33e1bc2d58631344158d20fd6285570ba009",
+  "all_entry_crc_and_sha256_verified": true,
+  "all_manifest_live_files_verified": true,
+  "private_confirmation_tree_excluded": true,
+  "original_datasets_excluded": true,
+  "development_and_replay_mirrors_byte_identical": true,
+  "mutable_global_status_and_external_handoff_excluded": true,
+  "package_report_excluded_from_its_own_archive": true,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

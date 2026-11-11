@@ -1,0 +1,544 @@
+{
+  "source_provenance_sha256": "67fe308fa1b72f845e727856fe1f5f458030009ab7ab2486db5f408aba0b1a3c",
+  "report_source_sha256": "8ea79c37f71dc5d52a36b577cc556609a589a1e998dbeda30d45d5928276b313",
+  "document": "docs/GLOBAL_RESEARCH_2026_11_07_RU.md",
+  "document_sha256": "e1fe4768ee67da6b35914e73e6fee44b5c5aee34b00dba4ee74aa063d7ad6475",
+  "verified_hash_counts": {
+    "guarded_hashes": 99,
+    "checkpoint_hashes": 48,
+    "result_hashes": 84,
+    "source_run_checkpoints": 37,
+    "broad_run_checkpoints": 82
+  },
+  "methods": [
+    "incumbent",
+    "soft_symmetry",
+    "combined",
+    "physical",
+    "weak_r0",
+    "weak_r1",
+    "weak_r2",
+    "lpv_linear_actor_r0",
+    "lpv_linear_actor_r1",
+    "lpv_linear_actor_r2",
+    "lpv_linear_command_r0",
+    "lpv_linear_command_r1",
+    "lpv_linear_command_r2",
+    "nvar_quadratic_actor_r0",
+    "nvar_quadratic_actor_r1",
+    "nvar_quadratic_actor_r2",
+    "nvar_quadratic_command_r0",
+    "nvar_quadratic_command_r1",
+    "nvar_quadratic_command_r2"
+  ],
+  "new_fit_models": 45,
+  "fit_families": {
+    "weak": 9,
+    "lpv_linear": 18,
+    "nvar_quadratic": 18
+  },
+  "selection": {
+    "folds": {
+      "primary": {
+        "model": "combined",
+        "eligible": [
+          "incumbent",
+          "soft_symmetry",
+          "combined"
+        ],
+        "validation": {
+          "incumbent": {
+            "all": 0.19202698645588978,
+            "active": 0.8717016023057481,
+            "quiet": 0.1551682762688042
+          },
+          "soft_symmetry": {
+            "all": 0.19114356524314544,
+            "active": 0.8631451684886422,
+            "quiet": 0.154700962030266
+          },
+          "physical": {
+            "all": 0.25128415303288104,
+            "active": 0.9839102234024051,
+            "quiet": 0.21155388891305874
+          },
+          "combined": {
+            "all": 0.18955941919123756,
+            "active": 0.8629505408854461,
+            "quiet": 0.1530414624833087
+          },
+          "weak_r0": {
+            "all": 0.2586287370115073,
+            "active": 1.0168665437822537,
+            "quiet": 0.21750955009335401
+          },
+          "weak_r1": {
+            "all": 0.2587012710170307,
+            "active": 1.0061540963394195,
+            "quiet": 0.2181669529409793
+          },
+          "weak_r2": {
+            "all": 0.2593690025550138,
+            "active": 0.9936230612170898,
+            "quiet": 0.21955045273602916
+          },
+          "lpv_linear_actor_r0": {
+            "all": 0.20306008386589042,
+            "active": 0.7089357070346437,
+            "quiet": 0.17562648174177145
+          },
+          "lpv_linear_actor_r1": {
+            "all": 0.20252180798968705,
+            "active": 0.6772587860930294,
+            "quiet": 0.17677685256108933
+          },
+          "lpv_linear_actor_r2": {
+            "all": 0.21996092041393825,
+            "active": 0.8160630488341492,
+            "quiet": 0.18763434078160582
+          },
+          "lpv_linear_command_r0": {
+            "all": 0.21885991348055733,
+            "active": 0.7639895342072508,
+            "quiet": 0.18929756962336136
+          },
+          "lpv_linear_command_r1": {
+            "all": 0.22315069966768034,
+            "active": 0.7852238089656615,
+            "quiet": 0.19266951152787656
+          },
+          "lpv_linear_command_r2": {
+            "all": 0.22851450797473447,
+            "active": 0.9581923340680846,
+            "quiet": 0.18894412695014934
+          },
+          "nvar_quadratic_actor_r0": {
+            "all": 0.25131818288146923,
+            "active": 1.3055969122934394,
+            "quiet": 0.1941447159936183
+          },
+          "nvar_quadratic_actor_r1": {
+            "all": 0.20469854333699006,
+            "active": 0.7316551543814265,
+            "quiet": 0.17612172061223758
+          },
+          "nvar_quadratic_actor_r2": {
+            "all": 0.2174491858604786,
+            "active": 0.7864269417579718,
+            "quiet": 0.18659355918490958
+          },
+          "nvar_quadratic_command_r0": {
+            "all": 0.23937431960990396,
+            "active": 0.798760851625383,
+            "quiet": 0.20903882438129878
+          },
+          "nvar_quadratic_command_r1": {
+            "all": 0.218431734994133,
+            "active": 0.6779914694097051,
+            "quiet": 0.1935098405030499
+          },
+          "nvar_quadratic_command_r2": {
+            "all": 0.22248468759839515,
+            "active": 0.8684493963233691,
+            "quiet": 0.18745406348098873
+          }
+        }
+      },
+      "short_transfer": {
+        "model": "lpv_linear_actor_r1",
+        "eligible": [
+          "incumbent",
+          "combined",
+          "lpv_linear_actor_r1",
+          "lpv_linear_actor_r2",
+          "lpv_linear_command_r0",
+          "lpv_linear_command_r1",
+          "nvar_quadratic_actor_r2",
+          "nvar_quadratic_command_r2"
+        ],
+        "validation": {
+          "incumbent": {
+            "all": 0.21748212846410728,
+            "active": 0.9848234859212797,
+            "quiet": 0.18796899933113914
+          },
+          "soft_symmetry": {
+            "all": 0.2177110773407505,
+            "active": 0.9880258350246649,
+            "quiet": 0.1880835866605999
+          },
+          "physical": {
+            "all": 0.23156679281950215,
+            "active": 1.0825258685949644,
+            "quiet": 0.19883759759736896
+          },
+          "combined": {
+            "all": 0.20798210188172161,
+            "active": 0.989460371886783,
+            "quiet": 0.1779252453430654
+          },
+          "weak_r0": {
+            "all": 1.2307608077942878,
+            "active": 2.3994029619138457,
+            "quiet": 1.1858130326358431
+          },
+          "weak_r1": {
+            "all": 1.218620075848187,
+            "active": 2.3981746866601883,
+            "quiet": 1.1732525908169562
+          },
+          "weak_r2": {
+            "all": 1.1611309706588406,
+            "active": 2.362240050926542,
+            "quiet": 1.1149344675716213
+          },
+          "lpv_linear_actor_r0": {
+            "all": 0.21623592660055474,
+            "active": 0.8593288730526274,
+            "quiet": 0.19150158250624416
+          },
+          "lpv_linear_actor_r1": {
+            "all": 0.18762217229513656,
+            "active": 0.870784564584743,
+            "quiet": 0.16134669566861326
+          },
+          "lpv_linear_actor_r2": {
+            "all": 0.20588719022785437,
+            "active": 0.9791518959246355,
+            "quiet": 0.1761462400087474
+          },
+          "lpv_linear_command_r0": {
+            "all": 0.21124982166719394,
+            "active": 0.778791135903164,
+            "quiet": 0.18942130958119507
+          },
+          "lpv_linear_command_r1": {
+            "all": 0.19312424239997641,
+            "active": 0.8692631689079408,
+            "quiet": 0.16711889907274702
+          },
+          "lpv_linear_command_r2": {
+            "all": 0.21204627058146966,
+            "active": 1.045131801021886,
+            "quiet": 0.1800045194106844
+          },
+          "nvar_quadratic_actor_r0": {
+            "all": 0.9560723360668901,
+            "active": 2.1711769999614643,
+            "quiet": 0.9093375413017142
+          },
+          "nvar_quadratic_actor_r1": {
+            "all": 0.5025051767620967,
+            "active": 0.8903114365391758,
+            "quiet": 0.48758955138605503
+          },
+          "nvar_quadratic_actor_r2": {
+            "all": 0.19923805438124978,
+            "active": 0.8924711048930088,
+            "quiet": 0.1725752447461821
+          },
+          "nvar_quadratic_command_r0": {
+            "all": 0.3803432211164594,
+            "active": 1.511014473181403,
+            "quiet": 0.3368558652678078
+          },
+          "nvar_quadratic_command_r1": {
+            "all": 0.36079627015323107,
+            "active": 0.7710469391264047,
+            "quiet": 0.3450173982696475
+          },
+          "nvar_quadratic_command_r2": {
+            "all": 0.1977601338536053,
+            "active": 0.946840612914617,
+            "quiet": 0.16894934619741256
+          }
+        }
+      },
+      "long_transfer": {
+        "model": "incumbent",
+        "eligible": [
+          "incumbent"
+        ],
+        "validation": {
+          "incumbent": {
+            "all": 0.20616429981002884,
+            "active": 1.0409560922384782,
+            "quiet": 0.1608935952314795
+          },
+          "soft_symmetry": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "physical": {
+            "all": 0.28998912407021,
+            "active": 1.1171212864106632,
+            "quiet": 0.2451338007328752
+          },
+          "combined": {
+            "all": 0.20886759944347097,
+            "active": 1.0099141210095313,
+            "quiet": 0.1654268987077844
+          },
+          "weak_r0": {
+            "all": 0.30925306209708914,
+            "active": 1.1382084053667336,
+            "quiet": 0.26429886777660955
+          },
+          "weak_r1": {
+            "all": 0.310232442598515,
+            "active": 1.1355935423496861,
+            "quiet": 0.26547316387014347
+          },
+          "weak_r2": {
+            "all": 0.3125606369945283,
+            "active": 1.126760849441946,
+            "quiet": 0.26840661245833425
+          },
+          "lpv_linear_actor_r0": {
+            "all": 0.23724223783614645,
+            "active": 0.8871481039183322,
+            "quiet": 0.20199788501173288
+          },
+          "lpv_linear_actor_r1": {
+            "all": 0.24270183034693707,
+            "active": 0.7932080766675624,
+            "quiet": 0.21284791243367113
+          },
+          "lpv_linear_actor_r2": {
+            "all": 0.24709572641436622,
+            "active": 0.8660670019603796,
+            "quiet": 0.21352895442163225
+          },
+          "lpv_linear_command_r0": {
+            "all": 0.26623824678064434,
+            "active": 0.7394574343761369,
+            "quiet": 0.24057560103251563
+          },
+          "lpv_linear_command_r1": {
+            "all": 0.2764919469213165,
+            "active": 0.8150197304916758,
+            "quiet": 0.24728762026348788
+          },
+          "lpv_linear_command_r2": {
+            "all": 0.2866614714865698,
+            "active": 1.0593330861344086,
+            "quiet": 0.24475954010653517
+          },
+          "nvar_quadratic_actor_r0": {
+            "all": 0.25681189052436015,
+            "active": 1.2836883201119944,
+            "quiet": 0.20112444857275308
+          },
+          "nvar_quadratic_actor_r1": {
+            "all": 0.23844209260543162,
+            "active": 0.8223197034118711,
+            "quiet": 0.20677844776777218
+          },
+          "nvar_quadratic_actor_r2": {
+            "all": 0.26205662466517876,
+            "active": 0.9255071889769122,
+            "quiet": 0.2260777437372105
+          },
+          "nvar_quadratic_command_r0": {
+            "all": 0.25078726681898583,
+            "active": 1.0121058109794132,
+            "quiet": 0.209501011712672
+          },
+          "nvar_quadratic_command_r1": {
+            "all": 0.24806783329861679,
+            "active": 0.8085026824609224,
+            "quiet": 0.2176754878993594
+          },
+          "nvar_quadratic_command_r2": {
+            "all": 0.28283016425451735,
+            "active": 1.0055955135772767,
+            "quiet": 0.24363464639536553
+          }
+        }
+      }
+    },
+    "common": {
+      "model": "incumbent",
+      "eligible": [
+        "incumbent"
+      ]
+    },
+    "uses_evaluation_this_stage": false,
+    "uses_simulation": false,
+    "history_samples": 41,
+    "real_records_reused": true
+  },
+  "acceptance": {
+    "common_model": "incumbent",
+    "cells": [
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "primary",
+        "regime": "all",
+        "reference": "soft_symmetry",
+        "ratio": 1.016859615609402,
+        "maximum_ratio": 1,
+        "passed": false
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "primary",
+        "regime": "active",
+        "reference": "soft_symmetry",
+        "ratio": 1.022438428575981,
+        "maximum_ratio": 1,
+        "passed": false
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "short_transfer",
+        "regime": "all",
+        "reference": "incumbent",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "short_transfer",
+        "regime": "active",
+        "reference": "incumbent",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "long_transfer",
+        "regime": "all",
+        "reference": "incumbent",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "evaluation_extrapolation",
+        "fold": "long_transfer",
+        "regime": "active",
+        "reference": "incumbent",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "load_stress",
+        "fold": "primary",
+        "regime": "all",
+        "reference": "incumbent",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      },
+      {
+        "scope": "load_stress",
+        "fold": "primary",
+        "regime": "active",
+        "reference": "incumbent",
+        "ratio": 1.0,
+        "maximum_ratio": 1.01,
+        "passed": true
+      }
+    ],
+    "passed": false,
+    "operational_thresholds_not_statistical_bounds": true
+  },
+  "history_samples": 41,
+  "real_records_retrospective": true,
+  "neural_training": false,
+  "simulation_actor_bypassed": true,
+  "simulation_cases_per_fold": {
+    "long_transfer": 1152,
+    "primary": 1152,
+    "short_transfer": 1152
+  },
+  "simulation_scopes": {
+    "primary": {
+      "excluded_command_models": [
+        "lpv_linear_command_r0",
+        "lpv_linear_command_r1",
+        "lpv_linear_command_r2",
+        "nvar_quadratic_command_r0",
+        "nvar_quadratic_command_r1",
+        "nvar_quadratic_command_r2"
+      ],
+      "reason": "No actuator/reference generator; zero references are placeholders",
+      "angular_methods": [
+        "incumbent",
+        "soft_symmetry",
+        "physical",
+        "combined",
+        "weak_r0",
+        "weak_r1",
+        "weak_r2",
+        "lpv_linear_actor_r0",
+        "lpv_linear_actor_r1",
+        "lpv_linear_actor_r2",
+        "nvar_quadratic_actor_r0",
+        "nvar_quadratic_actor_r1",
+        "nvar_quadratic_actor_r2"
+      ]
+    },
+    "short_transfer": {
+      "excluded_command_models": [
+        "lpv_linear_command_r0",
+        "lpv_linear_command_r1",
+        "lpv_linear_command_r2",
+        "nvar_quadratic_command_r0",
+        "nvar_quadratic_command_r1",
+        "nvar_quadratic_command_r2"
+      ],
+      "reason": "No actuator/reference generator; zero references are placeholders",
+      "angular_methods": [
+        "incumbent",
+        "soft_symmetry",
+        "physical",
+        "combined",
+        "weak_r0",
+        "weak_r1",
+        "weak_r2",
+        "lpv_linear_actor_r0",
+        "lpv_linear_actor_r1",
+        "lpv_linear_actor_r2",
+        "nvar_quadratic_actor_r0",
+        "nvar_quadratic_actor_r1",
+        "nvar_quadratic_actor_r2"
+      ]
+    },
+    "long_transfer": {
+      "excluded_command_models": [
+        "lpv_linear_command_r0",
+        "lpv_linear_command_r1",
+        "lpv_linear_command_r2",
+        "nvar_quadratic_command_r0",
+        "nvar_quadratic_command_r1",
+        "nvar_quadratic_command_r2"
+      ],
+      "reason": "No actuator/reference generator; zero references are placeholders",
+      "angular_methods": [
+        "incumbent",
+        "soft_symmetry",
+        "physical",
+        "combined",
+        "weak_r0",
+        "weak_r1",
+        "weak_r2",
+        "lpv_linear_actor_r0",
+        "lpv_linear_actor_r1",
+        "lpv_linear_actor_r2",
+        "nvar_quadratic_actor_r0",
+        "nvar_quadratic_actor_r1",
+        "nvar_quadratic_actor_r2"
+      ]
+    }
+  },
+  "fit_seconds_without_duplicate_svd": 3.7333669170329813,
+  "aggregation": "equal scenarios at each horizon, then equal seven horizons; simulation equal cases within declared groups",
+  "headline_scope": "evaluation_extrapolation",
+  "hardware_evidence": false
+}

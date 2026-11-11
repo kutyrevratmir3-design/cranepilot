@@ -1,0 +1,15 @@
+{
+  "experiment":"drive_conditioned_20261107",
+  "source_task":"configs/active_qualification_20261107.json",
+  "bundle":"artifacts/reliability_bundle_20261107",
+  "prior_ridge":0.001,
+  "representations":["angle_lpv","io_lpv"],
+  "forms":["direct","modal_residual"],
+  "ridge_grid":[1e-10,1e-8,1e-6,1e-4,0.01,1],
+  "continuations":["hold","linear"],
+  "strategies":["fixed","adapt"],
+  "selection":"Single global minimum of equal-case validation score; within each case weight low-past-drive-motion and drive-active windows equally. Compare with a validation-selected active-trained3s/4s/old ARX reference. Keep all11global candidates.",
+  "development_gate":{"maximum_balanced_mae_ratio":0.9,"minimum_case_wins":4,"maximum_quiet_mae_ratio":1.05},
+  "scope":"Retrospective history-only forecast development. Drive-corrected local modal state fit, not a reproduction or theorem of full constrained MHE. Future support paths held or causally extrapolated from past; no realised future pose/length or native commands as acceleration. Conditional hypothetical-support interface is not an identified native actuator or controller.",
+  "independent_confirmation":false
+}

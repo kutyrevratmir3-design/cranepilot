@@ -1,0 +1,11 @@
+   method  mae_deg  change_percent  scenario_wins  descriptive_low  descriptive_high
+ hard_0.8 0.203753      -57.419149              6       -83.481639        -18.155793
+   hard_1 0.201441      -57.902406              6       -84.046575        -19.426893
+ hard_1.2 0.204009      -57.365796              6       -84.469859        -17.689322
+ long_arx 0.492306        2.883321              2        -4.054631          6.874439
+    modal 0.261421      -45.367646              6       -84.794483         15.369640
+reference 0.478509        0.000000              0         0.000000          0.000000
+ selected 0.189779      -60.339449              6       -84.033773        -23.246197
+short_arx 0.480457        0.406935              0         0.016237          1.605668
+     soft 0.189779      -60.339449              6       -84.033773        -23.246197
+SELECTED soft RETROSPECTIVE_GATE True FINAL_GOAL False

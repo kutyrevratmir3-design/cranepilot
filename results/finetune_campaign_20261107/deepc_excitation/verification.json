@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "synthetic_checks": {
+    "manual_indexing": true,
+    "constant_rank_one": true,
+    "deterministic_rich_rank_full": true,
+    "zero_rank_zero": true,
+    "uses_real_data": false
+  },
+  "verified_data_hashes": {
+    "data/processed/dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "data/processed/manifest.json": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85"
+  }
+}

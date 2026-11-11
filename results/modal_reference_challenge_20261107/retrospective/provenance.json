@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "development_sha256": "e512bf6b93ca9e08c9d224eef6fc9520ff1f2bbe7603cdcecfc4e3eb2dc639fb",
+  "selection_sha256": "37b99b7c984a5eb89902944bf1fe8a3225e5d4f6cc3b684f0818284043deaa0c",
+  "independent_confirmation": false,
+  "scope": "Retrospective robustness challenge; never a new holdout",
+  "result_hashes": {
+    "jib_beta_s22.npz": "89eacb9c98142c97c7c2e9eb67d0fca720e1ff5bb826b25006e6fcf537353f2b",
+    "jib_theta_s21.npz": "6b3b0563e2bf5ec35510e9ca10741208b4532108f5fd58b5fa6dad0de3e776cd",
+    "jib_beta_s23.npz": "1587de71cb6ed4880b3e963bd01c996a733f3233a7126db5ddac20226f20890e",
+    "jib_beta_s21.npz": "1275dd1e26f0bf75327fc3448bd11bb53c6bca14f46134e1258336dd1dc56925",
+    "jib_theta_s23.npz": "92644bc343da9c4c614d786cd96c1b53dd773ef8a53d8f96925ca5f2405b6058",
+    "simult_beta_s33.npz": "1f66ca71f8718fd5c52312b6fabaa7718e314c3bbbed569a40bf0a98c6b5e52d",
+    "simult_beta_s32.npz": "b7dc73c3a53560892705b2e91f9bbc2046796525dadbd6e7151ddd6b7435d4e3",
+    "jib_theta_s22.npz": "d06ce89a86b198f5c3be2bdca707648b79f2ebd73e7aa9e5a17ca39b03f2a21c",
+    "metrics.csv": "0a4102f76bfd38d6933fc7163fcf57f7ea844b00e6da5ac1577fbfa03fc6923f",
+    "simult_theta_s33.npz": "863b88085664810114bfd35b765935cacde71cdd95bb48f23b6489d4c1af68dd",
+    "trolley_theta_s13.npz": "d83a4f95ae7e8315cf0c600988a334075366c6194f85425a7e40df4813260f61",
+    "simult_theta_s32.npz": "cf1a3236f8be59fa34ae3f58453f2a0f1a8eadc5e23435603f6c1d8253352358",
+    "trolley_theta_s9.npz": "f97bc448e81290894cbd3b30c3e956f467399160359764543fe5ffb0bd4a8191"
+  }
+}

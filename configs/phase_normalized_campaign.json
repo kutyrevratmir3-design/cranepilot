@@ -1,0 +1,11 @@
+{
+  "train":[3,5,6],"validation":[4],"evaluation":[1,2,7,8],"load_stress":[10,11,12],
+  "seeds":[0,1,2],"variants":{"phase_passive":false,"phase_driven":true,"gru_reference":"gru"},
+  "training":{"epochs":100,"patience":15,"batch_size":256,"learning_rate":0.001},
+  "train_stride":25,"evaluation_stride":10,"phase_span_rad":1.0,"phase_points":25,
+  "smooth_l1_beta":0.1,
+  "selection":"average all three seeds; validation seven-horizon MAE early stopping; evaluate both variants",
+  "scope":"angular scale-equivariant surrogate with a separately frozen nonequivariant native-input actuator; not full-system invariance or controller validation",
+  "hypothesis":"observe a common interval of oscillator phase; normalize trolley displacement by omega squared / g; evolve latent forcing in oscillator phase instead of fixed GRU updates",
+  "publication":"local only; no GitHub publication"
+}

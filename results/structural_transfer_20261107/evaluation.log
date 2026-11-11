@@ -1,0 +1,82 @@
+TICK nominal 0 batch_seconds 0.031
+TICK nominal 20 batch_seconds 0.007
+TICK nominal 40 batch_seconds 0.007
+TICK nominal 60 batch_seconds 0.007
+TICK nominal 80 batch_seconds 0.007
+TICK nominal 100 batch_seconds 0.007
+TICK nominal 120 batch_seconds 0.007
+TICK nominal 140 batch_seconds 0.007
+METHOD_COMPLETE evaluate nominal 96
+TICK force_actuator 0 batch_seconds 0.014
+TICK force_actuator 20 batch_seconds 0.012
+TICK force_actuator 40 batch_seconds 0.012
+TICK force_actuator 60 batch_seconds 0.011
+TICK force_actuator 80 batch_seconds 0.011
+TICK force_actuator 100 batch_seconds 0.01
+TICK force_actuator 120 batch_seconds 0.01
+TICK force_actuator 140 batch_seconds 0.011
+METHOD_COMPLETE evaluate force_actuator 96
+TICK fixed_observer 0 batch_seconds 0.007
+TICK fixed_observer 20 batch_seconds 0.008
+TICK fixed_observer 40 batch_seconds 0.008
+TICK fixed_observer 60 batch_seconds 0.008
+TICK fixed_observer 80 batch_seconds 0.008
+TICK fixed_observer 100 batch_seconds 0.008
+TICK fixed_observer 120 batch_seconds 0.009
+TICK fixed_observer 140 batch_seconds 0.008
+METHOD_COMPLETE evaluate fixed_observer 96
+TICK fixed_force_observer 0 batch_seconds 0.008
+TICK fixed_force_observer 20 batch_seconds 0.009
+TICK fixed_force_observer 40 batch_seconds 0.009
+TICK fixed_force_observer 60 batch_seconds 0.01
+TICK fixed_force_observer 80 batch_seconds 0.009
+TICK fixed_force_observer 100 batch_seconds 0.009
+TICK fixed_force_observer 120 batch_seconds 0.009
+TICK fixed_force_observer 140 batch_seconds 0.009
+METHOD_COMPLETE evaluate fixed_force_observer 96
+TICK adaptive_params 0 batch_seconds 0.007
+TICK adaptive_params 20 batch_seconds 0.009
+TICK adaptive_params 40 batch_seconds 0.01
+TICK adaptive_params 60 batch_seconds 0.01
+TICK adaptive_params 80 batch_seconds 0.01
+TICK adaptive_params 100 batch_seconds 0.01
+TICK adaptive_params 120 batch_seconds 0.01
+TICK adaptive_params 140 batch_seconds 0.01
+METHOD_COMPLETE evaluate adaptive_params 96
+TICK adaptive_force 0 batch_seconds 0.008
+TICK adaptive_force 20 batch_seconds 0.011
+TICK adaptive_force 40 batch_seconds 0.01
+TICK adaptive_force 60 batch_seconds 0.011
+TICK adaptive_force 80 batch_seconds 0.011
+TICK adaptive_force 100 batch_seconds 0.012
+TICK adaptive_force 120 batch_seconds 0.011
+TICK adaptive_force 140 batch_seconds 0.012
+METHOD_COMPLETE evaluate adaptive_force 96
+TICK adaptive_observer 0 batch_seconds 0.007
+TICK adaptive_observer 20 batch_seconds 0.011
+TICK adaptive_observer 40 batch_seconds 0.011
+TICK adaptive_observer 60 batch_seconds 0.011
+TICK adaptive_observer 80 batch_seconds 0.012
+TICK adaptive_observer 100 batch_seconds 0.011
+TICK adaptive_observer 120 batch_seconds 0.012
+TICK adaptive_observer 140 batch_seconds 0.012
+METHOD_COMPLETE evaluate adaptive_observer 96
+TICK adaptive_force_observer 0 batch_seconds 0.008
+TICK adaptive_force_observer 20 batch_seconds 0.011
+TICK adaptive_force_observer 40 batch_seconds 0.012
+TICK adaptive_force_observer 60 batch_seconds 0.012
+TICK adaptive_force_observer 80 batch_seconds 0.012
+TICK adaptive_force_observer 100 batch_seconds 0.012
+TICK adaptive_force_observer 120 batch_seconds 0.012
+TICK adaptive_force_observer 140 batch_seconds 0.012
+METHOD_COMPLETE evaluate adaptive_force_observer 96
+TICK frozen_adaptive_force_observer 0 batch_seconds 0.01
+TICK frozen_adaptive_force_observer 20 batch_seconds 0.012
+TICK frozen_adaptive_force_observer 40 batch_seconds 0.013
+TICK frozen_adaptive_force_observer 60 batch_seconds 0.013
+TICK frozen_adaptive_force_observer 80 batch_seconds 0.012
+TICK frozen_adaptive_force_observer 100 batch_seconds 0.013
+TICK frozen_adaptive_force_observer 120 batch_seconds 0.013
+TICK frozen_adaptive_force_observer 140 batch_seconds 0.012
+METHOD_COMPLETE evaluate frozen_adaptive_force_observer 96
+COMPLETE evaluate

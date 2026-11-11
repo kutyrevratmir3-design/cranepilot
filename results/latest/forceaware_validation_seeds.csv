@@ -1,0 +1,13 @@
+model,seed,validation_mae_deg,parameters
+raw_driven_huber,0,0.21275843679904938,8821
+raw_driven_huber,1,0.21490471065044403,8821
+raw_driven_huber,2,0.21136632561683655,8821
+forced_driven_mse,0,0.2037525326013565,8821
+forced_driven_mse,1,0.21791207790374756,8821
+forced_driven_mse,2,0.21002380549907684,8821
+forced_driven_huber,0,0.20195357501506805,8821
+forced_driven_huber,1,0.20168732106685638,8821
+forced_driven_huber,2,0.1910596340894699,8821
+forced_observer_huber,0,0.2000051885843277,7728
+forced_observer_huber,1,0.19889484345912933,7728
+forced_observer_huber,2,0.20299482345581055,7728

@@ -1,0 +1,11 @@
+                                  median       max
+method                                            
+adaptive_force                  7.212042  7.871708
+adaptive_force_observer         7.839292  8.313209
+adaptive_observer               7.768708  8.167750
+adaptive_params                 7.191625  7.260416
+fixed_force_observer            5.374833  5.625166
+fixed_observer                  5.569875  5.789125
+force_actuator                  5.172542  5.454000
+frozen_adaptive_force_observer  8.159709  8.972625
+nominal                         5.167417  5.421000

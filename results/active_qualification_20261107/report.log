@@ -1,0 +1,20 @@
+                  group       method  mae_deg  reference_mae_deg  change_percent  scenario_wins  scenarios
+                    all frozen_blend 0.545399           0.858100      -36.441090              6          7
+                    all frozen_modal 0.731735           0.858100      -14.726165              3          7
+                    all   strong_arx 0.858100           0.858100        0.000000              0          7
+           drive_active frozen_blend 1.726419           1.805492       -4.379627              3          6
+           drive_active frozen_modal 2.351014           1.805492       30.214557              2          6
+           drive_active   strong_arx 1.805492           1.805492        0.000000              0          6
+drive_and_length_active frozen_blend 3.157028           3.215052       -1.804744              2          5
+drive_and_length_active frozen_modal 4.272536           3.215052       32.891677              0          5
+drive_and_length_active   strong_arx 3.215052           3.215052        0.000000              0          5
+          length_active frozen_blend 0.098940           0.894749      -88.942096              2          2
+          length_active frozen_modal 0.090664           0.894749      -89.867092              2          2
+          length_active   strong_arx 0.894749           0.894749        0.000000              0          2
+        low_past_motion frozen_blend 0.193369           0.495183      -60.949939              6          7
+        low_past_motion frozen_modal 0.265718           0.495183      -46.339369              6          7
+        low_past_motion   strong_arx 0.495183           0.495183        0.000000              0          7
+    old_numerical_scope frozen_blend 0.188822           0.477167      -60.428474              6          7
+    old_numerical_scope frozen_modal 0.261154           0.477167      -45.269926              6          7
+    old_numerical_scope   strong_arx 0.477167           0.477167        0.000000              0          7
+INDEPENDENT_CONFIRMATION False API_GATE_CHANGED False

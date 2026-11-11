@@ -1,0 +1,10 @@
+{
+  "broad_search_20261107": {
+    "selection_sha256": "04aa9a1308cd14d131e2dcceb10cae35d097f60307f42ce1e732ca593e451ffb",
+    "matches_pre_evaluation_seal": true
+  },
+  "reliability_blend_20261107": {
+    "selection_sha256": "2083ab6da88542e9a8e4adeda8239042a06137541becb28b11841bed17f2ec01",
+    "matches_pre_evaluation_seal": true
+  }
+}

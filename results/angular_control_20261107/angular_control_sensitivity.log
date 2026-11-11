@@ -1,0 +1,5 @@
+           case  context  tick  true_jacobian_norm  predicted_jacobian_norm  locally_unresponsive_plant  absolute_jacobian_error  relative_jacobian_error  jacobian_cosine  mean_counterfactual_forecast_error_deg
+method                                                                                                                                                                                                            
+candidate  47.5     11.5  60.0            0.556187                 0.441443                    0.027778                 0.347380                 1.608083         0.838173                                1.778207
+physical   47.5     11.5  60.0            0.556187                 0.538403                    0.027778                 0.310385                 1.766205         0.883255                                1.499057
+retained   47.5     11.5  60.0            0.556187                 0.369470                    0.027778                 0.325708                 1.319123         0.868478                                1.875392

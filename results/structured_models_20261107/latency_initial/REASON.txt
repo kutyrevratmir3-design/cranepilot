@@ -1,0 +1,1 @@
+Initial timing passed prediction checks. A separate CLI integrity/import process was launched concurrently during startup. Preserve this measurement, but use a fresh isolated timing as the reported run. No model or benchmark changes.

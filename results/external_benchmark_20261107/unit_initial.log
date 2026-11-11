@@ -1,0 +1,12 @@
+test_arx_lstm_command_prefix_and_zero_initial_fallback (tests.test_external_benchmark.ExternalBenchmarkTests.test_arx_lstm_command_prefix_and_zero_initial_fallback) ... ok
+test_camera_geometry_matches_scalar_transform (tests.test_external_benchmark.ExternalBenchmarkTests.test_camera_geometry_matches_scalar_transform) ... ok
+test_frozen_angular_uses_no_targets_and_preserves_weights (tests.test_external_benchmark.ExternalBenchmarkTests.test_frozen_angular_uses_no_targets_and_preserves_weights) ... ok
+test_known_damped_system_profile_and_parameter_recovery (tests.test_external_benchmark.ExternalBenchmarkTests.test_known_damped_system_profile_and_parameter_recovery) ... ok
+test_packet_prefix_and_index_contract (tests.test_external_benchmark.ExternalBenchmarkTests.test_packet_prefix_and_index_contract) ... ok
+test_partitions_sealed_and_git_blob_integrity (tests.test_external_benchmark.ExternalBenchmarkTests.test_partitions_sealed_and_git_blob_integrity) ... ok
+test_raw_prefix_causality_and_filtered_fields_ignored (tests.test_external_benchmark.ExternalBenchmarkTests.test_raw_prefix_causality_and_filtered_fields_ignored) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.272s
+
+OK

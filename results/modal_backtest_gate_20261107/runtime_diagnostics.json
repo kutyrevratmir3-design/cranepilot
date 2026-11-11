@@ -1,0 +1,205 @@
+{
+  "source_sha256": "1867ceecac2716cf0d4f5277542e6e2a2997df81c78f65ab1a792cfa2201e1a8",
+  "bundle_manifest_sha256": "9de59e82d7a05a16e4b3b2d9bf1d4aed251ffbd947d3434177f556ebba19ee24",
+  "zero_input": [
+    {
+      "case": "trolley_theta",
+      "length_m": 0.1,
+      "maximum_absolute_forecast_deg": 0.014435389800303044,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.015297314663560654,
+      "modal_weight": 0.05634484759019692
+    },
+    {
+      "case": "trolley_theta",
+      "length_m": 0.4,
+      "maximum_absolute_forecast_deg": 0.015328247620834044,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.016144589080374742,
+      "modal_weight": 0.05056439996562304
+    },
+    {
+      "case": "trolley_theta",
+      "length_m": 0.8,
+      "maximum_absolute_forecast_deg": 0.02417021574234939,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.06373089518297212,
+      "modal_weight": 0.6207457046859859
+    },
+    {
+      "case": "jib_theta",
+      "length_m": 0.1,
+      "maximum_absolute_forecast_deg": 0.020307490894019852,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.024329796950377295,
+      "modal_weight": 0.16532427560169438
+    },
+    {
+      "case": "jib_theta",
+      "length_m": 0.4,
+      "maximum_absolute_forecast_deg": 0.006034947840286374,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.006323938842546896,
+      "modal_weight": 0.045697943869446686
+    },
+    {
+      "case": "jib_theta",
+      "length_m": 0.8,
+      "maximum_absolute_forecast_deg": 0.024806469921111296,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.03637040751206741,
+      "modal_weight": 0.31794907953998836
+    },
+    {
+      "case": "jib_beta",
+      "length_m": 0.1,
+      "maximum_absolute_forecast_deg": 0.030701035643419323,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.035582841990768874,
+      "modal_weight": 0.13719551542892564
+    },
+    {
+      "case": "jib_beta",
+      "length_m": 0.4,
+      "maximum_absolute_forecast_deg": 0.010233925452953204,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.010688993396554571,
+      "modal_weight": 0.042573507786809135
+    },
+    {
+      "case": "jib_beta",
+      "length_m": 0.8,
+      "maximum_absolute_forecast_deg": 0.00977585525975977,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.010381840122887615,
+      "modal_weight": 0.05836969708211005
+    },
+    {
+      "case": "simult_theta",
+      "length_m": 0.1,
+      "maximum_absolute_forecast_deg": 0.035303942130334,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.047235046725006995,
+      "modal_weight": 0.2525900876976687
+    },
+    {
+      "case": "simult_theta",
+      "length_m": 0.4,
+      "maximum_absolute_forecast_deg": 0.030098725598277115,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.03453358615290435,
+      "modal_weight": 0.128421662754369
+    },
+    {
+      "case": "simult_theta",
+      "length_m": 0.8,
+      "maximum_absolute_forecast_deg": 0.014869066788552297,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 0.21767383006239277,
+      "modal_weight": 0.9316910683094504
+    },
+    {
+      "case": "simult_beta",
+      "length_m": 0.1,
+      "maximum_absolute_forecast_deg": 0.002438979438193509,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 4.36783447646701,
+      "modal_weight": 0.9994416044263275
+    },
+    {
+      "case": "simult_beta",
+      "length_m": 0.4,
+      "maximum_absolute_forecast_deg": 0.0014488184855990782,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 1.565047198812799,
+      "modal_weight": 0.999074265308613
+    },
+    {
+      "case": "simult_beta",
+      "length_m": 0.8,
+      "maximum_absolute_forecast_deg": 0.0011719886471526463,
+      "maximum_absolute_modal_deg": 0.0,
+      "maximum_absolute_arx_deg": 1.245735074601225,
+      "modal_weight": 0.9990591991258432
+    }
+  ],
+  "timing": [
+    {
+      "case": "trolley_theta",
+      "single_packet_ms": [
+        21.43837499897927,
+        21.7219160113018,
+        21.697166986996308,
+        21.661082981154323,
+        21.94841598975472,
+        21.979999990435317,
+        21.65845801937394,
+        21.351040981244296
+      ],
+      "median_ms": 21.679124984075315,
+      "p95_ms": 21.96894559019711
+    },
+    {
+      "case": "jib_theta",
+      "single_packet_ms": [
+        22.175416990648955,
+        21.6442079981789,
+        21.40983400749974,
+        21.27304201712832,
+        21.272124984534457,
+        21.302790992194787,
+        21.214042004430667,
+        21.295167010976
+      ],
+      "median_ms": 21.298979001585394,
+      "p95_ms": 21.989493843284436
+    },
+    {
+      "case": "jib_beta",
+      "single_packet_ms": [
+        21.05729200411588,
+        20.99258397356607,
+        20.96695901127532,
+        21.011791977798566,
+        21.117208001669496,
+        20.954167004674673,
+        21.289333002641797,
+        21.273499995004386
+      ],
+      "median_ms": 21.034541990957223,
+      "p95_ms": 21.283791449968703
+    },
+    {
+      "case": "simult_theta",
+      "single_packet_ms": [
+        20.915750006679446,
+        20.83599998150021,
+        20.961083006113768,
+        20.91145800659433,
+        20.88150000781752,
+        20.93874997808598,
+        20.828959008213133,
+        20.884750003460795
+      ],
+      "median_ms": 20.898104005027562,
+      "p95_ms": 20.953266446304042
+    },
+    {
+      "case": "simult_beta",
+      "single_packet_ms": [
+        20.80666698748246,
+        20.88983400608413,
+        20.783166983164847,
+        20.79599999706261,
+        20.82625002367422,
+        20.80887500778772,
+        20.801959006348625,
+        20.79916698858142
+      ],
+      "median_ms": 20.80431299691554,
+      "p95_ms": 20.86757961224066
+    }
+  ],
+  "zero_response_is_exact": false,
+  "scope": "Fixed synthetic inputs, three positive cable lengths, five cases; pure modal equilibrium and ARX/blend bias explicitly compared. Timing first2warmups discarded; not a hardware or real-time guarantee. No model or threshold changed."
+}

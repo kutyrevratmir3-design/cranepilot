@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "metrics_sha256": "e00d7a11f19f7323534b3ee5dbe8be1df1dda8cd445a334b73472ccfadd5ddb6",
+  "frozen_provenance_sha256": "ad82088d471ce0e8ebc47e5879e3cbef6e10322bb05d22bd0e5435c4a392feb8",
+  "development_sha256": "bfcb43f8c19f9bf14c3ff6341eb2955270a424188e846072b121ab35ce9f7fe0",
+  "parent_report_sha256": "864ff95301381e3277c602536d822e17a9b19775627a3d7645c09f88b52ccc78",
+  "parent_summary_sha256": "4d04a323d575b704318266e75f527caaa33490a0752ea86718cc3e0f0605c018",
+  "source_sha256": "42b806ab966d1aa98fe0106c2b238b9d1411177d98483b656bec18e08d23cbb6",
+  "document_sha256": "3525def7dfbb39a106d581f51b2a131f9cdcd435435aea19214ab647671470d9",
+  "methods": [
+    "selected",
+    "dense_matched_arx",
+    "matched_arx",
+    "parent_quad",
+    "bank_simplex_1"
+  ],
+  "ages_ms": [
+    0,
+    20,
+    30,
+    50,
+    70,
+    100,
+    150,
+    200,
+    250
+  ],
+  "noises": [
+    0,
+    1
+  ],
+  "horizons_s": [
+    0.1,
+    0.2,
+    0.35,
+    0.5,
+    0.75,
+    1.0,
+    1.5
+  ],
+  "physical_scenarios": [
+    9,
+    13,
+    21,
+    22,
+    23,
+    32,
+    33
+  ],
+  "axis_record_pairs": 12,
+  "axis_cells": 7560,
+  "record_horizon_cells": 4410,
+  "paired_record_horizon_rows": 882,
+  "recombined_cells": 90,
+  "recombination_max_abs_difference_deg": 4.440892098500626e-16,
+  "paired_coverage_complete": true,
+  "common_window_counts_verified": true,
+  "cell_counts": [
+    {
+      "noise_quantum": 0,
+      "cells": 63,
+      "better_than_dense": 62,
+      "worse_than_dense": 1,
+      "better_than_bank": 47,
+      "worse_than_bank": 9,
+      "ties_with_bank": 7
+    },
+    {
+      "noise_quantum": 1,
+      "cells": 63,
+      "better_than_dense": 62,
+      "worse_than_dense": 1,
+      "better_than_bank": 47,
+      "worse_than_bank": 9,
+      "ties_with_bank": 7
+    }
+  ],
+  "counterexample": [
+    {
+      "noise_quantum": 0,
+      "selected": 0.699541642704436,
+      "dense_matched_arx": 0.6525287087764994,
+      "selected_minus_dense_matched_arx": 0.047012933927936595,
+      "wins_vs_dense_matched_arx": 1,
+      "losses_vs_dense_matched_arx": 6
+    },
+    {
+      "noise_quantum": 1,
+      "selected": 0.7019481997938299,
+      "dense_matched_arx": 0.6602146391626754,
+      "selected_minus_dense_matched_arx": 0.04173356063115452,
+      "wins_vs_dense_matched_arx": 1,
+      "losses_vs_dense_matched_arx": 6
+    }
+  ],
+  "exploratory_posthoc_diagnostic": true,
+  "fitting_performed": false,
+  "inference_performed": false,
+  "primary_unchanged": true,
+  "selection_changed": false,
+  "independent_confirmation": false,
+  "closed_loop_control_evaluated": false,
+  "final_goal_achieved": false,
+  "result_hashes": {
+    "paired_record_horizons.csv": "fcdb9d8b339c5682cfbfd1d1098bc1c535754676f278660333c3f3e8a81ce109",
+    "dense_horizons.png": "74bdcb1572c3b3a624d16532ad6a643b6761f54d30b1a34be86f3f638b05a678",
+    "descriptive_cell_counts.csv": "0636f059aa087e984e8b3d7a92cc781c4036566636cd100c6025b02ae9c22c5f",
+    "record_horizon_metrics.csv": "c225f46f8dcf82ef8c7b3e7354bccc6c4f585f06ddd5e3d83a025494d483a99f",
+    "horizon_summary.csv": "3e219e42e67e9f9668657a8a77ea533b5124d609d6b06974ca2b4f1f8f88b9b1",
+    "paired_horizon_summary.csv": "ace8188ba66b9f7157a649c06031ce755d5e6ef506ba5bd89b100412c199acb7",
+    "recombined_age_summary.csv": "a19fb41b9a596049e4b3196b394b425dd1f409ea83760876c00559966d843e55",
+    "verification.json": "3241d3e8a287d9d69ea75e8a775f6ec922019936a6180d4801b85e1e4818f58f",
+    "axis_horizon_metrics.csv": "8aa8a014c451c9d247c6c59db3103b3687fdde3ab6cca143b225233e1346093f"
+  }
+}

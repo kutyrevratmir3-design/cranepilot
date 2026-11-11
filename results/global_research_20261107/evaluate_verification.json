@@ -1,0 +1,546 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 1,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 1,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 1,
+      "model": "combined",
+      "max_deg": 3.1805546814635168e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 1,
+      "model": "physical",
+      "max_deg": 2.2263882770244617e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "primary",
+      "scenario": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 2,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 2,
+      "model": "combined",
+      "max_deg": 3.1805546814635168e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 2,
+      "model": "physical",
+      "max_deg": 2.8624992133171654e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "primary",
+      "scenario": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 7,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 7,
+      "model": "combined",
+      "max_deg": 7.156248033292914e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 7,
+      "model": "physical",
+      "max_deg": 1.5902773407317584e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "primary",
+      "scenario": 7,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 8,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 8,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 8,
+      "model": "combined",
+      "max_deg": 6.3611093629270335e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 8,
+      "model": "physical",
+      "max_deg": 2.2263882770244617e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "primary",
+      "scenario": 8,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 10,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 10,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 10,
+      "model": "combined",
+      "max_deg": 3.1805546814635168e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 10,
+      "model": "physical",
+      "max_deg": 1.5902773407317584e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "primary",
+      "scenario": 10,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 11,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 11,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 11,
+      "model": "combined",
+      "max_deg": 2.3854160110976376e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 11,
+      "model": "physical",
+      "max_deg": 9.54166404439055e-15
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "primary",
+      "scenario": 11,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 12,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 12,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 12,
+      "model": "combined",
+      "max_deg": 3.1805546814635168e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "primary",
+      "scenario": 12,
+      "model": "physical",
+      "max_deg": 1.4710065401768764e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "primary",
+      "scenario": 12,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "simulation_convergence",
+      "fold": "primary",
+      "max_deg": 1.4539245761214064e-09
+    },
+    {
+      "kind": "future_gain_invariance",
+      "fold": "primary",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 1,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 1,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 1,
+      "model": "combined",
+      "max_deg": 1.5902773407317584e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 1,
+      "model": "physical",
+      "max_deg": 1.90833280887811e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "short_transfer",
+      "scenario": 1,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 2,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 2,
+      "model": "combined",
+      "max_deg": 3.1805546814635168e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 2,
+      "model": "physical",
+      "max_deg": 2.8624992133171654e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "short_transfer",
+      "scenario": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 3,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 3,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 3,
+      "model": "combined",
+      "max_deg": 3.1805546814635168e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 3,
+      "model": "physical",
+      "max_deg": 3.180554681463517e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "short_transfer",
+      "scenario": 3,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 7,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 7,
+      "model": "combined",
+      "max_deg": 6.3611093629270335e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "short_transfer",
+      "scenario": 7,
+      "model": "physical",
+      "max_deg": 1.2722218725854067e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "short_transfer",
+      "scenario": 7,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "simulation_convergence",
+      "fold": "short_transfer",
+      "max_deg": 1.486800379586354e-09
+    },
+    {
+      "kind": "future_gain_invariance",
+      "fold": "short_transfer",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 2,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 2,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 2,
+      "model": "combined",
+      "max_deg": 3.1805546814635168e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 2,
+      "model": "physical",
+      "max_deg": 3.260068548500105e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "long_transfer",
+      "scenario": 2,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 6,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 6,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 6,
+      "model": "combined",
+      "max_deg": 9.54166404439055e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 6,
+      "model": "physical",
+      "max_deg": 1.90833280887811e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "long_transfer",
+      "scenario": 6,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 7,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 7,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 7,
+      "model": "combined",
+      "max_deg": 6.3611093629270335e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 7,
+      "model": "physical",
+      "max_deg": 1.1131941385122309e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "long_transfer",
+      "scenario": 7,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 8,
+      "model": "incumbent",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 8,
+      "model": "soft_symmetry",
+      "max_deg": 0.0
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 8,
+      "model": "combined",
+      "max_deg": 9.54166404439055e-15
+    },
+    {
+      "kind": "parent_replay",
+      "fold": "long_transfer",
+      "scenario": 8,
+      "model": "physical",
+      "max_deg": 2.2263882770244617e-14
+    },
+    {
+      "kind": "history_only_target_invariance",
+      "fold": "long_transfer",
+      "scenario": 8,
+      "max_deg": 0.0
+    },
+    {
+      "kind": "simulation_convergence",
+      "fold": "long_transfer",
+      "max_deg": 1.482549568254578e-09
+    },
+    {
+      "kind": "future_gain_invariance",
+      "fold": "long_transfer",
+      "max_deg": 0.0
+    }
+  ],
+  "tolerance_deg": 5e-05
+}

@@ -1,0 +1,60 @@
+{
+  "provenance_sha256": "105d961f6b509a169e7d1f6bfe2b5d3a69ad2b838a4514a21718abffe1ff7789",
+  "report_source_sha256": "2e350e5c0cca4d26b6fda8c6d038ebae4d98707efe9cc8eb6014d31bce5f3f5b",
+  "document": "docs/SCENARIO_CONTROL_2026_11_07_RU.md",
+  "document_sha256": "932eaf0405d2bb138e0b78f04a36bfd98f03c825ab20545c5e13dc78fa89c991",
+  "verification_sha256": "192b976d52cd57798a2b880af5b45e343d0d5d0828d92b16c8271725a952937f",
+  "aggregation_helper_sha256": "dce7a33a88806399c5d01f6e26658db8693b70db974a5b2b66202074bc8bb020",
+  "runtime_batch1_sha256": "a648d776320baf51c618db080c81a731fa52c7ba3157ac8f31e2c8c1ac7cb473",
+  "acceptance": {
+    "frequency": {
+      "cost_improved": false,
+      "sway_improved": false,
+      "tracking_improved": false,
+      "final_error_within_1percent": false,
+      "no_additional_raw_violations": false,
+      "majority_cost_wins": false,
+      "passed": false
+    },
+    "joint": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": false,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": false,
+      "passed": false
+    },
+    "spread": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": false,
+      "final_error_within_1percent": true,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": false,
+      "passed": false
+    },
+    "hybrid": {
+      "cost_improved": false,
+      "sway_improved": true,
+      "tracking_improved": false,
+      "final_error_within_1percent": false,
+      "no_additional_raw_violations": false,
+      "majority_cost_wins": false,
+      "passed": false
+    },
+    "joint_hybrid": {
+      "cost_improved": true,
+      "sway_improved": true,
+      "tracking_improved": false,
+      "final_error_within_1percent": false,
+      "no_additional_raw_violations": true,
+      "majority_cost_wins": false,
+      "passed": false
+    }
+  },
+  "evaluation_episodes": 576,
+  "development_episodes": 36,
+  "neural_training": false,
+  "native_controller_evaluated": false
+}

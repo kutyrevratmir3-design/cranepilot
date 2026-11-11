@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "provenance_sha256": "3a313ee829fca335a52ecd23fea568b85b08ade000ddac83cfe10cf882a14621",
+  "verifier_sha256": "f6c6318d01a12a875a9b2b1a81f0953e44a4681619e113a977c60c4f18a8baf2",
+  "checks": [
+    {
+      "stage": "development",
+      "method": "physical",
+      "episodes": 6,
+      "decisions": 720,
+      "plant_replay_max_state_difference": 0.0,
+      "measurement_replay_max_difference": 0.0,
+      "rk_halfstep_max_state_difference": 1.0011306228463468e-08,
+      "forecast_replay_max_deg": 0.0,
+      "cost_replay_max_difference": 0.0,
+      "initial_estimates_exact": true,
+      "paired_noise_exact": true,
+      "paired_disturbances_exact": true
+    },
+    {
+      "stage": "development",
+      "method": "retained",
+      "episodes": 6,
+      "decisions": 720,
+      "plant_replay_max_state_difference": 0.0,
+      "measurement_replay_max_difference": 0.0,
+      "rk_halfstep_max_state_difference": 1.3331037662656087e-08,
+      "forecast_replay_max_deg": 1.280660399061162e-06,
+      "cost_replay_max_difference": 3.814697265625e-06,
+      "initial_estimates_exact": true,
+      "paired_noise_exact": true,
+      "paired_disturbances_exact": true
+    },
+    {
+      "stage": "development",
+      "method": "candidate",
+      "episodes": 6,
+      "decisions": 720,
+      "plant_replay_max_state_difference": 0.0,
+      "measurement_replay_max_difference": 0.0,
+      "rk_halfstep_max_state_difference": 1.3810471821695813e-08,
+      "forecast_replay_max_deg": 1.707547198748216e-06,
+      "cost_replay_max_difference": 1.9073486328125e-06,
+      "initial_estimates_exact": true,
+      "paired_noise_exact": true,
+      "paired_disturbances_exact": true
+    },
+    {
+      "stage": "evaluate",
+      "method": "physical",
+      "episodes": 96,
+      "decisions": 11520,
+      "plant_replay_max_state_difference": 0.0,
+      "measurement_replay_max_difference": 0.0,
+      "rk_halfstep_max_state_difference": 8.72427318165947e-08,
+      "forecast_replay_max_deg": 0.0,
+      "cost_replay_max_difference": 0.0,
+      "initial_estimates_exact": true,
+      "paired_noise_exact": true,
+      "paired_disturbances_exact": true
+    },
+    {
+      "stage": "evaluate",
+      "method": "retained",
+      "episodes": 96,
+      "decisions": 11520,
+      "plant_replay_max_state_difference": 0.0,
+      "measurement_replay_max_difference": 0.0,
+      "rk_halfstep_max_state_difference": 8.744211149602776e-08,
+      "forecast_replay_max_deg": 5.122641596244648e-06,
+      "cost_replay_max_difference": 0.00018310546875,
+      "initial_estimates_exact": true,
+      "paired_noise_exact": true,
+      "paired_disturbances_exact": true
+    },
+    {
+      "stage": "evaluate",
+      "method": "candidate",
+      "episodes": 96,
+      "decisions": 11520,
+      "plant_replay_max_state_difference": 0.0,
+      "measurement_replay_max_difference": 0.0,
+      "rk_halfstep_max_state_difference": 8.097056025668792e-08,
+      "forecast_replay_max_deg": 3.415094397496432e-06,
+      "cost_replay_max_difference": 4.57763671875e-05,
+      "initial_estimates_exact": true,
+      "paired_noise_exact": true,
+      "paired_disturbances_exact": true
+    }
+  ],
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "episodes": 306,
+  "decisions": 36720,
+  "model_weights_trained": false,
+  "optimizer_reexecuted": false,
+  "plant_reintegrated": true,
+  "all_chosen_forecasts_replayed": true
+}

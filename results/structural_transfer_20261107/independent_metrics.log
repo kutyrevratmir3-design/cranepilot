@@ -1,0 +1,7 @@
+     family  cost_change_percent  cost_wins  cases  tracking_change_percent
+    matched             5.000067          4     16                 6.081853
+      delay           -49.696420          4     16                 9.548285
+    two_lag            21.238445          0     16                 7.267335
+   friction            24.729015          1     16                 2.962666
+gain_change             6.338588          4     16                 7.062096
+   combined           -42.103398         12     16                -3.329915

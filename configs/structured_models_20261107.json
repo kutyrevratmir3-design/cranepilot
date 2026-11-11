@@ -1,0 +1,136 @@
+{
+  "experiment": "structured_models_20261107",
+  "source_run": "artifacts/runs/temporal_20261106",
+  "broad_run": "artifacts/runs/broad_search_20261107",
+  "parent_run": "artifacts/runs/finetune_campaign_20261107",
+  "folds": [
+    "primary",
+    "short_transfer",
+    "long_transfer"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tau_bins": 0.5,
+  "train_stride": 25,
+  "evaluation_stride": 10,
+  "active_threshold": 0.005,
+  "replay_tolerance_deg": 5e-05,
+  "training": {
+    "epochs": 100,
+    "patience": 20,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "smooth_l1_beta": 0.1,
+    "gradient_clip": 2.0
+  },
+  "variants": {
+    "adapter_force8": {
+      "family": "adapter",
+      "correction": "force",
+      "hidden": 8,
+      "phase_space": false
+    },
+    "adapter_force16": {
+      "family": "adapter",
+      "correction": "force",
+      "hidden": 16,
+      "phase_space": false
+    },
+    "adapter_direct8": {
+      "family": "adapter",
+      "correction": "direct",
+      "hidden": 8,
+      "phase_space": false
+    },
+    "adapter_force8_phase": {
+      "family": "adapter",
+      "correction": "force",
+      "hidden": 8,
+      "phase_space": true
+    },
+    "latent_standalone6": {
+      "family": "latent",
+      "mode": "standalone",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "latent_standalone12": {
+      "family": "latent",
+      "mode": "standalone",
+      "latent_dim": 12,
+      "phase_space": false
+    },
+    "latent_residual6": {
+      "family": "latent",
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": false
+    },
+    "latent_residual6_phase": {
+      "family": "latent",
+      "mode": "residual",
+      "latent_dim": 6,
+      "phase_space": true
+    }
+  },
+  "selection": {
+    "all_max_ratio": 1,
+    "active_max_ratio": 1.01,
+    "quiet_max_ratio": 1.01,
+    "reference": "previous_local"
+  },
+  "acceptance": {
+    "primary_max_ratio": 1,
+    "short_transfer_max_ratio": 1.01,
+    "long_transfer_max_ratio": 1.01,
+    "load_max_ratio": 1.01,
+    "reference": "previous_local"
+  },
+  "simulation": {
+    "length_m": [
+      0.28,
+      0.61,
+      1.03
+    ],
+    "amplitude_deg": [
+      1.8,
+      6.8
+    ],
+    "phase_rad": [
+      0.45,
+      2.4
+    ],
+    "omega_ratio": [
+      0.82,
+      1.02,
+      1.18
+    ],
+    "damping_per_s": [
+      0.04,
+      0.24
+    ],
+    "drive_amplitude_m": [
+      0,
+      0.012
+    ],
+    "force_law": [
+      "effective",
+      "geometric"
+    ],
+    "future_acceleration_gain": [
+      1,
+      1.15
+    ],
+    "measurement": [
+      "exact",
+      "noisy_quantized"
+    ],
+    "noise_seed": 12112026,
+    "noise_std_bins": 0.25
+  },
+  "scope": "Eight new structured models, 72 fits. Frozen soft base for additive models; standalone stable latent dynamics distinct. Identical actor/data/history contract. Retrospective forecast experiment, not closed-loop control. APHYNITY unchanged. GitHub publication authorized subject to separately confirmed full-history scope."
+}

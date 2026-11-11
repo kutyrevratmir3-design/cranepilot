@@ -1,0 +1,10 @@
+/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/scenario_control.py:15: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:219.)
+  batch['length_m']=torch.as_tensor(length,dtype=torch.float32)
+                 median        max
+method                            
+frequency      4.826666   4.893708
+hybrid        19.356125  19.527917
+joint          4.984417   5.045750
+joint_hybrid  19.385584  19.569834
+nominal        4.863917   5.488542
+spread         5.009792   5.071625

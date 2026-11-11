@@ -1,0 +1,142 @@
+{
+  "status": "complete",
+  "config": {
+    "train": [
+      3,
+      5,
+      6
+    ],
+    "validation": [
+      4
+    ],
+    "evaluation": [
+      1,
+      2,
+      7,
+      8
+    ],
+    "load_stress": [
+      10,
+      11,
+      12
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "variants": {
+      "measurement_driven": "anchor"
+    },
+    "training": {
+      "epochs": 100,
+      "patience": 15,
+      "batch_size": 256,
+      "learning_rate": 0.001
+    },
+    "train_stride": 25,
+    "evaluation_stride": 10,
+    "phase_span_rad": 1.0,
+    "phase_points": 25,
+    "smooth_l1_beta": 0.1,
+    "selection": "average all three seeds; early stop on seven-horizon validation MAE; report every primary and stress scenario",
+    "scope": "same force-aware driven model, with initial angle anchored to current measurement plus at most half a nominal encoder bin; no true-state confidence guarantee",
+    "context": "raw 125-dimensional context with forced-observer coefficients; phase context is prepared by shared runner but is not consumed by this variant",
+    "quantization": "TRAIN records 3/6 match nominal 2pi/4096 grid; record 5 has a constant grid offset with maximum remaining mismatch 3.87e-5 bins; this does not prove physical zero calibration or a probabilistic noise model",
+    "publication": "local only; no GitHub publication"
+  },
+  "guarded_hashes": {
+    "configs\\measurement_consistent_campaign.json": "586b8f3891ac321b80a6a2cb742b9e47fb29dba0fb4ea308ed0e53f4e67a50cf",
+    "artifacts\\runs\\actuator_development\\actuator.pt": "a1858283fb517861ed3e67fd4795f469f425a582d61398849cfdf6d9fb92e499",
+    "data\\processed\\dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "data\\processed\\manifest.json": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85",
+    "scripts\\run_phase_normalized.py": "b8e32e2a0b0890994c4999b325b94e603ac9a922c9257926da1fd3a231f57554",
+    "src\\cranepilot\\__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+    "src\\cranepilot\\adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+    "src\\cranepilot\\benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+    "src\\cranepilot\\cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+    "src\\cranepilot\\control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+    "src\\cranepilot\\data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+    "src\\cranepilot\\forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+    "src\\cranepilot\\innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+    "src\\cranepilot\\metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+    "src\\cranepilot\\models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+    "src\\cranepilot\\passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+    "src\\cranepilot\\phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+    "src\\cranepilot\\physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+    "src\\cranepilot\\rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "source_sha256": {
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "84a7a7a1d58257b70ab98a2588a21a3f2cd196f4"
+  },
+  "started_utc": "2026-11-02T23:29:12.536647+00:00",
+  "calibration": {
+    "a": 0.918229758605659,
+    "b": 0.17965738544181828,
+    "damping": 0.0,
+    "evidence": [
+      {
+        "sid": 3,
+        "L_m": 0.296163868,
+        "omega_rad_s": 4.662477296953985,
+        "effective_length_m": 0.4512690483721681,
+        "tail_rms_rad": 0.25687660706753235,
+        "relative_fit_error": 0.06855882097614344,
+        "calibration_start_s": 35.0,
+        "calibration_end_s": 90.0
+      },
+      {
+        "sid": 5,
+        "L_m": 0.503289556,
+        "omega_rad_s": 3.9063586606552967,
+        "effective_length_m": 0.6428723937755333,
+        "tail_rms_rad": 0.039774216690115036,
+        "relative_fit_error": 0.11292049174564424,
+        "calibration_start_s": 35.0,
+        "calibration_end_s": 90.0
+      },
+      {
+        "sid": 6,
+        "L_m": 0.59640658,
+        "omega_rad_s": 3.6745273018519664,
+        "effective_length_m": 0.7265509086979682,
+        "tail_rms_rad": 0.1164243422052729,
+        "relative_fit_error": 0.044949612310122754,
+        "calibration_start_s": 35.0,
+        "calibration_end_s": 90.0
+      }
+    ]
+  },
+  "checkpoint_hashes": {
+    "measurement_driven_seed0.pt": "de227888a3f4b394201f30ee86852eff73bcdb0a8d538b0514e3b761660c7da4",
+    "measurement_driven_seed1.pt": "042de0c8f38322410e4a1bab8d8eb35cec00fe9637037bb715f9598c0349a4d3",
+    "measurement_driven_seed2.pt": "17e88313dbeb2f5347eb8a45e8904aefdcf8463cdb264a66b6c40e050fbb4789"
+  },
+  "finished_utc": "2026-11-02T23:31:26.570668+00:00"
+}

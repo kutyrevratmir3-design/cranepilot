@@ -1,0 +1,7 @@
+length,omega_ratio,tau,gain,damping,deadzone,force_law,angle_deg,noisy,pulse
+0.34,1.0,0.1,1.0,0.04,0.01,effective,2.0,False,False
+0.34,1.0,0.1,1.0,0.04,0.01,effective,6.0,False,False
+0.54,1.0,0.1,1.0,0.04,0.01,effective,2.0,False,False
+0.54,1.0,0.1,1.0,0.04,0.01,effective,6.0,False,False
+0.74,1.0,0.1,1.0,0.04,0.01,effective,2.0,False,False
+0.74,1.0,0.1,1.0,0.04,0.01,effective,6.0,False,False

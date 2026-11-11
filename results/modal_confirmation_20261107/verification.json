@@ -1,0 +1,134 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "packets": 726,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "packets": 160,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "packets": 538,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "packets": 726,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "packets": 726,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "packets": 538,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "packets": 726,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "packets": 726,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "packets": 583,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "packets": 126,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "packets": 583,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "packets": 126,
+      "methods": 6,
+      "maximum_replay_error": 0.0,
+      "targets_ignored": true
+    }
+  ],
+  "independently_collected_confirmation": false,
+  "provenance_sha256": "2f42746aefa7dab768021f4beb2b292effee258fe7c985beca96b1a711c51e7e",
+  "source_sha256": "a2ac183f32de91dd3536c93a5b0f26b1d8d0bef2d14f714df388f610189945f2",
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "records": 7,
+  "case_records": 12,
+  "forecasts_replayed": 37704,
+  "empty_cases": [],
+  "selection_unchanged": true,
+  "all_metrics_recomputed": true
+}

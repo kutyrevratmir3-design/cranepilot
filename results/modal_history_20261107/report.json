@@ -1,0 +1,10 @@
+{
+  "document": "docs/MODAL_DEVELOPMENT_2026_11_07_RU.md",
+  "document_sha256": "b0e2aa419c7d48b695b7230b6c139c0001f1d5e72e982c287dad40152c436199",
+  "provenance_sha256": "9d3f403ad1a732b30364e89fe8bbf88b591e62d69e93d5ec4b0519c138aefa0a",
+  "verification_sha256": "9fb27ae7934b97694f80d71526e69edca221b1d9504896bc9d14b2444433d8e9",
+  "source_sha256": "59fc3d55de2bb4e01435504699185385fc9b6fe603c93234ee61733920c44f26",
+  "development_gate_passed": true,
+  "confirmation_records_read": false,
+  "final_goal_achieved": false
+}

@@ -1,0 +1,194 @@
+{
+  "experiment": "structural_transfer_20261107",
+  "bundle": "artifacts/research_bundle_20261107",
+  "fold": "primary",
+  "methods": [
+    "nominal",
+    "force_actuator",
+    "fixed_observer",
+    "fixed_force_observer",
+    "adaptive_params",
+    "adaptive_force",
+    "adaptive_observer",
+    "adaptive_force_observer",
+    "frozen_adaptive_force_observer"
+  ],
+  "duration_s": 8,
+  "raw_dt_s": 0.01,
+  "control_dt_s": 0.05,
+  "threads": 1,
+  "solver": {
+    "qp_iterations": 200,
+    "trust_region": 0.2,
+    "command_bound": 0.8,
+    "nominal_tau_s": 0.1
+  },
+  "initial_x_m": 0.1,
+  "target_x_m": 0.3,
+  "development_lengths_m": [
+    0.35,
+    0.6,
+    0.85
+  ],
+  "noise_seed": 1407112026,
+  "angle_quantum_rad": 0.0015339807878856412,
+  "position_quantum_m": 0.0001,
+  "angular_pulse_rad_s2": 0.13,
+  "angular_pulse_interval_s": [
+    5.25,
+    5.6
+  ],
+  "plant_substeps": 2,
+  "scope": "Synthetic acceleration-command structural mismatch and target reversal. All controllers have identical causal two-second issued-command/position access, .4-second angles. No trained actuator, native xr zero, no hardware or stability guarantee. Historical adaptive controller retained separately; matched observer qualification is a new ablation.",
+  "variants": {
+    "nominal": {},
+    "force_actuator": {
+      "force": true,
+      "actuator": true
+    },
+    "adaptive_params": {
+      "adaptive": true
+    },
+    "adaptive_force": {
+      "adaptive": true,
+      "force": true
+    },
+    "adaptive_observer": {
+      "adaptive": true,
+      "observer": true
+    },
+    "adaptive_force_observer": {
+      "adaptive": true,
+      "force": true,
+      "observer": true
+    },
+    "fixed_observer": {
+      "observer": true
+    },
+    "fixed_force_observer": {
+      "observer": true,
+      "force": true
+    },
+    "frozen_adaptive_force_observer": {
+      "adaptive": true,
+      "observer": true,
+      "force": true,
+      "frozen_gate": true
+    }
+  },
+  "frequency_grid": [
+    0.85,
+    1.0,
+    1.15
+  ],
+  "actuator_grid": [
+    [
+      0.07,
+      0.8
+    ],
+    [
+      0.1,
+      1.0
+    ],
+    [
+      0.18,
+      1.2
+    ]
+  ],
+  "residual_bound_rad": 0.015,
+  "identification": {
+    "history_intervals": 40,
+    "minimum_samples": 21,
+    "update_every_ticks": 4,
+    "ema": 0.25,
+    "tau_grid": [
+      0.05,
+      0.065,
+      0.08,
+      0.1,
+      0.125,
+      0.16,
+      0.2,
+      0.25
+    ],
+    "gain_bounds": [
+      0.5,
+      1.6
+    ],
+    "gain_ridge": 1e-07,
+    "tau_penalty": 1e-09,
+    "minimum_information_m": 0.0004,
+    "maximum_fit_rmse_m": 0.001
+  },
+  "reverse_time_s": 4.0,
+  "reverse_target_x_m": 0.15,
+  "gain_switch_time_s": 3.5,
+  "friction_velocity_scale_m_s": 0.015,
+  "viscous_friction_per_s": 0.08,
+  "families": [
+    "matched",
+    "delay",
+    "two_lag",
+    "friction",
+    "gain_change",
+    "combined"
+  ],
+  "archetypes": [
+    {
+      "length": 0.28,
+      "omega_ratio": 0.91,
+      "tau": 0.075,
+      "tau2": 0.04,
+      "gain": 0.86,
+      "deadzone": 0.0,
+      "angle_deg": 2.5,
+      "damping": 0.02,
+      "delay_s": 0.04,
+      "coulomb": 0.025,
+      "switch_factor": 0.7,
+      "force_law": "geometric"
+    },
+    {
+      "length": 0.28,
+      "omega_ratio": 1.09,
+      "tau": 0.17,
+      "tau2": 0.085,
+      "gain": 1.14,
+      "deadzone": 0.02,
+      "angle_deg": 5.5,
+      "damping": 0.08,
+      "delay_s": 0.09,
+      "coulomb": 0.055,
+      "switch_factor": 1.3,
+      "force_law": "effective"
+    },
+    {
+      "length": 0.98,
+      "omega_ratio": 1.09,
+      "tau": 0.075,
+      "tau2": 0.04,
+      "gain": 1.14,
+      "deadzone": 0.02,
+      "angle_deg": 5.5,
+      "damping": 0.08,
+      "delay_s": 0.04,
+      "coulomb": 0.025,
+      "switch_factor": 1.3,
+      "force_law": "geometric"
+    },
+    {
+      "length": 0.98,
+      "omega_ratio": 0.91,
+      "tau": 0.17,
+      "tau2": 0.085,
+      "gain": 0.86,
+      "deadzone": 0.0,
+      "angle_deg": 2.5,
+      "damping": 0.02,
+      "delay_s": 0.09,
+      "coulomb": 0.055,
+      "switch_factor": 0.7,
+      "force_law": "effective"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "source_sha256": "98bbc6bcc0feac1d7b3dc9887e15fb3e5f525867c6155178bc1d10036b662051",
+  "data_sha256": "5ed020e4d31a10b7012169cbf85db631dc84a6a0e99628a1ffedaa0c6b9ca4c9",
+  "rows": 240,
+  "scope": "Late post-selection diagnostic, original VAL only, all positive TRAIN/VALages/noises and adapters; original unreceived encoder angle used only as offline reconstruction target.",
+  "used_for_selection": false,
+  "independent_confirmation": false
+}

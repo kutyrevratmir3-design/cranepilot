@@ -1,0 +1,36 @@
+OSCILLATOR [3.265577988448446, 0.05732448261272044, 0.9949534546912502]
+LSTM 0 0 val_mae_deg 0.294207
+LSTM 0 10 val_mae_deg 0.138169
+LSTM 0 20 val_mae_deg 0.109935
+LSTM 0 30 val_mae_deg 0.102542
+LSTM 0 40 val_mae_deg 0.091593
+LSTM 0 50 val_mae_deg 0.088429
+LSTM 0 60 val_mae_deg 0.080532
+LSTM 0 70 val_mae_deg 0.084617
+LSTM 0 80 val_mae_deg 0.081547
+LSTM 0 90 val_mae_deg 0.082813
+LSTM 1 0 val_mae_deg 0.29675
+LSTM 1 10 val_mae_deg 0.133163
+LSTM 1 20 val_mae_deg 0.131239
+LSTM 1 30 val_mae_deg 0.110314
+LSTM 1 40 val_mae_deg 0.099229
+LSTM 1 50 val_mae_deg 0.090528
+LSTM 1 60 val_mae_deg 0.08728
+LSTM 1 70 val_mae_deg 0.080522
+LSTM 1 80 val_mae_deg 0.082981
+LSTM 1 90 val_mae_deg 0.0745
+LSTM 2 0 val_mae_deg 0.298251
+LSTM 2 10 val_mae_deg 0.137225
+LSTM 2 20 val_mae_deg 0.111655
+LSTM 2 30 val_mae_deg 0.105539
+LSTM 2 40 val_mae_deg 0.10056
+LSTM 2 50 val_mae_deg 0.087713
+LSTM 2 60 val_mae_deg 0.092563
+LSTM 2 70 val_mae_deg 0.083593
+LSTM 2 80 val_mae_deg 0.08584
+LSTM 2 90 val_mae_deg 0.08264
+RECORD validation 13 231
+RECORD validation 14 231
+RECORD validation 15 231
+RECORD validation 16 231
+COMPLETE train

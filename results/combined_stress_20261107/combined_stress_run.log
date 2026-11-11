@@ -1,0 +1,14 @@
+REAL primary 4
+REAL primary 1
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/run_combined_stress.py", line 139, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/run_combined_stress.py", line 42, in main
+    evaluate(cfg, out, prov)
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/run_combined_stress.py", line 72, in evaluate
+    if delta > 5e-5: raise AssertionError(('parent_replay', fold, sid, name, delta))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('parent_replay', 'primary', 2, 'incumbent', 5.29339631611947e-05)

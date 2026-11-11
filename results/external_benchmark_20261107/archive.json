@@ -1,0 +1,9 @@
+{
+  "file": "evidence.zip",
+  "bytes": 3072084,
+  "files": 79,
+  "sha256": "1629d15308bc2c58d4944f89a1150d1d281da0c0b3fdc8bc66f453d9eed9775a",
+  "manifest_sha256": "f1fbcdbf632e89711f053b47a4eaf86b72b57235e1af4aff32000e384a4697ce",
+  "crc_verified": true,
+  "original_external_mat_files_included": false
+}

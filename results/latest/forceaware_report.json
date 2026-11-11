@@ -1,0 +1,50 @@
+{
+  "scope": "retrospective fixed-length trolley forecast under length extrapolation; load stress separate; no best-in-literature claim",
+  "best_neural_by_validation": "forced_driven_huber",
+  "primary_macro_mae_deg": {
+    "action_physics": 0.5548525017365976,
+    "driven": 0.5119289615111094,
+    "forced_driven_huber": 0.5004975138814781,
+    "forced_driven_mse": 0.504436374160459,
+    "forced_observer_huber": 0.5154142028957175,
+    "forced_physics": 0.5542005849024781,
+    "full_kernel": 0.5254757341458642,
+    "gp_action_residual": 0.5166849764088435,
+    "mlp_action_residual": 0.5356303082296657,
+    "observer": 0.5162628664123396,
+    "passive_m4": 0.5426714661900346,
+    "phase_kernel": 0.5475875020409704,
+    "raw_driven_huber": 0.5085962366681084,
+    "uniform_control": 0.5237568398606304
+  },
+  "worst_scenario_macro_mae_deg": {
+    "action_physics": 0.9192519066264919,
+    "driven": 0.8927501963045018,
+    "forced_driven_huber": 0.8860110761913961,
+    "forced_driven_mse": 0.8897438982892175,
+    "forced_observer_huber": 0.892297892357577,
+    "forced_physics": 0.9175543363051218,
+    "full_kernel": 0.9256215066214716,
+    "gp_action_residual": 0.9239658531084124,
+    "mlp_action_residual": 0.9089144971504189,
+    "observer": 0.8983104382729138,
+    "passive_m4": 0.9037715366549006,
+    "phase_kernel": 0.9082605216300996,
+    "raw_driven_huber": 0.8877249666147787,
+    "uniform_control": 0.8939098946837881
+  },
+  "candidate_minus_full_kernel_per_record_deg": [
+    -0.09033030893633454,
+    0.042510380287282934,
+    -0.012482521978417288,
+    -0.039610430430075505
+  ],
+  "four_record_descriptive_bootstrap_95pct": [
+    -0.07086836219685522,
+    0.021980177607943324
+  ],
+  "bootstrap_caution": "Four retrospective records only; not a reliable population confidence guarantee.",
+  "all_seeds_and_variants_retained": true,
+  "failed_initial_run": "forceaware_campaign failed before fitting due to negative-stride tensor conversion; fixed in v2, original failure retained",
+  "publication": "local only; not pushed to GitHub"
+}

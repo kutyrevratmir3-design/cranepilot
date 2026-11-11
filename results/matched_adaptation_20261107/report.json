@@ -1,0 +1,12 @@
+{
+  "document": "docs/MATCHED_ADAPTATION_2026_11_07_RU.md",
+  "document_sha256": "fb6d4dde9925e7e4f7c6be7ca80c7607cde602f1131ab44d229a0b98fa819f67",
+  "provenance_sha256": "6f00fc5330106101a1439345c846d58bcee6aec7f9658626ab28663d9f955a6e",
+  "verification_sha256": "eb39792e25db7c93ff4317a70834e8c1f2ae13ec1c9c9a950b3535863f4df89a",
+  "report_source_sha256": "9b6510cf9ff4c41e50ab50c4401b5b2ac34b89af0640c0c4482d0ec40390f542",
+  "aggregation_helper_sha256": "dce7a33a88806399c5d01f6e26658db8693b70db974a5b2b66202074bc8bb020",
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "development_gate_passed": false,
+  "selected": "structured_narx"
+}

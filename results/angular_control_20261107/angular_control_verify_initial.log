@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/verify_angular_control.py", line 82, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/verify_angular_control.py", line 59, in main
+    assert pred_error<5e-5 and cost_error<.001 and estimate_error==0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

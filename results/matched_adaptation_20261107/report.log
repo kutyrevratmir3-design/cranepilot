@@ -1,0 +1,12 @@
+        group             method  mae_deg  rmse_deg
+retrospective     adapted_neural 0.091070  0.115719
+retrospective equilibrium_neural 0.086203  0.109114
+retrospective  physics_prior_arx 0.037918  0.047381
+retrospective         strong_arx 0.037993  0.047470
+retrospective    structured_narx 0.036847  0.046213
+   validation     adapted_neural 0.081043  0.110874
+   validation equilibrium_neural 0.080502  0.109907
+   validation  physics_prior_arx 0.039367  0.049910
+   validation         strong_arx 0.039572  0.050180
+   validation    structured_narx 0.037893  0.048384
+VALIDATION_SELECTED structured_narx CHANGE% -4.242657362108925 DEVELOPMENT_GATE False FINAL_GOAL False

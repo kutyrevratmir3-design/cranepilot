@@ -1,0 +1,15 @@
+{
+  "document": "docs/EXTERNAL_BENCHMARK_2026_11_07_RU.md",
+  "document_sha256": "b8b8d1a2c1e3f9562b7bad19795e6508a3307da3a7fdb85d0bf4a089e85fc568",
+  "report_source_sha256": "94f910f450f89a7dc99bddbd147afa2d71f4fe70aa1ba6d665a680154c6d56db",
+  "provenance_sha256": "d7670216c72b6ba9b04caea1a725bcb104393d25dc66053e77f5b132a5cc35b2",
+  "verification_sha256": "04fc470cc62ff8b88509365644354ee1f72e4292681d0ac19320843b1c09e6a5",
+  "aggregation_helper_sha256": "dce7a33a88806399c5d01f6e26658db8693b70db974a5b2b66202074bc8bb020",
+  "posthoc_diagnostics_sha256": "113ea8504a11956a82ff357a9988466579534f55e81ae56ee021317e2a4df9bc",
+  "external_test_records": 4,
+  "external_real_predictions_verified": true,
+  "external_full_controller_validated": false,
+  "exact_paper_reproduction": false,
+  "frozen_retained_change_vs_geometric_percent": 236.175344894913,
+  "lstm_change_vs_geometric_percent": -69.36603973080328
+}

@@ -1,0 +1,3 @@
+LOCK primary gate_0.5 validation {'all': 0.1914119693041749, 'active': 0.8716682682127865, 'quiet': 0.1545217144826667} development 0.10950088790569402
+LOCK short_transfer gate_1 validation {'all': 0.20869450381421484, 'active': 0.9931744506993813, 'quiet': 0.1785221981647854} development 0.0998099168240989
+LOCK long_transfer gate_0.5 validation {'all': 0.20732983105698227, 'active': 1.0388602514354417, 'quiet': 0.16223599047246715} development 0.16064796338912446

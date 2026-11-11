@@ -1,0 +1,1355 @@
+{
+  "passed": true,
+  "source_sha256": "da922cbbaa7e5a15113610371f333536f8b0085e794e919d85d97efa4ce8d4a1",
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 0,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 0,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 2,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 2,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 5,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 5,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 10,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 10,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 3,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 3,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 7,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 7,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 15,
+      "noise": 0,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "age_raw": 15,
+      "noise": 1,
+      "windows": 94,
+      "maximum_error_rad": 0.0
+    }
+  ],
+  "independent_confirmation": false,
+  "validation_choices_reproduced": 20,
+  "forecast_comparisons": 15792,
+  "all_metrics_recomputed": true,
+  "primary_selection_unchanged": true
+}

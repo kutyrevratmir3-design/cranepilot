@@ -1,0 +1,505 @@
+{
+  "source_provenance_sha256": "53173528b76b765d13498c707d5f24f2f5ae6170b576a8bdf4e732b32583d196",
+  "report_source_sha256": "76c47ac2c26175c770e3febfc22fde9529461d7e119da203921aee15a6ffdf90",
+  "aggregation_helper_sha256": "500d8a02b47c5480df70fda4a571811f3e1c19f76ba4d39a3750bc625ff77dcc",
+  "document": "docs/STRUCTURED_MODELS_2026_11_07_RU.md",
+  "document_sha256": "9d9985168484769ea5991f1c7eb3bfdd03b76a0efb909cc098517d7e40462ba7",
+  "verified_hash_counts": {
+    "guarded_hashes": 117,
+    "checkpoint_hashes": 72,
+    "result_hashes": 108,
+    "source_run_checkpoints": 37,
+    "broad_run_checkpoints": 82,
+    "parent_run_checkpoints": 90,
+    "train_checks": 87,
+    "evaluate_checks": 81
+  },
+  "replay_verification_sha256": "9e9682b46843dccce38c19e2b065485ff6f2013672a86b7029d10f4c2cd0fdd5",
+  "unit_tests": {
+    "tests": 142,
+    "seconds": 5.644,
+    "passed": true,
+    "sha256": "9789fe5d6d0f2ad4b30f01505377208e9c023d17526d9b7b909fff415b5d6859"
+  },
+  "new_fits": 72,
+  "methods": [
+    "incumbent",
+    "soft_symmetry",
+    "physical",
+    "previous_local",
+    "adapter_force8",
+    "adapter_force16",
+    "adapter_direct8",
+    "adapter_force8_phase",
+    "latent_standalone6",
+    "latent_standalone12",
+    "latent_residual6",
+    "latent_residual6_phase"
+  ],
+  "selection": {
+    "folds": {
+      "primary": {
+        "model": "adapter_direct8",
+        "eligible": [
+          "previous_local",
+          "adapter_direct8",
+          "latent_standalone12",
+          "latent_residual6_phase"
+        ],
+        "validation": {
+          "incumbent": {
+            "all": 0.19202698645588978,
+            "active": 0.8717016023057481,
+            "quiet": 0.1551682762688042
+          },
+          "soft_symmetry": {
+            "all": 0.19114356524314544,
+            "active": 0.8631451684886422,
+            "quiet": 0.154700962030266
+          },
+          "physical": {
+            "all": 0.25128415303288104,
+            "active": 0.9839102234024051,
+            "quiet": 0.21155388891305874
+          },
+          "previous_local": {
+            "all": 0.18917946258765608,
+            "active": 0.8581336627743381,
+            "quiet": 0.1529021198443436
+          },
+          "adapter_force8": {
+            "all": 0.18975988376711952,
+            "active": 0.8617301071747027,
+            "quiet": 0.15331898228080806
+          },
+          "adapter_force16": {
+            "all": 0.1896277951947372,
+            "active": 0.86236113283871,
+            "quiet": 0.15314551007304666
+          },
+          "adapter_direct8": {
+            "all": 0.1762603378507156,
+            "active": 0.768244993497806,
+            "quiet": 0.14415704849892114
+          },
+          "adapter_force8_phase": {
+            "all": 0.18946177899012243,
+            "active": 0.8599350882151676,
+            "quiet": 0.15310205506251698
+          },
+          "latent_standalone6": {
+            "all": 0.19383806555591226,
+            "active": 0.8389469714448907,
+            "quiet": 0.15885385157060977
+          },
+          "latent_standalone12": {
+            "all": 0.18575959301131306,
+            "active": 0.7835731777862458,
+            "quiet": 0.15334020121223862
+          },
+          "latent_residual6": {
+            "all": 0.1905152719894566,
+            "active": 0.7898601502063454,
+            "quiet": 0.15801283824667522
+          },
+          "latent_residual6_phase": {
+            "all": 0.18718648177285513,
+            "active": 0.8278218528401161,
+            "quiet": 0.15244486728981496
+          }
+        }
+      },
+      "short_transfer": {
+        "model": "previous_local",
+        "eligible": [
+          "previous_local"
+        ],
+        "validation": {
+          "incumbent": {
+            "all": 0.21748212846410728,
+            "active": 0.9848234859212797,
+            "quiet": 0.18796899933113914
+          },
+          "soft_symmetry": {
+            "all": 0.2177110773407505,
+            "active": 0.9880258350246649,
+            "quiet": 0.1880835866605999
+          },
+          "physical": {
+            "all": 0.23156679281950215,
+            "active": 1.0825258685949644,
+            "quiet": 0.19883759759736896
+          },
+          "previous_local": {
+            "all": 0.18762217229513656,
+            "active": 0.870784564584743,
+            "quiet": 0.16134669566861326
+          },
+          "adapter_force8": {
+            "all": 0.21772557271924398,
+            "active": 0.9874755520232895,
+            "quiet": 0.188119804284473
+          },
+          "adapter_force16": {
+            "all": 0.21776855968389205,
+            "active": 0.9873634738186099,
+            "quiet": 0.18816875529409519
+          },
+          "adapter_direct8": {
+            "all": 0.21165707214823218,
+            "active": 0.9574013888325882,
+            "quiet": 0.18297459842960312
+          },
+          "adapter_force8_phase": {
+            "all": 0.21773908536816305,
+            "active": 0.9859527706400312,
+            "quiet": 0.1881924051653989
+          },
+          "latent_standalone6": {
+            "all": 0.19491172004323845,
+            "active": 0.9372649340938479,
+            "quiet": 0.16635967334898422
+          },
+          "latent_standalone12": {
+            "all": 0.19888008002180596,
+            "active": 0.9206500200678108,
+            "quiet": 0.17111969771234425
+          },
+          "latent_residual6": {
+            "all": 0.20919919806269446,
+            "active": 0.974578872428975,
+            "quiet": 0.17976151827937592
+          },
+          "latent_residual6_phase": {
+            "all": 0.2106549709044261,
+            "active": 0.9846922768584663,
+            "quiet": 0.18088430529080915
+          }
+        }
+      },
+      "long_transfer": {
+        "model": "latent_residual6",
+        "eligible": [
+          "incumbent",
+          "previous_local",
+          "adapter_force16",
+          "adapter_direct8",
+          "latent_residual6",
+          "latent_residual6_phase"
+        ],
+        "validation": {
+          "incumbent": {
+            "all": 0.20616429981002884,
+            "active": 1.0409560922384782,
+            "quiet": 0.1608935952314795
+          },
+          "soft_symmetry": {
+            "all": 0.2075056635073961,
+            "active": 1.0116880356115863,
+            "quiet": 0.16389490580109517
+          },
+          "physical": {
+            "all": 0.28998912407021,
+            "active": 1.1171212864106632,
+            "quiet": 0.2451338007328752
+          },
+          "previous_local": {
+            "all": 0.20616429981002884,
+            "active": 1.0409560922384782,
+            "quiet": 0.1608935952314795
+          },
+          "adapter_force8": {
+            "all": 0.20659871518464357,
+            "active": 1.010994926995831,
+            "quiet": 0.16297636096494794
+          },
+          "adapter_force16": {
+            "all": 0.20616376377090884,
+            "active": 1.0126485894782529,
+            "quiet": 0.1624281441555431
+          },
+          "adapter_direct8": {
+            "all": 0.20103781994254555,
+            "active": 0.9470383092443037,
+            "quiet": 0.16058226195438077
+          },
+          "adapter_force8_phase": {
+            "all": 0.2064713379286989,
+            "active": 1.0128461239327788,
+            "quiet": 0.16274168575928025
+          },
+          "latent_standalone6": {
+            "all": 0.20551283398033052,
+            "active": 0.91269999067748,
+            "quiet": 0.1671621204935003
+          },
+          "latent_standalone12": {
+            "all": 0.20080524607042397,
+            "active": 0.822961514592385,
+            "quiet": 0.1670657521158707
+          },
+          "latent_residual6": {
+            "all": 0.19658529407475853,
+            "active": 0.862662647121755,
+            "quiet": 0.16046396256461773
+          },
+          "latent_residual6_phase": {
+            "all": 0.2008031867067331,
+            "active": 0.9492473091999393,
+            "quiet": 0.16021511064961785
+          }
+        }
+      }
+    },
+    "common": {
+      "model": "previous_local",
+      "eligible": [
+        "previous_local"
+      ]
+    },
+    "uses_evaluation_this_stage": false,
+    "uses_simulation": false,
+    "real_records_reused": true
+  },
+  "acceptance": {
+    "rules": {
+      "selected": {
+        "passed": false,
+        "cells": [
+          {
+            "rule": "selected",
+            "resolved_model": "adapter_direct8",
+            "scope": "evaluation_extrapolation",
+            "fold": "primary",
+            "regime": "all",
+            "mae_deg": 0.4736207372176916,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.49059764252306687,
+            "ratio": 0.9653954608952752,
+            "maximum_ratio": 1,
+            "passed": true
+          },
+          {
+            "rule": "selected",
+            "resolved_model": "adapter_direct8",
+            "scope": "evaluation_extrapolation",
+            "fold": "primary",
+            "regime": "active",
+            "mae_deg": 0.9546517987572385,
+            "reference": "previous_local",
+            "reference_mae_deg": 1.0368376628782192,
+            "ratio": 0.9207341061542498,
+            "maximum_ratio": 1,
+            "passed": true
+          },
+          {
+            "rule": "selected",
+            "resolved_model": "previous_local",
+            "scope": "evaluation_extrapolation",
+            "fold": "short_transfer",
+            "regime": "all",
+            "mae_deg": 0.3835976651351221,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.3835976651351221,
+            "ratio": 1.0,
+            "maximum_ratio": 1.01,
+            "passed": true
+          },
+          {
+            "rule": "selected",
+            "resolved_model": "previous_local",
+            "scope": "evaluation_extrapolation",
+            "fold": "short_transfer",
+            "regime": "active",
+            "mae_deg": 1.6439684208282486,
+            "reference": "previous_local",
+            "reference_mae_deg": 1.6439684208282486,
+            "ratio": 1.0,
+            "maximum_ratio": 1.01,
+            "passed": true
+          },
+          {
+            "rule": "selected",
+            "resolved_model": "latent_residual6",
+            "scope": "evaluation_extrapolation",
+            "fold": "long_transfer",
+            "regime": "all",
+            "mae_deg": 0.5011572552200797,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.512640577910214,
+            "ratio": 0.9775996610784378,
+            "maximum_ratio": 1.01,
+            "passed": true
+          },
+          {
+            "rule": "selected",
+            "resolved_model": "latent_residual6",
+            "scope": "evaluation_extrapolation",
+            "fold": "long_transfer",
+            "regime": "active",
+            "mae_deg": 0.9013861638756983,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.9318530448861883,
+            "ratio": 0.9673050582624741,
+            "maximum_ratio": 1.01,
+            "passed": true
+          },
+          {
+            "rule": "selected",
+            "resolved_model": "adapter_direct8",
+            "scope": "load_stress",
+            "fold": "primary",
+            "regime": "all",
+            "mae_deg": 0.5596974106813855,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.5486246367277247,
+            "ratio": 1.020182786576455,
+            "maximum_ratio": 1.01,
+            "passed": false
+          },
+          {
+            "rule": "selected",
+            "resolved_model": "adapter_direct8",
+            "scope": "load_stress",
+            "fold": "primary",
+            "regime": "active",
+            "mae_deg": 1.0513915018786573,
+            "reference": "previous_local",
+            "reference_mae_deg": 1.2768437254707166,
+            "ratio": 0.823430057183431,
+            "maximum_ratio": 1.01,
+            "passed": true
+          }
+        ]
+      },
+      "common": {
+        "passed": true,
+        "cells": [
+          {
+            "rule": "common",
+            "resolved_model": "previous_local",
+            "scope": "evaluation_extrapolation",
+            "fold": "primary",
+            "regime": "all",
+            "mae_deg": 0.49059764252306687,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.49059764252306687,
+            "ratio": 1.0,
+            "maximum_ratio": 1,
+            "passed": true
+          },
+          {
+            "rule": "common",
+            "resolved_model": "previous_local",
+            "scope": "evaluation_extrapolation",
+            "fold": "primary",
+            "regime": "active",
+            "mae_deg": 1.0368376628782192,
+            "reference": "previous_local",
+            "reference_mae_deg": 1.0368376628782192,
+            "ratio": 1.0,
+            "maximum_ratio": 1,
+            "passed": true
+          },
+          {
+            "rule": "common",
+            "resolved_model": "previous_local",
+            "scope": "evaluation_extrapolation",
+            "fold": "short_transfer",
+            "regime": "all",
+            "mae_deg": 0.3835976651351221,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.3835976651351221,
+            "ratio": 1.0,
+            "maximum_ratio": 1.01,
+            "passed": true
+          },
+          {
+            "rule": "common",
+            "resolved_model": "previous_local",
+            "scope": "evaluation_extrapolation",
+            "fold": "short_transfer",
+            "regime": "active",
+            "mae_deg": 1.6439684208282486,
+            "reference": "previous_local",
+            "reference_mae_deg": 1.6439684208282486,
+            "ratio": 1.0,
+            "maximum_ratio": 1.01,
+            "passed": true
+          },
+          {
+            "rule": "common",
+            "resolved_model": "previous_local",
+            "scope": "evaluation_extrapolation",
+            "fold": "long_transfer",
+            "regime": "all",
+            "mae_deg": 0.512640577910214,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.512640577910214,
+            "ratio": 1.0,
+            "maximum_ratio": 1.01,
+            "passed": true
+          },
+          {
+            "rule": "common",
+            "resolved_model": "previous_local",
+            "scope": "evaluation_extrapolation",
+            "fold": "long_transfer",
+            "regime": "active",
+            "mae_deg": 0.9318530448861883,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.9318530448861883,
+            "ratio": 1.0,
+            "maximum_ratio": 1.01,
+            "passed": true
+          },
+          {
+            "rule": "common",
+            "resolved_model": "previous_local",
+            "scope": "load_stress",
+            "fold": "primary",
+            "regime": "all",
+            "mae_deg": 0.5486246367277247,
+            "reference": "previous_local",
+            "reference_mae_deg": 0.5486246367277247,
+            "ratio": 1.0,
+            "maximum_ratio": 1.01,
+            "passed": true
+          },
+          {
+            "rule": "common",
+            "resolved_model": "previous_local",
+            "scope": "load_stress",
+            "fold": "primary",
+            "regime": "active",
+            "mae_deg": 1.2768437254707166,
+            "reference": "previous_local",
+            "reference_mae_deg": 1.2768437254707166,
+            "ratio": 1.0,
+            "maximum_ratio": 1.01,
+            "passed": true
+          }
+        ]
+      }
+    },
+    "common_model": "previous_local",
+    "operational_thresholds_not_statistical_bounds": true
+  },
+  "epoch_minus_one_count": 9,
+  "exact_soft_fallback_count": 9,
+  "fit_seconds": 218.23873070889385,
+  "epochs_executed": 4472,
+  "optimizer_steps": 22360,
+  "backward_passes": 22360,
+  "simulation_cases_per_fold": {
+    "long_transfer": 1152,
+    "primary": 1152,
+    "short_transfer": 1152
+  },
+  "seed_note": "Descriptive variation of three trained seed models; frozen-base seeds for additive models and initialization seeds for standalone latent models. Not confidence intervals or independent hardware repetitions. Mean seed MAE is not ensemble MAE.",
+  "risk_quantile_aggregation": "Mean of record-wise packet MAE p95; not pooled p95",
+  "real_records_retrospective": true,
+  "closed_loop_control_evaluated": false,
+  "headline_scope": "evaluation_extrapolation",
+  "inference_latency_sha256": "c3ab449ef1b34827cd96e439a911a776bd58e5e4eef370250207e8fad4623272"
+}

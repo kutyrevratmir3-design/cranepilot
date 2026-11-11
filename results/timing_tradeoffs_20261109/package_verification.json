@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "archive": "results/timing_tradeoffs_20261109/timing_tradeoff_evidence.zip",
+  "archive_bytes": 5085744,
+  "archive_sha256": "94feb9867e7a19f1b60591d1b087db325170ec8ca60023389e93ee6d1f2876aa",
+  "manifest_sha256": "7f149d0b09d07a23e925e6f98087219a4fb0f88537521b4b803b319d5a5f4140",
+  "entries": 131,
+  "unit_tests": 319,
+  "all_crc_entry_and_live_hashes_verified": true,
+  "private_inputs_excluded": true,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

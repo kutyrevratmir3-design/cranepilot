@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "tolerance_deg": 5e-05,
+  "checks": [
+    {
+      "fold": "primary",
+      "check": "integrator_half_step",
+      "max_error_deg": 1.1961304811707411e-09
+    },
+    {
+      "fold": "short_transfer",
+      "check": "integrator_half_step",
+      "max_error_deg": 1.2345013885942535e-09
+    },
+    {
+      "fold": "long_transfer",
+      "check": "integrator_half_step",
+      "max_error_deg": 1.232575264557626e-09
+    }
+  ]
+}

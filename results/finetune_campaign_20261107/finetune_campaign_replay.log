@@ -1,0 +1,29 @@
+HASHES verified; original files main=1111 aphynity=170
+PARAMETERS verified; ninety fits, frozen tensors and epoch -1 fallbacks exact
+REPLAY primary scenario=1 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY primary scenario=2 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY primary scenario=4 packets=972 ensembles=15 seeds=30 max_deg=0
+REPLAY primary scenario=7 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY primary scenario=8 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY primary scenario=10 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY primary scenario=11 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY primary scenario=12 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY short_transfer scenario=1 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY short_transfer scenario=2 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY short_transfer scenario=3 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY short_transfer scenario=5 packets=972 ensembles=15 seeds=30 max_deg=0
+REPLAY short_transfer scenario=7 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY long_transfer scenario=2 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY long_transfer scenario=4 packets=972 ensembles=15 seeds=30 max_deg=0
+REPLAY long_transfer scenario=6 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY long_transfer scenario=7 packets=972 ensembles=17 seeds=30 max_deg=0
+REPLAY long_transfer scenario=8 packets=972 ensembles=17 seeds=30 max_deg=0
+{
+  "passed": true,
+  "real_record_files": 18,
+  "packet_count": 17496,
+  "prediction_comparisons": 840,
+  "ensemble_prediction_comparisons": 300,
+  "individual_seed_comparisons": 540,
+  "max_error_deg": 0.0
+}

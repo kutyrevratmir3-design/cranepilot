@@ -1,0 +1,17 @@
+fold,family,length,validation_mae_deg
+short_transfer,rbf,3.0,1.1390575968302739
+short_transfer,rbf,6.0,1.2243814754453086
+short_transfer,rbf,12.0,1.227103488581559
+short_transfer,rbf,24.0,0.5981667010742522
+short_transfer,matern15,3.0,0.7011031140471239
+short_transfer,matern15,6.0,0.8029631992232996
+short_transfer,matern15,12.0,0.928735014678711
+short_transfer,matern15,24.0,1.1626193065752524
+long_transfer,rbf,3.0,0.2988597704200847
+long_transfer,rbf,6.0,0.31956640751848286
+long_transfer,rbf,12.0,0.20588282171088376
+long_transfer,rbf,24.0,0.2239573052250799
+long_transfer,matern15,3.0,0.2144779605170119
+long_transfer,matern15,6.0,0.21312610605451765
+long_transfer,matern15,12.0,0.22021980090924706
+long_transfer,matern15,24.0,0.21204238109966012

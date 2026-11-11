@@ -1,0 +1,58 @@
+{
+  "scope": "Experimental settled-input residual-sway forecast with4s history. No active-control/hardware/independent-new-data success claim. Previously scored public results are retrospective; frozen simple ARX retained as reference.",
+  "cases": {
+    "trolley_theta": {
+      "variant": "two_mode",
+      "calibration_file": "trolley_theta/calibration.json",
+      "reference_file": "trolley_theta/reference_arx.npz",
+      "reference_validation_mae_deg": 0.3326174988858437
+    },
+    "jib_theta": {
+      "variant": "two_mode",
+      "calibration_file": "jib_theta/calibration.json",
+      "reference_file": "jib_theta/reference_arx.npz",
+      "reference_validation_mae_deg": 0.39366097173384546
+    },
+    "jib_beta": {
+      "variant": "two_mode",
+      "calibration_file": "jib_beta/calibration.json",
+      "reference_file": "jib_beta/reference_arx.npz",
+      "reference_validation_mae_deg": 0.2705605382420919
+    },
+    "simult_theta": {
+      "variant": "two_mode",
+      "calibration_file": "simult_theta/calibration.json",
+      "reference_file": "simult_theta/reference_arx.npz",
+      "reference_validation_mae_deg": 1.191091639492115
+    },
+    "simult_beta": {
+      "variant": "two_mode",
+      "calibration_file": "simult_beta/calibration.json",
+      "reference_file": "simult_beta/reference_arx.npz",
+      "reference_validation_mae_deg": 0.5170200727220623
+    }
+  },
+  "files": {
+    "task.json": "96fe0a7b705dd99fcab30534a9b53a82eae09e9393084441f30b805a24c956d1",
+    "simult_theta/reference_arx.npz": "7b9f8e69ec0e8af54c91de96fdc55e09a1520fd2962efab323d5ccd0951c8e05",
+    "simult_theta/calibration.json": "0430e7a5ddb5072a9562120cbf446b7fcea43fff5cfca3d0f43f7fb8e475eae7",
+    "trolley_theta/reference_arx.npz": "065a94490e4413c685662dd0b5cd9aa33b4d5dce8a886bbea500b81444b00d5b",
+    "trolley_theta/calibration.json": "9d094502422cbc56857ffa6747011d283c03ec7a4529a778b0f724498395ca55",
+    "jib_beta/reference_arx.npz": "bec0128f678f472bc2ce3c77b4bbb92329a75f554d1c2bfde15d70c2cd18018c",
+    "jib_beta/calibration.json": "0ec85f41d42774f91995311bdfc86f931b3d5383424fa4c5b5d7440fa95fa238",
+    "jib_theta/reference_arx.npz": "427eacfb6c9143a0fdf3c14e0f1fa7a3834a1706190e3470192a9401a988064a",
+    "jib_theta/calibration.json": "0230fca36bde7b4d390b42ad00b48b8ec02564aed9d6706d2060958b7356ae45",
+    "simult_beta/reference_arx.npz": "d135ad203e76098e1be445386476bbc0c503583aecce2dd0166b21f5501085d7",
+    "simult_beta/calibration.json": "27b9b1ab2c8935d369a83afa2f4f6804d1b34538580406120fac71370dfc62c4"
+  },
+  "source_hashes": {
+    "src/cranepilot/modal_pilot.py": "d1e3b8d7a82ddd0f5c268569b4fad3480263d8b4d3e88b0a778afceac320cce9",
+    "src/cranepilot/data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+    "scripts/modal_history.py": "11b21490fc78da67b2863a1b06c9c129bb294a9149f29c9bcda0896b928c5414",
+    "scripts/modal_reference_challenge.py": "23b26b08bfece5c768b386770751ee04773ea4e973ff4358edc854823f591858"
+  },
+  "source_development_sha256": "9d3f403ad1a732b30364e89fe8bbf88b591e62d69e93d5ec4b0519c138aefa0a",
+  "source_reference_development_sha256": "e512bf6b93ca9e08c9d224eef6fc9520ff1f2bbe7603cdcecfc4e3eb2dc639fb",
+  "no_raw_data_or_training_required": true,
+  "final_goal_achieved": false
+}

@@ -1,0 +1,2 @@
+# Preserve captured stdout verbatim, including aligned pandas tables.
+*.log -whitespace

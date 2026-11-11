@@ -7,6 +7,70 @@ forecasting study. This repository separates measured-data forecasting from
 simulation-only controller evaluation. It is an evolving research implementation,
 not a finished industrial controller or an accepted journal paper.
 
+## Local research update: 6 November 2026
+
+Completed 36 further angular fits with temporal-convolution encoders, a TCN
+reference and a matched training-objective ablation. Selection was locked using
+validation before this stage's evaluation. The selected long-transfer model
+improves macro MAE by 3.03%; the selected short-transfer model regresses 1.49%.
+The primary default remains the previous force-aware model.
+
+| Extrapolation protocol | Previous model | Validation-selected candidate |
+|---|---:|---:|
+| Primary | 0.50050 | 0.50050 (same model) |
+| Shorter lengths | 0.43213 | 0.43858 |
+| Longer lengths | 0.51264 | 0.49712 |
+
+Scores are mean scenario/horizon MAE in degrees, not independent-test proof.
+The long-transfer gain does not extend to active-at-origin windows: their
+seven-horizon average worsens from 0.93185 to 0.96782 degrees. All variants,
+including the unselected 0.41412 short-transfer result, remain in the report.
+No universal replacement or best-in-literature claim is justified.
+
+A frozen 576-case free-sway check exposes another limit: learned corrections
+can worsen a simple known physical regime. We also verified and causally
+reconstructed a separate Aalto industrial dataset; no model was trained or
+scored on it. There are now 49 passing tests. All new work remains local.
+
+See [the complete stage report](docs/RESEARCH_2026_11_06.md),
+[the fixed design](docs/TEMPORAL_DESIGN.md), and
+[the independent-data audit](docs/AALTO_DATA_AUDIT.md).
+
+```sh
+python -m scripts.predict_temporal --input examples/history_packet.npz --output forecast.csv
+```
+
+## Previous local research stage: 3 November 2026
+
+At that stage the force-aware robust NN had the lowest mean error among the retained
+methods in the primary length-extrapolation protocol and two additional training
+ranges. This is a retrospective development result, not a best-in-literature claim.
+
+| Extrapolation protocol | Force-aware NN | Direct GRU | Zero-prior GP | Physics |
+|---|---:|---:|---:|---:|
+| Primary | 0.50050 | 0.54202 | 0.52519 | 0.55420 |
+| Shorter lengths, extrapolation subset | 0.43213 | 0.44140 | 1.70365 | 0.46275 |
+| Longer lengths, extrapolation subset | 0.51264 | 0.57330 | 0.59624 | 0.65663 |
+
+Scores are equal means of scenario/horizon MAE in degrees. Each extra fold
+refits both calibration and actuator from its own training records. Individual
+horizons and load/shape stress cases have different winners. All negative
+phase-normalization and measurement-anchoring experiments are retained.
+
+This stage completed 36 angular neural fits, two fresh fold-specific actuators,
+56 GP candidates and 41 passing tests. Warm three-seed CPU inference is about
+21 ms with a precomputed flow versus 59 ms with reference solves. GP remains
+faster in this microbenchmark. Latest source, metrics and checkpoints are local;
+this stage has not been uploaded.
+
+See [model card](docs/MODEL_CARD.md), [full report](docs/RESEARCH_2026_11_03.md)
+and [benchmark contract](docs/BENCHMARK_CARD.md). The compiled 11-page PDF
+predates this stage. A history-only prediction command requires no dataset file:
+
+```sh
+python scripts/predict_cranepilot.py --run artifacts/runs/forceaware_campaign_v2 --variant forced_driven_huber --input examples/history_packet.npz --output forecast.csv --fast
+```
+
 ## Research question
 
 Can a physically calibrated oscillator and a structured learned correction
@@ -147,7 +211,8 @@ python scripts/report_innovation.py
 ```
 
 See [the full results](docs/INNOVATION_RESULTS.md). The separately compiled
-11-page paper predates this newest campaign. Tests now total 28.
+11-page paper predates this campaign. That historical checkpoint had 28 tests;
+the latest local stage has 49.
 
 ## Claims and limitations
 

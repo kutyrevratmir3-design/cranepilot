@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/verify_modal_backtest_gate.py", line 59, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/verify_modal_backtest_gate.py", line 29, in main
+    for group,records in [('validation',load_allowed(cfg,fold['validation'],'validation')),('retrospective',load_confirmation(cfg,fold['confirmation']))]:
+                                                                                                            ^^^^^^^^^^^^^^^^^
+NameError: name 'load_confirmation' is not defined. Did you mean: 'confirmation'?

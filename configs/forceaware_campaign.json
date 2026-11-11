@@ -1,0 +1,18 @@
+{
+  "train": [3,5,6], "validation": [4],
+  "evaluation": [1,2,7,8], "load_stress": [10,11,12],
+  "seeds": [0,1,2], "train_stride": 25, "evaluation_stride": 10,
+  "training": {"epochs":100,"patience":15,"batch_size":256,"learning_rate":0.001},
+  "variants": {
+    "raw_driven_huber": {"forced_observer":false,"driven":true,"loss":"huber"},
+    "forced_driven_mse": {"forced_observer":true,"driven":true,"loss":"mse"},
+    "forced_driven_huber": {"forced_observer":true,"driven":true,"loss":"huber"},
+    "forced_observer_huber": {"forced_observer":true,"driven":false,"loss":"huber"}
+  },
+  "smooth_l1_beta":0.1,
+  "kernel": {"max_points":1024,"length_scales":[3.0,6.0,12.0,24.0],"families":["rbf","matern15"],"noise":0.03},
+  "selection":"early stop each neural seed on seven-horizon validation MAE; average all three seeds; choose one kernel per representation on same validation score; report all variants",
+  "scope":"retrospective fixed-length trolley forecast under length extrapolation; load stress separate; no best-in-literature claim",
+  "information":"41 past angle/x/reference samples, current cable length, prescribed 30 future references at 50 ms; no future measured x, acceleration or angle",
+  "publication":"local research only; no GitHub publication authorized for this campaign"
+}

@@ -1,0 +1,7 @@
+length,omega_ratio,tau,tau2,gain,deadzone,angle_deg,damping,delay_s,coulomb,switch_factor,force_law,context,family,archetype,noisy,pulse
+0.35,1.0,0.1,0.04,1.0,0.01,2.0,0.04,0.04,0.025,0.7,effective,0,matched,-1,False,False
+0.35,1.0,0.1,0.04,1.0,0.01,6.0,0.04,0.04,0.025,0.7,effective,1,matched,-1,False,False
+0.6,1.0,0.1,0.04,1.0,0.01,2.0,0.04,0.04,0.025,0.7,effective,2,matched,-1,False,False
+0.6,1.0,0.1,0.04,1.0,0.01,6.0,0.04,0.04,0.025,0.7,effective,3,matched,-1,False,False
+0.85,1.0,0.1,0.04,1.0,0.01,2.0,0.04,0.04,0.025,0.7,effective,4,matched,-1,False,False
+0.85,1.0,0.1,0.04,1.0,0.01,6.0,0.04,0.04,0.025,0.7,effective,5,matched,-1,False,False

@@ -1,0 +1,480 @@
+test_actual_bytes_are_bound_even_if_file_changes_after_preflight (tests.test_fresh_confirmation.FreshConfirmationTests.test_actual_bytes_are_bound_even_if_file_changes_after_preflight) ... ERROR
+test_actual_known_age_not_derived_from_prediction_errors (tests.test_fresh_confirmation.FreshConfirmationTests.test_actual_known_age_not_derived_from_prediction_errors) ... ERROR
+test_bootstrap_clusters_and_conditions_not_window_count (tests.test_fresh_confirmation.FreshConfirmationTests.test_bootstrap_clusters_and_conditions_not_window_count) ... ERROR
+test_cli_error_does_not_disclose_private_paths_or_record_identifiers (tests.test_fresh_confirmation.FreshConfirmationTests.test_cli_error_does_not_disclose_private_paths_or_record_identifiers) ... ERROR
+test_complete_locked_schema_screen_still_does_not_certify_independence (tests.test_fresh_confirmation.FreshConfirmationTests.test_complete_locked_schema_screen_still_does_not_certify_independence) ... ERROR
+test_complex_and_time_channel_aliases_are_rejected_without_conversion (tests.test_fresh_confirmation.FreshConfirmationTests.test_complex_and_time_channel_aliases_are_rejected_without_conversion) ... ERROR
+test_declared_npz_schema_checks_actual_grid_and_missing_inputs (tests.test_fresh_confirmation.FreshConfirmationTests.test_declared_npz_schema_checks_actual_grid_and_missing_inputs) ... ERROR
+test_equal_conditions_not_pooled_trial_counts (tests.test_fresh_confirmation.FreshConfirmationTests.test_equal_conditions_not_pooled_trial_counts) ... ERROR
+test_finite_segments_only_index_old_values_and_never_interpolate (tests.test_fresh_confirmation.FreshConfirmationTests.test_finite_segments_only_index_old_values_and_never_interpolate) ... ERROR
+test_lock_hashes_bytes_without_loading_numerical_candidate (tests.test_fresh_confirmation.FreshConfirmationTests.test_lock_hashes_bytes_without_loading_numerical_candidate) ... ERROR
+test_losses_zero_reference_and_duplicate_trials_cannot_pass (tests.test_fresh_confirmation.FreshConfirmationTests.test_losses_zero_reference_and_duplicate_trials_cannot_pass) ... ERROR
+test_misleading_public_policy_is_rejected (tests.test_fresh_confirmation.FreshConfirmationTests.test_misleading_public_policy_is_rejected) ... ERROR
+test_numeric_overlap_quarantines_whole_trial_without_forecasts (tests.test_fresh_confirmation.FreshConfirmationTests.test_numeric_overlap_quarantines_whole_trial_without_forecasts) ... ERROR
+test_public_card_must_be_committed_before_screen (tests.test_fresh_confirmation.FreshConfirmationTests.test_public_card_must_be_committed_before_screen) ... ERROR
+test_raw_or_review_changes_block_before_numeric_loading (tests.test_fresh_confirmation.FreshConfirmationTests.test_raw_or_review_changes_block_before_numeric_loading) ... ERROR
+test_shared_cluster_scheme_and_missing_strata_remain_adverse (tests.test_fresh_confirmation.FreshConfirmationTests.test_shared_cluster_scheme_and_missing_strata_remain_adverse) ... ERROR
+test_changed_locked_npz_cannot_construct_predictors (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_changed_locked_npz_cannot_construct_predictors) ... ERROR
+test_changed_policy_cannot_construct_predictors (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_changed_policy_cannot_construct_predictors) ... ERROR
+test_forged_saved_screen_cannot_construct_predictors (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_forged_saved_screen_cannot_construct_predictors) ... ERROR
+test_prediction_failure_is_saved_as_failed_coverage_without_statistical_pass (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_prediction_failure_is_saved_as_failed_coverage_without_statistical_pass) ... ERROR
+test_primary_mutation_does_not_reach_reference_or_private_targets (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_primary_mutation_does_not_reach_reference_or_private_targets) ... ERROR
+test_real_lock_screen_score_uses_dated_angles_current_support_and_one_trial_for_axes (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_real_lock_screen_score_uses_dated_angles_current_support_and_one_trial_for_axes) ... ERROR
+test_second_score_attempt_rejected_before_constructing_or_calling_models (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_second_score_attempt_rejected_before_constructing_or_calling_models) ... ERROR
+test_wrong_declared_horizons_cannot_pass_a_shape_only_comparison (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_wrong_declared_horizons_cannot_pass_a_shape_only_comparison) ... ERROR
+test_constructor_failure_before_any_forecast_does_not_create_exposure (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_constructor_failure_before_any_forecast_does_not_create_exposure) ... ERROR
+test_failed_first_forecast_reserves_the_full_cohort_before_predictor_entry (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_failed_first_forecast_reserves_the_full_cohort_before_predictor_entry) ... ERROR
+test_identical_bytes_under_another_directory_and_new_ids_cannot_lock_as_fresh (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_identical_bytes_under_another_directory_and_new_ids_cannot_lock_as_fresh) ... ERROR
+test_new_serialization_cannot_hide_a_previously_used_physical_trial_identity (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_new_serialization_cannot_hide_a_previously_used_physical_trial_identity) ... ERROR
+test_renamed_and_reserialized_waveform_is_quarantined_by_numeric_screen (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_renamed_and_reserialized_waveform_is_quarantined_by_numeric_screen) ... ERROR
+test_changed_old_source_blocks_even_with_an_unchanged_registry (tests.test_fresh_registry.FreshRegistryTests.test_changed_old_source_blocks_even_with_an_unchanged_registry) ... ERROR
+test_distinct_synthetic_trial_signals_are_not_confused_with_shared_support (tests.test_fresh_registry.FreshRegistryTests.test_distinct_synthetic_trial_signals_are_not_confused_with_shared_support) ... ERROR
+test_pruned_registry_cannot_pass_using_correct_policy_hash (tests.test_fresh_registry.FreshRegistryTests.test_pruned_registry_cannot_pass_using_correct_policy_hash) ... ERROR
+test_registry_source_escape_is_rejected (tests.test_fresh_registry.FreshRegistryTests.test_registry_source_escape_is_rejected) ... ERROR
+test_reserialized_offset_copy_inside_one_cohort_is_quarantined (tests.test_fresh_registry.FreshRegistryTests.test_reserialized_offset_copy_inside_one_cohort_is_quarantined) ... ERROR
+test_cleanup_refuses_nonempty_or_replaced_lease (tests.test_fresh_reservation.FreshExposureReservationTests.test_cleanup_refuses_nonempty_or_replaced_lease) ... ok
+test_commitment_validation_is_read_only_and_rejects_paths_or_symlinks (tests.test_fresh_reservation.FreshExposureReservationTests.test_commitment_validation_is_read_only_and_rejects_paths_or_symlinks) ... ok
+test_exception_releases_owned_empty_lease_and_preserves_event (tests.test_fresh_reservation.FreshExposureReservationTests.test_exception_releases_owned_empty_lease_and_preserves_event) ... ok
+test_nested_competing_reservation_fails_without_releasing_owner (tests.test_fresh_reservation.FreshExposureReservationTests.test_nested_competing_reservation_fails_without_releasing_owner) ... ok
+test_prior_commitments_reject_changed_or_deleted_events_allow_additions (tests.test_fresh_reservation.FreshExposureReservationTests.test_prior_commitments_reject_changed_or_deleted_events_allow_additions) ... ok
+test_stale_lease_is_never_automatically_removed (tests.test_fresh_reservation.FreshExposureReservationTests.test_stale_lease_is_never_automatically_removed) ... ok
+
+======================================================================
+ERROR: test_actual_bytes_are_bound_even_if_file_changes_after_preflight (tests.test_fresh_confirmation.FreshConfirmationTests.test_actual_bytes_are_bound_even_if_file_changes_after_preflight)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpoer03ll3/repo/configs'
+
+======================================================================
+ERROR: test_actual_known_age_not_derived_from_prediction_errors (tests.test_fresh_confirmation.FreshConfirmationTests.test_actual_known_age_not_derived_from_prediction_errors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpn65pe74t/repo/configs'
+
+======================================================================
+ERROR: test_bootstrap_clusters_and_conditions_not_window_count (tests.test_fresh_confirmation.FreshConfirmationTests.test_bootstrap_clusters_and_conditions_not_window_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpma3g3s7h/repo/configs'
+
+======================================================================
+ERROR: test_cli_error_does_not_disclose_private_paths_or_record_identifiers (tests.test_fresh_confirmation.FreshConfirmationTests.test_cli_error_does_not_disclose_private_paths_or_record_identifiers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpt01f0gkg/repo/configs'
+
+======================================================================
+ERROR: test_complete_locked_schema_screen_still_does_not_certify_independence (tests.test_fresh_confirmation.FreshConfirmationTests.test_complete_locked_schema_screen_still_does_not_certify_independence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmp5jq0681k/repo/configs'
+
+======================================================================
+ERROR: test_complex_and_time_channel_aliases_are_rejected_without_conversion (tests.test_fresh_confirmation.FreshConfirmationTests.test_complex_and_time_channel_aliases_are_rejected_without_conversion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpme4b61ba/repo/configs'
+
+======================================================================
+ERROR: test_declared_npz_schema_checks_actual_grid_and_missing_inputs (tests.test_fresh_confirmation.FreshConfirmationTests.test_declared_npz_schema_checks_actual_grid_and_missing_inputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpg0nb3d3l/repo/configs'
+
+======================================================================
+ERROR: test_equal_conditions_not_pooled_trial_counts (tests.test_fresh_confirmation.FreshConfirmationTests.test_equal_conditions_not_pooled_trial_counts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmp387hdytf/repo/configs'
+
+======================================================================
+ERROR: test_finite_segments_only_index_old_values_and_never_interpolate (tests.test_fresh_confirmation.FreshConfirmationTests.test_finite_segments_only_index_old_values_and_never_interpolate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpq1z05qja/repo/configs'
+
+======================================================================
+ERROR: test_lock_hashes_bytes_without_loading_numerical_candidate (tests.test_fresh_confirmation.FreshConfirmationTests.test_lock_hashes_bytes_without_loading_numerical_candidate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpjmb0xrri/repo/configs'
+
+======================================================================
+ERROR: test_losses_zero_reference_and_duplicate_trials_cannot_pass (tests.test_fresh_confirmation.FreshConfirmationTests.test_losses_zero_reference_and_duplicate_trials_cannot_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpaviziqol/repo/configs'
+
+======================================================================
+ERROR: test_misleading_public_policy_is_rejected (tests.test_fresh_confirmation.FreshConfirmationTests.test_misleading_public_policy_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpj_rgdsre/repo/configs'
+
+======================================================================
+ERROR: test_numeric_overlap_quarantines_whole_trial_without_forecasts (tests.test_fresh_confirmation.FreshConfirmationTests.test_numeric_overlap_quarantines_whole_trial_without_forecasts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpb1y0doi8/repo/configs'
+
+======================================================================
+ERROR: test_public_card_must_be_committed_before_screen (tests.test_fresh_confirmation.FreshConfirmationTests.test_public_card_must_be_committed_before_screen)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpv41yua41/repo/configs'
+
+======================================================================
+ERROR: test_raw_or_review_changes_block_before_numeric_loading (tests.test_fresh_confirmation.FreshConfirmationTests.test_raw_or_review_changes_block_before_numeric_loading)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmphx4kyq_6/repo/configs'
+
+======================================================================
+ERROR: test_shared_cluster_scheme_and_missing_strata_remain_adverse (tests.test_fresh_confirmation.FreshConfirmationTests.test_shared_cluster_scheme_and_missing_strata_remain_adverse)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpa45fqyyw/repo/configs'
+
+======================================================================
+ERROR: test_changed_locked_npz_cannot_construct_predictors (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_changed_locked_npz_cannot_construct_predictors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpuvojs7gu/repo/configs'
+
+======================================================================
+ERROR: test_changed_policy_cannot_construct_predictors (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_changed_policy_cannot_construct_predictors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmp7wap5i_r/repo/configs'
+
+======================================================================
+ERROR: test_forged_saved_screen_cannot_construct_predictors (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_forged_saved_screen_cannot_construct_predictors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpzlqez8t8/repo/configs'
+
+======================================================================
+ERROR: test_prediction_failure_is_saved_as_failed_coverage_without_statistical_pass (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_prediction_failure_is_saved_as_failed_coverage_without_statistical_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmp52bisg98/repo/configs'
+
+======================================================================
+ERROR: test_primary_mutation_does_not_reach_reference_or_private_targets (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_primary_mutation_does_not_reach_reference_or_private_targets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmp9qan5zfy/repo/configs'
+
+======================================================================
+ERROR: test_real_lock_screen_score_uses_dated_angles_current_support_and_one_trial_for_axes (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_real_lock_screen_score_uses_dated_angles_current_support_and_one_trial_for_axes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmprxwga65w/repo/configs'
+
+======================================================================
+ERROR: test_second_score_attempt_rejected_before_constructing_or_calling_models (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_second_score_attempt_rejected_before_constructing_or_calling_models)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmp65dazw16/repo/configs'
+
+======================================================================
+ERROR: test_wrong_declared_horizons_cannot_pass_a_shape_only_comparison (tests.test_fresh_score_e2e.FreshScoreEndToEndTests.test_wrong_declared_horizons_cannot_pass_a_shape_only_comparison)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmp_jo7evd_/repo/configs'
+
+======================================================================
+ERROR: test_constructor_failure_before_any_forecast_does_not_create_exposure (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_constructor_failure_before_any_forecast_does_not_create_exposure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 18, in setUp
+    self.subject = self.new_fixture()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 24, in new_fixture
+    subject.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpx4nf9cyw/repo/configs'
+
+======================================================================
+ERROR: test_failed_first_forecast_reserves_the_full_cohort_before_predictor_entry (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_failed_first_forecast_reserves_the_full_cohort_before_predictor_entry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 18, in setUp
+    self.subject = self.new_fixture()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 24, in new_fixture
+    subject.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmplhpzjoof/repo/configs'
+
+======================================================================
+ERROR: test_identical_bytes_under_another_directory_and_new_ids_cannot_lock_as_fresh (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_identical_bytes_under_another_directory_and_new_ids_cannot_lock_as_fresh)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 18, in setUp
+    self.subject = self.new_fixture()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 24, in new_fixture
+    subject.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmppk2zf8mt/repo/configs'
+
+======================================================================
+ERROR: test_new_serialization_cannot_hide_a_previously_used_physical_trial_identity (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_new_serialization_cannot_hide_a_previously_used_physical_trial_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 18, in setUp
+    self.subject = self.new_fixture()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 24, in new_fixture
+    subject.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpjfhn99se/repo/configs'
+
+======================================================================
+ERROR: test_renamed_and_reserialized_waveform_is_quarantined_by_numeric_screen (tests.test_fresh_exposure.FreshPerformanceExposureTests.test_renamed_and_reserialized_waveform_is_quarantined_by_numeric_screen)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 18, in setUp
+    self.subject = self.new_fixture()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_exposure.py", line 24, in new_fixture
+    subject.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_score_e2e.py", line 20, in setUp
+    self.fixture.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmphpm0ghh8/repo/configs'
+
+======================================================================
+ERROR: test_changed_old_source_blocks_even_with_an_unchanged_registry (tests.test_fresh_registry.FreshRegistryTests.test_changed_old_source_blocks_even_with_an_unchanged_registry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_registry.py", line 17, in setUp
+    self.f.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmp7mm_e1ix/repo/configs'
+
+======================================================================
+ERROR: test_distinct_synthetic_trial_signals_are_not_confused_with_shared_support (tests.test_fresh_registry.FreshRegistryTests.test_distinct_synthetic_trial_signals_are_not_confused_with_shared_support)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_registry.py", line 17, in setUp
+    self.f.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpo6wz50wc/repo/configs'
+
+======================================================================
+ERROR: test_pruned_registry_cannot_pass_using_correct_policy_hash (tests.test_fresh_registry.FreshRegistryTests.test_pruned_registry_cannot_pass_using_correct_policy_hash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_registry.py", line 17, in setUp
+    self.f.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmp4t_8mjqz/repo/configs'
+
+======================================================================
+ERROR: test_registry_source_escape_is_rejected (tests.test_fresh_registry.FreshRegistryTests.test_registry_source_escape_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_registry.py", line 17, in setUp
+    self.f.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpiged5jio/repo/configs'
+
+======================================================================
+ERROR: test_reserialized_offset_copy_inside_one_cohort_is_quarantined (tests.test_fresh_registry.FreshRegistryTests.test_reserialized_offset_copy_inside_one_cohort_is_quarantined)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_registry.py", line 17, in setUp
+    self.f.setUp()
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/tests/test_fresh_confirmation.py", line 14, in setUp
+    self.contract=self.repo/self.p['training_contract'];self.contract.parent.mkdir(parents=True);self.contract.write_text(json.dumps(dict(references={key:dict(unit='native',semantics='synthetic_fixture') for key in ['xr','Jr']})))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ratmir_kutyrev/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/private/var/folders/g4/hd2qcwp57h7fqfzt34f464cm0000gp/T/tmpe4easb5c/repo/configs'
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.187s
+
+FAILED (errors=34)

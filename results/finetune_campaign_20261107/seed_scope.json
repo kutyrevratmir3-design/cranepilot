@@ -1,0 +1,22 @@
+{
+  "methods": [
+    "continued",
+    "observer_only",
+    "innovation_only",
+    "l2sp",
+    "function_anchor",
+    "sam",
+    "ema",
+    "phase_space",
+    "group_dro",
+    "lbfgs_polish"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "note": "Descriptive variation across the three retained starting seeds; not confidence intervals or independent hardware repetitions.",
+  "seed_mae_mean_is_not_ensemble_mae": true,
+  "aggregation": "Equal records at each horizon, then equal horizons, then descriptive seed statistics"
+}

@@ -1,0 +1,13 @@
+fold,model,seed,validation_mae_deg
+short_transfer,forced_driven_huber,0,0.22061491012573242
+short_transfer,forced_driven_huber,1,0.2124442309141159
+short_transfer,forced_driven_huber,2,0.22283798456192017
+short_transfer,gru_reference,0,0.23456698656082153
+short_transfer,gru_reference,1,0.23839382827281952
+short_transfer,gru_reference,2,0.23709912598133087
+long_transfer,forced_driven_huber,0,0.2082311362028122
+long_transfer,forced_driven_huber,1,0.20641754567623138
+long_transfer,forced_driven_huber,2,0.21317602694034576
+long_transfer,gru_reference,0,0.2228759229183197
+long_transfer,gru_reference,1,0.21146218478679657
+long_transfer,gru_reference,2,0.21802230179309845

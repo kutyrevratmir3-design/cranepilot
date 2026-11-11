@@ -1,0 +1,19 @@
+{
+  "experiment": "latency_observer_20261108",
+  "bundle": "artifacts/regime_bundle_20261107",
+  "qualification": "configs/active_qualification_20261107.json",
+  "origin_start_s": 4.25,
+  "origin_stride_raw": 100,
+  "train_ages_raw": [0,2,5,10],
+  "evaluation_ages_raw": [0,2,5,10,3,7,15],
+  "noise_quantum_multipliers": [0,1],
+  "noise_seed": 20261108,
+  "methods": ["unaware","hold","linear_0.10","linear_0.25","quadratic_0.25","modal_3s","forced_3s_fixed","forced_3s_adapt"],
+  "representations": ["angle_lpv","io_lpv"],
+  "forms": ["direct","modal_age_residual"],
+  "ridge_grid": [1e-10,1e-8,1e-6,1e-4,0.01,1],
+  "development_gate": {"maximum_unaware_positive_age_ratio":0.8,"maximum_hold_positive_age_ratio":0.97,"maximum_matched_arx_ratio":0.95,"minimum_arx_case_wins":4},
+  "scope": "Known angle measurement age from timestamps, integer100Hz samples0..15. Other histories end at current time. Original33records already opened. Synthetic age/noise conditions are sensitivity development, not new independent data or hardware control. No future measured angle/pose/L in prediction; head estimates excluded from backtest truth.",
+  "selection": "One global minimum equal-case, equal-age/noise and quiet/drive-balanced validation MAE. Compare to a TRAIN delay-augmented ARX search plus all matched-adapter frozen ARX options chosen percase by VAL. Freeze before old-evaluation.",
+  "independent_confirmation": false
+}

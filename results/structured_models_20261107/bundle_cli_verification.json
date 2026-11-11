@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "examples": 3,
+  "candidate_cli_vs_campaign_cli_max_error_deg": 0.0,
+  "retained_cli_completed": true,
+  "candidate_cli_completed": true,
+  "files": {
+    "bundle_candidate_example.csv": "bc3aabd582cdf9371bbdbbf1909441ca49b24ebf5ae17d1f4b7f904f2a0d67cf",
+    "bundle_retained_example.csv": "3dab2de4cb863534a6c62016846c7f8c0fab1d40ea2094bed31812d71f830964",
+    "bundle_retained_example.metadata.json": "80eb573ff94ed95eee1cbf9562abc2e15e0146e85b3ddaf73033680c2d152c65",
+    "bundle_candidate_example.metadata.json": "7ea203015d7d6dd007ec27d6250bd86fc3533482fecef5103c5e8ab70475e768"
+  }
+}

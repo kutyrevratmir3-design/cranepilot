@@ -1,0 +1,54 @@
+CranePilot: scenario_control_20261107 завершён, 7 ноября2026.
+
+Основной проект Crane Project/cranepilot. Актуальная сводка RESEARCH_STATUS_2026_11_07.md.
+Протокол configs/scenario_control_20261107.json +docs/SCENARIO_CONTROL_DESIGN_20261107.md,
+код зафиксирован до запусков в de5d678. Run artifacts/runs/scenario_control_20261107 complete;
+копия для Git results/scenario_control_20261107/frozen_run. Новый отчёт
+SCENARIO_CONTROL_2026_11_07_RU.md. APHYNITY отдельно, не менялась.
+
+Шесть методов: nominal/frequency/joint/spread/hybrid/joint_hybrid.
+Frequency grid .85/1/1.15; joint18=3частоты×3(tau,gain)пары×2force laws.
+Пары(.07,.8)/(.1,1)/(.18,1.2), effective/geometric forcing. Spread добавляет
+.25variance theta. Это mean-сетка/эвристика, НЕminimax/chance/tube guarantees.
+Hybrid offset clip(theta_adapter(warm)−theta_nominal(warm),±.015rad) фиксируется
+один раз на тик; command Jacobian физический. Не равно старому forecaster.
+Всеtrialfeaturesаффинны, Jacobian unit central probes±1,200FISTAsteps,
+input±.8/trust±.2, прежниеcost/horizon30/6block/committeddelay.05s.
+Native xr features нулевые, NeuralActuator bypass, true state/parameters hidden.
+Новых weights/training нет, portable bundle unchanged, defaultretained.
+
+36development +576evaluation эпизодов,96наметод. Новый grid L.29/.64/1.11,
+omega ratios .86/1.14,tau.075/.205,gain.85/1.15; angle2.5/5.5deg, новыйseed1007112026,
+pulse .17rad/s² на[2.65,3)s. Все noise/disturbances paired по физическому времени.
+.205tau внеmodelgrid. Developmentqual6cases/метод,безпоследующеготюнинга.
+
+Относительноnominal НАЭТОМнаборе:
+- frequency cost+33.92%,sway+60.14%,tracking+15.45%; не повторятькакготовыйуспех;
+- joint cost−5.53%,sway−35.20%,tracking+1.76%,final−3.70%,44/96costwins;
+- spread cost−6.78%,sway−36.11%,tracking+1.74%,final−5.31%,44/96costwins;
+- hybrid cost+16.62%,sway−1.05%,tracking+12.30%,final+37.52%; плохаязамена;
+- joint_hybrid cost−12.80%,sway−36.99%,tracking+6.77%,final+2.00%,40/96costwins.
+Joint/spread/joint_hybrid имеют0angle>15deg/rail/speed violations противnominal8/0/0.
+Но ВСЕgatesFalse: ростtracking и недостаточнобольшинствоpairedcostwins.
+Меньшаясредняяcostнеравнавсестороннейпобеде; выигрышсосредоточеннатяжёлыхcases.
+Joint одновременно меняет actuator и forcing uncertainty; эффекты пока неразделены.
+Никакой post-hoc смены модели/default или обещания hardware success.
+
+157unit testsPASS. Все612episodes/73440decisions полностьювоспроизведены:
+plant/measurement/predictedtheta/cost0difference,causalinitialestimatesexact.
+Дляhybrid восстановленисходныйwarmplan,а невыбранныйplanприрасчётеoffset.
+1281originalmain+APHfilesсохранены. Fullreplayнеперезапускалoptimizer.
+Isolatedbatch1median nominal4.86ms,frequency4.83,joint4.98,spread5.01,
+hybrid19.36,joint_hybrid19.39;этоописание,неWCET/schedulingгарантия.
+ReadonlyNumPylengthwarningсохранёнвлогах: length только читается, coreпослеfreeze
+неправился. Batch1/batch96planmaxdiff~1.42e−7m/s².
+
+Начальныйотчётсохранёнвreport_initial;finalдобавляетявнуютаблицуpairedwins.
+Cases/weights/solverне менялись. Новыеmodelgatesнеотменяютстарыйrealforecastloadgate.
+Следующиегипотезы: отделитьforce-onlyотactuator-onlyuncertainty; уменьшитьtracking
+tradeoffчерезновыйTRAIN/developmentконтракт/ограничения. Эти96casesне использовать
+длявыборагиперпараметров. Данныеизновогосимуляторанеравныновомуhardwaretest.
+
+GitHubпубликацияпользователемразрешенаиподтверждена;веткаresearch/broad-search-20261107.
+Mainнетрогать(разныеroots). Старые122EOL-onlymodificationsнетрогать.
+БольшойevidenceZIPлокально;код/config/docs/syntheticrawtrajectoriesвGit.

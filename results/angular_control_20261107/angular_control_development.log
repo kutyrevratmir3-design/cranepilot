@@ -1,0 +1,22 @@
+TICK physical 0 batch_seconds 0.025
+TICK physical 20 batch_seconds 0.004
+TICK physical 40 batch_seconds 0.004
+TICK physical 60 batch_seconds 0.004
+TICK physical 80 batch_seconds 0.004
+TICK physical 100 batch_seconds 0.004
+METHOD_COMPLETE development physical 6
+TICK retained 0 batch_seconds 0.03
+TICK retained 20 batch_seconds 0.024
+TICK retained 40 batch_seconds 0.023
+TICK retained 60 batch_seconds 0.024
+TICK retained 80 batch_seconds 0.023
+TICK retained 100 batch_seconds 0.023
+METHOD_COMPLETE development retained 6
+TICK candidate 0 batch_seconds 0.045
+TICK candidate 20 batch_seconds 0.047
+TICK candidate 40 batch_seconds 0.046
+TICK candidate 60 batch_seconds 0.048
+TICK candidate 80 batch_seconds 0.048
+TICK candidate 100 batch_seconds 0.047
+METHOD_COMPLETE development candidate 6
+COMPLETE development

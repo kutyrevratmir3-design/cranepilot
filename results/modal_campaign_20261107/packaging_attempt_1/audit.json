@@ -1,0 +1,6 @@
+{
+  "scope": "Packaging only; no fitting, forecasts, metrics or model selection changed",
+  "finding": "The first snapshot included the still-open package.log before the final archive summary was printed. ZIP members/CRC were valid, but the live log subsequently differed from its snapshot hash.",
+  "correction": "Preserve first archive/manifest/summary/log in this directory. Exclude the active packaging log and prior packaging attempt from the corrected evidence archive. Run corrected packaging with output outside the evidence tree.",
+  "scientific_results_unchanged": true
+}

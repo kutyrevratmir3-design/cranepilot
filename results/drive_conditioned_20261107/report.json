@@ -1,0 +1,15 @@
+{
+  "document": "docs/DRIVE_CONDITIONED_2026_11_07_RU.md",
+  "document_sha256": "2e2592ee64c32389c9a83d7ce9605f222a3dbd108ea8315d1e0a3130221a3454",
+  "source_sha256": "c03cd3e6774a7b2f3cab99a16ed2d680626fc1faccd54f27819d6c6af5f45246",
+  "verification_sha256": "edb06100fecd820a4dba70c7cc6e87d65bc659856f9603a64e691301af5de5fe",
+  "selected": "blend_linear_adapt",
+  "validation_gate": true,
+  "retrospective_balanced_selected_mae_deg": 1.1882709983889834,
+  "retrospective_balanced_arx_mae_deg": 1.663312767647475,
+  "retrospective_change_percent": -28.559978525889164,
+  "retrospective_case_wins": 5,
+  "late_unforced_control_not_worse": false,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

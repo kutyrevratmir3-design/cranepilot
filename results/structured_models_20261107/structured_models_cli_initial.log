@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/predict_structured_models.py", line 63, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/predict_structured_models.py", line 34, in main
+    verify(parent_prov['guarded_hashes']);verify(parent_prov['checkpoint_hashes'],parent)
+                                                 ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'checkpoint_hashes'

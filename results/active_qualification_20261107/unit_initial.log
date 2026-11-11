@@ -1,0 +1,9 @@
+test_four_regimes_and_no_exclusions (tests.test_active_qualification.ActiveQualificationTests.test_four_regimes_and_no_exclusions) ... ok
+test_frozen_kernel_rejects_targets_and_preserves_api_gate (tests.test_active_qualification.ActiveQualificationTests.test_frozen_kernel_rejects_targets_and_preserves_api_gate) ... ok
+test_history_and_target_indexing (tests.test_active_qualification.ActiveQualificationTests.test_history_and_target_indexing) ... ok
+test_regimes_use_past_only (tests.test_active_qualification.ActiveQualificationTests.test_regimes_use_past_only) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.201s
+
+OK

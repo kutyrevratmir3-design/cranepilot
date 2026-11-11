@@ -1,0 +1,21 @@
+{
+  "source_run": "artifacts/runs/combined_stress_20261107_replayfix",
+  "source_provenance_sha256": "7151d52d838e6f8403117e2b4d6ef27abb3f385fe39adc74c766262bee24f9c9",
+  "report_source_sha256": "9cc4bef6e291bb7edb4e425736fab5e545b03a2af53d271161f5d701b35c5c2d",
+  "source_results_verified": 31,
+  "acceptance_overall_passed": false,
+  "real_evaluation_retrospective": true,
+  "new_hardware_evidence": false,
+  "training_performed": false,
+  "selection_performed": false,
+  "model_default_changed": false,
+  "case_p95_definition": "95th percentile across trajectory seven-horizon MAEs within each condition/measurement/fold/method",
+  "real_weighting": "Equal scenarios after equal seven horizons; evaluation extrapolation only",
+  "simulation_fold_targets_identical": false,
+  "fold_simulation_case_counts": {
+    "primary": 900,
+    "short_transfer": 900,
+    "long_transfer": 900
+  },
+  "all_negative_results_retained": true
+}

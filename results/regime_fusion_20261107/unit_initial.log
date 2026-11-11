@@ -1,0 +1,13 @@
+test_api_rejects_future_fields_bad_shapes_and_lengths (tests.test_regime_fusion.RegimeFusionTests.test_api_rejects_future_fields_bad_shapes_and_lengths) ... ok
+test_context_uses_full_raw_past_including_unsampled_spike (tests.test_regime_fusion.RegimeFusionTests.test_context_uses_full_raw_past_including_unsampled_spike) ... ok
+test_guarded_methods_preserve_quiet_bit_for_bit (tests.test_regime_fusion.RegimeFusionTests.test_guarded_methods_preserve_quiet_bit_for_bit) ... ok
+test_hard_router_equals_selected_parents (tests.test_regime_fusion.RegimeFusionTests.test_hard_router_equals_selected_parents) ... ok
+test_simplex_is_equivariant_to_expert_permutation (tests.test_regime_fusion.RegimeFusionTests.test_simplex_is_equivariant_to_expert_permutation) ... ok
+test_simplex_matches_independent_constrained_optimizer (tests.test_regime_fusion.RegimeFusionTests.test_simplex_matches_independent_constrained_optimizer) ... ok
+test_target_and_invalid_evidence_are_rejected (tests.test_regime_fusion.RegimeFusionTests.test_target_and_invalid_evidence_are_rejected) ... ok
+test_uninformative_errors_retain_prior (tests.test_regime_fusion.RegimeFusionTests.test_uninformative_errors_retain_prior) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.112s
+
+OK

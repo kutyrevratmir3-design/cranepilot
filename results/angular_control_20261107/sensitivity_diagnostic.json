@@ -1,0 +1,13 @@
+{
+  "scope": "Exploratory post-hoc oracle comparison, not used for fitting or selection",
+  "source_sha256": "dc5cb184bda1062c8ef968f544a543b97e1528a76f0be36f81fb9a6879e42b6e",
+  "provenance_sha256": "3a313ee829fca335a52ecd23fea568b85b08ade000ddac83cfe10cf882a14621",
+  "histories": "physical controller only, all96cases, fixedticks20/60/100",
+  "true_state_used_only_for_oracle": true,
+  "future_actual_acceleration_not_given_to_predictors": true,
+  "finite_difference_epsilon": 0.002,
+  "infinitesimal_probes_not_box_clipped": true,
+  "comparisons": 864,
+  "locally_unresponsive_threshold": 1e-06,
+  "relative_error_undefined_for_zero_plant_jacobian": true
+}

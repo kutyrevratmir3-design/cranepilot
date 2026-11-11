@@ -1,0 +1,22 @@
+REAL primary 4
+REAL primary 1
+REAL primary 2
+REAL primary 7
+REAL primary 8
+REAL primary 10
+REAL primary 11
+REAL primary 12
+SIMULATION primary 900 cases
+REAL short_transfer 5
+REAL short_transfer 1
+REAL short_transfer 2
+REAL short_transfer 3
+REAL short_transfer 7
+SIMULATION short_transfer 900 cases
+REAL long_transfer 4
+REAL long_transfer 2
+REAL long_transfer 6
+REAL long_transfer 7
+REAL long_transfer 8
+SIMULATION long_transfer 900 cases
+COMPLETE artifacts/runs/combined_stress_20261107_replayfix

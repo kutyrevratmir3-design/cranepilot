@@ -1,0 +1,33 @@
+{
+  "passed": false,
+  "checks": [],
+  "development_sha256": "4bbe43070598c43d8ddfa911ad609003f54b48d0845419820739a4e304672ba2",
+  "retrospective_sha256": "c61a5af73934933921d34ae8fba4b62825488d0d97dda74116815c61deda54d8",
+  "source_sha256": "4eca41351687101b8618162bd89a5c78b21307550a5bfcf26b0924430d5e5d8a",
+  "independent_confirmation": false,
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "failure": "NameError: name 'load_confirmation' is not defined"
+}

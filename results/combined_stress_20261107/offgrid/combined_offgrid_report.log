@@ -1,0 +1,20 @@
+model           adaptive_physics  combined  fixed_half  incumbent  incumbent_gate  physical  soft_symmetry
+fold                                                                                                      
+long_transfer           0.657206  1.381693    1.375343   1.505551        1.420854  1.362865       1.418958
+primary                 0.650081  1.335376    1.344963   1.349408        1.336259  1.361582       1.340036
+short_transfer          0.647372  1.357358    1.363087   1.377678        1.359815  1.367477       1.365221
+{
+  "parent_provenance_sha256": "1671a1db321710503b65ffd93ecf508349a01d4ba96dc9f16c1be33a3efb0e7c",
+  "posthoc_hypothesis_test": true,
+  "cases_per_fold": 512,
+  "same_targets_between_folds": false,
+  "model_parameters_changed": false,
+  "adaptive_wins_vs_combined": {
+    "long_transfer": 28,
+    "primary": 28,
+    "short_transfer": 28
+  },
+  "groups_per_fold": 32,
+  "adaptive_failure_groups": 12,
+  "real_record_adaptive_evidence": false
+}

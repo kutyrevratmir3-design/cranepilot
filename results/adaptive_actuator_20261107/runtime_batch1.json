@@ -1,0 +1,8 @@
+{
+  "source_sha256": "da94dfd0c2651ddc981096d9cdaf4b8711304d3663b057b01304f801f2109f4a",
+  "measurements": 135,
+  "includes": "past window assembly, identifier update, observer and full solver",
+  "excludes": "model loading, I/O, scheduling, reconstruction of pre-tick estimator state",
+  "same_pre_tick_state_restored_for_every_repeat": true,
+  "real_time_guarantee": false
+}

@@ -1,0 +1,52 @@
+{
+  "offset_rad": -0.007774698788430018,
+  "offset_source": "equal-record mean of TRAIN raw-camera tangential angle only",
+  "oscillator_parameters": [
+    3.265577988448446,
+    0.05732448261272044,
+    0.9949534546912502
+  ],
+  "arx_alpha": 0.0001,
+  "arx_validation": [
+    {
+      "alpha": 0.0001,
+      "validation_mae_deg": 0.039572294429558084
+    },
+    {
+      "alpha": 0.01,
+      "validation_mae_deg": 0.06237555733098048
+    },
+    {
+      "alpha": 1,
+      "validation_mae_deg": 0.16595771205353232
+    }
+  ],
+  "lstm": [
+    {
+      "seed": 0,
+      "selected_epoch": 83,
+      "validation_mae_deg": 0.07379551285470685,
+      "fit_seconds": 15.671182958001737
+    },
+    {
+      "seed": 1,
+      "selected_epoch": 95,
+      "validation_mae_deg": 0.07295484303375276,
+      "fit_seconds": 14.921623000002
+    },
+    {
+      "seed": 2,
+      "selected_epoch": 94,
+      "validation_mae_deg": 0.06659571834881015,
+      "fit_seconds": 15.001983708993066
+    }
+  ],
+  "ensemble_all_three_seeds": true,
+  "test_ids_sealed": [
+    17,
+    18,
+    19,
+    20
+  ],
+  "test_used_for_selection": false
+}

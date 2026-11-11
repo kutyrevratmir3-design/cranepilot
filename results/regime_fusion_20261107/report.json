@@ -1,0 +1,17 @@
+{
+  "document": "docs/REGIME_FUSION_2026_11_07_RU.md",
+  "document_sha256": "117d8a664151687222c8198380dda40ee7365535c75becae00aa263a6b87c166",
+  "source_sha256": "35a75802f308be27059e640ff0e5956a2d08b5fec12296c15a09aa60c66d21cb",
+  "verification_sha256": "a774274ac6d2bae8f767234f5603377379381df1d9db4d5c30603f6d82b65fbe",
+  "selected": "guarded_simplex_1",
+  "validation_change_percent": -19.309216408363362,
+  "old_clean_mae_deg": 0.5036236619244757,
+  "old_legacy_mae_deg": 0.545399114067586,
+  "old_change_percent": -7.659611294845902,
+  "old_scenario_wins": 6,
+  "hard_context_better_on_old_all_mae": false,
+  "bundle_files": 36,
+  "bundle_bytes": 406575,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}

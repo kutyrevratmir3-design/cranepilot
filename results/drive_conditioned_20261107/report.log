@@ -1,0 +1,52 @@
+{
+  "document": "docs/DRIVE_CONDITIONED_2026_11_07_RU.md",
+  "document_sha256": "2e2592ee64c32389c9a83d7ce9605f222a3dbd108ea8315d1e0a3130221a3454",
+  "source_sha256": "c03cd3e6774a7b2f3cab99a16ed2d680626fc1faccd54f27819d6c6af5f45246",
+  "verification_sha256": "edb06100fecd820a4dba70c7cc6e87d65bc659856f9603a64e691301af5de5fe",
+  "selected": "blend_linear_adapt",
+  "validation_gate": true,
+  "retrospective_balanced_selected_mae_deg": 1.1882709983889834,
+  "retrospective_balanced_arx_mae_deg": 1.663312767647475,
+  "retrospective_change_percent": -28.559978525889164,
+  "retrospective_case_wins": 5,
+  "late_unforced_control_not_worse": false,
+  "independent_confirmation": false,
+  "final_goal_achieved": false
+}
+          role                   group                   method  mae_deg  scenarios
+old_evaluation                     all               frozen_arx 0.858100          7
+old_evaluation                     all       matched_free_blend 0.555793          7
+old_evaluation                     all matched_local_zero_blend 0.555833          7
+old_evaluation                     all                old_blend 0.545399          7
+old_evaluation                     all                 selected 0.548902          7
+old_evaluation                     all               strong_arx 1.034083          7
+old_evaluation            drive_active               frozen_arx 1.805492          6
+old_evaluation            drive_active       matched_free_blend 1.730747          6
+old_evaluation            drive_active matched_local_zero_blend 1.730747          6
+old_evaluation            drive_active                old_blend 1.726419          6
+old_evaluation            drive_active                 selected 1.652284          6
+old_evaluation            drive_active               strong_arx 2.229054          6
+old_evaluation drive_and_length_active               frozen_arx 3.215052          5
+old_evaluation drive_and_length_active       matched_free_blend 2.444774          5
+old_evaluation drive_and_length_active matched_local_zero_blend 2.444774          5
+old_evaluation drive_and_length_active                old_blend 3.157028          5
+old_evaluation drive_and_length_active                 selected 2.289228          5
+old_evaluation drive_and_length_active               strong_arx 2.302904          5
+old_evaluation           length_active               frozen_arx 0.894749          2
+old_evaluation           length_active       matched_free_blend 0.098330          2
+old_evaluation           length_active matched_local_zero_blend 0.098330          2
+old_evaluation           length_active                old_blend 0.098940          2
+old_evaluation           length_active                 selected 0.098331          2
+old_evaluation           length_active               strong_arx 0.922915          2
+old_evaluation         low_past_motion               frozen_arx 0.495183          7
+old_evaluation         low_past_motion       matched_free_blend 0.241980          7
+old_evaluation         low_past_motion matched_local_zero_blend 0.242020          7
+old_evaluation         low_past_motion                old_blend 0.193369          7
+old_evaluation         low_past_motion                 selected 0.241997          7
+old_evaluation         low_past_motion               strong_arx 0.699870          7
+old_evaluation     old_numerical_scope               frozen_arx 0.477167          7
+old_evaluation     old_numerical_scope       matched_free_blend 0.237596          7
+old_evaluation     old_numerical_scope matched_local_zero_blend 0.237647          7
+old_evaluation     old_numerical_scope                old_blend 0.188822          7
+old_evaluation     old_numerical_scope                 selected 0.237624          7
+old_evaluation     old_numerical_scope               strong_arx 0.672236          7

@@ -1,0 +1,55 @@
+{
+  "experiment": "angular_control_20261107",
+  "bundle": "artifacts/research_bundle_20261107",
+  "fold": "primary",
+  "methods": [
+    "physical",
+    "retained",
+    "candidate"
+  ],
+  "duration_s": 6,
+  "raw_dt_s": 0.01,
+  "control_dt_s": 0.05,
+  "threads": 1,
+  "solver": {
+    "jacobian_epsilon": 0.002,
+    "qp_iterations": 100,
+    "trust_region": 0.2,
+    "command_bound": 0.8,
+    "nominal_tau_s": 0.1
+  },
+  "initial_x_m": 0.1,
+  "target_x_m": 0.3,
+  "evaluation_lengths_m": [
+    0.27,
+    0.57,
+    1.03
+  ],
+  "evaluation_omega_ratios": [
+    0.88,
+    1.12
+  ],
+  "evaluation_tau_s": [
+    0.065,
+    0.18
+  ],
+  "evaluation_gains": [
+    0.8,
+    1.2
+  ],
+  "development_lengths_m": [
+    0.32,
+    0.52,
+    0.72
+  ],
+  "noise_seed": 917112026,
+  "angle_quantum_rad": 0.0015339807878856412,
+  "position_quantum_m": 0.0001,
+  "angular_pulse_rad_s2": 0.14,
+  "angular_pulse_interval_s": [
+    2.5,
+    2.8
+  ],
+  "plant_substeps": 2,
+  "scope": "Offline angular-control acceleration-command ablation. Native reference features zero; learned actuator bypassed. No neural training, no hardware/native-controller claim. All history/estimators/objective/solver shared. Batched runtime is not batch-one deadline evidence."
+}

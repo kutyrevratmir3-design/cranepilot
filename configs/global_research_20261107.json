@@ -1,0 +1,91 @@
+{
+  "experiment": "global_research_20261107",
+  "source_run": "artifacts/runs/temporal_20261106",
+  "broad_run": "artifacts/runs/broad_search_20261107",
+  "parent_run": "artifacts/runs/history_backtest_20261107",
+  "folds": [
+    "primary",
+    "short_transfer",
+    "long_transfer"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tau_bins": 0.5,
+  "train_stride": 25,
+  "evaluation_stride": 10,
+  "active_threshold": 0.005,
+  "weak_ridges": [
+    0,
+    0.01,
+    0.1
+  ],
+  "bases": [
+    "lpv_linear",
+    "nvar_quadratic"
+  ],
+  "input_modes": [
+    "actor",
+    "command"
+  ],
+  "alphas": [
+    0.0001,
+    0.01,
+    1
+  ],
+  "selection": {
+    "all_max_ratio": 1,
+    "active_max_ratio": 1.01,
+    "quiet_max_ratio": 1.01
+  },
+  "acceptance": {
+    "primary_all_active_vs_soft": 1,
+    "transfer_all_active_vs_incumbent": 1.01,
+    "load_all_active_vs_incumbent": 1.01
+  },
+  "simulation": {
+    "length_m": [
+      0.21,
+      0.53,
+      1.03
+    ],
+    "amplitude_deg": [
+      3,
+      8
+    ],
+    "phase_rad": [
+      0.6,
+      2.5
+    ],
+    "omega_ratio": [
+      0.88,
+      1.06,
+      1.24
+    ],
+    "damping_per_s": [
+      0.04,
+      0.19
+    ],
+    "drive_amplitude_m": [
+      0,
+      0.012
+    ],
+    "force_law": [
+      "effective",
+      "geometric"
+    ],
+    "future_acceleration_gain": [
+      1,
+      1.15
+    ],
+    "measurement": [
+      "exact",
+      "noisy_quantized"
+    ],
+    "noise_seed": 10112026,
+    "noise_std_bins": 0.25
+  },
+  "scope": "Offline TRAIN identification and direct multihorizon learning. 41-sample deployment. No actor retraining. Retrospective reused records. No APHYNITY or publication. Angular simulation excludes command-conditioned residuals because references are placeholders."
+}

@@ -1,0 +1,12 @@
+{
+  "train":[3,5,6],"validation":[4],"evaluation":[1,2,7,8],"load_stress":[10,11,12],
+  "seeds":[0,1,2],"variants":{"measurement_driven":"anchor"},
+  "training":{"epochs":100,"patience":15,"batch_size":256,"learning_rate":0.001},
+  "train_stride":25,"evaluation_stride":10,"phase_span_rad":1.0,"phase_points":25,
+  "smooth_l1_beta":0.1,
+  "selection":"average all three seeds; early stop on seven-horizon validation MAE; report every primary and stress scenario",
+  "scope":"same force-aware driven model, with initial angle anchored to current measurement plus at most half a nominal encoder bin; no true-state confidence guarantee",
+  "context":"raw 125-dimensional context with forced-observer coefficients; phase context is prepared by shared runner but is not consumed by this variant",
+  "quantization":"TRAIN records 3/6 match nominal 2pi/4096 grid; record 5 has a constant grid offset with maximum remaining mismatch 3.87e-5 bins; this does not prove physical zero calibration or a probabilistic noise model",
+  "publication":"local only; no GitHub publication"
+}

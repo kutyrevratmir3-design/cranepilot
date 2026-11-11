@@ -1,0 +1,16 @@
+method,balanced_mae_deg,quiet_feasible,selected
+legacy,1.670934834510124,True,False
+active,1.3969668006862899,False,False
+hard_context,1.3690370135694772,True,False
+ramp_context,1.366019783829757,True,False
+guarded_inverse,1.3825930239061264,True,False
+guarded_horizon_inverse,1.4955773056322548,True,False
+guarded_winner,1.462737966895072,True,False
+guarded_simplex_0.01,1.4045525048407845,True,False
+guarded_simplex_0.1,1.3740153889040845,True,False
+guarded_simplex_1,1.348290411271836,True,True
+guarded_simplex_10,1.364063460802533,True,False
+frozen_arx,1.887454355631371,,False
+active_arx,1.5872296051723942,,False
+free_modal,2.063386809315882,,False
+forced_modal,1.9629618378488172,,False

@@ -1,0 +1,45 @@
+/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/Crane Project/cranepilot/scripts/scenario_control.py:15: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:219.)
+  batch['length_m']=torch.as_tensor(length,dtype=torch.float32)
+TICK nominal 0 batch_seconds 0.008
+TICK nominal 20 batch_seconds 0.007
+TICK nominal 40 batch_seconds 0.007
+TICK nominal 60 batch_seconds 0.007
+TICK nominal 80 batch_seconds 0.007
+TICK nominal 100 batch_seconds 0.007
+METHOD_COMPLETE evaluate nominal 96
+TICK frequency 0 batch_seconds 0.011
+TICK frequency 20 batch_seconds 0.009
+TICK frequency 40 batch_seconds 0.009
+TICK frequency 60 batch_seconds 0.009
+TICK frequency 80 batch_seconds 0.009
+TICK frequency 100 batch_seconds 0.009
+METHOD_COMPLETE evaluate frequency 96
+TICK joint 0 batch_seconds 0.03
+TICK joint 20 batch_seconds 0.02
+TICK joint 40 batch_seconds 0.02
+TICK joint 60 batch_seconds 0.022
+TICK joint 80 batch_seconds 0.021
+TICK joint 100 batch_seconds 0.023
+METHOD_COMPLETE evaluate joint 96
+TICK spread 0 batch_seconds 0.026
+TICK spread 20 batch_seconds 0.024
+TICK spread 40 batch_seconds 0.023
+TICK spread 60 batch_seconds 0.021
+TICK spread 80 batch_seconds 0.021
+TICK spread 100 batch_seconds 0.023
+METHOD_COMPLETE evaluate spread 96
+TICK hybrid 0 batch_seconds 0.033
+TICK hybrid 20 batch_seconds 0.033
+TICK hybrid 40 batch_seconds 0.032
+TICK hybrid 60 batch_seconds 0.033
+TICK hybrid 80 batch_seconds 0.033
+TICK hybrid 100 batch_seconds 0.032
+METHOD_COMPLETE evaluate hybrid 96
+TICK joint_hybrid 0 batch_seconds 0.052
+TICK joint_hybrid 20 batch_seconds 0.047
+TICK joint_hybrid 40 batch_seconds 0.048
+TICK joint_hybrid 60 batch_seconds 0.048
+TICK joint_hybrid 80 batch_seconds 0.049
+TICK joint_hybrid 100 batch_seconds 0.047
+METHOD_COMPLETE evaluate joint_hybrid 96
+COMPLETE evaluate

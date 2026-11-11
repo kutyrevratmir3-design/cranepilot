@@ -1,0 +1,16 @@
+{
+  "experiment":"modal_backtest_gate_20261107",
+  "parent_development":"artifacts/runs/modal_history_20261107",
+  "parent_reference":"artifacts/runs/modal_reference_challenge_20261107",
+  "parent_confirmation":"artifacts/runs/modal_confirmation_20261107",
+  "backtest_steps":20,
+  "short_history_samples":61,
+  "backtest_horizons_raw":[10,20,35,50,75,100],
+  "variants":["reference","modal","hard_0.8","hard_1","hard_1.2","soft"],
+  "reference_selection":"Choose long4s or short3s ARX percase on original validation, never on the seven opened records",
+  "short_arx_fit":"Reuse each case's prior validation-selected representation, form and alpha; fit exactly one3s model on the same TRAIN origins/records",
+  "selection":"Single global variant minimizing equal-case validation seven-horizon MAE; reference is an eligible fallback and wins exact ties",
+  "development_gate":{"maximum_mae_ratio":0.9,"minimum_case_wins":4,"cases":5},
+  "evaluation_status":"All old public data are opened; subsequent evaluation is retrospective development, never independent confirmation",
+  "scope":"Same4s available raw history and settled-input task; predict the last observed1s from the preceding3s to estimate local model reliability. No new architecture or future-target gating."
+}

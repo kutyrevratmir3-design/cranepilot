@@ -1,0 +1,10 @@
+test_arx_parameters_do_not_read_target_at_prediction (tests.test_matched_adaptation.MatchedAdaptationTests.test_arx_parameters_do_not_read_target_at_prediction) ... ok
+test_equilibrium_exact_and_gradient_exists (tests.test_matched_adaptation.MatchedAdaptationTests.test_equilibrium_exact_and_gradient_exists) ... ok
+test_linear_and_narx_command_prefix_and_reload (tests.test_matched_adaptation.MatchedAdaptationTests.test_linear_and_narx_command_prefix_and_reload) ... ok
+test_neural_adapter_same_history_and_known_reference_alignment (tests.test_matched_adaptation.MatchedAdaptationTests.test_neural_adapter_same_history_and_known_reference_alignment) ... ok
+test_strong_reference_and_retrospective_contract (tests.test_matched_adaptation.MatchedAdaptationTests.test_strong_reference_and_retrospective_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.861s
+
+OK

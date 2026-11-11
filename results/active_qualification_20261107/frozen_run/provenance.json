@@ -1,0 +1,360 @@
+{
+  "status": "complete",
+  "git_head": "396cee43d5ff9884fdb582b188ed89de52662daf",
+  "config": {
+    "experiment": "active_qualification_20261107",
+    "bundle": "artifacts/reliability_bundle_20261107",
+    "task_source": "artifacts/modal_bundle_20261107/task.json",
+    "data": "data/processed",
+    "origin_start_s": 4,
+    "origin_stride_raw": 25,
+    "methods": [
+      "strong_arx",
+      "frozen_modal",
+      "frozen_blend",
+      "fixed_frequency",
+      "persistence"
+    ],
+    "regime_names": [
+      "low_past_motion",
+      "drive_active",
+      "length_active",
+      "drive_and_length_active"
+    ],
+    "primary_role": "old_evaluation",
+    "status": "Retrospective qualification of frozen kernels outside their declared eligibility; all33records already opened. No fitting or selection, no API gate change, no independent confirmation.",
+    "scope": "Forecast origins >=4s, same4s available history and seven horizons. Group regimes only by past401samples of position/length. Future reference is used only to reconstruct the old numerical applicability indicator, never for prediction or primary regime labels. Future measured motion/length never input.",
+    "failure_policy": "Retain every considered origin and every prediction; nonfinite predictions fail the run instead of being dropped. First4s cannot be evaluated without recorded prehistory."
+  },
+  "task": {
+    "experiment": "modal_history_20261107",
+    "data": "data/processed",
+    "history_samples": 81,
+    "history_spacing_raw": 5,
+    "dt_s": 0.05,
+    "horizons_raw": [
+      10,
+      20,
+      35,
+      50,
+      75,
+      100,
+      150
+    ],
+    "origin_start_s": 25,
+    "origin_stride_raw": 10,
+    "past_length_range_m": 0.002,
+    "past_position_range": 0.002,
+    "future_reference_range": 1e-09,
+    "families": {
+      "trolley": {
+        "axes": [
+          "theta"
+        ],
+        "train": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "validation": [
+          4
+        ],
+        "confirmation": [
+          9,
+          13
+        ]
+      },
+      "jib": {
+        "axes": [
+          "theta",
+          "beta"
+        ],
+        "train": [
+          14,
+          15,
+          16,
+          18,
+          19,
+          20
+        ],
+        "validation": [
+          17
+        ],
+        "confirmation": [
+          21,
+          22,
+          23
+        ]
+      },
+      "simult": {
+        "axes": [
+          "theta",
+          "beta"
+        ],
+        "train": [
+          24,
+          25,
+          26,
+          27,
+          29,
+          30,
+          31
+        ],
+        "validation": [
+          28
+        ],
+        "confirmation": [
+          32,
+          33
+        ]
+      }
+    },
+    "ridge_grid": [
+      1e-10,
+      1e-08,
+      1e-06,
+      0.0001,
+      0.01,
+      1
+    ],
+    "arx_forms": [
+      "direct",
+      "harmonic_residual",
+      "lpv_direct",
+      "lpv_harmonic_residual"
+    ],
+    "frequency_ratios": {
+      "min": 0.5,
+      "max": 1.6,
+      "count": 89
+    },
+    "damping_grid": [
+      0,
+      0.04,
+      0.12,
+      0.3
+    ],
+    "modal_variants": [
+      "fixed",
+      "one_mode",
+      "two_mode"
+    ],
+    "secondary_ratios": {
+      "min": 0.5,
+      "max": 3,
+      "count": 101
+    },
+    "minimum_mode_separation_ratio": 0.2,
+    "minimum_amplitude_bins": 1,
+    "local_ar_orders": [
+      2,
+      4,
+      8
+    ],
+    "local_ar_ridge": [
+      1e-08,
+      0.0001,
+      0.01
+    ],
+    "development_gate": {
+      "maximum_mae_ratio": 0.9,
+      "minimum_case_wins": 4,
+      "cases": 5
+    },
+    "confirmation_gate": {
+      "maximum_mae_ratio": 0.9,
+      "minimum_scenario_wins": 5,
+      "scenarios": 7,
+      "bootstrap_samples": 10000,
+      "seed": 7112030,
+      "upper_change_percent_below": 0
+    },
+    "sealed_confirmation_ids": [
+      9,
+      13,
+      21,
+      22,
+      23,
+      32,
+      33
+    ],
+    "confirmation_status": "Previously imported public records with no saved fitting/validation/score use found; NOT newly collected or independently acquired data. Keep sealed until development gate and frozen checkpoint/selection hash.",
+    "scope": "Causal residual-sway forecasting after 25s, with stationary past length/drive and constant known future reference; not active-manoeuvre prediction, hoisting dynamics, hardware control or a new modal identification algorithm. No target-based eligibility or future measured positions/lengths."
+  },
+  "guarded_hashes": {
+    "configs/active_qualification_20261107.json": "02b301a8f6ba5c4087ce3cb11dcca958354bca89982c7ef59d98792bfba79741",
+    "docs/ACTIVE_QUALIFICATION_DESIGN_20261107.md": "bea2a80363c6e171d3d8cf0a677d20262090bf8eb08e1214e8120f8fdf5c4f4b",
+    "scripts/active_qualification.py": "536ebc749c6eef1dd9b279a11130a52b62ae1f08b7395f91de7a4d161418fb67",
+    "scripts/run_active_qualification.py": "5049b0cc4bd06aac32cae6f593fa14b36d82384494ad13b5064941406b954a3f",
+    "tests/test_active_qualification.py": "bd5e9592e60f2c394addccb4323326a79eac48b61f0b470bb5cff9ea42243b71",
+    "data/processed/dataset.npz": "666608ea2e76ed58a4d0d850d4b7054352ae3855fa47eaa5e1efc3f64df16239",
+    "data/processed/manifest.json": "d222401ac4ac16df8899e19d46d82142de6243bca4ad4dadb6a2c8ef947ecd85",
+    "artifacts/reliability_bundle_20261107/gate.json": "aafcec3962ea70f58d538c362c781893a39bbb64d35c32d157e37fb712cf4150",
+    "artifacts/reliability_bundle_20261107/manifest.json": "9de59e82d7a05a16e4b3b2d9bf1d4aed251ffbd947d3434177f556ebba19ee24",
+    "artifacts/reliability_bundle_20261107/simult_theta/short_arx.npz": "3b4200756e1721ede168fc7664bdba869965de5a0f648e6a9c94ce15c3a9e969",
+    "artifacts/reliability_bundle_20261107/trolley_theta/short_arx.npz": "bcc85e714e4553635020a32ac645e68920d948d0fe94069bd085fa7b59483327",
+    "artifacts/reliability_bundle_20261107/jib_beta/short_arx.npz": "e9b365c13b1f6b6815640df7ac16febab4b61d9e29ea43c7630f56d4a367c738",
+    "artifacts/reliability_bundle_20261107/jib_theta/short_arx.npz": "1e461642351588cfcb47c6c08fe665bdcdc10311ac18635628bf5f4bbb8c13cd",
+    "artifacts/reliability_bundle_20261107/simult_beta/short_arx.npz": "5c60b6f8c987937bc4b2eadc39e6955fc227b598c47b403ffc78a1b63608da53",
+    "artifacts/reliability_bundle_20261107/base/task.json": "96fe0a7b705dd99fcab30534a9b53a82eae09e9393084441f30b805a24c956d1",
+    "artifacts/reliability_bundle_20261107/base/manifest.json": "213b7be8ea19691be4510dbb875b0b4d30652af8fe929f14d93d10a267a2d1ca",
+    "artifacts/reliability_bundle_20261107/base/simult_theta/reference_arx.npz": "7b9f8e69ec0e8af54c91de96fdc55e09a1520fd2962efab323d5ccd0951c8e05",
+    "artifacts/reliability_bundle_20261107/base/simult_theta/calibration.json": "0430e7a5ddb5072a9562120cbf446b7fcea43fff5cfca3d0f43f7fb8e475eae7",
+    "artifacts/reliability_bundle_20261107/base/trolley_theta/reference_arx.npz": "065a94490e4413c685662dd0b5cd9aa33b4d5dce8a886bbea500b81444b00d5b",
+    "artifacts/reliability_bundle_20261107/base/trolley_theta/calibration.json": "9d094502422cbc56857ffa6747011d283c03ec7a4529a778b0f724498395ca55",
+    "artifacts/reliability_bundle_20261107/base/jib_beta/reference_arx.npz": "bec0128f678f472bc2ce3c77b4bbb92329a75f554d1c2bfde15d70c2cd18018c",
+    "artifacts/reliability_bundle_20261107/base/jib_beta/calibration.json": "0ec85f41d42774f91995311bdfc86f931b3d5383424fa4c5b5d7440fa95fa238",
+    "artifacts/reliability_bundle_20261107/base/jib_theta/reference_arx.npz": "427eacfb6c9143a0fdf3c14e0f1fa7a3834a1706190e3470192a9401a988064a",
+    "artifacts/reliability_bundle_20261107/base/jib_theta/calibration.json": "0230fca36bde7b4d390b42ad00b48b8ec02564aed9d6706d2060958b7356ae45",
+    "artifacts/reliability_bundle_20261107/base/simult_beta/reference_arx.npz": "d135ad203e76098e1be445386476bbc0c503583aecce2dd0166b21f5501085d7",
+    "artifacts/reliability_bundle_20261107/base/simult_beta/calibration.json": "27b9b1ab2c8935d369a83afa2f4f6804d1b34538580406120fac71370dfc62c4",
+    "src/cranepilot/reliability_pilot.py": "285999fd36413e55f9c05dda0e538f299604a684403dfc57663ecac77119a500",
+    "src/cranepilot/physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+    "src/cranepilot/modal_pilot.py": "d1e3b8d7a82ddd0f5c268569b4fad3480263d8b4d3e88b0a778afceac320cce9",
+    "scripts/modal_reference_challenge.py": "23b26b08bfece5c768b386770751ee04773ea4e973ff4358edc854823f591858",
+    "src/cranepilot/data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24",
+    "scripts/modal_backtest_gate.py": "af1abf2159484c8c434d62ee88ddd20432ab811688607e6013510209405f42ba",
+    "scripts/modal_history.py": "11b21490fc78da67b2863a1b06c9c129bb294a9149f29c9bcda0896b928c5414"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "source_sha256": {
+      "broad_strategies.py": "741262b2555547d894d0697e542554bb5ff3436f88f5b79e33669634b38cd2cc",
+      "metrics.py": "3a67a939e6c94d7bab3aaec7521ff866fd6e8bcaac213364645451a2ff025926",
+      "benchmark.py": "1fcc4b8275a5aa025b6e0e15ff7adb3e3100fc86a3bf848b73191955585ad88d",
+      "models.py": "0f90dce6d6b629b0e8eed5445972c59bc69e05223ad6a35ee390161c47e9108b",
+      "modal_pilot.py": "d1e3b8d7a82ddd0f5c268569b4fad3480263d8b4d3e88b0a778afceac320cce9",
+      "temporal_observer.py": "6db40a1c29b9c55d9387d2619fb33cc2864b817035beb3478ab49e880a51b90e",
+      "control.py": "c06d25e915a0650f5970ab4e08753930c7de94941607768802e1176320488740",
+      "fast_inference.py": "b64b3e71e71bb47d624e676921e0cb87342ffda596b91405351d0265a3490686",
+      "__init__.py": "7bfbc4ecdf95712e5d99b1b006daf28f44f0d3f170915338ce2c8d132b0d42a6",
+      "phase_normalized.py": "64f4ccb7819487cccfb8de95878d0dacfcc256d5196d79aa3b3a483a954c02d7",
+      "forced_observer.py": "5587404ccdb12696abc410f55da4ea85e76af6a8c0de3c33371763d7bba54a08",
+      "physics.py": "c924836e14ecc01168c5b0156da787f2d5dbdc79b0fee01df9d836e4b5274e9c",
+      "cli.py": "bcf427d811f965fa3cd5b832ab5cd52f1a4b1730c750b5a883f73c3cf2ecc9f1",
+      "reliability_pilot.py": "285999fd36413e55f9c05dda0e538f299604a684403dfc57663ecac77119a500",
+      "rollout.py": "75054c94ae701cbb24b429cf5e6012b8da4aa5ee9dcbcf935e570708262f4b1a",
+      "passive_memory.py": "f9a54d972d8a0bfe2f93d37e6da6c31cc696c188144fd7279a5f44fbb60bed25",
+      "innovation.py": "6b37b042b01697d8b88f500900ae82211307e3b3498c9e60daa6247b22058e78",
+      "adaptation.py": "0f49fa660f144906c745c50908f24e8df914fe3203b9158097beb8fbcafee75a",
+      "data.py": "1904129fd29373426f689ad6c4cac7a34f41387f7afe8fe7caadd4ac67daaf24"
+    },
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.0",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2"
+    },
+    "git_commit": "396cee43d5ff9884fdb582b188ed89de52662daf"
+  },
+  "fitting_performed": false,
+  "selection_performed": false,
+  "api_gate_changed": false,
+  "all_records_previously_opened": true,
+  "independent_confirmation": false,
+  "final_goal_achieved": false,
+  "records_read": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "axis_records": 53,
+  "packets": 19875,
+  "result_hashes": {
+    "coverage.csv": "18d4c048949df7f03f45cc9f3661b23401e359b8090cb0d45dc73b7546640d23",
+    "jib_beta_s22.npz": "295e1e4eba4240f3cdbe7590479d1d8b8e36dfe9f686c1061bacdb418d300656",
+    "jib_theta_s20.npz": "aca5b14bd095b86670b7537a9bf77fa652167b6e0c29c7ccdb330728df5bf19b",
+    "trolley_theta_s7.npz": "f67d42f14520797181bce6123cde8a8c2e4e02621c635f7a2d76ae041fee338b",
+    "simult_beta_s24.npz": "b00ca0cb3b236821da8734621a35948d87f1738d1d9018c5492ecbcac50a0c6b",
+    "simult_beta_s30.npz": "220247b1ccc6e0345c9441d6c819871ababfbfa22f48d89b3c8055655e421daa",
+    "simult_beta_s31.npz": "a1beab6512c64397252f9db0361d8e418c11e328e79c95bae9dba683fced1980",
+    "trolley_theta_s6.npz": "37fbb98b174153350666584fdf716923ef033bc11e5717c1e630366c6ddf464e",
+    "simult_beta_s25.npz": "eb0f1abfe5c176c5d614551a2161f1ce78dc096bbe91b3dc8bb01431ccdb44e1",
+    "jib_theta_s21.npz": "483b7e1ce72f274c3adfea2d0fbf99d37bdf6f796f24f318f2c9f5796d59e9a3",
+    "jib_beta_s23.npz": "b626c349b6e5a376824b6aa5e34c53da6adae64adbb3bd36a8d91475a8072661",
+    "jib_beta_s21.npz": "d0ded05f9167ca5a22291df194aab3f378bb9afc60c3d2abdae1082a960f38c0",
+    "jib_theta_s23.npz": "0fee6d6038b958a85d7ed1148f06924b244a6ef2263fc573d47c353a3b427647",
+    "simult_beta_s33.npz": "0758dbe01a70f09222d46c73a0a35e0105cd4579eaf6730e9668a55934436b4e",
+    "simult_beta_s27.npz": "d50cc209ac477dd5916c4ca64fa968246b4e605754eaf33f8c41a024e7cd1771",
+    "trolley_theta_s4.npz": "45d5d9b14aa56dbc13ec15db4a0756c85e640238dc561f935464d62664859e73",
+    "simult_beta_s26.npz": "1fb0f2377977d7300be67a87d295a5ae72723b6d2354bd4941ba2952f022d568",
+    "trolley_theta_s5.npz": "d5cded7e347e607a73384f28f6926e9455bc52293d4d01e5428f505b1d4b9c4f",
+    "simult_beta_s32.npz": "e1404e54e087f4f373ab3fde3492ae28310310cf1d485e89e0f4182ccf015b2a",
+    "jib_theta_s22.npz": "1268691bdf71a075fa56bebbd0f8909f983755f3186f466e9f4b546da9bafc64",
+    "jib_beta_s20.npz": "c3e3a3816bb4545e08df7283001727e08ae69287c69b1a017d3d3310536462f4",
+    "metrics.csv": "ea9e5e87090def86689ec1800e6ceb86633c4b2aaabc9026c5106e91eed2e7fd",
+    "jib_beta_s18.npz": "b09cd71fd2f1ede82f932e788cc16ba7f6362ed806339c6bf87ca694bf8f7fcd",
+    "trolley_theta_s1.npz": "ddfa758d9896a5825375b8aeb1c4bdd6b7c4ac6d14d1f65cb8f700bd934f7663",
+    "simult_theta_s28.npz": "61c179c572da309b8db84be7f6229002929ac42f3ee6a477d68710b6ab08cd07",
+    "simult_theta_s29.npz": "8605de65e01650927aeadfb25894c36fa65d79a9d22d82a8b2a57be876c86ffb",
+    "jib_beta_s19.npz": "c3567b780475a905f8e751df2f5916b2c72d58d0e31144a0a0bc8204920037da",
+    "jib_theta_s19.npz": "749f07513e44da8a0f15d8c820255f18c35fee56e7aa3e83563d90fcd284ade2",
+    "trolley_theta_s2.npz": "fa16d3a491b522253cbdc25ffb7ed5b2776f6db00daabc36f0b281dd4fb8fbd2",
+    "trolley_theta_s3.npz": "3b803f9c0115c1b42b0bd252a9f8ff0b1e4f44156e532fc6d607b97627f600ae",
+    "jib_theta_s18.npz": "cd8d05a4664d75ab0016781e19b36a59c3259a5e14a9f6679b4d7bc1cd1e7243",
+    "jib_beta_s17.npz": "a2aebb25722c8faf71d54d9934d39b9cf519c67298b775c5a8395aecb435ab06",
+    "jib_theta_s15.npz": "f5c6d510cf1148e15965fbd0fa18afce75ada420b56477aeced5f4b01bf35418",
+    "simult_theta_s33.npz": "3d0710a49df70614074a63de1cf67fd7c98ca82f7dff560fbe55e708d252971b",
+    "simult_theta_s27.npz": "9e656c0e0a980e62afbd77249f2462d679cde53a89ea974d92df3555bb5a45a2",
+    "trolley_theta_s13.npz": "bb62f1019c69b5dae9c5b59cfd6763d232edd74d2b9e2021c6b1d5a7b8d1c265",
+    "trolley_theta_s12.npz": "5e58ca59bd8fbab64599c144e9a6aaf6d580dadfd33484982561b7a3613e4667",
+    "simult_theta_s26.npz": "545aff97b1b23e0588eba35fbdcab5bfe156b95699910e2386dc5d1421d72693",
+    "simult_theta_s32.npz": "7234e47606c422177ee6b8121cfac0e05d515e725ed5062774d57f9d3efe8e69",
+    "jib_theta_s14.npz": "fc798cb4c8b8115f599622821c1dc9f466da43b89c83b92e1b3d577dc73ce252",
+    "jib_beta_s16.npz": "e7b19b464be3c9264679e342fba31270a5a8468d38f2abc453142bfe02dbf52c",
+    "jib_beta_s14.npz": "17375f3a1bde70b98aa3f048b0590b634b585119034e5853fd2eda9dbaf8d832",
+    "jib_theta_s16.npz": "51e1bc44f8b9ab00085a73598ca446a856ee4bccea4767d39e608d04a5e590ef",
+    "simult_theta_s24.npz": "986ea584ebe1f1b23dce554f79791767908039cd9c496e0267022d92076c2e50",
+    "simult_theta_s30.npz": "72d7b0a7cffdb03b27028dfbbdbc89a977f5b46a5938db21da4f41843213c96a",
+    "trolley_theta_s10.npz": "0840f502b88ab632f8247f25566d32424a9c485a0b483747ddd670c39b6c7843",
+    "trolley_theta_s11.npz": "07e86a79f4a36bbfcb40aabbdd8d0173ba55744a5e39dde1760642eaf9321c79",
+    "simult_theta_s31.npz": "4acb0210fbd4dae2d016837c4bea676248963de777c4a36c5b2ef75cdef250d5",
+    "simult_theta_s25.npz": "fe7167059b70ce7b3c2ab5978c269a364a7f82f8927340975494b1d3e6c6b087",
+    "jib_theta_s17.npz": "48cc16abd3a057ff20806d7c2311fede58fba4ad4bbe8579cf33f602136eec0d",
+    "jib_beta_s15.npz": "63bf52ce2a8ea0bcf97f5e8f55d3f84933d03cb71be2a06a46efadfcf120f6ae",
+    "trolley_theta_s8.npz": "e58e6530946576e680b6327deb5bd51a9e420927d9267f4b3d5c660dc7ac55fa",
+    "trolley_theta_s9.npz": "14bad7f8a867e2c071a72ec1f87d0259a1d44b7e43196dcd8b190055b5117f39",
+    "simult_beta_s28.npz": "c35b6b5c0cfc7026971113b83e1fc793aba1cb74635afbd3542f3cf8535a89d7",
+    "simult_beta_s29.npz": "74ce606c2505b53e1b72c453874cf49bb953daa031052f5f0de15b1c0cc6a449"
+  }
+}

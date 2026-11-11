@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "trolley_theta",
+      "scenario": 9,
+      "packets": 726,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "trolley_theta",
+      "scenario": 13,
+      "packets": 160,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 21,
+      "packets": 538,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 22,
+      "packets": 726,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_theta",
+      "scenario": 23,
+      "packets": 726,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 21,
+      "packets": 538,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 22,
+      "packets": 726,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "jib_beta",
+      "scenario": 23,
+      "packets": 726,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 32,
+      "packets": 583,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "simult_theta",
+      "scenario": 33,
+      "packets": 126,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 32,
+      "packets": 583,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    },
+    {
+      "case": "simult_beta",
+      "scenario": 33,
+      "packets": 126,
+      "replay_error": 0.0,
+      "targets_ignored": true
+    }
+  ],
+  "development_sha256": "e512bf6b93ca9e08c9d224eef6fc9520ff1f2bbe7603cdcecfc4e3eb2dc639fb",
+  "retrospective_provenance_sha256": "ca77b6b775b0e3738deb36a2dcae564eebdedea123372a9ba1073b5b80300a46",
+  "verifier_sha256": "6382c54d7dbacc8e05404d862cfe7bc21b7f6e3ed6c419aff734c5a7df257aa9",
+  "independent_confirmation": false,
+  "original_files": {
+    "manifest": "/Users/ratmir_kutyrev/Library/CloudStorage/OneDrive-NordAngliaEducation/NAE - Files/Desktop/CraneTransfer/handoff/restoration_20261107/original_file_hashes.json",
+    "manifest_sha256": "b9e5b8171ca97c858d2595eb0f394239c7a77ba822aa8a58f6b0f65c40ed7f3a",
+    "projects": {
+      "main": {
+        "passed": true,
+        "expected_files": 1111,
+        "checked_files": 1111,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      },
+      "aphynity": {
+        "passed": true,
+        "expected_files": 170,
+        "checked_files": 170,
+        "missing": [],
+        "changed": [],
+        "read_errors": []
+      }
+    },
+    "passed": true,
+    "checked_files": 1281
+  },
+  "validation_fits": 240,
+  "retrospective_forecasts": 6284,
+  "old_modal_and_references_unchanged": true,
+  "validation_only_selection": true
+}

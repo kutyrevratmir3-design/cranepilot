@@ -1,0 +1,19 @@
+REAL evaluate primary 1 0.62 seconds
+REAL evaluate primary 2 0.66 seconds
+REAL evaluate primary 7 0.68 seconds
+REAL evaluate primary 8 0.68 seconds
+REAL evaluate primary 10 0.7 seconds
+REAL evaluate primary 11 0.54 seconds
+REAL evaluate primary 12 1.05 seconds
+SIMULATION primary 1152
+REAL evaluate short_transfer 1 1.16 seconds
+REAL evaluate short_transfer 2 1.25 seconds
+REAL evaluate short_transfer 3 2.56 seconds
+REAL evaluate short_transfer 7 1.09 seconds
+SIMULATION short_transfer 1152
+REAL evaluate long_transfer 2 0.68 seconds
+REAL evaluate long_transfer 6 0.57 seconds
+REAL evaluate long_transfer 7 0.74 seconds
+REAL evaluate long_transfer 8 0.58 seconds
+SIMULATION long_transfer 1152
+COMPLETE evaluate
