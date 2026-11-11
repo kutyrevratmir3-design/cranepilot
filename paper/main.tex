@@ -1,18 +1,37 @@
-\documentclass[11pt]{article}
-\usepackage[margin=25mm]{geometry}
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern,amsmath,amssymb,booktabs,graphicx,hyperref}
+\usepackage{lmodern,amsmath,amssymb,booktabs,graphicx,float,hyperref}
 \usepackage{microtype}
-\usepackage{float}
-\hypersetup{hidelinks}
+\hypersetup{hidelinks,
+  pdftitle={Crane Payload-Sway Forecasting with Delayed Angle Measurements},
+  pdfauthor={Ratmir Kutyrev}}
 \raggedbottom
-\title{Physics-Guided Prediction and Simulation-Based Control of Crane Payload Sway under Cable-Length Shift}
-\author{Ratmir Kutyrev\\H-FARM International School Venice, Italy}
-\date{Research draft --- 2 November 2026}
+\setlength{\emergencystretch}{1.5em}
+\newcommand{\degs}{\ensuremath{{}^{\circ}}}
+\renewcommand{\topfraction}{0.88}
+\renewcommand{\bottomfraction}{0.78}
+\renewcommand{\textfraction}{0.10}
+\renewcommand{\floatpagefraction}{0.72}
+\setlength{\textfloatsep}{15pt plus 2pt minus 3pt}
+\setlength{\intextsep}{11pt plus 2pt minus 2pt}
+
 \begin{document}
-\maketitle
+\begin{center}
+{\LARGE\bfseries Crane Payload-Sway Forecasting\\[3pt]
+with Delayed Angle Measurements\par}
+\vspace{11pt}
+{\large Ratmir Kutyrev\par}
+\vspace{3pt}
+{\small H-FARM International School, Venice, Italy\par}
+\vspace{8pt}
+{\small Manuscript for review \enspace\textbullet\enspace 11 November 2026\par}
+\end{center}
+\vspace{4pt}
 \input{sections/body}
+\begingroup
+\small
 \bibliographystyle{unsrt}
 \bibliography{refs}
+\endgroup
 \end{document}
-

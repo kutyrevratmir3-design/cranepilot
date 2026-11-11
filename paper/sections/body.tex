@@ -1,473 +1,164 @@
 \begin{abstract}
-This research draft investigates cable-length shift in crane payload-sway
-forecasting using an existing experimental dataset, with a separate
-simulation-based control study. A causal Python benchmark is developed from
-the author's previous MATLAB study. It distinguishes the forecasting
-information set, scenario-level validation, and retrospective evaluation.
-An initial extrapolation experiment compares eleven predictors on four
-held-out trolley-motion records. At a 1.0~s horizon, a train-calibrated
-oscillator achieves a mean scenario MAE of 0.758~degrees, compared with
-0.907~degrees for an exploratory sensitivity-projected neural residual.
-The residual improves the 0.1~s error from 0.300 to 0.219~degrees but does
-not establish uniform superiority. An additional benchmark covers 38
-scenario--axis folds in three motion families. A separate 16-context
-simulation pilot compares nominal and geometrically calibrated MPC under
-synthetic plant mismatch. These controller experiments assume state
-feedback and do not validate the neural predictor inside MPC. The current
-evidence establishes a reproducible research baseline and identifies the
-need for stronger adaptive-physics comparisons before a novel-method claim.
-An additional command-conditioned passive-memory model is implemented with
-a discrete storage balance. Its short-horizon gains do not uniformly exceed
-a same-information GP residual reference.
-No new physical experiments or industrial safety claims are made.
+When a crane sway measurement arrives late, more recent support-motion measurements may already be available. We study forecasting under this timing difference on 33 published laboratory tower-crane records. The forecaster combines quadratic completion of the missing angle samples with a bank of length-calibrated modal forecasts that start from the latest measured angle. A fixed age-dependent rule blends the two. The forecaster and a matched autoregressive reference with exogenous inputs (ARX) receive the same available histories and angle age. On internal validation, mean absolute angular error was 1.575\degs{} for the mixture and 1.758\degs{} for the reference under a score that gives equal weight to low and high recent support motion. On seven previously examined records, the mixture had lower mean error in 62 of 63 age--horizon combinations at each of two noise levels. At an angle age of 250~ms and a forecast horizon of 100~ms, its error was higher without added noise, 0.700\degs{} versus 0.653\degs. Overstating the age by 20~ms raised mixture error from 0.581\degs{} to 0.869\degs{} across five common true ages. Independent validation of the dated forecaster on newly acquired physical records is pending.
 \end{abstract}
 
-\noindent\textbf{Keywords:} crane sway; physics-guided forecasting;
-cable-length shift; residual learning; model predictive control.
+\noindent\textbf{Keywords}\quad crane payload sway, sensor age, modal forecasting, cable length, autoregressive models
 
 \section{Introduction}
-Predicting suspended-load motion is useful only when the available
-measurements, future inputs, and intended decisions are defined precisely.
-A predictor driven by recent sway angles can forecast approximately free
-motion, but cannot determine an arbitrary future operator command.
-Conversely, predictive control requires a model of how candidate actions
-change the system. These are related but distinct identification problems.
 
-The present work extends the author's previous analysis of payload-sway
-prediction horizons and cable-length generalisation. That analysis used
-tree-based regression and neural networks on an experimental tower-crane
-dataset. Its subsequent audit identified the importance of physical
-baselines, consistent horizon indexing, and scenario-level evaluation.
-The current Python implementation preserves the historical results as
-provenance while refitting new models under an explicit protocol.
+A sway forecast has two relevant times when the angle measurement arrives late. The latest received angle describes the payload at its measurement time. The forecast describes the payload at a specified horizon after the current time, when newer information about trolley position, jib angle or cable length may already be available. Completing the missing samples allows an existing forecaster to use the current time as its origin. A second approach fits the oscillation state to the dated angle history and propagates it over the intervening motion. These approaches can behave differently at short horizons and when the stated age is wrong.
 
-The central development question is whether a model can retain useful
-physical structure when transferred to a new suspension configuration.
-Rather than assuming that a learned correction is beneficial, we test
-whether frequency calibration already explains most of the improvement.
-The intended longer-term contribution is a data-efficient adaptation
-method connecting action-conditioned prediction and control. That
-contribution has not yet been established by the initial results reported
-here. This draft records both positive and negative findings.
+Earlier crane studies have used cable length and payload mass in data-driven predictors~\cite{kusznir2022}, physics-informed neural networks for travelling mobile cranes~\cite{zhou2025}, and observers that compensate for sway-sensor delay~\cite{kaneko2009}. Experimental results from model predictive control on other rigs use different inputs and targets~\cite{kusznir2024mpc,mao2026}. Here we fit the reference on the same laboratory dataset and evaluate it at the same forecast origins and targets as the mixture.
 
-\section{Related work and scope of the proposed contribution}
-Crane identification already includes multi-step symbolic predictors
-conditioned on cable length and payload mass\cite{kusznir2022}, regularised
-genetic-programming identification\cite{kusznir2024identification}, and
-learned NARX models embedded in nonlinear MPC\cite{kusznir2024mpc}.
-Physics-informed sway prediction and simulation-to-experiment transfer
-have been studied for travelling mobile cranes\cite{zhou2025}.
-Mao et al. combine a physical model, a Gaussian-process residual and a
-disturbance observer in experimentally evaluated crane MPC\cite{mao2026}.
-Therefore, combining physics, a learned correction and MPC is not a
-sufficient novelty claim.
+The present work extends an earlier angle-only analysis of forecast horizons and cable-length extrapolation. It tests a mixture of two causal forecasting approaches when angle age is known. It then asks where the mixture loses accuracy as age, horizon and the accuracy of the supplied age change.
 
-Dimensionless control policies provide a framework for transfer between
-dynamically similar systems\cite{girard2024}. Orthogonal Gaussian processes
-and projection-regularised physics-guided neural models address the
-confounding of physical parameters and flexible residuals
-\cite{plumlee2018,kon2022}. The exploratory model below applies a related
-separation at the level of finite-horizon oscillator predictions. The
-specific use of trajectory sensitivities, causal calibration budgets and
-control-relevant evaluation remains a research candidate requiring fuller
-comparison with these predecessors.
+\section{Data and forecast protocol}
+\label{sec:protocol}
 
-The current manuscript is a development report rather than a claim that
-this combination constitutes a new general theory. In particular, the
-available physical records support retrospective forecasting. They do
-not contain the response to newly selected controller actions.
+\subsection{Laboratory records}
 
-\section{Dataset and evaluation contract}
-\subsection{Experimental records}
-The public Inteco tower-crane dataset, Mendeley version~2, contains 33
-operating scenarios with 9901 observations each over 99~s, sampled at
-$\Delta t=0.01$~s\cite{alhassan2025dataset,mendeley2025}.
-It records trolley motion, jib rotation, hoisting, and combined motions.
-The nominal payload is 300~g; additional records vary the payload and
-suspension length. Encoder resolution is approximately $0.0879$~degrees.
-Raw XLSX files are imported without modification and identified by SHA-256
-checksums. All 33 checksums match the retained historical inventory.
+The Inteco tower-crane dataset contains 33 laboratory records at 100~Hz, each with 9,901 samples spanning 99~s~\cite{alhassan2025dataset,mendeley2025}. The records cover trolley motion, jib rotation and simultaneous operation, with variation in cable length and payload configuration. The nominal sway encoder increment is about 0.0879\degs. Table~\ref{tab:splits} gives the record split. Trolley motion is scored on one sway axis and the other families on both axes, giving five family--axis cases and 12 replay record--axis pairs. All 33 recordings had been examined before this experiment. Here \emph{replay} denotes retrospective scoring on the records kept out of fitting and selection in this experiment.
 
-The first extrapolation experiment uses trolley scenarios 3, 5 and 6 for
-training, scenario~4 for validation, and scenarios 1, 2, 7 and 8 for
-evaluation. This tests both shorter and longer lengths than those seen
-in training. The records have already informed earlier research; the
-evaluation is retrospective, not a previously untouched test.
-
-\subsection{Forecast origin and information}
-For prediction origin $k$, a history of $m$ measured angles is
-\begin{equation}
- \mathbf h_k=[\theta_k,\theta_{k-1},\ldots,\theta_{k-m+1}],
- \qquad \mathbf y_k=[\theta_{k+H_1},\ldots,\theta_{k+H_q}].
-\end{equation}
-Thus horizon $H_j$ corresponds to exactly $H_j\Delta t$ after the newest
-available angle. The neural pilot uses $m=41$ and horizons
-$\{0.10,0.20,0.35,0.50,0.75,1.00,1.50\}$~s. Prediction origins are
-evaluated every two samples. All input scaling and physical calibration
-use the training records only; early stopping uses the separate
-validation scenario. Overlapping windows are not independent trials.
-
-No future actual trolley motion is supplied to the forecasting models.
-An active/quiet diagnostic uses backward differences of measured crane
-motion at the prediction origin. This label does not imply that the
-entire future horizon is unforced. A fixed split at 15~s is not used to
-declare all later motion free decay.
-
-\section{Physical and learned forecasting models}
-\subsection{Physical calibration and causal state fitting}
-A descriptive effective-length relationship is fitted inside each
-training fold:
-\begin{equation}
- \ell_{\mathrm{eff}}(L)=aL+b,\qquad
- \omega(L)=\sqrt{g/\ell_{\mathrm{eff}}(L)}.
-\end{equation}
-The calibration uses frequency estimates from training intervals
-between 35 and 90~s, with a positive effective-length constraint. These
-intervals are identification tails, not automatically assumed unforced.
-The fitted offset is a model-discrepancy parameter and is not, without
-separate geometric measurement, a measured hook or cable offset.
-
-At every prediction origin, oscillator coefficients are estimated from
-the declared history only:
-\begin{equation}
- (\hat A_k,\hat B_k)=\arg\min_{A,B}
- \sum_{i=0}^{m-1}
- \left[\theta_{k-i}-A\cos(\omega i\Delta t)
-                  +B\sin(\omega i\Delta t)\right]^2.
-\end{equation}
-The future prediction is
-\begin{equation}
- \hat\theta_{k+H}^{\mathrm{phys}}
- =\hat A_k\cos(\omega H\Delta t)+\hat B_k\sin(\omega H\Delta t).
-\end{equation}
-The software also supports a damped basis; the initial benchmark uses
-zero damping so that the role of frequency calibration remains visible.
-This is a harmonic forecasting baseline, not a complete nonlinear,
-command-conditioned crane model.
-
-\subsection{Baseline models}
-The pilot compares persistence, an ideal oscillator using the recorded
-length directly, the calibrated oscillator, OLS, a length-varying linear
-model, gradient-boosted trees, an MLP ensemble, a capped Gaussian-process
-residual, and three phase-coordinate residual variants. The MLP and
-residual networks use two hidden layers with 20 units and three fixed
-training seeds. They are fitted jointly to the seven horizons.
-The Python neural and tree models are new implementations under a shared
-protocol, not bit-identical replicas of MATLAB training routines.
-
-\subsection{Exploratory sensitivity-projected residual}
-Let $\hat{\mathbf y}^{\mathrm{phys}}(p)$ denote the oscillator forecast
-and $r_w(\mathbf h_k,L)$ a learned correction. Phase-coordinate features
-include fitted oscillator coefficients, causal history discrepancy, and
-the dimensionless sampling interval $\omega\Delta t$.
-Trajectory sensitivities to frequency and damping define
-$S_k=\partial\hat{\mathbf y}^{\mathrm{phys}}/\partial p$.
-A rank-aware basis $U_k$ spans the retained sensitivity directions.
-The candidate objective is
-\begin{equation}
- \mathcal L(w)=\mathcal L_{\mathrm{forecast}}(w)
- +\lambda\,\mathbb E_k\left\|U_k^\mathsf T r_w\right\|^2.
-\end{equation}
-The pilot fixes $\lambda=0.03$ as a development choice, and compares the
-same residual architecture with $\lambda=0$. Projection acts on the
-complete correction including its learned mean. It defines a division
-of model components, not guaranteed recovery of true physical parameters.
-It may be harmful when genuine discrepancy aligns with the penalised
-directions; that possibility is part of the experiment.
-
-\section{Initial experimental forecasting results}
-Table~\ref{tab:forecast} averages MAE equally across the four evaluation
-scenarios. The calibrated oscillator outperforms all learned variants at
-1~s in this initial split. The projected residual improves the short
-0.1~s horizon but worsens the 1~s result. A uniform advantage of the
-candidate method is therefore not supported.
-
-\begin{table}[H]
+\begin{table}[htbp]
 \centering
-\caption{Retrospective cable-length extrapolation MAE in degrees.
-Each entry is the mean of four scenario scores; neural predictions are
-three-seed ensembles. These scores are not independent-window inference.}
-\label{tab:forecast}
-\input{forecast_table}
+\caption{Inteco record IDs and sway axes in the dated-angle experiment.}
+\label{tab:splits}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Motion family & Axes & Fit & Validation & Replay \\
+\midrule
+Trolley & $\theta$ & 1, 2, 3, 5--8, 10--12 & 4 & 9, 13 \\
+Jib rotation & $\theta,\beta$ & 14--16, 18--20 & 17 & 21--23 \\
+Simultaneous & $\theta,\beta$ & 24--27, 29--31 & 28 & 32, 33 \\
+\bottomrule
+\end{tabular}
 \end{table}
 
-\begin{figure}[H]
-\centering\includegraphics[width=.92\linewidth]{figures/horizon_comparison.png}
-\caption{Horizon-dependent error in the initial extrapolation split.
-The plot includes unfavourable residual-learning results.}
-\label{fig:horizon}
-\end{figure}
+\subsection{Available measurements and targets}
 
-\begin{figure}[H]
-\centering\includegraphics[width=.98\linewidth]{figures/activity_comparison.png}
-\caption{Scores separated by a causal activity diagnostic at the
-forecast origin. Quiet-at-origin does not imply an unforced future.}
-\end{figure}
+At forecast origin $t$, the latest angle sample was acquired at $t-a$, where $a$ is a known integer multiple of 10~ms. The models receive 401 angle samples ending at $t-a$ and 401 samples of cable length, support position and native drive-reference channels ending at $t$. Each history spans 4~s. The support channels are trolley position $x$, jib angle $J$, or both. The native references $x_r$ and $J_r$ retain the scale of the source export. Their physical actuator units are unverified.
 
-An additional physical-baseline benchmark evaluates all 38
-scenario--axis folds of the fixed-length trolley, jib and simultaneous
-motion families with histories of 3 and 41 observations. Its full
-per-scenario results are retained in the repository. Longer history
-constitutes additional information and is reported separately rather
-than attributed to model architecture.
+The targets are recorded angles at $t+h$ for $h\in\{0.10,0.20,0.35,0.50,0.75,1.00,1.50\}$~s. Thus the 100~ms target at an angle age of 250~ms lies 350~ms after the last measured angle. Future measured support motion, cable length and sway are excluded from the inputs. Validation and replay origins start at 4.25~s and advance in 1~s steps, preserving the full history at every age without padding the start of a record.
 
-\begin{figure}[H]
-\centering\includegraphics[width=.98\linewidth]{figures/all_family_baselines.png}
-\caption{Initial all-family physical baselines at 1~s. Families with
-two angular outputs are averaged over their scenario--axis scores.}
-\end{figure}
+Age and noise are imposed on stored inputs. Validation uses ages of 0, 20, 50, 100, 150 and 200~ms. Replay adds ages of 30, 70 and 250~ms. Each setting uses either the recorded angle history or that history plus seeded uniform jitter of up to one encoder increment in either direction. The recorded target angles and support channels are shared across methods. The condition without added noise retains the original encoder quantization.
 
-\section{Action-conditioned passive-memory development}
-\subsection{Information set and actuator identification}
-An additional fixed-length trolley experiment supplies a 41-sample
-history of sway, measured trolley position and recorded reference, together
-with the prescribed future reference. No future measured trolley position
-or acceleration enters a predictor. This information set differs from the
-earlier angle-only benchmark. Forecast origins are spaced by 0.1~s and
-rollout integration uses 0.05~s steps; scores must not be mixed with the
-earlier, denser origin grid.
+\section{Forecast methods}
 
-The reference is retained in its recorded numerical scale. In training
-scenario~3, a reference of 0.25 coexists with a stationary measured position
-near 0.508~m, so treating the reference as exact position or acceleration
-would be unjustified. A small recurrent actuator model is fitted to
-multi-step position error using scenarios 3, 5 and 6, with early stopping
-on scenario~4. On that validation scenario, 1~s position MAE is 2.43~mm,
-versus 4.86~mm for constant velocity. At 0.1~s the learned actuator is
-worse: 0.25 versus 0.16~mm. The actuator is frozen before sway fitting.
-These values do not establish an identified industrial drive model.
+\subsection{Completing the angle history}
 
-\subsection{Phase-exact passive-memory surrogate}
-Output-error port-Hamiltonian identification with causal state encoding
-already exists\cite{moradi2025}; so do orthogonal model augmentation
-\cite{gyorok2025} and power-preserving neural discretisations
-\cite{linares2026}. The present candidate is a particular fixed-length,
-small-angle construction, not a claim to introduce those general ideas.
-For $\tau=\omega t$, let $z=[q,p,r^\mathsf T]^\mathsf T$, where
-$p=\dot q/\omega$ and $r$ contains four latent memory states.
-A causal encoder provides a bounded initial memory and a velocity
-correction. A small network supplies nonnegative damping $d$, positive
-rates $\Lambda$, and exchange coefficients $c$, fixed over each rollout.
-Its closure matrix and model storage are
+The first component fits a quadratic to the last 0.25~s of available angle history. It extrapolates over the missing interval and passes the completed history to a previously fitted forecaster. That forecaster combines autoregressive and modal forecasts using recent support motion and forecast errors on already observed angles. The range of support motion over the past 4~s identifies low-motion packets, using thresholds of 2~mm for trolley position and 2~mrad for jib angle. In these packets the component retains its previous low-motion rule. We also report this component separately as quadratic completion.
+
+\subsection{Forecasting from the dated angle}
+
+The second component uses six modal experts. They fit a constant offset and oscillatory modes to the last 2.5~s of observed angle history, sampled every 50~ms for the fit. The frequency search is scaled by the nominal frequency $\sqrt{g/\ell_{\rm eff}}$, with a positive effective length $\ell_{\rm eff}$ calibrated on fitting records. Four experts align past support measurements to the angle history and use measured support motion through the sensor gap. Beyond $t$ they assume either held or linearly continued support position. Each continuation has one expert with fixed coupling and one with a local regularized update of the fitted coupling. The other two experts describe free motion, one with constant length and one with measured length through the gap followed by held length.
+
+In the changing-length expert, a modal coordinate $z_j$ follows the local approximation
 \begin{equation}
- C=\begin{bmatrix}0&0&0\\0&-d&c^\mathsf T\\0&-c&-\Lambda\end{bmatrix},
- \qquad E(z)=\tfrac12\|z\|^2 .
+ \ddot z_j+\left(d_j+2\frac{\dot\ell}{\ell}\right)\dot z_j
+ +\kappa_j\frac{\ell(t-a)}{\ell}z_j=0 ,
+ \label{eq:variable-length}
 \end{equation}
-Two Cayley closure half-steps surround an analytic forced-oscillator
-rotation with phase $\omega\Delta t$ and force $f=-\hat a_x/g$.
-For one closure step of dimensionless duration $\delta$,
+where $d_j$ and $\kappa_j$ are modal damping and stiffness at measurement time, and $\ell$ is effective length. The length-rate term follows the small-angle variable-length pendulum equation~\cite{belyakov2009,gonzalez2017}. The empirical modes approximate sway along one measured axis at a time.
+
+The bank assigns weights using six forecasts from a packet ending one second earlier. All six targets are observed by $t$, with the last at $t-a$. The earlier packet uses its own assumed continuation of support motion. Let $E$ contain its six prediction errors for each expert and $w_0$ be the prior weights. The bank solves
 \begin{equation}
- z^+=(I-\delta C/2)^{-1}(I+\delta C/2)z,\qquad
- E(z^+)-E(z)=-\delta(d\bar p^2+\bar r^\mathsf T\Lambda\bar r),
+ \min_w \frac{1}{6}\lVert Ew\rVert_2^2+\lambda\lVert w-w_0\rVert_2^2,
+ \qquad w_j\ge 0,\quad \sum_{j=1}^{6}w_j=1 ,
 \end{equation}
-where $\bar z=(z+z^+)/2$. The central rotation supplies work
-$f(q^+_{\rm rot}-q^-_{\rm rot})$. Summing these terms yields an exact
-discrete storage balance in exact arithmetic. With no input, the full
-storage cannot increase. When closure is disabled, the base oscillator
-has no numerical phase error. These properties do not eliminate model
-error or imply closed-loop stability. Nonzero memory can change the modes
-of the complete model, and observer resets can change storage.
+where $\lambda=\lVert E\rVert_F^2/36+q^2/12$ and $q$ is the encoder increment in the angle units used for fitting. The prior assigns half the weight to each of the two free-motion experts in low support motion. In higher support motion each free expert receives a quarter and each forced expert receives an eighth. The fitted weights apply to the current forecasts at all seven horizons.
 
-Independent tests check analytic rotation, storage, finite-difference
-gradients, batch independence, and second-order convergence to a separate
-adaptive solver for constant coefficients. Maximum storage-balance
-residual in the float32 forecasting runs is about $8.4\times10^{-8}$ in
-normalised storage units. A comparison with the same encoder and no
-memory isolates part of the benefit of latent states; its parameter
-counts are 7266 without memory and 7662 with memory.
+\subsection{Age-dependent mixture and ARX reference}
 
-\subsection{Same-information references and retained result}
-The neural actuator is shared across all action-conditioned methods.
-Three fixed seeds are averaged for each neural variant. Direct MLP and
-GP residual references receive the same available past packet and future
-command, including the deterministic actuator rollout. The GP uses up
-to 512 training points; four fixed kernel length scales are compared on
-scenario~4 before evaluation. The selected GP and MLP are forecasting
-references, not recursive plant models inside MPC.
+The selected mixture uses
+\begin{equation}
+ \widehat\theta(t+h)=(1-\alpha)\widehat\theta_{\rm completion}(t+h)
+                    +\alpha\widehat\theta_{\rm bank}(t+h),
+ \qquad \alpha=\frac{a}{a+100\,\mathrm{ms}} .
+ \label{eq:mixture}
+\end{equation}
+At age zero it returns the original synchronous forecast. Internal validation selected this mixture from 21 candidates, including standalone modal forecasts, alternative bank regularization and other blends. The selection, identified as \texttt{mix\_bank\_10} in the repository, was fixed before replay.
 
-\begin{table}[H]
-\centering\small
-\caption{Additional retrospective trolley pilot: mean MAE in degrees
-across scenarios 1, 2, 7 and 8. The angle-only row has less information;
-the remaining rows share prescribed future commands and past trolley
-measurements. The origin grid differs from Table~\ref{tab:forecast}.}
-\label{tab:passive}
-\input{passive_rollout_table}
-\end{table}
+The dense ARX reference includes angle-only and input--output feature sets, length-dependent coefficients, direct forecasts and corrections to modal forecasts. Its pool retains 3~s and 4~s history variants and alternative ways to handle missing angle samples. The expanded pool includes 120 new fits and offers 304 options per family--axis case, including some identical predictions. The original dense fits and the new age-augmented fits use 0.25~s steps between training origins. The pipelines have comparable access to fitting records, channels and dense origin support. Their transformations and objectives differ.
 
-PEPM improves 0.1~s MAE over action-conditioned physics from 0.245 to
-0.228~degrees; the same observer without memory gives 0.235~degrees.
-However, the GP reference achieves 0.216~degrees and is stronger at several
-intermediate horizons. At 1~s, PEPM gives 0.765~degrees versus 0.757 for
-action-conditioned physics. Thus the passive construction is implemented
-and numerically checked, but broad predictive superiority is not established.
-No thresholds or architecture settings were retuned from these evaluation
-scores. The proposed neural model has not yet been evaluated inside MPC.
+The reference is selected on validation for each of five cases and six fitting ages, averaging both noise levels. At other ages it uses the nearest fitting age, resolving ties toward the smaller age. The expanded reference was fitted after the mixture was selected. The mixture and expanded reference were held fixed during their seven-record comparison.
+
+\section{Results}
+
+\subsection{Internal validation and replay averages}
+
+We measure mean absolute error (MAE) in degrees relative to the recorded encoder angle. The validation score gives equal weight to five family--axis cases, six ages and two noise conditions. Within each case the score weights low and high recent support motion equally. The mixture scores 1.575\degs{} and dense ARX scores 1.758\degs, a 10.4\% reduction on the validation data used in development. The mixture has lower validation error in all five cases. The earlier, narrower ARX pool scored 1.795\degs{} on validation. Its all-origin replay error was lower than that of the expanded ARX at ages from 50 to 250~ms. Both references are retained in the archived tables.
+
+For the all-origin replay summary, we first average over origins and horizons within each record and axis, then over axes within records, and then over the seven physical records. Without added noise, mixture MAE rises from 0.525\degs{} at zero age to 0.742\degs{} at 250~ms. Dense ARX rises from 1.071\degs{} to 1.316\degs. The direct bank alone has lower average error than the mixture at ages 200 and 250~ms. At 250~ms the bank's MAE is 0.692\degs.
 
 \begin{figure}[H]
-\centering\includegraphics[width=\linewidth]{figures/passive_rollout.png}
-\caption{The action-conditioned pilot retains GP and simple-physics
-comparators. Active-at-origin labels use a backward-only velocity fit.
-Prescribed future commands change the information set relative to the
-angle-only harmonic reference.}
-\end{figure}
-
-\section{Separate simulation-based control pilot}
-\subsection{Plant and controller}
-The simulation uses a nonlinear prescribed-acceleration pendulum with
-actuator lag, dead zone and gain mismatch. For state
-$[x,v,\theta,\dot\theta,a_x]$, the angular equation is
-\begin{equation}
- \ddot\theta=-\frac{g\sin\theta+a_x\cos\theta}{\ell}
-              -d\dot\theta+\eta(t).
-\end{equation}
-A fourth-order Runge--Kutta plant integrator is checked against an
-independent adaptive solver. The MPC uses a linearised discrete-time
-model with a 40-step horizon at 20~Hz and a bounded acceleration command.
-Identical cost weights and limits are used in both controllers.
-Only their effective-length models differ.
-
-Sixteen paired synthetic contexts vary length, actuator lag, gain,
-damping and dead zone. Each controller receives the same initial state
-and physical-time disturbance sequence. The true effective length is
-sampled independently of the fitted calibration coefficients, within
-the declared synthetic mismatch range. This is not an empirically
-identified distribution of industrial cranes.
-
-Exact state feedback is assumed in this first control experiment.
-Only input bounds are enforced by the optimiser; monitored state limits
-are not certified hard constraints. Solver failures trigger a predefined
-feedback fallback and remain part of the reporting.
-
-\subsection{Initial control results and interpretation}
-\begin{table}[H]
-\centering\small
-\caption{Simulation-only pilot: means across 16 paired contexts.
-The neural forecaster is not used inside these controllers. Solve-time
-entries average each episode's p99; they are not a pooled p99 guarantee.}
-\label{tab:control}
-\input{control_table}
-\end{table}
-
-Mean residual RMS decreases from 0.0805 to 0.0639~degrees in the chosen
-synthetic campaign, while mean settling times are approximately 2.99
-and 2.98~s. The paired mean difference is $-0.0166$~degrees, with a
-scenario-bootstrap interval of approximately
-$[-0.0322,-0.0037]$~degrees. This interval describes the sampled
-synthetic contexts, not hardware uncertainty or real-world deployment.
-All 32 pilot episodes settled under the declared criterion, with no
-reported solver failures or 50~ms solve-budget overruns. Timing covers
-the optimiser call, not sensor acquisition or a real operating system's
-end-to-end control latency.
-
-\begin{figure}[H]
-\centering\includegraphics[width=.95\linewidth]{figures/control_paired.png}
-\caption{Paired control metrics in the initial synthetic campaign.
-Thin lines retain every context; the thick line shows the mean.}
-\end{figure}
-
-This pilot demonstrates that the implemented control pipeline can test
-model mismatch. It does not establish that the projected neural
-predictor improves MPC, nor replace an adaptive-physics control baseline.
-
-\section{Limitations and remaining research}
-The all-family neural benchmark also completes 38 scenario--axis folds,
-with three seeds for each of the three neural variants (342 network fits).
-Table~\ref{tab:families} shows that the ranking depends on the motion
-axis: learned corrections help some transverse outputs, while calibrated
-physics remains strong on longitudinal motion. GP residuals are an
-especially important comparator and are not consistently surpassed by
-the projected network.
-
-\begin{table}[H]
 \centering
-\caption{Mean 1~s MAE in degrees in the retrospective all-family
-neural benchmark, with 41-sample histories and fixed development settings.}
-\label{tab:families}
-\input{all_family_neural_table}
-\end{table}
-
-A separate adaptive-physics reference identifies frequency, damping and
-an input coefficient from a causal prefix, using measured trolley motion
-inside that prefix. Budgets of 0, 1, 3, 5 and 10 prior oscillator periods
-are scored on the same later interval beginning at 25~s. All nonzero
-budgets worsen the mean 1~s error in this initial experiment: 0.673~degrees
-without adaptation versus 1.099~degrees at ten periods. This comparison
-has a different calibration information set from the angle-only zero-shot
-benchmark. It shows that the chosen local estimator is inadequate, not
-that all forms of online adaptation fail.
-
-\begin{figure}[H]
-\centering\includegraphics[width=.85\linewidth]{figures/adaptation_curve.png}
-\caption{Negative adaptation result retained as a reference. All budgets
-share the same scored tail; no calibration-prefix target enters evaluation.}
+\includegraphics[width=.96\linewidth]{figures/forecast_by_activity.pdf}
+\caption{Replay MAE by angle age without added noise. CranePilot denotes the selected mixture. The all-origin comparison covers seven records and 12 record--axis pairs. The drive-active subset covers six records and ten record--axis pairs with active origins. The panels have different vertical scales.}
+\label{fig:activity}
 \end{figure}
 
-An additional, fixed development protocol fits frequency-only and damped
-candidates on the first 60\% of each available prefix and evaluates them
-on the last 40\%. Acceptance requires at least two non-overlapping
-one-second target blocks, improvement in mean MAE of at least 5\%, no
-worse MAE at any of the three horizons, and wins on at least 75\% of
-those blocks. Accepted candidates would be retained without refitting.
-These thresholds were fixed before this run and were not tuned from its
-results. The same protocol first processes development scenario~4, then
-the four evaluation scenarios. It uses angles only, whereas the earlier
-ungated estimator also uses measured trolley motion during calibration.
-No configuration update is accepted in this pilot. Across the 16
-nonzero-budget evaluation cases, nine lack sufficient prefix data and
-seven fail the validation criteria. Consequently, the 1~s score remains
-0.673~degrees at every budget. This is abstention, not successful
-adaptation or evidence of a guarantee against future degradation.
+The drive-active subset in Fig.~\ref{fig:activity} includes support motion with or without concurrent hoisting. Its low-motion complement can include hoisting. Some record--axis groups contain only two or three active origins. Repeating ages, noise conditions and horizons on these records does not create additional independent trials.
 
-The main methodological hypothesis remains unconfirmed. Required next
-experiments include adaptive physical models under equal causal
-calibration budgets, command-conditioned dynamics with an identified
-input path, broader neural scenario folds, and independent simulation
-objects. Payload-shape and hoisting records are imported but do not yet
-provide a completed generalisation result. A learned residual cannot
-be credited for an advantage caused by more history or better frequency
-calibration.
+\subsection{Where the short forecast loses accuracy}
 
-The experimental records are few at the scenario level and contain no
-new independent repetitions. Some parameter effects are confounded
-with trajectory or payload configuration. Neither dense sampling nor
-multiple neural seeds removes that limitation. Simulation mismatch
-ranges and full-state observations further limit the control claims.
+Figure~\ref{fig:horizons} shows the horizon curves at zero and 250~ms, and Fig.~\ref{fig:map} shows the complete grid. At each noise level, the mixture has lower mean error than dense ARX in 62 of 63 age--horizon cells. At the exception, a 100~ms horizon with 250~ms angle age, the mixture scores 0.700\degs{} and dense ARX 0.653\degs{} without added noise. With jitter, the corresponding errors are 0.702\degs{} and 0.660\degs. Dense ARX wins on six of the seven physical records in this cell at each noise level.
 
-The project does not currently supply a stability proof, a
-distribution-free safety guarantee, a comparison against proprietary
-industrial anti-sway products, or evidence of full-scale transfer.
-Journal selection and the final novelty claim should follow the
-completed evidence rather than precede it.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.96\linewidth]{figures/forecast_by_horizon.pdf}
+\caption{MAE by forecast horizon at angle ages of 0 and 250~ms without added noise. Panels use equal physical-record weights and a common error scale. At 250~ms age the mixture loses to dense ARX at the shortest horizon and wins at the six longer horizons.}
+\label{fig:horizons}
+\end{figure}
 
-\section{Reproducibility and research provenance}
-The Python repository retains scenario splits, raw-data checksums,
-configuration hashes, package versions, forecast arrays, calibration
-fits, neural checkpoints, and episode traces. Initial runs predate
-the first repository commit; their post-run source snapshot is labelled
-as such. Subsequent runs additionally record source-file hashes.
-The historical OLS protocol is independently reproduced for all 24
-retained comparisons with a maximum discrepancy below
-$10^{-12}$~degrees. That reproduction intentionally preserves the old
-indexing and is separate from the corrected forecast benchmark.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.96\linewidth]{figures/forecast_error_map.pdf}
+\caption{Mixture MAE minus dense ARX MAE on the full replay grid. Negative values favour the mixture. Each panel contains nine ages and seven horizons on the same scale. The outlined cell marks the short-horizon loss in both noise conditions.}
+\label{fig:map}
+\end{figure}
 
-The study builds on Ratmir Kutyrev's earlier research and attributes
-the public experimental measurements to their creators.
-AI assistance was used in research planning, implementation, analysis
-scripts and manuscript preparation. The manuscript remains subject to
-human scientific review, verification of claims and final author approval.
-This paragraph must be reviewed against the chosen journal's policy
-before submission. No unperformed human or experimental contribution
-is assigned to a coauthor.
+\subsection{Sensitivity to the reported measurement age}
 
-\section{Conclusion of the current development stage}
-The first implementation establishes a causal, scenario-separated
-Python benchmark and a distinct simulation-based control pipeline.
-Calibrated physics remains a strong long-horizon reference, while learned
-corrections have mixed horizon-dependent effects. The additional
-action-conditioned passive-memory model supplies a checked discrete storage
-balance but does not uniformly outperform a GP residual. Further work must
-resolve input-path uncertainty, test coupled dynamics and establish a
-predictive advantage before a state-of-the-art-method claim is supported.
+A separate replay without added noise changes the reported age by $-20$, $-10$, 0, $+10$ or $+20$~ms, retaining combinations within the 0--250~ms input range. The actual histories and targets remain fixed. Five true ages (20, 50, 100, 150 and 200~ms) admit every offset. On this common support, the mixture's mean error increases from 0.581\degs{} with correct age to 0.869\degs{} with a $+20$~ms offset, an increase of 49.5\%. Dense ARX increases from 1.174\degs{} to 1.474\degs{} (Fig.~\ref{fig:timing}).
 
+The mixture retains lower MAE averaged over horizons in all 31 admissible age--offset combinations. At a true age of 250~ms and a 100~ms horizon, its mean error remains higher at each admissible offset ($-20$, $-10$ and 0~ms).
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=.96\linewidth]{figures/timestamp_sensitivity.pdf}
+\caption{Effect of changing only the stated angle age. A positive offset overstates age. The common-age average uses the same five true ages at every offset. At 250~ms, positive offsets exceed the input range.}
+\label{fig:timing}
+\end{figure}
+
+\section{Discussion}
+
+The age-dependent blend lowers retrospective MAE across most of the tested grid. The 100~ms loss at 250~ms age shows why an average across horizons is insufficient for choosing a model for a short-horizon task. The direct bank also outperforms the blend at the longest ages when averaging over horizons. These cases can be tested prospectively with the same frozen models before changing the age weighting.
+
+The target is the original encoder angle, whose resolution matters when interpreting small differences in degrees. The records come from one laboratory apparatus, and cable length, payload and command profiles can vary together. The imposed age, jitter and constant timestamp offsets leave the observed commands and crane trajectory fixed. Real arrival delays, irregular sampling and the response to newly selected control inputs require separate evidence. The native reference scale and clock alignment also need verification on a new rig.
+
+In an earlier transfer experiment on four held-out camera records from a different rotary crane~\cite{khemakhem2026}, the older CranePilot angular model with geometric and frequency adaptation scored 0.895\degs{} versus 0.266\degs{} for the geometric reference and 0.038\degs{} for a locally fitted ARX residual. That experiment used a different measurement rate and information set. The dated model reported here has yet to be tested on that task or on independently acquired records that meet its input contract.
+
+\subsection{Independent confirmation}
+
+The prospective protocol fixes both models, the origin and horizon definitions, and the score before evaluation. It requires at least five declared conditions and five independent physical clusters. The primary score weights conditions, trials within conditions, axes within trials, and horizons and origins within axes. A positive result requires at least 10\% lower MAE, a strict majority of condition wins and a negative upper 97.5th percentile for a paired bootstrap difference that resamples whole clusters. Suitable new trials have not yet been received.
+
+\section{Conclusion}
+
+Combining angle-history completion with dated modal forecasts lowers mean sway prediction error on most of the tested Inteco grid. The short-horizon loss at the longest angle age and the sensitivity to a 20~ms age error identify two cases to retain in independent validation. The current evidence concerns forecast accuracy on previously recorded trajectories. Independent physical validation and closed-loop control evaluation of the dated forecaster remain open.
+
+\section*{Data and code availability}
+
+The Inteco data are available from \href{https://doi.org/10.17632/x69hyyv3zw.2}{Mendeley Data, version~2}~\cite{mendeley2025}. The \href{https://github.com/kutyrevratmir3-design/cranepilot}{CranePilot repository} contains the frozen bundles, record splits, validation choices, aggregate replay tables and figure script. The evidence is tied to research snapshot \texttt{f3107fe}. The timestamp audit verified 84 archived prediction files and matched all 15,792 correct-age forecast vectors to the preceding replay. The snapshot passed 319 software tests.
+
+\section*{Acknowledgments and disclosure}
+
+The author thanks the creators of the Inteco dataset for making the measurements available. AI assistance was used in implementation, analysis scripts and manuscript preparation.
+
+\appendix
+\section{Earlier CranePilot experiments}
+
+In the earlier angle-only Python benchmark on four trolley records, a sensitivity-projected neural residual reduced MAE at 100~ms from 0.300\degs{} to 0.219\degs{} relative to a calibrated oscillator. At 1~s it increased MAE from 0.758\degs{} to 0.907\degs. The 41-sample history and record split differ from the dated-angle task. In a separate command-conditioned experiment, a passive-memory model satisfied a discrete storage balance but did not consistently outperform a Gaussian-process residual given the same input information.
+
+A subsequent command-conditioned temporal comparison retained the driven innovation model on the primary split (0.5005\degs{} MAE). On long-cable transfer, the validation-selected temporal candidate reduced MAE from 0.513\degs{} to 0.497\degs{} across all origins, while increasing the active-origin error from 0.932\degs{} to 0.968\degs. The selected short-cable candidate increased mean error from 0.432\degs{} to 0.439\degs. These experiments used planned command inputs and a different split.
+
+The original control pilot compared nominal and geometrically calibrated model predictive control in 16 simulated contexts with synthetic plant mismatch and assumed state feedback. That pilot evaluated separate controllers. The current dated forecaster has yet to be evaluated in a feedback loop.
