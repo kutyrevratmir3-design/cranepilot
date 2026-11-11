@@ -6,7 +6,7 @@ Forecasting tower-crane payload sway from 0.10 to 1.50 seconds ahead when angle 
 
 ## What the replay shows
 
-The delayed-angle blend combines a forecast based on quadratic completion with forecasts from a bank of modal experts. At zero angle age, all three return the original synchronous predictor. The error gap against both autoregressive references already exists at this age.
+Angle age is the time from acquisition of the latest available sway-angle measurement to the forecast origin. The blend combines a forecast based on quadratic completion with forecasts from a bank of modal experts. At zero age, all three use the original synchronous predictor. Its error is already lower than that of both autoregressive references with exogenous inputs (ARX).
 
 | Angle age and score | Blend | Quadratic completion | Direct bank | Earlier ARX | Dense ARX |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -15,9 +15,9 @@ The delayed-angle blend combines a forecast based on quadratic completion with f
 | 250 ms, seven horizons | 0.742° | 1.479° | 0.692° | 1.246° | 1.316° |
 | 250 ms, 100 ms horizon | 0.700° | 1.733° | 0.583° | 0.666° | 0.653° |
 
-Values are mean absolute angle errors with no added noise, weighting each of the seven recordings equally. The blend improves the mean over quadratic completion at every positive age. The bank alone has lower mean error at 200 and 250 ms. At 250 ms the blend has lower error than earlier ARX on three recordings. Those three hoisting records account for the overall mean improvement against that reference.
+Values are mean absolute angle errors with no added noise, weighting each of the seven recordings equally. The blend has lower mean error than quadratic completion at every tested positive age. The bank alone has lower mean error at 200 and 250 ms. The earlier ARX has lower mean error than the dense ARX at the tested ages from 50 to 250 ms. At 250 ms, the blend improves on the earlier ARX on three hoisting recordings (13, 32 and 33). On the other four recordings, the mean error increases.
 
-The original method used three validation records, one per motion family, and its validation grid ended at 200 ms. The new Kalman, local autoregressive, oscillator, and persistence comparisons also reuse previously examined Inteco recordings with simulated measurement age. Independent physical validation is pending.
+The blend was selected on three validation recordings, one per motion family, with ages through 200 ms. The Kalman filter and other added references were evaluated retrospectively using the same seven previously examined Inteco recordings. Angle age was simulated. Independent validation on new physical recordings is pending.
 
 [Paired reanalysis](results/delayed_angle_review_20261111/README.md) · [Delayed-measurement baselines](results/delayed_baselines_20261111/README.md) · [Confirmation protocol](docs/FRESH_CONFIRMATION_20261108.md)
 
@@ -30,6 +30,7 @@ python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
 python -m unittest discover -s tests -v
+python scripts/delayed_baselines.py check
 ```
 
 The [forecast API](docs/DATED_BUNDLE_20261108.md) takes a known measurement age and four seconds of history per channel. Its [frozen forecast bundle](artifacts/dated_bundle_20261108) and [dense ARX bundle](artifacts/dense_reference_bundle_20261108) are included. The inference API and unit tests can run without downloading the source recordings.
@@ -47,4 +48,4 @@ The [forecast API](docs/DATED_BUNDLE_20261108.md) takes a known measurement age 
 
 ## Data and citation
 
-The source is the [33-record Inteco tower-crane dataset, version 2](https://doi.org/10.17632/x69hyyv3zw.2) (CC BY 4.0). See the [dataset paper](https://doi.org/10.1016/j.dib.2025.111822) and the [benchmark card](docs/BENCHMARK_CARD.md) for the experiment design. Cite the dataset authors and [CranePilot](CITATION.cff) when reusing this work. The code is available under the [MIT license](LICENSE).
+The source is the [33-record Inteco tower-crane dataset, version 2](https://doi.org/10.17632/x69hyyv3zw.2) (CC BY 4.0). See the [dataset paper](https://doi.org/10.1016/j.dib.2025.111822) for the experimental setup and the [research index](docs/README.md) for the forecast evaluation protocols. Cite the dataset authors and [CranePilot](CITATION.cff) when reusing this work. The code is available under the [MIT license](LICENSE).

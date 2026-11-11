@@ -16,7 +16,9 @@ Reports marked **RU** are in Russian.
 
 ## Earlier experiments
 
-- [Benchmark card](BENCHMARK_CARD.md) and [model card](MODEL_CARD.md) document the original cable-length transfer study.
+These archived reports describe the methods and publication status as recorded at each stage.
+
+- The original cable-length transfer study is documented in the [archived benchmark card](BENCHMARK_CARD.md) and [model card](MODEL_CARD.md).
 - [Passive rollout](PASSIVE_ROLLOUT.md), [driven innovation](INNOVATION_RESULTS.md), and [chronological adaptation](VALIDATED_ADAPTATION.md) describe precursor models.
 - [November 3 campaign](RESEARCH_2026_11_03.md), [November 6 campaign](RESEARCH_2026_11_06.md), and [November 7 limit audit](RESEARCH_2026_11_07.md) retain earlier comparisons and counterexamples.
 - [Aalto data audit](AALTO_DATA_AUDIT.md) and [external benchmark report (RU)](EXTERNAL_BENCHMARK_2026_11_07_RU.md) document separate data sources and their limitations.
